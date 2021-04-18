@@ -1,26 +1,28 @@
-import axios, {AxiosError, AxiosResponse} from 'axios';
+import axios, {AxiosError, AxiosResponse} from 'axios'
+import {ApiSdkLogger} from '../helper/Logger'
 
 export interface RequestOption {
-  qs?: any;
-  headers?: any;
-  body?: any;
-  timeout?: number;
+  qs?: any
+  headers?: any
+  body?: any
+  timeout?: number
 }
 
 export interface ApiClientParams {
-  baseUrl: string;
-  headers?: any;
-  requestInterceptor?: (options?: RequestOption) => Promise<RequestOption> | RequestOption;
-  proxy?: string;
-  mapData?: (_: any) => any;
-  mapError?: (_: any) => never;
+  baseUrl: string
+  headers?: any
+  requestInterceptor?: (options?: RequestOption) => Promise<RequestOption> | RequestOption
+  proxy?: string
+  mapData?: (_: any) => any
+  mapError?: (_: any) => never
 }
 
 export interface ApiClientApi {
-  readonly get: <T = any>(uri: string, options?: RequestOption) => Promise<T>;
-  readonly post: <T = any>(uri: string, options?: RequestOption) => Promise<T>;
-  readonly delete: <T = any>(uri: string, options?: RequestOption) => Promise<T>;
-  readonly put: <T = any>(uri: string, options?: RequestOption) => Promise<T>;
+  readonly baseUrl: string
+  readonly get: <T = any>(uri: string, options?: RequestOption) => Promise<T>
+  readonly post: <T = any>(uri: string, options?: RequestOption) => Promise<T>
+  readonly delete: <T = any>(uri: string, options?: RequestOption) => Promise<T>
+  readonly put: <T = any>(uri: string, options?: RequestOption) => Promise<T>
 }
 
 export type StatusCode =
@@ -44,7 +46,9 @@ export type Method = 'POST' | 'GET' | 'PUT' | 'DELETE';
 
 export class ApiClient {
 
-  private readonly fetch: (method: Method, url: string, options?: RequestOption) => Promise<any>;
+  private readonly fetch: (method: Method, url: string, options?: RequestOption) => Promise<any>
+
+  readonly baseUrl: string
 
   constructor({
     baseUrl,
@@ -56,10 +60,12 @@ export class ApiClient {
     const client = axios.create({
       baseURL: baseUrl,
       headers: {...headers,},
-    });
+    })
+
+    this.baseUrl = baseUrl
 
     this.fetch = async (method: Method, url: string, options?: RequestOption) => {
-      const builtOptions = await ApiClient.buildOptions(options, headers, requestInterceptor);
+      const builtOptions = await ApiClient.buildOptions(options, headers, requestInterceptor)
       return client.request({
         method,
         url,
@@ -68,7 +74,7 @@ export class ApiClient {
         data: options?.body,
       }).then(mapData ?? ((_: AxiosResponse) => _.data))
         .catch(mapError ?? ((_: AxiosError) => {
-          console.error('[ApiClient] ', _);
+          ApiSdkLogger.error('[ApiClient]', _);
           throw new ApiError(_.response?.status as StatusCode, _.response?.data);
         }));
     };

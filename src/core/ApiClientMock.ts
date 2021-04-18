@@ -1,4 +1,4 @@
-import {ApiClient, ApiClientApi, ApiClientParams, Method, RequestOption} from './ApiClient';
+import {ApiClient, ApiClientApi, ApiClientParams, Method, RequestOption} from './ApiClient'
 
 export interface TestRequest {
   method: Method;
@@ -9,9 +9,10 @@ export interface TestRequest {
 
 export class ApiClientMock implements ApiClientApi {
 
-  readonly requests: TestRequest[] = [];
-  private readonly mocks: {urlPattern: RegExp, returnValue: any}[] = [];
-  private readonly fetch: (method: Method, url: string, options?: RequestOption) => Promise<any>;
+  readonly baseUrl = 'mockApi'
+  readonly requests: TestRequest[] = []
+  private readonly mocks: {urlPattern: RegExp, returnValue: any}[] = []
+  private readonly fetch: (method: Method, url: string, options?: RequestOption) => Promise<any>
 
   constructor({
     baseUrl,

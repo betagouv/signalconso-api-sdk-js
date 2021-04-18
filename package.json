@@ -1,14 +1,16 @@
 {
-  "name": "@betagouv/signalconso-api-sdk-js",
-  "version": "1.0.0",
+  "name": "@signalconso/signalconso-api-sdk-js",
+  "version": "0.1.0",
   "description": "SignalConso API SDK for JavaScript/TypeScript",
   "main": "build/index.js",
+  "private": false,
   "scripts": {
     "prepublish": "npm run build",
-    "build": "tsc"
+    "build": "tsc --declaration"
   },
   "dependencies": {
-    "axios": "0.21.1"
+    "axios": "0.21.1",
+    "rxjs": "^6.6.7"
   },
   "devDependencies": {
     "typescript": "^4.2.4"
