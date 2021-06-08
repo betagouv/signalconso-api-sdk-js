@@ -22,12 +22,12 @@ export class PublicConstantClient {
 
 
   readonly getRegions = () => {
-    // Simulate Async call since it could be moved in the API for factorization purpose
+    // Simulate Async call since it could be moved to the API one day for factorization purpose
     return Promise.resolve(this.regions)
   }
 
   readonly getDepartements = () => {
-    // Simulate Async call since it could be moved in the API for factorization purpose
+    // Simulate Async call since it could be moved to the API one day for factorization purpose
     return Promise.resolve(this.departments)
   }
 
