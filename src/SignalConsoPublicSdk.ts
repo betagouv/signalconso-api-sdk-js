@@ -1,6 +1,6 @@
-import {Country} from './model'
 import {ApiClientApi} from './core/ApiClient'
-import {AuthenticateClient, DocumentClient, PublicCompanyClient} from './client'
+import {AnomalyClient, AuthenticateClient, ConstantClient, FileClient} from './client'
+import {PublicCompanyClient} from './client/company/PublicCompanyClient'
 
 export class SignalConsoPublicSdk {
 
@@ -8,7 +8,8 @@ export class SignalConsoPublicSdk {
   }
 
   readonly company = new PublicCompanyClient(this.client)
-  readonly getCountries = () => this.client.get<Country[]>(`/constants/countries`)
+  readonly constant = new ConstantClient(this.client)
   readonly authenticate = new AuthenticateClient(this.client)
-  readonly document = new DocumentClient(this.client)
+  readonly document = new FileClient(this.client)
+  readonly anomaly = new AnomalyClient(this.client)
 }

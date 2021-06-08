@@ -22,3 +22,11 @@ export const cleanObject = <T extends object>(obj: T): Partial<T> => {
     )
     .reduce((acc, [key, value]) => ({...acc, [key]: value}), {})
 }
+
+export const toQueryString = (obj: any): string => {
+  if (!obj) return ''
+  return '?' + Object.keys(obj)
+    .filter(k => obj[k] !== undefined)
+    .map(k => `${encodeURIComponent(k)}=${encodeURIComponent(obj[k])}`)
+    .join('&')
+}

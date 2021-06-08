@@ -1,20 +1,21 @@
 import axios, {AxiosError, AxiosResponse} from 'axios'
 import {ApiSdkLogger} from '../helper/Logger'
+import * as qs from 'qs'
 
 export interface RequestOption {
-  qs?: any
-  headers?: any
-  body?: any
-  timeout?: number
+  readonly qs?: any
+  readonly headers?: any
+  readonly body?: any
+  readonly timeout?: number
 }
 
 export interface ApiClientParams {
-  baseUrl: string
-  headers?: any
-  requestInterceptor?: (options?: RequestOption) => Promise<RequestOption> | RequestOption
-  proxy?: string
-  mapData?: (_: any) => any
-  mapError?: (_: any) => never
+  readonly baseUrl: string
+  readonly headers?: any
+  readonly requestInterceptor?: (options?: RequestOption) => Promise<RequestOption> | RequestOption
+  readonly proxy?: string
+  readonly mapData?: (_: any) => any
+  readonly mapError?: (_: any) => never
 }
 
 export interface ApiClientApi {
@@ -72,10 +73,19 @@ export class ApiClient {
         headers: builtOptions?.headers,
         params: options?.qs,
         data: options?.body,
+        paramsSerializer: (params) => qs.stringify(params, {arrayFormat: 'repeat'})
       }).then(mapData ?? ((_: AxiosResponse) => _.data))
         .catch(mapError ?? ((_: AxiosError) => {
-          ApiSdkLogger.error('[ApiClient]', _);
-          throw new ApiError(_.response?.status as StatusCode, _.response?.data);
+          ApiSdkLogger.error('[ApiClient]', _)
+          const errorMessage = (() => {
+            switch (_.response?.status) {
+              case 400:
+                return 'BAD_REQUEST'
+              default:
+                return _.response?.data
+            }
+          })()
+          throw new ApiError(_.response?.status as StatusCode, errorMessage)
         }));
     };
   }
