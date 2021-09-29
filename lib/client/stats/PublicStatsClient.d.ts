@@ -3,7 +3,7 @@ import { CountByDate, SimpleStat } from './Stats';
 export declare class PublicStatsClient {
     private client;
     constructor(client: ApiClientApi);
-    readonly getReportCount: () => Promise<any>;
+    readonly getReportCount: () => Promise<SimpleStat>;
     readonly getMonthlyReportCount: () => Promise<CountByDate[]>;
     readonly getReportForwardedToProPercentage: () => Promise<SimpleStat>;
     readonly getReportReadByProPercentage: () => Promise<SimpleStat>;
