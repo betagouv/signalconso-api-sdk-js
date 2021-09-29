@@ -10,7 +10,7 @@ export interface DraftCompany {
     brand?: string;
     address?: Address;
     website?: WebsiteURL;
-    phone: string;
+    phone?: string;
     activityCode?: string;
 }
 export interface CompanyWithReportsCount extends Company {
