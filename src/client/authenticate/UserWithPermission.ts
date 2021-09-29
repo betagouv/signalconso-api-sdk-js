@@ -1,4 +1,4 @@
-export interface User {
+export interface UserWithPermission {
   id: string
   login: string
   email: string
@@ -13,10 +13,10 @@ export enum Roles {
   Admin = 'Admin',
   DGCCRF = 'DGCCRF',
   Pro = 'Professionnel',
-  ToActivate = 'ToActivate'
+  ToActivate = 'ToActivate',
 }
 
-export const roleUrlParam = (_: User): string => {
+export const roleUrlParam = (_: UserWithPermission): string => {
   switch (_.role) {
     case Roles.Admin:
       return 'admin'
@@ -31,7 +31,7 @@ export const roleUrlParam = (_: User): string => {
 
 export interface AuthUser {
   token: string
-  user: User
+  user: UserWithPermission
 }
 
 export enum TokenKind {
@@ -40,13 +40,16 @@ export enum TokenKind {
   dgccrfAccount = 'DGCCRF_ACCOUNT',
 }
 
-
 export interface TokenInfo {
   token: string
   kind: TokenKind
-  timestamp: Date
+  emailedTo: string
+}
+
+export interface DGCCRFUserActivationToken extends TokenInfo {}
+
+export interface CompanyUserActivationToken extends TokenInfo {
   companySiret?: string
-  emailedTo?: string
 }
 
 export enum Permissions {
@@ -57,5 +60,5 @@ export enum Permissions {
   createEvent = 'createEvent',
   editDocuments = 'editDocuments',
   subscribeReports = 'subscribeReports',
-  updateCompany = 'updateCompany'
+  updateCompany = 'updateCompany',
 }

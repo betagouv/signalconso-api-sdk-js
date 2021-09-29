@@ -1,5 +1,5 @@
 {
-  "name": "@signalconso/api-sdk-js",
+  "name": "@betagouv/signalconso-api-sdk-js",
   "version": "0.1.0",
   "description": "SignalConso API SDK for JavaScript/TypeScript",
   "main": "build/index.js",
