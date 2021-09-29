@@ -1,20 +1,17 @@
 import {
-  ApiHostWithReportCount,
+  ApiHostWithReportCount, Paginate,
   HostReportCountSearch,
   Id,
   PaginatedData,
-  ReportSearch,
   Website,
   WebsiteKind,
   WebsiteUpdateCompany,
   WebsiteWithCompany,
   WebsiteWithCompanySearch,
 } from '../../model'
-import {ApiClientApi, dateToApi, toQueryString} from '../..'
-import {fromNullable} from 'fp-ts/lib/Option'
-import {paginateData} from '../../../helper/utils'
-import {Paginate} from '@alexandreannic/react-hooks-lib'
+import {ApiClientApi, dateToApi} from '../..'
 import {ApiSdkLogger} from '../../helper/Logger'
+import {paginateData} from '../../helper/Paginate'
 
 export interface HostReportCountQueryString {
   q?: string

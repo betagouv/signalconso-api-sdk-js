@@ -1,5 +1,5 @@
-import {Id, PaginatedSearch, ReportStatus} from '../../model'
-import {Index, WebsiteKind} from '../..'
+import {Id, PaginatedSearch} from '../../model'
+import {WebsiteKind} from '../..'
 import {Address} from '../../model/Address'
 
 export interface WebsiteURL {

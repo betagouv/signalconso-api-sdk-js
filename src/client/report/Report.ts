@@ -1,5 +1,4 @@
-import {ReportTag, Subcategory} from '../..'
-import {UploadedFile} from '../..'
+import {ReportTag, Subcategory, UploadedFile} from '../..'
 import {Address} from '../../model/Address'
 
 export const ReportingDateLabel = 'Date du constat'

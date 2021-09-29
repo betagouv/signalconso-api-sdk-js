@@ -1,9 +1,11 @@
 export type Id = string
 
-export interface ApiPaginate<T> {
+export interface Paginate<T> {
   entities: T[]
   totalCount: number
 }
+
+export type OrderBy = 'desc' | 'asc';
 
 export interface Entity {
   id: Id

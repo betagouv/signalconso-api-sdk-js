@@ -1,8 +1,7 @@
 import {ApiClientApi} from '../../index'
 import {Id} from '../../model'
 import {CountByDate, Period, ReportResponseReviews, ReportStatusDistribution, ReportTagsDistribution} from '../company-stats/CompanyStats'
-import {duration, Duration} from '@alexandreannic/ts-utils/lib/common'
-import {fnSwitch} from '../../../helper/utils'
+import {duration, Duration, fnSwitch} from '@alexandreannic/ts-utils/lib/common'
 
 export class StatsClient {
   constructor(private client: ApiClientApi) {

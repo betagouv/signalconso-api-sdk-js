@@ -1,7 +1,5 @@
-import {ApiClientApi, UserPending, UserSearch} from '../..'
+import {ApiClientApi, Paginate, paginateData, UserPending, UserSearch} from '../..'
 import {User} from './User'
-import {paginateData} from '../../../helper/utils'
-import {Paginate} from '@alexandreannic/react-hooks-lib/lib'
 import {fromNullable} from 'fp-ts/lib/Option'
 
 export class UserClient {
@@ -22,7 +20,7 @@ export class UserClient {
       )
       .then(paginateData(filters.limit, filters.offset))
       .then(result => {
-        result.data = result.data.map(_ => {
+        result.entities = result.entities.map(_ => {
           _.lastEmailValidation = new Date(_.lastEmailValidation)
           return _
         })

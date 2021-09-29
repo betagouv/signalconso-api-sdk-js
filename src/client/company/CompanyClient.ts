@@ -1,12 +1,12 @@
-import {ApiClientApi, ApiPaginate, CompanySearch, CompanyToActivate, CompanyWithAccessLevel, CompanyWithReportsCount, dateToApi, directDownloadBlob, Report, ReportTag} from '../..'
+import {ApiClientApi, Paginate, CompanySearch, CompanyToActivate, CompanyWithAccessLevel, CompanyWithReportsCount, dateToApi, directDownloadBlob} from '../..'
 import {Company, CompanyCreation, CompanyUpdate, Event, Id} from '../../model'
 import {format} from 'date-fns'
 
 export class CompanyClient {
   constructor(private client: ApiClientApi) {}
 
-  readonly search = (search: CompanySearch): Promise<ApiPaginate<CompanyWithReportsCount>> => {
-    return this.client.get<ApiPaginate<CompanyWithReportsCount>>(`/companies`, {qs: search}).then(res => ({
+  readonly search = (search: CompanySearch): Promise<Paginate<CompanyWithReportsCount>> => {
+    return this.client.get<Paginate<CompanyWithReportsCount>>(`/companies`, {qs: search}).then(res => ({
       ...res,
       entities: res.entities.map(CompanyClient.mapCompany),
     }))

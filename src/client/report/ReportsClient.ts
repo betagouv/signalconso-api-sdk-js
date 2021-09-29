@@ -1,20 +1,8 @@
-import {
-  ApiClientApi,
-  cleanObject,
-  CompanySearchResult,
-  dateToApi,
-  directDownloadBlob,
-  Event,
-  Id,
-  Report,
-  ReportAction,
-  ReportResponse,
-  ReportSearchResult,
-} from '../..'
+import {ApiClientApi, cleanObject, CompanySearchResult, dateToApi, directDownloadBlob, Event, Id, Report, ReportAction, ReportResponse, ReportSearchResult,} from '../..'
 import {PaginatedData, ReportSearch} from '../../model'
 import {pipe} from 'rxjs'
 import {ApiSdkLogger} from '../../helper/Logger'
-import {Address} from "../../model/Address";
+import {Address} from '../../model/Address'
 
 export interface ReportFilterQuerystring {
   readonly departments?: string
