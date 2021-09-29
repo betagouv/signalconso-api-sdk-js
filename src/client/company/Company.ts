@@ -12,6 +12,7 @@ export interface DraftCompany {
   brand?: string
   address?: Address
   website?: WebsiteURL
+  phone: string
   activityCode?: string
 }
 
