@@ -10,6 +10,7 @@
     "generate-json-files": "node src/client/anomaly/script/generate-json-files.js"
   },
   "dependencies": {
+    "@alexandreannic/ts-utils": "^1.4.3",
     "axios": "0.21.1",
     "chai": "^4.3.4",
     "fp-ts": "^1.19.5",

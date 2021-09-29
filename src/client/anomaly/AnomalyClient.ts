@@ -9,7 +9,7 @@ import {
   SubcategoryInput,
 } from '../..'
 import anomaliesJSON from '../anomaly/yml/anomalies.json'
-import {lazy} from '../../helper/Lazy'
+import {lazy} from '@alexandreannic/ts-utils/lib/common'
 
 export class AnomalyClient {
   constructor(private client: ApiClientApi) {}
