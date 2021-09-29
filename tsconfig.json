@@ -11,7 +11,7 @@
     "rootDir": "./src",
     "declaration": true,
     "alwaysStrict": true,
-    "outDir": "./build",
+    "outDir": "./lib",
     "sourceMap": true,
     "strict": true,
     "resolveJsonModule": true,
@@ -21,7 +21,7 @@
     "src"
   ],
   "exclude": [
-    "./build",
+    "./lib",
     "./node_modules"
   ]
 }
