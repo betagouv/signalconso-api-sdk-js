@@ -9,7 +9,7 @@ export declare class SignalConsoPublicSdk {
     constructor(client: ApiClientApi);
     readonly company: PublicCompanyClient;
     readonly report: PublicReportClient;
-    readonly reportStats: PublicStatsClient;
+    readonly stats: PublicStatsClient;
     readonly user: PublicUserClient;
     readonly constant: PublicConstantClient;
     readonly authenticate: AuthenticateClient;

@@ -10,7 +10,7 @@ export class SignalConsoPublicSdk {
 
   readonly company = new PublicCompanyClient(this.client)
   readonly report = new PublicReportClient(this.client)
-  readonly reportStats = new PublicStatsClient(this.client)
+  readonly stats = new PublicStatsClient(this.client)
   readonly user = new PublicUserClient(this.client)
   readonly constant = new PublicConstantClient(this.client)
   readonly authenticate = new AuthenticateClient(this.client)
