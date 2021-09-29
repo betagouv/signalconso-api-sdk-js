@@ -1,15 +1,15 @@
 import { ApiClientApi } from '../../core/ApiClient';
-import { MonthlyStat, SimpleStat } from './ReportStats';
+import { CountByDate, SimpleStat } from './Stats';
 export declare class PublicStatsClient {
     private client;
     constructor(client: ApiClientApi);
     readonly getReportCount: () => Promise<any>;
-    readonly getMonthlyReportCount: () => Promise<MonthlyStat[]>;
+    readonly getMonthlyReportCount: () => Promise<CountByDate[]>;
     readonly getReportForwardedToProPercentage: () => Promise<SimpleStat>;
     readonly getReportReadByProPercentage: () => Promise<SimpleStat>;
-    readonly getMonthlyReportForwardedToProPercentage: () => Promise<MonthlyStat[]>;
-    readonly getMonthlyReportReadByProPercentage: () => Promise<MonthlyStat[]>;
+    readonly getMonthlyReportForwardedToProPercentage: () => Promise<CountByDate[]>;
+    readonly getMonthlyReportReadByProPercentage: () => Promise<CountByDate[]>;
     readonly getReportWithResponsePercentage: () => Promise<SimpleStat>;
-    readonly getMonthlyReportWithResponsePercentage: () => Promise<MonthlyStat[]>;
+    readonly getMonthlyReportWithResponsePercentage: () => Promise<CountByDate[]>;
     readonly getReportWithWebsitePercentage: () => Promise<SimpleStat>;
 }
