@@ -7,7 +7,7 @@ export class PublicStatsClient {
   }
 
   readonly getReportCount = () => {
-    return this.client.get(`/stats/reports/count`)
+    return this.client.get<SimpleStat>(`/stats/reports/count`)
   }
 
   readonly getMonthlyReportCount = () => {
