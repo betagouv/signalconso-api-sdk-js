@@ -5,7 +5,7 @@ export interface SimpleStat {
   value: string | number
 }
 
-export type Period = 'day' | 'month'
+export type Period = 'Day' | 'Month'
 
 export interface CountByDate {
   date: Date

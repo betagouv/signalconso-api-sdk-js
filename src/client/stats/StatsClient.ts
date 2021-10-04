@@ -27,22 +27,4 @@ export class StatsClient {
     return this.client.get<{value: number | undefined}>(`/stats/reports/delay/responsed`, {qs: {companyId}})
       .then(_ => _.value ? duration(_.value, 'hour') : undefined)
   }
-
-  readonly getReportsCountCurve = (companyId: Id, period: Period): Promise<CountByDate[]> => {
-    const endpoint = fnSwitch(period, {
-      'day': `/stats/reports/daily/count`,
-    }, () => `/stats/reports/monthly/count`)
-    return this.client.get(endpoint, {qs: {companyId}}).then(this.mapReportsCountByDate)
-  }
-
-  readonly getReportsRespondedCountCurve = (companyId: Id, period: Period): Promise<CountByDate[]> => {
-    const endpoint = fnSwitch(period, {
-      'day': `/stats/reports/daily/count-responded`,
-    }, () => `/stats/reports/monthly/count-responded`)
-    return this.client.get(endpoint, {qs: {companyId}}).then(this.mapReportsCountByDate)
-  }
-
-  private readonly mapReportsCountByDate = (data: CountByDate[]): CountByDate[] => {
-    return data.map(_ => ({..._, date: new Date(_.date)}))
-  }
 }
