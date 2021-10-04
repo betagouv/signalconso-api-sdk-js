@@ -7,7 +7,7 @@ export interface WebsiteURL {
 }
 
 export interface DraftCompany {
-  siret: string
+  siret?: string
   name?: string
   brand?: string
   address?: Address

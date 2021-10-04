@@ -1,4 +1,4 @@
-import {ApiClientApi} from '../..'
+import {ApiClientApi, Country} from '../..'
 import {CompanySearchResult} from './Company'
 
 export class PublicCompanyClient {
@@ -21,4 +21,8 @@ export class PublicCompanyClient {
   readonly searchCompaniesByUrl = (url: string) => {
     return this.client.get<CompanySearchResult[]>(`/companies/search-url`, {qs: {url}})
   }
+
+  readonly searchForeignCompaniesByUrl = (url: string) => {
+    return this.client.get<Country[]>(`/websites/search-url`, { qs: { url } });
+  };
 }
