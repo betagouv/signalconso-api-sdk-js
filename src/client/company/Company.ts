@@ -52,13 +52,13 @@ export interface CompanyUpdate {
 
 export interface CompanySearchResult {
   siret: string
-  name: string
-  brand: string
-  isHeadOffice: string
+  name?: string
+  brand?: string
+  isHeadOffice: boolean
   address: Address
   activityCode: string
-  activityLabel: string
-  isMarketPlace: string
+  activityLabel?: string
+  isMarketPlace: boolean
 }
 
 export interface CompanySearch extends PaginatedSearch<any> {
