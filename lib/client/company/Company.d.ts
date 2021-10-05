@@ -43,7 +43,7 @@ export interface CompanySearchResult {
     name: string;
     brand: string;
     isHeadOffice: string;
-    address: string;
+    address: Address;
     activityCode: string;
     activityLabel: string;
     isMarketPlace: string;
