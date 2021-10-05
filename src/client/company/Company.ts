@@ -7,7 +7,7 @@ export interface WebsiteURL {
 }
 
 export interface DraftCompany {
-  siret: string
+  siret?: string
   name?: string
   brand?: string
   address?: Address
@@ -50,12 +50,15 @@ export interface CompanyUpdate {
   activationDocumentRequired: boolean
 }
 
-export interface CompanySearchResult extends DraftCompany {
-  highlight: string
+export interface CompanySearchResult {
+  siret: string
+  name: string
+  brand: string
+  isHeadOffice: string
+  address: string
   activityCode: string
   activityLabel: string
-  isHeadOffice: boolean
-  kind?: WebsiteKind
+  isMarketPlace: string
 }
 
 export interface CompanySearch extends PaginatedSearch<any> {

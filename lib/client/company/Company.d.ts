@@ -1,5 +1,4 @@
 import { Id, PaginatedSearch } from '../../model';
-import { WebsiteKind } from '../..';
 import { Address } from '../../model/Address';
 export interface WebsiteURL {
     url: string;
@@ -39,12 +38,15 @@ export interface CompanyUpdate {
     address: Address;
     activationDocumentRequired: boolean;
 }
-export interface CompanySearchResult extends DraftCompany {
-    highlight: string;
+export interface CompanySearchResult {
+    siret: string;
+    name: string;
+    brand: string;
+    isHeadOffice: string;
+    address: string;
     activityCode: string;
     activityLabel: string;
-    isHeadOffice: boolean;
-    kind?: WebsiteKind;
+    isMarketPlace: string;
 }
 export interface CompanySearch extends PaginatedSearch<any> {
     readonly departments?: string[];
