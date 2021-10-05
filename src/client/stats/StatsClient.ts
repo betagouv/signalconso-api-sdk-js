@@ -8,15 +8,15 @@ export class StatsClient {
   }
 
   readonly getTags = (companyId: Id) => {
-    return this.client.get<ReportTagsDistribution>(`/stats/tags`, {qs: {companyId}})
+    return this.client.get<ReportTagsDistribution>(`/stats/reports/tags`, {qs: {companyId}})
   }
 
   readonly getStatus = (companyId: Id) => {
-    return this.client.get<ReportStatusDistribution>(`/stats/status`, {qs: {companyId}})
+    return this.client.get<ReportStatusDistribution>(`/stats/reports/status`, {qs: {companyId}})
   }
 
   readonly getResponseReviews = (companyId: Id) => {
-    return this.client.get<ReportResponseReviews>(`/stats/reviews`, {qs: {companyId}})
+    return this.client.get<ReportResponseReviews>(`/stats/reports/reviews`, {qs: {companyId}})
   }
 
   readonly getReadDelay = (companyId: Id): Promise<Duration | undefined> => {
