@@ -16,7 +16,7 @@ export declare class SignalConsoSecuredSdk {
     readonly constant: ConstantClient;
     readonly subscription: SubscriptionClient;
     readonly company: CompanyClient;
-    readonly companyStats: StatsClient;
+    readonly stats: StatsClient;
     readonly companyAccess: CompanyAccessClient;
     readonly companyAccessToken: CompanyAccessTokenClient;
     readonly reports: ReportsClient;

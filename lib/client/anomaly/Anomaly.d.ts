@@ -11,6 +11,7 @@ export interface Anomaly extends Category {
     description?: string;
     rank?: number;
     sprite?: string;
+    cssClass?: string;
     hidden?: boolean;
     information?: Information;
     breadcrumbTitle?: string;
