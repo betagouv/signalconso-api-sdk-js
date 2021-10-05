@@ -7,7 +7,7 @@ import {
   WebsiteKind,
   WebsiteUpdateCompany,
   WebsiteWithCompany,
-  WebsiteWithCompanySearch,
+  WebsiteWithCompanySearch, Country,
 } from '../../model'
 import {ApiClientApi, dateToApi} from '../..'
 import {ApiSdkLogger} from '../../helper/Logger'
@@ -79,13 +79,18 @@ export class WebsiteClient {
     return this.client.get<void>(`/websites/unregistered/extract`, {qs: hostReportFilter2QueryString(filters)})
   }
 
-  readonly update = (id: Id, website: Partial<Website>): Promise<WebsiteWithCompany> => {
-    return this.client.put<WebsiteWithCompany>(`/websites/${id}`, {body: website})
+  readonly updateStatus = (id: Id, kind: WebsiteKind): Promise<WebsiteWithCompany> => {
+    return this.client.put<WebsiteWithCompany>(`/websites/${id}`, {qs: {kind: kind}})
   }
 
   readonly updateCompany = (id: Id, website: WebsiteUpdateCompany): Promise<WebsiteWithCompany> => {
     return this.client.put<WebsiteWithCompany>(`/websites/${id}/company`, {body: website})
   }
+
+  readonly updateCountry = (id: Id, country: Country): Promise<WebsiteWithCompany> => {
+    return this.client.put<WebsiteWithCompany>(`/websites/${id}/country`, {qs: {companyCountry: country.name}})
+  }
+
 
   readonly remove = (id: Id): Promise<void> => {
     return this.client.delete<void>(`/websites/${id}`)
