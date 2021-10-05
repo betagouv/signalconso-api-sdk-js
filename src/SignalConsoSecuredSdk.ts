@@ -17,7 +17,7 @@ export class SignalConsoSecuredSdk {
   readonly constant = new ConstantClient(this.client)
   readonly subscription = new SubscriptionClient(this.client)
   readonly company = new CompanyClient(this.client)
-  readonly companyStats = new StatsClient(this.client)
+  readonly stats = new StatsClient(this.client)
   readonly companyAccess = new CompanyAccessClient(this.client)
   readonly companyAccessToken = new CompanyAccessTokenClient(this.client)
   readonly reports = new ReportsClient(this.client)

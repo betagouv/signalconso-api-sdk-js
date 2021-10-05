@@ -11,7 +11,7 @@ export interface CurveStatsParams extends StatsParams {
 }
 
 export interface CurveStatsParamsWithPeriod extends CurveStatsParams {
-  period: Period
+  tickDuration?: Period
 }
 
 export class PublicStatsClient {
@@ -57,22 +57,27 @@ class PublicStatsCurveClient {
   constructor(private client: ApiClientApi, private baseURL: string) {
   }
 
-  readonly getReportCount = (companyId: Id, period: Period): Promise<CountByDate[]> => {
-    return this.client.get(`${this.baseURL}/count`, {qs: {companyId, period}})
+  readonly getReportCount = (params: CurveStatsParamsWithPeriod): Promise<CountByDate[]> => {
+    return this.client.get(`${this.baseURL}/count`, {qs: params})
       .then(PublicStatsCurveClient.mapReportsCountByDate)
   }
 
-  readonly getReportWithResponsePercentage = (params: CurveStatsParams) => {
+  readonly getReportRespondedCount = (params: CurveStatsParamsWithPeriod) => {
     return this.client.get<CountByDate[]>(`${this.baseURL}/count-responded`, {qs: params})
       .then(PublicStatsCurveClient.mapReportsCountByDate)
   }
 
-  readonly getReportForwardedToProPercentage = (params: CurveStatsParams) => {
+  readonly getReportForwardedPercentage = (params: CurveStatsParamsWithPeriod) => {
     return this.client.get<CountByDate[]>(`${this.baseURL}/forwarded-percentage`, {qs: params})
       .then(PublicStatsCurveClient.mapReportsCountByDate)
   }
 
-  readonly getReportReadByProPercentage = (params: CurveStatsParams) => {
+  readonly getReportRespondedPercentage = (params: CurveStatsParamsWithPeriod) => {
+    return this.client.get<CountByDate[]>(`${this.baseURL}/responded-percentage`, {qs: params})
+      .then(PublicStatsCurveClient.mapReportsCountByDate)
+  }
+
+  readonly getReportReadPercentage = (params: CurveStatsParamsWithPeriod) => {
     return this.client.get<CountByDate[]>(`${this.baseURL}/read-percentage`, {qs: params})
       .then(PublicStatsCurveClient.mapReportsCountByDate)
   }

@@ -1,7 +1,7 @@
 import {ApiClientApi} from '../../index'
 import {Id} from '../../model'
-import {CountByDate, Period, ReportResponseReviews, ReportStatusDistribution, ReportTagsDistribution} from './Stats'
-import {duration, Duration, fnSwitch} from '@alexandreannic/ts-utils/lib/common'
+import {ReportResponseReviews, ReportStatusDistribution, ReportTagsDistribution} from './Stats'
+import {duration, Duration} from '@alexandreannic/ts-utils/lib/common'
 
 export class StatsClient {
   constructor(private client: ApiClientApi) {
@@ -10,6 +10,7 @@ export class StatsClient {
   readonly getTags = (companyId: Id) => {
     return this.client.get<ReportTagsDistribution>(`/stats/tags`, {qs: {companyId}})
   }
+
   readonly getStatus = (companyId: Id) => {
     return this.client.get<ReportStatusDistribution>(`/stats/status`, {qs: {companyId}})
   }
