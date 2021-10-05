@@ -3,7 +3,7 @@ import { Index } from '../../helper/Utils';
 export interface SimpleStat {
     value: string | number;
 }
-export declare type Period = 'day' | 'month';
+export declare type Period = 'Day' | 'Month';
 export interface CountByDate {
     date: Date;
     count: number;

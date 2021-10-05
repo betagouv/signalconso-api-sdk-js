@@ -1,5 +1,5 @@
 import { ApiClientApi } from '../../core/ApiClient';
-import { CountByDate, SimpleStat } from './Stats';
+import { CountByDate, Period, SimpleStat } from './Stats';
 import { Id } from '../../model';
 export interface StatsParams {
     companyId?: Id;
@@ -7,16 +7,35 @@ export interface StatsParams {
 export interface CurveStatsParams extends StatsParams {
     ticks?: number;
 }
+export interface CurveStatsParamsWithPeriod extends CurveStatsParams {
+    tickDuration?: Period;
+}
 export declare class PublicStatsClient {
     private client;
     constructor(client: ApiClientApi);
+    private readonly baseURL;
     readonly getReportCount: (params: StatsParams) => Promise<SimpleStat>;
-    readonly getReportForwardedToProPercentage: (params: StatsParams) => Promise<SimpleStat>;
-    readonly getReportReadByProPercentage: (params: StatsParams) => Promise<SimpleStat>;
-    readonly getReportWithResponsePercentage: (params: StatsParams) => Promise<SimpleStat>;
-    readonly getReportWithWebsitePercentage: (params: StatsParams) => Promise<SimpleStat>;
-    readonly getMonthlyReportCount: (params: CurveStatsParams) => Promise<CountByDate[]>;
-    readonly getMonthlyReportWithResponsePercentage: (params: CurveStatsParams) => Promise<CountByDate[]>;
-    readonly getMonthlyReportForwardedToProPercentage: (params: CurveStatsParams) => Promise<CountByDate[]>;
-    readonly getMonthlyReportReadByProPercentage: (params: CurveStatsParams) => Promise<CountByDate[]>;
+    readonly curve: PublicStatsCurveClient;
+    readonly percentage: PublicStatsPercentageClient;
 }
+declare class PublicStatsPercentageClient {
+    private client;
+    private baseURL;
+    constructor(client: ApiClientApi, baseURL: string);
+    readonly getReportForwardedToPro: (params: StatsParams) => Promise<SimpleStat>;
+    readonly getReportReadByPro: (params: StatsParams) => Promise<SimpleStat>;
+    readonly getReportWithResponse: (params: StatsParams) => Promise<SimpleStat>;
+    readonly getReportWithWebsite: (params: StatsParams) => Promise<SimpleStat>;
+}
+declare class PublicStatsCurveClient {
+    private client;
+    private baseURL;
+    constructor(client: ApiClientApi, baseURL: string);
+    readonly getReportCount: (params: CurveStatsParamsWithPeriod) => Promise<CountByDate[]>;
+    readonly getReportRespondedCount: (params: CurveStatsParamsWithPeriod) => Promise<CountByDate[]>;
+    readonly getReportForwardedPercentage: (params: CurveStatsParamsWithPeriod) => Promise<CountByDate[]>;
+    readonly getReportRespondedPercentage: (params: CurveStatsParamsWithPeriod) => Promise<CountByDate[]>;
+    readonly getReportReadPercentage: (params: CurveStatsParamsWithPeriod) => Promise<CountByDate[]>;
+    private static readonly mapReportsCountByDate;
+}
+export {};
