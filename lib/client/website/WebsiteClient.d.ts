@@ -1,4 +1,4 @@
-import { ApiHostWithReportCount, Paginate, HostReportCountSearch, Id, PaginatedData, Website, WebsiteUpdateCompany, WebsiteWithCompany, WebsiteWithCompanySearch } from '../../model';
+import { ApiHostWithReportCount, Paginate, HostReportCountSearch, Id, PaginatedData, WebsiteKind, WebsiteUpdateCompany, WebsiteWithCompany, WebsiteWithCompanySearch, Country } from '../../model';
 import { ApiClientApi } from '../..';
 export interface HostReportCountQueryString {
     q?: string;
@@ -15,8 +15,9 @@ export declare class WebsiteClient {
     }>;
     readonly listUnregistered: (filters: HostReportCountSearch) => Promise<Paginate<ApiHostWithReportCount>>;
     readonly extractUnregistered: (filters: HostReportCountSearch) => Promise<void>;
-    readonly update: (id: Id, website: Partial<Website>) => Promise<WebsiteWithCompany>;
+    readonly updateStatus: (id: Id, kind: WebsiteKind) => Promise<WebsiteWithCompany>;
     readonly updateCompany: (id: Id, website: WebsiteUpdateCompany) => Promise<WebsiteWithCompany>;
+    readonly updateCountry: (id: Id, country: Country) => Promise<WebsiteWithCompany>;
     readonly remove: (id: Id) => Promise<void>;
     readonly search: () => Promise<any>;
 }
