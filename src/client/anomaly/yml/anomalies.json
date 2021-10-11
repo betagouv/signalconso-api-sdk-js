@@ -32604,7 +32604,7 @@
       "categoryId": "INTERNET",
       "path": "internet",
       "description": "réseaux sociaux, phishing, escroquerie par email, contenu d'un site web inapproprié...",
-      "rank": 18,
+      "rank": 16,
       "sprite": "category-ecommerce",
       "subcategories": [
         {
@@ -45293,7 +45293,11 @@
               "subcategoriesTitle": "Quel est le type de produit ?",
               "subcategories": [
                 {
-                  "title": "Un médicament et vaccin"
+                  "title": "Un médicament et vaccin",
+                  "information": {
+                    "title": "Les effets secondaires et autres réactions avec des médicaments doivent être signalés au ministère de la Santé.",
+                    "content": "<br>Merci de remplir le formulaire dédié à ce type de problème sur le site <a href=\"https://signalement.social-sante.gouv.fr/psig_ihm_utilisateurs/index.html#/accueil\" target=\"_blank\">signalement.social-sante.gouv.fr</a>"
+                  }
                 },
                 {
                   "title": "Un objet de santé courant",
@@ -48327,6 +48331,123 @@
         "title": "Vous souhaitez signaler un cas de travail au noir ?",
         "content": "Pour signaler du travail dissimulé (travail au noir), vous pouvez&nbsp;:&nbsp; <ul> <li>envoyer un email à cette adresse&nbsp;:&nbsp;<a href=\"mailto:fraude.npdc@urssaf.fr\">fraude.npdc@urssaf.fr</a></li> <li>écrire  à l’inspection du travail en contactant la <a href=\"http://direccte.gouv.fr/\" target=\"_blank\">DIRECCTE</a> de la région concernée</li> <li>écrire à la brigade de contrôle et de recherche des impôts</li> <li>écrire à la police/gendarmerie</li> </ul> La DGCCRF (répression des fraudes) ne s’occupe pas des cas de travail au noir."
       }
+    },
+    {
+      "category": "Démarchage abusif",
+      "categoryId": "BTEL",
+      "path": "bloctel",
+      "description": "spams, appels indésirables malgré Bloctel",
+      "rank": 17,
+      "cssClass": "image-bloctel",
+      "subcategories": [
+        {
+          "title": "Je reçois des appels indésirables alors que je suis inscrit sur Bloctel",
+          "companyKind": "PHONE",
+          "subcategories": [
+            {
+              "title": "L’appel concerne mon entreprise",
+              "information": {
+                "content": "Nous ne doutons pas que vous ayez réellement rencontré un problème mais si vous avez reçu un appel en lien avec votre entreprise, il ne s’agit pas d’un démarchage abusif. <br/><br/>BlocTel est un outil réservé aux consommateurs. Les professionnels ne peuvent pas utiliser la plateforme pour lutter contre le démarchage abusif."
+              }
+            },
+            {
+              "title": "Je suis client de l’entreprise ou j’ai demandé à être rappelé",
+              "example": "Exemple : j’ai un contrat avec l’entreprise, j’ai demandé un devis ...",
+              "information": {
+                "content": "Nous ne doutons pas que vous ayez réellement rencontré un problème mais si vous avez un contrat avec l’entreprise ou que vous avez laissé vos coordonnées pour être rappelé, il ne s’agit pas d’un démarchage abusif. L’entreprise peut vous contacter."
+              }
+            },
+            {
+              "title": "L’appel a pour but de me vendre des journaux",
+              "information": {
+                "content": "Nous ne doutons pas que vous ayez réellement rencontré un problème mais la vente de journaux, de magazines, de périodiques fait partie des exceptions, il ne s’agit pas d’un démarchage abusif. Même si vous êtes inscrits sur BlocTel, l’entreprise est autorisée à vous joindre."
+              }
+            },
+            {
+              "title": "L’appel concerne un sondage",
+              "information": {
+                "content": "Nous ne doutons pas que vous ayez réellement rencontré un problème mais si l’appel concerne un sondage et que l’entreprise n’a pas cherché à vous vendre un objet ou un service, que vous n’avez pas donné vos coordonnées bancaires ou que vous n’avez pas reçu de message de confirmation de commande d’un produit ou d’un service, il ne s’agit pas d’un démarchage abusif. Cela ressemble à un véritable sondage pour simplement connaître votre avis, ce n’est pas du démarchage commercial. <br/><br/>Toutefois, si l’entreprise a essayé de vous vendre un objet ou un service ou que vous avez donné vos coordonnées bancaires, cela correspond à du démarchage commercial. Vous devez revenir en arrière et aller sur « L’entreprise veut me vendre un objet ou un service et je ne suis pas client chez eux. »"
+              }
+            },
+            {
+              "title": "L’entreprise veut me vendre un objet ou un service alors que je ne suis pas client chez eux",
+              "tags": [
+                "Bloctel",
+                "Démarchage téléphonique"
+              ],
+              "detailInputs": [
+                {
+                  "label": "Date de l'appel",
+                  "rank": 1,
+                  "type": "DATE",
+                  "defaultValue": "SYSDATE"
+                },
+                {
+                  "label": "Heure de l'appel",
+                  "rank": 2,
+                  "type": "TIMESLOT"
+                },
+                {
+                  "label": "Votre numéro de téléphone",
+                  "rank": 3,
+                  "type": "TEXT"
+                },
+                {
+                  "label": "Votre numéro d'inscription bloctel ( recommandé )",
+                  "rank": 4,
+                  "type": "TEXT",
+                  "optionnal": true
+                },
+                {
+                  "label": "L'appel concernait",
+                  "rank": 5,
+                  "type": "RADIO",
+                  "options": [
+                    "Banque / Assurance / Mutuelle",
+                    "Secteur de la santé",
+                    "Immobilier",
+                    "Téléphonie / Fournisseur d'accès internet / médias",
+                    "Voyage / Loisirs",
+                    "Services aux particuliers",
+                    "Voiture / Véhicule / Vélo",
+                    "Eau / Gaz / Electricité",
+                    "Travaux / Rénovation",
+                    "Produits alimentaires, boissons,",
+                    "Jeux, voyance",
+                    "Spectacles, culture, loisirs",
+                    "Équipement pour personne (mode, textiles, chaussures, ...)",
+                    "Équipement pour maison (ameublement, électroménager, ...)",
+                    "Autre"
+                  ]
+                },
+                {
+                  "label": "Le vendeur s'est fait passer pour:",
+                  "rank": 6,
+                  "type": "RADIO",
+                  "options": [
+                    "Administration",
+                    "Formation professionnelle",
+                    "Autre."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "J’ai répondu à un SMS ou j’ai rappelé un numéro qui était payant sans le savoir",
+          "companyKind": "PHONE",
+          "information": {
+            "content": "Vous devez rentrer le numéro en question et la date sur le site <a href=\"https://a.surmafacture.fr\" target=\"_blank\" /> surmafacture.fr </a> <br> La répression des fraudes aura accès à votre signalement directement avec le site surmafacture.fr",
+            "actions": [
+              {
+                "question": "Comment bloquer ces numéros payants&#160;?",
+                "answer": "Votre opérateur téléphonique doit vous proposer une option gratuite de blocage des numéros payants appelés \"surtaxés\". <br> Vous pouvez activer cette option dans votre espace client ou auprès d'un conseiller. <br> Cette option ne bloque pas la totalité des numéros surtaxés. <br>Les numéros peu surtaxés (maximum 50 centimes l'appel) et les services de renseignements (numéro commençant par 118) ne sont pas compris dans ce blocage."
+              }
+            ]
+          }
+        }
+      ]
     }
   ]
 }
