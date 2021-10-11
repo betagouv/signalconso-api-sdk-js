@@ -1,4 +1,4 @@
-- title: Je reçois des appels indésirables alors que je suis sur Bloctel
+- title: Je reçois des appels indésirables alors que je suis inscrit sur Bloctel
   companyKind: PHONE
   subcategories:
     - title: L’appel concerne mon entreprise
@@ -19,6 +19,7 @@
     - title: L’entreprise veut me vendre un objet ou un service alors que je ne suis pas client chez eux
       tags:
         - Bloctel
+        - Démarchage téléphonique
       detailInputs: !!import/single ../common/inputs/bloctel.yml
 - title: J’ai répondu à un SMS ou j’ai rappelé un numéro qui était payant sans le savoir
   companyKind: PHONE
