@@ -24,7 +24,8 @@ export declare enum ReportTag {
     DemarchageADomicile = "D\u00E9marchage \u00E0 domicile",
     Ehpad = "Ehpad",
     DemarchageTelephonique = "D\u00E9marchage t\u00E9l\u00E9phonique",
-    AbsenceDeMediateur = "Absence de m\u00E9diateur"
+    AbsenceDeMediateur = "Absence de m\u00E9diateur",
+    Bloctel = "Bloctel"
 }
 export declare enum CompanyKinds {
     SIRET = "SIRET",
