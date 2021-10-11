@@ -28,6 +28,7 @@ export enum ReportTag {
   Ehpad = 'Ehpad',
   DemarchageTelephonique = 'Démarchage téléphonique',
   AbsenceDeMediateur = 'Absence de médiateur',
+  Bloctel = 'Bloctel',
 }
 
 export enum CompanyKinds {
