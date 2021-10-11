@@ -72,9 +72,16 @@ export class ApiClient {
           mapError ??
             ((_: any) => {
               if (_.response) {
-                return Promise.reject({code: _.response.status, message: _.response.data, error: _})
+                return Promise.reject({
+                  code: _.response.status,
+                  message: _.response.data.message ?? _.response.data,
+                  error: _
+                })
               }
-              return Promise.reject({code: 500, message: 'Something went wrong.', error: _})
+              return Promise.reject({
+                code: 500,
+                error: _
+              })
             }),
         )
     }
