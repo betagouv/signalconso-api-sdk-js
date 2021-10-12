@@ -1,11 +1,11 @@
 {
-  "name": "@betagouv/signalconso-api-sdk-js",
+  "name": "@signal-conso/signalconso-api-sdk-js",
   "version": "1.0.0",
   "description": "SignalConso API SDK for JavaScript/TypeScript",
   "main": "lib/index.js",
   "private": false,
   "scripts": {
-    "prepublish": "npm run build",
+    "prepublish": "npm run build && npm run generate-json",
     "build": "tsc --declaration",
     "generate-json": "node src/client/anomaly/script/generate-json-files.js"
   },
