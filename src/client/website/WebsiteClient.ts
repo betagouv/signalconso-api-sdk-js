@@ -1,5 +1,6 @@
 import {
-  ApiHostWithReportCount, Paginate,
+  ApiHostWithReportCount,
+  Paginate,
   HostReportCountSearch,
   Id,
   PaginatedData,
@@ -7,7 +8,8 @@ import {
   WebsiteKind,
   WebsiteUpdateCompany,
   WebsiteWithCompany,
-  WebsiteWithCompanySearch, Country,
+  WebsiteWithCompanySearch,
+  Country,
 } from '../../model'
 import {ApiClientApi, dateToApi} from '../..'
 import {ApiSdkLogger} from '../../helper/Logger'
@@ -90,7 +92,6 @@ export class WebsiteClient {
   readonly updateCountry = (id: Id, country: Country): Promise<WebsiteWithCompany> => {
     return this.client.put<WebsiteWithCompany>(`/websites/${id}/country`, {qs: {companyCountry: country.name}})
   }
-
 
   readonly remove = (id: Id): Promise<void> => {
     return this.client.delete<void>(`/websites/${id}`)

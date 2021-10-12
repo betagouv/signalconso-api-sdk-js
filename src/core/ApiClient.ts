@@ -75,12 +75,12 @@ export class ApiClient {
                 return Promise.reject({
                   code: _.response.status,
                   message: _.response.data.message ?? _.response.data,
-                  error: _
+                  error: _,
                 })
               }
               return Promise.reject({
                 code: 500,
-                error: _
+                error: _,
               })
             }),
         )

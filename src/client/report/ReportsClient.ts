@@ -1,4 +1,16 @@
-import {ApiClientApi, cleanObject, CompanySearchResult, dateToApi, directDownloadBlob, Event, Id, Report, ReportAction, ReportResponse, ReportSearchResult,} from '../..'
+import {
+  ApiClientApi,
+  cleanObject,
+  CompanySearchResult,
+  dateToApi,
+  directDownloadBlob,
+  Event,
+  Id,
+  Report,
+  ReportAction,
+  ReportResponse,
+  ReportSearchResult,
+} from '../..'
 import {PaginatedData, ReportSearch} from '../../model'
 import {pipe} from 'rxjs'
 import {ApiSdkLogger} from '../../helper/Logger'
@@ -107,10 +119,8 @@ export class ReportsClient {
     return this.client.delete<void>(`reports/${id}`)
   }
 
-  readonly getById = (id: Id) : Promise<ReportSearchResult> => {
-    return this.client
-      .get(`/reports/${id}`)
-      .then(_ => ({files: _.files, report: ReportsClient.mapReport(_.report)}))
+  readonly getById = (id: Id): Promise<ReportSearchResult> => {
+    return this.client.get(`/reports/${id}`).then(_ => ({files: _.files, report: ReportsClient.mapReport(_.report)}))
   }
 
   readonly postResponse = (id: Id, response: ReportResponse) => {
@@ -150,15 +160,14 @@ export class ReportsClient {
     })
   }
 
-    static readonly mapReport = (report: { [key in keyof Report]: any }): Report => ({
-        ...report,
-        companyAddress: ReportsClient.mapAddress(report.companyAddress),
-        creationDate: new Date(report.creationDate),
-    })
+  static readonly mapReport = (report: {[key in keyof Report]: any}): Report => ({
+    ...report,
+    companyAddress: ReportsClient.mapAddress(report.companyAddress),
+    creationDate: new Date(report.creationDate),
+  })
 
-    static readonly mapAddress = (address: { [key in keyof Address]: any | undefined}): Address => ({
-        ...address,
-        country: address.country?.name,
-    })
-
+  static readonly mapAddress = (address: {[key in keyof Address]: any | undefined}): Address => ({
+    ...address,
+    country: address.country?.name,
+  })
 }

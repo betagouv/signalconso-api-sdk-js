@@ -23,6 +23,6 @@ export class PublicCompanyClient {
   }
 
   readonly searchForeignCompaniesByUrl = (url: string) => {
-    return this.client.get<Country[]>(`/websites/search-url`, { qs: { url } });
-  };
+    return this.client.get<Country[]>(`/websites/search-url`, {qs: {url}})
+  }
 }

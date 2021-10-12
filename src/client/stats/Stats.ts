@@ -12,7 +12,7 @@ export interface CountByDate {
   count: number
 }
 
-export type ReportStatusDistribution = { [key in ReportStatus]: number }
+export type ReportStatusDistribution = {[key in ReportStatus]: number}
 
 export type ReportTagsDistribution = Index<number>
 

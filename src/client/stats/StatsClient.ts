@@ -4,8 +4,7 @@ import {ReportResponseReviews, ReportStatusDistribution, ReportTagsDistribution}
 import {duration, Duration} from '@alexandreannic/ts-utils/lib/common'
 
 export class StatsClient {
-  constructor(private client: ApiClientApi) {
-  }
+  constructor(private client: ApiClientApi) {}
 
   readonly getTags = (companyId: Id) => {
     return this.client.get<ReportTagsDistribution>(`/stats/reports/tags`, {qs: {companyId}})
@@ -20,12 +19,14 @@ export class StatsClient {
   }
 
   readonly getReadDelay = (companyId: Id): Promise<Duration | undefined> => {
-    return this.client.get<{value: number | undefined}>(`/stats/reports/delay/read`, {qs: {companyId}})
-      .then(_ => _.value ? duration(_.value, 'hour') : undefined)
+    return this.client
+      .get<{value: number | undefined}>(`/stats/reports/delay/read`, {qs: {companyId}})
+      .then(_ => (_.value ? duration(_.value, 'hour') : undefined))
   }
 
   readonly getResponseDelay = (companyId: Id): Promise<Duration | undefined> => {
-    return this.client.get<{value: number | undefined}>(`/stats/reports/delay/responsed`, {qs: {companyId}})
-      .then(_ => _.value ? duration(_.value, 'hour') : undefined)
+    return this.client
+      .get<{value: number | undefined}>(`/stats/reports/delay/responsed`, {qs: {companyId}})
+      .then(_ => (_.value ? duration(_.value, 'hour') : undefined))
   }
 }

@@ -1,4 +1,5 @@
-content: Vous devez rentrer le numéro en question et la date sur le site <a href="https://a.surmafacture.fr" target="_blank" /> surmafacture.fr </a>
+content:
+  Vous devez rentrer le numéro en question et la date sur le site <a href="https://a.surmafacture.fr" target="_blank" /> surmafacture.fr </a>
   <br> La répression des fraudes aura accès à votre signalement directement avec le site surmafacture.fr
 actions:
   - question: Comment bloquer ces numéros payants&#160;?
