@@ -8,7 +8,7 @@
 - label: Votre numéro de téléphone
   rank: 3
   type: TEXT
-- label: Votre numéro d'inscription bloctel ( recommandé )
+- label: Votre numéro d'inscription bloctel (recommandé)
   rank: 4
   type: TEXT
   optionnal: true
