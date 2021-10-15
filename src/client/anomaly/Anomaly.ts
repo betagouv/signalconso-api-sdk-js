@@ -1,4 +1,5 @@
 export interface SubcategoryBase extends Category {
+  id: string
   title: string
   description?: string
   tags?: ReportTag[]
