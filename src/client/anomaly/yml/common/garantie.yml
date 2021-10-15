@@ -1,5 +1,8 @@
 - title: Il présente un défaut ou il ne marche plus
   subcategoriesTitle: Avez-vous acheté ce produit neuf ou d'occasion&#160;?
+  reponseconsoCode:
+    - 464
+    - 465
   subcategories:
     - title: Neuf
       subcategoriesTitle: Quand avez-vous acheté le produit&#160;?
@@ -148,6 +151,8 @@
   subcategories:
     - title: Oui
       description: Le commerçant doit respecter les conditions d’échange et de remboursement qui sont affichées dans son commerce ou dans votre contrat.
+      reponseconsoCode:
+        - 210
     - title: Non
       information:
         title: Vous ne pouvez pas exiger le remboursement, l'échange ou l'annulation gratuite de votre contrat.

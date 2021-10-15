@@ -1,19 +1,34 @@
 - title: Alimentation / Matériel pour animaux
   example: 'Exemple : jouet, cage, laisse, croquettes'
+  reponseconsoCode:
+    - 332
+    - 617
   tags:
     - Litige contractuel
 - title: Soins
   example: 'Exemple : vétérinaire, toiletteur'
+  reponseconsoCode:
+    - 212
+    - 213
   tags:
     - Litige contractuel
 - title: Garde d'animaux
   example: "Exemple : pension, site internet de garde d'animaux"
+  reponseconsoCode:
+  - 212
+  - 213
   tags:
     - Litige contractuel
 - title: Vendeur d'animaux
+  reponseconsoCode:
+    - 210
+    - 271
   tags:
     - ReponseConso
     - Litige contractuel
 - title: Autre
+  reponseconsoCode:
+    - 333
+    - 210
   tags:
     - Litige contractuel

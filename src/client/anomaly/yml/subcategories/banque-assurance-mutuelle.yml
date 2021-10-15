@@ -6,8 +6,14 @@
   subcategories:
     - title: Frais bancaires
       example: 'Exemple : prix non affiché, augmentation des frais bancaires sans prévenir'
+      reponseconsoCode:
+        - 164
+        - 645
     - title: Contrat
       example: 'Exemple : contrat de crédit non conforme'
+      reponseconsoCode:
+        - 411
+        - 416
     - title: Publicité
       example: 'Exemple : publicité pour un crédit non conforme, démarchage téléphonique'
       tags:
@@ -15,6 +21,9 @@
       subcategories:
         - title: Démarchage téléphonique
           companyKind: PHONE
+          reponseconsoCode:
+            - 221
+            - 2210
           tags:
             - Démarchage téléphonique
           detailInputs:
@@ -37,15 +46,26 @@
           companyKind: SIRET
     - title: Service client
       example: 'Exemple : service client injoignable'
+      reponseconsoCode:
+        - 466
+        - 467
     - title: Autre
+      reponseconsoCode:
+        - 643
+        - 641
 - title: Assurance / mutuelle
   tags:
     - ReponseConso
   subcategories:
     - title: Contrat
       example: 'Exemple : contrat non respecté, échéancier non reçu'
+      reponseconsoCode:
+        - 425
+        - 411
     - title: Remboursement / dédommagement
       example: 'Exemple : remboursement non reçu'
+      reponseconsoCode:
+        - 679
     - title: Publicité
       example: 'Exemple : publicité trompeuse, démarchage à domicile, démarchage téléphonique'
       tags:
@@ -53,6 +73,9 @@
       subcategories:
         - title: Démarchage à domicile
           companyKind: LOCATION
+          reponseconsoCode:
+            - 221
+            - 2210
           tags:
             - Démarchage à domicile
           detailInputs:
@@ -75,6 +98,9 @@
               defaultValue: SYSDATE
         - title: Démarchage téléphonique
           companyKind: PHONE
+          reponseconsoCode:
+            - 221
+            - 2210
           tags:
             - Démarchage téléphonique
           detailInputs:
@@ -93,13 +119,21 @@
               type: TEXTAREA
         - title: Problème avec un site internet
           companyKind: WEBSITE
+          reponseconsoCode:
+            - 679
         - title: Autre
+          reponseconsoCode:
+            - 679
           companyKind: SIRET
     - title: Service client
       example: 'Exemple : service client injoignable'
+      reponseconsoCode:
+        - 491
       tags:
         - Litige contractuel
     - title: Autre
+      reponseconsoCode:
+        - 679
       tags:
         - Litige contractuel
 - title: Assurance maladie (sécurité sociale)
