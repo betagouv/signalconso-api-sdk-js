@@ -3,6 +3,7 @@ export interface SubcategoryBase extends Category {
   description?: string
   tags?: ReportTag[]
   example?: string
+  reponseconsoCode?: string[]
 }
 
 export interface Anomaly extends Category {
@@ -44,7 +45,7 @@ export interface Category {
   id: string
   subcategoriesTitle?: string
   subcategories?: Subcategory[]
-  companyKind?: string
+  companyKind?: CompanyKinds
 }
 
 export interface SubcategoryInput extends SubcategoryBase {
@@ -96,3 +97,4 @@ export const formLabels = {
   reportingTimeslotLabel: 'Heure du constat',
   descriptionLabel: 'Description',
 }
+
