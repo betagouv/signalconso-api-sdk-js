@@ -10,20 +10,20 @@
       subcategories:
         - title: Prix / paiement
           reponseconsoCode:
-            - 451
-            - 623
+            - '451'
+            - '623'
           tags:
             - ReponseConso
         - title: Publicité / annonce
           reponseconsoCode:
-            - 210
-            - 411
+            - '210'
+            - '411'
           tags:
             - ReponseConso
           example: 'Exemple : caractéristiques du véhicule, équipements fournis'
         - title: Autre
           reponseconsoCode:
-            - 679
+            - '679'
           subcategories:
             - title: Personnel peu aimable
               information: !!import/single ../common/info/amabilite.yml
@@ -35,37 +35,37 @@
       subcategories:
         - title: Prix / paiement
           reponseconsoCode:
-            - 451
+            - '451'
           tags:
             - ReponseConso
         - title: Publicité
           reponseconsoCode:
-            - 210
-            - 411
+            - '210'
+            - '411'
           tags:
             - ReponseConso
         - title: Autre
           reponseconsoCode:
-            - 679
+            - '679'
     - title: Location longue durée (leasing, LDD, LOA...)
       tags:
         - Litige contractuel
       subcategories:
         - title: Prix / paiement
           reponseconsoCode:
-            - 451
-            - 212
+            - '451'
+            - '212'
           tags:
             - ReponseConso
         - title: Publicité
           reponseconsoCode:
-            - 210
-            - 411
+            - '210'
+            - '411'
           tags:
             - ReponseConso
         - title: Autre
           reponseconsoCode:
-            - 679
+            - '679'
     - title: Location de voiture entre particuliers
       subcategories:
         - title: Prix / paiement
@@ -75,14 +75,14 @@
       subcategories:
         - title: Prix / paiement
           reponseconsoCode:
-            - 451
-            - 623
+            - '451'
+            - '623'
         - title: Publicité
           reponseconsoCode:
-            - 210
+            - '210'
         - title: Autre
           reponseconsoCode:
-            - 679
+            - '679'
 - title: Réparation, révision, vente de véhicule
   example: 'Exemple : garagiste, dépanneur, contrôle technique'
   tags:
@@ -90,28 +90,28 @@
   subcategories:
     - title: Prix / paiement
       reponseconsoCode:
-        - 451
-        - 623
+        - '451'
+        - '623'
       tags:
         - ReponseConso
       example: 'Exemple : devis non détaillé, devis non respecté, délais'
     - title: Prestation mal réalisée ou pas réalisée
       reponseconsoCode:
-        - 446
-        - 271
+        - '446'
+        - '271'
       tags:
         - ReponseConso
       example: "Exemple : malfaçon, panne non réparée, pose d'un équipement endommagé, pièce d'origine douteuse"
     - title: Publicité mensongère
       reponseconsoCode:
-        - 210
-        - 271
+        - '210'
+        - '271'
       tags:
         - ReponseConso
     - title: Autre
       reponseconsoCode:
-        - 464
-        - 271
+        - '464'
+        - '271'
       subcategories:
         - title: Personnel peu aimable
           information: !!import/single ../common/info/amabilite.yml
@@ -121,20 +121,20 @@
   subcategories:
     - title: Prix / paiement
       reponseconsoCode:
-        - 451
-        - 623
+        - '451'
+        - '623'
       tags:
         - ReponseConso
       example: 'Exemple : prix non affiché, forfait obligatoire'
     - title: Publicité mensongère
       reponseconsoCode:
-        - 210
+        - '210'
       tags:
         - ReponseConso
       example: "Exemple : publicité trompeuse avec un nombre d'heures infaisable"
     - title: Autre
       reponseconsoCode:
-        - 214
+        - '214'
       example: 'Exemple : clause abusive dans le contrat, obligation de payer des heures régulièrement, heure de conduite qui ne dure pas une heure'
       subcategories:
         - title: Clause abusive dans le contrat
@@ -152,8 +152,8 @@
 - title: Produit dangereux
   example: 'Exemple : voiture, vélo, pneu'
   reponseconsoCode:
-    - 352
-    - 617
+    - '352'
+    - '617'
   tags:
     - Produit dangereux
   subcategories:
@@ -175,6 +175,6 @@
 - title: Autre
   example: 'Exemple : fourrière'
   reponseconsoCode:
-    - 679
+    - '679'
   tags:
     - ReponseConso

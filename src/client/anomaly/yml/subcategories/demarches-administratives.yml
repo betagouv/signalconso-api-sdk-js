@@ -1,15 +1,15 @@
 - title: Absence d'information sur le médiateur
   reponseconsoCode:
-    - 2201
-    - 411
-    - 492
+    - '2201'
+    - '411'
+    - '492'
   tags:
     - ReponseConso
     - Absence de médiateur
 - title: Courrier / entreprise qui se fait passer pour l'administration
   reponseconsoCode:
-    - 210
-    - 511
+    - '210'
+    - '511'
   tags:
     - ReponseConso
     - Litige contractuel
@@ -22,16 +22,16 @@
     - title: À une entreprise
       example: "Un site avec une Marianne ou un drapeau tricolore n'appartient pas forcément à l'Etat. Ces entreprises entretiennent une confusion pour tromper les consommateurs."
       reponseconsoCode:
-        - 210
-        - 511
+        - '210'
+        - '511'
       tags:
         - ReponseConso
         - Litige contractuel
 - title: Carte des numéros utiles de la mairie (numéro urgence serrurier, plombier...)
   reponseconsoCode:
-    - 210
-    - 2201
-    - 492
+    - '210'
+    - '2201'
+    - '492'
   tags:
     - ReponseConso
 - title: Autre
@@ -42,9 +42,9 @@
       information: !!import/single ../common/info/administration.yml
     - title: Une entreprise privée
       reponseconsoCode:
-        - 220
-        - 521
-        - 210
-        - 492
+        - '220'
+        - '521'
+        - '210'
+        - '492'
       tags:
         - Litige contractuel

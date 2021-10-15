@@ -3,7 +3,7 @@
   subcategories:
     - title: Les espèces sont systématiquement refusées
       reponseconsoCode:
-        - 454
+        - '454'
       description: 'Votre droit : les billets et les pièces en euros doivent être obligatoirement acceptés en France.'
     - title: Je n'avais pas la monnaie
       information:
@@ -21,7 +21,7 @@
         outOfScope: true
     - title: Autre raison
       reponseconsoCode:
-        - 454
+        - '454'
 - title: Je n'ai pas pu payer par carte bancaire ou par chèque
   subcategoriesTitle: Pour quelle raison a-t-on refusé que vous payez par carte bancaire ou par chèque&#160;?
   subcategories:
@@ -39,7 +39,7 @@
             outOfScope: true
         - title: Non
           reponseconsoCode:
-            - 454
+            - '454'
     - title: Les cartes bleues ou les chèques sont systématiquement refusés
       subcategoriesTitle: Le refus de la carte bleue ou des chèques est-il affiché&#160;?
       subcategories:
@@ -51,11 +51,11 @@
             outOfScope: true
         - title: Non
           reponseconsoCode:
-            - 454
+            - '454'
     - title: Autre raison
       example: 'Exemple : problème avec le terminal de paiement'
       reponseconsoCode:
-        - 454
+        - '454'
 - title: Autre problème pour payer
   reponseconsoCode:
-    - 454
+    - '454'

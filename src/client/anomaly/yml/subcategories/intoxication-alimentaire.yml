@@ -1,8 +1,8 @@
 - title: Sur place
   companyKind: SIRET
   reponseconsoCode:
-    - 321
-    - 324
+    - '321'
+    - '324'
   tags:
     - Produit dangereux
   detailInputs: !!import/single ../common/inputs/intoxication-alimentaire.yml
@@ -10,8 +10,8 @@
 - title: A emporter
   companyKind: LOCATION
   reponseconsoCode:
-    - 321
-    - 324
+    - '321'
+    - '324'
   tags:
     - Produit dangereux
   detailInputs: !!import/single ../common/inputs/intoxication-alimentaire.yml
@@ -19,8 +19,8 @@
 - title: En livraison
   companyKind: LOCATION
   reponseconsoCode:
-    - 321
-    - 324
+    - '321'
+    - '324'
   tags:
     - Produit dangereux
   detailInputs: !!import/single ../common/inputs/intoxication-alimentaire.yml
@@ -28,8 +28,8 @@
 - title: Un produit précis
   companyKind: LOCATION
   reponseconsoCode:
-    - 321
-    - 324
+    - '321'
+    - '324'
   tags:
     - Produit dangereux
   detailInputs: !!import/single ../common/inputs/intoxication-alimentaire.yml

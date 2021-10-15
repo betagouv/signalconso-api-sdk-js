@@ -109,8 +109,8 @@
               "title": "Sur place",
               "companyKind": "SIRET",
               "reponseconsoCode": [
-                321,
-                324
+                "321",
+                "324"
               ],
               "tags": [
                 "Produit dangereux"
@@ -166,8 +166,8 @@
               "title": "A emporter",
               "companyKind": "LOCATION",
               "reponseconsoCode": [
-                321,
-                324
+                "321",
+                "324"
               ],
               "tags": [
                 "Produit dangereux"
@@ -223,8 +223,8 @@
               "title": "En livraison",
               "companyKind": "LOCATION",
               "reponseconsoCode": [
-                321,
-                324
+                "321",
+                "324"
               ],
               "tags": [
                 "Produit dangereux"
@@ -280,8 +280,8 @@
               "title": "Un produit précis",
               "companyKind": "LOCATION",
               "reponseconsoCode": [
-                321,
-                324
+                "321",
+                "324"
               ],
               "tags": [
                 "Produit dangereux"
@@ -1118,8 +1118,8 @@
               "title": "Le site internet en lui-même",
               "example": "Exemple : publicité trompeuse, absence de mentions obligatoires, service client injoignable",
               "reponseconsoCode": [
-                210,
-                220
+                "210",
+                "220"
               ],
               "id": "1.2-1.1"
             },
@@ -1127,9 +1127,9 @@
               "title": "Une commande effectuée",
               "example": "Exemple : commande jamais livrée, produit non conforme",
               "reponseconsoCode": [
-                433,
-                464,
-                220
+                "433",
+                "464",
+                "220"
               ],
               "id": "1.2-1.2"
             },
@@ -8725,9 +8725,9 @@
                       "title": "Le prix à la caisse est différent du prix affiché",
                       "example": "Exemple : le prix à la caisse est de 5 euros alors que le prix affiché en rayon est de 3 euros",
                       "reponseconsoCode": [
-                        212,
-                        210,
-                        224
+                        "212",
+                        "210",
+                        "224"
                       ],
                       "description": "Votre droit : en cas de différence de prix, le vendeur doit vendre le produit au prix le plus faible pour le client.",
                       "detailInputs": [
@@ -8787,9 +8787,9 @@
                       "title": "Il manque des prix / les prix sont illisibles",
                       "description": "Votre droit : tous les prix doivent être affichés sans que vous soyez obligé de les demander.",
                       "reponseconsoCode": [
-                        212,
-                        210,
-                        224
+                        "212",
+                        "210",
+                        "224"
                       ],
                       "detailInputs": [
                         {
@@ -8830,9 +8830,9 @@
                       "title": "Fausse réduction de prix",
                       "example": "Exemple : fausse promotion pendant les soldes, fausse liquidation totale",
                       "reponseconsoCode": [
-                        224,
-                        210,
-                        212
+                        "224",
+                        "210",
+                        "212"
                       ],
                       "description": "<b>Soldes :</b> Les dates des soldes sont encadrées par la loi. Ces dates sont valables pour les magasins et aussi pour la vente sur internet. <br/><br/><b>Liquidation :</b> les liquidations sont soumises à déclaration préalable auprès du maire de la commune où a lieu cette opération. Un document prouvant cette déclaration doit être affichée dans le magasin, pendant toute la durée de la liquidation. Ce document est souvent affiché sur la vitrine car il doit être visible de la rue.",
                       "detailInputs": [
@@ -8875,8 +8875,8 @@
                     {
                       "title": "Hygiène des locaux et du matériel",
                       "reponseconsoCode": [
-                        312,
-                        321
+                        "312",
+                        "321"
                       ],
                       "detailInputs": [
                         {
@@ -8953,8 +8953,8 @@
                             {
                               "title": "Autre problème sur la tenue de travail",
                               "reponseconsoCode": [
-                                312,
-                                321
+                                "312",
+                                "321"
                               ],
                               "id": "1.2-2.1.2.2.1.2"
                             }
@@ -8964,15 +8964,15 @@
                         {
                           "title": "Tenue sale",
                           "reponseconsoCode": [
-                            312,
-                            321
+                            "312",
+                            "321"
                           ],
                           "id": "1.2-2.1.2.2.2"
                         },
                         {
                           "title": "Mauvaises pratiques d'hygiène",
                           "reponseconsoCode": [
-                            312
+                            "312"
                           ],
                           "example": "Exemple : personne qui fume dans un local de production",
                           "id": "1.2-2.1.2.2.3"
@@ -8981,7 +8981,7 @@
                           "title": "Présence d'animaux",
                           "example": "Exemple : rats, cafards",
                           "reponseconsoCode": [
-                            312
+                            "312"
                           ],
                           "detailInputs": [
                             {
@@ -9033,9 +9033,9 @@
                       "title": "Problème de température",
                       "example": "Exemple : rupture de la chaîne du froid",
                       "reponseconsoCode": [
-                        322,
-                        312,
-                        310
+                        "322",
+                        "312",
+                        "310"
                       ],
                       "tags": [
                         "ReponseConso"
@@ -9091,8 +9091,8 @@
                     {
                       "title": "Autre problème d'hygiène",
                       "reponseconsoCode": [
-                        312,
-                        310
+                        "312",
+                        "310"
                       ],
                       "tags": [
                         "ReponseConso"
@@ -9117,7 +9117,7 @@
                           "title": "Des produits vendus au rayon frais",
                           "example": "Exemple : viande, poisson, quiche, jambon",
                           "reponseconsoCode": [
-                            323
+                            "323"
                           ],
                           "subcategoriesTitle": "La date est-elle <b>dépassée</b> au moment de la vente ou de l'achat&#160;?",
                           "subcategories": [
@@ -9193,7 +9193,7 @@
                               "detailTitle": "Il est interdit de vendre un produit avec une date limite de consommation dépassée. Ces dates concernent surtout des produits frais.",
                               "description": "Après cette date, il est dangereux de consommer le produit.",
                               "reponseconsoCode": [
-                                323
+                                "323"
                               ],
                               "detailInputs": [
                                 {
@@ -9231,7 +9231,7 @@
                         {
                           "title": "Cas particulier des oeufs",
                           "reponseconsoCode": [
-                            323
+                            "323"
                           ],
                           "description": "La date des oeufs est une date de consommation recommandée (DCR). <br/> Les oeufs ne peuvent être vendus au-delà de 7 jours avant la DCR.",
                           "detailInputs": [
@@ -9275,8 +9275,8 @@
                     {
                       "title": "Indisponibilité des produits en publicité",
                       "reponseconsoCode": [
-                        210,
-                        2243
+                        "210",
+                        "2243"
                       ],
                       "detailInputs": [
                         {
@@ -9328,9 +9328,9 @@
                       "title": "Informations de vente mensongères",
                       "example": "Exemple : pancarte \"produits locaux\" or ce n'est pas le cas, affiche \"pain bio\" or ce n'est pas le cas",
                       "reponseconsoCode": [
-                        210,
-                        2243,
-                        271
+                        "210",
+                        "2243",
+                        "271"
                       ],
                       "detailInputs": [
                         {
@@ -9401,8 +9401,8 @@
                     {
                       "title": "Il présente un défaut ou il ne marche plus",
                       "reponseconsoCode": [
-                        464,
-                        465
+                        "464",
+                        "465"
                       ],
                       "subcategoriesTitle": "Avez-vous acheté ce produit neuf ou d'occasion&#160;?",
                       "subcategories": [
@@ -9645,16 +9645,16 @@
                           "title": "Oui",
                           "description": "Le commerçant doit respecter les conditions d’échange et de remboursement qui sont affichées dans son commerce ou dans votre contrat.",
                           "reponseconsoCode": [
-                            464,
-                            465,
-                            481
+                            "464",
+                            "465",
+                            "481"
                           ],
                           "id": "1.2-2.1.5.2.1"
                         },
                         {
                           "title": "Non",
                           "reponseconsoCode": [
-                            621
+                            "621"
                           ],
                           "information": {
                             "title": "Vous ne pouvez pas exiger le remboursement, l'échange ou l'annulation gratuite de votre contrat.",
@@ -9680,8 +9680,8 @@
                         {
                           "title": "Il refuse les espèces d'une façon générale",
                           "reponseconsoCode": [
-                            643,
-                            454
+                            "643",
+                            "454"
                           ],
                           "description": "Votre droit : les billets et les pièces en euros doivent être acceptés chez les commerçants en France.",
                           "id": "1.2-2.1.6.1.1"
@@ -9738,8 +9738,8 @@
                             {
                               "title": "Non",
                               "reponseconsoCode": [
-                                643,
-                                411
+                                "643",
+                                "411"
                               ],
                               "id": "1.2-2.1.6.2.1.2"
                             }
@@ -9763,8 +9763,8 @@
                             {
                               "title": "Non",
                               "reponseconsoCode": [
-                                643,
-                                411
+                                "643",
+                                "411"
                               ],
                               "id": "1.2-2.1.6.2.2.2"
                             }
@@ -9785,14 +9785,14 @@
                         {
                           "title": "Problème avec le cash-back",
                           "reponseconsoCode": [
-                            643
+                            "643"
                           ],
                           "id": "1.2-2.1.6.3.1"
                         },
                         {
                           "title": "Problème avec une carte cadeau",
                           "reponseconsoCode": [
-                            643
+                            "643"
                           ],
                           "id": "1.2-2.1.6.3.2"
                         },
@@ -9808,7 +9808,7 @@
                         {
                           "title": "Autre",
                           "reponseconsoCode": [
-                            643
+                            "643"
                           ],
                           "id": "1.2-2.1.6.3.4"
                         }
@@ -9833,7 +9833,7 @@
                       "title": "Problème lié à l'écologie",
                       "example": "Exemple : sac en plastique, éclairage de nuit ",
                       "reponseconsoCode": [
-                        673
+                        "673"
                       ],
                       "id": "1.2-2.1.7.2"
                     },
@@ -9841,15 +9841,15 @@
                       "title": "Problème de voisinage",
                       "example": "Exemple : bruit, odeur, voiture mal garée",
                       "reponseconsoCode": [
-                        312
+                        "312"
                       ],
                       "id": "1.2-2.1.7.3"
                     },
                     {
                       "title": "Autre",
                       "reponseconsoCode": [
-                        673,
-                        312
+                        "673",
+                        "312"
                       ],
                       "id": "1.2-2.1.7.4"
                     }
@@ -9886,7 +9886,7 @@
                                 {
                                   "title": "Oui",
                                   "reponseconsoCode": [
-                                    323
+                                    "323"
                                   ],
                                   "detailTitle": "Il est interdit de vendre un produit avec la date limite de consommation (DLC) dépassée. <br/>Après cette date, il est dangereux de consommer le produit.",
                                   "description": "Les dates \"DLC\" concernent surtout des produits frais.",
@@ -9954,7 +9954,7 @@
                                 {
                                   "title": "Oui",
                                   "reponseconsoCode": [
-                                    323
+                                    "323"
                                   ],
                                   "detailTitle": "Il est interdit de vendre un produit avec une date limite de consommation dépassée. Ces dates concernent surtout des produits frais.",
                                   "description": "Après cette date, il est dangereux de consommer le produit.",
@@ -9994,7 +9994,7 @@
                             {
                               "title": "Cas particulier des oeufs",
                               "reponseconsoCode": [
-                                323
+                                "323"
                               ],
                               "description": "La date des oeufs est une date de consommation recommandée (DCR). <br/> Les oeufs ne peuvent être vendus au-delà de 7 jours avant la DCR.",
                               "detailInputs": [
@@ -10036,8 +10036,8 @@
                         {
                           "title": "Moisissure",
                           "reponseconsoCode": [
-                            321,
-                            323
+                            "321",
+                            "323"
                           ],
                           "subcategoriesTitle": "De quel type de produit s'agit-il&#160;?",
                           "subcategories": [
@@ -10113,8 +10113,8 @@
                         {
                           "title": "Couleur ou odeur anormale",
                           "reponseconsoCode": [
-                            321,
-                            323
+                            "321",
+                            "323"
                           ],
                           "subcategoriesTitle": "De quel type de produit s'agit-il&#160;?",
                           "subcategories": [
@@ -10200,8 +10200,8 @@
                         {
                           "title": "Corps étranger \"mou\"",
                           "reponseconsoCode": [
-                            321,
-                            323
+                            "321",
+                            "323"
                           ],
                           "example": "Exemple : morceau de gant, morceau de tissus, limace",
                           "subcategoriesTitle": "De quel type de produit s'agit-il&#160;?",
@@ -10279,7 +10279,7 @@
                           "title": "Corps étranger \"dur\"",
                           "example": "Exemple : bout de verre, morceau de métal, dent",
                           "reponseconsoCode": [
-                            323
+                            "323"
                           ],
                           "tags": [
                             "ReponseConso",
@@ -14423,8 +14423,8 @@
                         {
                           "title": "Autre",
                           "reponseconsoCode": [
-                            321,
-                            323
+                            "321",
+                            "323"
                           ],
                           "subcategoriesTitle": "De quel type de produit s'agit-il&#160;?",
                           "subcategories": [
@@ -14509,9 +14509,9 @@
                         {
                           "title": "Informations manquantes",
                           "reponseconsoCode": [
-                            273,
-                            323,
-                            274
+                            "273",
+                            "323",
+                            "274"
                           ],
                           "detailInputs": [
                             {
@@ -14554,9 +14554,9 @@
                         {
                           "title": "Informations trompeuses ou fausses",
                           "reponseconsoCode": [
-                            210,
-                            273,
-                            271
+                            "210",
+                            "273",
+                            "271"
                           ],
                           "detailInputs": [
                             {
@@ -14608,8 +14608,8 @@
                           "title": "Informations sur l'emballage uniquement en langue étrangère",
                           "example": "Aucune information traduite en français",
                           "reponseconsoCode": [
-                            273,
-                            211
+                            "273",
+                            "211"
                           ],
                           "detailInputs": [
                             {
@@ -14639,8 +14639,8 @@
                         {
                           "title": "Autres problèmes d'étiquette ou emballage",
                           "reponseconsoCode": [
-                            273,
-                            274
+                            "273",
+                            "274"
                           ],
                           "id": "1.2-2.2.1.3.4"
                         }
@@ -14651,9 +14651,9 @@
                       "title": "Problème de quantité",
                       "example": "Exemple : poids indiqué non conforme, balance non tarée",
                       "reponseconsoCode": [
-                        210,
-                        276,
-                        277
+                        "210",
+                        "276",
+                        "277"
                       ],
                       "tags": [
                         "ReponseConso"
@@ -14796,8 +14796,8 @@
                       "title": "Produit rappelé toujours en vente",
                       "example": "Le produit fait l'objet d'une mesure de rappel des autorités",
                       "reponseconsoCode": [
-                        311,
-                        331
+                        "311",
+                        "331"
                       ],
                       "tags": [
                         "ReponseConso"
@@ -14853,8 +14853,8 @@
                           "title": "Il présente un défaut ou il ne marche plus",
                           "subcategoriesTitle": "Avez-vous acheté ce produit neuf ou d'occasion&#160;?",
                           "reponseconsoCode": [
-                            464,
-                            465
+                            "464",
+                            "465"
                           ],
                           "subcategories": [
                             {
@@ -15089,7 +15089,7 @@
                               "title": "Oui",
                               "description": "Le commerçant doit respecter les conditions d’échange et de remboursement qui sont affichées dans son commerce ou dans votre contrat.",
                               "reponseconsoCode": [
-                                210
+                                "210"
                               ],
                               "id": "1.2-2.2.2.1.2.1"
                             },
@@ -15114,7 +15114,7 @@
                         {
                           "title": "Informations manquantes",
                           "reponseconsoCode": [
-                            333
+                            "333"
                           ],
                           "description": "Certaines informations sont obligatoires. <br/>Par exemple : <ul> <li>Vêtements : la composition des tissus (noms et proportions des matières)</li> <li>Meubles : la composition, la taille, s'il faut le monter soi-même, de quel cuir il s'agit</li> <li>Electroménagers : l'étiquetage énergétique, la disponibilité des pièces de rechange</li> </ul>",
                           "detailInputs": [
@@ -15175,7 +15175,7 @@
                               "detailTitle": "Problème de langue française",
                               "description": "Les informations relatives aux produits et aux services doivent être rédigées ou traduites en français.",
                               "reponseconsoCode": [
-                                211
+                                "211"
                               ],
                               "detailInputs": [
                                 {
@@ -15216,8 +15216,8 @@
                           "title": "Informations trompeuses ou fausses",
                           "example": "Exemple : \"en or\" alors qu'il s'agit de \"plaqué or\", \"fabriqué en France\" alors que ce n'est pas le cas ",
                           "reponseconsoCode": [
-                            210,
-                            271
+                            "210",
+                            "271"
                           ],
                           "tags": [
                             "ReponseConso"
@@ -15295,9 +15295,9 @@
                       "title": "La quantité annoncée est non conforme",
                       "subcategoriesTitle": "Quel est le type de produit&#160;?",
                       "reponseconsoCode": [
-                        210,
-                        276,
-                        277
+                        "210",
+                        "276",
+                        "277"
                       ],
                       "subcategories": [
                         {
@@ -15397,8 +15397,8 @@
                       "title": "Produit en retrait / rappel",
                       "example": "Le produit vendu fait l'objet d'une mesure de retrait / rappel des autorités",
                       "reponseconsoCode": [
-                        311,
-                        331
+                        "311",
+                        "331"
                       ],
                       "detailInputs": [
                         {
@@ -23012,8 +23012,8 @@
           "title": "un achat suite à la visite d'un vendeur à mon domicile",
           "companyKind": "LOCATION",
           "reponseconsoCode": [
-            221,
-            210
+            "221",
+            "210"
           ],
           "tags": [
             "ReponseConso",
@@ -30674,6 +30674,9 @@
           "subcategories": [
             {
               "title": "Bien-être",
+              "reponseconsoCode": [
+                "210"
+              ],
               "tags": [
                 "ReponseConso"
               ],
@@ -30682,6 +30685,9 @@
             },
             {
               "title": "Vie quotidienne et aide à domicile",
+              "reponseconsoCode": [
+                "210"
+              ],
               "tags": [
                 "ReponseConso"
               ],
@@ -30690,6 +30696,13 @@
             },
             {
               "title": "Formation en ligne",
+              "reponseconsoCode": [
+                "411",
+                "212",
+                "210",
+                "422",
+                "214"
+              ],
               "tags": [
                 "ReponseConso"
               ],
@@ -30697,6 +30710,9 @@
             },
             {
               "title": "Autre",
+              "reponseconsoCode": [
+                "210"
+              ],
               "tags": [
                 "ReponseConso"
               ],
@@ -30717,6 +30733,10 @@
                 {
                   "title": "Prix des soins",
                   "example": "Exemple : promotion non appliquée, prix en vitrine pas à jour",
+                  "reponseconsoCode": [
+                    "451",
+                    "212"
+                  ],
                   "tags": [
                     "Litige contractuel"
                   ],
@@ -30759,6 +30779,9 @@
                       "subcategories": [
                         {
                           "title": "Les espèces sont systématiquement refusées",
+                          "reponseconsoCode": [
+                            "454"
+                          ],
                           "description": "Votre droit : les billets et les pièces en euros doivent être obligatoirement acceptés en France.",
                           "id": "1.5-2.1.2.1.1"
                         },
@@ -30788,6 +30811,9 @@
                         },
                         {
                           "title": "Autre raison",
+                          "reponseconsoCode": [
+                            "454"
+                          ],
                           "id": "1.5-2.1.2.1.5"
                         }
                       ],
@@ -30813,6 +30839,9 @@
                             },
                             {
                               "title": "Non",
+                              "reponseconsoCode": [
+                                "454"
+                              ],
                               "id": "1.5-2.1.2.2.1.2"
                             }
                           ],
@@ -30833,6 +30862,9 @@
                             },
                             {
                               "title": "Non",
+                              "reponseconsoCode": [
+                                "454"
+                              ],
                               "id": "1.5-2.1.2.2.2.2"
                             }
                           ],
@@ -30841,6 +30873,9 @@
                         {
                           "title": "Autre raison",
                           "example": "Exemple : problème avec le terminal de paiement",
+                          "reponseconsoCode": [
+                            "454"
+                          ],
                           "id": "1.5-2.1.2.2.3"
                         }
                       ],
@@ -30848,6 +30883,9 @@
                     },
                     {
                       "title": "Autre problème pour payer",
+                      "reponseconsoCode": [
+                        "454"
+                      ],
                       "id": "1.5-2.1.2.3"
                     }
                   ],
@@ -30856,6 +30894,9 @@
                 {
                   "title": "Publicité des soins mensongère",
                   "example": "Exemple : durée du massage plus courte qu'indiqué",
+                  "reponseconsoCode": [
+                    "210"
+                  ],
                   "tags": [
                     "ReponseConso",
                     "Litige contractuel"
@@ -30867,11 +30908,17 @@
                   "subcategories": [
                     {
                       "title": "Le personnel ne dispose pas des diplômes requis",
+                      "reponseconsoCode": [
+                        "161"
+                      ],
                       "id": "1.5-2.1.4.1"
                     },
                     {
                       "title": "Problème d'hygiène",
                       "example": "Exemple : établissement sale, mauvaises pratiques d'hygiène",
+                      "reponseconsoCode": [
+                        "446"
+                      ],
                       "id": "1.5-2.1.4.2"
                     },
                     {
@@ -30916,6 +30963,9 @@
                     },
                     {
                       "title": "Autre",
+                      "reponseconsoCode": [
+                        "210"
+                      ],
                       "tags": [
                         "Litige contractuel"
                       ],
@@ -30934,6 +30984,10 @@
                 {
                   "title": "Prix des prestations",
                   "example": "Exemple : promotion non appliquée, prix en vitrine pas à jour",
+                  "reponseconsoCode": [
+                    "411",
+                    "212"
+                  ],
                   "tags": [
                     "Litige contractuel"
                   ],
@@ -30949,6 +31003,9 @@
                       "subcategories": [
                         {
                           "title": "Les espèces sont systématiquement refusées",
+                          "reponseconsoCode": [
+                            "454"
+                          ],
                           "description": "Votre droit : les billets et les pièces en euros doivent être obligatoirement acceptés en France.",
                           "id": "1.5-2.2.2.1.1"
                         },
@@ -30978,6 +31035,9 @@
                         },
                         {
                           "title": "Autre raison",
+                          "reponseconsoCode": [
+                            "454"
+                          ],
                           "id": "1.5-2.2.2.1.5"
                         }
                       ],
@@ -31003,6 +31063,9 @@
                             },
                             {
                               "title": "Non",
+                              "reponseconsoCode": [
+                                "454"
+                              ],
                               "id": "1.5-2.2.2.2.1.2"
                             }
                           ],
@@ -31023,6 +31086,9 @@
                             },
                             {
                               "title": "Non",
+                              "reponseconsoCode": [
+                                "454"
+                              ],
                               "id": "1.5-2.2.2.2.2.2"
                             }
                           ],
@@ -31031,6 +31097,9 @@
                         {
                           "title": "Autre raison",
                           "example": "Exemple : problème avec le terminal de paiement",
+                          "reponseconsoCode": [
+                            "454"
+                          ],
                           "id": "1.5-2.2.2.2.3"
                         }
                       ],
@@ -31038,6 +31107,9 @@
                     },
                     {
                       "title": "Autre problème pour payer",
+                      "reponseconsoCode": [
+                        "454"
+                      ],
                       "id": "1.5-2.2.2.3"
                     }
                   ],
@@ -31045,6 +31117,9 @@
                 },
                 {
                   "title": "Publicité des prestations mensongère",
+                  "reponseconsoCode": [
+                    "210"
+                  ],
                   "tags": [
                     "ReponseConso",
                     "Litige contractuel"
@@ -31056,6 +31131,9 @@
                   "subcategories": [
                     {
                       "title": "Le personnel ne dispose pas des diplômes requis",
+                      "reponseconsoCode": [
+                        "210"
+                      ],
                       "tags": [
                         "ReponseConso"
                       ],
@@ -31063,6 +31141,9 @@
                     },
                     {
                       "title": "Problème d'hygiène",
+                      "reponseconsoCode": [
+                        "446"
+                      ],
                       "id": "1.5-2.2.4.2"
                     },
                     {
@@ -31099,6 +31180,9 @@
                     },
                     {
                       "title": "Autre",
+                      "reponseconsoCode": [
+                        "210"
+                      ],
                       "tags": [
                         "Litige contractuel"
                       ],
@@ -31112,6 +31196,9 @@
             },
             {
               "title": "Aide à la personne",
+              "reponseconsoCode": [
+                "210"
+              ],
               "tags": [
                 "Litige contractuel"
               ],
@@ -31130,6 +31217,10 @@
                     {
                       "title": "Les tarifs ne sont pas communiqués clairement",
                       "example": "Exemple : les prix des options ne sont pas dans le contrat",
+                      "reponseconsoCode": [
+                        "411",
+                        "212"
+                      ],
                       "tags": [
                         "ReponseConso"
                       ],
@@ -31137,6 +31228,9 @@
                     },
                     {
                       "title": "Je ne paye pas le prix qui était prévu au départ",
+                      "reponseconsoCode": [
+                        "210"
+                      ],
                       "tags": [
                         "ReponseConso"
                       ],
@@ -31144,6 +31238,10 @@
                     },
                     {
                       "title": "Je ne suis pas d'accord avec ma facture",
+                      "reponseconsoCode": [
+                        "451",
+                        "226"
+                      ],
                       "tags": [
                         "ReponseConso"
                       ],
@@ -31164,6 +31262,9 @@
                 {
                   "title": "Contrat",
                   "example": "Exemple : je veux résilier le contrat, les activités ne correspondent pas à mon contrat",
+                  "reponseconsoCode": [
+                    "210"
+                  ],
                   "subcategories": [
                     {
                       "title": "Le contrat n'est pas respecté",
@@ -31172,6 +31273,10 @@
                     },
                     {
                       "title": "Je veux résilier le contrat",
+                      "reponseconsoCode": [
+                        "226",
+                        "473"
+                      ],
                       "tags": [
                         "ReponseConso"
                       ],
@@ -31180,6 +31285,10 @@
                     {
                       "title": "Une clause dans le contrat est abusive, c'est-à-dire qu’elle désavantage fortement le résident",
                       "example": "Exemple : imposer un préavis de 2 mois au résident pour résilier le contrat alors que la maison de retraite a un préavis d'1 mois seulement",
+                      "reponseconsoCode": [
+                        "422",
+                        "214"
+                      ],
                       "tags": [
                         "ReponseConso"
                       ],
@@ -31194,6 +31303,10 @@
                   "subcategories": [
                     {
                       "title": "Je n'ai pas eu d'état des lieux (entrée ou sortie)",
+                      "reponseconsoCode": [
+                        "446",
+                        "226"
+                      ],
                       "tags": [
                         "ReponseConso"
                       ],
@@ -31201,6 +31314,9 @@
                     },
                     {
                       "title": "Je ne suis pas d'accord avec l'état des lieux",
+                      "reponseconsoCode": [
+                        "451"
+                      ],
                       "id": "1.5-2.4.3.2"
                     },
                     {
@@ -31212,6 +31328,9 @@
                       "subcategories": [
                         {
                           "title": "Oui",
+                          "reponseconsoCode": [
+                            "2262"
+                          ],
                           "id": "1.5-2.4.3.3.1"
                         },
                         {
@@ -31239,6 +31358,10 @@
                         },
                         {
                           "title": "Il y a plus de 30 jours",
+                          "reponseconsoCode": [
+                            "476",
+                            "226"
+                          ],
                           "id": "1.5-2.4.3.4.2"
                         }
                       ],
@@ -31250,6 +31373,9 @@
                 {
                   "title": "Publicité mensongère",
                   "example": "Exemple : le site internet mentionne un grand parc alors que ce n'est pas le cas, la brochure parle des animations régulières alors qu'il y en a très peu",
+                  "reponseconsoCode": [
+                    "210"
+                  ],
                   "tags": [
                     "ReponseConso"
                   ],
@@ -31265,6 +31391,9 @@
                 },
                 {
                   "title": "Autre",
+                  "reponseconsoCode": [
+                    "210"
+                  ],
                   "tags": [
                     "ReponseConso"
                   ],
@@ -31279,6 +31408,10 @@
                 {
                   "title": "Prix des prestations",
                   "example": "Exemple : le prix final ne correspond pas du devis, prix des soins de conservation",
+                  "reponseconsoCode": [
+                    "411",
+                    "212"
+                  ],
                   "tags": [
                     "ReponseConso",
                     "Litige contractuel"
@@ -31295,6 +31428,9 @@
                       "subcategories": [
                         {
                           "title": "Les espèces sont systématiquement refusées",
+                          "reponseconsoCode": [
+                            "454"
+                          ],
                           "description": "Votre droit : les billets et les pièces en euros doivent être obligatoirement acceptés en France.",
                           "id": "1.5-2.5.2.1.1"
                         },
@@ -31324,6 +31460,9 @@
                         },
                         {
                           "title": "Autre raison",
+                          "reponseconsoCode": [
+                            "454"
+                          ],
                           "id": "1.5-2.5.2.1.5"
                         }
                       ],
@@ -31349,6 +31488,9 @@
                             },
                             {
                               "title": "Non",
+                              "reponseconsoCode": [
+                                "454"
+                              ],
                               "id": "1.5-2.5.2.2.1.2"
                             }
                           ],
@@ -31369,6 +31511,9 @@
                             },
                             {
                               "title": "Non",
+                              "reponseconsoCode": [
+                                "454"
+                              ],
                               "id": "1.5-2.5.2.2.2.2"
                             }
                           ],
@@ -31377,6 +31522,9 @@
                         {
                           "title": "Autre raison",
                           "example": "Exemple : problème avec le terminal de paiement",
+                          "reponseconsoCode": [
+                            "454"
+                          ],
                           "id": "1.5-2.5.2.2.3"
                         }
                       ],
@@ -31384,6 +31532,9 @@
                     },
                     {
                       "title": "Autre problème pour payer",
+                      "reponseconsoCode": [
+                        "454"
+                      ],
                       "id": "1.5-2.5.2.3"
                     }
                   ],
@@ -31395,6 +31546,9 @@
                 {
                   "title": "Publicité des prestations mensongère",
                   "example": "Exemple : composition d'un cercueil non conforme",
+                  "reponseconsoCode": [
+                    "210"
+                  ],
                   "tags": [
                     "ReponseConso",
                     "Litige contractuel"
@@ -31424,10 +31578,16 @@
                     },
                     {
                       "title": "Le personnel ne dispose pas des diplômes requis",
+                      "reponseconsoCode": [
+                        "161"
+                      ],
                       "id": "1.5-2.5.4.2"
                     },
                     {
                       "title": "Autre",
+                      "reponseconsoCode": [
+                        "210"
+                      ],
                       "id": "1.5-2.5.4.3"
                     }
                   ],
@@ -31442,6 +31602,12 @@
               "subcategories": [
                 {
                   "title": "Déménageur",
+                  "reponseconsoCode": [
+                    "226",
+                    "411",
+                    "446",
+                    "442"
+                  ],
                   "tags": [
                     "ReponseConso",
                     "Litige contractuel"
@@ -31450,6 +31616,11 @@
                 },
                 {
                   "title": "Agence matrimoniale (agence de rencontre)",
+                  "reponseconsoCode": [
+                    "2263",
+                    "473",
+                    "226"
+                  ],
                   "tags": [
                     "Litige contractuel"
                   ],
@@ -31457,6 +31628,15 @@
                 },
                 {
                   "title": "Organisme de formation",
+                  "reponseconsoCode": [
+                    "422",
+                    "214",
+                    "411",
+                    "212",
+                    "473",
+                    "2203",
+                    "210"
+                  ],
                   "tags": [
                     "ReponseConso",
                     "Litige contractuel"
@@ -31465,6 +31645,9 @@
                 },
                 {
                   "title": "Autre",
+                  "reponseconsoCode": [
+                    "210"
+                  ],
                   "tags": [
                     "ReponseConso"
                   ],
@@ -31744,7 +31927,7 @@
               "title": "Publicité mensongère ou trompeuse",
               "example": "Exemple : publicité \"offre verte\" mensongère",
               "reponseconsoCode": [
-                210
+                "210"
               ],
               "detailInputs": [
                 {
@@ -31807,8 +31990,8 @@
                     {
                       "title": "Sur internet, par téléphone ou chez moi avec un conseiller",
                       "reponseconsoCode": [
-                        226,
-                        473
+                        "226",
+                        "473"
                       ],
                       "subcategoriesTitle": "Ce contrat concerne un logement",
                       "subcategories": [
@@ -31918,8 +32101,8 @@
                     {
                       "title": "Dans une boutique",
                       "reponseconsoCode": [
-                        473,
-                        224
+                        "473",
+                        "224"
                       ],
                       "information": {
                         "title": "Vous ne pouvez plus exiger l'annulation de votre contrat.",
@@ -31934,8 +32117,8 @@
                 {
                   "title": "Une clause du contrat est abusive, c'est-à-dire qu'elle désavantage fortement le consommateur",
                   "reponseconsoCode": [
-                    214,
-                    1211
+                    "214",
+                    "1211"
                   ],
                   "detailInputs": [
                     {
@@ -31956,7 +32139,7 @@
                 {
                   "title": "Autre",
                   "reponseconsoCode": [
-                    411
+                    "411"
                   ],
                   "id": "1.6-2.4.3"
                 }
@@ -31973,15 +32156,15 @@
         {
           "title": "Autre (Fioul / GPL / granulés de bois...)",
           "reponseconsoCode": [
-            271,
-            276,
-            437,
-            411,
-            424,
-            276,
-            437,
-            271,
-            212
+            "271",
+            "276",
+            "437",
+            "411",
+            "424",
+            "276",
+            "437",
+            "271",
+            "212"
           ],
           "tags": [
             "Litige contractuel"
@@ -33415,8 +33598,8 @@
               "title": "Frais bancaires",
               "example": "Exemple : prix non affiché, augmentation des frais bancaires sans prévenir",
               "reponseconsoCode": [
-                164,
-                645
+                "164",
+                "645"
               ],
               "id": "1.8-1.1"
             },
@@ -33424,8 +33607,8 @@
               "title": "Contrat",
               "example": "Exemple : contrat de crédit non conforme",
               "reponseconsoCode": [
-                411,
-                416
+                "411",
+                "416"
               ],
               "id": "1.8-1.2"
             },
@@ -33440,8 +33623,8 @@
                   "title": "Démarchage téléphonique",
                   "companyKind": "PHONE",
                   "reponseconsoCode": [
-                    221,
-                    2210
+                    "221",
+                    "2210"
                   ],
                   "tags": [
                     "Démarchage téléphonique"
@@ -33487,16 +33670,16 @@
               "title": "Service client",
               "example": "Exemple : service client injoignable",
               "reponseconsoCode": [
-                466,
-                467
+                "466",
+                "467"
               ],
               "id": "1.8-1.4"
             },
             {
               "title": "Autre",
               "reponseconsoCode": [
-                643,
-                641
+                "643",
+                "641"
               ],
               "id": "1.8-1.5"
             }
@@ -33513,8 +33696,8 @@
               "title": "Contrat",
               "example": "Exemple : contrat non respecté, échéancier non reçu",
               "reponseconsoCode": [
-                425,
-                411
+                "425",
+                "411"
               ],
               "id": "1.8-2.1"
             },
@@ -33522,7 +33705,7 @@
               "title": "Remboursement / dédommagement",
               "example": "Exemple : remboursement non reçu",
               "reponseconsoCode": [
-                679
+                "679"
               ],
               "id": "1.8-2.2"
             },
@@ -33537,8 +33720,8 @@
                   "title": "Démarchage à domicile",
                   "companyKind": "LOCATION",
                   "reponseconsoCode": [
-                    221,
-                    2210
+                    "221",
+                    "2210"
                   ],
                   "tags": [
                     "Démarchage à domicile"
@@ -33576,8 +33759,8 @@
                   "title": "Démarchage téléphonique",
                   "companyKind": "PHONE",
                   "reponseconsoCode": [
-                    221,
-                    2210
+                    "221",
+                    "2210"
                   ],
                   "tags": [
                     "Démarchage téléphonique"
@@ -33610,14 +33793,14 @@
                   "title": "Problème avec un site internet",
                   "companyKind": "WEBSITE",
                   "reponseconsoCode": [
-                    679
+                    "679"
                   ],
                   "id": "1.8-2.3.3"
                 },
                 {
                   "title": "Autre",
                   "reponseconsoCode": [
-                    679
+                    "679"
                   ],
                   "companyKind": "SIRET",
                   "id": "1.8-2.3.4"
@@ -33629,7 +33812,7 @@
               "title": "Service client",
               "example": "Exemple : service client injoignable",
               "reponseconsoCode": [
-                491
+                "491"
               ],
               "tags": [
                 "Litige contractuel"
@@ -33639,7 +33822,7 @@
             {
               "title": "Autre",
               "reponseconsoCode": [
-                679
+                "679"
               ],
               "tags": [
                 "Litige contractuel"
@@ -33673,8 +33856,8 @@
           "title": "Sur place",
           "companyKind": "SIRET",
           "reponseconsoCode": [
-            321,
-            324
+            "321",
+            "324"
           ],
           "tags": [
             "Produit dangereux"
@@ -33730,8 +33913,8 @@
           "title": "A emporter",
           "companyKind": "LOCATION",
           "reponseconsoCode": [
-            321,
-            324
+            "321",
+            "324"
           ],
           "tags": [
             "Produit dangereux"
@@ -33787,8 +33970,8 @@
           "title": "En livraison",
           "companyKind": "LOCATION",
           "reponseconsoCode": [
-            321,
-            324
+            "321",
+            "324"
           ],
           "tags": [
             "Produit dangereux"
@@ -33844,8 +34027,8 @@
           "title": "Un produit précis",
           "companyKind": "LOCATION",
           "reponseconsoCode": [
-            321,
-            324
+            "321",
+            "324"
           ],
           "tags": [
             "Produit dangereux"
@@ -34006,7 +34189,7 @@
                 {
                   "title": "Absence d'information ou information incomplète",
                   "reponseconsoCode": [
-                    411
+                    "411"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -34016,7 +34199,7 @@
                 {
                   "title": "Information mensongère ou trompeuse",
                   "reponseconsoCode": [
-                    210
+                    "210"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -34066,7 +34249,7 @@
                 {
                   "title": "Contrainte du professionnel",
                   "reponseconsoCode": [
-                    210
+                    "210"
                   ],
                   "detailInputs": [
                     {
@@ -34093,7 +34276,7 @@
                 {
                   "title": "Autre",
                   "reponseconsoCode": [
-                    210
+                    "210"
                   ],
                   "id": "1.12-1.2.4"
                 }
@@ -34145,7 +34328,7 @@
                 {
                   "title": "Prix final non conforme au prix annoncé",
                   "reponseconsoCode": [
-                    451
+                    "451"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -34155,7 +34338,7 @@
                 {
                   "title": "Prix non affiché",
                   "reponseconsoCode": [
-                    212
+                    "212"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -34181,7 +34364,7 @@
                     {
                       "title": "Caractéristiques techniques des produits non précisées",
                       "reponseconsoCode": [
-                        411
+                        "411"
                       ],
                       "tags": [
                         "ReponseConso"
@@ -34191,8 +34374,8 @@
                     {
                       "title": "Prix indiqué de manière globale et non détaillée",
                       "reponseconsoCode": [
-                        411,
-                        212
+                        "411",
+                        "212"
                       ],
                       "tags": [
                         "ReponseConso"
@@ -34202,8 +34385,8 @@
                     {
                       "title": "Date de livraison des produits ou réalisation des travaux non précisée",
                       "reponseconsoCode": [
-                        414,
-                        413
+                        "414",
+                        "413"
                       ],
                       "id": "1.12-2.2.1.3"
                     },
@@ -34218,7 +34401,7 @@
                   "title": "Démarchage à domicile",
                   "companyKind": "LOCATION",
                   "reponseconsoCode": [
-                    221
+                    "221"
                   ],
                   "tags": [
                     "ReponseConso",
@@ -34257,7 +34440,7 @@
                   "title": "Démarchage téléphonique",
                   "companyKind": "PHONE",
                   "reponseconsoCode": [
-                    221
+                    "221"
                   ],
                   "tags": [
                     "ReponseConso",
@@ -34290,7 +34473,7 @@
                 {
                   "title": "Information mensongère ou trompeuse",
                   "reponseconsoCode": [
-                    210
+                    "210"
                   ],
                   "subcategories": [
                     {
@@ -34565,7 +34748,7 @@
                 {
                   "title": "Contrainte du professionnel",
                   "reponseconsoCode": [
-                    210
+                    "210"
                   ],
                   "detailInputs": [
                     {
@@ -34605,14 +34788,14 @@
                   "example": "Constat d'un défaut résultant d'une mauvaise exécution des travaux",
                   "description": "Le constat résulte d'une mauvaise exécution des travaux, vous pouvez faire jouer votre garantie !",
                   "reponseconsoCode": [
-                    446
+                    "446"
                   ],
                   "id": "1.12-2.3.1"
                 },
                 {
                   "title": "Les travaux ne sont toujours pas terminés",
                   "reponseconsoCode": [
-                    443
+                    "443"
                   ],
                   "tags": [
                     "Litige contractuel"
@@ -34635,8 +34818,8 @@
                       "title": "À votre domicile",
                       "example": "Un démarcheur est venu chez vous",
                       "reponseconsoCode": [
-                        2213,
-                        2214
+                        "2213",
+                        "2214"
                       ],
                       "description": "Vous avez un délai de 14 jours pour changer d’avis. On appelle ce délai le \"délai de rétractation\". Ce délai est valable même si vous avez demandé à faire démarrer votre contrat immédiatement <br />Vous n’avez pas à vous justifier auprès du commerçant. <br/><a href=\"../delai-de-retractation\" target=\"_blank\">>> Comment calculer mon délai de retractation</a>",
                       "id": "1.12-2.4.1.1"
@@ -34645,8 +34828,8 @@
                       "title": "À distance",
                       "example": "Exemple : sur internet",
                       "reponseconsoCode": [
-                        2213,
-                        2214
+                        "2213",
+                        "2214"
                       ],
                       "description": "Vous avez un délai de 14 jours pour changer d’avis. On appelle ce délai le \"délai de rétractation\". Ce délai est valable même si vous avez demandé à faire démarrer votre contrat immédiatement <br />Vous n’avez pas à vous justifier auprès du commerçant. <br/><a href=\"../delai-de-retractation\" target=\"_blank\">>> Comment calculer mon délai de retractation</a>",
                       "id": "1.12-2.4.1.2"
@@ -34676,9 +34859,9 @@
                         {
                           "title": "Oui",
                           "reponseconsoCode": [
-                            2206,
-                            2214,
-                            2213
+                            "2206",
+                            "2214",
+                            "2213"
                           ],
                           "description": "Vous avez un délai de 14 jours pour changer d’avis. On appelle ce délai le \"délai de rétractation\". Ce délai est valable même si vous avez demandé à faire démarrer votre contrat immédiatement <br />Vous n’avez pas à vous justifier auprès du commerçant. <br/><a href=\"../delai-de-retractation\" target=\"_blank\">>> Comment calculer mon délai de retractation</a>",
                           "id": "1.12-2.4.1.4.2"
@@ -34692,7 +34875,7 @@
                 {
                   "title": "Contrat non respecté",
                   "reponseconsoCode": [
-                    443
+                    "443"
                   ],
                   "tags": [
                     "Litige contractuel"
@@ -34703,7 +34886,7 @@
                   "title": "Clause abusive",
                   "example": "Vous souhaitez dénoncer une clause qui vous est particulièrement défavorable",
                   "reponseconsoCode": [
-                    214
+                    "214"
                   ],
                   "tags": [
                     "ReponseConso",
@@ -34740,16 +34923,16 @@
                         {
                           "title": "Avant la souscription",
                           "reponseconsoCode": [
-                            2406,
-                            411
+                            "2406",
+                            "411"
                           ],
                           "id": "1.12-2.5.1.1.1"
                         },
                         {
                           "title": "Vous ne saviez pas que vous vous engagiez",
                           "reponseconsoCode": [
-                            2206,
-                            210
+                            "2206",
+                            "210"
                           ],
                           "id": "1.12-2.5.1.1.2"
                         }
@@ -34767,7 +34950,7 @@
                   "title": "Garanties",
                   "description": "Vous trouverez des informations sur la garantie qui s'applique dans votre cas sur <a href=\"https://www.economie.gouv.fr/dgccrf/Publications/Vie-pratique/Fiches-pratiques/Les-garanties-legales\" target=\"_blank\">https://www.economie.gouv.fr/dgccrf/Publications/Vie-pratique/Fiches-pratiques/Les-garanties-legales</a>",
                   "reponseconsoCode": [
-                    469
+                    "469"
                   ],
                   "subcategories": [
                     {
@@ -36210,7 +36393,7 @@
                     "Litige contractuel"
                   ],
                   "reponseconsoCode": [
-                    232
+                    "232"
                   ],
                   "subcategoriesTitle": "Pour quelle raison le chauffeur a-t-il refusé de vous prendre ?",
                   "subcategories": [
@@ -36245,7 +36428,7 @@
                   "title": "Les prix ne sont pas affichés dans la voiture",
                   "example": "Une affiche avec les prix et les suppléments doit être visible dans la voiture.",
                   "reponseConso": [
-                    212
+                    "212"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -36256,7 +36439,7 @@
                   "title": "Refus de prendre votre carte bancaire",
                   "example": "Tous les taxis ont obligation de prendre la carte bancaire quel que soit le montant.",
                   "reponseConso": [
-                    454
+                    "454"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -36266,7 +36449,7 @@
                 {
                   "title": "Refus de me donner une note (reçu, facture)",
                   "reponseConso": [
-                    213
+                    "213"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -36276,7 +36459,7 @@
                 {
                   "title": "Le prix payé ne me convient pas",
                   "reponseConso": [
-                    164
+                    "164"
                   ],
                   "tags": [
                     "ReponseConso",
@@ -36621,6 +36804,10 @@
               "subcategories": [
                 {
                   "title": "Une remise ou une offre promotionnelle qui n'est pas appliquée ou qui est mensongère",
+                  "reponseconsoCode": [
+                    "451",
+                    "210"
+                  ],
                   "detailInputs": [
                     {
                       "label": "Date du constat",
@@ -36651,17 +36838,13 @@
                     }
                   ],
                   "fileLabel": "Merci de joindre tout document pouvant appuyer votre signalement (photographie de la publicité, reçu de votre course...)",
-                  "reponseconsoCode": [
-                    451,
-                    210
-                  ],
                   "id": "1.10-1.2.1"
                 },
                 {
                   "title": "Le prix payé n'est pas celui annoncé au départ",
                   "reponseconsoCode": [
-                    451,
-                    210
+                    "451",
+                    "210"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -36753,7 +36936,7 @@
                 {
                   "title": "Prix exagéré",
                   "reponseconsoCode": [
-                    622
+                    "622"
                   ],
                   "information": {
                     "title": "Ceci ne constitue pas un motif de signalement.",
@@ -36765,7 +36948,7 @@
                 {
                   "title": "Prix non affiché",
                   "reponseconsoCode": [
-                    212
+                    "212"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -36776,7 +36959,7 @@
                 {
                   "title": "Prix final non-conforme au prix annoncé",
                   "reponseconsoCode": [
-                    210
+                    "210"
                   ],
                   "example": "Exemple : fausse réduction, supplément imprévu",
                   "tags": [
@@ -36827,14 +37010,14 @@
                 {
                   "title": "Absence d'information",
                   "reponseconsoCode": [
-                    411
+                    "411"
                   ],
                   "id": "1.10-2.2.1"
                 },
                 {
                   "title": "Information mensongère ou trompeuse",
                   "reponseconsoCode": [
-                    210
+                    "210"
                   ],
                   "detailInputs": [
                     {
@@ -36892,7 +37075,7 @@
                   "title": "L'hébergement ne correspond pas à ce qui m'a été vendu",
                   "example": "Exemple : j'avais demandé une chambre avec vue sur la mer et on m'a attribué une vue côté parking, le petit-déjeuner était compris dans le prix de la nuitée or un supplément m'a été demandé",
                   "reponseconsoCode": [
-                    210
+                    "210"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -36935,9 +37118,9 @@
             {
               "title": "Annulation / remboursement",
               "reponseconsoCode": [
-                453,
-                481,
-                4241
+                "453",
+                "481",
+                "4241"
               ],
               "tags": [
                 "Litige contractuel"
@@ -43953,7 +44136,7 @@
                   "title": "Prix non affiché",
                   "example": "Exemple : sur un site, un catalogue",
                   "reponseconsoCode": [
-                    212
+                    "212"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -43964,8 +44147,8 @@
                   "title": "Prix final non-conforme au prix annoncé",
                   "example": "Exemple : fausse réduction, suppléments non prévus",
                   "reponseconsoCode": [
-                    212,
-                    210
+                    "212",
+                    "210"
                   ],
                   "tags": [
                     "ReponseConso",
@@ -43994,14 +44177,14 @@
                 {
                   "title": "Absence d'information",
                   "reponseconsoCode": [
-                    411
+                    "411"
                   ],
                   "id": "1.10-3.2.1"
                 },
                 {
                   "title": "Information mensongère ou trompeuse",
                   "reponseconsoCode": [
-                    210
+                    "210"
                   ],
                   "detailInputs": [
                     {
@@ -44057,7 +44240,7 @@
                 {
                   "title": "La prestation ne correspond pas à ce que l'agence m'a vendu",
                   "reponseconsoCode": [
-                    210
+                    "210"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -44075,9 +44258,9 @@
             {
               "title": "Annulation / remboursement",
               "reponseconsoCode": [
-                481,
-                4241,
-                424
+                "481",
+                "4241",
+                "424"
               ],
               "tags": [
                 "Litige contractuel"
@@ -44087,9 +44270,9 @@
             {
               "title": "Assurance",
               "reponseconsoCode": [
-                481,
-                4241,
-                424
+                "481",
+                "4241",
+                "424"
               ],
               "tags": [
                 "Litige contractuel"
@@ -44151,7 +44334,7 @@
                 {
                   "title": "Prix exagéré",
                   "reponseconsoCode": [
-                    622
+                    "622"
                   ],
                   "information": {
                     "title": "Ceci ne constitue pas un motif de signalement.",
@@ -44164,7 +44347,7 @@
                   "title": "Prix non affiché",
                   "example": "Exemple : sur un site, un catalogue",
                   "reponseconsoCode": [
-                    212
+                    "212"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -44179,7 +44362,7 @@
                     "Litige contractuel"
                   ],
                   "reponseconsoCode": [
-                    210
+                    "210"
                   ],
                   "id": "1.10-4.1.3"
                 },
@@ -44204,7 +44387,7 @@
                 {
                   "title": "Absence d'information",
                   "reponseconsoCode": [
-                    411
+                    "411"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -44214,7 +44397,7 @@
                 {
                   "title": "Information mensongère ou trompeuse",
                   "reponseconsoCode": [
-                    210
+                    "210"
                   ],
                   "detailInputs": [
                     {
@@ -44264,9 +44447,9 @@
             {
               "title": "Retard / Annulation / Remboursement",
               "reponseconsoCode": [
-                481,
-                424,
-                4241
+                "481",
+                "424",
+                "4241"
               ],
               "tags": [
                 "Litige contractuel"
@@ -44282,9 +44465,9 @@
                 {
                   "title": "Annulation",
                   "reponseconsoCode": [
-                    481,
-                    424,
-                    4241
+                    "481",
+                    "424",
+                    "4241"
                   ],
                   "id": "1.10-4.4.1"
                 },
@@ -44391,7 +44574,7 @@
                 {
                   "title": "Prix exagéré",
                   "reponseconsoCode": [
-                    622
+                    "622"
                   ],
                   "information": {
                     "title": "Ceci ne constitue pas un motif de signalement.",
@@ -44404,7 +44587,7 @@
                   "title": "Prix non affiché",
                   "example": "Exemple : sur un site, un catalogue",
                   "reponseconsoCode": [
-                    212
+                    "212"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -44415,7 +44598,7 @@
                   "title": "Prix final non-conforme au prix annoncé",
                   "example": "Exemple : fausse réduction, suppléments non prévus",
                   "reponseconsoCode": [
-                    210
+                    "210"
                   ],
                   "tags": [
                     "ReponseConso",
@@ -44445,14 +44628,14 @@
                 {
                   "title": "Absence d'information",
                   "reponseconsoCode": [
-                    411
+                    "411"
                   ],
                   "id": "1.10-5.2.1"
                 },
                 {
                   "title": "Information mensongère ou trompeuse",
                   "reponseconsoCode": [
-                    210
+                    "210"
                   ],
                   "detailInputs": [
                     {
@@ -44509,7 +44692,7 @@
                 {
                   "title": "Clause abusive",
                   "reponseconsoCode": [
-                    422
+                    "422"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -44519,7 +44702,7 @@
                 {
                   "title": "Contrat non respecté",
                   "reponseconsoCode": [
-                    446
+                    "446"
                   ],
                   "id": "1.10-5.3.2"
                 }
@@ -46667,7 +46850,7 @@
                 {
                   "title": "Prix exagéré",
                   "reponseconsoCode": [
-                    622
+                    "622"
                   ],
                   "information": {
                     "title": "Ceci ne constitue pas un motif de signalement.",
@@ -46680,7 +46863,7 @@
                   "title": "Prix non affiché",
                   "example": "Exemple : sur un site, un catalogue",
                   "reponseconsoCode": [
-                    212
+                    "212"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -46691,7 +46874,7 @@
                   "title": "Prix final non-conforme au prix annoncé",
                   "example": "Exemple : fausse réduction, suppléments non prévus",
                   "reponseconsoCode": [
-                    210
+                    "210"
                   ],
                   "tags": [
                     "ReponseConso",
@@ -46721,14 +46904,14 @@
                 {
                   "title": "Absence d'information",
                   "reponseconsoCode": [
-                    411
+                    "411"
                   ],
                   "id": "1.10-6.2.1"
                 },
                 {
                   "title": "Information mensongère ou trompeuse",
                   "reponseconsoCode": [
-                    210
+                    "210"
                   ],
                   "detailInputs": [
                     {
@@ -46778,9 +46961,9 @@
             {
               "title": "Remboursement / annulation",
               "reponseconsoCode": [
-                424,
-                4241,
-                481
+                "424",
+                "4241",
+                "481"
               ],
               "tags": [
                 "Litige contractuel"
@@ -46961,16 +47144,16 @@
                         "ReponseConso"
                       ],
                       "reponseconsoCode": [
-                        210,
-                        220
+                        "210",
+                        "220"
                       ],
                       "id": "1.11-1.1.2.1"
                     },
                     {
                       "title": "Honoraires de vente non affichés ou différents de ceux affichés (en vitrine ou sur internet)",
                       "reponseconsoCode": [
-                        212,
-                        220
+                        "212",
+                        "220"
                       ],
                       "tags": [
                         "ReponseConso",
@@ -46981,8 +47164,8 @@
                     {
                       "title": "Annonces de vente incomplètes ou mensongères (en vitrine ou sur internet)",
                       "reponseconsoCode": [
-                        210,
-                        220
+                        "210",
+                        "220"
                       ],
                       "example": "Exemple : absence de DPE, descriptif d'un appartement mensonger",
                       "tags": [
@@ -46994,7 +47177,7 @@
                     {
                       "title": "Problème avec une offre d'achat ou un compromis de vente",
                       "reponseconsoCode": [
-                        425
+                        "425"
                       ],
                       "example": "Exemple : refus de mon offre au prix sans justification",
                       "tags": [
@@ -47007,8 +47190,8 @@
                       "title": "Cas particulier d'un chasseur d'appartements",
                       "example": "Exemple : frais d'étude alors que c'est interdit",
                       "reponseconsoCode": [
-                        2269,
-                        425
+                        "2269",
+                        "425"
                       ],
                       "tags": [
                         "ReponseConso",
@@ -47019,8 +47202,8 @@
                     {
                       "title": "Cas particulier d'un mandataire indépendant (agent commercial)",
                       "reponseconsoCode": [
-                        2269,
-                        425
+                        "2269",
+                        "425"
                       ],
                       "tags": [
                         "ReponseConso",
@@ -47044,7 +47227,7 @@
                 {
                   "title": "Charges / honoraires",
                   "reponseconsoCode": [
-                    634
+                    "634"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -47054,23 +47237,23 @@
                 {
                   "title": "Loyer",
                   "reponseconsoCode": [
-                    631,
-                    634
+                    "631",
+                    "634"
                   ],
                   "id": "1.11-1.2.2"
                 },
                 {
                   "title": "Etat des lieux / caution",
                   "reponseconsoCode": [
-                    634
+                    "634"
                   ],
                   "id": "1.11-1.2.3"
                 },
                 {
                   "title": "Bail / contrat de location",
                   "reponseconsoCode": [
-                    632,
-                    634
+                    "632",
+                    "634"
                   ],
                   "example": "Exemple : clause abusive dans le contrat",
                   "id": "1.11-1.2.4"
@@ -47078,7 +47261,7 @@
                 {
                   "title": "Autre",
                   "reponseconsoCode": [
-                    679
+                    "679"
                   ],
                   "id": "1.11-1.2.5"
                 }
@@ -47098,9 +47281,9 @@
                     {
                       "title": "Contrat et mandat",
                       "reponseconsoCode": [
-                        442,
-                        443,
-                        446
+                        "442",
+                        "443",
+                        "446"
                       ],
                       "example": "Exemple : clause abusive dans le contrat",
                       "id": "1.11-1.3.1.1"
@@ -47108,23 +47291,23 @@
                     {
                       "title": "Honoraires",
                       "reponseconsoCode": [
-                        451
+                        "451"
                       ],
                       "id": "1.11-1.3.1.2"
                     },
                     {
                       "title": "Assurance loyer impayé",
                       "reponseconsoCode": [
-                        451,
-                        442,
-                        443
+                        "451",
+                        "442",
+                        "443"
                       ],
                       "id": "1.11-1.3.1.3"
                     },
                     {
                       "title": "Autre",
                       "reponseconsoCode": [
-                        679
+                        "679"
                       ],
                       "tags": [
                         "ReponseConso"
@@ -47141,14 +47324,14 @@
                       "title": "Mise en vente sans mandat",
                       "example": "Exemple : une agence a mis mon bien en vente sans mandat signé ",
                       "reponseconsoCode": [
-                        425
+                        "425"
                       ],
                       "id": "1.11-1.3.2.1"
                     },
                     {
                       "title": "Honoraires de vente",
                       "reponseconsoCode": [
-                        451
+                        "451"
                       ],
                       "tags": [
                         "Litige contractuel"
@@ -47159,7 +47342,7 @@
                       "title": "Discours trompeur",
                       "example": "Exemple : L'agent immobilier m'a promis de vendre sous 7 jours",
                       "reponseconsoCode": [
-                        210
+                        "210"
                       ],
                       "tags": [
                         "ReponseConso",
@@ -47173,7 +47356,7 @@
                 {
                   "title": "Autre",
                   "reponseconsoCode": [
-                    679
+                    "679"
                   ],
                   "tags": [
                     "Litige contractuel"
@@ -47193,21 +47376,21 @@
                     "content": "La Répression des Fraudes ne gère pas les problèmes d'accessibilité des bâtiments et espaces ouverts au public. <br><br> Deux solutions pour le signaler : <ul> <li> Porter plainte directement au commissariat ;</li> <li> Écrire à la Direction Départementale des Territoires du département pour leur signaler. Les adresses sont sur le site <a href='https://lannuaire.service-public.fr/navigation/ddt' target='_blank'>lannuaire.service-public.fr</a></li> </lu>"
                   },
                   "reponseconsoCode": [
-                    679
+                    "679"
                   ],
                   "id": "1.11-1.4.1"
                 },
                 {
                   "title": "Le personnel ne dispose pas des diplômes ou qualifications requises",
                   "reponseconsoCode": [
-                    2269
+                    "2269"
                   ],
                   "id": "1.11-1.4.2"
                 },
                 {
                   "title": "Autre",
                   "reponseconsoCode": [
-                    679
+                    "679"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -47226,7 +47409,7 @@
             {
               "title": "Problème avec mon locataire / propriétaire",
               "reponseconsoCode": [
-                634
+                "634"
               ],
               "information": {
                 "title": "Votre problème ne rentre pas dans le cadre de SignalConso.",
@@ -47247,8 +47430,8 @@
             {
               "title": "Problème avec un site de mise en relation entre particuliers",
               "reponseconsoCode": [
-                220,
-                446
+                "220",
+                "446"
               ],
               "id": "1.11-2.2"
             }
@@ -47262,7 +47445,7 @@
               "title": "Facturation",
               "example": "Exemple : frais facturés injustifiés ou facturés plus chers que prévu",
               "reponseconsoCode": [
-                451
+                "451"
               ],
               "subcategoriesTitle": "Le détail des frais est marqué dans le contrat de syndic. Avant de faire un signalement, veuillez vérifier ce contrat au chapitre 7. Si vous ne l'avez pas, demandez le à votre syndic. Ce document est obligatoire et gratuit.",
               "subcategories": [
@@ -47298,7 +47481,7 @@
             {
               "title": "Contrat de syndic",
               "reponseconsoCode": [
-                2262
+                "2262"
               ],
               "example": "Exemple : clause abusive dans le contrat",
               "id": "1.11-3.2"
@@ -47307,7 +47490,7 @@
               "title": "Documents à disposition des copropriétaires",
               "example": "Exemple : pas de fiche synthétique de copropriété",
               "reponseconsoCode": [
-                633
+                "633"
               ],
               "tags": [
                 "ReponseConso"
@@ -47318,7 +47501,7 @@
               "title": "Gestion des travaux par le syndic",
               "example": "Exemple: devis, choix des prestataires",
               "reponseconsoCode": [
-                633
+                "633"
               ],
               "tags": [
                 "ReponseConso",
@@ -47330,7 +47513,7 @@
               "title": "Absence de réponse du syndic",
               "example": "Exemple : aucune réponse malgré des relances",
               "reponseconsoCode": [
-                633
+                "633"
               ],
               "tags": [
                 "ReponseConso"
@@ -47340,7 +47523,7 @@
             {
               "title": "Autre",
               "reponseconsoCode": [
-                679
+                "679"
               ],
               "tags": [
                 "Litige contractuel"
@@ -47353,7 +47536,7 @@
         {
           "title": "Notaire",
           "reponseconsoCode": [
-            679
+            "679"
           ],
           "tags": [
             "Litige contractuel"
@@ -47363,7 +47546,7 @@
         {
           "title": "Autre",
           "reponseconsoCode": [
-            679
+            "679"
           ],
           "tags": [
             "Litige contractuel"
@@ -47425,8 +47608,8 @@
             {
               "title": "La publicité (ou les informations sur la boîte) est trompeuse",
               "reponseconsoCode": [
-                210,
-                271
+                "210",
+                "271"
               ],
               "detailInputs": [
                 {
@@ -47468,8 +47651,8 @@
             {
               "title": "J'ai eu un problème de démarchage à domicile",
               "reponseconsoCode": [
-                412,
-                221
+                "412",
+                "221"
               ],
               "companyKind": "LOCATION",
               "tags": [
@@ -47509,8 +47692,8 @@
               "title": "J'ai eu un problème de démarchage téléphonique",
               "companyKind": "PHONE",
               "reponseconsoCode": [
-                2216,
-                221
+                "2216",
+                "221"
               ],
               "tags": [
                 "ReponseConso",
@@ -47544,8 +47727,8 @@
               "title": "Un produit de santé est de mauvaise qualité",
               "example": "Exemple : béquille qui se tord, audioprothèse qui se fissure rapidement, préservatif qui se perce",
               "reponseconsoCode": [
-                332,
-                464
+                "332",
+                "464"
               ],
               "detailInputs": [
                 {
@@ -47600,8 +47783,8 @@
                   "example": "Les tarifs doivent être clairement affichés dans la salle d'attente.",
                   "companyKind": "SIRET",
                   "reponseconsoCode": [
-                    212,
-                    226
+                    "212",
+                    "226"
                   ],
                   "detailInputs": [
                     {
@@ -47627,8 +47810,8 @@
                   "title": "Le professionnel n'indique pas s' il est conventionné, ou s'il est secteur 1 ou secteur 2",
                   "example": "Cette indication est obligatoire sur sa plaque (au niveau de sa porte ou du hall d'entrée) et dans la salle d'attente.",
                   "reponseconsoCode": [
-                    212,
-                    226
+                    "212",
+                    "226"
                   ],
                   "detailInputs": [
                     {
@@ -47676,8 +47859,8 @@
                       "title": "Je n'ai pas eu de devis écrit",
                       "example": "Un devis est obligatoire dès que les dépassements d'honoraires et la prestation dépassent 70 euros. Un devis est obligatoire en cas de pose de couronne, implant, bridge... Un devis est oligatoire en chirurgie esthétique.",
                       "reponseconsoCode": [
-                        2121,
-                        226
+                        "2121",
+                        "226"
                       ],
                       "tags": [
                         "ReponseConso"
@@ -47718,8 +47901,8 @@
                     {
                       "title": "Le devis est incomplet",
                       "reponseconsoCode": [
-                        2121,
-                        226
+                        "2121",
+                        "226"
                       ],
                       "tags": [
                         "ReponseConso"
@@ -47752,8 +47935,8 @@
                     {
                       "title": "J'ai payé plus cher que le devis",
                       "reponseconsoCode": [
-                        2121,
-                        210
+                        "2121",
+                        "210"
                       ],
                       "detailInputs": [
                         {
@@ -47796,8 +47979,8 @@
                 {
                   "title": "Les prix ne sont pas affichés ou sont faux",
                   "reponseconsoCode": [
-                    212,
-                    210
+                    "212",
+                    "210"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -47863,8 +48046,8 @@
                   "title": "Je n'ai pas reçu de note (facture, ticket)",
                   "example": "À partir de 25 euros, votre praticien doit vous remettre une note qui décrit ce que vous avez payé. C'est une obligation.",
                   "reponseconsoCode": [
-                    213,
-                    220
+                    "213",
+                    "220"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -47897,8 +48080,8 @@
                   "title": "La publicité ou la description du soin est trompeuse",
                   "example": "Exemple : durée plus courte que celle affichée, les résultats \"garantis\" ne se sont pas réalisés, publicité en vitrine trompeuse",
                   "reponseconsoCode": [
-                    210,
-                    220
+                    "210",
+                    "220"
                   ],
                   "detailInputs": [
                     {
@@ -47934,8 +48117,8 @@
                   "title": "J'ai eu un problème de démarchage téléphonique",
                   "companyKind": "PHONE",
                   "reponseconsoCode": [
-                    221,
-                    2216
+                    "221",
+                    "2216"
                   ],
                   "tags": [
                     "ReponseConso",
@@ -47974,8 +48157,8 @@
                 {
                   "title": "Une publicité est trompeuse ou non appliquée",
                   "reponseconsoCode": [
-                    210,
-                    220
+                    "210",
+                    "220"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -47999,8 +48182,8 @@
                 {
                   "title": "Je ne suis pas satisfait de la qualité de mes lunettes / prothèses",
                   "reponseconsoCode": [
-                    332,
-                    464
+                    "332",
+                    "464"
                   ],
                   "detailInputs": [
                     {
@@ -48035,8 +48218,8 @@
                 {
                   "title": "Autre",
                   "reponseconsoCode": [
-                    226,
-                    220
+                    "226",
+                    "220"
                   ],
                   "id": "1.3-2.3.3"
                 }
@@ -48064,8 +48247,8 @@
               "title": "J'ai dû payer un \"forfait administratif\"",
               "example": "Les forfaits administratifs sont souvent aux alentours de 10 euros. Ils sont justifiés par des frais de photocopies, la prise de contact avec la mutuelle, l'appel du taxi pour reconduire un malade... Ces frais sont interdits.",
               "reponseconsoCode": [
-                411,
-                464
+                "411",
+                "464"
               ],
               "detailInputs": [
                 {
@@ -48086,8 +48269,8 @@
               "title": "J'ai été facturé pour un supplément que je n'avais pas demandé",
               "example": "Exemple : supplément \"chambre seule\" au prétexte qu'elles étaient toutes occupées, supplément \"télévision\" alors que je n'ai pas demandé à avoir la télévision",
               "reponseconsoCode": [
-                411,
-                210
+                "411",
+                "210"
               ],
               "detailInputs": [
                 {
@@ -48132,7 +48315,7 @@
             {
               "title": "Autre",
               "reponseconsoCode": [
-                226
+                "226"
               ],
               "id": "1.3-3.4"
             }
@@ -48149,8 +48332,8 @@
                   "title": "Les prix ne sont pas indiqués",
                   "example": "Les prix doivent être indiqués dans les rayons, visibles pour les médicaments situés derrière le comptoir. La pharmacie doit également avoir un catalogue des prix.",
                   "reponseconsoCode": [
-                    212,
-                    226
+                    "212",
+                    "226"
                   ],
                   "tags": [
                     "ReponseConso",
@@ -48178,8 +48361,8 @@
                 {
                   "title": "Les prix sont exagérés",
                   "reponseconsoCode": [
-                    164,
-                    226
+                    "164",
+                    "226"
                   ],
                   "information": {
                     "title": "Le pharmacien a le droit de faire les prix qu'il souhaite (sauf pour les médicaments remboursables).",
@@ -48191,8 +48374,8 @@
                 {
                   "title": "Autre",
                   "reponseconsoCode": [
-                    226,
-                    162
+                    "226",
+                    "162"
                   ],
                   "tags": [
                     "Litige contractuel"
@@ -48205,9 +48388,9 @@
             {
               "title": "Problème de commande",
               "reponseconsoCode": [
-                220,
-                226,
-                162
+                "220",
+                "226",
+                "162"
               ],
               "tags": [
                 "Litige contractuel"
@@ -48258,8 +48441,8 @@
                     {
                       "title": "Oui (je possède la carte d'assistance)",
                       "reponseconsoCode": [
-                        422,
-                        411
+                        "422",
+                        "411"
                       ],
                       "detailInputs": [
                         {
@@ -48282,8 +48465,8 @@
                 {
                   "title": "Autre",
                   "reponseconsoCode": [
-                    226,
-                    162
+                    "226",
+                    "162"
                   ],
                   "id": "1.3-4.3.4"
                 }
@@ -48297,8 +48480,8 @@
           "title": "Ambulance",
           "example": "et autre transport sanitaire (exemple : taxi)",
           "reponseconsoCode": [
-            212,
-            226
+            "212",
+            "226"
           ],
           "tags": [
             "Litige contractuel"
@@ -48321,8 +48504,8 @@
                   "title": "Les prix ne sont pas affichés",
                   "example": "Exemple : les prix des soins ne sont pas affichés, les prix affichés ne sont pas très clairs",
                   "reponseconsoCode": [
-                    212,
-                    220
+                    "212",
+                    "220"
                   ],
                   "detailInputs": [
                     {
@@ -48348,8 +48531,8 @@
                   "title": "J'ai payé plus cher que les prix affichés",
                   "example": "Exemple : j'ai payé un supplément non prévu sans être prévenu, les prix affichés ne sont pas à jour ",
                   "reponseconsoCode": [
-                    212,
-                    210
+                    "212",
+                    "210"
                   ],
                   "detailInputs": [
                     {
@@ -48374,8 +48557,8 @@
                 {
                   "title": "Je n'ai pas eu de facture (note)",
                   "reponseconsoCode": [
-                    213,
-                    220
+                    "213",
+                    "220"
                   ],
                   "detailInputs": [
                     {
@@ -48402,8 +48585,8 @@
               "title": "Publicité mensongère",
               "example": "Exemple : spa simple déclaré en thalassothérapie, soins qui ne correspondent pas à la description sur la publicité, utilisation frauduleuse du label Qualicert",
               "reponseconsoCode": [
-                210,
-                220
+                "210",
+                "220"
               ],
               "tags": [
                 "Litige contractuel"
@@ -48450,8 +48633,8 @@
               "title": "Contrat",
               "example": "Exemple : je souhaite annuler ma cure, le contrat n'est pas clair, mon contrat n'a pas été respecté ",
               "reponseconsoCode": [
-                220,
-                422
+                "220",
+                "422"
               ],
               "tags": [
                 "ReponseConso",
@@ -48503,9 +48686,9 @@
                     {
                       "title": "Oui (je possède la carte d'assistance)",
                       "reponseconsoCode": [
-                        422,
-                        220,
-                        232
+                        "422",
+                        "220",
+                        "232"
                       ],
                       "detailInputs": [
                         {
@@ -48528,8 +48711,8 @@
                 {
                   "title": "Autre",
                   "reponseconsoCode": [
-                    220,
-                    411
+                    "220",
+                    "411"
                   ],
                   "id": "1.3-6.4.4"
                 }
@@ -48543,8 +48726,8 @@
           "title": "Un site internet lié au secteur de la santé",
           "example": "Exemple : site de téléconsultation avec un médecin",
           "reponseconsoCode": [
-            220,
-            226
+            "220",
+            "226"
           ],
           "companyKind": "WEBSITE",
           "id": "1.3-7"
@@ -48577,6 +48760,10 @@
               "subcategories": [
                 {
                   "title": "Prix / paiement",
+                  "reponseconsoCode": [
+                    "451",
+                    "623"
+                  ],
                   "tags": [
                     "ReponseConso"
                   ],
@@ -48584,6 +48771,10 @@
                 },
                 {
                   "title": "Publicité / annonce",
+                  "reponseconsoCode": [
+                    "210",
+                    "411"
+                  ],
                   "tags": [
                     "ReponseConso"
                   ],
@@ -48592,6 +48783,9 @@
                 },
                 {
                   "title": "Autre",
+                  "reponseconsoCode": [
+                    "679"
+                  ],
                   "subcategories": [
                     {
                       "title": "Personnel peu aimable",
@@ -48630,6 +48824,9 @@
               "subcategories": [
                 {
                   "title": "Prix / paiement",
+                  "reponseconsoCode": [
+                    "451"
+                  ],
                   "tags": [
                     "ReponseConso"
                   ],
@@ -48637,6 +48834,10 @@
                 },
                 {
                   "title": "Publicité",
+                  "reponseconsoCode": [
+                    "210",
+                    "411"
+                  ],
                   "tags": [
                     "ReponseConso"
                   ],
@@ -48644,6 +48845,9 @@
                 },
                 {
                   "title": "Autre",
+                  "reponseconsoCode": [
+                    "679"
+                  ],
                   "id": "1.13-1.2.3"
                 }
               ],
@@ -48657,6 +48861,10 @@
               "subcategories": [
                 {
                   "title": "Prix / paiement",
+                  "reponseconsoCode": [
+                    "451",
+                    "212"
+                  ],
                   "tags": [
                     "ReponseConso"
                   ],
@@ -48664,6 +48872,10 @@
                 },
                 {
                   "title": "Publicité",
+                  "reponseconsoCode": [
+                    "210",
+                    "411"
+                  ],
                   "tags": [
                     "ReponseConso"
                   ],
@@ -48671,6 +48883,9 @@
                 },
                 {
                   "title": "Autre",
+                  "reponseconsoCode": [
+                    "679"
+                  ],
                   "id": "1.13-1.3.3"
                 }
               ],
@@ -48699,14 +48914,24 @@
               "subcategories": [
                 {
                   "title": "Prix / paiement",
+                  "reponseconsoCode": [
+                    "451",
+                    "623"
+                  ],
                   "id": "1.13-1.5.1"
                 },
                 {
                   "title": "Publicité",
+                  "reponseconsoCode": [
+                    "210"
+                  ],
                   "id": "1.13-1.5.2"
                 },
                 {
                   "title": "Autre",
+                  "reponseconsoCode": [
+                    "679"
+                  ],
                   "id": "1.13-1.5.3"
                 }
               ],
@@ -48724,6 +48949,10 @@
           "subcategories": [
             {
               "title": "Prix / paiement",
+              "reponseconsoCode": [
+                "451",
+                "623"
+              ],
               "tags": [
                 "ReponseConso"
               ],
@@ -48732,6 +48961,10 @@
             },
             {
               "title": "Prestation mal réalisée ou pas réalisée",
+              "reponseconsoCode": [
+                "446",
+                "271"
+              ],
               "tags": [
                 "ReponseConso"
               ],
@@ -48740,6 +48973,10 @@
             },
             {
               "title": "Publicité mensongère",
+              "reponseconsoCode": [
+                "210",
+                "271"
+              ],
               "tags": [
                 "ReponseConso"
               ],
@@ -48747,6 +48984,10 @@
             },
             {
               "title": "Autre",
+              "reponseconsoCode": [
+                "464",
+                "271"
+              ],
               "subcategories": [
                 {
                   "title": "Personnel peu aimable",
@@ -48782,6 +49023,10 @@
           "subcategories": [
             {
               "title": "Prix / paiement",
+              "reponseconsoCode": [
+                "451",
+                "623"
+              ],
               "tags": [
                 "ReponseConso"
               ],
@@ -48790,6 +49035,9 @@
             },
             {
               "title": "Publicité mensongère",
+              "reponseconsoCode": [
+                "210"
+              ],
               "tags": [
                 "ReponseConso"
               ],
@@ -48798,6 +49046,9 @@
             },
             {
               "title": "Autre",
+              "reponseconsoCode": [
+                "214"
+              ],
               "example": "Exemple : clause abusive dans le contrat, obligation de payer des heures régulièrement, heure de conduite qui ne dure pas une heure",
               "subcategories": [
                 {
@@ -48852,6 +49103,10 @@
         {
           "title": "Produit dangereux",
           "example": "Exemple : voiture, vélo, pneu",
+          "reponseconsoCode": [
+            "352",
+            "617"
+          ],
           "tags": [
             "Produit dangereux"
           ],
@@ -50576,10 +50831,13 @@
         },
         {
           "title": "Autre",
+          "example": "Exemple : fourrière",
+          "reponseconsoCode": [
+            "679"
+          ],
           "tags": [
             "ReponseConso"
           ],
-          "example": "Exemple : fourrière",
           "id": "1.13-5"
         }
       ],
@@ -50597,8 +50855,8 @@
           "title": "Alimentation / Matériel pour animaux",
           "example": "Exemple : jouet, cage, laisse, croquettes",
           "reponseconsoCode": [
-            332,
-            617
+            "332",
+            "617"
           ],
           "tags": [
             "Litige contractuel"
@@ -50609,8 +50867,8 @@
           "title": "Soins",
           "example": "Exemple : vétérinaire, toiletteur",
           "reponseconsoCode": [
-            212,
-            213
+            "212",
+            "213"
           ],
           "tags": [
             "Litige contractuel"
@@ -50621,8 +50879,8 @@
           "title": "Garde d'animaux",
           "example": "Exemple : pension, site internet de garde d'animaux",
           "reponseconsoCode": [
-            212,
-            213
+            "212",
+            "213"
           ],
           "tags": [
             "Litige contractuel"
@@ -50632,8 +50890,8 @@
         {
           "title": "Vendeur d'animaux",
           "reponseconsoCode": [
-            210,
-            271
+            "210",
+            "271"
           ],
           "tags": [
             "ReponseConso",
@@ -50644,8 +50902,8 @@
         {
           "title": "Autre",
           "reponseconsoCode": [
-            333,
-            210
+            "333",
+            "210"
           ],
           "tags": [
             "Litige contractuel"
@@ -50666,9 +50924,9 @@
         {
           "title": "Absence d'information sur le médiateur",
           "reponseconsoCode": [
-            2201,
-            411,
-            491
+            "2201",
+            "411",
+            "492"
           ],
           "tags": [
             "ReponseConso",
@@ -50679,8 +50937,8 @@
         {
           "title": "Courrier / entreprise qui se fait passer pour l'administration",
           "reponseconsoCode": [
-            210,
-            511
+            "210",
+            "511"
           ],
           "tags": [
             "ReponseConso",
@@ -50705,8 +50963,8 @@
               "title": "À une entreprise",
               "example": "Un site avec une Marianne ou un drapeau tricolore n'appartient pas forcément à l'Etat. Ces entreprises entretiennent une confusion pour tromper les consommateurs.",
               "reponseconsoCode": [
-                210,
-                511
+                "210",
+                "511"
               ],
               "tags": [
                 "ReponseConso",
@@ -50720,9 +50978,9 @@
         {
           "title": "Carte des numéros utiles de la mairie (numéro urgence serrurier, plombier...)",
           "reponseconsoCode": [
-            210,
-            2201,
-            491
+            "210",
+            "2201",
+            "492"
           ],
           "tags": [
             "ReponseConso"
@@ -50745,10 +51003,10 @@
             {
               "title": "Une entreprise privée",
               "reponseconsoCode": [
-                220,
-                521,
-                210,
-                492
+                "220",
+                "521",
+                "210",
+                "492"
               ],
               "tags": [
                 "Litige contractuel"

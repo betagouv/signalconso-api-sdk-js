@@ -22,8 +22,8 @@
             content: <br>Merci de remplir le formulaire dédié à ce type de problème sur le site <a href="https://signalement.social-sante.gouv.fr/psig_ihm_utilisateurs/index.html#/accueil" target="_blank">signalement.social-sante.gouv.fr</a>
     - title: La publicité (ou les informations sur la boîte) est trompeuse
       reponseconsoCode:
-        - 210
-        - 271
+        - '210'
+        - '271'
       detailInputs:
         - label: Date de constat (ou date d'achat)
           rank: 1
@@ -50,8 +50,8 @@
       fileLabel: Merci de joindre une photo de la publicité ou de la boîte afin de traiter au mieux votre signalement.
     - title: J'ai eu un problème de démarchage à domicile
       reponseconsoCode:
-        - 412
-        - 221
+        - '412'
+        - '221'
       companyKind: LOCATION
       tags:
         - ReponseConso
@@ -77,8 +77,8 @@
     - title: J'ai eu un problème de démarchage téléphonique
       companyKind: PHONE
       reponseconsoCode:
-        - 2216
-        - 221
+        - '2216'
+        - '221'
       tags:
         - ReponseConso
         - Démarchage téléphonique
@@ -99,8 +99,8 @@
     - title: Un produit de santé est de mauvaise qualité
       example: 'Exemple : béquille qui se tord, audioprothèse qui se fissure rapidement, préservatif qui se perce'
       reponseconsoCode:
-        - 332
-        - 464
+        - '332'
+        - '464'
       detailInputs:
         - label: Date de constat (ou date d'achat)
           rank: 1
@@ -135,8 +135,8 @@
           example: Les tarifs doivent être clairement affichés dans la salle d'attente.
           companyKind: SIRET
           reponseconsoCode:
-            - 212
-            - 226
+            - '212'
+            - '226'
           detailInputs:
             - label: Date de constat
               rank: 1
@@ -152,8 +152,8 @@
         - title: Le professionnel n'indique pas s' il est conventionné, ou s'il est secteur 1 ou secteur 2
           example: Cette indication est obligatoire sur sa plaque (au niveau de sa porte ou du hall d'entrée) et dans la salle d'attente.
           reponseconsoCode:
-            - 212
-            - 226
+            - '212'
+            - '226'
           detailInputs:
             - label: Date du constat
               rank: 1
@@ -185,8 +185,8 @@
             - title: Je n'ai pas eu de devis écrit
               example: Un devis est obligatoire dès que les dépassements d'honoraires et la prestation dépassent 70 euros. Un devis est obligatoire en cas de pose de couronne, implant, bridge... Un devis est oligatoire en chirurgie esthétique.
               reponseconsoCode:
-                - 2121
-                - 226
+                - '2121'
+                - '226'
               tags:
                 - ReponseConso
               detailInputs:
@@ -211,8 +211,8 @@
                   type: TEXT
             - title: Le devis est incomplet
               reponseconsoCode:
-                - 2121
-                - 226
+                - '2121'
+                - '226'
               tags:
                 - ReponseConso
               detailInputs:
@@ -232,8 +232,8 @@
                     - montant remboursé par l'assurance maladie
             - title: J'ai payé plus cher que le devis
               reponseconsoCode:
-                - 2121
-                - 210
+                - '2121'
+                - '210'
               detailInputs:
                 - label: Date de constat
                   rank: 1
@@ -254,8 +254,8 @@
       subcategories:
         - title: Les prix ne sont pas affichés ou sont faux
           reponseconsoCode:
-            - 212
-            - 210
+            - '212'
+            - '210'
           tags:
             - ReponseConso
           example: "Les prix doivent être affichés en salle d'attente."
@@ -297,8 +297,8 @@
         - title: Je n'ai pas reçu de note (facture, ticket)
           example: "À partir de 25 euros, votre praticien doit vous remettre une note qui décrit ce que vous avez payé. C'est une obligation."
           reponseconsoCode:
-            - 213
-            - 220
+            - '213'
+            - '220'
           tags:
             - ReponseConso
           detailInputs:
@@ -318,8 +318,8 @@
         - title: La publicité ou la description du soin est trompeuse
           example: 'Exemple : durée plus courte que celle affichée, les résultats "garantis" ne se sont pas réalisés, publicité en vitrine trompeuse'
           reponseconsoCode:
-            - 210
-            - 220
+            - '210'
+            - '220'
           detailInputs:
             - label: Date du constat
               rank: 1
@@ -343,8 +343,8 @@
         - title: J'ai eu un problème de démarchage téléphonique
           companyKind: PHONE
           reponseconsoCode:
-            - 221
-            - 2216
+            - '221'
+            - '2216'
           tags:
             - ReponseConso
             - Démarchage téléphonique
@@ -366,8 +366,8 @@
       subcategories:
         - title: Une publicité est trompeuse ou non appliquée
           reponseconsoCode:
-            - 210
-            - 220
+            - '210'
+            - '220'
           tags:
             - ReponseConso
           example: 'Exemple : offre promotionnelle trompeuse sur des lunettes'
@@ -381,8 +381,8 @@
           fileLabel: Merci de joindre une photo de la publicité, du dépliant, du site internet afin d'apporter des preuves et de traiter plus rapidement votre signalement.
         - title: Je ne suis pas satisfait de la qualité de mes lunettes / prothèses
           reponseconsoCode:
-            - 332
-            - 464
+            - '332'
+            - '464'
           detailInputs:
             - label: Date du constat
               rank: 1
@@ -403,8 +403,8 @@
           fileLabel: Merci de joindre si possible une photo du produit ou de la facture d'achat.
         - title: Autre
           reponseconsoCode:
-            - 226
-            - 220
+            - '226'
+            - '220'
 - title: Hôpital / Clinique
   tags:
     - Litige contractuel
@@ -416,8 +416,8 @@
     - title: J'ai dû payer un "forfait administratif"
       example: Les forfaits administratifs sont souvent aux alentours de 10 euros. Ils sont justifiés par des frais de photocopies, la prise de contact avec la mutuelle, l'appel du taxi pour reconduire un malade... Ces frais sont interdits.
       reponseconsoCode:
-        - 411
-        - 464
+        - '411'
+        - '464'
       detailInputs:
         - label: Date de sortie (ou date de la facture)
           rank: 1
@@ -429,8 +429,8 @@
     - title: J'ai été facturé pour un supplément que je n'avais pas demandé
       example: 'Exemple : supplément "chambre seule" au prétexte qu''elles étaient toutes occupées, supplément "télévision" alors que je n''ai pas demandé à avoir la télévision'
       reponseconsoCode:
-        - 411
-        - 210
+        - '411'
+        - '210'
       detailInputs:
         - label: Date de sortie (ou date de la facture)
           rank: 1
@@ -458,7 +458,7 @@
       fileLabel: Merci de joindre une photo de la facture si possible afin d'appuyer votre signalement.
     - title: Autre
       reponseconsoCode:
-        - 226
+        - '226'
 - title: Pharmacie
   subcategories:
     - title: Problème de prix
@@ -466,8 +466,8 @@
         - title: Les prix ne sont pas indiqués
           example: Les prix doivent être indiqués dans les rayons, visibles pour les médicaments situés derrière le comptoir. La pharmacie doit également avoir un catalogue des prix.
           reponseconsoCode:
-            - 212
-            - 226
+            - '212'
+            - '226'
           tags:
             - ReponseConso
             - Litige contractuel
@@ -484,8 +484,8 @@
                 - Il n'y a pas de catalogue des prix disponible (papier ou sur écran)
         - title: Les prix sont exagérés
           reponseconsoCode:
-            - 164
-            - 226
+            - '164'
+            - '226'
           information:
             title: Le pharmacien a le droit de faire les prix qu'il souhaite (sauf pour les médicaments remboursables).
             content:
@@ -495,15 +495,15 @@
             outOfScope: true
         - title: Autre
           reponseconsoCode:
-            - 226
-            - 162
+            - '226'
+            - '162'
           tags:
             - Litige contractuel
     - title: Problème de commande
       reponseconsoCode:
-        - 220
-        - 226
-        - 162
+        - '220'
+        - '226'
+        - '162'
       tags:
         - Litige contractuel
     - title: Autre
@@ -519,8 +519,8 @@
               information: !!import/single ../common/info/chienassistance.yml
             - title: Oui (je possède la carte d'assistance)
               reponseconsoCode:
-                - 422
-                - 411
+                - '422'
+                - '411'
               detailInputs:
                 - label: Date du refus
                   rank: 1
@@ -531,13 +531,13 @@
               fileLabel: Vous pouvez joindre des éléments (photo, carte d'assistance...) pour appuyer votre signalement.
         - title: Autre
           reponseconsoCode:
-            - 226
-            - 162
+            - '226'
+            - '162'
 - title: Ambulance
   example: 'et autre transport sanitaire (exemple : taxi)'
   reponseconsoCode:
-    - 212
-    - 226
+    - '212'
+    - '226'
   tags:
     - Litige contractuel
 - title: Cure
@@ -552,8 +552,8 @@
         - title: Les prix ne sont pas affichés
           example: 'Exemple : les prix des soins ne sont pas affichés, les prix affichés ne sont pas très clairs'
           reponseconsoCode:
-            - 212
-            - 220
+            - '212'
+            - '220'
           detailInputs:
             - label: Date de constat
               rank: 1
@@ -569,8 +569,8 @@
         - title: J'ai payé plus cher que les prix affichés
           example: "Exemple : j'ai payé un supplément non prévu sans être prévenu, les prix affichés ne sont pas à jour "
           reponseconsoCode:
-            - 212
-            - 210
+            - '212'
+            - '210'
           detailInputs:
             - label: Date de constat (ou date de paiement)
               rank: 1
@@ -585,8 +585,8 @@
           fileLabel: Si possible merci de joindre une photo de la facture ou de l'affichage des prix pour appuyer votre signalement.
         - title: Je n'ai pas eu de facture (note)
           reponseconsoCode:
-            - 213
-            - 220
+            - '213'
+            - '220'
           detailInputs:
             - label: Date de constat (ou date de paiement)
               rank: 1
@@ -600,8 +600,8 @@
     - title: Publicité mensongère
       example: 'Exemple : spa simple déclaré en thalassothérapie, soins qui ne correspondent pas à la description sur la publicité, utilisation frauduleuse du label Qualicert'
       reponseconsoCode:
-        - 210
-        - 220
+        - '210'
+        - '220'
       tags:
         - Litige contractuel
       detailInputs:
@@ -632,8 +632,8 @@
     - title: Contrat
       example: "Exemple : je souhaite annuler ma cure, le contrat n'est pas clair, mon contrat n'a pas été respecté "
       reponseconsoCode:
-        - 220
-        - 422
+        - '220'
+        - '422'
       tags:
         - ReponseConso
         - Litige contractuel
@@ -650,9 +650,9 @@
               information: !!import/single ../common/info/chienassistance.yml
             - title: Oui (je possède la carte d'assistance)
               reponseconsoCode:
-                - 422
-                - 220
-                - 232
+                - '422'
+                - '220'
+                - '232'
               detailInputs:
                 - label: Date du refus
                   rank: 1
@@ -663,11 +663,11 @@
               fileLabel: Vous pouvez joindre des éléments (photo, carte d'assistance...) pour appuyer votre signalement.
         - title: Autre
           reponseconsoCode:
-            - 220
-            - 411
+            - '220'
+            - '411'
 - title: Un site internet lié au secteur de la santé
   example: 'Exemple : site de téléconsultation avec un médecin'
   reponseconsoCode:
-    - 220
-    - 226
+    - '220'
+    - '226'
   companyKind: 'WEBSITE'

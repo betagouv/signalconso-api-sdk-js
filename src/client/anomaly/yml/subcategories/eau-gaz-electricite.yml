@@ -148,7 +148,7 @@
     - title: Publicité mensongère ou trompeuse
       example: 'Exemple : publicité "offre verte" mensongère'
       reponseconsoCode:
-        - 210
+        - '210'
       detailInputs:
         - label: Date du constat
           rank: 1
@@ -191,8 +191,8 @@
           subcategories:
             - title: Sur internet, par téléphone ou chez moi avec un conseiller
               reponseconsoCode:
-                - 226
-                - 473
+                - '226'
+                - '473'
               subcategoriesTitle: Ce contrat concerne un logement
               subcategories:
                 - title: Dans lequel vous venez d'emménager
@@ -256,16 +256,16 @@
                     - title: Oui mais je n'ai pas été informé que ça annulait mon droit à la retractation.
             - title: Dans une boutique
               reponseconsoCode:
-                - 473
-                - 224
+                - '473'
+                - '224'
               information:
                 title: Vous ne pouvez plus exiger l'annulation de votre contrat.
                 content: Lorsque vous signez un contrat dans une boutique, vous ne bénéficiez pas d'un délai de retractation.
                 outOfScope: true
         - title: Une clause du contrat est abusive, c'est-à-dire qu'elle désavantage fortement le consommateur
           reponseconsoCode:
-            - 214
-            - 1211
+            - '214'
+            - '1211'
           detailInputs:
             - label: Date du constat (ou du contrat)
               rank: 1
@@ -277,18 +277,18 @@
           fileLabel: Joindre une copie du contrat / règlement.
         - title: Autre
           reponseconsoCode:
-            - 411
+            - '411'
     - title: Facturation
 - title: Autre (Fioul / GPL / granulés de bois...)
   reponseconsoCode:
-    - 271
-    - 276
-    - 437
-    - 411
-    - 424
-    - 276
-    - 437
-    - 271
-    - 212
+    - '271'
+    - '276'
+    - '437'
+    - '411'
+    - '424'
+    - '276'
+    - '437'
+    - '271'
+    - '212'
   tags:
     - Litige contractuel

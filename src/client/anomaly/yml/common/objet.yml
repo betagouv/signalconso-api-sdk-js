@@ -7,7 +7,7 @@
   subcategories:
     - title: Informations manquantes
       reponseconsoCode:
-        - 333
+        - '333'
       description: "Certaines informations sont obligatoires.
         <br/>Par exemple :
         <ul>
@@ -55,7 +55,7 @@
           detailTitle: Problème de langue française
           description: Les informations relatives aux produits et aux services doivent être rédigées ou traduites en français.
           reponseconsoCode:
-            - 211
+            - '211'
           detailInputs:
             - label: Date du constat
               rank: 1
@@ -76,8 +76,8 @@
     - title: Informations trompeuses ou fausses
       example: 'Exemple : "en or" alors qu''il s''agit de "plaqué or", "fabriqué en France" alors que ce n''est pas le cas '
       reponseconsoCode:
-        - 210
-        - 271
+        - '210'
+        - '271'
       tags:
         - ReponseConso
       detailInputs:
@@ -123,9 +123,9 @@
 - title: La quantité annoncée est non conforme
   subcategoriesTitle: Quel est le type de produit&#160;?
   reponseconsoCode:
-    - 210
-    - 276
-    - 277
+    - '210'
+    - '276'
+    - '277'
   subcategories:
     - title: Un produit emballé par le fabricant comme une boîte de conserve, un paquet, une bouteille
       tags:
@@ -187,8 +187,8 @@
 - title: Produit en retrait / rappel
   example: Le produit vendu fait l'objet d'une mesure de retrait / rappel des autorités
   reponseconsoCode:
-    - 311
-    - 331
+    - '311'
+    - '331'
   detailInputs:
     - label: Date du constat
       rank: 1
