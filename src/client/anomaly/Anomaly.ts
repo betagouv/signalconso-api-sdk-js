@@ -1,5 +1,4 @@
 export interface SubcategoryBase extends Category {
-  id: string
   title: string
   description?: string
   tags?: ReportTag[]
@@ -42,6 +41,7 @@ export enum CompanyKinds {
 }
 
 export interface Category {
+  id: string
   subcategoriesTitle?: string
   subcategories?: Subcategory[]
   companyKind?: string
