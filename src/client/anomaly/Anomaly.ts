@@ -29,7 +29,8 @@ export enum ReportTag {
   DemarchageTelephonique = 'Démarchage téléphonique',
   AbsenceDeMediateur = 'Absence de médiateur',
   Bloctel = 'Bloctel',
-  ReponseConso = 'ReponseConso'
+  ReponseConso = 'ReponseConso',
+  Internet = 'Internet',
 }
 
 export enum CompanyKinds {
