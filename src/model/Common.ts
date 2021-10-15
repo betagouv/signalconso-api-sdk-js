@@ -5,7 +5,7 @@ export interface Paginate<T> {
   totalCount: number
 }
 
-export type OrderBy = 'desc' | 'asc';
+export type OrderBy = 'desc' | 'asc'
 
 export interface Entity {
   id: Id

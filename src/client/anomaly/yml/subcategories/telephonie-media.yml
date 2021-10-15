@@ -1,7 +1,7 @@
 - title: Téléphonie / internet
   subcategories:
     - title: 'Mon forfait : prix, contrat et facture'
-      example: 'Exemple : mon forfait a été augmenté, je ne suis pas d''accord avec ma facture'
+      example: "Exemple : mon forfait a été augmenté, je ne suis pas d'accord avec ma facture"
       subcategories:
         - title: Le prix de mon forfait a été augmenté (ou va être augmenté)
           example: "Exemple : ajout automatique d'une option payante, augmentation du nombre d'heures, augmentation des données disponibles..."
@@ -24,7 +24,7 @@
             - title: Modification concernant les sms, mms ou appels
               tags:
                 - ReponseConso
-              example: 'Exemple : augmentation du nombre d''heures, augmentation du nombre de sms...'
+              example: "Exemple : augmentation du nombre d'heures, augmentation du nombre de sms..."
               subcategoriesTitle: Avez-vous reçu un email ou un courrier pour vous prévenir (un mois avant) ?
               subcategories:
                 - title: Oui, j'ai été prévenu par email ou courrier

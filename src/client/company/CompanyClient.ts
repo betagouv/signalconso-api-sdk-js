@@ -1,4 +1,13 @@
-import {ApiClientApi, Paginate, CompanySearch, CompanyToActivate, CompanyWithAccessLevel, CompanyWithReportsCount, dateToApi, directDownloadBlob} from '../..'
+import {
+  ApiClientApi,
+  Paginate,
+  CompanySearch,
+  CompanyToActivate,
+  CompanyWithAccessLevel,
+  CompanyWithReportsCount,
+  dateToApi,
+  directDownloadBlob,
+} from '../..'
 import {Company, CompanyCreation, CompanyUpdate, Event, Id} from '../../model'
 import {format} from 'date-fns'
 
