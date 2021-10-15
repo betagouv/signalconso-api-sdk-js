@@ -88,51 +88,16 @@ export enum InputType {
   Date = 'DATE',
 }
 
-// const askCompanyKindIfMissing = (anomaly: Category): Category => {
-//   if (!anomaly.subcategories && !anomaly.companyKind && !instanceOfSubcategoryInformation(anomaly)) {
-//     return {
-//       ...anomaly,
-//       description: undefined,
-//       subcategoriesTitle: 'Est-ce que votre problème concerne une entreprise sur internet ?',
-//       subcategories: [
-//         {
-//           ...anomaly,
-//           title: 'Oui',
-//           companyKind: CompanyKinds.WEBSITE,
-//           example: undefined
-//         }, {
-//           ...anomaly,
-//           title: 'Non, pas sur internet',
-//           companyKind: CompanyKinds.SIRET,
-//           example: undefined
-//         },
-//       ]
-//     } as Category
-//   }
-//   return {
-//     ...anomaly,
-//     subcategories: anomaly.subcategories?.map(_ => ({..._, ...askCompanyKindIfMissing(_)})),
-//   }
-// }
-//
-// const propagateCompanyKinds = (anomaly: Category): Category => {
-//   return {
-//     ...anomaly,
-//     subcategories: anomaly.subcategories
-//       ?.map(_ => ({..._, companyKind: _.companyKind || anomaly.companyKind,}))
-//       ?.map(_ => ({..._, ...propagateCompanyKinds(_),}))
-//   }
-// }
-//
-// export const enrichAnomaly = (anomaly: Category): Category => askCompanyKindIfMissing(propagateCompanyKinds(anomaly))
-//
-// export const instanceOfSubcategoryInput = (_?: Category): _ is SubcategoryInput => {
-//   return !!(_ as SubcategoryInput)?.detailInputs
-// }
-//
-// export const instanceOfSubcategoryInformation = (_?: Category): _ is SubcategoryInformation => {
-//   return !!(_ as SubcategoryInformation)?.information
-// }
-// export const instanceOfAnomaly = (_?: Category): _ is Anomaly => {
-//   return !!(_ as Anomaly)?.category
-// }
+export const formLabels = {
+  reportingDateLabel: 'Date du constat',
+  reportingTimeslotLabel: 'Heure du constat',
+  descriptionLabel: 'Description',
+}
+
+export const anomalyTags = {
+  contractualDispute: 'Litige contractuel',
+  internet: 'Internet',
+  dangerousProduct: 'Produit dangereux',
+  reponseConso: 'ReponseConso',
+  bloctel: 'Bloctel',
+}
