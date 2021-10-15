@@ -29,6 +29,7 @@ export enum ReportTag {
   DemarchageTelephonique = 'Démarchage téléphonique',
   AbsenceDeMediateur = 'Absence de médiateur',
   Bloctel = 'Bloctel',
+  ReponseConso = 'ReponseConso'
 }
 
 export enum CompanyKinds {
@@ -92,12 +93,4 @@ export const formLabels = {
   reportingDateLabel: 'Date du constat',
   reportingTimeslotLabel: 'Heure du constat',
   descriptionLabel: 'Description',
-}
-
-export const anomalyTags = {
-  contractualDispute: 'Litige contractuel',
-  internet: 'Internet',
-  dangerousProduct: 'Produit dangereux',
-  reponseConso: 'ReponseConso',
-  bloctel: 'Bloctel',
 }
