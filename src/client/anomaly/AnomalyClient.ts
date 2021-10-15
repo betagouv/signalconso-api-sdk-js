@@ -20,6 +20,8 @@ export class AnomalyClient {
     Promise.resolve(this.getAnomalies().then(_ => _.filter(anomaly => !anomaly.information).map(anomaly => anomaly.category))),
   )
 
+  readonly
+
   private static readonly askCompanyKindIfMissing = (anomaly: Category, tags: ReportTag[]): Category => {
     if (!anomaly.subcategories && !anomaly.companyKind && !AnomalyClient.instanceOfSubcategoryInformation(anomaly)) {
       return {
