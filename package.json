@@ -1,6 +1,6 @@
 {
   "name": "@signal-conso/signalconso-api-sdk-js",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "SignalConso API SDK for JavaScript/TypeScript",
   "main": "lib/index.js",
   "private": false,
@@ -20,6 +20,7 @@
     "path": "^0.12.7",
     "qs": "^6.10.1",
     "rxjs": "^6.6.7",
+    "lodash.uniqby": "^4.0.8",
     "yaml-import": "^2.0.0"
   },
   "devDependencies": {
