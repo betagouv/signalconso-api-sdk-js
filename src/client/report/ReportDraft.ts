@@ -2,6 +2,13 @@ import {CompanyKinds, ReportTag, Subcategory} from '../anomaly/Anomaly'
 import {DraftCompany} from '../company/Company'
 import {UploadedFile} from '../file/UploadedFile'
 import {DetailInputValue} from './Report'
+import {uniqby} from '../../helper/LodashNamedExport'
+
+export interface ReportDraftConsumer {
+  firstName: string
+  lastName: string
+  email: string
+}
 
 export interface ReportDraft {
   category: string
@@ -9,11 +16,7 @@ export interface ReportDraft {
   draftCompany: DraftCompany
   detailInputValues: DetailInputValue[]
   uploadedFiles: UploadedFile[]
-  consumer: {
-    firstName: string
-    lastName: string
-    email: string
-  }
+  consumer: ReportDraftConsumer
   employeeConsumer?: boolean
   contactAgreement: boolean
   forwardToReponseConso?: boolean
@@ -33,7 +36,7 @@ export class ReportDraft {
   }
 
   static readonly reponseconsoCode = (r: ReportDraft): string[] => {
-    return (r.subcategories ?? []).flatMap(_ => _.reponseconsoCode ?? [])
+    return uniqby((r.subcategories ?? []).flatMap(_ => _.reponseconsoCode ?? []), _ => _)
   }
 
   static readonly tags = (r: ReportDraft): ReportTag[] => {
