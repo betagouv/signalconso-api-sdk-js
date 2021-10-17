@@ -11,6 +11,8 @@
           subcategoriesTitle: La date est-elle <b>dépassée</b> au moment de la vente ou de l'achat&#160;?
           subcategories:
             - title: Oui
+              reponseconsoCode:
+                - '323'
               detailTitle: Il est interdit de vendre un produit avec la date limite de consommation (DLC) dépassée.
                 <br/>Après cette date, il est dangereux de consommer le produit.
               description: Les dates "DLC" concernent surtout des produits frais.
@@ -54,6 +56,8 @@
           subcategoriesTitle: La date est-elle dépassée au moment de la vente ou de l'achat&#160;?
           subcategories:
             - title: Oui
+              reponseconsoCode:
+                - '323'
               detailTitle: Il est interdit de vendre un produit avec une date limite de consommation dépassée. Ces dates concernent surtout des produits frais.
               description: Après cette date, il est dangereux de consommer le produit.
               detailInputs:
@@ -76,6 +80,8 @@
                   - question: Vous souhaitez que votre commerçant propose des rabais pour les produits bientôt périmés&#160;?
                     answer: Contacter directement le service client de votre magasin pour leur proposer.
         - title: Cas particulier des oeufs
+          reponseconsoCode:
+            - '323'
           description: La date des oeufs est une date de consommation recommandée (DCR).
             <br/> Les oeufs ne peuvent être vendus au-delà de 7 jours avant la DCR.
           detailInputs:
@@ -98,6 +104,9 @@
   subcategoriesTitle: Quel est-le problème&#160;?
   subcategories:
     - title: Moisissure
+      reponseconsoCode:
+        - '321'
+        - '323'
       subcategoriesTitle: De quel type de produit s'agit-il&#160;?
       subcategories:
         - title: Un produit vendu sans emballage
@@ -142,6 +151,9 @@
               defaultValue: SYSDATE
           fileLabel: Photo du produit
     - title: Couleur ou odeur anormale
+      reponseconsoCode:
+        - '321'
+        - '323'
       subcategoriesTitle: De quel type de produit s'agit-il&#160;?
       subcategories:
         - title: Un produit vendu sans emballage
@@ -192,6 +204,9 @@
               type: TEXT
           fileLabel: Photo du produit
     - title: Corps étranger "mou"
+      reponseconsoCode:
+        - '321'
+        - '323'
       example: 'Exemple : morceau de gant, morceau de tissus, limace'
       subcategoriesTitle: De quel type de produit s'agit-il&#160;?
       subcategories:
@@ -238,6 +253,8 @@
           fileLabel: Photo du produit
     - title: Corps étranger "dur"
       example: 'Exemple : bout de verre, morceau de métal, dent'
+      reponseconsoCode:
+        - '323'
       tags:
         - ReponseConso
         - Produit dangereux
@@ -249,6 +266,9 @@
           - question: Ce cas représente une alerte et nécessite une analyse individualisée par la répression des fraudes.
             answer: Veuillez le signaler sur le site <br><a href="https://www.economie.gouv.fr/contact/contacter-la-dgccrf?dest=particulier" target="_blank">https://www.economie.gouv.fr/contact/contacter-la-dgccrf?dest=particulier</a>
     - title: Autre
+      reponseconsoCode:
+        - '321'
+        - '323'
       subcategoriesTitle: De quel type de produit s'agit-il&#160;?
       subcategories:
         - title: Un produit vendu sans emballage
@@ -297,6 +317,10 @@
     - ReponseConso
   subcategories:
     - title: Informations manquantes
+      reponseconsoCode:
+        - '273'
+        - '323'
+        - '274'
       detailInputs:
         - label: Quelle information manque-t-il&#160;?
           rank: 1
@@ -322,6 +346,10 @@
           type: TEXTAREA
       fileLabel: Photos du produit
     - title: Informations trompeuses ou fausses
+      reponseconsoCode:
+        - '210'
+        - '273'
+        - '271'
       detailInputs:
         - label: Date du constat (ou d'achat suivant le cas)
           rank: 1
@@ -355,6 +383,9 @@
       fileLabel: Photos du produit (si possible de tous les côtés de l'emballage)
     - title: Informations sur l'emballage uniquement en langue étrangère
       example: Aucune information traduite en français
+      reponseconsoCode:
+        - '273'
+        - '211'
       detailInputs:
         - label: Date du constat (ou d'achat suivant le cas)
           rank: 1
@@ -370,8 +401,15 @@
           rank: 4
           type: TEXTAREA
     - title: Autres problèmes d'étiquette ou emballage
+      reponseconsoCode:
+        - '273'
+        - '274'
 - title: Problème de quantité
   example: 'Exemple : poids indiqué non conforme, balance non tarée'
+  reponseconsoCode:
+    - '210'
+    - '276'
+    - '277'
   tags:
     - ReponseConso
   subcategories:
@@ -459,6 +497,9 @@
           <br/>Par contre, si votre plat ne vous convient pas pour une question de goût uniquement, le restaurateur est libre de le reprendre ou non.
 - title: Produit rappelé toujours en vente
   example: Le produit fait l'objet d'une mesure de rappel des autorités
+  reponseconsoCode:
+    - '311'
+    - '331'
   tags:
     - ReponseConso
   detailInputs:

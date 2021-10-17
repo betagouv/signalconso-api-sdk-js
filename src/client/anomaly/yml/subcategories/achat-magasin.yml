@@ -3,8 +3,15 @@
   subcategories:
     - title: Le site internet en lui-même
       example: 'Exemple : publicité trompeuse, absence de mentions obligatoires, service client injoignable'
+      reponseconsoCode:
+        - '210'
+        - '220'
     - title: Une commande effectuée
       example: 'Exemple : commande jamais livrée, produit non conforme'
+      reponseconsoCode:
+        - '433'
+        - '464'
+        - '220'
     - title: Un produit dangereux
       example: 'Exemple : jouet, cosmétique'
       tags:
@@ -12,6 +19,7 @@
         - Produit dangereux
       subcategories:
         - title: Produit alimentaire
+          reponseconsoCode:
           subcategories: !!import/single ../common/produit-alimentaire.yml
         - title: Jouet, puériculture, matériel scolaire
           subcategoriesTitle: Quel est le risque&#160;?
@@ -57,6 +65,10 @@
           subcategories:
             - title: Le prix à la caisse est différent du prix affiché
               example: 'Exemple : le prix à la caisse est de 5 euros alors que le prix affiché en rayon est de 3 euros'
+              reponseconsoCode:
+                - '212'
+                - '210'
+                - '224'
               description: 'Votre droit : en cas de différence de prix, le vendeur doit vendre le produit au prix le plus faible pour le client.'
               detailInputs:
                 - label: Date du constat
@@ -94,6 +106,10 @@
                   type: TEXTAREA
             - title: Il manque des prix / les prix sont illisibles
               description: 'Votre droit : tous les prix doivent être affichés sans que vous soyez obligé de les demander.'
+              reponseconsoCode:
+                - '212'
+                - '210'
+                - '224'
               detailInputs:
                 - label: Veuillez préciser
                   rank: 1
@@ -122,6 +138,10 @@
                   <br/><br/> Un commerçant n'a pas le droit de vendre à un prix trop bas : il ne peut pas vendre un produit moins cher que ce qu'il lui a coûté. Il existe quelques situations où il a le droit de vendre en dessous du prix d'achat, comme la période des soldes."
             - title: Fausse réduction de prix
               example: 'Exemple : fausse promotion pendant les soldes, fausse liquidation totale'
+              reponseconsoCode:
+                - '224'
+                - '210'
+                - '212'
               description:
                 '<b>Soldes :</b> Les dates des soldes sont encadrées par la loi. Ces dates sont valables pour les magasins et aussi pour la vente sur internet.
                 <br/><br/><b>Liquidation :</b> les liquidations sont soumises à déclaration préalable auprès du maire de la commune où a lieu cette opération.
@@ -149,6 +169,9 @@
           example: 'Exemple : magasin sale, produit pas au frais, mauvaises odeurs'
           subcategories:
             - title: Hygiène des locaux et du matériel
+              reponseconsoCode:
+                - '312'
+                - '321'
               detailInputs:
                 - label: Quel endroit est concerné&#160;?
                   rank: 1
@@ -200,11 +223,21 @@
                           La loi précise que les personnes qui travaillent dans un endroit où sont manipulés des aliments doivent respecter un niveau élevé de propreté personnelle et doivent porter des tenues adaptées et propres.
                           Les commerçants peuvent choisir de faire porter des gants ou une coiffe (charlotte, calot...) à leur personnel, à condition que ceux-ci soient propres et en bon état.<br />Cependant, le lavage des mains peut être suffisant pour éviter les contaminations.
                     - title: Autre problème sur la tenue de travail
+                      reponseconsoCode:
+                        - '312'
+                        - '321'
                 - title: Tenue sale
+                  reponseconsoCode:
+                    - '312'
+                    - '321'
                 - title: Mauvaises pratiques d'hygiène
+                  reponseconsoCode:
+                    - '312'
                   example: 'Exemple : personne qui fume dans un local de production'
                 - title: Présence d'animaux
                   example: 'Exemple : rats, cafards'
+                  reponseconsoCode:
+                    - '312'
                   detailInputs:
                     - label: Quel animal avez-vous vu&#160;?
                       rank: 1
@@ -235,6 +268,10 @@
                       optionnal: true
             - title: Problème de température
               example: 'Exemple : rupture de la chaîne du froid'
+              reponseconsoCode:
+                - '322'
+                - '312'
+                - '310'
               tags:
                 - ReponseConso
               detailInputs:
@@ -262,6 +299,9 @@
               example: 'Exemple : les odeurs des poubelles arrivent dans mon appartement, les clients se garent devant chez moi'
               information: !!import/single ../common/info/voisinage.yml
             - title: Autre problème d'hygiène
+              reponseconsoCode:
+                - '312'
+                - '310'
               tags:
                 - ReponseConso
         - title: Produit périmé
@@ -274,6 +314,8 @@
               subcategories:
                 - title: Des produits vendus au rayon frais
                   example: 'Exemple : viande, poisson, quiche, jambon'
+                  reponseconsoCode:
+                    - '323'
                   subcategoriesTitle: La date est-elle <b>dépassée</b> au moment de la vente ou de l'achat&#160;?
                   subcategories:
                     - title: Oui
@@ -312,6 +354,9 @@
             - ReponseConso
           subcategories:
             - title: Indisponibilité des produits en publicité
+              reponseconsoCode:
+                - '210'
+                - '2243'
               detailInputs:
                 - label: Date du constat
                   rank: 1
@@ -345,6 +390,10 @@
               fileLabel: Photo(s) de la publicité si possible
             - title: Informations de vente mensongères
               example: 'Exemple : pancarte "produits locaux" or ce n''est pas le cas, affiche "pain bio" or ce n''est pas le cas'
+              reponseconsoCode:
+                - '210'
+                - '2243'
+                - '271'
               detailInputs:
                 - label: Date du constat
                   rank: 1
@@ -391,6 +440,9 @@
           subcategoriesTitle: Pourquoi voulez-vous retourner ou échanger votre article ?
           subcategories:
             - title: Il présente un défaut ou il ne marche plus
+              reponseconsoCode:
+                - '464'
+                - '465'
               subcategoriesTitle: Avez-vous acheté ce produit neuf ou d'occasion&#160;?
               subcategories:
                 - title: Neuf
@@ -547,7 +599,13 @@
               subcategories:
                 - title: Oui
                   description: Le commerçant doit respecter les conditions d’échange et de remboursement qui sont affichées dans son commerce ou dans votre contrat.
+                  reponseconsoCode:
+                    - '464'
+                    - '465'
+                    - '481'
                 - title: Non
+                  reponseconsoCode:
+                    - '621'
                   information:
                     title: Vous ne pouvez pas exiger le remboursement, l'échange ou l'annulation gratuite de votre contrat.
                     content: En effet, dans votre cas, rien n'oblige un commerçant à le faire.
@@ -560,6 +618,9 @@
               subcategoriesTitle: Pourquoi le commerçant a-t-il refusé que vous payiez en espèces&#160;?
               subcategories:
                 - title: Il refuse les espèces d'une façon générale
+                  reponseconsoCode:
+                    - '643'
+                    - '454'
                   description: 'Votre droit : les billets et les pièces en euros doivent être acceptés chez les commerçants en France.'
                 - title: Il n'avait pas assez de monnaie
                   information:
@@ -590,6 +651,9 @@
                         content: "Le minimum d'achat doit être indiqué très visiblement. Par exemple : affichage à l'entrée du magasin ou à la caisse..."
                         outOfScope: true
                     - title: Non
+                      reponseconsoCode:
+                        - '643'
+                        - '411'
                 - title: Il refuse les paiements par chèque ou carte bleue de façon générale
                   subcategoriesTitle: Le commerçant a-t-il indiqué clairement qu'il refusait la carte bleue ou les chèques&#160;?
                   subcategories:
@@ -600,12 +664,19 @@
                         content: "Il doit l'indiquer très visiblement au consommateur. Par exemple : affichage à l'entrée du magasin ou à la caisse..."
                         outOfScope: true
                     - title: Non
+                      reponseconsoCode:
+                        - '643'
+                        - '411'
                 - title: Autre
                   example: 'Exemple : problème avec le terminal de paiement'
             - title: Autre problème de prix ou paiement
               subcategories:
                 - title: Problème avec le cash-back
+                  reponseconsoCode:
+                    - '643'
                 - title: Problème avec une carte cadeau
+                  reponseconsoCode:
+                    - '643'
                 - title: Le commerçant a réfusé de me faire une détaxe alors que je vis à l'étranger
                   information:
                     title: Le commerçant a le droit de refuser de faire une détaxe sur vos achats.
@@ -615,15 +686,24 @@
                       Retrouvez plus d'information sur le site <a href="https://www.service-public.fr/professionnels-entreprises/vosdroits/F20558" target="_blank">service-public.fr</a>
                     outOfScope: true
                 - title: Autre
+                  reponseconsoCode:
+                    - '643'
         - title: Autre
           subcategories:
             - title: Problème d'accessibilité
               information: !!import/single ../common/info/accessibilite.yml
             - title: Problème lié à l'écologie
               example: 'Exemple : sac en plastique, éclairage de nuit '
+              reponseconsoCode:
+                - '673'
             - title: Problème de voisinage
               example: 'Exemple : bruit, odeur, voiture mal garée'
+              reponseconsoCode:
+                - '312'
             - title: Autre
+              reponseconsoCode:
+                - '673'
+                - '312'
     - title: Un problème avec un produit en particulier
       example: "Exemple : il manque des informations sur l'emballage, le produit est douteux"
       subcategories:
@@ -673,6 +753,9 @@
           subcategories: !!import/single ../common/produit-dangereux.yml
 - title: un achat suite à la visite d'un vendeur à mon domicile
   companyKind: LOCATION
+  reponseconsoCode:
+    - '221'
+    - '210'
   tags:
     - ReponseConso
     - Démarchage à domicile

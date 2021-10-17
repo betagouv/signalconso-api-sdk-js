@@ -1,13 +1,4 @@
-import {
-  Anomaly,
-  ApiClientApi,
-  Category,
-  CompanyKinds,
-  ReportTag,
-  Subcategory,
-  SubcategoryInformation,
-  SubcategoryInput,
-} from '../..'
+import {Anomaly, ApiClientApi, Category, CompanyKinds, ReportTag, Subcategory, SubcategoryInformation, SubcategoryInput,} from '../..'
 import anomaliesJSON from '../anomaly/yml/anomalies.json'
 import {lazy} from '@alexandreannic/ts-utils/lib/common'
 
@@ -19,8 +10,6 @@ export class AnomalyClient {
   readonly getCategories = lazy(() =>
     Promise.resolve(this.getAnomalies().then(_ => _.filter(anomaly => !anomaly.information).map(anomaly => anomaly.category))),
   )
-
-  readonly
 
   private static readonly askCompanyKindIfMissing = (anomaly: Category, tags: ReportTag[]): Category => {
     if (!anomaly.subcategories && !anomaly.companyKind && !AnomalyClient.instanceOfSubcategoryInformation(anomaly)) {
@@ -62,8 +51,9 @@ export class AnomalyClient {
     }
   }
 
-  private static readonly enrichAnomaly = (anomaly: Category): Category =>
-    AnomalyClient.askCompanyKindIfMissing(AnomalyClient.propagateCompanyKinds(anomaly), [])
+  private static readonly enrichAnomaly = (anomaly: Category): Category => {
+    return AnomalyClient.askCompanyKindIfMissing(AnomalyClient.propagateCompanyKinds(anomaly), [])
+  }
 
   static readonly instanceOfSubcategoryInput = (_?: Category): _ is SubcategoryInput => {
     return !!(_ as SubcategoryInput)?.detailInputs

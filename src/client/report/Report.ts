@@ -1,5 +1,5 @@
 import {ReportTag, Subcategory, UploadedFile} from '../..'
-import {Address} from '../../model/Address'
+import {Address} from '../../model'
 
 export const ReportingDateLabel = 'Date du constat'
 export const ReportingTimeslotLabel = 'Heure du constat'
@@ -25,6 +25,7 @@ export interface Report {
   contactAgreement: boolean
   creationDate: Date
   status: ReportStatus
+  reponseconsoCode: string[]
 }
 
 export interface DetailInputValue {
