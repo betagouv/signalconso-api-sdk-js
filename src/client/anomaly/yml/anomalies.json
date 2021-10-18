@@ -349,6 +349,9 @@
             {
               "title": "J'ai vu un animal (nuisible)",
               "example": "Exemple : cafard, rat",
+              "reponseconsoCode": [
+                "312"
+              ],
               "detailInputs": [
                 {
                   "label": "Date du constat",
@@ -390,6 +393,9 @@
             {
               "title": "Hygiène des locaux et du matériel",
               "example": "Exemple : cuisine sale, odeur de poubelle dans ma cour",
+              "reponseconsoCode": [
+                "312"
+              ],
               "subcategories": [
                 {
                   "title": "Je trouve les locaux sales ou dégradés",
@@ -465,6 +471,9 @@
             {
               "title": "Hygiène du personnel",
               "example": "Exemple : tenue sale ou pas adaptée",
+              "reponseconsoCode": [
+                "312"
+              ],
               "subcategories": [
                 {
                   "title": "La tenue de travail n'est pas adaptée",
@@ -541,6 +550,9 @@
             {
               "title": "Problème de température",
               "example": "Exemple : rupture de la chaine du froid",
+              "reponseconsoCode": [
+                "322"
+              ],
               "detailInputs": [
                 {
                   "label": "Date du constat",
@@ -585,6 +597,9 @@
           "subcategories": [
             {
               "title": "Il manque certains prix",
+              "reponseconsoCode": [
+                "212"
+              ],
               "tags": [
                 "ReponseConso"
               ],
@@ -610,6 +625,9 @@
             },
             {
               "title": "J'ai payé plus cher que le prix affiché",
+              "reponseconsoCode": [
+                "212"
+              ],
               "tags": [
                 "Litige contractuel"
               ],
@@ -703,6 +721,10 @@
                     },
                     {
                       "title": "Autre",
+                      "reponseconsoCode": [
+                        "521",
+                        "212"
+                      ],
                       "id": "1.4-3.4.1.5"
                     }
                   ],
@@ -711,6 +733,9 @@
                 {
                   "title": "Le commerçant refuse la carte bancaire ou les chèques",
                   "subcategoriesTitle": "Pour quelle raison le commerçant a-t-il refusé votre chèque / carte bleue&#160;?",
+                  "reponseconsoCode": [
+                    "411"
+                  ],
                   "subcategories": [
                     {
                       "title": "Il exige un minimum d'achat",
@@ -782,6 +807,9 @@
             },
             {
               "title": "Refus de me donner une note (ticket, facture)",
+              "reponseconsoCode": [
+                "2131"
+              ],
               "tags": [
                 "ReponseConso"
               ],
@@ -806,6 +834,9 @@
             },
             {
               "title": "Autres problèmes",
+              "reponseconsoCode": [
+                "521"
+              ],
               "id": "1.4-3.6"
             }
           ],
@@ -821,6 +852,10 @@
           "subcategories": [
             {
               "title": "Indisponibilité des produits proposés",
+              "reponseconsoCode": [
+                "2243",
+                "271"
+              ],
               "detailInputs": [
                 {
                   "label": "Date du constat",
@@ -850,6 +885,9 @@
             },
             {
               "title": "Information mensongère ou trompeuse",
+              "reponseconsoCode": [
+                "271"
+              ],
               "detailInputs": [
                 {
                   "label": "Date du constat",
@@ -931,6 +969,10 @@
             {
               "title": "On a refusé de me donner une table ou de me servir",
               "example": "Exemple : Refus au motif de la présence d'enfant, pour un motif discriminatoire, refus de d'une table en terrasse pour un simple café",
+              "reponseconsoCode": [
+                "232",
+                "521"
+              ],
               "detailInputs": [
                 {
                   "label": "Date du problème",
@@ -961,6 +1003,9 @@
                 },
                 {
                   "title": "Oui (je possède la carte d'assistance)",
+                  "reponseconsoCode": [
+                    "521"
+                  ],
                   "detailInputs": [
                     {
                       "label": "Date du refus",
@@ -993,6 +1038,9 @@
             {
               "title": "Les plats ne correspondent pas à la description",
               "example": "Exemple : Produit industriel vendu sous la mention \"fait maison\"",
+              "reponseconsoCode": [
+                "271"
+              ],
               "detailInputs": [
                 {
                   "label": "Date du constat",
@@ -1041,6 +1089,10 @@
             },
             {
               "title": "Les produits ne sont pas frais ou certains aliments sont périmés, c'est-à-dire que les dates indiquées sont dépassées.",
+              "reponseconsoCode": [
+                "323",
+                "321"
+              ],
               "detailInputs": [
                 {
                   "label": "Date de constat",
@@ -1080,18 +1132,34 @@
           "subcategories": [
             {
               "title": "problème avec la livraison",
+              "reponseconsoCode": [
+                "433",
+                "434"
+              ],
               "id": "1.4-7.1"
             },
             {
               "title": "problème avec le service client",
+              "reponseconsoCode": [
+                "466",
+                "467"
+              ],
               "id": "1.4-7.2"
             },
             {
               "title": "problème avec une promotion, un parrainage",
+              "reponseconsoCode": [
+                "210",
+                "224"
+              ],
               "id": "1.4-7.3"
             },
             {
               "title": "autre",
+              "reponseconsoCode": [
+                "220",
+                "521"
+              ],
               "example": "Les problèmes d'hygiène ou de qualité des plats doivent être renseignées dans les catégories précédentes",
               "id": "1.4-7.4"
             }
