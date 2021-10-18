@@ -12,12 +12,17 @@
               subcategoriesTitle: Avez-vous reçu un email ou un courrier pour vous prévenir (un mois avant) ?
               subcategories:
                 - title: Oui, j'ai été prévenu par email ou courrier
+                  reponseconsoCode:
+                    - '421'
+                    - '2202'
                   information: !!import/single ../common/info/tel.yml
                 - title: Non, j'ai reçu seulement un sms
                   tags:
                     - ReponseConso
                     - Litige contractuel
                 - title: Non, je n'ai rien reçu du tout
+                  reponseconsoCode:
+                    - '421'
                   tags:
                     - ReponseConso
                     - Litige contractuel
@@ -30,9 +35,14 @@
                 - title: Oui, j'ai été prévenu par email ou courrier
                   information: !!import/single ../common/info/tel.yml
                 - title: Non, j'ai reçu seulement un sms
+                  reponseconsoCode:
+                    - '421'
+                    - '2202'
                   tags:
                     - Litige contractuel
                 - title: Non, je n'ai rien reçu du tout
+                  reponseconsoCode:
+                    - '421'
                   tags:
                     - Litige contractuel
             - title: Rajout d'une option payante
@@ -58,6 +68,8 @@
                           type: TEXT
                           placeholder: "Indiquez l'intitulé figurant la facture"
                 - title: option liée à la musique, des livres, une chaine télé, un anti-virus
+                  reponseconsoCode:
+                    - '421'
                   tags:
                     - Litige contractuel
                   detailInputs:
@@ -85,20 +97,35 @@
                       type: DATE
                       optionnal: true
             - title: Le lien pour refuser l'augmentation de mon forfait ne fonctionne pas
+              reponseconsoCode:
+                - '444'
+                - '210'
               tags:
                 - ReponseConso
                 - Litige contractuel
         - title: L'offre / la promotion que je devais avoir n'a pas été appliquée
+          reponseconsoCode:
+            - '2212'
+            - '210'
           tags:
             - ReponseConso
             - Litige contractuel
         - title: Autre problème de facturation ou de contrat
+          repoonseconsoCode:
+            - '2212'
+            - '623'
           tags:
             - ReponseConso
             - Litige contractuel
           subcategories:
             - title: Utilisation de mon forfait à l'étranger
+              reponseconsoCode:
+                - '457'
+                - '411'
             - title: Autre
+              reponseconsoCode:
+                - '457'
+                - '411'
     - title: Qualité du réseau
       example: 'Exemple : je ne capte pas, je capte mal, débit faible'
       information:
@@ -109,9 +136,19 @@
         - Litige contractuel
       subcategories:
         - title: Frais de résiliation
+          reponseconsoCode:
+            - '477'
+            - '473'
         - title: Restitution du matériel
+          reponseconsoCode:
+            - '477'
+            - '473'
         - title: Problème avec le RIO (Relevé d'Identité Opérateur)
+          reponseconsoCode:
+            - '477'
         - title: Mon ancien opérateur continue de me prélever
+          reponseconsoCode:
+            - '474'
     - title: Appels, sms ou emails indésirables
       example: 'Exemple : spams, appel incessant, rappel vers un numéro payant'
       subcategories:
@@ -121,7 +158,12 @@
         - title: J'ai répondu à un sms ou j'ai rappelé un numéro qui était payant sans le savoir
           information: !!import/single ../common/info/called-paid-number.yml
         - title: Je reçois des spams dans mes emails
+          reponseconsoCode:
+            - '2207'
+            - '2218'
         - title: J'ai eu un problème de démarchage téléphonique
+          reponseconsoCode:
+            - '221'
           companyKind: PHONE
           tags:
             - ReponseConso
@@ -148,11 +190,22 @@
       subcategories:
         - title: Qualité du service client
           example: 'Exemple : pas de réponse du service client, service client payant'
+          reponseconsoCode:
+            - '466'
+            - '467'
         - title: Téléphone acheté avec le forfait
+          reponseconsoCode:
+            - '447'
+            - '464'
 - title: Abonnement télévision
+  reponseconsoCode:
+    - '4441'
   tags:
     - ReponseConso
 - title: Abonnement presse
+  reponseconsoCode:
+    - '442'
+    - '230'
   tags:
     - ReponseConso
 - title: Produit dangereux
@@ -170,3 +223,6 @@
       subcategoriesTitle: Quel est le risque&#160;?
       subcategories: !!import/single ../common/produit-dangereux.yml
 - title: Autre
+  reponseconsoCode:
+    - '679'
+

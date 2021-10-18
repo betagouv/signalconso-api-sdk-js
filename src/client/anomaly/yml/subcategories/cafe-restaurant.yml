@@ -11,6 +11,8 @@
   subcategories:
     - title: J'ai vu un animal (nuisible)
       example: 'Exemple : cafard, rat'
+      reponseconsoCode:
+        - '312'
       detailInputs:
         - label: Date du constat
           rank: 1
@@ -38,6 +40,8 @@
           optionnal: true
     - title: Hygiène des locaux et du matériel
       example: 'Exemple : cuisine sale, odeur de poubelle dans ma cour'
+      reponseconsoCode:
+        - '312'
       subcategories:
         - title: Je trouve les locaux sales ou dégradés
           example: 'Exemple : cuisine sale, WC sale'
@@ -80,6 +84,8 @@
           information: !!import/single ../common/info/voisinage.yml
     - title: Hygiène du personnel
       example: 'Exemple : tenue sale ou pas adaptée'
+      reponseconsoCode:
+        - '312'
       subcategories:
         - title: La tenue de travail n'est pas adaptée
           example: 'Exemple : pas de gants, torse-nu en cuisine'
@@ -122,6 +128,8 @@
           fileLabel: Merci de joindre si possible tout document (photo) pour appuyer votre signalement.
     - title: Problème de température
       example: 'Exemple : rupture de la chaine du froid'
+      reponseconsoCode:
+        - '322'
       detailInputs:
         - label: Date du constat
           rank: 1
@@ -149,6 +157,8 @@
   example: "Exemple : refus de la carte bancaire, j'ai payé plus cher que prévu"
   subcategories:
     - title: Il manque certains prix
+      reponseconsoCode:
+        - '212'
       tags:
         - ReponseConso
       example: 'Exemple : absence de prix sur la carte des vins'
@@ -165,6 +175,8 @@
           placeholder: "absence de carte des vins, absence des prix à l'extérieur du restaurant"
       fileLabel: Merci de joindre si possible des éléments pour appuyer votre signalement (photo du menu, photo de la vitrine...)
     - title: J'ai payé plus cher que le prix affiché
+      reponseconsoCode:
+        - '212'
       tags:
         - Litige contractuel
       detailInputs:
@@ -224,8 +236,13 @@
                   <br/> Un commerçant peut refuser un paiement en espèces si celui-ci est composé de plus de 50 pièces.
                 outOfScope: true
             - title: Autre
+              reponseconsoCode:
+                - '521'
+                - '212'
         - title: Le commerçant refuse la carte bancaire ou les chèques
           subcategoriesTitle: Pour quelle raison le commerçant a-t-il refusé votre chèque / carte bleue&#160;?
+          reponseconsoCode:
+            - '411'
           subcategories:
             - title: Il exige un minimum d'achat
               subcategoriesTitle: Ce minimum est-il indiqué visiblement&#160;?
@@ -255,6 +272,8 @@
             - title: Tickets restaurant
             - title: Autre
     - title: Refus de me donner une note (ticket, facture)
+      reponseconsoCode:
+        - '2131'
       tags:
         - ReponseConso
       detailInputs:
@@ -269,6 +288,8 @@
             - La note ne comporte pas les taux de TVA
             - Autre (à préciser)
     - title: Autres problèmes
+      reponseconsoCode:
+        - '521'
 - title: Informations mensongères (sur le menu, la carte ou le site internet)
   tags:
     - ReponseConso
@@ -276,6 +297,9 @@
   example: 'Exemple : mention "fait maison" pas respectée, les vins les moins chers ne sont pas disponibles'
   subcategories:
     - title: Indisponibilité des produits proposés
+      reponseconsoCode:
+        - '2243'
+        - '271'
       detailInputs:
         - label: Date du constat
           rank: 1
@@ -294,6 +318,8 @@
             - La carte n'est pas à jour
             - Autre raison (à préciser)
     - title: Information mensongère ou trompeuse
+      reponseconsoCode:
+        - '271'
       detailInputs:
         - label: Date du constat
           rank: 1
@@ -337,6 +363,9 @@
       information: !!import/single ../common/info/amabilite.yml
     - title: On a refusé de me donner une table ou de me servir
       example: "Exemple : Refus au motif de la présence d'enfant, pour un motif discriminatoire, refus de d'une table en terrasse pour un simple café"
+      reponseconsoCode:
+        - '232'
+        - '521'
       detailInputs:
         - label: Date du problème
           rank: 1
@@ -352,6 +381,8 @@
         - title: Non
           information: !!import/single ../common/info/chienassistance.yml
         - title: Oui (je possède la carte d'assistance)
+          reponseconsoCode:
+            - '521'
           detailInputs:
             - label: Date du refus
               rank: 1
@@ -368,6 +399,8 @@
   subcategories:
     - title: Les plats ne correspondent pas à la description
       example: 'Exemple : Produit industriel vendu sous la mention "fait maison"'
+      reponseconsoCode:
+        - '271'
       detailInputs:
         - label: Date du constat
           rank: 1
@@ -398,6 +431,9 @@
         content: Si la qualité des produits ne vous a pas convenu, nous vous invitons à contacter directement l'établissement. <br> Vous pouvez notamment contacter le service client. Le service client est présent dans la plupart des restaurants et bars qui font partie d'un groupe ou d'une chaîne. Il est conçu pour recevoir ce type de plainte. <br><br> Vous ne pouvez pas faire un signalement sur SignalConso car la répression des fraudes ne pourra pas traiter votre signalement.
         outOfScope: true
     - title: Les produits ne sont pas frais ou certains aliments sont périmés, c'est-à-dire que les dates indiquées sont dépassées.
+      reponseconsoCode:
+        - '323'
+        - '321'
       detailInputs:
         - label: Date de constat
           rank: 1
@@ -421,7 +457,19 @@
   example: 'Exemple : livraison non assurée, promotion non valide'
   subcategories:
     - title: problème avec la livraison
+      reponseconsoCode:
+        - '433'
+        - '434'
     - title: problème avec le service client
+      reponseconsoCode:
+        - '466'
+        - '467'
     - title: problème avec une promotion, un parrainage
+      reponseconsoCode:
+        - '210'
+        - '224'
     - title: autre
+      reponseconsoCode:
+        - '220'
+        - '521'
       example: "Les problèmes d'hygiène ou de qualité des plats doivent être renseignées dans les catégories précédentes"
