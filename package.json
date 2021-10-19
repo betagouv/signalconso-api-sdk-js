@@ -1,13 +1,13 @@
 {
   "name": "@signal-conso/signalconso-api-sdk-js",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "SignalConso API SDK for JavaScript/TypeScript",
   "main": "lib/index.js",
   "private": false,
   "scripts": {
     "test": "npm run build && mocha",
     "prepublish": "npm run build && npm run generate-json",
-    "build": "tsc --declaration",
+    "build": "tsc --declaration && npm run generate-json",
     "generate-json": "node src/client/anomaly/script/generate-json-files.js",
     "format": "npx prettier --write ."
   },

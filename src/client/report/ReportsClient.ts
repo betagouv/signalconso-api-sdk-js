@@ -14,12 +14,12 @@ import {
 import {PaginatedData, ReportSearch} from '../../model'
 import {pipe} from 'rxjs'
 import {ApiSdkLogger} from '../../helper/Logger'
-import {Address} from '../../model/Address'
+import {Address} from '../../model'
 
 export interface ReportFilterQuerystring {
-  readonly departments?: string
+  readonly departments?: string[]
   readonly tags?: string | string[]
-  readonly companyCountries?: string
+  readonly companyCountries?: string[]
   readonly siretSirenList?: string[]
   start?: string
   end?: string
@@ -38,13 +38,11 @@ export interface ReportFilterQuerystring {
 
 const reportFilter2QueryString = (report: ReportSearch): ReportFilterQuerystring => {
   try {
-    const {offset, limit, hasCompany, websiteExists, phoneExists, companyCountries, departments, start, end, ...r} = report
+    const {offset, limit, hasCompany, websiteExists, phoneExists, start, end, ...r} = report
 
     const parseBoolean = (_: keyof Pick<ReportSearch, 'websiteExists' | 'phoneExists' | 'hasCompany'>) =>
       report[_] !== undefined && {[_]: ('' + report[_]) as 'true' | 'false'}
     const parseDate = (_: keyof Pick<ReportSearch, 'start' | 'end'>) => (report[_] ? {[_]: dateToApi(report[_])} : {})
-    const parseArray = (_: keyof Pick<ReportSearch, 'companyCountries' | 'departments'>) =>
-      report[_] ? {[_]: [report[_]]?.flatMap(_ => _).join(',')} : {}
     return {
       ...r,
       offset: offset !== undefined ? offset + '' : undefined,
@@ -52,8 +50,6 @@ const reportFilter2QueryString = (report: ReportSearch): ReportFilterQuerystring
       ...parseBoolean('hasCompany'),
       ...parseBoolean('websiteExists'),
       ...parseBoolean('phoneExists'),
-      ...parseArray('companyCountries'),
-      ...parseArray('departments'),
       ...parseDate('start'),
       ...parseDate('end'),
     }

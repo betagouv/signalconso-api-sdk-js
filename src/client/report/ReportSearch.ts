@@ -5,6 +5,7 @@ export interface ReportSearch {
   readonly tags?: ReportTag[]
   readonly companyCountries?: string[]
   readonly siretSirenList?: string[]
+  readonly activityCodes?: string[]
   start?: Date
   end?: Date
   email?: string
