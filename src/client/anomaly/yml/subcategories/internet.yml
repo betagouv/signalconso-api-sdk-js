@@ -1,3 +1,22 @@
+- title: Un influenceur ou une influenceuse
+  companyKind: INFLUENCEUR
+  example: 'Exemple : publicité trompeuse, absence de mentions de rénumération par une marque'
+  subcategories:
+    - title: Publicité trompeuse
+      tags:
+        - Influenceur
+      subcategoriesTitle: Publicité trompeuse
+      detailInputs: !!import/single ../common/inputs/influenceur.yml
+    - title: Ne mentionne pas la rémunération par une marque
+      tags:
+        - Influenceur
+      subcategoriesTitle: Ne mentionne pas la rémunération par une marque
+      detailInputs: !!import/single ../common/inputs/influenceur.yml
+    - title: Autre
+      tags:
+        - Influenceur
+      subcategoriesTitle: Autre
+      detailInputs: !!import/single ../common/inputs/influenceur.yml
 - title: Un problème avec une commande que vous avez passée sur internet
   example: 'Exemple : colis non reçu'
   information:
@@ -18,5 +37,4 @@
     content: Nous vous invitons à utiliser le site dédié <br><a href="https://www.internet-signalement.gouv.fr" target="_blank">https://www.internet-signalement.gouv.fr</a>
 - title: Le piratage de votre carte bancaire ou de votre compte bancaire
   information:
-    title: Ce type de problème ne doit pas être signalé sur SignalConso
-    content: Nous vous invitons à utiliser le site dédié appelé Perceval <br><a href="https://www.service-public.fr/particuliers/vosdroits/R46526" target="_blank">https://www.service-public.fr/particuliers/vosdroits/R46526</a>
+    title: Ce type de prnvitons à utiliser le site dédié appelé Perceval <br><a href="https://www.service-public.fr/particuliers/vosdroits/R46526" target="_blank">https://www.service-public.fr/particuliers/vosdroits/R46526</a>

@@ -63,7 +63,7 @@ list:
   - category: Internet (hors achats)
     categoryId: INTERNET
     path: internet
-    description: réseaux sociaux, phishing, escroquerie par email, contenu d'un site web inapproprié...
+    description: Influenceur, piratage de carte, escroquerie par email, site d'incitation à la haine...
     rank: 16
     sprite: category-ecommerce
     subcategories: !!import/single subcategories/internet.yml
