@@ -30,6 +30,7 @@ export enum ReportTag {
   DemarchageTelephonique = 'Démarchage téléphonique',
   AbsenceDeMediateur = 'Absence de médiateur',
   Bloctel = 'Bloctel',
+  Influenceur = 'Influenceur',
   ReponseConso = 'ReponseConso',
   Internet = 'Internet',
 }
@@ -39,6 +40,7 @@ export enum CompanyKinds {
   WEBSITE = 'WEBSITE',
   PHONE = 'PHONE',
   LOCATION = 'LOCATION',
+  INFLUENCEUR = 'INFLUENCEUR',
 }
 
 export interface Category {
