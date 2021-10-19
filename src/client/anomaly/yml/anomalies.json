@@ -32269,6 +32269,10 @@
                       "subcategories": [
                         {
                           "title": "Oui, j'ai été prévenu par email ou courrier",
+                          "reponseconsoCode": [
+                            "421",
+                            "2202"
+                          ],
                           "information": {
                             "outOfScope": true,
                             "content": "Vous venez de recevoir un email ou un sms vous indiquant que votre forfait allait être augmenté à partir du mois prochain ? <b> Il ne s'agit pas d'une vente forcée.</b> <br /> <br /> Les opérateurs téléphoniques ont le droit d'augmenter le prix de votre forfait sans vous le demander avant. <br />Ils doivent vous prévenir <b> un mois avant </b> (par courrier ou par email). Un simple sms ne suffit pas. <br />Ils ne peuvent pas augmenter votre forfait pour une autre raison (option musique, option télé, abonnement à un livre...).",
@@ -32291,6 +32295,9 @@
                         },
                         {
                           "title": "Non, je n'ai rien reçu du tout",
+                          "reponseconsoCode": [
+                            "421"
+                          ],
                           "tags": [
                             "ReponseConso",
                             "Litige contractuel"
@@ -32324,6 +32331,10 @@
                         },
                         {
                           "title": "Non, j'ai reçu seulement un sms",
+                          "reponseconsoCode": [
+                            "421",
+                            "2202"
+                          ],
                           "tags": [
                             "Litige contractuel"
                           ],
@@ -32331,6 +32342,9 @@
                         },
                         {
                           "title": "Non, je n'ai rien reçu du tout",
+                          "reponseconsoCode": [
+                            "421"
+                          ],
                           "tags": [
                             "Litige contractuel"
                           ],
@@ -32390,6 +32404,9 @@
                         },
                         {
                           "title": "option liée à la musique, des livres, une chaine télé, un anti-virus",
+                          "reponseconsoCode": [
+                            "421"
+                          ],
                           "tags": [
                             "Litige contractuel"
                           ],
@@ -32436,6 +32453,10 @@
                     },
                     {
                       "title": "Le lien pour refuser l'augmentation de mon forfait ne fonctionne pas",
+                      "reponseconsoCode": [
+                        "444",
+                        "210"
+                      ],
                       "tags": [
                         "ReponseConso",
                         "Litige contractuel"
@@ -32447,6 +32468,10 @@
                 },
                 {
                   "title": "L'offre / la promotion que je devais avoir n'a pas été appliquée",
+                  "reponseconsoCode": [
+                    "2212",
+                    "210"
+                  ],
                   "tags": [
                     "ReponseConso",
                     "Litige contractuel"
@@ -32455,6 +32480,10 @@
                 },
                 {
                   "title": "Autre problème de facturation ou de contrat",
+                  "repoonseconsoCode": [
+                    "2212",
+                    "623"
+                  ],
                   "tags": [
                     "ReponseConso",
                     "Litige contractuel"
@@ -32462,10 +32491,18 @@
                   "subcategories": [
                     {
                       "title": "Utilisation de mon forfait à l'étranger",
+                      "reponseconsoCode": [
+                        "457",
+                        "411"
+                      ],
                       "id": "1.7-1.1.3.1"
                     },
                     {
                       "title": "Autre",
+                      "reponseconsoCode": [
+                        "457",
+                        "411"
+                      ],
                       "id": "1.7-1.1.3.2"
                     }
                   ],
@@ -32491,18 +32528,32 @@
               "subcategories": [
                 {
                   "title": "Frais de résiliation",
+                  "reponseconsoCode": [
+                    "477",
+                    "473"
+                  ],
                   "id": "1.7-1.3.1"
                 },
                 {
                   "title": "Restitution du matériel",
+                  "reponseconsoCode": [
+                    "477",
+                    "473"
+                  ],
                   "id": "1.7-1.3.2"
                 },
                 {
                   "title": "Problème avec le RIO (Relevé d'Identité Opérateur)",
+                  "reponseconsoCode": [
+                    "477"
+                  ],
                   "id": "1.7-1.3.3"
                 },
                 {
                   "title": "Mon ancien opérateur continue de me prélever",
+                  "reponseconsoCode": [
+                    "474"
+                  ],
                   "id": "1.7-1.3.4"
                 }
               ],
@@ -32527,10 +32578,17 @@
                 },
                 {
                   "title": "Je reçois des spams dans mes emails",
+                  "reponseconsoCode": [
+                    "2207",
+                    "2218"
+                  ],
                   "id": "1.7-1.4.2"
                 },
                 {
                   "title": "J'ai eu un problème de démarchage téléphonique",
+                  "reponseconsoCode": [
+                    "221"
+                  ],
                   "companyKind": "PHONE",
                   "tags": [
                     "ReponseConso",
@@ -32574,10 +32632,18 @@
                 {
                   "title": "Qualité du service client",
                   "example": "Exemple : pas de réponse du service client, service client payant",
+                  "reponseconsoCode": [
+                    "466",
+                    "467"
+                  ],
                   "id": "1.7-1.5.1"
                 },
                 {
                   "title": "Téléphone acheté avec le forfait",
+                  "reponseconsoCode": [
+                    "447",
+                    "464"
+                  ],
                   "id": "1.7-1.5.2"
                 }
               ],
@@ -32588,6 +32654,9 @@
         },
         {
           "title": "Abonnement télévision",
+          "reponseconsoCode": [
+            "4441"
+          ],
           "tags": [
             "ReponseConso"
           ],
@@ -32595,6 +32664,10 @@
         },
         {
           "title": "Abonnement presse",
+          "reponseconsoCode": [
+            "442",
+            "230"
+          ],
           "tags": [
             "ReponseConso"
           ],
@@ -33641,6 +33714,9 @@
         },
         {
           "title": "Autre",
+          "reponseconsoCode": [
+            "679"
+          ],
           "id": "1.7-5"
         }
       ],
