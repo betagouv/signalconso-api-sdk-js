@@ -63,6 +63,7 @@ export interface CompanySearchResult {
 
 export interface CompanySearch extends PaginatedSearch<any> {
   readonly departments?: string[]
+  readonly activityCodes?: string[]
   identity?: string
 }
 
