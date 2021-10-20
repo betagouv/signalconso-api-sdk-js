@@ -58,6 +58,10 @@ export class ReportDraft {
     return ReportDraft.tags(r).includes(ReportTag.ProduitDangereux)
   }
 
+  static readonly isInfluenceur = (r: ReportDraft): boolean => {
+    return ReportDraft.tags(r).includes(ReportTag.Influenceur)
+  }
+
   static readonly isTransmittableToPro = (r: ReportDraft): boolean => {
     return !r.employeeConsumer
       && !r.forwardToReponseConso

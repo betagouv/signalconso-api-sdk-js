@@ -36965,10 +36965,135 @@
       "category": "Internet (hors achats)",
       "categoryId": "INTERNET",
       "path": "internet",
-      "description": "réseaux sociaux, phishing, escroquerie par email, contenu d'un site web inapproprié...",
+      "description": "Influenceur, piratage de carte, escroquerie par email, site d'incitation à la haine...",
       "rank": 16,
       "sprite": "category-ecommerce",
       "subcategories": [
+        {
+          "title": "Un influenceur ou une influenceuse",
+          "companyKind": "INFLUENCEUR",
+          "example": "Exemple : publicité trompeuse, absence de mentions de rénumération par une marque",
+          "subcategories": [
+            {
+              "title": "Publicité trompeuse",
+              "tags": [
+                "Influenceur"
+              ],
+              "subcategoriesTitle": "Publicité trompeuse",
+              "detailInputs": [
+                {
+                  "label": "Nom ou pseudonyme de l'influenceur ou influenceuse",
+                  "rank": 1,
+                  "type": "TEXT",
+                  "placeholder": "Nom ou pseudonyme"
+                },
+                {
+                  "label": "Nom du produit ou du service (facultatif)",
+                  "rank": 2,
+                  "type": "TEXT",
+                  "placeholder": "Préciser la nature et la gravité",
+                  "optionnal": true
+                },
+                {
+                  "label": "Pouvez-vous préciser la plateforme utilisée ?",
+                  "rank": 3,
+                  "type": "RADIO",
+                  "options": [
+                    "Youtube",
+                    "TikTok",
+                    "Facebook",
+                    "Instagram",
+                    "Twitter",
+                    "Linkedin",
+                    "Messenger",
+                    "Snapchat",
+                    "autre (à préciser)"
+                  ]
+                }
+              ],
+              "id": "1.16-1.1"
+            },
+            {
+              "title": "Ne mentionne pas la rémunération par une marque",
+              "tags": [
+                "Influenceur"
+              ],
+              "subcategoriesTitle": "Ne mentionne pas la rémunération par une marque",
+              "detailInputs": [
+                {
+                  "label": "Nom ou pseudonyme de l'influenceur ou influenceuse",
+                  "rank": 1,
+                  "type": "TEXT",
+                  "placeholder": "Nom ou pseudonyme"
+                },
+                {
+                  "label": "Nom du produit ou du service (facultatif)",
+                  "rank": 2,
+                  "type": "TEXT",
+                  "placeholder": "Préciser la nature et la gravité",
+                  "optionnal": true
+                },
+                {
+                  "label": "Pouvez-vous préciser la plateforme utilisée ?",
+                  "rank": 3,
+                  "type": "RADIO",
+                  "options": [
+                    "Youtube",
+                    "TikTok",
+                    "Facebook",
+                    "Instagram",
+                    "Twitter",
+                    "Linkedin",
+                    "Messenger",
+                    "Snapchat",
+                    "autre (à préciser)"
+                  ]
+                }
+              ],
+              "id": "1.16-1.2"
+            },
+            {
+              "title": "Autre",
+              "tags": [
+                "Influenceur"
+              ],
+              "subcategoriesTitle": "Autre",
+              "detailInputs": [
+                {
+                  "label": "Nom ou pseudonyme de l'influenceur ou influenceuse",
+                  "rank": 1,
+                  "type": "TEXT",
+                  "placeholder": "Nom ou pseudonyme"
+                },
+                {
+                  "label": "Nom du produit ou du service (facultatif)",
+                  "rank": 2,
+                  "type": "TEXT",
+                  "placeholder": "Préciser la nature et la gravité",
+                  "optionnal": true
+                },
+                {
+                  "label": "Pouvez-vous préciser la plateforme utilisée ?",
+                  "rank": 3,
+                  "type": "RADIO",
+                  "options": [
+                    "Youtube",
+                    "TikTok",
+                    "Facebook",
+                    "Instagram",
+                    "Twitter",
+                    "Linkedin",
+                    "Messenger",
+                    "Snapchat",
+                    "autre (à préciser)"
+                  ]
+                }
+              ],
+              "id": "1.16-1.3"
+            }
+          ],
+          "id": "1.16-1"
+        },
         {
           "title": "Un problème avec une commande que vous avez passée sur internet",
           "example": "Exemple : colis non reçu",
@@ -36976,12 +37101,12 @@
             "title": "Revenez en arrière et utilisez plutôt la catégorie spécifique à votre commande :)",
             "content": "Un billet d'avion ? Utilisez la catégorie \"Voyage / Loisirs\" <br> Un livre commandé en ligne mais non reçu ? Utilisez la catégorie \"Achat / Magasin\""
           },
-          "id": "1.16-1"
+          "id": "1.16-2"
         },
         {
           "title": "Un problème avec un store (vente d'applications mobiles)",
           "companyKind": "SIRET",
-          "id": "1.16-2"
+          "id": "1.16-3"
         },
         {
           "title": "Un problème de harcèlement ou de chantage en ligne",
@@ -36991,7 +37116,7 @@
             "subTitle": "Il concerne la police",
             "content": "Nous vous invitons à utiliser le site dédié <br><a href=\"https://www.internet-signalement.gouv.fr\" target=\"_blank\">https://www.internet-signalement.gouv.fr</a>"
           },
-          "id": "1.16-3"
+          "id": "1.16-4"
         },
         {
           "title": "Du contenu inapproprié (pédopornographie, incitation à la haine, racisme...) sur un site internet ou un réseau social",
@@ -37000,15 +37125,14 @@
             "subTitle": "Il concerne la police",
             "content": "Nous vous invitons à utiliser le site dédié <br><a href=\"https://www.internet-signalement.gouv.fr\" target=\"_blank\">https://www.internet-signalement.gouv.fr</a>"
           },
-          "id": "1.16-4"
+          "id": "1.16-5"
         },
         {
           "title": "Le piratage de votre carte bancaire ou de votre compte bancaire",
           "information": {
-            "title": "Ce type de problème ne doit pas être signalé sur SignalConso",
-            "content": "Nous vous invitons à utiliser le site dédié appelé Perceval <br><a href=\"https://www.service-public.fr/particuliers/vosdroits/R46526\" target=\"_blank\">https://www.service-public.fr/particuliers/vosdroits/R46526</a>"
+            "title": "Ce type de prnvitons à utiliser le site dédié appelé Perceval <br><a href=\"https://www.service-public.fr/particuliers/vosdroits/R46526\" target=\"_blank\">https://www.service-public.fr/particuliers/vosdroits/R46526</a>"
           },
-          "id": "1.16-5"
+          "id": "1.16-6"
         }
       ],
       "id": "1.16"
