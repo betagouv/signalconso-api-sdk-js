@@ -40,7 +40,9 @@ function countLeavesInCategory(category, tag) {
 }
 
 function countLeavesInCategoriesList(categoriesList, tag) {
-  return categoriesList.reduce(
+  return categoriesList
+    .filter(_ => !_.hidden || _.hidden === false)
+    .reduce(
     (counter, currentCategory) =>
       counter + countLeavesInCategory(currentCategory, tag),
     0
