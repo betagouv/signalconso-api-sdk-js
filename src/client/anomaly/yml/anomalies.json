@@ -36972,7 +36972,7 @@
         {
           "title": "Un influenceur ou une influenceuse",
           "companyKind": "INFLUENCEUR",
-          "example": "Exemple : publicité trompeuse, absence de mentions de rémunération par une marque",
+          "example": "Exemple : publicité trompeuse, l'influenceur n'indique pas qu'il est rémunéré par une marque",
           "subcategories": [
             {
               "title": "Publicité trompeuse",
@@ -37014,11 +37014,11 @@
               "id": "1.16-1.1"
             },
             {
-              "title": "Ne mentionne pas la rémunération par une marque",
+              "title": "L'influenceur n'indique pas qu'il est rémunéré par une marque",
               "tags": [
                 "Influenceur"
               ],
-              "subcategoriesTitle": "Ne mentionne pas la rémunération par une marque",
+              "subcategoriesTitle": "L'influenceur n'indique pas qu'il est rémunéré par une marque",
               "detailInputs": [
                 {
                   "label": "Nom ou pseudonyme de l'influenceur ou influenceuse",
@@ -55150,6 +55150,7 @@
                 },
                 {
                   "label": "Votre numéro d'inscription bloctel (recommandé)",
+                  "example": "Ce numéro est présent dans toutes les confirmations – inscription initiale, dépôts de réclamation – que vous a envoyés Bloctel",
                   "rank": 4,
                   "type": "TEXT",
                   "optionnal": true
