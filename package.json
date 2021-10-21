@@ -9,6 +9,7 @@
     "prepublish": "npm run build && npm run generate-json",
     "build": "tsc --declaration && npm run generate-json",
     "generate-json": "node src/client/anomaly/script/generate-json-files.js",
+    "count-leaves": "node src/client/anomaly/script/count-leaves.js",
     "format": "npx prettier --write ."
   },
   "dependencies": {
