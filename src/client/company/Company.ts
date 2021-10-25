@@ -18,6 +18,7 @@ export interface DraftCompany {
 
 export interface CompanyWithReportsCount extends Company {
   count: number
+  responseRate: number
 }
 
 export interface Company {
