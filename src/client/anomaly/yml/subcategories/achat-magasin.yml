@@ -19,33 +19,53 @@
         - Produit dangereux
       subcategories:
         - title: Produit alimentaire
+          tags: 
+            - Produit Alimentaire
           reponseconsoCode:
           subcategories: !!import/single ../common/produit-alimentaire.yml
         - title: Jouet, puériculture, matériel scolaire
+          tags: 
+            - Produit Industriel 
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Cosmétique, produit d'hygiène, produit de tatouage
+          tags: 
+            - Produit Industriel 
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Vêtement, textile, sac à main, bijou
+          tags: 
+            - Produit Industriel 
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Équipement de protection
+          tags: 
+            - Produit Industriel 
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Feu d'artifice
+          tags: 
+            - Produit Industriel 
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Meuble
+          tags: 
+            - Produit Industriel 
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Produit d'entretien, produit chimique, engrais
+          tags: 
+            - Produit Industriel 
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Appareil électrique
+          tags: 
+            - Produit Industriel 
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Outil
+          tags: 
+            - Produit Industriel 
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Autre
