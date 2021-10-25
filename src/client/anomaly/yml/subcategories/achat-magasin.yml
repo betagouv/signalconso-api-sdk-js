@@ -3,6 +3,8 @@
   subcategories:
     - title: Le site internet en lui-même
       example: 'Exemple : publicité trompeuse, absence de mentions obligatoires, service client injoignable'
+      ccrfCode:
+        - '23B'
       reponseconsoCode:
         - '210'
         - '220'
