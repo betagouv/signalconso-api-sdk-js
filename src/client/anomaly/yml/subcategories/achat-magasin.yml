@@ -3,11 +3,15 @@
   subcategories:
     - title: Le site internet en lui-même
       example: 'Exemple : publicité trompeuse, absence de mentions obligatoires, service client injoignable'
+      ccrfCode:
+        - '23B'
       reponseconsoCode:
         - '210'
         - '220'
     - title: Une commande effectuée
       example: 'Exemple : commande jamais livrée, produit non conforme'
+      ccrfCode:
+        - '220' 
       reponseconsoCode:
         - '433'
         - '464'
@@ -19,33 +23,51 @@
         - Produit dangereux
       subcategories:
         - title: Produit alimentaire
+          tags: 
+            - Produit alimentaire
           reponseconsoCode:
           subcategories: !!import/single ../common/produit-alimentaire.yml
         - title: Jouet, puériculture, matériel scolaire
+          tags: 
+            - Produit Indusdriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Cosmétique, produit d'hygiène, produit de tatouage
+          tags: 
+            - Produit Indusdriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Vêtement, textile, sac à main, bijou
+          tags: 
+            - Produit Indusdriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Équipement de protection
+          tags: 
+            - Produit Indusdriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Feu d'artifice
+          tags: 
+            - Produit Indusdriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Meuble
+          tags: 
+            - Produit Indusdriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Produit d'entretien, produit chimique, engrais
+          tags: 
+            - Produit Indusdriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Appareil électrique
+            - Produit Indusdriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Outil
+            - Produit Indusdriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Autre
@@ -64,6 +86,8 @@
             - ReponseConso
           subcategories:
             - title: Le prix à la caisse est différent du prix affiché
+              ccrfCode:
+                - '163' 
               example: 'Exemple : le prix à la caisse est de 5 euros alors que le prix affiché en rayon est de 3 euros'
               reponseconsoCode:
                 - '212'
@@ -105,6 +129,8 @@
                   rank: 7
                   type: TEXTAREA
             - title: Il manque des prix / les prix sont illisibles
+              ccrfCode:
+                - '163'
               description: 'Votre droit : tous les prix doivent être affichés sans que vous soyez obligé de les demander.'
               reponseconsoCode:
                 - '212'
@@ -138,12 +164,16 @@
                   <br/><br/> Un commerçant n'a pas le droit de vendre à un prix trop bas : il ne peut pas vendre un produit moins cher que ce qu'il lui a coûté. Il existe quelques situations où il a le droit de vendre en dessous du prix d'achat, comme la période des soldes."
             - title: Fausse réduction de prix
               example: 'Exemple : fausse promotion pendant les soldes, fausse liquidation totale'
+              ccrfCode:
+                - '145'
+                - '23F'
+                - '146'
               reponseconsoCode:
                 - '224'
                 - '210'
                 - '212'
               description:
-                '<b>Soldes :</b> Les dates des soldes sont encadrées par la loi. Ces dates sont valables pour les magasins et aussi pour la vente sur internet.
+                <br/><br/><b>Soldes :</b> Les dates des soldes sont encadrées par la loi. Ces dates sont valables pour les magasins et aussi pour la vente sur internet.
                 <br/><br/><b>Liquidation :</b> les liquidations sont soumises à déclaration préalable auprès du maire de la commune où a lieu cette opération.
                 Un document prouvant cette déclaration doit être affichée dans le magasin, pendant toute la durée de la liquidation. Ce document est souvent affiché sur la vitrine car il doit être visible de la rue.'
               detailInputs:
@@ -166,9 +196,12 @@
         - title: Hygiène
           tags:
             - hygiène
+            - Produit Alimentaire
           example: 'Exemple : magasin sale, produit pas au frais, mauvaises odeurs'
           subcategories:
             - title: Hygiène des locaux et du matériel
+              ccrfCode:
+                - '312'
               reponseconsoCode:
                 - '312'
                 - '321'
@@ -213,6 +246,8 @@
                   optionnal: true
             - title: Hygiène du personnel
               example: 'Exemple : tenue sale ou inadaptée'
+              ccrfCode:
+                - '312'
               subcategories:
                 - title: Tenue de travail inadaptée
                   subcategories:
@@ -268,6 +303,8 @@
                       optionnal: true
             - title: Problème de température
               example: 'Exemple : rupture de la chaîne du froid'
+              ccrfCode:
+                - '322'
               reponseconsoCode:
                 - '322'
                 - '312'
@@ -305,12 +342,16 @@
               tags:
                 - ReponseConso
         - title: Produit périmé
+          ccrfCode:
+            - '323'
           tags:
             - ReponseConso
           subcategoriesTitle: 'Vous voulez signaler&#160;:'
           subcategories:
             - title: Un constat fréquent de produits périmés dans un établissement
               subcategoriesTitle: Quels sont les produits concernés&#160;?
+              ccrfCode:
+                - '323'
               subcategories:
                 - title: Des produits vendus au rayon frais
                   example: 'Exemple : viande, poisson, quiche, jambon'
@@ -346,6 +387,8 @@
                       - question: Vous souhaitez néanmoins faire part de votre mécontentement&#160;?
                         answer: Contacter directement le service client de votre magasin pour lui expliquer.
             - title: Un produit périmé en particulier
+              ccrfCode:
+                - '323'
               subcategoriesTitle: Quelle phrase est écrite devant la date&#160;?
               subcategories: !!import/single ../common/date.yml
         - title: Publicité
@@ -354,6 +397,8 @@
             - ReponseConso
           subcategories:
             - title: Indisponibilité des produits en publicité
+              ccrfCode:
+                - '23B'
               reponseconsoCode:
                 - '210'
                 - '2243'
@@ -390,6 +435,8 @@
               fileLabel: Photo(s) de la publicité si possible
             - title: Informations de vente mensongères
               example: 'Exemple : pancarte "produits locaux" or ce n''est pas le cas, affiche "pain bio" or ce n''est pas le cas'
+              ccrfCode:
+                - '23B'
               reponseconsoCode:
                 - '210'
                 - '2243'
@@ -435,6 +482,8 @@
               fileLabel: Photo(s) si possible
         - title: Remboursement / garantie
           example: 'Exemple : le magasin refuse de me reprendre un article'
+          ccrfCode:
+            - '21D'
           tags:
             - Litige contractuel
           subcategoriesTitle: Pourquoi voulez-vous retourner ou échanger votre article ?
