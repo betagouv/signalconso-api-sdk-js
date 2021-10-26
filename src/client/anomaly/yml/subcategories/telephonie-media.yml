@@ -202,7 +202,33 @@
     - '4441'
   tags:
     - ReponseConso
+  subcategories:
+    - title: Démarchage à domicile
+      companyKind: LOCATION
+      tags:
+        - Démarcharge à domicile
+    - title: Démarchage téléphonique
+      companyKind: PHONE
+      tags:
+        - Démarchage téléphonique
+    - title: Problème avec un site internet
+      tags:
+        - Internet
+    - title: Autre
 - title: Abonnement presse
+  subcategories:
+    - title: Démarchage à domicile
+      companyKind: LOCATION
+      tags:
+        - Démarcharge à domicile
+    - title: Démarchage téléphonique
+      companyKind: PHONE
+      tags:
+        - Démarchage téléphonique
+    - title: Problème avec un site internet
+      tags:
+        - Internet
+    - title: Autre
   reponseconsoCode:
     - '442'
     - '230'

@@ -1,32 +1,52 @@
 - title: Aliment pour animaux
+  tags:
+    - Produit alimentaire
   subcategoriesTitle: Quel est le risque&#160;?
   subcategories: !!import/single ./produit-alimentaire-risque.yml
 - title: Complément alimentaire
+  tags:
+    - Produit alimentaire
   subcategoriesTitle: Quel est le risque&#160;?
   subcategories: !!import/single ./produit-alimentaire-risque.yml
 - title: Alcool
+  tags:
+    - Produit alimentaire
   example: 'Exemple : vin, cidre, bière...'
   subcategoriesTitle: Quel est le risque&#160;?
   subcategories: !!import/single ./produit-alimentaire-risque.yml
 - title: Produit pour bébé
+  tags:
+    - Produit alimentaire
   example: 'Exemple : lait, plat, petit pot...'
   subcategoriesTitle: Quel est le risque&#160;?
   subcategories: !!import/single ./produit-alimentaire-risque.yml
 - title: Fruit ou légume
+  tags:
+    - Produit alimentaire
 - title: Viande, poisson, produit de la mer, oeuf
+  tags:
+    - Produit alimentaire
   subcategoriesTitle: Quel est le risque&#160;?
   subcategories: !!import/single ./produit-alimentaire-risque.yml
 - title: Lait et dérivé
+  tags:
+    - Produit alimentaire
   example: 'Exemple : lait, fromage, glace...'
   subcategoriesTitle: Quel est le risque&#160;?
   subcategories: !!import/single ./produit-alimentaire-risque.yml
 - title: Produit sec
+  tags:
+    - Produit alimentaire
   example: 'Exemple : épice, farine, pâtes...'
   subcategoriesTitle: Quel est le risque&#160;?
   subcategories: !!import/single ./produit-alimentaire-risque.yml
 - title: Plat ou dessert préparé
+  tags:
+    - Produit alimentaire
   subcategoriesTitle: Quel est le risque&#160;?
   subcategories: !!import/single ./produit-alimentaire-risque.yml
 - title: Autre
+  tags:
+    - Produit alimentaire
   subcategoriesTitle: Quel est le risque&#160;?
   subcategories: !!import/single ./produit-alimentaire-risque.yml
