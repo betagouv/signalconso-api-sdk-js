@@ -1185,6 +1185,9 @@
             {
               "title": "Le site internet en lui-même",
               "example": "Exemple : publicité trompeuse, absence de mentions obligatoires, service client injoignable",
+              "ccrfCode": [
+                "23B"
+              ],
               "reponseconsoCode": [
                 "210",
                 "220"
@@ -1194,6 +1197,9 @@
             {
               "title": "Une commande effectuée",
               "example": "Exemple : commande jamais livrée, produit non conforme",
+              "ccrfCode": [
+                "220"
+              ],
               "reponseconsoCode": [
                 "433",
                 "464",
@@ -1211,10 +1217,16 @@
               "subcategories": [
                 {
                   "title": "Produit alimentaire",
+                  "tags": [
+                    "Produit alimentaire"
+                  ],
                   "reponseconsoCode": null,
                   "subcategories": [
                     {
                       "title": "Aliment pour animaux",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -1725,6 +1737,9 @@
                     },
                     {
                       "title": "Complément alimentaire",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -2235,6 +2250,9 @@
                     },
                     {
                       "title": "Alcool",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "example": "Exemple : vin, cidre, bière...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -2746,6 +2764,9 @@
                     },
                     {
                       "title": "Produit pour bébé",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "example": "Exemple : lait, plat, petit pot...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -3257,10 +3278,16 @@
                     },
                     {
                       "title": "Fruit ou légume",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "id": "1.2-1.3.1.5"
                     },
                     {
                       "title": "Viande, poisson, produit de la mer, oeuf",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -3771,6 +3798,9 @@
                     },
                     {
                       "title": "Lait et dérivé",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "example": "Exemple : lait, fromage, glace...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -4282,6 +4312,9 @@
                     },
                     {
                       "title": "Produit sec",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "example": "Exemple : épice, farine, pâtes...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -4793,6 +4826,9 @@
                     },
                     {
                       "title": "Plat ou dessert préparé",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -5303,6 +5339,9 @@
                     },
                     {
                       "title": "Autre",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -5816,6 +5855,9 @@
                 },
                 {
                   "title": "Jouet, puériculture, matériel scolaire",
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -6184,6 +6226,9 @@
                 },
                 {
                   "title": "Cosmétique, produit d'hygiène, produit de tatouage",
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -6552,6 +6597,9 @@
                 },
                 {
                   "title": "Vêtement, textile, sac à main, bijou",
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -6920,6 +6968,9 @@
                 },
                 {
                   "title": "Équipement de protection",
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -7288,6 +7339,9 @@
                 },
                 {
                   "title": "Feu d'artifice",
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -7656,6 +7710,9 @@
                 },
                 {
                   "title": "Meuble",
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -8024,6 +8081,9 @@
                 },
                 {
                   "title": "Produit d'entretien, produit chimique, engrais",
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -8391,7 +8451,7 @@
                   "id": "1.2-1.3.8"
                 },
                 {
-                  "title": "Appareil électrique",
+                  "title": "Appareil électrique - Produit industriel",
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -8759,7 +8819,7 @@
                   "id": "1.2-1.3.9"
                 },
                 {
-                  "title": "Outil",
+                  "title": "Outil - Produit industriel",
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -9518,6 +9578,9 @@
                   "subcategories": [
                     {
                       "title": "Le prix à la caisse est différent du prix affiché",
+                      "ccrfCode": [
+                        "163"
+                      ],
                       "example": "Exemple : le prix à la caisse est de 5 euros alors que le prix affiché en rayon est de 3 euros",
                       "reponseconsoCode": [
                         "212",
@@ -9580,6 +9643,9 @@
                     },
                     {
                       "title": "Il manque des prix / les prix sont illisibles",
+                      "ccrfCode": [
+                        "163"
+                      ],
                       "description": "Votre droit : tous les prix doivent être affichés sans que vous soyez obligé de les demander.",
                       "reponseconsoCode": [
                         "212",
@@ -9624,12 +9690,17 @@
                     {
                       "title": "Fausse réduction de prix",
                       "example": "Exemple : fausse promotion pendant les soldes, fausse liquidation totale",
+                      "ccrfCode": [
+                        "145",
+                        "23F",
+                        "146"
+                      ],
                       "reponseconsoCode": [
                         "224",
                         "210",
                         "212"
                       ],
-                      "description": "<b>Soldes :</b> Les dates des soldes sont encadrées par la loi. Ces dates sont valables pour les magasins et aussi pour la vente sur internet. <br/><br/><b>Liquidation :</b> les liquidations sont soumises à déclaration préalable auprès du maire de la commune où a lieu cette opération. Un document prouvant cette déclaration doit être affichée dans le magasin, pendant toute la durée de la liquidation. Ce document est souvent affiché sur la vitrine car il doit être visible de la rue.",
+                      "description": "<br/><br/><b>Soldes :</b> Les dates des soldes sont encadrées par la loi. Ces dates sont valables pour les magasins et aussi pour la vente sur internet. <br/><br/><b>Liquidation :</b> les liquidations sont soumises à déclaration préalable auprès du maire de la commune où a lieu cette opération. Un document prouvant cette déclaration doit être affichée dans le magasin, pendant toute la durée de la liquidation. Ce document est souvent affiché sur la vitrine car il doit être visible de la rue.",
                       "detailInputs": [
                         {
                           "label": "Il s'agit d'un problème sur:",
@@ -9663,12 +9734,16 @@
                 {
                   "title": "Hygiène",
                   "tags": [
-                    "hygiène"
+                    "hygiène",
+                    "Produit Alimentaire"
                   ],
                   "example": "Exemple : magasin sale, produit pas au frais, mauvaises odeurs",
                   "subcategories": [
                     {
                       "title": "Hygiène des locaux et du matériel",
+                      "ccrfCode": [
+                        "312"
+                      ],
                       "reponseconsoCode": [
                         "312",
                         "321"
@@ -9733,6 +9808,9 @@
                     {
                       "title": "Hygiène du personnel",
                       "example": "Exemple : tenue sale ou inadaptée",
+                      "ccrfCode": [
+                        "312"
+                      ],
                       "subcategories": [
                         {
                           "title": "Tenue de travail inadaptée",
@@ -9827,6 +9905,9 @@
                     {
                       "title": "Problème de température",
                       "example": "Exemple : rupture de la chaîne du froid",
+                      "ccrfCode": [
+                        "322"
+                      ],
                       "reponseconsoCode": [
                         "322",
                         "312",
@@ -9899,6 +9980,9 @@
                 },
                 {
                   "title": "Produit périmé",
+                  "ccrfCode": [
+                    "323"
+                  ],
                   "tags": [
                     "ReponseConso"
                   ],
@@ -9907,6 +9991,9 @@
                     {
                       "title": "Un constat fréquent de produits périmés dans un établissement",
                       "subcategoriesTitle": "Quels sont les produits concernés&#160;?",
+                      "ccrfCode": [
+                        "323"
+                      ],
                       "subcategories": [
                         {
                           "title": "Des produits vendus au rayon frais",
@@ -9961,6 +10048,9 @@
                     },
                     {
                       "title": "Un produit périmé en particulier",
+                      "ccrfCode": [
+                        "323"
+                      ],
                       "subcategoriesTitle": "Quelle phrase est écrite devant la date&#160;?",
                       "subcategories": [
                         {
@@ -10069,6 +10159,9 @@
                   "subcategories": [
                     {
                       "title": "Indisponibilité des produits en publicité",
+                      "ccrfCode": [
+                        "23B"
+                      ],
                       "reponseconsoCode": [
                         "210",
                         "2243"
@@ -10122,6 +10215,9 @@
                     {
                       "title": "Informations de vente mensongères",
                       "example": "Exemple : pancarte \"produits locaux\" or ce n'est pas le cas, affiche \"pain bio\" or ce n'est pas le cas",
+                      "ccrfCode": [
+                        "23B"
+                      ],
                       "reponseconsoCode": [
                         "210",
                         "2243",
@@ -10188,6 +10284,9 @@
                 {
                   "title": "Remboursement / garantie",
                   "example": "Exemple : le magasin refuse de me reprendre un article",
+                  "ccrfCode": [
+                    "21D"
+                  ],
                   "tags": [
                     "Litige contractuel"
                   ],
@@ -11084,6 +11183,9 @@
                           "subcategories": [
                             {
                               "title": "Aliment pour animaux",
+                              "tags": [
+                                "Produit alimentaire"
+                              ],
                               "subcategoriesTitle": "Quel est le risque&#160;?",
                               "subcategories": [
                                 {
@@ -11594,6 +11696,9 @@
                             },
                             {
                               "title": "Complément alimentaire",
+                              "tags": [
+                                "Produit alimentaire"
+                              ],
                               "subcategoriesTitle": "Quel est le risque&#160;?",
                               "subcategories": [
                                 {
@@ -12104,6 +12209,9 @@
                             },
                             {
                               "title": "Alcool",
+                              "tags": [
+                                "Produit alimentaire"
+                              ],
                               "example": "Exemple : vin, cidre, bière...",
                               "subcategoriesTitle": "Quel est le risque&#160;?",
                               "subcategories": [
@@ -12615,6 +12723,9 @@
                             },
                             {
                               "title": "Produit pour bébé",
+                              "tags": [
+                                "Produit alimentaire"
+                              ],
                               "example": "Exemple : lait, plat, petit pot...",
                               "subcategoriesTitle": "Quel est le risque&#160;?",
                               "subcategories": [
@@ -13126,10 +13237,16 @@
                             },
                             {
                               "title": "Fruit ou légume",
+                              "tags": [
+                                "Produit alimentaire"
+                              ],
                               "id": "1.2-2.2.1.2.4.5"
                             },
                             {
                               "title": "Viande, poisson, produit de la mer, oeuf",
+                              "tags": [
+                                "Produit alimentaire"
+                              ],
                               "subcategoriesTitle": "Quel est le risque&#160;?",
                               "subcategories": [
                                 {
@@ -13640,6 +13757,9 @@
                             },
                             {
                               "title": "Lait et dérivé",
+                              "tags": [
+                                "Produit alimentaire"
+                              ],
                               "example": "Exemple : lait, fromage, glace...",
                               "subcategoriesTitle": "Quel est le risque&#160;?",
                               "subcategories": [
@@ -14151,6 +14271,9 @@
                             },
                             {
                               "title": "Produit sec",
+                              "tags": [
+                                "Produit alimentaire"
+                              ],
                               "example": "Exemple : épice, farine, pâtes...",
                               "subcategoriesTitle": "Quel est le risque&#160;?",
                               "subcategories": [
@@ -14662,6 +14785,9 @@
                             },
                             {
                               "title": "Plat ou dessert préparé",
+                              "tags": [
+                                "Produit alimentaire"
+                              ],
                               "subcategoriesTitle": "Quel est le risque&#160;?",
                               "subcategories": [
                                 {
@@ -15172,6 +15298,9 @@
                             },
                             {
                               "title": "Autre",
+                              "tags": [
+                                "Produit alimentaire"
+                              ],
                               "subcategoriesTitle": "Quel est le risque&#160;?",
                               "subcategories": [
                                 {
@@ -16722,6 +16851,9 @@
                   "subcategories": [
                     {
                       "title": "Aliment pour animaux",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -17232,6 +17364,9 @@
                     },
                     {
                       "title": "Complément alimentaire",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -17742,6 +17877,9 @@
                     },
                     {
                       "title": "Alcool",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "example": "Exemple : vin, cidre, bière...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -18253,6 +18391,9 @@
                     },
                     {
                       "title": "Produit pour bébé",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "example": "Exemple : lait, plat, petit pot...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -18764,10 +18905,16 @@
                     },
                     {
                       "title": "Fruit ou légume",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "id": "1.2-2.3.1.5"
                     },
                     {
                       "title": "Viande, poisson, produit de la mer, oeuf",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -19278,6 +19425,9 @@
                     },
                     {
                       "title": "Lait et dérivé",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "example": "Exemple : lait, fromage, glace...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -19789,6 +19939,9 @@
                     },
                     {
                       "title": "Produit sec",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "example": "Exemple : épice, farine, pâtes...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -20300,6 +20453,9 @@
                     },
                     {
                       "title": "Plat ou dessert préparé",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -20810,6 +20966,9 @@
                     },
                     {
                       "title": "Autre",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -25096,6 +25255,9 @@
                   "subcategories": [
                     {
                       "title": "Aliment pour animaux",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -25606,6 +25768,9 @@
                     },
                     {
                       "title": "Complément alimentaire",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -26116,6 +26281,9 @@
                     },
                     {
                       "title": "Alcool",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "example": "Exemple : vin, cidre, bière...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -26627,6 +26795,9 @@
                     },
                     {
                       "title": "Produit pour bébé",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "example": "Exemple : lait, plat, petit pot...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -27138,10 +27309,16 @@
                     },
                     {
                       "title": "Fruit ou légume",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "id": "1.2-3.3.1.5"
                     },
                     {
                       "title": "Viande, poisson, produit de la mer, oeuf",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -27652,6 +27829,9 @@
                     },
                     {
                       "title": "Lait et dérivé",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "example": "Exemple : lait, fromage, glace...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -28163,6 +28343,9 @@
                     },
                     {
                       "title": "Produit sec",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "example": "Exemple : épice, farine, pâtes...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -28674,6 +28857,9 @@
                     },
                     {
                       "title": "Plat ou dessert préparé",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -29184,6 +29370,9 @@
                     },
                     {
                       "title": "Autre",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -35318,10 +35507,68 @@
           "tags": [
             "ReponseConso"
           ],
+          "subcategories": [
+            {
+              "title": "Démarchage à domicile",
+              "companyKind": "LOCATION",
+              "tags": [
+                "Démarcharge à domicile"
+              ],
+              "id": "1.7-2.1"
+            },
+            {
+              "title": "Démarchage téléphonique",
+              "companyKind": "PHONE",
+              "tags": [
+                "Démarchage téléphonique"
+              ],
+              "id": "1.7-2.2"
+            },
+            {
+              "title": "Problème avec un site internet",
+              "tags": [
+                "Internet"
+              ],
+              "id": "1.7-2.3"
+            },
+            {
+              "title": "Autre",
+              "id": "1.7-2.4"
+            }
+          ],
           "id": "1.7-2"
         },
         {
           "title": "Abonnement presse",
+          "subcategories": [
+            {
+              "title": "Démarchage à domicile",
+              "companyKind": "LOCATION",
+              "tags": [
+                "Démarcharge à domicile"
+              ],
+              "id": "1.7-3.1"
+            },
+            {
+              "title": "Démarchage téléphonique",
+              "companyKind": "PHONE",
+              "tags": [
+                "Démarchage téléphonique"
+              ],
+              "id": "1.7-3.2"
+            },
+            {
+              "title": "Problème avec un site internet",
+              "tags": [
+                "Internet"
+              ],
+              "id": "1.7-3.3"
+            },
+            {
+              "title": "Autre",
+              "id": "1.7-3.4"
+            }
+          ],
           "reponseconsoCode": [
             "442",
             "230"
@@ -40267,6 +40514,9 @@
                   "subcategories": [
                     {
                       "title": "Aliment pour animaux",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -40777,6 +41027,9 @@
                     },
                     {
                       "title": "Complément alimentaire",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -41287,6 +41540,9 @@
                     },
                     {
                       "title": "Alcool",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "example": "Exemple : vin, cidre, bière...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -41798,6 +42054,9 @@
                     },
                     {
                       "title": "Produit pour bébé",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "example": "Exemple : lait, plat, petit pot...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -42309,10 +42568,16 @@
                     },
                     {
                       "title": "Fruit ou légume",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "id": "1.10-2.5.1.5"
                     },
                     {
                       "title": "Viande, poisson, produit de la mer, oeuf",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -42823,6 +43088,9 @@
                     },
                     {
                       "title": "Lait et dérivé",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "example": "Exemple : lait, fromage, glace...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -43334,6 +43602,9 @@
                     },
                     {
                       "title": "Produit sec",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "example": "Exemple : épice, farine, pâtes...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -43845,6 +44116,9 @@
                     },
                     {
                       "title": "Plat ou dessert préparé",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -44355,6 +44629,9 @@
                     },
                     {
                       "title": "Autre",
+                      "tags": [
+                        "Produit alimentaire"
+                      ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
                         {
@@ -48103,248 +48380,17 @@
           "id": "1.10-3"
         },
         {
-          "title": "Transports en commun",
-          "example": "Exemple : avion, train",
-          "subcategories": [
-            {
-              "title": "Prix",
-              "subcategories": [
-                {
-                  "title": "Prix exagéré",
-                  "reponseconsoCode": [
-                    "622"
-                  ],
-                  "information": {
-                    "title": "Ceci ne constitue pas un motif de signalement.",
-                    "content": "Les professionnels ont le droit de choisir leurs prix. <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter ou de commander.",
-                    "outOfScope": true
-                  },
-                  "id": "1.10-4.1.1"
-                },
-                {
-                  "title": "Prix non affiché",
-                  "example": "Exemple : sur un site, un catalogue",
-                  "reponseconsoCode": [
-                    "212"
-                  ],
-                  "tags": [
-                    "ReponseConso"
-                  ],
-                  "id": "1.10-4.1.2"
-                },
-                {
-                  "title": "Prix final non-conforme au prix annoncé",
-                  "example": "Exemple : fausse réduction, suppléments non prévus",
-                  "tags": [
-                    "ReponseConso",
-                    "Litige contractuel"
-                  ],
-                  "reponseconsoCode": [
-                    "210"
-                  ],
-                  "id": "1.10-4.1.3"
-                },
-                {
-                  "title": "Autre",
-                  "tags": [
-                    "ReponseConso",
-                    "Litige contractuel"
-                  ],
-                  "id": "1.10-4.1.4"
-                }
-              ],
-              "id": "1.10-4.1"
-            },
-            {
-              "title": "Publicité",
-              "example": "Exemple : publicité trompeuse, absence d'information",
-              "tags": [
-                "Litige contractuel"
-              ],
-              "subcategories": [
-                {
-                  "title": "Absence d'information",
-                  "reponseconsoCode": [
-                    "411"
-                  ],
-                  "tags": [
-                    "ReponseConso"
-                  ],
-                  "id": "1.10-4.2.1"
-                },
-                {
-                  "title": "Information mensongère ou trompeuse",
-                  "reponseconsoCode": [
-                    "210"
-                  ],
-                  "detailInputs": [
-                    {
-                      "label": "Qu'est-ce qui est trompeur ou mensonger&#160;?",
-                      "rank": 1,
-                      "type": "RADIO",
-                      "options": [
-                        "Le discours du professionnel",
-                        "Le site internet",
-                        "Les documents mis à votre disposition par le professionnel (flyer, plaquette de présentation...)",
-                        "Autre (à préciser)"
-                      ]
-                    },
-                    {
-                      "label": "À propos de quoi est-ce trompeur&#160;?",
-                      "rank": 2,
-                      "type": "RADIO",
-                      "options": [
-                        "Le prix",
-                        "L'hébergement et ses prestations",
-                        "Autre (à préciser)"
-                      ]
-                    },
-                    {
-                      "label": "Description",
-                      "rank": 3,
-                      "type": "TEXTAREA"
-                    },
-                    {
-                      "label": "Date du constat",
-                      "rank": 4,
-                      "type": "DATE",
-                      "defaultValue": "SYSDATE"
-                    },
-                    {
-                      "label": "Heure du constat (facultatif)",
-                      "rank": 5,
-                      "type": "TIMESLOT",
-                      "optionnal": true
-                    }
-                  ],
-                  "id": "1.10-4.2.2"
-                }
-              ],
-              "id": "1.10-4.2"
-            },
-            {
-              "title": "Retard / Annulation / Remboursement",
-              "reponseconsoCode": [
-                "481",
-                "424",
-                "4241"
-              ],
-              "tags": [
-                "Litige contractuel"
-              ],
-              "id": "1.10-4.3"
-            },
-            {
-              "title": "Assurance",
-              "tags": [
-                "Litige contractuel"
-              ],
-              "subcategories": [
-                {
-                  "title": "Annulation",
-                  "reponseconsoCode": [
-                    "481",
-                    "424",
-                    "4241"
-                  ],
-                  "id": "1.10-4.4.1"
-                },
-                {
-                  "title": "Bagage",
-                  "id": "1.10-4.4.2"
-                },
-                {
-                  "title": "Autre",
-                  "id": "1.10-4.4.3"
-                }
-              ],
-              "id": "1.10-4.4"
-            },
-            {
-              "title": "Abonnement de transport",
-              "example": "Exemple : TGV max, pass Navigo",
-              "tags": [
-                "Litige contractuel"
-              ],
-              "id": "1.10-4.5"
-            },
-            {
-              "title": "Autre",
-              "subcategories": [
-                {
-                  "title": "Le personnel n'était pas aimable",
-                  "information": {
-                    "content": "Il n'existe pas de disposition spécifique contraignant le professionnel à être aimable ou à sourire... C'est une question de relation client ! <br/>Nous vous invitons à contacter directement le gérant pour faire part de votre mécontentement.",
-                    "actions": [
-                      {
-                        "question": "Vous avez été victime de harcèlement ou d'injure ?",
-                        "answer": "Vous pouvez faire une préplainte en ligne sur le site <br><a href=\"https://www.pre-plainte-en-ligne.gouv.fr\" target=\"_blank\">pre-plainte-en-ligne.gouv.fr</a>"
-                      },
-                      {
-                        "question": "Vous souhaitez signaler un cas de maltraitance envers une personne handicapée ou âgée ?",
-                        "answer": "Vous pouvez appeler le 3977. C'est le numéro d’appel national unique pour les victimes ou les témoins de maltraitance envers les personnes handicapées ou âgées..."
-                      }
-                    ],
-                    "outOfScope": true
-                  },
-                  "id": "1.10-4.6.1"
-                },
-                {
-                  "title": "Problème d'accessibilité",
-                  "information": {
-                    "title": "Votre problème ne rentre pas dans le cadre de SignalConso.",
-                    "content": "La Répression des Fraudes ne gère pas les problèmes d'accessibilité des bâtiments et espaces ouverts au public. <br><br> Deux solutions pour le signaler : <ul> <li> Porter plainte directement au commissariat ;</li> <li> Écrire à la Direction Départementale des Territoires du département pour leur signaler. Les adresses sont sur le site <a href='https://lannuaire.service-public.fr/navigation/ddt' target='_blank'>lannuaire.service-public.fr</a></li> </lu>"
-                  },
-                  "id": "1.10-4.6.2"
-                },
-                {
-                  "title": "Mon animal a été refusé",
-                  "subcategoriesTitle": "Est-ce un chien d'assistance&#160;?",
-                  "subcategories": [
-                    {
-                      "title": "Non",
-                      "information": {
-                        "content": "Un commerçant peut refuser la présence d’un chien dans son établissement (hôtel, magasin, restaurant...). <br/>Si vous souhaitez pouvoir prendre votre chien avec vous, pensez à demander si les chiens sont acceptés lors de votre réservation. <br> <br> Il existe des sites internet qui recensent les établissements (hôtels, restaurants) acceptant les chiens.",
-                        "outOfScope": true
-                      },
-                      "id": "1.10-4.6.3.1"
-                    },
-                    {
-                      "title": "Oui (je possède la carte d'assistance)",
-                      "detailInputs": [
-                        {
-                          "label": "Date du refus",
-                          "rank": 1,
-                          "type": "DATE"
-                        },
-                        {
-                          "label": "Pouvez-vous nous décrire ce qu'il s'est passé ?",
-                          "rank": 2,
-                          "type": "TEXTAREA"
-                        }
-                      ],
-                      "fileLabel": "Vous pouvez joindre des éléments (photo, carte d'assistance...) pour appuyer votre signalement.",
-                      "id": "1.10-4.6.3.2"
-                    }
-                  ],
-                  "id": "1.10-4.6.3"
-                },
-                {
-                  "title": "Autre",
-                  "tags": [
-                    "Litige contractuel"
-                  ],
-                  "id": "1.10-4.6.4"
-                }
-              ],
-              "id": "1.10-4.6"
-            }
-          ],
+          "title": "Compagnie aérienne",
+          "example": "Exemple : Vol annuel, vol retardé, déclassement, refus d'embarquement",
+          "information": {
+            "title": "Vous avez acheté votre billet d'avion directement auprès d'une compagnie aérienne.",
+            "content": "Vous avez eu un problème de déclassement, un refus d'embarquement, votre vol a été retardé ou annulé. <br />Ce type de problème ne doit pas être signalé sur SignalConso. Nous vous invitons à utiliser le sité dédié <br /><a href='google.fr'>https://droits-passagers-aeriens.aviation-civile.gouv.fr/</a> <br />Vous avez achèter vos billets d'avion dans une agence de voyages. <br />Revenez en arrière et allez sur Agence de voyage :)"
+          },
           "id": "1.10-4"
         },
         {
-          "title": "Sport",
-          "example": "Exemple : piscine, salle de sport",
+          "title": "Transports en commun",
+          "example": "Exemple : avion, train",
           "subcategories": [
             {
               "title": "Prix",
@@ -48375,12 +48421,12 @@
                 {
                   "title": "Prix final non-conforme au prix annoncé",
                   "example": "Exemple : fausse réduction, suppléments non prévus",
-                  "reponseconsoCode": [
-                    "210"
-                  ],
                   "tags": [
                     "ReponseConso",
                     "Litige contractuel"
+                  ],
+                  "reponseconsoCode": [
+                    "210"
                   ],
                   "id": "1.10-5.1.3"
                 },
@@ -48399,7 +48445,6 @@
               "title": "Publicité",
               "example": "Exemple : publicité trompeuse, absence d'information",
               "tags": [
-                "ReponseConso",
                 "Litige contractuel"
               ],
               "subcategories": [
@@ -48407,6 +48452,9 @@
                   "title": "Absence d'information",
                   "reponseconsoCode": [
                     "411"
+                  ],
+                  "tags": [
+                    "ReponseConso"
                   ],
                   "id": "1.10-5.2.1"
                 },
@@ -48461,6 +48509,244 @@
               "id": "1.10-5.2"
             },
             {
+              "title": "Retard / Annulation / Remboursement",
+              "reponseconsoCode": [
+                "481",
+                "424",
+                "4241"
+              ],
+              "tags": [
+                "Litige contractuel"
+              ],
+              "id": "1.10-5.3"
+            },
+            {
+              "title": "Assurance",
+              "tags": [
+                "Litige contractuel"
+              ],
+              "subcategories": [
+                {
+                  "title": "Annulation",
+                  "reponseconsoCode": [
+                    "481",
+                    "424",
+                    "4241"
+                  ],
+                  "id": "1.10-5.4.1"
+                },
+                {
+                  "title": "Bagage",
+                  "id": "1.10-5.4.2"
+                },
+                {
+                  "title": "Autre",
+                  "id": "1.10-5.4.3"
+                }
+              ],
+              "id": "1.10-5.4"
+            },
+            {
+              "title": "Abonnement de transport",
+              "example": "Exemple : TGV max, pass Navigo",
+              "tags": [
+                "Litige contractuel"
+              ],
+              "id": "1.10-5.5"
+            },
+            {
+              "title": "Autre",
+              "subcategories": [
+                {
+                  "title": "Le personnel n'était pas aimable",
+                  "information": {
+                    "content": "Il n'existe pas de disposition spécifique contraignant le professionnel à être aimable ou à sourire... C'est une question de relation client ! <br/>Nous vous invitons à contacter directement le gérant pour faire part de votre mécontentement.",
+                    "actions": [
+                      {
+                        "question": "Vous avez été victime de harcèlement ou d'injure ?",
+                        "answer": "Vous pouvez faire une préplainte en ligne sur le site <br><a href=\"https://www.pre-plainte-en-ligne.gouv.fr\" target=\"_blank\">pre-plainte-en-ligne.gouv.fr</a>"
+                      },
+                      {
+                        "question": "Vous souhaitez signaler un cas de maltraitance envers une personne handicapée ou âgée ?",
+                        "answer": "Vous pouvez appeler le 3977. C'est le numéro d’appel national unique pour les victimes ou les témoins de maltraitance envers les personnes handicapées ou âgées..."
+                      }
+                    ],
+                    "outOfScope": true
+                  },
+                  "id": "1.10-5.6.1"
+                },
+                {
+                  "title": "Problème d'accessibilité",
+                  "information": {
+                    "title": "Votre problème ne rentre pas dans le cadre de SignalConso.",
+                    "content": "La Répression des Fraudes ne gère pas les problèmes d'accessibilité des bâtiments et espaces ouverts au public. <br><br> Deux solutions pour le signaler : <ul> <li> Porter plainte directement au commissariat ;</li> <li> Écrire à la Direction Départementale des Territoires du département pour leur signaler. Les adresses sont sur le site <a href='https://lannuaire.service-public.fr/navigation/ddt' target='_blank'>lannuaire.service-public.fr</a></li> </lu>"
+                  },
+                  "id": "1.10-5.6.2"
+                },
+                {
+                  "title": "Mon animal a été refusé",
+                  "subcategoriesTitle": "Est-ce un chien d'assistance&#160;?",
+                  "subcategories": [
+                    {
+                      "title": "Non",
+                      "information": {
+                        "content": "Un commerçant peut refuser la présence d’un chien dans son établissement (hôtel, magasin, restaurant...). <br/>Si vous souhaitez pouvoir prendre votre chien avec vous, pensez à demander si les chiens sont acceptés lors de votre réservation. <br> <br> Il existe des sites internet qui recensent les établissements (hôtels, restaurants) acceptant les chiens.",
+                        "outOfScope": true
+                      },
+                      "id": "1.10-5.6.3.1"
+                    },
+                    {
+                      "title": "Oui (je possède la carte d'assistance)",
+                      "detailInputs": [
+                        {
+                          "label": "Date du refus",
+                          "rank": 1,
+                          "type": "DATE"
+                        },
+                        {
+                          "label": "Pouvez-vous nous décrire ce qu'il s'est passé ?",
+                          "rank": 2,
+                          "type": "TEXTAREA"
+                        }
+                      ],
+                      "fileLabel": "Vous pouvez joindre des éléments (photo, carte d'assistance...) pour appuyer votre signalement.",
+                      "id": "1.10-5.6.3.2"
+                    }
+                  ],
+                  "id": "1.10-5.6.3"
+                },
+                {
+                  "title": "Autre",
+                  "tags": [
+                    "Litige contractuel"
+                  ],
+                  "id": "1.10-5.6.4"
+                }
+              ],
+              "id": "1.10-5.6"
+            }
+          ],
+          "id": "1.10-5"
+        },
+        {
+          "title": "Sport",
+          "example": "Exemple : piscine, salle de sport",
+          "subcategories": [
+            {
+              "title": "Prix",
+              "subcategories": [
+                {
+                  "title": "Prix exagéré",
+                  "reponseconsoCode": [
+                    "622"
+                  ],
+                  "information": {
+                    "title": "Ceci ne constitue pas un motif de signalement.",
+                    "content": "Les professionnels ont le droit de choisir leurs prix. <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter ou de commander.",
+                    "outOfScope": true
+                  },
+                  "id": "1.10-6.1.1"
+                },
+                {
+                  "title": "Prix non affiché",
+                  "example": "Exemple : sur un site, un catalogue",
+                  "reponseconsoCode": [
+                    "212"
+                  ],
+                  "tags": [
+                    "ReponseConso"
+                  ],
+                  "id": "1.10-6.1.2"
+                },
+                {
+                  "title": "Prix final non-conforme au prix annoncé",
+                  "example": "Exemple : fausse réduction, suppléments non prévus",
+                  "reponseconsoCode": [
+                    "210"
+                  ],
+                  "tags": [
+                    "ReponseConso",
+                    "Litige contractuel"
+                  ],
+                  "id": "1.10-6.1.3"
+                },
+                {
+                  "title": "Autre",
+                  "tags": [
+                    "ReponseConso",
+                    "Litige contractuel"
+                  ],
+                  "id": "1.10-6.1.4"
+                }
+              ],
+              "id": "1.10-6.1"
+            },
+            {
+              "title": "Publicité",
+              "example": "Exemple : publicité trompeuse, absence d'information",
+              "tags": [
+                "ReponseConso",
+                "Litige contractuel"
+              ],
+              "subcategories": [
+                {
+                  "title": "Absence d'information",
+                  "reponseconsoCode": [
+                    "411"
+                  ],
+                  "id": "1.10-6.2.1"
+                },
+                {
+                  "title": "Information mensongère ou trompeuse",
+                  "reponseconsoCode": [
+                    "210"
+                  ],
+                  "detailInputs": [
+                    {
+                      "label": "Qu'est-ce qui est trompeur ou mensonger&#160;?",
+                      "rank": 1,
+                      "type": "RADIO",
+                      "options": [
+                        "Le discours du professionnel",
+                        "Le site internet",
+                        "Les documents mis à votre disposition par le professionnel (flyer, plaquette de présentation...)",
+                        "Autre (à préciser)"
+                      ]
+                    },
+                    {
+                      "label": "À propos de quoi est-ce trompeur&#160;?",
+                      "rank": 2,
+                      "type": "RADIO",
+                      "options": [
+                        "Le prix",
+                        "L'hébergement et ses prestations",
+                        "Autre (à préciser)"
+                      ]
+                    },
+                    {
+                      "label": "Description",
+                      "rank": 3,
+                      "type": "TEXTAREA"
+                    },
+                    {
+                      "label": "Date du constat",
+                      "rank": 4,
+                      "type": "DATE",
+                      "defaultValue": "SYSDATE"
+                    },
+                    {
+                      "label": "Heure du constat (facultatif)",
+                      "rank": 5,
+                      "type": "TIMESLOT",
+                      "optionnal": true
+                    }
+                  ],
+                  "id": "1.10-6.2.2"
+                }
+              ],
+              "id": "1.10-6.2"
+            },
+            {
               "title": "Contrat et abonnement",
               "example": "Exemple : contrat non respecté, clause abusive",
               "tags": [
@@ -48475,17 +48761,17 @@
                   "tags": [
                     "ReponseConso"
                   ],
-                  "id": "1.10-5.3.1"
+                  "id": "1.10-6.3.1"
                 },
                 {
                   "title": "Contrat non respecté",
                   "reponseconsoCode": [
                     "446"
                   ],
-                  "id": "1.10-5.3.2"
+                  "id": "1.10-6.3.2"
                 }
               ],
-              "id": "1.10-5.3"
+              "id": "1.10-6.3"
             },
             {
               "title": "Produit dangereux",
@@ -48559,7 +48845,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.10-5.4.1.1"
+                      "id": "1.10-6.4.1.1"
                     },
                     {
                       "title": "Blessure physique",
@@ -48622,7 +48908,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.10-5.4.1.2"
+                      "id": "1.10-6.4.1.2"
                     },
                     {
                       "title": "Choc électrique",
@@ -48682,7 +48968,7 @@
                         "344",
                         "345"
                       ],
-                      "id": "1.10-5.4.1.3"
+                      "id": "1.10-6.4.1.3"
                     },
                     {
                       "title": "Allergie",
@@ -48745,7 +49031,7 @@
                         "324",
                         "345"
                       ],
-                      "id": "1.10-5.4.1.4"
+                      "id": "1.10-6.4.1.4"
                     },
                     {
                       "title": "Risque environnemental",
@@ -48801,7 +49087,7 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.10-5.4.1.5"
+                      "id": "1.10-6.4.1.5"
                     },
                     {
                       "title": "Autre",
@@ -48857,10 +49143,10 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.10-5.4.1.6"
+                      "id": "1.10-6.4.1.6"
                     }
                   ],
-                  "id": "1.10-5.4.1"
+                  "id": "1.10-6.4.1"
                 },
                 {
                   "title": "Cosmétique, produit d'hygiène",
@@ -48927,7 +49213,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.10-5.4.2.1"
+                      "id": "1.10-6.4.2.1"
                     },
                     {
                       "title": "Blessure physique",
@@ -48990,7 +49276,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.10-5.4.2.2"
+                      "id": "1.10-6.4.2.2"
                     },
                     {
                       "title": "Choc électrique",
@@ -49050,7 +49336,7 @@
                         "344",
                         "345"
                       ],
-                      "id": "1.10-5.4.2.3"
+                      "id": "1.10-6.4.2.3"
                     },
                     {
                       "title": "Allergie",
@@ -49113,7 +49399,7 @@
                         "324",
                         "345"
                       ],
-                      "id": "1.10-5.4.2.4"
+                      "id": "1.10-6.4.2.4"
                     },
                     {
                       "title": "Risque environnemental",
@@ -49169,7 +49455,7 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.10-5.4.2.5"
+                      "id": "1.10-6.4.2.5"
                     },
                     {
                       "title": "Autre",
@@ -49225,10 +49511,10 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.10-5.4.2.6"
+                      "id": "1.10-6.4.2.6"
                     }
                   ],
-                  "id": "1.10-5.4.2"
+                  "id": "1.10-6.4.2"
                 },
                 {
                   "title": "Vêtement, textile",
@@ -49295,7 +49581,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.10-5.4.3.1"
+                      "id": "1.10-6.4.3.1"
                     },
                     {
                       "title": "Blessure physique",
@@ -49358,7 +49644,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.10-5.4.3.2"
+                      "id": "1.10-6.4.3.2"
                     },
                     {
                       "title": "Choc électrique",
@@ -49418,7 +49704,7 @@
                         "344",
                         "345"
                       ],
-                      "id": "1.10-5.4.3.3"
+                      "id": "1.10-6.4.3.3"
                     },
                     {
                       "title": "Allergie",
@@ -49481,7 +49767,7 @@
                         "324",
                         "345"
                       ],
-                      "id": "1.10-5.4.3.4"
+                      "id": "1.10-6.4.3.4"
                     },
                     {
                       "title": "Risque environnemental",
@@ -49537,7 +49823,7 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.10-5.4.3.5"
+                      "id": "1.10-6.4.3.5"
                     },
                     {
                       "title": "Autre",
@@ -49593,10 +49879,10 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.10-5.4.3.6"
+                      "id": "1.10-6.4.3.6"
                     }
                   ],
-                  "id": "1.10-5.4.3"
+                  "id": "1.10-6.4.3"
                 },
                 {
                   "title": "Équipement de protection",
@@ -49663,7 +49949,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.10-5.4.4.1"
+                      "id": "1.10-6.4.4.1"
                     },
                     {
                       "title": "Blessure physique",
@@ -49726,7 +50012,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.10-5.4.4.2"
+                      "id": "1.10-6.4.4.2"
                     },
                     {
                       "title": "Choc électrique",
@@ -49786,7 +50072,7 @@
                         "344",
                         "345"
                       ],
-                      "id": "1.10-5.4.4.3"
+                      "id": "1.10-6.4.4.3"
                     },
                     {
                       "title": "Allergie",
@@ -49849,7 +50135,7 @@
                         "324",
                         "345"
                       ],
-                      "id": "1.10-5.4.4.4"
+                      "id": "1.10-6.4.4.4"
                     },
                     {
                       "title": "Risque environnemental",
@@ -49905,7 +50191,7 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.10-5.4.4.5"
+                      "id": "1.10-6.4.4.5"
                     },
                     {
                       "title": "Autre",
@@ -49961,10 +50247,10 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.10-5.4.4.6"
+                      "id": "1.10-6.4.4.6"
                     }
                   ],
-                  "id": "1.10-5.4.4"
+                  "id": "1.10-6.4.4"
                 },
                 {
                   "title": "Appareil électrique",
@@ -50031,7 +50317,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.10-5.4.5.1"
+                      "id": "1.10-6.4.5.1"
                     },
                     {
                       "title": "Blessure physique",
@@ -50094,7 +50380,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.10-5.4.5.2"
+                      "id": "1.10-6.4.5.2"
                     },
                     {
                       "title": "Choc électrique",
@@ -50154,7 +50440,7 @@
                         "344",
                         "345"
                       ],
-                      "id": "1.10-5.4.5.3"
+                      "id": "1.10-6.4.5.3"
                     },
                     {
                       "title": "Allergie",
@@ -50217,7 +50503,7 @@
                         "324",
                         "345"
                       ],
-                      "id": "1.10-5.4.5.4"
+                      "id": "1.10-6.4.5.4"
                     },
                     {
                       "title": "Risque environnemental",
@@ -50273,7 +50559,7 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.10-5.4.5.5"
+                      "id": "1.10-6.4.5.5"
                     },
                     {
                       "title": "Autre",
@@ -50329,10 +50615,10 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.10-5.4.5.6"
+                      "id": "1.10-6.4.5.6"
                     }
                   ],
-                  "id": "1.10-5.4.5"
+                  "id": "1.10-6.4.5"
                 },
                 {
                   "title": "Autre",
@@ -50399,7 +50685,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.10-5.4.6.1"
+                      "id": "1.10-6.4.6.1"
                     },
                     {
                       "title": "Blessure physique",
@@ -50462,7 +50748,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.10-5.4.6.2"
+                      "id": "1.10-6.4.6.2"
                     },
                     {
                       "title": "Choc électrique",
@@ -50522,7 +50808,7 @@
                         "344",
                         "345"
                       ],
-                      "id": "1.10-5.4.6.3"
+                      "id": "1.10-6.4.6.3"
                     },
                     {
                       "title": "Allergie",
@@ -50585,7 +50871,7 @@
                         "324",
                         "345"
                       ],
-                      "id": "1.10-5.4.6.4"
+                      "id": "1.10-6.4.6.4"
                     },
                     {
                       "title": "Risque environnemental",
@@ -50641,7 +50927,7 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.10-5.4.6.5"
+                      "id": "1.10-6.4.6.5"
                     },
                     {
                       "title": "Autre",
@@ -50697,13 +50983,13 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.10-5.4.6.6"
+                      "id": "1.10-6.4.6.6"
                     }
                   ],
-                  "id": "1.10-5.4.6"
+                  "id": "1.10-6.4.6"
                 }
               ],
-              "id": "1.10-5.4"
+              "id": "1.10-6.4"
             },
             {
               "title": "Autre",
@@ -50713,21 +50999,21 @@
               "subcategories": [
                 {
                   "title": "Equipement",
-                  "id": "1.10-5.5.1"
+                  "id": "1.10-6.5.1"
                 },
                 {
                   "title": "Compléments alimentaires",
                   "tags": [
                     "ReponseConso"
                   ],
-                  "id": "1.10-5.5.2"
+                  "id": "1.10-6.5.2"
                 },
                 {
                   "title": "Problème d'hygiène",
                   "tags": [
                     "ReponseConso"
                   ],
-                  "id": "1.10-5.5.3"
+                  "id": "1.10-6.5.3"
                 },
                 {
                   "title": "Problème d'accessibilité",
@@ -50735,7 +51021,7 @@
                     "title": "Votre problème ne rentre pas dans le cadre de SignalConso.",
                     "content": "La Répression des Fraudes ne gère pas les problèmes d'accessibilité des bâtiments et espaces ouverts au public. <br><br> Deux solutions pour le signaler : <ul> <li> Porter plainte directement au commissariat ;</li> <li> Écrire à la Direction Départementale des Territoires du département pour leur signaler. Les adresses sont sur le site <a href='https://lannuaire.service-public.fr/navigation/ddt' target='_blank'>lannuaire.service-public.fr</a></li> </lu>"
                   },
-                  "id": "1.10-5.5.4"
+                  "id": "1.10-6.5.4"
                 },
                 {
                   "title": "Le personnel n'était pas aimable",
@@ -50753,20 +51039,20 @@
                     ],
                     "outOfScope": true
                   },
-                  "id": "1.10-5.5.5"
+                  "id": "1.10-6.5.5"
                 },
                 {
                   "title": "Autre",
                   "tags": [
                     "ReponseConso"
                   ],
-                  "id": "1.10-5.5.6"
+                  "id": "1.10-6.5.6"
                 }
               ],
-              "id": "1.10-5.5"
+              "id": "1.10-6.5"
             }
           ],
-          "id": "1.10-5"
+          "id": "1.10-6"
         },
         {
           "title": "Divertissement culturel",
@@ -50785,7 +51071,7 @@
                     "content": "Les professionnels ont le droit de choisir leurs prix. <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter ou de commander.",
                     "outOfScope": true
                   },
-                  "id": "1.10-6.1.1"
+                  "id": "1.10-7.1.1"
                 },
                 {
                   "title": "Prix non affiché",
@@ -50796,7 +51082,7 @@
                   "tags": [
                     "ReponseConso"
                   ],
-                  "id": "1.10-6.1.2"
+                  "id": "1.10-7.1.2"
                 },
                 {
                   "title": "Prix final non-conforme au prix annoncé",
@@ -50808,7 +51094,7 @@
                     "ReponseConso",
                     "Litige contractuel"
                   ],
-                  "id": "1.10-6.1.3"
+                  "id": "1.10-7.1.3"
                 },
                 {
                   "title": "Autre",
@@ -50816,10 +51102,10 @@
                     "ReponseConso",
                     "Litige contractuel"
                   ],
-                  "id": "1.10-6.1.4"
+                  "id": "1.10-7.1.4"
                 }
               ],
-              "id": "1.10-6.1"
+              "id": "1.10-7.1"
             },
             {
               "title": "Publicité",
@@ -50834,7 +51120,7 @@
                   "reponseconsoCode": [
                     "411"
                   ],
-                  "id": "1.10-6.2.1"
+                  "id": "1.10-7.2.1"
                 },
                 {
                   "title": "Information mensongère ou trompeuse",
@@ -50881,10 +51167,10 @@
                       "optionnal": true
                     }
                   ],
-                  "id": "1.10-6.2.2"
+                  "id": "1.10-7.2.2"
                 }
               ],
-              "id": "1.10-6.2"
+              "id": "1.10-7.2"
             },
             {
               "title": "Remboursement / annulation",
@@ -50896,7 +51182,7 @@
               "tags": [
                 "Litige contractuel"
               ],
-              "id": "1.10-6.3"
+              "id": "1.10-7.3"
             },
             {
               "title": "Autre",
@@ -50907,7 +51193,7 @@
                     "title": "Votre problème ne rentre pas dans le cadre de SignalConso.",
                     "content": "La Répression des Fraudes ne gère pas les problèmes d'accessibilité des bâtiments et espaces ouverts au public. <br><br> Deux solutions pour le signaler : <ul> <li> Porter plainte directement au commissariat ;</li> <li> Écrire à la Direction Départementale des Territoires du département pour leur signaler. Les adresses sont sur le site <a href='https://lannuaire.service-public.fr/navigation/ddt' target='_blank'>lannuaire.service-public.fr</a></li> </lu>"
                   },
-                  "id": "1.10-6.4.1"
+                  "id": "1.10-7.4.1"
                 },
                 {
                   "title": "Le personnel n'était pas aimable",
@@ -50925,7 +51211,7 @@
                     ],
                     "outOfScope": true
                   },
-                  "id": "1.10-6.4.2"
+                  "id": "1.10-7.4.2"
                 },
                 {
                   "title": "Mon chien a été refusé",
@@ -50937,7 +51223,7 @@
                         "content": "Un commerçant peut refuser la présence d’un chien dans son établissement (hôtel, magasin, restaurant...). <br/>Si vous souhaitez pouvoir prendre votre chien avec vous, pensez à demander si les chiens sont acceptés lors de votre réservation. <br> <br> Il existe des sites internet qui recensent les établissements (hôtels, restaurants) acceptant les chiens.",
                         "outOfScope": true
                       },
-                      "id": "1.10-6.4.3.1"
+                      "id": "1.10-7.4.3.1"
                     },
                     {
                       "title": "Oui (je possède la carte d'assistance)",
@@ -50954,10 +51240,10 @@
                         }
                       ],
                       "fileLabel": "Vous pouvez joindre des éléments (photo, carte d'assistance...) pour appuyer votre signalement.",
-                      "id": "1.10-6.4.3.2"
+                      "id": "1.10-7.4.3.2"
                     }
                   ],
-                  "id": "1.10-6.4.3"
+                  "id": "1.10-7.4.3"
                 },
                 {
                   "title": "Autre",
@@ -50965,13 +51251,13 @@
                     "ReponseConso",
                     "Litige contractuel"
                   ],
-                  "id": "1.10-6.4.4"
+                  "id": "1.10-7.4.4"
                 }
               ],
-              "id": "1.10-6.4"
+              "id": "1.10-7.4"
             }
           ],
-          "id": "1.10-6"
+          "id": "1.10-7"
         },
         {
           "title": "Autre",
@@ -50983,18 +51269,18 @@
             {
               "title": "Abonnement",
               "example": "Exemple : abonnement magazine",
-              "id": "1.10-7.1"
+              "id": "1.10-8.1"
             },
             {
               "title": "Coffret cadeau / box",
-              "id": "1.10-7.2"
+              "id": "1.10-8.2"
             },
             {
               "title": "Autre",
-              "id": "1.10-7.3"
+              "id": "1.10-8.3"
             }
           ],
-          "id": "1.10-7"
+          "id": "1.10-8"
         }
       ],
       "id": "1.10"
