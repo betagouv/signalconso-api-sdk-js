@@ -29,45 +29,45 @@
           subcategories: !!import/single ../common/produit-alimentaire.yml
         - title: Jouet, puériculture, matériel scolaire
           tags: 
-            - Produit Indusdriel
+            - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Cosmétique, produit d'hygiène, produit de tatouage
           tags: 
-            - Produit Indusdriel
+            - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Vêtement, textile, sac à main, bijou
           tags: 
-            - Produit Indusdriel
+            - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Équipement de protection
           tags: 
-            - Produit Indusdriel
+            - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Feu d'artifice
           tags: 
-            - Produit Indusdriel
+            - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Meuble
           tags: 
-            - Produit Indusdriel
+            - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Produit d'entretien, produit chimique, engrais
           tags: 
-            - Produit Indusdriel
+            - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Appareil électrique
-            - Produit Indusdriel
+            - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Outil
-            - Produit Indusdriel
+            - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Autre
@@ -173,7 +173,7 @@
                 - '210'
                 - '212'
               description:
-                <br/><br/><b>Soldes :</b> Les dates des soldes sont encadrées par la loi. Ces dates sont valables pour les magasins et aussi pour la vente sur internet.
+                '<br/><br/><b>Soldes :</b> Les dates des soldes sont encadrées par la loi. Ces dates sont valables pour les magasins et aussi pour la vente sur internet.
                 <br/><br/><b>Liquidation :</b> les liquidations sont soumises à déclaration préalable auprès du maire de la commune où a lieu cette opération.
                 Un document prouvant cette déclaration doit être affichée dans le magasin, pendant toute la durée de la liquidation. Ce document est souvent affiché sur la vitrine car il doit être visible de la rue.'
               detailInputs:

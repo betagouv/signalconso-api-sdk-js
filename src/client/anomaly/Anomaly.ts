@@ -33,6 +33,8 @@ export enum ReportTag {
   Influenceur = 'Influenceur',
   ReponseConso = 'ReponseConso',
   Internet = 'Internet',
+  ProduitIndustriel = 'Produit industriel',
+  ProduitAlimentaire = 'Produit alimentaire',
 }
 
 export enum CompanyKinds {
