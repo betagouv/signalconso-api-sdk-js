@@ -33,6 +33,7 @@ export type StatusCode = 200 | 301 | 302 | 400 | 401 | 403 | 404 | 423 | 500 | 5
 
 export interface ApiError {
   code: StatusCode
+  id: string
   message: string
   error?: Error
 }
@@ -74,6 +75,7 @@ export class ApiClient {
               if (_.response) {
                 return Promise.reject({
                   code: _.response.status,
+                  id: _.response.data?.type,
                   message: _.response.data.message ?? _.response.data,
                   error: _,
                 })
