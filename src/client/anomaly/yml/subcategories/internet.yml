@@ -1,6 +1,8 @@
 - title: Un influenceur ou une influenceuse
   companyKind: INFLUENCEUR
   example: 'Exemple : publicité trompeuse, l''influenceur n''indique pas qu''il est rémunéré par une marque'
+  reponseconsoCode:
+    - '210'
   subcategories:
     - title: Publicité trompeuse
       tags:
