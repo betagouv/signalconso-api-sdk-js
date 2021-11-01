@@ -4,6 +4,8 @@
     - Litige contractuel
   subcategories:
     - title: Prix
+      ccrfCode:
+        - '21B'
       subcategories:
         - title: Prix exagéré
           information:
@@ -25,6 +27,9 @@
       example: "Exemple : information trompeuse ou mensongère, absence d'information, contrainte"
       subcategories:
         - title: Absence d'information ou information incomplète
+          ccrfCode:
+            - '21B'
+            - '21A'
           reponseconsoCode:
             - '411'
           tags:
@@ -91,6 +96,8 @@
   subcategories:
     - title: Prix
       example: 'Exemple : prix non affiché, devis non respecté'
+      ccrfCode:
+        - '21B'
       tags:
         - Litige contractuel
       subcategories:
@@ -114,6 +121,8 @@
       example: "Exemple : absence d'information, information trompeuse ou mensongère, démarchage"
       tags:
         - Litige contractuel
+      ccrfCode: 
+        - '23B'
       subcategories:
         - title: Absence d'information ou information incomplète
           tags:
@@ -481,14 +490,22 @@
     - Produit dangereux
   subcategories:
     - title: Outil
+      tags:
+        - Produit industriel
       subcategoriesTitle: Quel est le risque&#160;?
       subcategories: !!import/single ../common/produit-dangereux.yml
     - title: Appareil électrique
       subcategoriesTitle: Quel est le risque&#160;?
+      tags:
+        - Produit industriel
       subcategories: !!import/single ../common/produit-dangereux.yml
     - title: Matériau de construction
       subcategoriesTitle: Quel est le risque&#160;?
       subcategories: !!import/single ../common/produit-dangereux.yml
+      tags:
+        - Produit industriel
     - title: Autre
       subcategoriesTitle: Quel est le risque&#160;?
       subcategories: !!import/single ../common/produit-dangereux.yml
+      tags:
+        - Produit industriel

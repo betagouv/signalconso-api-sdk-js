@@ -25,6 +25,10 @@ export class CompanyClient {
     return this.client.put<Company>(`/companies/${id}/address`, {body: update})
   }
 
+  readonly getResponseRate = (id: Id) => {
+    return this.client.get<number>(`/companies/${id}/response-rate`)
+  }
+
   readonly saveUndeliveredDocument = (siret: string, returnedDate: Date) => {
     return this.client.post<Event>(`/companies/${siret}/undelivered-document`, {body: {returnedDate: dateToApi(returnedDate)}})
   }

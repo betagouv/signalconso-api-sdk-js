@@ -198,34 +198,56 @@
             - '447'
             - '464'
 - title: Abonnement télévision
-  reponseconsoCode:
-    - '4441'
   tags:
     - ReponseConso
   subcategories:
-    - title: Démarchage à domicile
+    - title: Démarchage à domicile      
+      ccrfCode:
+        - '221'
       companyKind: LOCATION
+      reponseconsoCode:
+        - '221'
       tags:
         - Démarcharge à domicile
-    - title: Démarchage téléphonique
+    - title: Démarchage téléphonique      
+      ccrfCode: 
+        -'227'
       companyKind: PHONE
+      reponseconsoCode:
+        - '221'
       tags:
         - Démarchage téléphonique
     - title: Problème avec un site internet
+      reponseconsoCode:
+        - '4442'
       tags:
         - Internet
     - title: Autre
+      reponseconsoCode:
+        - '443'
+        - '446'
 - title: Abonnement presse
   subcategories:
     - title: Démarchage à domicile
+      ccrfCode:
+        - '221'
       companyKind: LOCATION
+      reponseconsoCode:
+        - '221'
       tags:
         - Démarcharge à domicile
     - title: Démarchage téléphonique
+      ccrfCode: 
+        -'227'
       companyKind: PHONE
+      reponseconsoCode:
+        - '221'
       tags:
         - Démarchage téléphonique
     - title: Problème avec un site internet
+      reponseconsoCode:
+        - '443'
+        - '446'
       tags:
         - Internet
     - title: Autre
@@ -242,12 +264,18 @@
     - title: Appareil électrique
       subcategoriesTitle: Quel est le risque&#160;?
       subcategories: !!import/single ../common/produit-dangereux.yml
+      tags:
+        - Produit industriel
     - title: Accessoire
       subcategoriesTitle: Quel est le risque&#160;?
       subcategories: !!import/single ../common/produit-dangereux.yml
+      tags:
+        - Produit industriel
     - title: Autre
       subcategoriesTitle: Quel est le risque&#160;?
-      subcategories: !!import/single ../common/produit-dangereux.yml
+      subcategories: !!import/single ../common/produit-dangereux.yml      
+      tags:
+        - Produit industriel
 - title: Autre
   reponseconsoCode:
     - '679'
