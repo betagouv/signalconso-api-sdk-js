@@ -1,6 +1,11 @@
 - title: Un influenceur ou une influenceuse
   companyKind: INFLUENCEUR
   example: 'Exemple : publicité trompeuse, l''influenceur n''indique pas qu''il est rémunéré par une marque'
+  ccrfCode:
+    - '23B'
+    - '271'
+  reponseconsoCode:
+    - '210'
   subcategories:
     - title: Publicité trompeuse
       tags:
@@ -23,6 +28,11 @@
     title: Revenez en arrière et utilisez plutôt la catégorie spécifique à votre commande :)
     content: Un billet d'avion ? Utilisez la catégorie "Voyage / Loisirs" <br> Un livre commandé en ligne mais non reçu ? Utilisez la catégorie "Achat / Magasin"
 - title: Un problème avec un store (vente d'applications mobiles)
+  ccrfCode:
+    - '23B'
+  reponseconsoCode:
+    - '443'
+    - '445'
   companyKind: SIRET
 - title: Un problème de harcèlement ou de chantage en ligne
   example: "Exemple : email d'un hackeur vous demandant de l'argent"

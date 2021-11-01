@@ -9836,6 +9836,9 @@
                         },
                         {
                           "title": "Tenue sale",
+                          "ccrfCode": [
+                            "312"
+                          ],
                           "reponseconsoCode": [
                             "312",
                             "321"
@@ -9844,6 +9847,9 @@
                         },
                         {
                           "title": "Mauvaises pratiques d'hygiène",
+                          "ccrfCode": [
+                            "312"
+                          ],
                           "reponseconsoCode": [
                             "312"
                           ],
@@ -9853,6 +9859,9 @@
                         {
                           "title": "Présence d'animaux",
                           "example": "Exemple : rats, cafards",
+                          "ccrfCode": [
+                            "312"
+                          ],
                           "reponseconsoCode": [
                             "312"
                           ],
@@ -9966,6 +9975,9 @@
                     },
                     {
                       "title": "Autre problème d'hygiène",
+                      "ccrfCode": [
+                        "312"
+                      ],
                       "reponseconsoCode": [
                         "312",
                         "310"
@@ -16239,6 +16251,9 @@
                       "id": "1.2-2.2.1.7"
                     }
                   ],
+                  "tags": [
+                    "Produit Alimenaire"
+                  ],
                   "id": "1.2-2.2.1"
                 },
                 {
@@ -16832,6 +16847,9 @@
                       ],
                       "id": "1.2-2.2.2.5"
                     }
+                  ],
+                  "tags": [
+                    "Produit industriel"
                   ],
                   "id": "1.2-2.2.2"
                 }
@@ -21478,6 +21496,9 @@
                       "id": "1.2-2.3.1.10"
                     }
                   ],
+                  "tags": [
+                    "Produit alimentaire"
+                  ],
                   "id": "1.2-2.3.1"
                 },
                 {
@@ -21846,10 +21867,19 @@
                       "id": "1.2-2.3.2.6"
                     }
                   ],
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "id": "1.2-2.3.2"
                 },
                 {
                   "title": "Cosmétique, produit d'hygiène, produit de tatouage",
+                  "ccrfCode": [
+                    "34A"
+                  ],
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -22582,6 +22612,9 @@
                       "id": "1.2-2.3.4.6"
                     }
                   ],
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "id": "1.2-2.3.4"
                 },
                 {
@@ -22949,6 +22982,9 @@
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
                       "id": "1.2-2.3.5.6"
                     }
+                  ],
+                  "tags": [
+                    "Produit industriel"
                   ],
                   "id": "1.2-2.3.5"
                 },
@@ -23318,6 +23354,9 @@
                       "id": "1.2-2.3.6.6"
                     }
                   ],
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "id": "1.2-2.3.6"
                 },
                 {
@@ -23685,6 +23724,9 @@
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
                       "id": "1.2-2.3.7.6"
                     }
+                  ],
+                  "tags": [
+                    "Produit industriel"
                   ],
                   "id": "1.2-2.3.7"
                 },
@@ -24054,6 +24096,15 @@
                       "id": "1.2-2.3.8.6"
                     }
                   ],
+                  "ccrfCode": [
+                    "34H",
+                    "348",
+                    "349",
+                    "342"
+                  ],
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "id": "1.2-2.3.8"
                 },
                 {
@@ -24422,6 +24473,12 @@
                       "id": "1.2-2.3.9.6"
                     }
                   ],
+                  "ccrfCode": [
+                    "34F"
+                  ],
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "id": "1.2-2.3.9"
                 },
                 {
@@ -24789,6 +24846,12 @@
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
                       "id": "1.2-2.3.10.6"
                     }
+                  ],
+                  "ccrfCode": [
+                    "34F"
+                  ],
+                  "tags": [
+                    "Produit industriel"
                   ],
                   "id": "1.2-2.3.10"
                 },
@@ -25181,6 +25244,9 @@
             {
               "title": "C'est un aliment ou une boisson",
               "example": "Exemple : bonbon, viande, pain, conserve, vin, eau en bouteille",
+              "tags": [
+                "Produit alimentaire"
+              ],
               "detailInputs": [
                 {
                   "label": "Que s'est-il passé ?",
@@ -25213,6 +25279,9 @@
             {
               "title": "C'est un objet",
               "example": "Exemple : jouet, électroménager, vêtement, savon, vaisselle, meuble",
+              "tags": [
+                "Produit industriel"
+              ],
               "detailInputs": [
                 {
                   "label": "Que s'est-il passé ?",
@@ -25252,6 +25321,9 @@
               "subcategories": [
                 {
                   "title": "Produit alimentaire",
+                  "tags": [
+                    "Produit alimentaire"
+                  ],
                   "subcategories": [
                     {
                       "title": "Aliment pour animaux",
@@ -29886,6 +29958,9 @@
                 },
                 {
                   "title": "Jouet, puériculture, matériel scolaire",
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -30254,6 +30329,9 @@
                 },
                 {
                   "title": "Cosmétique, produit d'hygiène, produit de tatouage",
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -30622,6 +30700,9 @@
                 },
                 {
                   "title": "Vêtement, textile, sac à main, bijou",
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -30990,6 +31071,9 @@
                 },
                 {
                   "title": "Équipement de protection",
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -31358,6 +31442,9 @@
                 },
                 {
                   "title": "Feu d'artifice",
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -31726,6 +31813,9 @@
                 },
                 {
                   "title": "Meuble",
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -32094,6 +32184,9 @@
                 },
                 {
                   "title": "Produit d'entretien, produit chimique, engrais",
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -32462,6 +32555,9 @@
                 },
                 {
                   "title": "Appareil électrique",
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -32830,6 +32926,9 @@
                 },
                 {
                   "title": "Outil",
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -35501,16 +35600,19 @@
         },
         {
           "title": "Abonnement télévision",
-          "reponseconsoCode": [
-            "4441"
-          ],
           "tags": [
             "ReponseConso"
           ],
           "subcategories": [
             {
               "title": "Démarchage à domicile",
+              "ccrfCode": [
+                "221"
+              ],
               "companyKind": "LOCATION",
+              "reponseconsoCode": [
+                "221"
+              ],
               "tags": [
                 "Démarcharge à domicile"
               ],
@@ -35518,7 +35620,11 @@
             },
             {
               "title": "Démarchage téléphonique",
+              "ccrfCode": "-'227'",
               "companyKind": "PHONE",
+              "reponseconsoCode": [
+                "221"
+              ],
               "tags": [
                 "Démarchage téléphonique"
               ],
@@ -35526,6 +35632,9 @@
             },
             {
               "title": "Problème avec un site internet",
+              "reponseconsoCode": [
+                "4442"
+              ],
               "tags": [
                 "Internet"
               ],
@@ -35533,6 +35642,10 @@
             },
             {
               "title": "Autre",
+              "reponseconsoCode": [
+                "443",
+                "446"
+              ],
               "id": "1.7-2.4"
             }
           ],
@@ -35543,7 +35656,13 @@
           "subcategories": [
             {
               "title": "Démarchage à domicile",
+              "ccrfCode": [
+                "221"
+              ],
               "companyKind": "LOCATION",
+              "reponseconsoCode": [
+                "221"
+              ],
               "tags": [
                 "Démarcharge à domicile"
               ],
@@ -35551,7 +35670,11 @@
             },
             {
               "title": "Démarchage téléphonique",
+              "ccrfCode": "-'227'",
               "companyKind": "PHONE",
+              "reponseconsoCode": [
+                "221"
+              ],
               "tags": [
                 "Démarchage téléphonique"
               ],
@@ -35559,6 +35682,10 @@
             },
             {
               "title": "Problème avec un site internet",
+              "reponseconsoCode": [
+                "443",
+                "446"
+              ],
               "tags": [
                 "Internet"
               ],
@@ -35951,6 +36078,9 @@
                   "id": "1.7-4.1.6"
                 }
               ],
+              "tags": [
+                "Produit industriel"
+              ],
               "id": "1.7-4.1"
             },
             {
@@ -36319,6 +36449,9 @@
                   "id": "1.7-4.2.6"
                 }
               ],
+              "tags": [
+                "Produit industriel"
+              ],
               "id": "1.7-4.2"
             },
             {
@@ -36686,6 +36819,9 @@
                   "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
                   "id": "1.7-4.3.6"
                 }
+              ],
+              "tags": [
+                "Produit industriel"
               ],
               "id": "1.7-4.3"
             }
@@ -37220,6 +37356,13 @@
           "title": "Un influenceur ou une influenceuse",
           "companyKind": "INFLUENCEUR",
           "example": "Exemple : publicité trompeuse, l'influenceur n'indique pas qu'il est rémunéré par une marque",
+          "ccrfCode": [
+            "23B",
+            "271"
+          ],
+          "reponseconsoCode": [
+            "210"
+          ],
           "subcategories": [
             {
               "title": "Publicité trompeuse",
@@ -37352,6 +37495,13 @@
         },
         {
           "title": "Un problème avec un store (vente d'applications mobiles)",
+          "ccrfCode": [
+            "23B"
+          ],
+          "reponseconsoCode": [
+            "443",
+            "445"
+          ],
           "companyKind": "SIRET",
           "id": "1.16-3"
         },
@@ -37401,6 +37551,9 @@
           "subcategories": [
             {
               "title": "Prix",
+              "ccrfCode": [
+                "21B"
+              ],
               "subcategories": [
                 {
                   "title": "Prix exagéré",
@@ -37436,6 +37589,10 @@
               "subcategories": [
                 {
                   "title": "Absence d'information ou information incomplète",
+                  "ccrfCode": [
+                    "21B",
+                    "21A"
+                  ],
                   "reponseconsoCode": [
                     "411"
                   ],
@@ -37560,6 +37717,9 @@
             {
               "title": "Prix",
               "example": "Exemple : prix non affiché, devis non respecté",
+              "ccrfCode": [
+                "21B"
+              ],
               "tags": [
                 "Litige contractuel"
               ],
@@ -37601,6 +37761,9 @@
               "example": "Exemple : absence d'information, information trompeuse ou mensongère, démarchage",
               "tags": [
                 "Litige contractuel"
+              ],
+              "ccrfCode": [
+                "23B"
               ],
               "subcategories": [
                 {
@@ -38242,6 +38405,9 @@
           "subcategories": [
             {
               "title": "Outil",
+              "tags": [
+                "Produit industriel"
+              ],
               "subcategoriesTitle": "Quel est le risque&#160;?",
               "subcategories": [
                 {
@@ -38611,6 +38777,9 @@
             {
               "title": "Appareil électrique",
               "subcategoriesTitle": "Quel est le risque&#160;?",
+              "tags": [
+                "Produit industriel"
+              ],
               "subcategories": [
                 {
                   "title": "Étouffement",
@@ -39342,6 +39511,9 @@
                   "id": "1.12-3.3.6"
                 }
               ],
+              "tags": [
+                "Produit industriel"
+              ],
               "id": "1.12-3.3"
             },
             {
@@ -39709,6 +39881,9 @@
                   "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
                   "id": "1.12-3.4.6"
                 }
+              ],
+              "tags": [
+                "Produit industriel"
               ],
               "id": "1.12-3.4"
             }
@@ -45141,6 +45316,9 @@
                       "id": "1.10-2.5.1.10"
                     }
                   ],
+                  "tags": [
+                    "Produit alimentaire"
+                  ],
                   "id": "1.10-2.5.1"
                 },
                 {
@@ -45508,6 +45686,12 @@
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
                       "id": "1.10-2.5.2.6"
                     }
+                  ],
+                  "ccrfCode": [
+                    "321"
+                  ],
+                  "tags": [
+                    "Produit industriel"
                   ],
                   "id": "1.10-2.5.2"
                 },
@@ -45877,6 +46061,13 @@
                       "id": "1.10-2.5.3.6"
                     }
                   ],
+                  "ccrfCode": [
+                    "34A",
+                    "348"
+                  ],
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "id": "1.10-2.5.3"
                 },
                 {
@@ -46244,6 +46435,9 @@
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
                       "id": "1.10-2.5.4.6"
                     }
+                  ],
+                  "tags": [
+                    "Produit industriel"
                   ],
                   "id": "1.10-2.5.4"
                 },
@@ -46613,6 +46807,12 @@
                       "id": "1.10-2.5.5.6"
                     }
                   ],
+                  "ccrfCode": [
+                    "34A"
+                  ],
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "id": "1.10-2.5.5"
                 },
                 {
@@ -46980,6 +47180,9 @@
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
                       "id": "1.10-2.5.6.6"
                     }
+                  ],
+                  "tags": [
+                    "Produit industriel"
                   ],
                   "id": "1.10-2.5.6"
                 },
@@ -47349,6 +47552,9 @@
                       "id": "1.10-2.5.7.6"
                     }
                   ],
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "id": "1.10-2.5.7"
                 },
                 {
@@ -47716,6 +47922,12 @@
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
                       "id": "1.10-2.5.8.6"
                     }
+                  ],
+                  "ccrfCode": [
+                    "34F"
+                  ],
+                  "tags": [
+                    "Produit industriel"
                   ],
                   "id": "1.10-2.5.8"
                 },
@@ -48085,6 +48297,9 @@
                       "id": "1.10-2.5.9.6"
                     }
                   ],
+                  "tags": [
+                    "Produit industriel"
+                  ],
                   "id": "1.10-2.5.9"
                 }
               ],
@@ -48384,7 +48599,7 @@
           "example": "Exemple : Vol annuel, vol retardé, déclassement, refus d'embarquement",
           "information": {
             "title": "Vous avez acheté votre billet d'avion directement auprès d'une compagnie aérienne.",
-            "content": "Vous avez eu un problème de déclassement, un refus d'embarquement, votre vol a été retardé ou annulé. <br />Ce type de problème ne doit pas être signalé sur SignalConso. Nous vous invitons à utiliser le sité dédié <br /><a href='google.fr'>https://droits-passagers-aeriens.aviation-civile.gouv.fr/</a> <br />Vous avez achèter vos billets d'avion dans une agence de voyages. <br />Revenez en arrière et allez sur Agence de voyage :)"
+            "content": "Vous avez eu un problème de déclassement, un refus d'embarquement, votre vol a été retardé ou annulé. <br /> <br />Ce type de problème ne doit pas être signalé sur SignalConso. Nous vous invitons à utiliser le site dédié <br /> <br /><a href='google.fr'>https://droits-passagers-aeriens.aviation-civile.gouv.fr/</a> <br /> <br />Vous avez achèté vos billets d'avion dans une agence de voyages. <br />Revenez en arrière et allez sur Agence de voyage :)"
           },
           "id": "1.10-4"
         },
