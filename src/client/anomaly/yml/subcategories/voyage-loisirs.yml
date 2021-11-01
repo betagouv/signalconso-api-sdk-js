@@ -418,30 +418,57 @@
       subcategories:
         - title: Produit alimentaire
           subcategories: !!import/single ../common/produit-alimentaire.yml
+          tags:
+            - Produit alimentaire
         - title: Jouet, puériculture, matériel scolaire
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
+          ccrfCode: 
+            - '321'
+          tags:
+            - Produit industriel
         - title: Cosmétique, produit d'hygiène, produit de tatouage
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
+          ccrfCode:
+            - '34A'
+            - '348'
+          tags:
+            - Produit industriel
         - title: Vêtement, textile, sac à main, bijou
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
+          tags:
+            - Produit industriel
         - title: Équipement de protection
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
+          ccrfCode: 
+            - '34A'
+          tags:
+            - Produit industriel
         - title: Feu d'artifice
           subcategoriesTitle: Quel est le risque&#160;?
-          subcategories: !!import/single ../common/produit-dangereux.yml
+          subcategories: !!import/single ../common/produit-dangereux.yml          
+          tags:
+            - Produit industriel
         - title: Meuble
           subcategoriesTitle: Quel est le risque&#160;?
-          subcategories: !!import/single ../common/produit-dangereux.yml
+          subcategories: !!import/single ../common/produit-dangereux.yml          
+          tags:
+            - Produit industriel
         - title: Appareil électrique
           subcategoriesTitle: Quel est le risque&#160;?
-          subcategories: !!import/single ../common/produit-dangereux.yml
+          subcategories: !!import/single ../common/produit-dangereux.yml  
+          ccrfCode:
+            - '34F'
+          tags:
+            - Produit industriel
         - title: Autre
           subcategoriesTitle: Quel est le risque&#160;?
-          subcategories: !!import/single ../common/produit-dangereux.yml
+          subcategories: !!import/single ../common/produit-dangereux.yml          
+          tags:
+            - Produit industriel
     - title: Autre
       subcategories:
         - title: On a refusé de me donner une chambre
@@ -582,9 +609,12 @@
     title: Vous avez acheté votre billet d'avion directement auprès d'une compagnie aérienne. 
     content:
       "Vous avez eu un problème de déclassement, un refus d'embarquement, votre vol a été retardé ou annulé.
-      <br />Ce type de problème ne doit pas être signalé sur SignalConso. Nous vous invitons à utiliser le sité dédié
+      <br />
+      <br />Ce type de problème ne doit pas être signalé sur SignalConso. Nous vous invitons à utiliser le site dédié
+      <br />
       <br /><a href='google.fr'>https://droits-passagers-aeriens.aviation-civile.gouv.fr/</a>
-      <br />Vous avez achèter vos billets d'avion dans une agence de voyages.
+      <br />
+      <br />Vous avez achèté vos billets d'avion dans une agence de voyages.
       <br />Revenez en arrière et allez sur Agence de voyage :)"
 - title: Transports en commun
   example: 'Exemple : avion, train'

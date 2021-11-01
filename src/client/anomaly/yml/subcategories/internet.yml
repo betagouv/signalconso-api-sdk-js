@@ -4,6 +4,8 @@
   ccrfCode:
     - '23B'
     - '271'
+  reponseconsoCode:
+    - '210'
   subcategories:
     - title: Publicité trompeuse
       tags:
