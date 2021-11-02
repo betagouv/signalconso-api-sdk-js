@@ -1,6 +1,6 @@
 import {ApiClientApi} from '../../core/ApiClient'
 import {CountByDate, Period, SimpleStat} from './Stats'
-import {Id} from '../../model'
+import {Id, ReportStatus} from '../../model'
 
 export interface StatsParams {
   companyId?: Id
@@ -19,7 +19,7 @@ export class PublicStatsClient {
 
   private readonly baseURL = `stats/reports`
 
-  readonly getReportCount = (params: StatsParams) => {
+  readonly getReportCount = (params: StatsParams & {status?: ReportStatus[]} = {status: []}) => {
     return this.client.get<SimpleStat>(`${this.baseURL}/count`, {qs: params})
   }
 
