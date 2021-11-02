@@ -49,16 +49,11 @@ class PublicStatsPercentageClient {
 }
 
 class PublicStatsCurveClient {
-  constructor(private client: ApiClientApi, private baseURL: string) {}
-
-  readonly getReportCount = (params: CurveStatsParamsWithPeriod): Promise<CountByDate[]> => {
-    return this.client.get(`${this.baseURL}/count`, {qs: params}).then(PublicStatsCurveClient.mapReportsCountByDate)
+  constructor(private client: ApiClientApi, private baseURL: string) {
   }
 
-  readonly getReportRespondedCount = (params: CurveStatsParamsWithPeriod) => {
-    return this.client
-      .get<CountByDate[]>(`${this.baseURL}/count-responded`, {qs: params})
-      .then(PublicStatsCurveClient.mapReportsCountByDate)
+  readonly getReportCount = (params: CurveStatsParamsWithPeriod & {status?: string[]} = {status: []}): Promise<CountByDate[]> => {
+    return this.client.get(`${this.baseURL}/count`, {qs: params}).then(PublicStatsCurveClient.mapReportsCountByDate)
   }
 
   readonly getReportForwardedPercentage = (params: CurveStatsParamsWithPeriod) => {
