@@ -40,15 +40,62 @@ export interface ReportSearchResult {
 
 export enum ReportStatus {
   NA = 'NA',
-  EmployeeConsumer = "Lanceur d'alerte",
-  InProgress = 'Traitement en cours',
-  Unread = 'Signalement non consulté',
-  UnreadForPro = 'Non consulté',
-  Transmitted = 'Signalement transmis',
-  ToReviewedByPro = 'À répondre',
-  Accepted = 'Promesse action',
-  ClosedForPro = 'Clôturé',
-  Rejected = 'Signalement infondé',
-  NotConcerned = 'Signalement mal attribué',
-  Ignored = 'Signalement consulté ignoré',
+  LanceurAlerte = 'LanceurAlerte',
+  TraitementEnCours = 'TraitementEnCours',
+  Transmis = 'Transmis',
+  PromesseAction = 'PromesseAction',
+  Infonde = 'Infonde',
+  NonConsulte = 'NonConsulte',
+  ConsulteIgnore = 'ConsulteIgnore',
+  MalAttribue = 'MalAttribue',
+}
+
+export enum ReportStatusPro {
+  NonConsulte = 'NonConsulte',
+  ARepondre = 'ARepondre',
+  Cloture = 'Cloture',
+}
+
+export class Report {
+  static readonly isClosed = (status: ReportStatus) => {
+    return [
+      ReportStatus.PromesseAction,
+      ReportStatus.Infonde,
+      ReportStatus.NonConsulte,
+      ReportStatus.ConsulteIgnore,
+      ReportStatus.MalAttribue,
+    ].includes(status)
+  }
+
+  private static readonly mapp: { [key in ReportStatus]: () => ReportStatusPro } = {
+    [ReportStatus.NA]: () => {
+      throw new Error(`Invalid status`)
+    },
+    [ReportStatus.LanceurAlerte]: () => {
+      throw new Error(`Invalid status`)
+    },
+    [ReportStatus.TraitementEnCours]: () => ReportStatusPro.NonConsulte,
+    [ReportStatus.Transmis]: () => ReportStatusPro.ARepondre,
+    [ReportStatus.PromesseAction]: () => ReportStatusPro.Cloture,
+    [ReportStatus.Infonde]: () => ReportStatusPro.Cloture,
+    [ReportStatus.NonConsulte]: () => ReportStatusPro.Cloture,
+    [ReportStatus.ConsulteIgnore]: () => ReportStatusPro.Cloture,
+    [ReportStatus.MalAttribue]: () => ReportStatusPro.Cloture,
+  }
+
+  private static invertedMap: { [key in ReportStatusPro]: () => ReportStatus[] } = Object.entries(Report.mapp)
+    .reduce((acc, [status, statusProFn]) => {
+      try {
+        const statusPro = statusProFn()
+        const prevStatus = acc[statusPro] ? acc[statusPro]() : []
+        acc[statusPro] = () => [...prevStatus, status as ReportStatus]
+        return acc
+      } catch {
+        return acc
+      }
+    }, {} as { [key in ReportStatusPro]: () => ReportStatus[] })
+
+  static readonly getStatusProByStatus = (status: ReportStatus): ReportStatusPro => (Report.mapp[status])()
+
+  static readonly getStatusByStatusPro = (status: ReportStatusPro): ReportStatus[] => (Report.invertedMap[status])()
 }

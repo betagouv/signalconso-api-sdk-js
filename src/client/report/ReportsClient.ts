@@ -6,58 +6,14 @@ import {
   directDownloadBlob,
   Event,
   Id,
+  PaginatedFilters,
   Report,
   ReportAction,
   ReportResponse,
   ReportSearchResult,
 } from '../..'
-import {PaginatedData, ReportSearch} from '../../model'
+import {Address, PaginatedData, ReportSearch} from '../../model'
 import {pipe} from 'rxjs'
-import {ApiSdkLogger} from '../../helper/Logger'
-import {Address} from '../../model'
-
-export interface ReportFilterQuerystring {
-  readonly departments?: string[]
-  readonly tags?: string | string[]
-  readonly companyCountries?: string[]
-  readonly siretSirenList?: string[]
-  start?: string
-  end?: string
-  email?: string
-  websiteURL?: string
-  phone?: string
-  websiteExists?: 'true' | 'false'
-  phoneExists?: 'true' | 'false'
-  category?: string
-  status?: string
-  details?: string
-  hasCompany?: 'true' | 'false'
-  offset?: string
-  limit?: string
-}
-
-const reportFilter2QueryString = (report: ReportSearch): ReportFilterQuerystring => {
-  try {
-    const {offset, limit, hasCompany, websiteExists, phoneExists, start, end, ...r} = report
-
-    const parseBoolean = (_: keyof Pick<ReportSearch, 'websiteExists' | 'phoneExists' | 'hasCompany'>) =>
-      report[_] !== undefined && {[_]: ('' + report[_]) as 'true' | 'false'}
-    const parseDate = (_: keyof Pick<ReportSearch, 'start' | 'end'>) => (report[_] ? {[_]: dateToApi(report[_])} : {})
-    return {
-      ...r,
-      offset: offset !== undefined ? offset + '' : undefined,
-      limit: limit !== undefined ? limit + '' : undefined,
-      ...parseBoolean('hasCompany'),
-      ...parseBoolean('websiteExists'),
-      ...parseBoolean('phoneExists'),
-      ...parseDate('start'),
-      ...parseDate('end'),
-    }
-  } catch (e) {
-    ApiSdkLogger.error('Caught error on "reportFilter2QueryString"', report, e)
-    return {}
-  }
-}
 
 const cleanReportFilter = (filter: ReportSearch): ReportSearch => {
   if (filter.websiteExists === false) {
@@ -71,12 +27,10 @@ const cleanReportFilter = (filter: ReportSearch): ReportSearch => {
   return filter
 }
 
-export const reportFilter2Body = (report: ReportSearch): {[key in keyof ReportSearch]: any} => {
-  const {start, end, offset, departments, tags, limit, siretSirenList, ...rest} = report
+const reportFilter2Body = (report: ReportSearch): {[key in keyof ReportSearch]: any} => {
+  const {start, end, departments, tags, siretSirenList, ...rest} = report
   return {
     ...rest,
-    limit: undefined,
-    offset: undefined,
     siretSirenList: Array.isArray(siretSirenList) ? siretSirenList : siretSirenList !== undefined ? [siretSirenList] : undefined,
     departments: departments || [],
     tags: tags || [],
@@ -86,17 +40,20 @@ export const reportFilter2Body = (report: ReportSearch): {[key in keyof ReportSe
 }
 
 export class ReportsClient {
-  constructor(private client: ApiClientApi) {}
+  constructor(private client: ApiClientApi) {
+  }
 
-  readonly extract = (filter: ReportSearch = {offset: 0, limit: 10}) => {
-    const body = pipe(cleanReportFilter, reportFilter2Body, cleanObject)(filter)
+  readonly extract = (filters: ReportSearch) => {
+    const body = pipe(cleanReportFilter, reportFilter2Body, cleanObject)(filters)
     return this.client.post<void>(`reports/extract`, {body})
   }
 
-  readonly search = (filter: ReportSearch = {offset: 0, limit: 10}) => {
+  readonly search = ({offset, limit, ...filters}: ReportSearch & PaginatedFilters) => {
     return this.client
-      .get<PaginatedData<ReportSearchResult>>(`/reports`, {
-        qs: pipe(cleanReportFilter, reportFilter2QueryString, cleanObject)(filter),
+      .post<PaginatedData<ReportSearchResult>>(`/reports`, {
+        qs: {offset, limit},
+        body: pipe(cleanReportFilter, reportFilter2Body, cleanObject)(filters),
+        // pipe(cleanReportFilter, reportFilter2QueryString, cleanObject)(filter),
       })
       .then(result => {
         result.entities.forEach(entity => {
