@@ -605,17 +605,8 @@
             - ReponseConso
 - title: Compagnie aérienne
   example: "Exemple : Vol annuel, vol retardé, déclassement, refus d'embarquement"
-  information:
-    title: Vous avez acheté votre billet d'avion directement auprès d'une compagnie aérienne. 
-    content:
-      "Vous avez eu un problème de déclassement, un refus d'embarquement, votre vol a été retardé ou annulé.
-      <br />
-      <br />Ce type de problème ne doit pas être signalé sur SignalConso. Nous vous invitons à utiliser le site dédié
-      <br />
-      <br /><a href='google.fr'>https://droits-passagers-aeriens.aviation-civile.gouv.fr/</a>
-      <br />
-      <br />Vous avez achèté vos billets d'avion dans une agence de voyages.
-      <br />Revenez en arrière et allez sur Agence de voyage :)"
+  tags:
+    - Compagnie aérienne
 - title: Transports en commun
   example: 'Exemple : avion, train'
   subcategories:
