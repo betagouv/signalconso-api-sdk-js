@@ -606,7 +606,7 @@
 - title: Compagnie aérienne
   example: "Exemple : Vol annuel, vol retardé, déclassement, refus d'embarquement"
   tags:
-    - compagnie aérienne
+    - Compagnie aérienne
 - title: Transports en commun
   example: 'Exemple : avion, train'
   subcategories:
