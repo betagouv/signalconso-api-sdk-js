@@ -1,4 +1,4 @@
-import {ReportTag} from '../..'
+import {ReportStatus, ReportTag} from '../..'
 
 export interface ReportSearch {
   readonly departments?: string[]
@@ -6,6 +6,7 @@ export interface ReportSearch {
   readonly companyCountries?: string[]
   readonly siretSirenList?: string[]
   readonly activityCodes?: string[]
+  readonly status?: ReportStatus[]
   start?: Date
   end?: Date
   email?: string
@@ -14,9 +15,6 @@ export interface ReportSearch {
   websiteExists?: boolean
   phoneExists?: boolean
   category?: string
-  status?: string
   details?: string
   hasCompany?: boolean
-  offset: number
-  limit: number
 }
