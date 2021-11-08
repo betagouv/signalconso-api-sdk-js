@@ -67,7 +67,7 @@ export class Report {
     ].includes(status)
   }
 
-  private static readonly mapp: { [key in ReportStatus]: () => ReportStatusPro } = {
+  private static readonly mapStatusPro: { [key in ReportStatus]: () => ReportStatusPro } = {
     [ReportStatus.NA]: () => {
       throw new Error(`Invalid status`)
     },
@@ -83,7 +83,7 @@ export class Report {
     [ReportStatus.MalAttribue]: () => ReportStatusPro.Cloture,
   }
 
-  private static invertedMap: { [key in ReportStatusPro]: () => ReportStatus[] } = Object.entries(Report.mapp)
+  private static mapStatusProInverted: { [key in ReportStatusPro]: () => ReportStatus[] } = Object.entries(Report.mapStatusPro)
     .reduce((acc, [status, statusProFn]) => {
       try {
         const statusPro = statusProFn()
@@ -95,7 +95,7 @@ export class Report {
       }
     }, {} as { [key in ReportStatusPro]: () => ReportStatus[] })
 
-  static readonly getStatusProByStatus = (status: ReportStatus): ReportStatusPro => (Report.mapp[status])()
+  static readonly getStatusProByStatus = (status: ReportStatus): ReportStatusPro => (Report.mapStatusPro[status])()
 
-  static readonly getStatusByStatusPro = (status: ReportStatusPro): ReportStatus[] => (Report.invertedMap[status])()
+  static readonly getStatusByStatusPro = (status: ReportStatusPro): ReportStatus[] => (Report.mapStatusProInverted[status])()
 }
