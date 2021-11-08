@@ -70,18 +70,6 @@ const cleanReportFilter = (filter: ReportSearch & PaginatedFilters): ReportSearc
   return filter
 }
 
-// const reportFilter2Body = (report: ReportSearch): {[key in keyof ReportSearch]: any} => {
-//   const {start, end, departments, tags, siretSirenList, ...rest} = report
-//   return {
-//     ...rest,
-//     siretSirenList: Array.isArray(siretSirenList) ? siretSirenList : siretSirenList !== undefined ? [siretSirenList] : undefined,
-//     departments: departments || [],
-//     tags: tags || [],
-//     start: dateToApi(start),
-//     end: dateToApi(end),
-//   }
-// }
-
 export class ReportsClient {
   constructor(private client: ApiClientApi) {
   }
@@ -96,7 +84,6 @@ export class ReportsClient {
     console.log(filters)
     return this.client
       .get<PaginatedData<ReportSearchResult>>(`/reports`, {
-        // qs: {offset, limit},
         qs: pipe(cleanReportFilter, reportFilter2QueryString, cleanObject)(filters),
       })
       .then(result => {
