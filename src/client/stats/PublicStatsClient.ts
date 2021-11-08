@@ -19,7 +19,7 @@ export class PublicStatsClient {
 
   private readonly baseURL = `stats/reports`
 
-  readonly getReportCount = (params: StatsParams & {status?: ReportStatus[]} = {status: []}) => {
+  readonly getReportCount = (params: StatsParams & {status?: ReportStatus[], tags?: string[]} = {status: [], tags: []}) => {
     return this.client.get<SimpleStat>(`${this.baseURL}/count`, {qs: params})
   }
 
