@@ -35,6 +35,7 @@ export enum ReportTag {
   Internet = 'Internet',
   ProduitIndustriel = 'Produit industriel',
   ProduitAlimentaire = 'Produit alimentaire',
+  CompagnieAerienne = 'Compagnie aerienne',
 }
 
 export enum CompanyKinds {
