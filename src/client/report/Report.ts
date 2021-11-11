@@ -57,14 +57,41 @@ export enum ReportStatusPro {
 }
 
 export class Report {
+
+  static readonly closedStatus = [
+    ReportStatus.PromesseAction,
+    ReportStatus.Infonde,
+    ReportStatus.NonConsulte,
+    ReportStatus.ConsulteIgnore,
+    ReportStatus.MalAttribue,
+  ]
+
+  static readonly transmittedStatus = [
+    ReportStatus.TraitementEnCours,
+    ReportStatus.Transmis,
+    ReportStatus.PromesseAction,
+    ReportStatus.Infonde,
+    ReportStatus.NonConsulte,
+    ReportStatus.ConsulteIgnore,
+    ReportStatus.MalAttribue,
+  ]
+
+  static readonly readStatus = [
+    ReportStatus.Transmis,
+    ReportStatus.PromesseAction,
+    ReportStatus.Infonde,
+    ReportStatus.MalAttribue,
+    ReportStatus.ConsulteIgnore,
+  ]
+
+  static readonly respondedStatus = [
+    ReportStatus.PromesseAction,
+    ReportStatus.Infonde,
+    ReportStatus.MalAttribue
+  ]
+
   static readonly isClosed = (status: ReportStatus) => {
-    return [
-      ReportStatus.PromesseAction,
-      ReportStatus.Infonde,
-      ReportStatus.NonConsulte,
-      ReportStatus.ConsulteIgnore,
-      ReportStatus.MalAttribue,
-    ].includes(status)
+    return Report.closedStatus.includes(status)
   }
 
   private static readonly mapStatusPro: { [key in ReportStatus]: () => ReportStatusPro } = {

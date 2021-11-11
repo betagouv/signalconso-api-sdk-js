@@ -1,7 +1,10 @@
 import {ApiClientApi} from '../../core/ApiClient'
 import {CountByDate, CurveStatsParams, SimpleStat} from './Stats'
-import {Id, ReportSearch, ReportStatus} from '../../model'
-import {Enum} from '@alexandreannic/ts-utils/lib/common'
+import {Id, Report, ReportSearch, ReportStatus} from '../../model'
+import {cleanObject, roundValue} from '../../helper'
+import {subDays} from 'date-fns'
+import {pipe} from 'rxjs'
+import {cleanReportFilter, reportFilter2QueryString} from '../report/ReportsClient'
 
 export class PublicStatsClient {
   constructor(private client: ApiClientApi) {
@@ -9,8 +12,9 @@ export class PublicStatsClient {
 
   private readonly baseURL = `stats/reports`
 
-  readonly getReportCount = (search?: ReportSearch) => {
-    return this.client.get<SimpleStat>(`${this.baseURL}/count`, {qs: search})
+  readonly getReportCount = (filters?: ReportSearch) => {
+    const qs = filters ? pipe(cleanReportFilter, reportFilter2QueryString, cleanObject)(filters) : undefined
+    return this.client.get<SimpleStat>(`${this.baseURL}/count`, {qs})
   }
   readonly getReportCountCurve = (search?: ReportSearch & CurveStatsParams) => {
     return this.client.get<CountByDate[]>(`${this.baseURL}/curve`, {qs: search})
@@ -26,58 +30,74 @@ class PublicStatsPercentageClient {
   constructor(private client: PublicStatsClient) {
   }
 
-  private readonly getPercentByStatus = async (companyId: Id, status: ReportStatus[], baseStatus?: ReportStatus[]): Promise<number> => {
+  private readonly delayBeforeCountingToWaitForProResponseInDays = 30
+
+  private readonly statsAdminStartDate = new Date('2019-01-01')
+
+  private readonly getPercentByStatus = async ({
+    companyId,
+    status,
+    baseStatus,
+    start,
+    end,
+  }: {
+    companyId: Id,
+    status: ReportStatus[],
+    baseStatus?: ReportStatus[],
+    start?: Date,
+    end?: Date,
+  }): Promise<SimpleStat> => {
     const [count, baseCount,] = await Promise.all([
-      this.client.getReportCount({companyIds: [companyId], status}),
-      this.client.getReportCount({companyIds: [companyId], status: baseStatus}),
+      this.client.getReportCount({companyIds: [companyId], start, end, status}),
+      this.client.getReportCount({companyIds: [companyId], start, end, status: baseStatus}),
     ])
-    return +count.value / +baseCount.value * 100
+    return {value: roundValue(+count.value / +baseCount.value * 100)}
 
   }
-  readonly getReportForwardedToPro = (companyId: Id): Promise<number> => {
-    return this.getPercentByStatus(
+  readonly getReportForwardedToPro = (companyId: Id): Promise<SimpleStat> => {
+    return this.getPercentByStatus({
       companyId,
-      Enum.values(ReportStatus).filter(_ => ![ReportStatus.NA, ReportStatus.LanceurAlerte].includes(_)),
-    )
+      status: Report.transmittedStatus,
+      start: this.statsAdminStartDate,
+      end: subDays(new Date(), this.delayBeforeCountingToWaitForProResponseInDays)
+    })
   }
 
   readonly getReportReadByPro = (companyId: Id) => {
-    return this.getPercentByStatus(
+    return this.getPercentByStatus({
       companyId,
-      [
-        ReportStatus.Transmis,
-        ReportStatus.PromesseAction,
-        ReportStatus.Infonde,
-        ReportStatus.MalAttribue,
-        ReportStatus.ConsulteIgnore
-      ],
-      Enum.values(ReportStatus).filter(_ => ![ReportStatus.NA, ReportStatus.LanceurAlerte].includes(_)),
-    )
+      status: Report.readStatus,
+      baseStatus: Report.transmittedStatus,
+      start: this.statsAdminStartDate,
+      end: subDays(new Date(), this.delayBeforeCountingToWaitForProResponseInDays)
+    })
   }
 
   readonly getReportWithResponse = (companyId: Id) => {
-    return this.getPercentByStatus(
+    return this.getPercentByStatus({
       companyId,
-      [
-        ReportStatus.PromesseAction,
-        ReportStatus.Infonde,
-        ReportStatus.MalAttribue
-      ], [
-        ReportStatus.Transmis,
-        ReportStatus.PromesseAction,
-        ReportStatus.Infonde,
-        ReportStatus.MalAttribue,
-        ReportStatus.ConsulteIgnore
-      ],
-    )
+      status: Report.respondedStatus,
+      baseStatus: Report.readStatus,
+      start: this.statsAdminStartDate,
+      end: subDays(new Date(), this.delayBeforeCountingToWaitForProResponseInDays)
+    })
   }
 
-  readonly getReportWithWebsite = async (companyId: Id) => {
+  readonly getReportWithWebsite = async (companyId: Id): Promise<SimpleStat> => {
     const [count, baseCount,] = await Promise.all([
-      this.client.getReportCount({companyIds: [companyId], websiteExists: true}),
-      this.client.getReportCount({companyIds: [companyId]}),
+      this.client.getReportCount({
+        companyIds: [companyId],
+        websiteExists: true,
+        start: this.statsAdminStartDate,
+        end: subDays(new Date(), this.delayBeforeCountingToWaitForProResponseInDays)
+      }),
+      this.client.getReportCount({
+        companyIds: [companyId],
+        start: this.statsAdminStartDate,
+        end: subDays(new Date(), this.delayBeforeCountingToWaitForProResponseInDays)
+      }),
     ])
-    return +count.value / +baseCount.value * 100
+    return {value: roundValue(+count.value / +baseCount.value * 100)}
   }
 }
 
@@ -85,12 +105,12 @@ class PublicStatsCurveClient {
   constructor(private client: PublicStatsClient) {
   }
 
-  private readonly getReportPercentage = async ({
+  private readonly getReportPercentageCurve = async ({
       companyId,
       ticks,
       tickDuration,
       status,
-      baseStatus
+      baseStatus,
     }: CurveStatsParams & {companyId: Id, status: ReportStatus[], baseStatus?: ReportStatus[]}
   ): Promise<CountByDate[]> => {
     const params = {
@@ -127,7 +147,7 @@ class PublicStatsCurveClient {
         return Promise.reject({code: 'front-side',})
       }
       res[i] = {
-        count: curve[i].count / baseCurve[i].count * 100,
+        count: roundValue(curve[i].count / baseCurve[i].count * 100),
         date: curve[i].date,
       }
     }
@@ -135,41 +155,25 @@ class PublicStatsCurveClient {
   }
 
   readonly getReportForwardedPercentage = async (params: CurveStatsParams & {companyId: Id}): Promise<CountByDate[]> => {
-    return this.getReportPercentage({
+    return this.getReportPercentageCurve({
       ...params,
-      status: [
-        ReportStatus.PromesseAction,
-        ReportStatus.Infonde,
-        ReportStatus.MalAttribue
-      ]
+      status: Report.transmittedStatus,
     })
   }
 
   readonly getReportRespondedPercentage = (params: CurveStatsParams & {companyId: Id}) => {
-    return this.getReportPercentage({
+    return this.getReportPercentageCurve({
       ...params,
-      status: [ReportStatus.PromesseAction, ReportStatus.Infonde, ReportStatus.MalAttribue],
-      baseStatus: [
-        ReportStatus.Transmis,
-        ReportStatus.PromesseAction,
-        ReportStatus.Infonde,
-        ReportStatus.MalAttribue,
-        ReportStatus.ConsulteIgnore
-      ]
+      status: Report.respondedStatus,
+      baseStatus: Report.readStatus,
     })
   }
 
   readonly getReportReadPercentage = (params: CurveStatsParams & {companyId: Id}) => {
-    return this.getReportPercentage({
+    return this.getReportPercentageCurve({
       ...params,
-      status: [
-        ReportStatus.Transmis,
-        ReportStatus.PromesseAction,
-        ReportStatus.Infonde,
-        ReportStatus.MalAttribue,
-        ReportStatus.ConsulteIgnore
-      ],
-      baseStatus: Enum.values(ReportStatus).filter(_ => ![ReportStatus.NA, ReportStatus.LanceurAlerte].includes(_)),
+      status: Report.readStatus,
+      baseStatus: Report.transmittedStatus,
     })
   }
 }

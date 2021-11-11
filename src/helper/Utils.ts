@@ -26,6 +26,8 @@ export const cleanObject = <T extends {[key: string]: any}>(obj: T): Partial<T> 
   return clone
 }
 
+export const roundValue = (_: number): number => Math.round(_)
+
 export const toQueryString = (obj: any): string => {
   if (!obj) return ''
   return (

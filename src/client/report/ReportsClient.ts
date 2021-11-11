@@ -6,7 +6,7 @@ import {
   directDownloadBlob,
   Event,
   Id,
-  PaginatedFilters,
+  PaginatedFilters, paginateFilters2QueryString,
   Report,
   ReportAction,
   ReportResponse,
@@ -32,20 +32,16 @@ export interface ReportFilterQuerystring {
   category?: string
   details?: string
   hasCompany?: 'true' | 'false'
-  offset?: string
-  limit?: string
 }
 
-const reportFilter2QueryString = (report: ReportSearch & PaginatedFilters): ReportFilterQuerystring => {
+export const reportFilter2QueryString = (report: ReportSearch): ReportFilterQuerystring => {
   try {
-    const {offset, limit, hasCompany, websiteExists, phoneExists, start, end, ...r} = report
+    const {hasCompany, websiteExists, phoneExists, start, end, ...r} = report
     const parseBoolean = (_: keyof Pick<ReportSearch, 'websiteExists' | 'phoneExists' | 'hasCompany'>) =>
       report[_] !== undefined && {[_]: ('' + report[_]) as 'true' | 'false'}
     const parseDate = (_: keyof Pick<ReportSearch, 'start' | 'end'>) => (report[_] ? {[_]: dateToApi(report[_])} : {})
     return {
       ...r,
-      offset: offset !== undefined ? offset + '' : undefined,
-      limit: limit !== undefined ? limit + '' : undefined,
       ...parseBoolean('hasCompany'),
       ...parseBoolean('websiteExists'),
       ...parseBoolean('phoneExists'),
@@ -58,7 +54,7 @@ const reportFilter2QueryString = (report: ReportSearch & PaginatedFilters): Repo
   }
 }
 
-const cleanReportFilter = (filter: ReportSearch & PaginatedFilters): ReportSearch & PaginatedFilters => {
+export const cleanReportFilter = (filter: ReportSearch): ReportSearch => {
   if (filter.websiteExists === false) {
     delete filter.websiteExists
     delete filter.websiteURL
@@ -76,7 +72,7 @@ export class ReportsClient {
 
   readonly extract = (filters: ReportSearch & PaginatedFilters) => {
     return this.client.post<void>(`reports/extract`, {
-      qs: pipe(cleanReportFilter, reportFilter2QueryString, cleanObject)(filters),
+      qs: pipe(cleanReportFilter, reportFilter2QueryString, paginateFilters2QueryString, cleanObject)(filters),
     })
   }
 
