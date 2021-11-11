@@ -1,5 +1,5 @@
 import {ReportStatus} from '../report/Report'
-import {Index} from '../../helper/Utils'
+import {Index} from '../../helper'
 
 export interface SimpleStat {
   value: string | number
@@ -19,4 +19,9 @@ export type ReportTagsDistribution = Index<number>
 export interface ReportResponseReviews {
   positive: number
   negative: number
+}
+
+export interface CurveStatsParams {
+  ticks?: number
+  tickDuration?: Period
 }

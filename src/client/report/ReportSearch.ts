@@ -1,4 +1,4 @@
-import {ReportStatus, ReportTag} from '../..'
+import {Id, ReportStatus, ReportTag} from '../..'
 
 export interface ReportSearch {
   readonly departments?: string[]
@@ -7,6 +7,7 @@ export interface ReportSearch {
   readonly siretSirenList?: string[]
   readonly activityCodes?: string[]
   readonly status?: ReportStatus[]
+  readonly companyIds?: Id[]
   start?: Date
   end?: Date
   email?: string

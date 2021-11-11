@@ -5,6 +5,11 @@ export interface Paginate<T> {
   totalCount: number
 }
 
+export interface PaginateFiltersQueryString {
+  offset?: string
+  limit?: string
+}
+
 export type OrderBy = 'desc' | 'asc'
 
 export interface Entity {
@@ -25,4 +30,13 @@ export interface PaginatedFilters {
 export interface PaginatedSearch<T extends object = any> extends PaginatedFilters {
   sortBy?: Extract<keyof T, string>
   orderBy?: 'asc' | 'desc'
+}
+
+// TODO(Alex) found a better type system than any
+export const paginateFilters2QueryString = ({offset, limit, ...rest}: PaginatedFilters & any): PaginateFiltersQueryString => {
+  return {
+    ...rest,
+    offset: offset !== undefined ? offset + '' : undefined,
+    limit: limit !== undefined ? limit + '' : undefined,
+  }
 }
