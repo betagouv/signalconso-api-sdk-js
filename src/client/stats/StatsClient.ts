@@ -1,4 +1,4 @@
-import {ApiClientApi} from '../../index'
+import {ApiClientApi, CountByDate, CurveStatsParams} from '../../index'
 import {Id} from '../../model'
 import {ReportResponseReviews, ReportStatusDistribution, ReportTagsDistribution} from './Stats'
 import {duration, Duration} from '@alexandreannic/ts-utils/lib/common'
@@ -17,6 +17,12 @@ export class StatsClient {
   readonly getResponseReviews = (companyId: Id) => {
     return this.client.get<ReportResponseReviews>(`/stats/reports/reviews`, {qs: {companyId}})
   }
+
+  readonly getReportedActiveProAccountRate = (search?: CurveStatsParams) => {
+    return this.client.get<CountByDate[]>(`accesses/pro-account-rate`, {qs: search})
+        .then(res => res.map(_ => ({..._, date: new Date(_.date)})))
+  }
+
 
   readonly getReadDelay = (companyId: Id): Promise<Duration | undefined> => {
     return this.client

@@ -139,6 +139,8 @@ class PublicStatsCurveClient {
     return this.getPercent(curve, baseCurve,)
   }
 
+
+
   private getPercent = (curve: CountByDate[], baseCurve: CountByDate[]): Promise<CountByDate[]> => {
     let res: CountByDate[] = []
     for (let i = 0; i < curve.length; i++) {
