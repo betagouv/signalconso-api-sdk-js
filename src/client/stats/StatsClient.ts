@@ -23,6 +23,15 @@ export class StatsClient {
         .then(res => res.map(_ => ({..._, date: new Date(_.date)})))
   }
 
+  readonly getActiveDgccrfAccountCurve = (search?: CurveStatsParams) => {
+    return this.client.get<CountByDate[]>(`/stats/dgccrf-active-account`, {qs: search})
+        .then(res => res.map(_ => ({..._, date: new Date(_.date)})))
+  }
+
+  readonly getDgccrfAccountCurve = (search?: CurveStatsParams) => {
+    return this.client.get<CountByDate[]>(`/stats/dgccrf-account`, {qs: search})
+        .then(res => res.map(_ => ({..._, date: new Date(_.date)})))
+  }
 
   readonly getReadDelay = (companyId: Id): Promise<Duration | undefined> => {
     return this.client
