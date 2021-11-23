@@ -19,10 +19,29 @@ export class StatsClient {
   }
 
   readonly getReportedActiveProAccountRate = (search?: CurveStatsParams) => {
-    return this.client.get<CountByDate[]>(`accesses/pro-account-rate`, {qs: search})
+    return this.client.get<CountByDate[]>(`/stats/pro-account-rate`, {qs: search})
         .then(res => res.map(_ => ({..._, date: new Date(_.date)})))
   }
 
+  readonly getActiveDgccrfAccountCurve = (search?: CurveStatsParams) => {
+    return this.client.get<CountByDate[]>(`/stats/dgccrf-active-account`, {qs: search})
+        .then(res => res.map(_ => ({..._, date: new Date(_.date)})))
+  }
+
+  readonly getDgccrfAccountCurve = (search?: CurveStatsParams) => {
+    return this.client.get<CountByDate[]>(`/stats/dgccrf-account`, {qs: search})
+        .then(res => res.map(_ => ({..._, date: new Date(_.date)})))
+  }
+
+  readonly getDgccrfControlsCurve = (search?: CurveStatsParams) => {
+    return this.client.get<CountByDate[]>(`/stats/dgccrf-controls`, {qs: search})
+        .then(res => res.map(_ => ({..._, date: new Date(_.date)})))
+  }
+
+  readonly getDgccrfSubscriptionsCurve = (search?: CurveStatsParams) => {
+    return this.client.get<CountByDate[]>(`/stats/dgccrf-subscriptions`, {qs: search})
+        .then(res => res.map(_ => ({..._, date: new Date(_.date)})))
+  }
 
   readonly getReadDelay = (companyId: Id): Promise<Duration | undefined> => {
     return this.client
