@@ -101,17 +101,17 @@
             - label: Décrivez nous plus en détails ce qui s'est passé
               rank: 2
               type: TEXTAREA
-      - title: Autre
-        tags: 
-          - ReponseConso
-        detailInputs:
-          - label: Date du constat
-            rank: 1
-            type: DATE
-            defaultValue: SYSDATE
-          - label: Décrivez nous plus en détails ce qui s'est passé
-            rank: 2
-            type: TEXTAREA
+        - title: Autre
+          tags: 
+            - ReponseConso
+          detailInputs:
+            - label: Date du constat
+              rank: 1
+              type: DATE
+              defaultValue: SYSDATE
+            - label: Décrivez nous plus en détails ce qui s'est passé
+              rank: 2
+              type: TEXTAREA
 - title: Gaz / Electricité
   tags:
     - Litige contractuel
