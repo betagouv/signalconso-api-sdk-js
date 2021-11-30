@@ -15,6 +15,8 @@
                 title: Ce n'est pas un motif de signalement
                 content: Le distributeur peut vous demander une avance s'il est prévu de déduire cette somme de votre facture de consommation.
             - title: À la résiliation de l'abonnement ou au changement de locataire
+              tags :
+                - ReponseConso
               detailTitle: Il est interdit de demander un dépôt de garantie.
               description: Rendre l'argent à la fin de l'abonnement ou du contrat sous-entend que c'est un dépôt de garantie. C'est interdit par la loi.
               detailInputs:
@@ -35,6 +37,7 @@
                 answer: Vous trouverez un modèle de lettre à envoyer sur le site <br><a href="https://www.inc-conso.fr/content/vous-souhaitez-obtenir-la-verification-de-votre-compteur-deau-en-raison-dune-consommation" target="_blank" />inc-conso.fr</a>
         - title: Une clause du contrat (règlement de service) est abusive, c'est-à-dire qu'elle désavantage fortement le consommateur.
           tags:
+            - ReponseConso
             - Litige contractuel
           detailInputs:
             - label: Date du constat (ou du contrat)
@@ -47,10 +50,12 @@
           fileLabel: Joindre une copie du contrat / règlement.
         - title: Autre
           tags:
+            - ReponseConso
             - Litige contractuel
     - title: Coupure de l'eau pour impayé
       example: Mon débit d'eau a été réduit car je ne peux payer ma facture
       tags:
+        - ReponseConso
         - Litige contractuel
       detailTitle: Il est interdit de couper ou réduire l'eau en cas d'impayé lorsqu'il s'agit d'une résidence principale.
       description: Les coupures d'eau et les réductions de débit sont interdites en cas de factures impayées, pour les résidences principales et ce toute l'anné. Par contre, vous devrez toujours payer votre facture.
@@ -74,21 +79,27 @@
         outOfScope: true
     - title: Fosse septique
       example: "Exemple : malfaçons sur la fosse, le bureau d'étude m'impose une marque de fosse en particulier "
-      detailInputs:
-        - label: Date du constat
-          rank: 1
-          type: DATE
-          defaultValue: SYSDATE
-        - label: Quel est le problème&#160;?
-          rank: 2
-          type: RADIO
-          options:
-            - malfaçons sur la pose de la fosse septique
-            - le bureau d'étude impose une marque / modèle en particulier
-            - autre (à préciser)
-        - label: Décrivez nous plus en détails ce qui s'est passé
-          rank: 3
-          type: TEXTAREA
+        - title: malfaçons sur la pose de la fosse septique
+          exemple: "Fissure, usure"
+          detailInputs:
+          - label: Date du constat
+            rank: 1
+            type: DATE
+            defaultValue: SYSDATE
+     - title: le bureau d'étude impose une marque / modèle en particulier
+       tags: 
+         - ReponseConso
+        detailInputs:
+         - label: Date du constat
+           rank: 1
+           type: DATE
+           defaultValue: SYSDATE
+      - title: Autre
+        tags: 
+          - ReponseConso
+         - label: Décrivez nous plus en détails ce qui s'est passé
+            rank: 3
+            type: TEXTAREA
 - title: Gaz / Electricité
   tags:
     - Litige contractuel
@@ -98,6 +109,7 @@
       companyKind: LOCATION
       tags:
         - Démarchage à domicile
+        - ReponseConso
       detailInputs:
         - label: Date du passage du vendeur
           rank: 1
@@ -131,6 +143,7 @@
       companyKind: PHONE
       tags:
         - Démarchage téléphonique
+        - ReponseConso
       detailInputs:
         - label: Date de l'appel
           rank: 1
@@ -147,6 +160,8 @@
           type: TEXTAREA
     - title: Publicité mensongère ou trompeuse
       example: 'Exemple : publicité "offre verte" mensongère'
+      tags :
+        - ReponseConso
       reponseconsoCode:
         - '210'
       detailInputs:
@@ -184,6 +199,8 @@
       fileLabel: Photo(s) si possible
     - title: Contrat
       example: 'Exemple : reconduction de contrat, clause abusive'
+      tags :
+        - ReponseConso
       subcategories:
         - title: Difficultés pour résilier un contrat
           example: "Exemple : le bulletin de rétractation n'a pas été prise en compte"
@@ -292,3 +309,4 @@
     - '212'
   tags:
     - Litige contractuel
+    - ReponseConso
