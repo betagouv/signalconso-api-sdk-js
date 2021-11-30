@@ -79,26 +79,38 @@
         outOfScope: true
     - title: Fosse septique
       example: "Exemple : malfaçons sur la fosse, le bureau d'étude m'impose une marque de fosse en particulier "
-        - title: malfaçons sur la pose de la fosse septique
+      subcategories:
+        - title: Malfaçons sur la pose de la fosse septique
           exemple: "Fissure, usure"
           detailInputs:
+            - label: Date du constat
+              rank: 1
+              type: DATE
+              defaultValue: SYSDATE
+            - label: Décrivez nous plus en détails ce qui s'est passé
+              rank: 2
+              type: TEXTAREA
+        - title: Le bureau d'étude impose une marque / modèle en particulier
+          tags: 
+            - ReponseConso
+          detailInputs:
+            - label: Date du constat
+              rank: 1
+              type: DATE
+              defaultValue: SYSDATE
+            - label: Décrivez nous plus en détails ce qui s'est passé
+              rank: 2
+              type: TEXTAREA
+      - title: Autre
+        tags: 
+          - ReponseConso
+        detailInputs:
           - label: Date du constat
             rank: 1
             type: DATE
             defaultValue: SYSDATE
-     - title: le bureau d'étude impose une marque / modèle en particulier
-       tags: 
-         - ReponseConso
-        detailInputs:
-         - label: Date du constat
-           rank: 1
-           type: DATE
-           defaultValue: SYSDATE
-      - title: Autre
-        tags: 
-          - ReponseConso
-         - label: Décrivez nous plus en détails ce qui s'est passé
-            rank: 3
+          - label: Décrivez nous plus en détails ce qui s'est passé
+            rank: 2
             type: TEXTAREA
 - title: Gaz / Electricité
   tags:
