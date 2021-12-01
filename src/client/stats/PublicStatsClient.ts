@@ -87,7 +87,7 @@ class PublicStatsPercentageClient {
     const [count, baseCount,] = await Promise.all([
       this.client.getReportCount({
         companyIds: [companyId],
-        websiteExists: true,
+        hasWebsite: true,
         start: this.statsAdminStartDate,
         end: subDays(new Date(), this.delayBeforeCountingToWaitForProResponseInDays)
       }),
