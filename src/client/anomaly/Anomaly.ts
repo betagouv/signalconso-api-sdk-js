@@ -10,16 +10,16 @@ export interface SubcategoryBase extends Category {
 }
 
 export interface Anomaly extends Category {
-    category: string
-    categoryId: string
-    path: string
-    description?: string
-    rank?: number
-    sprite?: string
-    cssClass?: string
-    hidden?: boolean
-    information?: Information
-    breadcrumbTitle?: string
+  category: string
+  categoryId: string
+  path: string
+  description?: string
+  // rank?: number
+  sprite?: string
+  cssClass?: string
+  hidden?: boolean
+  information?: Information
+  breadcrumbTitle?: string
 }
 
 export type Subcategory = SubcategoryBase | SubcategoryInput | SubcategoryInformation
