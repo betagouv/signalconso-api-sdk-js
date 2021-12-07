@@ -1,5 +1,6 @@
 import {ReportTag, Subcategory, UploadedFile} from '../..'
 import {Address} from '../../model'
+import format from 'date-fns/format'
 
 export const ReportingDateLabel = 'Date du constat'
 export const ReportingTimeslotLabel = 'Heure du constat'
@@ -32,7 +33,44 @@ export interface Report {
 
 export interface DetailInputValue {
   label: string
-  value: string
+  value: string | Date | string[]
+}
+
+export class DetailInputValue {
+  static readonly precisionKeyword = '(à préciser)'
+
+  static readonly parse = (div: DetailInputValue): DetailInputValue => {
+    return {
+      label: (() => {
+        if (div.label.endsWith('?')) {
+          return div.label.replace('?', ':')
+        }
+        if (!div.label.endsWith(':')) {
+          return `${div.label} :`
+        }
+        return div.label
+      })(),
+      value: (() => {
+        if (div.value instanceof Date) {
+          return format(div.value, 'dd/MM/yyyy')
+        } else if (div.value instanceof Array) {
+          return div.value
+            .filter(v => v !== undefined && v !== null)
+            .map(v => {
+              if (v.indexOf(DetailInputValue.precisionKeyword) !== -1) {
+                return v.replace(DetailInputValue.precisionKeyword, '(').concat(')')
+              } else {
+                return v
+              }
+            })
+            .reduce((v1, v2) => `${v1}, ${v2}`)
+        } else if (div.value && div.value.indexOf && div.value.indexOf(DetailInputValue.precisionKeyword) !== -1) {
+          return div.value.replace(DetailInputValue.precisionKeyword, '(').concat(')')
+        }
+        return div.value
+      })()
+    }
+  }
 }
 
 export interface ReportSearchResult {

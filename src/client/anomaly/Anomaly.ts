@@ -12,7 +12,7 @@ export interface Anomaly extends Category {
   categoryId: string
   path: string
   description?: string
-  rank?: number
+  // rank?: number
   sprite?: string
   cssClass?: string
   hidden?: boolean

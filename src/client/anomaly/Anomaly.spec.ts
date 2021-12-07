@@ -17,7 +17,6 @@ describe('enrichAnomaly', () => {
         'categoryId': 'C19',
         'path': 'coronavirus',
         'description': 'gel hydroalcoolique, masque, arnaque liée au COVID-19, distanciation physique...',
-        'rank': 1,
         'sprite': 'category-covid',
         'subcategories': [
           {
@@ -55,7 +54,6 @@ describe('enrichAnomaly', () => {
         'categoryId': 'C19',
         'path': 'coronavirus',
         'description': 'gel hydroalcoolique, masque, arnaque liée au COVID-19, distanciation physique...',
-        'rank': 1,
         'sprite': 'category-covid',
         'subcategories': [
           {
@@ -97,7 +95,6 @@ describe('enrichAnomaly', () => {
         'categoryId': 'C19',
         'path': 'coronavirus',
         'description': 'gel hydroalcoolique, masque, arnaque liée au COVID-19, distanciation physique...',
-        'rank': 1,
         'sprite': 'category-covid',
         'subcategories': [
           {
@@ -119,7 +116,6 @@ describe('enrichAnomaly', () => {
         'categoryId': 'C19',
         'path': 'coronavirus',
         'description': 'gel hydroalcoolique, masque, arnaque liée au COVID-19, distanciation physique...',
-        'rank': 1,
         'sprite': 'category-covid',
         'subcategories': [
           {
@@ -157,7 +153,6 @@ describe('enrichAnomaly', () => {
         'categoryId': 'C19',
         'path': 'coronavirus',
         'description': 'gel hydroalcoolique, masque, arnaque liée au COVID-19, distanciation physique...',
-        'rank': 1,
         'sprite': 'category-covid',
         'subcategories': [
           {
@@ -180,7 +175,6 @@ describe('enrichAnomaly', () => {
         'categoryId': 'C19',
         'path': 'coronavirus',
         'description': 'gel hydroalcoolique, masque, arnaque liée au COVID-19, distanciation physique...',
-        'rank': 1,
         'sprite': 'category-covid',
         'subcategories': [
           {
@@ -219,7 +213,6 @@ describe('enrichAnomaly', () => {
         'categoryId': 'C19',
         'path': 'coronavirus',
         'description': 'gel hydroalcoolique, masque, arnaque liée au COVID-19, distanciation physique...',
-        'rank': 1,
         'sprite': 'category-covid',
         'subcategories': [
           {
@@ -243,7 +236,6 @@ describe('enrichAnomaly', () => {
         'categoryId': 'C19',
         'path': 'coronavirus',
         'description': 'gel hydroalcoolique, masque, arnaque liée au COVID-19, distanciation physique...',
-        'rank': 1,
         'sprite': 'category-covid',
         'subcategories': [
           {
@@ -283,7 +275,6 @@ describe('enrichAnomaly', () => {
         'categoryId': 'C19',
         'path': 'coronavirus',
         'description': 'gel hydroalcoolique, masque, arnaque liée au COVID-19, distanciation physique...',
-        'rank': 1,
         'sprite': 'category-covid',
         'subcategories': [
           {
@@ -309,7 +300,6 @@ describe('enrichAnomaly', () => {
         'categoryId': 'C19',
         'path': 'coronavirus',
         'description': 'gel hydroalcoolique, masque, arnaque liée au COVID-19, distanciation physique...',
-        'rank': 1,
         'sprite': 'category-covid',
         'subcategories': [
           {
@@ -356,7 +346,6 @@ describe('enrichAnomaly', () => {
         'categoryId': 'CR',
         'path': 'cafe-restaurant',
         'description': 'bar, cafétéria, food truck, application pour se faire livrer un repas...',
-        'rank': 4,
         'sprite': 'category-restaurant',
         'subcategories': [
           {
@@ -394,7 +383,6 @@ describe('enrichAnomaly', () => {
         'categoryId': 'CR',
         'path': 'cafe-restaurant',
         'description': 'bar, cafétéria, food truck, application pour se faire livrer un repas...',
-        'rank': 4,
         'sprite': 'category-restaurant',
         'subcategories': [{
           'id': '1',
