@@ -1,20 +1,5 @@
-import {Id, PaginatedFilters, PaginatedSearch} from '../../model'
-import {WebsiteKind} from '../..'
+import {Id, PaginatedFilters} from '../../model'
 import {Address} from '../../model/Address'
-
-export interface WebsiteURL {
-  url: string
-}
-
-export interface DraftCompany {
-  siret?: string
-  name?: string
-  brand?: string
-  address?: Address
-  website?: WebsiteURL
-  phone?: string
-  activityCode?: string
-}
 
 export interface CompanyWithReportsCount extends Company {
   count: number
@@ -79,5 +64,3 @@ export enum AccessLevel {
 export interface CompanyWithAccessLevel extends Company {
   level: AccessLevel
 }
-
-export const isGovernmentCompany = (_?: DraftCompany): boolean => _?.activityCode?.startsWith('84.') ?? false

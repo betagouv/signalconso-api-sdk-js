@@ -1,8 +1,8 @@
 import {CompanyKinds, ReportTag, Subcategory} from '../anomaly/Anomaly'
-import {DraftCompany} from '../company/Company'
 import {UploadedFile} from '../file/UploadedFile'
 import {DetailInputValue} from './Report'
 import {uniqby} from '../../helper/LodashNamedExport'
+import {Address} from '../../model'
 
 export interface ReportDraftConsumer {
   firstName: string
@@ -11,10 +11,20 @@ export interface ReportDraftConsumer {
   phone?: string
 }
 
+export interface CompanyDraft {
+  siret?: string
+  name?: string
+  brand?: string
+  address?: Address
+  website?: string
+  phone?: string
+  activityCode?: string
+}
+
 export interface ReportDraft {
   category: string
   subcategories?: Subcategory[]
-  draftCompany: DraftCompany
+  draftCompany: CompanyDraft
   detailInputValues: DetailInputValue[]
   uploadedFiles: UploadedFile[]
   consumer: ReportDraftConsumer
@@ -73,4 +83,6 @@ export class ReportDraft {
       && !r.forwardToReponseConso
       && !ReportDraft.tags(r).find(_ => ([ReportTag.ProduitDangereux, ReportTag.Bloctel]).includes(_))
   }
+
+  static readonly isGovernmentCompany = (_?: {activityCode?: string}): boolean => _?.activityCode?.startsWith('84.') ?? false
 }

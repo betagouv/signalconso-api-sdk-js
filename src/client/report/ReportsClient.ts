@@ -3,10 +3,12 @@ import {
   cleanObject,
   CompanySearchResult,
   dateToApi,
+  DetailInputValue,
   directDownloadBlob,
   Event,
   Id,
-  PaginatedFilters, paginateFilters2QueryString,
+  PaginatedFilters,
+  paginateFilters2QueryString,
   Report,
   ReportAction,
   ReportResponse,
@@ -15,6 +17,8 @@ import {
 import {Address, PaginatedData, ReportSearch} from '../../model'
 import {pipe} from 'rxjs'
 import {ApiSdkLogger} from '../../helper/Logger'
+import {ReportDraft} from './ReportDraft'
+import format from 'date-fns/format'
 
 export interface ReportFilterQuerystring {
   readonly departments?: string[]
@@ -116,6 +120,33 @@ export class ReportsClient {
   readonly postAction = (id: Id, action: ReportAction) => {
     // const mappedAction: any = {...action, actionType: {value: action.actionType}}
     return this.client.post<Event>(`reports/${id}/action`, {body: action})
+  }
+
+  readonly createReport = ({
+    consumer,
+    draftCompany,
+    uploadedFiles,
+    detailInputValues,
+    ...report
+  }: ReportDraft) => {
+    return this.client.post<Report>(`/reports`, {
+      body: {
+        ...report,
+        fileIds: uploadedFiles.map(_ => _.id),
+        details: detailInputValues.map(DetailInputValue.parse),
+        companyName: draftCompany.name,
+        companyAddress: draftCompany.address,
+        companySiret: draftCompany.siret,
+        companyActivityCode: draftCompany.activityCode,
+        websiteURL: draftCompany.website,
+        phone: draftCompany.phone,
+        firstName: consumer.firstName,
+        lastName: consumer.lastName,
+        email: consumer.email,
+        // TODO(Alex) From signalement-app but don't know why ?
+        // subcategories: (subcategories ?? []).map(subcategory => subcategory.title ? subcategory.title : subcategory)
+      }
+    })
   }
 
   readonly updateReportCompany = (reportId: string, company: CompanySearchResult) => {
