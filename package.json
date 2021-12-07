@@ -1,6 +1,6 @@
 {
   "name": "@signal-conso/signalconso-api-sdk-js",
-  "version": "2.2.2",
+  "version": "2.3.2",
   "description": "SignalConso API SDK for JavaScript/TypeScript",
   "main": "lib/index.js",
   "private": false,
@@ -15,7 +15,7 @@
   "dependencies": {
     "@alexandreannic/ts-utils": "^1.5.0",
     "axios": "0.21.1",
-    "date-fns": "^2.25.0",
+    "date-fns": "^2.27.0",
     "fp-ts": "^1.19.5",
     "js-yaml": "^4.1.0",
     "lodash.uniqby": "^4.0.8",
@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@types/chai": "^4.2.18",
+    "@types/date-fns": "^2.6.0",
     "@types/mocha": "^5.2.7",
     "@types/node": "^15.9.0",
     "@types/qs": "^6.9.6",

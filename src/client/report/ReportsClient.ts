@@ -27,24 +27,26 @@ export interface ReportFilterQuerystring {
   email?: string
   websiteURL?: string
   phone?: string
-  websiteExists?: 'true' | 'false'
-  phoneExists?: 'true' | 'false'
   category?: string
   details?: string
+  hasWebsite?: 'true' | 'false'
+  hasPhone?: 'true' | 'false'
+  hasForeignCountry?: 'true' | 'false'
   hasCompany?: 'true' | 'false'
 }
 
 export const reportFilter2QueryString = (report: ReportSearch): ReportFilterQuerystring => {
   try {
-    const {hasCompany, websiteExists, phoneExists, start, end, ...r} = report
-    const parseBoolean = (_: keyof Pick<ReportSearch, 'websiteExists' | 'phoneExists' | 'hasCompany'>) =>
+    const {hasCompany, hasForeignCountry, hasWebsite, hasPhone, start, end, ...r} = report
+    const parseBoolean = (_: keyof Pick<ReportSearch, 'hasForeignCountry' | 'hasWebsite' | 'hasPhone' | 'hasCompany'>) =>
       report[_] !== undefined && {[_]: ('' + report[_]) as 'true' | 'false'}
     const parseDate = (_: keyof Pick<ReportSearch, 'start' | 'end'>) => (report[_] ? {[_]: dateToApi(report[_])} : {})
     return {
       ...r,
       ...parseBoolean('hasCompany'),
-      ...parseBoolean('websiteExists'),
-      ...parseBoolean('phoneExists'),
+      ...parseBoolean('hasWebsite'),
+      ...parseBoolean('hasPhone'),
+      ...parseBoolean('hasForeignCountry'),
       ...parseDate('start'),
       ...parseDate('end'),
     }
@@ -55,12 +57,16 @@ export const reportFilter2QueryString = (report: ReportSearch): ReportFilterQuer
 }
 
 export const cleanReportFilter = (filter: ReportSearch): ReportSearch => {
-  if (filter.websiteExists === false) {
-    delete filter.websiteExists
+  if (filter.hasCompany === false) {
+    delete filter.siretSirenList
+  }
+  if(filter.hasForeignCountry === false) {
+    delete filter.companyCountries
+  }
+  if (filter.hasWebsite === false) {
     delete filter.websiteURL
   }
-  if (filter.phoneExists === false) {
-    delete filter.phoneExists
+  if (filter.hasPhone === false) {
     delete filter.phone
   }
   return filter
@@ -140,6 +146,10 @@ export class ReportsClient {
     })
   }
 
+  readonly getCountByDepartments = ({start, end}: {start?: Date, end?: Date} = {}): Promise<[string, number][]> => {
+    return this.client.get(`/reports/count-by-departments`, {qs: {start: dateToApi(start), end: dateToApi(end)}})
+  }
+  
   static readonly mapReport = (report: {[key in keyof Report]: any}): Report => ({
     ...report,
     companyAddress: ReportsClient.mapAddress(report.companyAddress),

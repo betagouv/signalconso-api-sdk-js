@@ -1,7 +1,9 @@
+import format from 'date-fns/format'
+
 export type Index<T> = {[key: string]: T}
 export type Shape<T extends object> = {[key in keyof T]: any}
 
-export const dateToYYYYMMDD = (date?: Date): string | undefined => (date ? date.toISOString().split('T')[0] : undefined)
+export const dateToYYYYMMDD = (date?: Date): string | undefined => (date ? format(date, 'yyyy-MM-dd') : undefined)
 
 export const dateToApi = dateToYYYYMMDD
 
