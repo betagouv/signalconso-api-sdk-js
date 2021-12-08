@@ -16,6 +16,9 @@
         - '416'
     - title: Publicité
       example: 'Exemple : publicité pour un crédit non conforme, démarchage téléphonique'
+      reponseconsoCode:
+            - '210'
+            - '411'
       tags:
         - Litige contractuel
       subcategories:
@@ -40,8 +43,6 @@
             - label: Décrivez nous plus en détails ce qui s'est passé
               rank: 3
               type: TEXTAREA
-        - title: Problème avec un site internet
-          companyKind: WEBSITE
         - title: Autre
           companyKind: SIRET
     - title: Service client
@@ -117,10 +118,6 @@
             - label: Décrivez nous plus en détails ce qui s'est passé
               rank: 3
               type: TEXTAREA
-        - title: Problème avec un site internet
-          companyKind: WEBSITE
-          reponseconsoCode:
-            - '679'
         - title: Autre
           reponseconsoCode:
             - '679'
