@@ -298,7 +298,6 @@
           example: "À partir de 25 euros, votre praticien doit vous remettre une note qui décrit ce que vous avez payé. C'est une obligation."
           reponseconsoCode:
             - '213'
-            - '220'
           tags:
             - ReponseConso
           detailInputs:
@@ -319,7 +318,6 @@
           example: 'Exemple : durée plus courte que celle affichée, les résultats "garantis" ne se sont pas réalisés, publicité en vitrine trompeuse'
           reponseconsoCode:
             - '210'
-            - '220'
           detailInputs:
             - label: Date du constat
               rank: 1
@@ -367,7 +365,6 @@
         - title: Une publicité est trompeuse ou non appliquée
           reponseconsoCode:
             - '210'
-            - '220'
           tags:
             - ReponseConso
           example: 'Exemple : offre promotionnelle trompeuse sur des lunettes'
