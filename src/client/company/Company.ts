@@ -1,4 +1,4 @@
-import {Id, PaginatedSearch} from '../../model'
+import {Id, PaginatedFilters, PaginatedSearch} from '../../model'
 import {WebsiteKind} from '../..'
 import {Address} from '../../model/Address'
 
@@ -62,7 +62,7 @@ export interface CompanySearchResult {
   isMarketPlace: boolean
 }
 
-export interface CompanySearch extends PaginatedSearch<any> {
+export interface CompanySearch extends PaginatedFilters {
   readonly departments?: string[]
   readonly activityCodes?: string[]
   identity?: string

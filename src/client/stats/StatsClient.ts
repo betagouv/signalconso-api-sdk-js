@@ -23,6 +23,16 @@ export class StatsClient {
         .then(res => res.map(_ => ({..._, date: new Date(_.date)})))
   }
 
+  readonly getProReportTransmittedStat = (search?: CurveStatsParams) => {
+    return this.client.get<CountByDate[]>(`/stats/reports/pro-transmitted`, {qs: search})
+        .then(res => res.map(_ => ({..._, date: new Date(_.date)})))
+  }
+
+  readonly getProReportResponseStat = (search?: CurveStatsParams) => {
+    return this.client.get<CountByDate[]>(`/stats/reports/pro-response`, {qs: search})
+        .then(res => res.map(_ => ({..._, date: new Date(_.date)})))
+  }
+
   readonly getActiveDgccrfAccountCurve = (search?: CurveStatsParams) => {
     return this.client.get<CountByDate[]>(`/stats/dgccrf-active-account`, {qs: search})
         .then(res => res.map(_ => ({..._, date: new Date(_.date)})))

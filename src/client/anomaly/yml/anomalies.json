@@ -33789,6 +33789,9 @@
                   "subcategories": [
                     {
                       "title": "Je n'ai pas pu payer avec des espèces",
+                      "tags": [
+                        "ReponseConso"
+                      ],
                       "subcategoriesTitle": "Pour quelle raison a-t-on refusé que vous payez en espèces&#160;?",
                       "subcategories": [
                         {
@@ -34013,6 +34016,9 @@
                   "subcategories": [
                     {
                       "title": "Je n'ai pas pu payer avec des espèces",
+                      "tags": [
+                        "ReponseConso"
+                      ],
                       "subcategoriesTitle": "Pour quelle raison a-t-on refusé que vous payez en espèces&#160;?",
                       "subcategories": [
                         {
@@ -34210,11 +34216,12 @@
             },
             {
               "title": "Aide à la personne",
+              "tags": [
+                "ReponseConso",
+                "Litige contractuel"
+              ],
               "reponseconsoCode": [
                 "210"
-              ],
-              "tags": [
-                "Litige contractuel"
               ],
               "id": "1.5-2.3"
             },
@@ -34438,6 +34445,9 @@
                   "subcategories": [
                     {
                       "title": "Je n'ai pas pu payer avec des espèces",
+                      "tags": [
+                        "ReponseConso"
+                      ],
                       "subcategoriesTitle": "Pour quelle raison a-t-on refusé que vous payez en espèces&#160;?",
                       "subcategories": [
                         {
@@ -34592,6 +34602,9 @@
                     },
                     {
                       "title": "Le personnel ne dispose pas des diplômes requis",
+                      "tags": [
+                        "ReponseConso"
+                      ],
                       "reponseconsoCode": [
                         "161"
                       ],
@@ -35051,6 +35064,9 @@
                   "title": "Difficultés pour résilier un contrat",
                   "example": "Exemple : le bulletin de rétractation n'a pas été prise en compte",
                   "subcategoriesTitle": "Où avez-vous souscrit votre contrat ?",
+                  "reponseconsoCode": [
+                    "214"
+                  ],
                   "subcategories": [
                     {
                       "title": "Sur internet, par téléphone ou chez moi avec un conseiller",
@@ -35182,8 +35198,7 @@
                 {
                   "title": "Une clause du contrat est abusive, c'est-à-dire qu'elle désavantage fortement le consommateur",
                   "reponseconsoCode": [
-                    "214",
-                    "1211"
+                    "214"
                   ],
                   "detailInputs": [
                     {
@@ -36927,6 +36942,10 @@
             {
               "title": "Publicité",
               "example": "Exemple : publicité pour un crédit non conforme, démarchage téléphonique",
+              "reponseconsoCode": [
+                "210",
+                "411"
+              ],
               "tags": [
                 "Litige contractuel"
               ],
@@ -36966,14 +36985,9 @@
                   "id": "1.8-1.3.1"
                 },
                 {
-                  "title": "Problème avec un site internet",
-                  "companyKind": "WEBSITE",
-                  "id": "1.8-1.3.2"
-                },
-                {
                   "title": "Autre",
                   "companyKind": "SIRET",
-                  "id": "1.8-1.3.3"
+                  "id": "1.8-1.3.2"
                 }
               ],
               "id": "1.8-1.3"
@@ -37102,20 +37116,12 @@
                   "id": "1.8-2.3.2"
                 },
                 {
-                  "title": "Problème avec un site internet",
-                  "companyKind": "WEBSITE",
-                  "reponseconsoCode": [
-                    "679"
-                  ],
-                  "id": "1.8-2.3.3"
-                },
-                {
                   "title": "Autre",
                   "reponseconsoCode": [
                     "679"
                   ],
                   "companyKind": "SIRET",
-                  "id": "1.8-2.3.4"
+                  "id": "1.8-2.3.3"
                 }
               ],
               "id": "1.8-2.3"
@@ -52526,8 +52532,7 @@
                   "title": "Je n'ai pas reçu de note (facture, ticket)",
                   "example": "À partir de 25 euros, votre praticien doit vous remettre une note qui décrit ce que vous avez payé. C'est une obligation.",
                   "reponseconsoCode": [
-                    "213",
-                    "220"
+                    "213"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -52560,8 +52565,7 @@
                   "title": "La publicité ou la description du soin est trompeuse",
                   "example": "Exemple : durée plus courte que celle affichée, les résultats \"garantis\" ne se sont pas réalisés, publicité en vitrine trompeuse",
                   "reponseconsoCode": [
-                    "210",
-                    "220"
+                    "210"
                   ],
                   "detailInputs": [
                     {
@@ -52637,8 +52641,7 @@
                 {
                   "title": "Une publicité est trompeuse ou non appliquée",
                   "reponseconsoCode": [
-                    "210",
-                    "220"
+                    "210"
                   ],
                   "tags": [
                     "ReponseConso"
@@ -53547,6 +53550,9 @@
                 },
                 {
                   "title": "Heure de conduite qui ne dure pas une heure",
+                  "tags": [
+                    "ReponseConso"
+                  ],
                   "id": "1.13-3.3.3"
                 },
                 {

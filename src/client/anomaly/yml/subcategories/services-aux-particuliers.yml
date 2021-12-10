@@ -130,10 +130,11 @@
               tags:
                 - Litige contractuel
     - title: Aide à la personne
+      tags:
+        - ReponseConso
+        - Litige contractuel
       reponseconsoCode:
         - '210'
-      tags:
-        - Litige contractuel
     - title: Maison de retraite (ehpad)
       tags:
         - Litige contractuel
@@ -263,6 +264,8 @@
             - title: Le personnel n'est pas aimable ou respecteux
               information: !!import/single ../common/info/amabilite.yml
             - title: Le personnel ne dispose pas des diplômes requis
+              tags:
+                - ReponseConso
               reponseconsoCode:
                 - '161'
             - title: Autre
