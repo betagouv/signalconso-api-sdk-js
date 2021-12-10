@@ -217,9 +217,9 @@
         - title: Difficultés pour résilier un contrat
           example: "Exemple : le bulletin de rétractation n'a pas été prise en compte"
           subcategoriesTitle: Où avez-vous souscrit votre contrat ?
-          subcategories:
           reponseconsoCode:
             - '214'
+          subcategories:
             - title: Sur internet, par téléphone ou chez moi avec un conseiller
               reponseconsoCode:
                 - '226'
