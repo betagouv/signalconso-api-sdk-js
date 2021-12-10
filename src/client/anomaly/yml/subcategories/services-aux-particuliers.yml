@@ -130,6 +130,8 @@
               tags:
                 - Litige contractuel
     - title: Aide à la personne
+      tags:
+        - ReponseConso
       reponseconsoCode:
         - '210'
       tags:
@@ -263,6 +265,8 @@
             - title: Le personnel n'est pas aimable ou respecteux
               information: !!import/single ../common/info/amabilite.yml
             - title: Le personnel ne dispose pas des diplômes requis
+              tags:
+                - ReponseConso
               reponseconsoCode:
                 - '161'
             - title: Autre
