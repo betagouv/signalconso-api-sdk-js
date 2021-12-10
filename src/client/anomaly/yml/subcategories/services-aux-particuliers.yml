@@ -132,10 +132,9 @@
     - title: Aide à la personne
       tags:
         - ReponseConso
+        - Litige contractuel
       reponseconsoCode:
         - '210'
-      tags:
-        - Litige contractuel
     - title: Maison de retraite (ehpad)
       tags:
         - Litige contractuel
