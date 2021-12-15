@@ -83,7 +83,6 @@ export class ReportsClient {
   }
 
   readonly search = (filters: ReportSearch & PaginatedFilters) => {
-    console.log(filters)
     return this.client
       .get<PaginatedData<ReportSearchResult>>(`/reports`, {
         qs: pipe(cleanReportFilter, reportFilter2QueryString, cleanObject)(filters),
