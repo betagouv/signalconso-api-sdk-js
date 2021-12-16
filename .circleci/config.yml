@@ -9,6 +9,8 @@ jobs:
     steps:
       - checkout
       - run: npm version minor 
+      - run: git config --global user.email "s.sedoud.betagouv@gmail.com" 
+      - run: git config --global user.name "CircleCI Said SEDOUD"       
       - run: echo $CIRCLE_REPOSITORY_URL
       - run: echo $CIRCLE_REPOSITORY_URL
       - run: git push -q https://${GITHUB_TOKEN}@github.com/ssedoudbgouv/CIRCLE_PROJECT_REPONAME.git circleci-project-setup
