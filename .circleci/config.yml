@@ -36,5 +36,5 @@ workflows:
       - bump:
           filters: 
             branches:
-              only:
+              ignore:
                 - circleci-project-setup   
