@@ -10,7 +10,8 @@ jobs:
       - checkout
       - run: git config --global user.email "s.sedoud.betagouv@gmail.com" 
       - run: git config --global user.name "CircleCI Said SEDOUD"
-      - run: npm version minor              
+      - run:  npm version patch -m "[skip ci] bump version to to %s"
+        
       - run: 
           name: Push new version
           command: |
@@ -36,5 +37,5 @@ workflows:
       - bump:
           filters: 
             branches:
-              ignore:
+              only:
                 - circleci-project-setup   
