@@ -7,6 +7,8 @@ export interface SimpleStat {
 
 export type Period = 'Day' | 'Month'
 
+export type  ReportResponseType = 'ACCEPTED' | 'REJECTED' | 'NOT_CONCERNED'
+
 export interface CountByDate {
   date: Date
   count: number
@@ -24,4 +26,9 @@ export interface ReportResponseReviews {
 export interface CurveStatsParams {
   ticks?: number
   tickDuration?: Period
+}
+
+export interface ReportResponseStatsParams {
+  ticks?: number
+  responseStatusQuery?: ReportResponseType[]
 }
