@@ -8,7 +8,6 @@ jobs:
       - image: cimg/node:17.2.0
     steps:
       - checkout
-      - run: npm i 
       - run: npm version minor 
       - run: echo $CIRCLE_REPOSITORY_URL
       - run: echo $CIRCLE_REPOSITORY_URL
