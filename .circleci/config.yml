@@ -2,7 +2,20 @@ version: 2.1
  
 # Define the jobs we want to run for this project
 jobs:
-  build:
+  bump:
+    working_directory: ~/repo
+    docker:
+      - image: cimg/node:17.2.0
+    steps:
+      - checkout
+      - run: npm i 
+      - run: npm version minor 
+      - run: echo $CIRCLE_REPOSITORY_URL
+      - run: echo $CIRCLE_REPOSITORY_URL
+      - run: git push -q https://${GITHUB_TOKEN}@github.com/ssedoudbgouv/CIRCLE_PROJECT_REPONAME.git circleci-project-setup
+ 
+
+  publish:
     working_directory: ~/repo
     docker:
       - image: cimg/node:17.2.0
@@ -18,4 +31,8 @@ jobs:
 workflows:
   build_and_test:
     jobs:
-      - build
+      - bump:
+          filters: 
+            branches:
+              only:
+                - circleci-project-setup   
