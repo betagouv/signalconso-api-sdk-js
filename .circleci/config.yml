@@ -12,8 +12,8 @@ jobs:
       - run: git config --global user.name "CircleCI Said SEDOUD"
       - run: npm version minor              
       - run: echo $CIRCLE_REPOSITORY_URL
-      - run: echo $CIRCLE_REPOSITORY_URL
-      - run: git push -q https://${GITHUB_TOKEN}@github.com/ssedoudbgouv/CIRCLE_PROJECT_REPONAME.git circleci-project-setup
+      - run: echo $CIRCLE_PROJECT_REPONAME
+      - run: git push -q https://$GITHUB_TOKEN@github.com/ssedoudbgouv/$CIRCLE_PROJECT_REPONAME.git circleci-project-setup
  
 
   publish:
