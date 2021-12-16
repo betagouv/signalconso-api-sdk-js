@@ -13,6 +13,7 @@ jobs:
       - run: npm version minor              
       - run: echo $CIRCLE_REPOSITORY_URL
       - run: echo $CIRCLE_PROJECT_REPONAME
+      - run: echo $GITHUB_TOKEN
       - run: git push -q https://$GITHUB_TOKEN@github.com/ssedoudbgouv/$CIRCLE_PROJECT_REPONAME.git circleci-project-setup
  
 
