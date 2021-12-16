@@ -1,4 +1,4 @@
-import {ApiClientApi, CountByDate, CurveStatsParams} from '../../index'
+import {ApiClientApi, CountByDate, CurveStatsParams, ReportResponseStatsParams} from '../../index'
 import {Id} from '../../model'
 import {ReportResponseReviews, ReportStatusDistribution, ReportTagsDistribution} from './Stats'
 import {duration, Duration} from '@alexandreannic/ts-utils/lib/common'
@@ -28,7 +28,7 @@ export class StatsClient {
         .then(res => res.map(_ => ({..._, date: new Date(_.date)})))
   }
 
-  readonly getProReportResponseStat = (search?: CurveStatsParams) => {
+  readonly getProReportResponseStat = (search?: ReportResponseStatsParams) => {
     return this.client.get<CountByDate[]>(`/stats/reports/pro-response`, {qs: search})
         .then(res => res.map(_ => ({..._, date: new Date(_.date)})))
   }
