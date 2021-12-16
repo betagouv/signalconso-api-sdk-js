@@ -14,7 +14,7 @@ jobs:
       - run: 
           name: Push new version
           command: |
-            git push -q https://${GITHUB_TOKEN}@github.com/ssedoudbgouv/${CIRCLE_PROJECT_REPONAME}.git circleci-project-setup
+            git push -q https://${GITHUB_TOKEN}@github.com/betagouv/${CIRCLE_PROJECT_REPONAME}.git circleci-project-setup
  
 
   publish:
