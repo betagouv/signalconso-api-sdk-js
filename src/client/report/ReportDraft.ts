@@ -30,24 +30,24 @@ export interface ReportDraft {
   consumer: ReportDraftConsumer
   employeeConsumer?: boolean
   contactAgreement: boolean
-  forwardToReponseConso?: boolean
   vendor: string
   reponseconsoCode?: string[]
   ccrfCode?: string[]
+  tags?: ReportTag[]
 }
 
 export class ReportDraft {
-  static readonly companyKind = (r: ReportDraft): CompanyKinds => {
-    return ReportDraft.lastSubcategory(r)?.companyKind ?? CompanyKinds.SIRET
+  static readonly getCompanyKind = (r: ReportDraft): CompanyKinds => {
+    return ReportDraft.getLastSubcategory(r)?.companyKind ?? CompanyKinds.SIRET
   }
 
-  static readonly lastSubcategory = (r: ReportDraft): Subcategory | undefined => {
+  static readonly getLastSubcategory = (r: ReportDraft): Subcategory | undefined => {
     if (r.subcategories && r.subcategories.length) {
       return r.subcategories[r.subcategories.length - 1]
     }
   }
 
-  static readonly reponseconsoCode = (r: ReportDraft): string[] => {
+  static readonly getReponseconsoCode = (r: ReportDraft): string[] => {
     return uniqby((r.subcategories ?? []).flatMap(_ => _.reponseconsoCode ?? []), _ => _)
   }
 
@@ -67,21 +67,24 @@ export class ReportDraft {
   }
 
   static readonly isContractualDispute = (r: ReportDraft): boolean => {
-    return !r.employeeConsumer && ReportDraft.tags(r).includes(ReportTag.LitigeContractuel)
+    return !r.employeeConsumer && !!r.tags && r.tags.includes(ReportTag.LitigeContractuel)
   }
 
   static readonly isVendor = (r: ReportDraft): boolean => {
-    return ReportDraft.tags(r).includes(ReportTag.ProduitDangereux)
+    return !!r.tags && r.tags.includes(ReportTag.ProduitDangereux)
   }
 
   static readonly isInfluenceur = (r: ReportDraft): boolean => {
-    return ReportDraft.tags(r).includes(ReportTag.Influenceur)
+    return !!r.tags && r.tags.includes(ReportTag.Influenceur)
   }
 
   static readonly isTransmittableToPro = (r: ReportDraft): boolean => {
     return !r.employeeConsumer
-      && !r.forwardToReponseConso
-      && !ReportDraft.tags(r).find(_ => ([ReportTag.ProduitDangereux, ReportTag.Bloctel]).includes(_))
+      && !(r.tags ?? []).find(_ => ([
+        ReportTag.ReponseConso,
+        ReportTag.ProduitDangereux,
+        ReportTag.Bloctel]
+      ).includes(_))
   }
 
   static readonly isGovernmentCompany = (_?: {activityCode?: string}): boolean => _?.activityCode?.startsWith('84.') ?? false
