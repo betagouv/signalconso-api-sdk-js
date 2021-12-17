@@ -26,6 +26,7 @@ export interface Report {
   creationDate: Date
   status: ReportStatus
   reponseconsoCode: string[]
+  ccrfCode: string[]
 }
 
 export interface DetailInputValue {

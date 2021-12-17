@@ -22,6 +22,7 @@ export interface ReportDraft {
   forwardToReponseConso?: boolean
   vendor: string
   reponseconsoCode?: string[]
+  ccrfCode?: string[]
 }
 
 export class ReportDraft {
@@ -37,6 +38,10 @@ export class ReportDraft {
 
   static readonly reponseconsoCode = (r: ReportDraft): string[] => {
     return uniqby((r.subcategories ?? []).flatMap(_ => _.reponseconsoCode ?? []), _ => _)
+  }
+
+  static readonly ccrfCode = (r: ReportDraft): string[] => {
+    return uniqby((r.subcategories ?? []).flatMap(_ => _.ccrfCode ?? []), _ => _)
   }
 
   static readonly tags = (r: ReportDraft): ReportTag[] => {

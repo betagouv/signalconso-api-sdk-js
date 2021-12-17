@@ -4,6 +4,7 @@ export interface SubcategoryBase extends Category {
   tags?: ReportTag[]
   example?: string
   reponseconsoCode?: string[]
+  ccrfCode?: string[]
 }
 
 export interface Anomaly extends Category {
