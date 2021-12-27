@@ -89,6 +89,55 @@
             }
           ],
           "id": "1.1-3"
+        },
+        {
+          "title": "Le prix de l'autotest est trop élevé",
+          "tags": [
+            "ReponseConso"
+          ],
+          "subcategories": [
+            {
+              "title": "Le prix de l'autotest",
+              "description": "Le prix de l'auto que je réalise moi-même (Arrêté du 10 novembre 2021 modifiant l'arrêté du 1er juin 2021 prescrivant les mesures générales nécessaires à la gestion de la sortie de crise sanitaire). Pour un consommateur, le prix maximal est&nbsp;:&nbsp; <ul> <li>4,20 € le test </li> </ul>",
+              "detailInputs": [
+                {
+                  "label": "Date du constat",
+                  "rank": 1,
+                  "type": "DATE",
+                  "defaultValue": "SYSDATE"
+                },
+                {
+                  "label": "Quel est le prix de vente ?",
+                  "rank": 2,
+                  "type": "TEXT",
+                  "optionnal": true
+                }
+              ],
+              "fileLabel": "Photo du prix et du produit si possible",
+              "id": "1.1-4.1"
+            },
+            {
+              "title": "Le prix de l'autotest qui est fait sous la supervision d'un pharmacien",
+              "description": "Le prix de l'autotest que je réalise moi-même et dont le geste est supervisé par un pharmacien;:&nbsp; <ul> <li>4,20 € le test </li> <li>8,70 € lorsque qu'un pharmacien supervise le test (SI-DEP) </li> <li>Soit un total de 12,90 € </li> </ul>",
+              "detailInputs": [
+                {
+                  "label": "Date du constat",
+                  "rank": 1,
+                  "type": "DATE",
+                  "defaultValue": "SYSDATE"
+                },
+                {
+                  "label": "Quel est le prix ?",
+                  "rank": 2,
+                  "type": "TEXT",
+                  "optionnal": true
+                }
+              ],
+              "fileLabel": "Photo de la facture ou de la note",
+              "id": "1.1-4.2"
+            }
+          ],
+          "id": "1.1-4"
         }
       ],
       "id": "1.1"
