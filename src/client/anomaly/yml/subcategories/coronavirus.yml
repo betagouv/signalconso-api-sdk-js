@@ -89,9 +89,9 @@
   - ReponseConso
   subcategories:
     - title: Le prix de l'autotest
-      description: Le prix de l'auto que je réalise moi-même (Arrêté du 10 novembre 2021 modifiant l'arrêté du 1er juin 2021 prescrivant les mesures générales nécessaires à la gestion de la sortie de crise sanitaire). Pour un consommateur, le prix maximal est&nbsp;:&nbsp;
+      description: Le prix de l'auto que je réalise moi-même (<a href=\"https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043575801/" target=\"_blank\" /> (voir décret)</a>). Pour un consommateur, le prix maximal est&nbsp;:&nbsp;
                    <ul>
-                     <li>4,20 € le test </li>
+                     <li>5,20 € le test </li>
                    </ul>
       detailInputs:
         - label: Date du constat
@@ -104,10 +104,10 @@
           optionnal: true
       fileLabel: Photo du prix et du produit si possible
     - title: Le prix de l'autotest qui est fait sous la supervision d'un pharmacien
-      description: Le prix de l'autotest que je réalise moi-même et dont le geste est supervisé par un pharmacien;:&nbsp;
+      description: Le prix de l'autotest que je réalise moi-même et dont le geste est supervisé par un pharmacien (<a href=\"https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043575801/" target=\"_blank\" /> (voir décret)</a>) :&nbsp;
                    <ul>
                      <li>4,20 € le test </li>
-                     <li>8,70 € lorsque qu'un pharmacien supervise le test (SI-DEP) </li>
+                     <li>8,70 € lorsque qu'un pharmacien supervise le test </li>
                      <li>Soit un total de 12,90 € </li>                    
                    </ul>
       detailInputs:
