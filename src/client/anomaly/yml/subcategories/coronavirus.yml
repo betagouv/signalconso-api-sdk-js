@@ -85,6 +85,8 @@
           type: TEXTAREA
       fileLabel: Photo du produit si possible
 - title: Le prix de l'autotest est trop élevé
+  reponseconsoCode:
+  - '212'
   tags:
   - ReponseConso
   subcategories:
