@@ -26,3 +26,11 @@
 - title: J’ai répondu à un SMS ou j’ai rappelé un numéro qui était payant sans le savoir
   companyKind: PHONE
   information: !!import/single ../common/info/called-paid-number.yml
+- title: Je souahite contacter le Service Relation Consommateur de Bloctel
+  example: "Question sur gestion de mon compte Bloctel, gérer mes données personnelles sur Bloctel"
+  companyKind: PHONE
+  information:
+    content:
+      Le Service Relation Consommateur est ouvert au 01 73 26 81 45 de 8 h 00 à 17 h 00 uniquement les jours ouvrés (Prix d'un appel vers un numéro fixe, suivant opérateur). Ce service est à disposition pour aider à gérer ou utiliser l' « Espace consommateur » du site Bloctel. 
+      <br/><br/>En revanche, il ne donne aucune information sur le suivi des signalements, les modalités de connexion à Internet ou sur les questions d'ordre juridique.  
+      <br/><br/>Vous pouvez accès à la Foire aux questions de Bloctel sur https://www.bloctel.gouv.fr/faq
