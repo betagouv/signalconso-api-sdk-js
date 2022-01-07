@@ -10,23 +10,36 @@
               tags:
                 - ReponseConso
                 - Litige contractuel
+              reponseconsoCode:
+                - '210'
+                - '220'
             - title: Honoraires de location non affichés ou différents de ceux affichés (en vitrine ou sur internet)
               tags:
                 - ReponseConso
                 - Litige contractuel
+              reponseconsoCode:
+                - '212'
+                - '220'
             - title: Annonces de location incomplètes ou mensongères (en vitrine ou sur internet)
               example: "Exemple : loyer annoncé faux, descriptif de l'appartement mensonger"
               tags:
                 - ReponseConso
                 - Litige contractuel
+              reponseconsoCode:
+                - '210'
+                - '220'
             - title: Demande d'un document interdit pour le dossier de location
               example: 'Exemple : relevé bancaire, photocopie de la carte vitale'
               tags:
                 - ReponseConso
+              reponseconsoCode:
+                - '634'
             - title: Autre
               tags:
                 - ReponseConso
                 - Litige contractuel
+              reponseconsoCode:
+                - '679'
         - title: Je cherche à acheter
           subcategories:
             - title: Diffusion d'annonces de biens non disponibles à la vente (en vitrine ou sur internet)
@@ -130,6 +143,8 @@
               example: 'Exemple : une agence a mis mon bien en vente sans mandat signé '
               reponseconsoCode:
                 - '425'
+              tags:
+                - ReponseConso
             - title: Honoraires de vente
               reponseconsoCode:
                 - '451'
@@ -228,6 +243,7 @@
     - '679'
   tags:
     - Litige contractuel
+    - ReponseConso
 - title: Autre
   reponseconsoCode:
     - '679'
