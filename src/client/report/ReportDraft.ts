@@ -31,9 +31,11 @@ export interface ReportDraft {
   employeeConsumer?: boolean
   contactAgreement: boolean
   vendor: string
+  ccrfCode?: string[]
   reponseconsoCode?: string[]
   ccrfCode?: string[]
   tags?: ReportTag[]
+  contractualDispute?: boolean;
 }
 
 export class ReportDraft {
