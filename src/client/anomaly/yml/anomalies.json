@@ -92,6 +92,9 @@
         },
         {
           "title": "Le prix de l'autotest est trop élevé",
+          "reponseconsoCode": [
+            "212"
+          ],
           "tags": [
             "ReponseConso"
           ],
@@ -1239,7 +1242,97 @@
               ],
               "reponseconsoCode": [
                 "210",
-                "220"
+                "220",
+                {
+                  "titre": "Le prix",
+                  "example": "Exemple : Il manque les prix, fausse réduction de prix, soldes, promotion",
+                  "subcategories": [
+                    {
+                      "title": "Il manque des prix / les prix sont illisibles",
+                      "ccrfCode": [
+                        "163"
+                      ],
+                      "description": "Votre droit : tous les prix doivent être affichés.",
+                      "reponseconsoCode": [
+                        "212",
+                        "210",
+                        "224"
+                      ],
+                      "detailInputs": [
+                        {
+                          "label": "Veuillez préciser",
+                          "rank": 1,
+                          "type": "RADIO",
+                          "options": [
+                            "Prix pas affiché",
+                            "Prix illisible",
+                            "Autre (à préciser)"
+                          ]
+                        },
+                        {
+                          "label": "Date du constat",
+                          "rank": 2,
+                          "type": "DATE",
+                          "defaultValue": "SYSDATE"
+                        },
+                        {
+                          "label": "Description",
+                          "example": "Précisez si possible le rayon concerné",
+                          "rank": 3,
+                          "type": "TEXTAREA"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Les prix sont plus élevés qu'ailleurs",
+                      "information": {
+                        "title": "Les commerçants ont le droit de choisir leurs prix.",
+                        "outOfScope": true,
+                        "content": "Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter. <br/> Par exemple, il est autorisé de vendre une bouteille d'eau à 8 euros ou une baguette de pain à 5 euros. C'est au consommateur de bien regarder les prix avant d'acheter. <br/><br/><b>Le saviez-vous ?</b> <br/> Il existe quelques exceptions à ce principe. Certains prix sont réglementés, c'est-à-dire qu'ils sont encadrés par la loi. <br/> Par exemple, le prix des livres est réglementé. <br/><br/> Un commerçant n'a pas le droit de vendre à un prix trop bas : il ne peut pas vendre un produit moins cher que ce qu'il lui a coûté. Il existe quelques situations où il a le droit de vendre en dessous du prix d'achat, comme la période des soldes."
+                      }
+                    },
+                    {
+                      "title": "Fausse réduction de prix",
+                      "example": "Exemple : fausse promotion pendant les soldes, faux temps limite, fausse liquidation totale",
+                      "ccrfCode": [
+                        "145",
+                        "23F",
+                        "146"
+                      ],
+                      "reponseconsoCode": [
+                        "224",
+                        "210",
+                        "212"
+                      ],
+                      "description": "<br/><br/><b>Soldes :</b> Les dates des soldes sont encadrées par la loi. Ces dates sont valables pour les magasins et aussi pour la vente sur internet. <br/><br/><b>Liquidation :</b> les liquidations sont soumises à déclaration préalable auprès du maire de la commune où a lieu cette opération. Un document prouvant cette déclaration doit être affichée dans le magasin, pendant toute la durée de la liquidation. Ce document est souvent affiché sur la vitrine car il doit être visible de la rue.'",
+                      "detailInputs": [
+                        {
+                          "label": "Il s'agit d'un problème sur:",
+                          "rank": 1,
+                          "type": "RADIO",
+                          "options": [
+                            "Les soldes",
+                            "Une promotion",
+                            "Une liquidation",
+                            "Autre (à préciser)"
+                          ]
+                        },
+                        {
+                          "label": "Date du constat",
+                          "rank": 2,
+                          "type": "DATE",
+                          "defaultValue": "SYSDATE"
+                        },
+                        {
+                          "label": "Description",
+                          "example": "Précisez si possible le problème",
+                          "rank": 3,
+                          "type": "TEXTAREA"
+                        }
+                      ]
+                    }
+                  ]
+                }
               ],
               "id": "1.2-1.1"
             },
@@ -51631,6 +51724,10 @@
                         "ReponseConso",
                         "Litige contractuel"
                       ],
+                      "reponseconsoCode": [
+                        "210",
+                        "220"
+                      ],
                       "id": "1.11-1.1.1.1"
                     },
                     {
@@ -51638,6 +51735,10 @@
                       "tags": [
                         "ReponseConso",
                         "Litige contractuel"
+                      ],
+                      "reponseconsoCode": [
+                        "212",
+                        "220"
                       ],
                       "id": "1.11-1.1.1.2"
                     },
@@ -51648,6 +51749,10 @@
                         "ReponseConso",
                         "Litige contractuel"
                       ],
+                      "reponseconsoCode": [
+                        "210",
+                        "220"
+                      ],
                       "id": "1.11-1.1.1.3"
                     },
                     {
@@ -51656,6 +51761,9 @@
                       "tags": [
                         "ReponseConso"
                       ],
+                      "reponseconsoCode": [
+                        "634"
+                      ],
                       "id": "1.11-1.1.1.4"
                     },
                     {
@@ -51663,6 +51771,9 @@
                       "tags": [
                         "ReponseConso",
                         "Litige contractuel"
+                      ],
+                      "reponseconsoCode": [
+                        "679"
                       ],
                       "id": "1.11-1.1.1.5"
                     }
@@ -51860,6 +51971,9 @@
                       "example": "Exemple : une agence a mis mon bien en vente sans mandat signé ",
                       "reponseconsoCode": [
                         "425"
+                      ],
+                      "tags": [
+                        "ReponseConso"
                       ],
                       "id": "1.11-1.3.2.1"
                     },
@@ -52074,7 +52188,8 @@
             "679"
           ],
           "tags": [
-            "Litige contractuel"
+            "Litige contractuel",
+            "ReponseConso"
           ],
           "id": "1.11-4"
         },
@@ -55815,7 +55930,7 @@
           "id": "1.17-2"
         },
         {
-          "title": "Je souahite contacter le Service Relation Consommateur de Bloctel",
+          "title": "Je souhaite contacter le Service Relation Consommateur de Bloctel",
           "example": "Question sur gestion de mon compte Bloctel, gérer mes données personnelles sur Bloctel",
           "companyKind": "PHONE",
           "information": {
