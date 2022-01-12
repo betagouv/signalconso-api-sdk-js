@@ -8,10 +8,77 @@
       reponseconsoCode:
         - '210'
         - '220'
+        - titre: Le prix
+          example: 'Exemple : Il manque les prix, fausse réduction de prix, soldes, promotion'
+          subcategories:
+            - title: Il manque des prix / les prix sont illisibles
+              ccrfCode:
+                - '163'
+              description: 'Votre droit : tous les prix doivent être affichés.'
+              reponseconsoCode:
+                - '212'
+                - '210'
+                - '224'
+              detailInputs:
+                - label: Veuillez préciser
+                  rank: 1
+                  type: RADIO
+                  options:
+                    - Prix pas affiché
+                    - Prix illisible
+                    - Autre (à préciser)
+                - label: Date du constat
+                  rank: 2
+                  type: DATE
+                  defaultValue: SYSDATE
+                - label: Description
+                  example: Précisez si possible le rayon concerné
+                  rank: 3
+                  type: TEXTAREA
+            - title: Les prix sont plus élevés qu'ailleurs
+              information:
+                title: Les commerçants ont le droit de choisir leurs prix.
+                outOfScope: true
+                content: "Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter.
+              <br/> Par exemple, il est autorisé de vendre une bouteille d'eau à 8 euros ou une baguette de pain à 5 euros. C'est au consommateur de bien regarder les prix avant d'acheter.
+              <br/><br/><b>Le saviez-vous ?</b>
+              <br/> Il existe quelques exceptions à ce principe. Certains prix sont réglementés, c'est-à-dire qu'ils sont encadrés par la loi.
+              <br/> Par exemple, le prix des livres est réglementé.
+              <br/><br/> Un commerçant n'a pas le droit de vendre à un prix trop bas : il ne peut pas vendre un produit moins cher que ce qu'il lui a coûté. Il existe quelques situations où il a le droit de vendre en dessous du prix d'achat, comme la période des soldes."
+            - title: Fausse réduction de prix
+              example: 'Exemple : fausse promotion pendant les soldes, faux temps limite, fausse liquidation totale'
+              ccrfCode:
+                - '145'
+                - '23F'
+                - '146'
+              reponseconsoCode:
+                - '224'
+                - '210'
+                - '212'
+              description: "<br/><br/><b>Soldes :</b> Les dates des soldes sont encadrées par la loi. Ces dates sont valables pour les magasins et aussi pour la vente sur internet.
+            <br/><br/><b>Liquidation :</b> les liquidations sont soumises à déclaration préalable auprès du maire de la commune où a lieu cette opération.
+            Un document prouvant cette déclaration doit être affichée dans le magasin, pendant toute la durée de la liquidation. Ce document est souvent affiché sur la vitrine car il doit être visible de la rue.'"
+              detailInputs:
+                - label: "Il s'agit d'un problème sur:"
+                  rank: 1
+                  type: RADIO
+                  options:
+                    - Les soldes
+                    - Une promotion
+                    - Une liquidation
+                    - Autre (à préciser)
+                - label: Date du constat
+                  rank: 2
+                  type: DATE
+                  defaultValue: SYSDATE
+                - label: Description
+                  example: Précisez si possible le problème
+                  rank: 3
+                  type: TEXTAREA
     - title: Une commande effectuée
       example: 'Exemple : commande jamais livrée, produit non conforme'
       ccrfCode:
-        - '220' 
+        - '220'
       reponseconsoCode:
         - '433'
         - '464'
@@ -23,42 +90,42 @@
         - Produit dangereux
       subcategories:
         - title: Produit alimentaire
-          tags: 
+          tags:
             - Produit alimentaire
           reponseconsoCode:
           subcategories: !!import/single ../common/produit-alimentaire.yml
         - title: Jouet, puériculture, matériel scolaire
-          tags: 
+          tags:
             - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Cosmétique, produit d'hygiène, produit de tatouage
-          tags: 
+          tags:
             - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Vêtement, textile, sac à main, bijou
-          tags: 
+          tags:
             - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Équipement de protection
-          tags: 
+          tags:
             - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Feu d'artifice
-          tags: 
+          tags:
             - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Meuble
-          tags: 
+          tags:
             - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Produit d'entretien, produit chimique, engrais
-          tags: 
+          tags:
             - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
@@ -87,7 +154,7 @@
           subcategories:
             - title: Le prix à la caisse est différent du prix affiché
               ccrfCode:
-                - '163' 
+                - '163'
               example: 'Exemple : le prix à la caisse est de 5 euros alors que le prix affiché en rayon est de 3 euros'
               reponseconsoCode:
                 - '212'
@@ -767,12 +834,12 @@
         - title: C'est un aliment ou une boisson
           example: 'Exemple : bonbon, viande, pain, conserve, vin, eau en bouteille'
           subcategories: !!import/single ../common/nourriture.yml
-          tags: 
+          tags:
             - Produit Alimenaire
         - title: C'est un objet
           example: 'Exemple : jouet, électroménager, vêtement, savon, vaisselle, meuble'
           subcategories: !!import/single ../common/objet.yml
-          tags: 
+          tags:
             - Produit industriel
     - title: Un produit dangereux
       example: 'Exemple : jouet, cosmétique'
@@ -781,40 +848,40 @@
         - Produit dangereux
       subcategories:
         - title: Produit alimentaire
-          subcategories: !!import/single ../common/produit-alimentaire.yml          
-          tags : 
+          subcategories: !!import/single ../common/produit-alimentaire.yml
+          tags:
             - Produit alimentaire
         - title: Jouet, puériculture, matériel scolaire
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
-          tags : 
+          tags:
             - Produit industriel
         - title: Cosmétique, produit d'hygiène, produit de tatouage
           ccrfCode:
             - '34A'
-          tags : 
+          tags:
             - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Vêtement, textile, sac à main, bijou
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
-          tags : 
+          tags:
             - Produit industriel
         - title: Équipement de protection
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
-          tags : 
+          tags:
             - Produit industriel
         - title: Feu d'artifice
           subcategoriesTitle: Quel est le risque&#160;?
-          subcategories: !!import/single ../common/produit-dangereux.yml          
-          tags : 
+          subcategories: !!import/single ../common/produit-dangereux.yml
+          tags:
             - Produit industriel
         - title: Meuble
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
-          tags : 
+          tags:
             - Produit industriel
         - title: Produit d'entretien, produit chimique, engrais
           subcategoriesTitle: Quel est le risque&#160;?
@@ -824,21 +891,21 @@
             - '348'
             - '349'
             - '342'
-          tags : 
+          tags:
             - Produit industriel
         - title: Appareil électrique
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
           ccrfCode:
             - '34F'
-          tags : 
+          tags:
             - Produit industriel
         - title: Outil
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
           ccrfCode:
-            - '34F'          
-          tags : 
+            - '34F'
+          tags:
             - Produit industriel
         - title: Autre
           subcategoriesTitle: Quel est le risque&#160;?
@@ -854,7 +921,7 @@
   subcategories:
     - title: C'est un aliment ou une boisson
       example: 'Exemple : bonbon, viande, pain, conserve, vin, eau en bouteille'
-      tags: 
+      tags:
         - Produit alimentaire
       detailInputs:
         - label: Que s'est-il passé ?
@@ -876,7 +943,7 @@
           defaultValue: SYSDATE
     - title: C'est un objet
       example: 'Exemple : jouet, électroménager, vêtement, savon, vaisselle, meuble'
-      tags: 
+      tags:
         - Produit industriel
       detailInputs:
         - label: Que s'est-il passé ?
@@ -903,51 +970,51 @@
         - Produit dangereux
       subcategories:
         - title: Produit alimentaire
-          tags: 
+          tags:
             - Produit alimentaire
           subcategories: !!import/single ../common/produit-alimentaire.yml
         - title: Jouet, puériculture, matériel scolaire
-          tags: 
+          tags:
             - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Cosmétique, produit d'hygiène, produit de tatouage
-          tags: 
+          tags:
             - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Vêtement, textile, sac à main, bijou
-          tags: 
+          tags:
             - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Équipement de protection
-          tags: 
+          tags:
             - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Feu d'artifice
-          tags: 
+          tags:
             - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Meuble
-          tags: 
+          tags:
             - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Produit d'entretien, produit chimique, engrais
-          tags: 
+          tags:
             - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Appareil électrique
-          tags: 
+          tags:
             - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Outil
-          tags: 
+          tags:
             - Produit industriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
