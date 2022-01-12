@@ -18,7 +18,7 @@
          reponseconsoCode:
            - '212'
            - '210'
-          - '224'
+           - '224'
          detailInputs:
           - label: Veuillez préciser
             rank: 1
