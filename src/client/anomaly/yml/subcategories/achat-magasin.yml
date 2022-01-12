@@ -22,7 +22,7 @@
          detailInputs:
           - label: Veuillez préciser
             rank: 1
-             type: RADIO
+            type: RADIO
             options:
               - Prix pas affiché
               - Prix illisible
