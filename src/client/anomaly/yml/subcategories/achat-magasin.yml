@@ -9,32 +9,32 @@
         ccrfCode:
           - '23B'
         reponseconsoCode:
-         - '210'
-         - '220'
-       - title: Il manque des prix / les prix sont illisibles
-             ccrfCode:
-               - '163'
-             description: 'Votre droit : tous les prix doivent être affichés sans que vous soyez obligé de les demander.'
-             reponseconsoCode:
-               - '212'
-               - '210'
-               - '224'
-             detailInputs:
-               - label: Veuillez préciser
-                 rank: 1
-                 type: RADIO
-                 options:
-                   - Prix pas affiché
-                   - Prix illisible
-                   - Autre (à préciser)
-               - label: Date du constat
-                 rank: 2
-                 type: DATE
-                 defaultValue: SYSDATE
-               - label: Description
-                 example: Précisez si possible le rayon concerné
-                 rank: 3
-                 type: TEXTAREA
+          - '210'
+          - '220'
+      - title: Il manque des prix / les prix sont illisibles
+        ccrfCode:
+          - '163'
+        description: 'Votre droit : tous les prix doivent être affichés sans que vous soyez obligé de les demander.'
+        reponseconsoCode:
+          - '212'
+          - '210'
+          - '224'
+        detailInputs:
+         - label: Veuillez préciser
+           rank: 1
+           type: RADIO
+           options:
+              - Prix pas affiché
+              - Prix illisible
+              - Autre (à préciser)
+         - label: Date du constat
+           rank: 2
+           type: DATE
+           defaultValue: SYSDATE
+         - label: Description
+           example: Précisez si possible le rayon concerné
+           rank: 3
+           type: TEXTAREA
         - title: Les prix sont plus élevés qu'ailleurs
           information:
           title: Les commerçants ont le droit de choisir leurs prix.
@@ -48,13 +48,13 @@
         - title: Fausse réduction de prix
           example: 'Exemple : fausse promotion pendant les soldes, faux temps limite, fausse liquidation totale'
           ccrfCode:
-          - '145'
-          - '23F'
-          - '146'
+            - '145'
+            - '23F'
+            - '146'
           reponseconsoCode:
-           - '224'
-           - '210'
-           - '212'
+             - '224'
+             - '210'
+             - '212'
            description:
            <br/><br/><b>Soldes :</b> Les dates des soldes sont encadrées par la loi. Ces dates sont valables pour les magasins et aussi pour la vente sur internet.
            <br/><br/><b>Liquidation :</b> les liquidations sont soumises à déclaration préalable auprès du maire de la commune où a lieu cette opération.
@@ -64,18 +64,18 @@
            rank: 1
            type: RADIO
            options:
-            - Les soldes
-            - Une promotion
-            - Une liquidation
-            - Autre (à préciser)
+             - Les soldes
+             - Une promotion
+             - Une liquidation
+             - Autre (à préciser)
            - label: Date du constat
              rank: 2
              type: DATE
              defaultValue: SYSDATE
-            - label: Description
-              example: Précisez si possible le problème
-              rank: 3
-              type: TEXTAREA
+           - label: Description
+             example: Précisez si possible le problème
+             rank: 3
+             type: TEXTAREA
     - title: Une commande effectuée
       example: 'Exemple : commande jamais livrée, produit non conforme'
       ccrfCode:
