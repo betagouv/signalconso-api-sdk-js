@@ -26,7 +26,7 @@
 - title: J’ai répondu à un SMS ou j’ai rappelé un numéro qui était payant sans le savoir
   companyKind: PHONE
   information: !!import/single ../common/info/called-paid-number.yml
-- title: Je souahite contacter le Service Relation Consommateur de Bloctel
+- title: Je souhaite contacter le Service Relation Consommateur de Bloctel
   example: "Question sur gestion de mon compte Bloctel, gérer mes données personnelles sur Bloctel"
   companyKind: PHONE
   information:
