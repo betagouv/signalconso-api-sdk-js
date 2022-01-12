@@ -8,33 +8,33 @@
       reponseconsoCode:
         - '210'
         - '220'
-    - titre: Le prix
-      example: 'Exemple : Il manque les prix, fausse réduction de prix, soldes, promotion'
-      subcategories:
-      - title: Il manque des prix / les prix sont illisibles
-        ccrfCode:
-         - '163'
-       description: 'Votre droit : tous les prix doivent être affichés.'
-       reponseconsoCode:
-         - '212'
-         - '210'
-         - '224'
-        detailInputs:
-         - label: Veuillez préciser
-          rank: 1
-          type: RADIO
-          options:
-            - Prix pas affiché
-            - Prix illisible
-            - Autre (à préciser)
-        - label: Date du constat
-          rank: 2
-          type: DATE
-          defaultValue: SYSDATE
-         - label: Description
-          example: Précisez si possible le rayon concerné
-           rank: 3
-          type: TEXTAREA
+      - titre: Le prix
+        example: 'Exemple : Il manque les prix, fausse réduction de prix, soldes, promotion'
+        subcategories:
+        - title: Il manque des prix / les prix sont illisibles
+          ccrfCode:
+           - '163'
+         description: 'Votre droit : tous les prix doivent être affichés.'
+         reponseconsoCode:
+           - '212'
+           - '210'
+          - '224'
+         detailInputs:
+          - label: Veuillez préciser
+            rank: 1
+             type: RADIO
+            options:
+              - Prix pas affiché
+              - Prix illisible
+              - Autre (à préciser)
+          - label: Date du constat
+            rank: 2
+            type: DATE
+            defaultValue: SYSDATE
+          - label: Description
+            example: Précisez si possible le rayon concerné
+            rank: 3
+            type: TEXTAREA
      - title: Les prix sont plus élevés qu'ailleurs
        information:
        title: Les commerçants ont le droit de choisir leurs prix.
