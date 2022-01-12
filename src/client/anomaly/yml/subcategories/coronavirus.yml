@@ -86,9 +86,9 @@
       fileLabel: Photo du produit si possible
 - title: Le prix de l'autotest est trop élevé
   reponseconsoCode:
-  - '212'
+    - '212'
   tags:
-  - ReponseConso
+    - ReponseConso
   subcategories:
     - title: Le prix de l'autotest
       description: Le prix de l'auto que je réalise moi-même (<a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043575801/" target="_blank"/>voir décret</a>). Pour un consommateur, le prix maximal est&nbsp;:&nbsp;
