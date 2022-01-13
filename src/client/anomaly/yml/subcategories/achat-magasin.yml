@@ -8,7 +8,7 @@
       reponseconsoCode:
         - '210'
         - '220'
-    - titre: Le prix
+    - title: Le prix
       example: 'Exemple : Il manque les prix, fausse réduction de prix, soldes, promotion'
       subcategories:
         - title: Il manque des prix / les prix sont illisibles
