@@ -1242,99 +1242,103 @@
               ],
               "reponseconsoCode": [
                 "210",
-                "220",
-                {
-                  "titre": "Le prix",
-                  "example": "Exemple : Il manque les prix, fausse réduction de prix, soldes, promotion",
-                  "subcategories": [
-                    {
-                      "title": "Il manque des prix / les prix sont illisibles",
-                      "ccrfCode": [
-                        "163"
-                      ],
-                      "description": "Votre droit : tous les prix doivent être affichés.",
-                      "reponseconsoCode": [
-                        "212",
-                        "210",
-                        "224"
-                      ],
-                      "detailInputs": [
-                        {
-                          "label": "Veuillez préciser",
-                          "rank": 1,
-                          "type": "RADIO",
-                          "options": [
-                            "Prix pas affiché",
-                            "Prix illisible",
-                            "Autre (à préciser)"
-                          ]
-                        },
-                        {
-                          "label": "Date du constat",
-                          "rank": 2,
-                          "type": "DATE",
-                          "defaultValue": "SYSDATE"
-                        },
-                        {
-                          "label": "Description",
-                          "example": "Précisez si possible le rayon concerné",
-                          "rank": 3,
-                          "type": "TEXTAREA"
-                        }
-                      ]
-                    },
-                    {
-                      "title": "Les prix sont plus élevés qu'ailleurs",
-                      "information": {
-                        "title": "Les commerçants ont le droit de choisir leurs prix.",
-                        "outOfScope": true,
-                        "content": "Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter. <br/> Par exemple, il est autorisé de vendre une bouteille d'eau à 8 euros ou une baguette de pain à 5 euros. C'est au consommateur de bien regarder les prix avant d'acheter. <br/><br/><b>Le saviez-vous ?</b> <br/> Il existe quelques exceptions à ce principe. Certains prix sont réglementés, c'est-à-dire qu'ils sont encadrés par la loi. <br/> Par exemple, le prix des livres est réglementé. <br/><br/> Un commerçant n'a pas le droit de vendre à un prix trop bas : il ne peut pas vendre un produit moins cher que ce qu'il lui a coûté. Il existe quelques situations où il a le droit de vendre en dessous du prix d'achat, comme la période des soldes."
-                      }
-                    },
-                    {
-                      "title": "Fausse réduction de prix",
-                      "example": "Exemple : fausse promotion pendant les soldes, faux temps limite, fausse liquidation totale",
-                      "ccrfCode": [
-                        "145",
-                        "23F",
-                        "146"
-                      ],
-                      "reponseconsoCode": [
-                        "224",
-                        "210",
-                        "212"
-                      ],
-                      "description": "<br/><br/><b>Soldes :</b> Les dates des soldes sont encadrées par la loi. Ces dates sont valables pour les magasins et aussi pour la vente sur internet. <br/><br/><b>Liquidation :</b> les liquidations sont soumises à déclaration préalable auprès du maire de la commune où a lieu cette opération. Un document prouvant cette déclaration doit être affichée dans le magasin, pendant toute la durée de la liquidation. Ce document est souvent affiché sur la vitrine car il doit être visible de la rue.'",
-                      "detailInputs": [
-                        {
-                          "label": "Il s'agit d'un problème sur:",
-                          "rank": 1,
-                          "type": "RADIO",
-                          "options": [
-                            "Les soldes",
-                            "Une promotion",
-                            "Une liquidation",
-                            "Autre (à préciser)"
-                          ]
-                        },
-                        {
-                          "label": "Date du constat",
-                          "rank": 2,
-                          "type": "DATE",
-                          "defaultValue": "SYSDATE"
-                        },
-                        {
-                          "label": "Description",
-                          "example": "Précisez si possible le problème",
-                          "rank": 3,
-                          "type": "TEXTAREA"
-                        }
-                      ]
-                    }
-                  ]
-                }
+                "220"
               ],
               "id": "1.2-1.1"
+            },
+            {
+              "titre": "Le prix",
+              "example": "Exemple : Il manque les prix, fausse réduction de prix, soldes, promotion",
+              "subcategories": [
+                {
+                  "title": "Il manque des prix / les prix sont illisibles",
+                  "ccrfCode": [
+                    "163"
+                  ],
+                  "description": "Votre droit : tous les prix doivent être affichés.",
+                  "reponseconsoCode": [
+                    "212",
+                    "210",
+                    "224"
+                  ],
+                  "detailInputs": [
+                    {
+                      "label": "Veuillez préciser",
+                      "rank": 1,
+                      "type": "RADIO",
+                      "options": [
+                        "Prix pas affiché",
+                        "Prix illisible",
+                        "Autre (à préciser)"
+                      ]
+                    },
+                    {
+                      "label": "Date du constat",
+                      "rank": 2,
+                      "type": "DATE",
+                      "defaultValue": "SYSDATE"
+                    },
+                    {
+                      "label": "Description",
+                      "example": "Précisez si possible le rayon concerné",
+                      "rank": 3,
+                      "type": "TEXTAREA"
+                    }
+                  ],
+                  "id": "1.2-1.2.1"
+                },
+                {
+                  "title": "Les prix sont plus élevés qu'ailleurs",
+                  "information": {
+                    "title": "Les commerçants ont le droit de choisir leurs prix.",
+                    "outOfScope": true,
+                    "content": "Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter. <br/> Par exemple, il est autorisé de vendre une bouteille d'eau à 8 euros ou une baguette de pain à 5 euros. C'est au consommateur de bien regarder les prix avant d'acheter. <br/><br/><b>Le saviez-vous ?</b> <br/> Il existe quelques exceptions à ce principe. Certains prix sont réglementés, c'est-à-dire qu'ils sont encadrés par la loi. <br/> Par exemple, le prix des livres est réglementé. <br/><br/> Un commerçant n'a pas le droit de vendre à un prix trop bas : il ne peut pas vendre un produit moins cher que ce qu'il lui a coûté. Il existe quelques situations où il a le droit de vendre en dessous du prix d'achat, comme la période des soldes."
+                  },
+                  "id": "1.2-1.2.2"
+                },
+                {
+                  "title": "Fausse réduction de prix",
+                  "example": "Exemple : fausse promotion pendant les soldes, faux temps limite, fausse liquidation totale",
+                  "ccrfCode": [
+                    "145",
+                    "23F",
+                    "146"
+                  ],
+                  "reponseconsoCode": [
+                    "224",
+                    "210",
+                    "212"
+                  ],
+                  "description": "<br/><br/><b>Soldes :</b> Les dates des soldes sont encadrées par la loi. Ces dates sont valables pour les magasins et aussi pour la vente sur internet. <br/><br/><b>Liquidation :</b> les liquidations sont soumises à déclaration préalable auprès du maire de la commune où a lieu cette opération. Un document prouvant cette déclaration doit être affichée dans le magasin, pendant toute la durée de la liquidation. Ce document est souvent affiché sur la vitrine car il doit être visible de la rue.'",
+                  "detailInputs": [
+                    {
+                      "label": "Il s'agit d'un problème sur:",
+                      "rank": 1,
+                      "type": "RADIO",
+                      "options": [
+                        "Les soldes",
+                        "Une promotion",
+                        "Une liquidation",
+                        "Autre (à préciser)"
+                      ]
+                    },
+                    {
+                      "label": "Date du constat",
+                      "rank": 2,
+                      "type": "DATE",
+                      "defaultValue": "SYSDATE"
+                    },
+                    {
+                      "label": "Description",
+                      "example": "Précisez si possible le problème",
+                      "rank": 3,
+                      "type": "TEXTAREA"
+                    }
+                  ],
+                  "id": "1.2-1.2.3"
+                }
+              ],
+              "id": "1.2-1.2"
             },
             {
               "title": "Une commande effectuée",
@@ -1347,7 +1351,7 @@
                 "464",
                 "220"
               ],
-              "id": "1.2-1.2"
+              "id": "1.2-1.3"
             },
             {
               "title": "Un produit dangereux",
@@ -1435,7 +1439,7 @@
                             "322",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.1.1"
+                          "id": "1.2-1.4.1.1.1"
                         },
                         {
                           "title": "Etouffement",
@@ -1498,7 +1502,7 @@
                             "274",
                             "210"
                           ],
-                          "id": "1.2-1.3.1.1.2"
+                          "id": "1.2-1.4.1.1.2"
                         },
                         {
                           "title": "Blessure physique",
@@ -1558,7 +1562,7 @@
                           "reponseconsoCode": [
                             "311"
                           ],
-                          "id": "1.2-1.3.1.1.3"
+                          "id": "1.2-1.4.1.1.3"
                         },
                         {
                           "title": "Mauvaise odeur, goût étrange, couleur suspecte",
@@ -1620,7 +1624,7 @@
                             "322",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.1.4"
+                          "id": "1.2-1.4.1.1.4"
                         },
                         {
                           "title": "Aliment pourri ou moisi",
@@ -1682,7 +1686,7 @@
                             "323",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.1.5"
+                          "id": "1.2-1.4.1.1.5"
                         },
                         {
                           "title": "Allergie",
@@ -1746,7 +1750,7 @@
                             "2734",
                             "2732"
                           ],
-                          "id": "1.2-1.3.1.1.6"
+                          "id": "1.2-1.4.1.1.6"
                         },
                         {
                           "title": "Emballage déformé",
@@ -1810,7 +1814,7 @@
                             "322",
                             "340"
                           ],
-                          "id": "1.2-1.3.1.1.7"
+                          "id": "1.2-1.4.1.1.7"
                         },
                         {
                           "title": "Autre",
@@ -1872,10 +1876,10 @@
                             "322",
                             "323"
                           ],
-                          "id": "1.2-1.3.1.1.8"
+                          "id": "1.2-1.4.1.1.8"
                         }
                       ],
-                      "id": "1.2-1.3.1.1"
+                      "id": "1.2-1.4.1.1"
                     },
                     {
                       "title": "Complément alimentaire",
@@ -1948,7 +1952,7 @@
                             "322",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.2.1"
+                          "id": "1.2-1.4.1.2.1"
                         },
                         {
                           "title": "Etouffement",
@@ -2011,7 +2015,7 @@
                             "274",
                             "210"
                           ],
-                          "id": "1.2-1.3.1.2.2"
+                          "id": "1.2-1.4.1.2.2"
                         },
                         {
                           "title": "Blessure physique",
@@ -2071,7 +2075,7 @@
                           "reponseconsoCode": [
                             "311"
                           ],
-                          "id": "1.2-1.3.1.2.3"
+                          "id": "1.2-1.4.1.2.3"
                         },
                         {
                           "title": "Mauvaise odeur, goût étrange, couleur suspecte",
@@ -2133,7 +2137,7 @@
                             "322",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.2.4"
+                          "id": "1.2-1.4.1.2.4"
                         },
                         {
                           "title": "Aliment pourri ou moisi",
@@ -2195,7 +2199,7 @@
                             "323",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.2.5"
+                          "id": "1.2-1.4.1.2.5"
                         },
                         {
                           "title": "Allergie",
@@ -2259,7 +2263,7 @@
                             "2734",
                             "2732"
                           ],
-                          "id": "1.2-1.3.1.2.6"
+                          "id": "1.2-1.4.1.2.6"
                         },
                         {
                           "title": "Emballage déformé",
@@ -2323,7 +2327,7 @@
                             "322",
                             "340"
                           ],
-                          "id": "1.2-1.3.1.2.7"
+                          "id": "1.2-1.4.1.2.7"
                         },
                         {
                           "title": "Autre",
@@ -2385,10 +2389,10 @@
                             "322",
                             "323"
                           ],
-                          "id": "1.2-1.3.1.2.8"
+                          "id": "1.2-1.4.1.2.8"
                         }
                       ],
-                      "id": "1.2-1.3.1.2"
+                      "id": "1.2-1.4.1.2"
                     },
                     {
                       "title": "Alcool",
@@ -2462,7 +2466,7 @@
                             "322",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.3.1"
+                          "id": "1.2-1.4.1.3.1"
                         },
                         {
                           "title": "Etouffement",
@@ -2525,7 +2529,7 @@
                             "274",
                             "210"
                           ],
-                          "id": "1.2-1.3.1.3.2"
+                          "id": "1.2-1.4.1.3.2"
                         },
                         {
                           "title": "Blessure physique",
@@ -2585,7 +2589,7 @@
                           "reponseconsoCode": [
                             "311"
                           ],
-                          "id": "1.2-1.3.1.3.3"
+                          "id": "1.2-1.4.1.3.3"
                         },
                         {
                           "title": "Mauvaise odeur, goût étrange, couleur suspecte",
@@ -2647,7 +2651,7 @@
                             "322",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.3.4"
+                          "id": "1.2-1.4.1.3.4"
                         },
                         {
                           "title": "Aliment pourri ou moisi",
@@ -2709,7 +2713,7 @@
                             "323",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.3.5"
+                          "id": "1.2-1.4.1.3.5"
                         },
                         {
                           "title": "Allergie",
@@ -2773,7 +2777,7 @@
                             "2734",
                             "2732"
                           ],
-                          "id": "1.2-1.3.1.3.6"
+                          "id": "1.2-1.4.1.3.6"
                         },
                         {
                           "title": "Emballage déformé",
@@ -2837,7 +2841,7 @@
                             "322",
                             "340"
                           ],
-                          "id": "1.2-1.3.1.3.7"
+                          "id": "1.2-1.4.1.3.7"
                         },
                         {
                           "title": "Autre",
@@ -2899,10 +2903,10 @@
                             "322",
                             "323"
                           ],
-                          "id": "1.2-1.3.1.3.8"
+                          "id": "1.2-1.4.1.3.8"
                         }
                       ],
-                      "id": "1.2-1.3.1.3"
+                      "id": "1.2-1.4.1.3"
                     },
                     {
                       "title": "Produit pour bébé",
@@ -2976,7 +2980,7 @@
                             "322",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.4.1"
+                          "id": "1.2-1.4.1.4.1"
                         },
                         {
                           "title": "Etouffement",
@@ -3039,7 +3043,7 @@
                             "274",
                             "210"
                           ],
-                          "id": "1.2-1.3.1.4.2"
+                          "id": "1.2-1.4.1.4.2"
                         },
                         {
                           "title": "Blessure physique",
@@ -3099,7 +3103,7 @@
                           "reponseconsoCode": [
                             "311"
                           ],
-                          "id": "1.2-1.3.1.4.3"
+                          "id": "1.2-1.4.1.4.3"
                         },
                         {
                           "title": "Mauvaise odeur, goût étrange, couleur suspecte",
@@ -3161,7 +3165,7 @@
                             "322",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.4.4"
+                          "id": "1.2-1.4.1.4.4"
                         },
                         {
                           "title": "Aliment pourri ou moisi",
@@ -3223,7 +3227,7 @@
                             "323",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.4.5"
+                          "id": "1.2-1.4.1.4.5"
                         },
                         {
                           "title": "Allergie",
@@ -3287,7 +3291,7 @@
                             "2734",
                             "2732"
                           ],
-                          "id": "1.2-1.3.1.4.6"
+                          "id": "1.2-1.4.1.4.6"
                         },
                         {
                           "title": "Emballage déformé",
@@ -3351,7 +3355,7 @@
                             "322",
                             "340"
                           ],
-                          "id": "1.2-1.3.1.4.7"
+                          "id": "1.2-1.4.1.4.7"
                         },
                         {
                           "title": "Autre",
@@ -3413,17 +3417,17 @@
                             "322",
                             "323"
                           ],
-                          "id": "1.2-1.3.1.4.8"
+                          "id": "1.2-1.4.1.4.8"
                         }
                       ],
-                      "id": "1.2-1.3.1.4"
+                      "id": "1.2-1.4.1.4"
                     },
                     {
                       "title": "Fruit ou légume",
                       "tags": [
                         "Produit alimentaire"
                       ],
-                      "id": "1.2-1.3.1.5"
+                      "id": "1.2-1.4.1.5"
                     },
                     {
                       "title": "Viande, poisson, produit de la mer, oeuf",
@@ -3496,7 +3500,7 @@
                             "322",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.6.1"
+                          "id": "1.2-1.4.1.6.1"
                         },
                         {
                           "title": "Etouffement",
@@ -3559,7 +3563,7 @@
                             "274",
                             "210"
                           ],
-                          "id": "1.2-1.3.1.6.2"
+                          "id": "1.2-1.4.1.6.2"
                         },
                         {
                           "title": "Blessure physique",
@@ -3619,7 +3623,7 @@
                           "reponseconsoCode": [
                             "311"
                           ],
-                          "id": "1.2-1.3.1.6.3"
+                          "id": "1.2-1.4.1.6.3"
                         },
                         {
                           "title": "Mauvaise odeur, goût étrange, couleur suspecte",
@@ -3681,7 +3685,7 @@
                             "322",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.6.4"
+                          "id": "1.2-1.4.1.6.4"
                         },
                         {
                           "title": "Aliment pourri ou moisi",
@@ -3743,7 +3747,7 @@
                             "323",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.6.5"
+                          "id": "1.2-1.4.1.6.5"
                         },
                         {
                           "title": "Allergie",
@@ -3807,7 +3811,7 @@
                             "2734",
                             "2732"
                           ],
-                          "id": "1.2-1.3.1.6.6"
+                          "id": "1.2-1.4.1.6.6"
                         },
                         {
                           "title": "Emballage déformé",
@@ -3871,7 +3875,7 @@
                             "322",
                             "340"
                           ],
-                          "id": "1.2-1.3.1.6.7"
+                          "id": "1.2-1.4.1.6.7"
                         },
                         {
                           "title": "Autre",
@@ -3933,10 +3937,10 @@
                             "322",
                             "323"
                           ],
-                          "id": "1.2-1.3.1.6.8"
+                          "id": "1.2-1.4.1.6.8"
                         }
                       ],
-                      "id": "1.2-1.3.1.6"
+                      "id": "1.2-1.4.1.6"
                     },
                     {
                       "title": "Lait et dérivé",
@@ -4010,7 +4014,7 @@
                             "322",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.7.1"
+                          "id": "1.2-1.4.1.7.1"
                         },
                         {
                           "title": "Etouffement",
@@ -4073,7 +4077,7 @@
                             "274",
                             "210"
                           ],
-                          "id": "1.2-1.3.1.7.2"
+                          "id": "1.2-1.4.1.7.2"
                         },
                         {
                           "title": "Blessure physique",
@@ -4133,7 +4137,7 @@
                           "reponseconsoCode": [
                             "311"
                           ],
-                          "id": "1.2-1.3.1.7.3"
+                          "id": "1.2-1.4.1.7.3"
                         },
                         {
                           "title": "Mauvaise odeur, goût étrange, couleur suspecte",
@@ -4195,7 +4199,7 @@
                             "322",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.7.4"
+                          "id": "1.2-1.4.1.7.4"
                         },
                         {
                           "title": "Aliment pourri ou moisi",
@@ -4257,7 +4261,7 @@
                             "323",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.7.5"
+                          "id": "1.2-1.4.1.7.5"
                         },
                         {
                           "title": "Allergie",
@@ -4321,7 +4325,7 @@
                             "2734",
                             "2732"
                           ],
-                          "id": "1.2-1.3.1.7.6"
+                          "id": "1.2-1.4.1.7.6"
                         },
                         {
                           "title": "Emballage déformé",
@@ -4385,7 +4389,7 @@
                             "322",
                             "340"
                           ],
-                          "id": "1.2-1.3.1.7.7"
+                          "id": "1.2-1.4.1.7.7"
                         },
                         {
                           "title": "Autre",
@@ -4447,10 +4451,10 @@
                             "322",
                             "323"
                           ],
-                          "id": "1.2-1.3.1.7.8"
+                          "id": "1.2-1.4.1.7.8"
                         }
                       ],
-                      "id": "1.2-1.3.1.7"
+                      "id": "1.2-1.4.1.7"
                     },
                     {
                       "title": "Produit sec",
@@ -4524,7 +4528,7 @@
                             "322",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.8.1"
+                          "id": "1.2-1.4.1.8.1"
                         },
                         {
                           "title": "Etouffement",
@@ -4587,7 +4591,7 @@
                             "274",
                             "210"
                           ],
-                          "id": "1.2-1.3.1.8.2"
+                          "id": "1.2-1.4.1.8.2"
                         },
                         {
                           "title": "Blessure physique",
@@ -4647,7 +4651,7 @@
                           "reponseconsoCode": [
                             "311"
                           ],
-                          "id": "1.2-1.3.1.8.3"
+                          "id": "1.2-1.4.1.8.3"
                         },
                         {
                           "title": "Mauvaise odeur, goût étrange, couleur suspecte",
@@ -4709,7 +4713,7 @@
                             "322",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.8.4"
+                          "id": "1.2-1.4.1.8.4"
                         },
                         {
                           "title": "Aliment pourri ou moisi",
@@ -4771,7 +4775,7 @@
                             "323",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.8.5"
+                          "id": "1.2-1.4.1.8.5"
                         },
                         {
                           "title": "Allergie",
@@ -4835,7 +4839,7 @@
                             "2734",
                             "2732"
                           ],
-                          "id": "1.2-1.3.1.8.6"
+                          "id": "1.2-1.4.1.8.6"
                         },
                         {
                           "title": "Emballage déformé",
@@ -4899,7 +4903,7 @@
                             "322",
                             "340"
                           ],
-                          "id": "1.2-1.3.1.8.7"
+                          "id": "1.2-1.4.1.8.7"
                         },
                         {
                           "title": "Autre",
@@ -4961,10 +4965,10 @@
                             "322",
                             "323"
                           ],
-                          "id": "1.2-1.3.1.8.8"
+                          "id": "1.2-1.4.1.8.8"
                         }
                       ],
-                      "id": "1.2-1.3.1.8"
+                      "id": "1.2-1.4.1.8"
                     },
                     {
                       "title": "Plat ou dessert préparé",
@@ -5037,7 +5041,7 @@
                             "322",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.9.1"
+                          "id": "1.2-1.4.1.9.1"
                         },
                         {
                           "title": "Etouffement",
@@ -5100,7 +5104,7 @@
                             "274",
                             "210"
                           ],
-                          "id": "1.2-1.3.1.9.2"
+                          "id": "1.2-1.4.1.9.2"
                         },
                         {
                           "title": "Blessure physique",
@@ -5160,7 +5164,7 @@
                           "reponseconsoCode": [
                             "311"
                           ],
-                          "id": "1.2-1.3.1.9.3"
+                          "id": "1.2-1.4.1.9.3"
                         },
                         {
                           "title": "Mauvaise odeur, goût étrange, couleur suspecte",
@@ -5222,7 +5226,7 @@
                             "322",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.9.4"
+                          "id": "1.2-1.4.1.9.4"
                         },
                         {
                           "title": "Aliment pourri ou moisi",
@@ -5284,7 +5288,7 @@
                             "323",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.9.5"
+                          "id": "1.2-1.4.1.9.5"
                         },
                         {
                           "title": "Allergie",
@@ -5348,7 +5352,7 @@
                             "2734",
                             "2732"
                           ],
-                          "id": "1.2-1.3.1.9.6"
+                          "id": "1.2-1.4.1.9.6"
                         },
                         {
                           "title": "Emballage déformé",
@@ -5412,7 +5416,7 @@
                             "322",
                             "340"
                           ],
-                          "id": "1.2-1.3.1.9.7"
+                          "id": "1.2-1.4.1.9.7"
                         },
                         {
                           "title": "Autre",
@@ -5474,10 +5478,10 @@
                             "322",
                             "323"
                           ],
-                          "id": "1.2-1.3.1.9.8"
+                          "id": "1.2-1.4.1.9.8"
                         }
                       ],
-                      "id": "1.2-1.3.1.9"
+                      "id": "1.2-1.4.1.9"
                     },
                     {
                       "title": "Autre",
@@ -5550,7 +5554,7 @@
                             "322",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.10.1"
+                          "id": "1.2-1.4.1.10.1"
                         },
                         {
                           "title": "Etouffement",
@@ -5613,7 +5617,7 @@
                             "274",
                             "210"
                           ],
-                          "id": "1.2-1.3.1.10.2"
+                          "id": "1.2-1.4.1.10.2"
                         },
                         {
                           "title": "Blessure physique",
@@ -5673,7 +5677,7 @@
                           "reponseconsoCode": [
                             "311"
                           ],
-                          "id": "1.2-1.3.1.10.3"
+                          "id": "1.2-1.4.1.10.3"
                         },
                         {
                           "title": "Mauvaise odeur, goût étrange, couleur suspecte",
@@ -5735,7 +5739,7 @@
                             "322",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.10.4"
+                          "id": "1.2-1.4.1.10.4"
                         },
                         {
                           "title": "Aliment pourri ou moisi",
@@ -5797,7 +5801,7 @@
                             "323",
                             "311"
                           ],
-                          "id": "1.2-1.3.1.10.5"
+                          "id": "1.2-1.4.1.10.5"
                         },
                         {
                           "title": "Allergie",
@@ -5861,7 +5865,7 @@
                             "2734",
                             "2732"
                           ],
-                          "id": "1.2-1.3.1.10.6"
+                          "id": "1.2-1.4.1.10.6"
                         },
                         {
                           "title": "Emballage déformé",
@@ -5925,7 +5929,7 @@
                             "322",
                             "340"
                           ],
-                          "id": "1.2-1.3.1.10.7"
+                          "id": "1.2-1.4.1.10.7"
                         },
                         {
                           "title": "Autre",
@@ -5987,13 +5991,13 @@
                             "322",
                             "323"
                           ],
-                          "id": "1.2-1.3.1.10.8"
+                          "id": "1.2-1.4.1.10.8"
                         }
                       ],
-                      "id": "1.2-1.3.1.10"
+                      "id": "1.2-1.4.1.10"
                     }
                   ],
-                  "id": "1.2-1.3.1"
+                  "id": "1.2-1.4.1"
                 },
                 {
                   "title": "Jouet, puériculture, matériel scolaire",
@@ -6063,7 +6067,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.2.1"
+                      "id": "1.2-1.4.2.1"
                     },
                     {
                       "title": "Blessure physique",
@@ -6126,7 +6130,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.2.2"
+                      "id": "1.2-1.4.2.2"
                     },
                     {
                       "title": "Choc électrique",
@@ -6186,7 +6190,7 @@
                         "344",
                         "345"
                       ],
-                      "id": "1.2-1.3.2.3"
+                      "id": "1.2-1.4.2.3"
                     },
                     {
                       "title": "Allergie",
@@ -6249,7 +6253,7 @@
                         "324",
                         "345"
                       ],
-                      "id": "1.2-1.3.2.4"
+                      "id": "1.2-1.4.2.4"
                     },
                     {
                       "title": "Risque environnemental",
@@ -6305,7 +6309,7 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.2.5"
+                      "id": "1.2-1.4.2.5"
                     },
                     {
                       "title": "Autre",
@@ -6361,10 +6365,10 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.2.6"
+                      "id": "1.2-1.4.2.6"
                     }
                   ],
-                  "id": "1.2-1.3.2"
+                  "id": "1.2-1.4.2"
                 },
                 {
                   "title": "Cosmétique, produit d'hygiène, produit de tatouage",
@@ -6434,7 +6438,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.3.1"
+                      "id": "1.2-1.4.3.1"
                     },
                     {
                       "title": "Blessure physique",
@@ -6497,7 +6501,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.3.2"
+                      "id": "1.2-1.4.3.2"
                     },
                     {
                       "title": "Choc électrique",
@@ -6557,7 +6561,7 @@
                         "344",
                         "345"
                       ],
-                      "id": "1.2-1.3.3.3"
+                      "id": "1.2-1.4.3.3"
                     },
                     {
                       "title": "Allergie",
@@ -6620,7 +6624,7 @@
                         "324",
                         "345"
                       ],
-                      "id": "1.2-1.3.3.4"
+                      "id": "1.2-1.4.3.4"
                     },
                     {
                       "title": "Risque environnemental",
@@ -6676,7 +6680,7 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.3.5"
+                      "id": "1.2-1.4.3.5"
                     },
                     {
                       "title": "Autre",
@@ -6732,10 +6736,10 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.3.6"
+                      "id": "1.2-1.4.3.6"
                     }
                   ],
-                  "id": "1.2-1.3.3"
+                  "id": "1.2-1.4.3"
                 },
                 {
                   "title": "Vêtement, textile, sac à main, bijou",
@@ -6805,7 +6809,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.4.1"
+                      "id": "1.2-1.4.4.1"
                     },
                     {
                       "title": "Blessure physique",
@@ -6868,7 +6872,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.4.2"
+                      "id": "1.2-1.4.4.2"
                     },
                     {
                       "title": "Choc électrique",
@@ -6928,7 +6932,7 @@
                         "344",
                         "345"
                       ],
-                      "id": "1.2-1.3.4.3"
+                      "id": "1.2-1.4.4.3"
                     },
                     {
                       "title": "Allergie",
@@ -6991,7 +6995,7 @@
                         "324",
                         "345"
                       ],
-                      "id": "1.2-1.3.4.4"
+                      "id": "1.2-1.4.4.4"
                     },
                     {
                       "title": "Risque environnemental",
@@ -7047,7 +7051,7 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.4.5"
+                      "id": "1.2-1.4.4.5"
                     },
                     {
                       "title": "Autre",
@@ -7103,10 +7107,10 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.4.6"
+                      "id": "1.2-1.4.4.6"
                     }
                   ],
-                  "id": "1.2-1.3.4"
+                  "id": "1.2-1.4.4"
                 },
                 {
                   "title": "Équipement de protection",
@@ -7176,7 +7180,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.5.1"
+                      "id": "1.2-1.4.5.1"
                     },
                     {
                       "title": "Blessure physique",
@@ -7239,7 +7243,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.5.2"
+                      "id": "1.2-1.4.5.2"
                     },
                     {
                       "title": "Choc électrique",
@@ -7299,7 +7303,7 @@
                         "344",
                         "345"
                       ],
-                      "id": "1.2-1.3.5.3"
+                      "id": "1.2-1.4.5.3"
                     },
                     {
                       "title": "Allergie",
@@ -7362,7 +7366,7 @@
                         "324",
                         "345"
                       ],
-                      "id": "1.2-1.3.5.4"
+                      "id": "1.2-1.4.5.4"
                     },
                     {
                       "title": "Risque environnemental",
@@ -7418,7 +7422,7 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.5.5"
+                      "id": "1.2-1.4.5.5"
                     },
                     {
                       "title": "Autre",
@@ -7474,10 +7478,10 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.5.6"
+                      "id": "1.2-1.4.5.6"
                     }
                   ],
-                  "id": "1.2-1.3.5"
+                  "id": "1.2-1.4.5"
                 },
                 {
                   "title": "Feu d'artifice",
@@ -7547,7 +7551,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.6.1"
+                      "id": "1.2-1.4.6.1"
                     },
                     {
                       "title": "Blessure physique",
@@ -7610,7 +7614,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.6.2"
+                      "id": "1.2-1.4.6.2"
                     },
                     {
                       "title": "Choc électrique",
@@ -7670,7 +7674,7 @@
                         "344",
                         "345"
                       ],
-                      "id": "1.2-1.3.6.3"
+                      "id": "1.2-1.4.6.3"
                     },
                     {
                       "title": "Allergie",
@@ -7733,7 +7737,7 @@
                         "324",
                         "345"
                       ],
-                      "id": "1.2-1.3.6.4"
+                      "id": "1.2-1.4.6.4"
                     },
                     {
                       "title": "Risque environnemental",
@@ -7789,7 +7793,7 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.6.5"
+                      "id": "1.2-1.4.6.5"
                     },
                     {
                       "title": "Autre",
@@ -7845,10 +7849,10 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.6.6"
+                      "id": "1.2-1.4.6.6"
                     }
                   ],
-                  "id": "1.2-1.3.6"
+                  "id": "1.2-1.4.6"
                 },
                 {
                   "title": "Meuble",
@@ -7918,7 +7922,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.7.1"
+                      "id": "1.2-1.4.7.1"
                     },
                     {
                       "title": "Blessure physique",
@@ -7981,7 +7985,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.7.2"
+                      "id": "1.2-1.4.7.2"
                     },
                     {
                       "title": "Choc électrique",
@@ -8041,7 +8045,7 @@
                         "344",
                         "345"
                       ],
-                      "id": "1.2-1.3.7.3"
+                      "id": "1.2-1.4.7.3"
                     },
                     {
                       "title": "Allergie",
@@ -8104,7 +8108,7 @@
                         "324",
                         "345"
                       ],
-                      "id": "1.2-1.3.7.4"
+                      "id": "1.2-1.4.7.4"
                     },
                     {
                       "title": "Risque environnemental",
@@ -8160,7 +8164,7 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.7.5"
+                      "id": "1.2-1.4.7.5"
                     },
                     {
                       "title": "Autre",
@@ -8216,10 +8220,10 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.7.6"
+                      "id": "1.2-1.4.7.6"
                     }
                   ],
-                  "id": "1.2-1.3.7"
+                  "id": "1.2-1.4.7"
                 },
                 {
                   "title": "Produit d'entretien, produit chimique, engrais",
@@ -8289,7 +8293,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.8.1"
+                      "id": "1.2-1.4.8.1"
                     },
                     {
                       "title": "Blessure physique",
@@ -8352,7 +8356,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.8.2"
+                      "id": "1.2-1.4.8.2"
                     },
                     {
                       "title": "Choc électrique",
@@ -8412,7 +8416,7 @@
                         "344",
                         "345"
                       ],
-                      "id": "1.2-1.3.8.3"
+                      "id": "1.2-1.4.8.3"
                     },
                     {
                       "title": "Allergie",
@@ -8475,7 +8479,7 @@
                         "324",
                         "345"
                       ],
-                      "id": "1.2-1.3.8.4"
+                      "id": "1.2-1.4.8.4"
                     },
                     {
                       "title": "Risque environnemental",
@@ -8531,7 +8535,7 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.8.5"
+                      "id": "1.2-1.4.8.5"
                     },
                     {
                       "title": "Autre",
@@ -8587,10 +8591,10 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.8.6"
+                      "id": "1.2-1.4.8.6"
                     }
                   ],
-                  "id": "1.2-1.3.8"
+                  "id": "1.2-1.4.8"
                 },
                 {
                   "title": "Appareil électrique - Produit industriel",
@@ -8657,7 +8661,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.9.1"
+                      "id": "1.2-1.4.9.1"
                     },
                     {
                       "title": "Blessure physique",
@@ -8720,7 +8724,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.9.2"
+                      "id": "1.2-1.4.9.2"
                     },
                     {
                       "title": "Choc électrique",
@@ -8780,7 +8784,7 @@
                         "344",
                         "345"
                       ],
-                      "id": "1.2-1.3.9.3"
+                      "id": "1.2-1.4.9.3"
                     },
                     {
                       "title": "Allergie",
@@ -8843,7 +8847,7 @@
                         "324",
                         "345"
                       ],
-                      "id": "1.2-1.3.9.4"
+                      "id": "1.2-1.4.9.4"
                     },
                     {
                       "title": "Risque environnemental",
@@ -8899,7 +8903,7 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.9.5"
+                      "id": "1.2-1.4.9.5"
                     },
                     {
                       "title": "Autre",
@@ -8955,10 +8959,10 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.9.6"
+                      "id": "1.2-1.4.9.6"
                     }
                   ],
-                  "id": "1.2-1.3.9"
+                  "id": "1.2-1.4.9"
                 },
                 {
                   "title": "Outil - Produit industriel",
@@ -9025,7 +9029,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.10.1"
+                      "id": "1.2-1.4.10.1"
                     },
                     {
                       "title": "Blessure physique",
@@ -9088,7 +9092,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.10.2"
+                      "id": "1.2-1.4.10.2"
                     },
                     {
                       "title": "Choc électrique",
@@ -9148,7 +9152,7 @@
                         "344",
                         "345"
                       ],
-                      "id": "1.2-1.3.10.3"
+                      "id": "1.2-1.4.10.3"
                     },
                     {
                       "title": "Allergie",
@@ -9211,7 +9215,7 @@
                         "324",
                         "345"
                       ],
-                      "id": "1.2-1.3.10.4"
+                      "id": "1.2-1.4.10.4"
                     },
                     {
                       "title": "Risque environnemental",
@@ -9267,7 +9271,7 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.10.5"
+                      "id": "1.2-1.4.10.5"
                     },
                     {
                       "title": "Autre",
@@ -9323,10 +9327,10 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.10.6"
+                      "id": "1.2-1.4.10.6"
                     }
                   ],
-                  "id": "1.2-1.3.10"
+                  "id": "1.2-1.4.10"
                 },
                 {
                   "title": "Autre",
@@ -9393,7 +9397,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.11.1"
+                      "id": "1.2-1.4.11.1"
                     },
                     {
                       "title": "Blessure physique",
@@ -9456,7 +9460,7 @@
                         "352",
                         "345"
                       ],
-                      "id": "1.2-1.3.11.2"
+                      "id": "1.2-1.4.11.2"
                     },
                     {
                       "title": "Choc électrique",
@@ -9516,7 +9520,7 @@
                         "344",
                         "345"
                       ],
-                      "id": "1.2-1.3.11.3"
+                      "id": "1.2-1.4.11.3"
                     },
                     {
                       "title": "Allergie",
@@ -9579,7 +9583,7 @@
                         "324",
                         "345"
                       ],
-                      "id": "1.2-1.3.11.4"
+                      "id": "1.2-1.4.11.4"
                     },
                     {
                       "title": "Risque environnemental",
@@ -9635,7 +9639,7 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.11.5"
+                      "id": "1.2-1.4.11.5"
                     },
                     {
                       "title": "Autre",
@@ -9691,13 +9695,13 @@
                         }
                       ],
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
-                      "id": "1.2-1.3.11.6"
+                      "id": "1.2-1.4.11.6"
                     }
                   ],
-                  "id": "1.2-1.3.11"
+                  "id": "1.2-1.4.11"
                 }
               ],
-              "id": "1.2-1.3"
+              "id": "1.2-1.4"
             }
           ],
           "id": "1.2-1"
