@@ -80,24 +80,26 @@ export interface Action {
     answer: string
 }
 
-export interface DetailInput {
-    label: string
-    rank: number
-    type: string
-    placeholder?: string
-    options?: string[]
-    defaultValue?: string
-    example?: string
-    optionnal?: boolean
+export enum DetailInputType {
+  TEXT = 'TEXT',
+  DATE_NOT_IN_FUTURE = 'DATE_NOT_IN_FUTURE',
+  DATE = 'DATE',
+  TIMESLOT = 'TIMESLOT',
+  RADIO = 'RADIO',
+  CHECKBOX = 'CHECKBOX',
+  TEXTAREA = 'TEXTAREA',
 }
 
-export enum InputType {
-    Text = 'TEXT',
-    Radio = 'RADIO',
-    Checkbox = 'CHECKBOX',
-    Textarea = 'TEXTAREA',
-    Timeslot = 'TIMESLOT',
-    Date = 'DATE',
+export interface DetailInput {
+  label: string
+  /** @deprecated */
+  rank?: number
+  type: DetailInputType
+  placeholder?: string
+  options?: string[]
+  defaultValue?: string
+  example?: string
+  optionnal?: boolean
 }
 
 export const formLabels = {
