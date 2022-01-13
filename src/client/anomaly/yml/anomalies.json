@@ -34372,7 +34372,7 @@
               "reponseconsoCode": [
                 "210"
               ],
-              "id": "1.5-2.3"
+              "id": "1.4-2.3"
             },
             {
               "title": "Maison de retraite (ehpad)",
@@ -35006,7 +35006,7 @@
                       "type": "TEXTAREA"
                     }
                   ],
-                  "id": "1.6-1.4.1"
+                  "id": "1.5-1.4.1"
                 },
                 {
                   "title": "Le bureau d'étude impose une marque / modèle en particulier",
@@ -35026,7 +35026,7 @@
                       "type": "TEXTAREA"
                     }
                   ],
-                  "id": "1.6-1.4.2"
+                  "id": "1.5-1.4.2"
                 },
                 {
                   "title": "Autre",
@@ -35046,7 +35046,7 @@
                       "type": "TEXTAREA"
                     }
                   ],
-                  "id": "1.6-1.4.3"
+                  "id": "1.5-1.4.3"
                 }
               ],
               "id": "1.5-1.4"
@@ -37133,7 +37133,7 @@
                 {
                   "title": "Autre",
                   "companyKind": "SIRET",
-                  "id": "1.8-1.3.2"
+                  "id": "1.7-1.3.2"
                 }
               ],
               "id": "1.7-1.3"
@@ -37267,7 +37267,7 @@
                     "679"
                   ],
                   "companyKind": "SIRET",
-                  "id": "1.8-2.3.3"
+                  "id": "1.7-2.3.3"
                 }
               ],
               "id": "1.7-2.3"
@@ -53718,7 +53718,7 @@
                   "tags": [
                     "ReponseConso"
                   ],
-                  "id": "1.13-3.3.3"
+                  "id": "1.14-3.3.3"
                 },
                 {
                   "title": "Le personnel (moniteur) n'est pas aimable",
@@ -55925,16 +55925,27 @@
               }
             ]
           },
+<<<<<<< main
           "id": "1.17-2"
         },
         {
           "title": "Je souhaite contacter le Service Relation Consommateur de Bloctel",
+=======
+          "id": "1.18-2"
+        },
+        {
+          "title": "Je souahite contacter le Service Relation Consommateur de Bloctel",
+>>>>>>> Continue
           "example": "Question sur gestion de mon compte Bloctel, gérer mes données personnelles sur Bloctel",
           "companyKind": "PHONE",
           "information": {
             "content": "Le Service Relation Consommateur est ouvert au 01 73 26 81 45 de 8 h 00 à 17 h 00 uniquement les jours ouvrés (Prix d'un appel vers un numéro fixe, suivant opérateur). Ce service est à disposition pour aider à gérer ou utiliser l' « Espace consommateur » du site Bloctel. <br/><br/>En revanche, il ne donne aucune information sur le suivi des signalements, les modalités de connexion à Internet ou sur les questions d'ordre juridique. <br/><br/>Vous pouvez accès à la Foire aux questions de Bloctel sur https://www.bloctel.gouv.fr/faq"
           },
+<<<<<<< main
           "id": "1.17-3"
+=======
+          "id": "1.18-3"
+>>>>>>> Continue
         }
       ]
     }

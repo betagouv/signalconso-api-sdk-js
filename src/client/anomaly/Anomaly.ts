@@ -78,24 +78,26 @@ export interface Action {
   answer: string
 }
 
+export enum DetailInputType {
+  TEXT = 'TEXT',
+  DATE_NOT_IN_FUTURE = 'DATE_NOT_IN_FUTURE',
+  DATE = 'DATE',
+  TIMESLOT = 'TIMESLOT',
+  RADIO = 'RADIO',
+  CHECKBOX = 'CHECKBOX',
+  TEXTAREA = 'TEXTAREA',
+}
+
 export interface DetailInput {
   label: string
-  rank: number
-  type: string
+  /** @deprecated */
+  rank?: number
+  type: DetailInputType
   placeholder?: string
   options?: string[]
   defaultValue?: string
   example?: string
   optionnal?: boolean
-}
-
-export enum InputType {
-  Text = 'TEXT',
-  Radio = 'RADIO',
-  Checkbox = 'CHECKBOX',
-  Textarea = 'TEXTAREA',
-  Timeslot = 'TIMESLOT',
-  Date = 'DATE',
 }
 
 export const formLabels = {

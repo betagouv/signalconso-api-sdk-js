@@ -1,5 +1,5 @@
 import {expect} from 'chai'
-import {Anomaly, CompanyKinds, ReportTag} from './Anomaly'
+import {Anomaly, CompanyKinds, DetailInputType, ReportTag} from './Anomaly'
 import {AnomalyClient} from './AnomalyClient'
 
 const testParsing = (initial: Readonly<Anomaly[]>, expected: Anomaly[]): void => {
@@ -33,13 +33,13 @@ describe('enrichAnomaly', () => {
                   {
                     'label': 'Date du constat',
                     'rank': 1,
-                    'type': 'DATE',
+                    'type': 'DATE' as DetailInputType,
                     'defaultValue': 'SYSDATE'
                   },
                   {
                     'label': 'Quel est le problème avec le prix de la livraison ?',
                     'rank': 2,
-                    'type': 'TEXTAREA'
+                    'type': 'TEXTAREA' as DetailInputType
                   }
                 ]
               }
@@ -71,13 +71,13 @@ describe('enrichAnomaly', () => {
                   {
                     'label': 'Date du constat',
                     'rank': 1,
-                    'type': 'DATE',
+                    'type': 'DATE' as DetailInputType,
                     'defaultValue': 'SYSDATE'
                   },
                   {
                     'label': 'Quel est le problème avec le prix de la livraison ?',
                     'rank': 2,
-                    'type': 'TEXTAREA'
+                    'type': 'TEXTAREA' as DetailInputType
                   }
                 ]
               }
