@@ -1,11 +1,11 @@
-import {Anomaly, ApiClientApi, Category, CompanyKinds, ReportTag, Subcategory, SubcategoryInformation, SubcategoryInput,} from '../..'
+import {Anomaly, ApiClientApi, Category, SubcategoryInformation, SubcategoryInput,} from '../..'
 import anomaliesJSON from '../anomaly/yml/anomalies.json'
 import {lazy} from '@alexandreannic/ts-utils/lib/common'
 
 export class AnomalyClient {
   constructor(private client: ApiClientApi) {}
 
-  readonly getAnomalies = lazy(() => Promise.resolve((anomaliesJSON as any).list.map(AnomalyClient.enrichAnomaly) as Anomaly[]))
+  readonly getAnomalies = lazy(() => Promise.resolve((anomaliesJSON as any).list))
 
   readonly getCategories = lazy(() =>
     Promise.resolve(this.getAnomalies().then(_ => _.filter(anomaly => !anomaly.information).map(anomaly => anomaly.category))),
@@ -42,19 +42,19 @@ export class AnomalyClient {
   //   }
   // }
 
-  private static readonly propagateCompanyKinds = (anomaly: Category): Category => {
-    return {
-      ...anomaly,
-      subcategories: anomaly.subcategories
-        ?.map(_ => ({..._, companyKind: _.companyKind || anomaly.companyKind}))
-        ?.map(_ => ({..._, ...AnomalyClient.propagateCompanyKinds(_)})),
-    }
-  }
+  // private static readonly propagateCompanyKinds = (anomaly: Category): Category => {
+  //   return {
+  //     ...anomaly,
+  //     subcategories: anomaly.subcategories
+  //       ?.map(_ => ({..._, companyKind: _.companyKind || anomaly.companyKind}))
+  //       ?.map(_ => ({..._, ...AnomalyClient.propagateCompanyKinds(_)})),
+  //   }
+  // }
 
-  private static readonly enrichAnomaly = (anomaly: Category): Category => {
-    return AnomalyClient.propagateCompanyKinds(anomaly)
-    // return AnomalyClient.askCompanyKindIfMissing(AnomalyClient.propagateCompanyKinds(anomaly), [])
-  }
+  // private static readonly enrichAnomaly = (anomaly: Category): Category => {
+  //   return AnomalyClient.propagateCompanyKinds(anomaly)
+  //   return AnomalyClient.askCompanyKindIfMissing(AnomalyClient.propagateCompanyKinds(anomaly), [])
+  // }
 
   static readonly instanceOfSubcategoryInput = (_?: Category): _ is SubcategoryInput => {
     return !!(_ as SubcategoryInput)?.detailInputs
