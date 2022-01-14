@@ -15,6 +15,8 @@
           ccrfCode:
             - '163'
           description: 'Votre droit : tous les prix doivent être affichés.'
+          tags:
+            - ReponseConso
           reponseconsoCode:
             - '212'
             - '210'
@@ -47,6 +49,8 @@
           <br/><br/> Un commerçant n'a pas le droit de vendre à un prix trop bas : il ne peut pas vendre un produit moins cher que ce qu'il lui a coûté. Il existe quelques situations où il a le droit de vendre en dessous du prix d'achat, comme la période des soldes."
         - title: Fausse réduction de prix
           example: 'Exemple : fausse promotion pendant les soldes, faux temps limite, fausse liquidation totale'
+          tags:
+            - ReponseConso
           ccrfCode:
             - '145'
             - '23F'
