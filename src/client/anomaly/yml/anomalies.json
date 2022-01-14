@@ -1247,7 +1247,7 @@
               "id": "1.2-1.1"
             },
             {
-              "titre": "Le prix",
+              "title": "Le prix",
               "example": "Exemple : Il manque les prix, fausse réduction de prix, soldes, promotion",
               "subcategories": [
                 {
@@ -1256,6 +1256,9 @@
                     "163"
                   ],
                   "description": "Votre droit : tous les prix doivent être affichés.",
+                  "tags": [
+                    "ReponseConso"
+                  ],
                   "reponseconsoCode": [
                     "212",
                     "210",
@@ -1299,6 +1302,9 @@
                 {
                   "title": "Fausse réduction de prix",
                   "example": "Exemple : fausse promotion pendant les soldes, faux temps limite, fausse liquidation totale",
+                  "tags": [
+                    "ReponseConso"
+                  ],
                   "ccrfCode": [
                     "145",
                     "23F",
