@@ -166,7 +166,6 @@
             - '221'
           companyKind: PHONE
           tags:
-            - ReponseConso
             - Démarchage téléphonique
           detailInputs:
             - label: Date de l'appel
