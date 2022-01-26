@@ -37776,7 +37776,7 @@
                 },
                 {
                   "title": "Prix non affiché",
-                  "reponseconsoCode": 212,
+                  "reponseconsoCode": "212",
                   "tags": [
                     "ReponseConso"
                   ],
@@ -37784,7 +37784,7 @@
                 },
                 {
                   "title": "Prix final non conforme au prix annoncé",
-                  "reponseconsoCode": 451,
+                  "reponseconsoCode": "451",
                   "tags": [
                     "ReponseConso"
                   ],

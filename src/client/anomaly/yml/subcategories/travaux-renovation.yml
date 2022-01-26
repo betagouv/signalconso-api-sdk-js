@@ -15,12 +15,12 @@
             outOfScope: true
         - title: Prix non affiché
           reponseconsoCode:
-            212
+            '212'
           tags:
             - ReponseConso
         - title: Prix final non conforme au prix annoncé
           reponseconsoCode:
-            451
+            '451'
           tags:
             - ReponseConso
     - title: Publicité et pratique du professionnel
