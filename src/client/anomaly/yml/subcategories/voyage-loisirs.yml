@@ -20,23 +20,23 @@
             - title: Autre
         - title: Les prix ne sont pas affichés dans la voiture
           example: Une affiche avec les prix et les suppléments doit être visible dans la voiture.
-          reponseConso:
+          reponseconsoCode:
             - '212'
           tags:
             - ReponseConso
         - title: Refus de prendre votre carte bancaire
           example: Tous les taxis ont obligation de prendre la carte bancaire quel que soit le montant.
-          reponseConso:
+          reponseconsoCode:
             - '454'
           tags:
             - ReponseConso
         - title: Refus de me donner une note (reçu, facture)
-          reponseConso:
+          reponseconsoCode:
             - '213'
           tags:
             - ReponseConso
         - title: Le prix payé ne me convient pas
-          reponseConso:
+          reponseconsoCode:
             - '164'
           tags:
             - ReponseConso
