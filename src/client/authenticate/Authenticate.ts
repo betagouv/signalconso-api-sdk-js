@@ -1,3 +1,5 @@
+export type ValidationRejectReason = 'TOO_MANY_ATTEMPTS' | 'INVALID_CODE'
+
 export interface UserWithPermission {
   id: string
   login: string
