@@ -165,4 +165,6 @@ export class Report {
   static readonly getStatusProByStatus = (status: ReportStatus): ReportStatusPro => (Report.mapStatusPro[status])()
 
   static readonly getStatusByStatusPro = (status: ReportStatusPro): ReportStatus[] => (Report.mapStatusProInverted[status])()
+
+  static readonly isGovernmentCompany = (_?: {activityCode?: string}): boolean => _?.activityCode?.startsWith('84.') ?? false
 }
