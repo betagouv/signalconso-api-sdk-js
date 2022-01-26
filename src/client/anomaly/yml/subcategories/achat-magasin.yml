@@ -1,4 +1,4 @@
-- title: un achat sur internet ou un site de vente en ligne
+- title: Un achat sur internet ou un site de vente en ligne
   companyKind: WEBSITE
   subcategories:
     - title: Le site internet en lui-même
@@ -143,7 +143,7 @@
         - title: Autre
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
-- title: un magasin / commerce physique
+- title: Un magasin / commerce physique
   example: 'Exemple : grande surface, épicerie, stand dans un marché, boulangerie'
   companyKind: SIRET
   subcategories:
@@ -913,7 +913,7 @@
         - title: Autre
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
-- title: un achat suite à la visite d'un vendeur à mon domicile
+- title: Un achat suite à la visite d'un vendeur à mon domicile
   companyKind: LOCATION
   reponseconsoCode:
     - '221'
