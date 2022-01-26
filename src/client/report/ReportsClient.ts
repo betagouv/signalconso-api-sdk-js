@@ -123,7 +123,7 @@ export class ReportsClient {
 
   readonly createReport = ({
     consumer,
-    draftCompany,
+    companyDraft,
     uploadedFiles,
     detailInputValues,
     ...report
@@ -133,12 +133,12 @@ export class ReportsClient {
         ...report,
         fileIds: uploadedFiles.map(_ => _.id),
         details: detailInputValues.map(DetailInputValue.parse),
-        companyName: draftCompany.name,
-        companyAddress: draftCompany.address,
-        companySiret: draftCompany.siret,
-        companyActivityCode: draftCompany.activityCode,
-        websiteURL: draftCompany.website,
-        phone: draftCompany.phone,
+        companyName: companyDraft.name,
+        companyAddress: companyDraft.address,
+        companySiret: companyDraft.siret,
+        companyActivityCode: companyDraft.activityCode,
+        websiteURL: companyDraft.website,
+        phone: companyDraft.phone,
         firstName: consumer.firstName,
         lastName: consumer.lastName,
         email: consumer.email,
