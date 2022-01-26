@@ -12,10 +12,10 @@ export interface ReportDraftConsumer {
 }
 
 export interface CompanyDraft {
-  siret?: string
-  name?: string
+  siret: string
+  name: string
   brand?: string
-  address?: Address
+  address: Address
   website?: string
   phone?: string
   activityCode?: string
@@ -23,8 +23,8 @@ export interface CompanyDraft {
 
 export interface ReportDraft {
   category: string
-  subcategories?: Subcategory[]
-  draftCompany: CompanyDraft
+  subcategories: Subcategory[]
+  companyDraft: CompanyDraft
   detailInputValues: DetailInputValue[]
   uploadedFiles: UploadedFile[]
   consumer: ReportDraftConsumer
@@ -90,6 +90,7 @@ export class ReportDraft {
       ]).includes(_))
   }
 
+  /** @deprecated use the one from Report */
   static readonly isGovernmentCompany = (_?: {activityCode?: string}): boolean => _?.activityCode?.startsWith('84.') ?? false
 }
 

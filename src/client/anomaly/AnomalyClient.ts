@@ -5,7 +5,7 @@ import {lazy} from '@alexandreannic/ts-utils/lib/common'
 export class AnomalyClient {
   constructor(private client: ApiClientApi) {}
 
-  readonly getAnomalies = lazy(() => Promise.resolve((anomaliesJSON as any).list))
+  readonly getAnomalies = lazy(() => Promise.resolve(anomaliesJSON.list as Anomaly[]))
 
   readonly getCategories = lazy(() =>
     Promise.resolve(this.getAnomalies().then(_ => _.filter(anomaly => !anomaly.information).map(anomaly => anomaly.category))),
