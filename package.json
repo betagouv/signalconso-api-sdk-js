@@ -1,6 +1,6 @@
 {
   "name": "@signal-conso/signalconso-api-sdk-js",
-  "version": "2.6.14",
+  "version": "2.6.15",
   "description": "SignalConso API SDK for JavaScript/TypeScript",
   "main": "lib/index.js",
   "private": false,
