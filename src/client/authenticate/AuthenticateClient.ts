@@ -1,8 +1,9 @@
-import {ApiClientApi, Id} from '../..'
-import {AuthUser} from './UserWithPermission'
+import {ApiClientApi, Id, ValidationRejectReason} from '../..'
+import {AuthUser} from './Authenticate'
 
 export class AuthenticateClient {
-  constructor(private client: ApiClientApi) {}
+  constructor(private client: ApiClientApi) {
+  }
 
   readonly login = (login: string, password: string) => {
     return this.client.post<AuthUser>(`/authenticate`, {body: {login, password}})
@@ -22,5 +23,13 @@ export class AuthenticateClient {
 
   readonly resetPassword = (password: string, token: string) => {
     return this.client.post<void>(`/authenticate/password/reset`, {body: {password}, qs: {token}})
+  }
+
+  readonly checkConsumerEmail = (email: string) => {
+    return this.client.post<{valid: boolean}>('/email/check', {body: {email}})
+  }
+
+  readonly validateConsumerEmail = (email: string, confirmationCode: string) => {
+    return this.client.post<{valid: boolean, reason?: ValidationRejectReason}>('/email/validate', {body: {email, confirmationCode}})
   }
 }
