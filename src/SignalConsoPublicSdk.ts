@@ -1,5 +1,5 @@
 import {ApiClientApi} from './core/ApiClient'
-import {AnomalyClient, AuthenticateClient, FileClient, PublicConstantClient} from './client'
+import {AnomalyClient, AuthenticateClient, FileClient, PublicConstantClient, RatingClient} from './client'
 import {PublicCompanyClient} from './client/company/PublicCompanyClient'
 import {PublicUserClient} from './client/user/PublicUserClient'
 import {PublicReportClient} from './client/report/PublicReportClient'
@@ -16,4 +16,5 @@ export class SignalConsoPublicSdk {
   readonly authenticate = new AuthenticateClient(this.client)
   readonly document = new FileClient(this.client)
   readonly anomaly = new AnomalyClient(this.client)
+  readonly rating = new RatingClient(this.client)
 }
