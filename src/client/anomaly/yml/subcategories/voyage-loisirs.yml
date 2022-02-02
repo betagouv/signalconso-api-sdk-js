@@ -7,7 +7,7 @@
         - title: Refus de faire la course
           example: "Exemple : le taxi refuse de vous prendre car ce n'est pas assez loin"
           tags:
-            - Litige contractuel
+            - LitigeContractuel
           reponseconsoCode:
             - '232'
           subcategoriesTitle: Pour quelle raison le chauffeur a-t-il refusé de vous prendre ?
@@ -40,7 +40,7 @@
             - '164'
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
           subcategories:
             - title: Je pense que le trajet n'était pas le plus direct
               detailInputs:
@@ -201,7 +201,7 @@
                   fileLabel: Joindre tout document utile pour appuyer votre signalement.
             - title: J'ai été prélevé deux fois
               tags:
-                - Litige contractuel
+                - LitigeContractuel
               detailInputs:
                 - label: Date de la course ?
                   rank: 1
@@ -218,12 +218,12 @@
               information: !!import/single ../common/info/amabilite.yml
             - title: Autre
               tags:
-                - Litige contractuel
+                - LitigeContractuel
     - title: VTC (voiture avec chauffeur)
       companyKind: 'WEBSITE'
       example: Les VTC n'ont pas de signe particulier sur les voitures. Vous devez faire une réservation pour prendre un VTC. La plupart de ces réservations se font sur internet.
       tags:
-        - Litige contractuel
+        - LitigeContractuel
       subcategories:
         - title: Une remise ou une offre promotionnelle qui n'est pas appliquée ou qui est mensongère
           reponseconsoCode:
@@ -311,7 +311,7 @@
           example: 'Exemple : fausse réduction, supplément imprévu'
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
           detailInputs:
             - label: Date du constat
               rank: 1
@@ -328,12 +328,12 @@
           fileLabel: Vous pouvez joindre des éléments pour appuyer votre signalement.
         - title: Autre
           tags:
-            - Litige contractuel
+            - LitigeContractuel
     - title: Informations concernant le logement / Publicité
       example: "Exemple : publicité trompeuse, absence d'information"
       tags:
         - ReponseConso
-        - Litige contractuel
+        - LitigeContractuel
       subcategories:
         - title: Absence d'information
           reponseconsoCode:
@@ -371,7 +371,7 @@
     - title: Qualité de la chambre / de l'hébergement
       example: 'Exemple : hôtel sale, chambre insonorisée, pas de sauna alors que le site mentionne un sauna'
       tags:
-        - Litige contractuel
+        - LitigeContractuel
       subcategories:
         - title: L'hébergement ne correspond pas à ce qui m'a été vendu
           example: "Exemple : j'avais demandé une chambre avec vue sur la mer et on m'a attribué une vue côté parking, le petit-déjeuner était compris dans le prix de la nuitée or un supplément m'a été demandé"
@@ -398,7 +398,7 @@
         - '481'
         - '4241'
       tags:
-        - Litige contractuel
+        - LitigeContractuel
       subcategoriesTitle: Qui a annulé la réservation&#160;?
       subcategories:
         - title: l'hôtel, le camping, le gérant...
@@ -414,19 +414,19 @@
     - title: Produit dangereux
       example: 'Exemple : lit'
       tags:
-        - Produit dangereux
+        - ProduitDangereux
       subcategories:
         - title: Produit alimentaire
           subcategories: !!import/single ../common/produit-alimentaire.yml
           tags:
-            - Produit alimentaire
+            - ProduitAlimentaire
         - title: Jouet, puériculture, matériel scolaire
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
           ccrfCode: 
             - '321'
           tags:
-            - Produit industriel
+            - ProduitIndustriel
         - title: Cosmétique, produit d'hygiène, produit de tatouage
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
@@ -434,41 +434,41 @@
             - '34A'
             - '348'
           tags:
-            - Produit industriel
+            - ProduitIndustriel
         - title: Vêtement, textile, sac à main, bijou
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
           tags:
-            - Produit industriel
+            - ProduitIndustriel
         - title: Équipement de protection
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
           ccrfCode: 
             - '34A'
           tags:
-            - Produit industriel
+            - ProduitIndustriel
         - title: Feu d'artifice
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml          
           tags:
-            - Produit industriel
+            - ProduitIndustriel
         - title: Meuble
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml          
           tags:
-            - Produit industriel
+            - ProduitIndustriel
         - title: Appareil électrique
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml  
           ccrfCode:
             - '34F'
           tags:
-            - Produit industriel
+            - ProduitIndustriel
         - title: Autre
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml          
           tags:
-            - Produit industriel
+            - ProduitIndustriel
     - title: Autre
       subcategories:
         - title: On a refusé de me donner une chambre
@@ -524,15 +524,15 @@
             - '210'
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
         - title: Autre
           tags:
-            - Litige contractuel
+            - LitigeContractuel
     - title: Publicité
       example: "Exemple : publicité trompeuse, absence d'information"
       tags:
         - ReponseConso
-        - Litige contractuel
+        - LitigeContractuel
       subcategories:
         - title: Absence d'information
           reponseconsoCode:
@@ -569,7 +569,7 @@
               optionnal: true
     - title: Prestation
       tags:
-        - Litige contractuel
+        - LitigeContractuel
       subcategories:
         - title: La prestation ne correspond pas à ce que l'agence m'a vendu
           reponseconsoCode:
@@ -584,17 +584,17 @@
         - '4241'
         - '424'
       tags:
-        - Litige contractuel
+        - LitigeContractuel
     - title: Assurance
       reponseconsoCode:
         - '481'
         - '4241'
         - '424'
       tags:
-        - Litige contractuel
+        - LitigeContractuel
     - title: Autre
       tags:
-        - Litige contractuel
+        - LitigeContractuel
       subcategories:
         - title: Le personnel n'était pas aimable
           information: !!import/single ../common/info/amabilite.yml
@@ -630,17 +630,17 @@
           example: 'Exemple : fausse réduction, suppléments non prévus'
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
           reponseconsoCode:
             - '210'
         - title: Autre
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
     - title: Publicité
       example: "Exemple : publicité trompeuse, absence d'information"
       tags:
-        - Litige contractuel
+        - LitigeContractuel
       subcategories:
         - title: Absence d'information
           reponseconsoCode:
@@ -683,10 +683,10 @@
         - '424'
         - '4241'
       tags:
-        - Litige contractuel
+        - LitigeContractuel
     - title: Assurance
       tags:
-        - Litige contractuel
+        - LitigeContractuel
       subcategories:
         - title: Annulation
           reponseconsoCode:
@@ -698,7 +698,7 @@
     - title: Abonnement de transport
       example: 'Exemple : TGV max, pass Navigo'
       tags:
-        - Litige contractuel
+        - LitigeContractuel
     - title: Autre
       subcategories:
         - title: Le personnel n'était pas aimable
@@ -721,7 +721,7 @@
               fileLabel: Vous pouvez joindre des éléments (photo, carte d'assistance...) pour appuyer votre signalement.
         - title: Autre
           tags:
-            - Litige contractuel
+            - LitigeContractuel
 - title: Sport
   example: 'Exemple : piscine, salle de sport'
   subcategories:
@@ -747,16 +747,16 @@
             - '210'
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
         - title: Autre
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
     - title: Publicité
       example: "Exemple : publicité trompeuse, absence d'information"
       tags:
         - ReponseConso
-        - Litige contractuel
+        - LitigeContractuel
       subcategories:
         - title: Absence d'information
           reponseconsoCode:
@@ -794,7 +794,7 @@
     - title: Contrat et abonnement
       example: 'Exemple : contrat non respecté, clause abusive'
       tags:
-        - Litige contractuel
+        - LitigeContractuel
       subcategories:
         - title: Clause abusive
           reponseconsoCode:
@@ -807,7 +807,7 @@
     - title: Produit dangereux
       example: 'Exemple : équipement de protection'
       tags:
-        - Produit dangereux
+        - ProduitDangereux
       subcategories:
         - title: Jouet
           subcategoriesTitle: Quel est le risque&#160;?
@@ -829,7 +829,7 @@
           subcategories: !!import/single ../common/produit-dangereux.yml
     - title: Autre
       tags:
-        - Litige contractuel
+        - LitigeContractuel
       subcategories:
         - title: Equipement
         - title: Compléments alimentaires
@@ -870,16 +870,16 @@
             - '210'
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
         - title: Autre
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
     - title: Publicité
       example: "Exemple : publicité mensongère, absence d'information"
       tags:
         - ReponseConso
-        - Litige contractuel
+        - LitigeContractuel
       subcategories:
         - title: Absence d'information
           reponseconsoCode:
@@ -920,7 +920,7 @@
         - '4241'
         - '481'
       tags:
-        - Litige contractuel
+        - LitigeContractuel
     - title: Autre
       subcategories:
         - title: Problème d'accessibilité
@@ -944,10 +944,10 @@
         - title: Autre
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
 - title: Autre
   tags:
-    - Litige contractuel
+    - LitigeContractuel
     - ReponseConso
   subcategories:
     - title: Abonnement

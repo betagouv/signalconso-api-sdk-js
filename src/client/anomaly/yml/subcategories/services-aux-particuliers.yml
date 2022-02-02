@@ -41,7 +41,7 @@
             - '451'
             - '212'
           tags:
-            - Litige contractuel
+            - LitigeContractuel
           detailInputs:
             - label: Date du constat
               rank: 1
@@ -70,7 +70,7 @@
             - '210'
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
         - title: Autre
           subcategories:
             - title: Le personnel ne dispose pas des diplômes requis
@@ -90,7 +90,7 @@
               reponseconsoCode:
                 - '210'
               tags:
-                - Litige contractuel
+                - LitigeContractuel
     - title: Vie quotidienne
       example: "Exemple : conciergerie, pressing, cordonnier, ménage, garde d'enfants"
       subcategories:
@@ -100,7 +100,7 @@
             - '411'
             - '212'
           tags:
-            - Litige contractuel
+            - LitigeContractuel
         - title: Moyens de paiement
           example: 'Exemple : carte bancaire refusée'
           subcategories: !!import/single ../common/paiement.yml
@@ -109,7 +109,7 @@
             - '210'
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
         - title: Autre
           subcategories:
             - title: Le personnel ne dispose pas des diplômes requis
@@ -128,16 +128,16 @@
               reponseconsoCode:
                 - '210'
               tags:
-                - Litige contractuel
+                - LitigeContractuel
     - title: Aide à la personne
       tags:
         - ReponseConso
-        - Litige contractuel
+        - LitigeContractuel
       reponseconsoCode:
         - '210'
     - title: Maison de retraite (ehpad)
       tags:
-        - Litige contractuel
+        - LitigeContractuel
         - Ehpad
       subcategories:
         - title: Tarifs / facture
@@ -246,7 +246,7 @@
             - '212'
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
         - title: Moyens de paiement
           example: 'Exemple : carte bancaire refusée'
           subcategories: !!import/single ../common/paiement.yml
@@ -258,7 +258,7 @@
             - '210'
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
         - title: Autre
           subcategories:
             - title: Le personnel n'est pas aimable ou respecteux
@@ -282,14 +282,14 @@
             - '442'
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
         - title: Agence matrimoniale (agence de rencontre)
           reponseconsoCode:
             - '2263'
             - '473'
             - '226'
           tags:
-            - Litige contractuel
+            - LitigeContractuel
         - title: Organisme de formation
           reponseconsoCode:
             - '422'
@@ -301,7 +301,7 @@
             - '210'
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
         - title: Autre
           reponseconsoCode:
             - '210'

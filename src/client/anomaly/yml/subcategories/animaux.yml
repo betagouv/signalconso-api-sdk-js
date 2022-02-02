@@ -4,31 +4,31 @@
     - '332'
     - '617'
   tags:
-    - Litige contractuel
+    - LitigeContractuel
 - title: Soins
   example: 'Exemple : vétérinaire, toiletteur'
   reponseconsoCode:
     - '212'
     - '213'
   tags:
-    - Litige contractuel
+    - LitigeContractuel
 - title: Garde d'animaux
   example: "Exemple : pension, site internet de garde d'animaux"
   reponseconsoCode:
     - '212'
     - '213'
   tags:
-    - Litige contractuel
+    - LitigeContractuel
 - title: Vendeur d'animaux
   reponseconsoCode:
     - '210'
     - '271'
   tags:
     - ReponseConso
-    - Litige contractuel
+    - LitigeContractuel
 - title: Autre
   reponseconsoCode:
     - '333'
     - '210'
   tags:
-    - Litige contractuel
+    - LitigeContractuel

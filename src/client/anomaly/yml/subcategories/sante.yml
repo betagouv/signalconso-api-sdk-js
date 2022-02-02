@@ -1,7 +1,7 @@
 - title: Produit de santé
   example: 'Exemple : médicament, bas de contention, prothèse, lunette, pansement, fauteuil roulant, compléments alimentaires, autres produits achetés en pharmacie ou rayon pharmacie'
   tags:
-    - Litige contractuel
+    - LitigeContractuel
   subcategories:
     - title: J'ai eu un problème de santé / sécurité avec un produit
       example: 'Exemple : allergie, vomissement, électrocution'
@@ -14,7 +14,7 @@
         - title: Un objet de santé courant
           example: 'Exemple : pansement, tensiomètre, thermomètre, bas de contention'
           tags:
-            - Produit dangereux
+            - ProduitDangereux
         - title: Un objet de santé spécifique
           example: 'Exemple: lit médicalisé, prothèse, défibrillateur'
           information:
@@ -55,7 +55,7 @@
       companyKind: LOCATION
       tags:
         - ReponseConso
-        - Démarchage à domicile
+        - DemarchageADomicile
       detailInputs:
         - label: Que s'est-il passé ?
           rank: 1
@@ -81,7 +81,7 @@
         - '221'
       tags:
         - ReponseConso
-        - Démarchage téléphonique
+        - DemarchageTelephonique
       detailInputs:
         - label: Date de l'appel
           rank: 1
@@ -125,7 +125,7 @@
 - title: Professionnel de la santé et médecine douce
   example: 'Exemple : dentiste, opticien, kiné, psychiatre, médecine douce'
   tags:
-    - Litige contractuel
+    - LitigeContractuel
   subcategoriesTitle: 'Quel type de médecine exerce-t-il ?'
   subcategories:
     - title: La médecine dite "conventionnelle"
@@ -345,7 +345,7 @@
             - '2216'
           tags:
             - ReponseConso
-            - Démarchage téléphonique
+            - DemarchageTelephonique
           detailInputs:
             - label: Date de l'appel
               rank: 1
@@ -404,7 +404,7 @@
             - '220'
 - title: Hôpital / Clinique
   tags:
-    - Litige contractuel
+    - LitigeContractuel
   subcategories:
     - title: J'ai subi un mauvais traitement ou j'ai été mal soigné
       information:
@@ -467,7 +467,7 @@
             - '226'
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
           detailInputs:
             - label: Date de constat
               rank: 1
@@ -495,14 +495,14 @@
             - '226'
             - '162'
           tags:
-            - Litige contractuel
+            - LitigeContractuel
     - title: Problème de commande
       reponseconsoCode:
         - '220'
         - '226'
         - '162'
       tags:
-        - Litige contractuel
+        - LitigeContractuel
     - title: Autre
       subcategories:
         - title: Problème d'accessibilité
@@ -536,7 +536,7 @@
     - '212'
     - '226'
   tags:
-    - Litige contractuel
+    - LitigeContractuel
 - title: Cure
   example: 'Exemple : thalassothérapie, thermalisme'
   subcategories:
@@ -544,7 +544,7 @@
       example: "Exemple : les prix ne sont pas affichés, pas de remise d'une facture"
       tags:
         - ReponseConso
-        - Litige contractuel
+        - LitigeContractuel
       subcategories:
         - title: Les prix ne sont pas affichés
           example: 'Exemple : les prix des soins ne sont pas affichés, les prix affichés ne sont pas très clairs'
@@ -600,7 +600,7 @@
         - '210'
         - '220'
       tags:
-        - Litige contractuel
+        - LitigeContractuel
       detailInputs:
         - label: Date de constat
           rank: 1
@@ -633,7 +633,7 @@
         - '422'
       tags:
         - ReponseConso
-        - Litige contractuel
+        - LitigeContractuel
     - title: Autre
       subcategories:
         - title: Problème d'accessibilité
