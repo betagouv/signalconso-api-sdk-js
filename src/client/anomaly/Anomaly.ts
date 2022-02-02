@@ -23,20 +23,20 @@ export interface Anomaly extends Category {
 export type Subcategory = SubcategoryBase | SubcategoryInput | SubcategoryInformation
 
 export enum ReportTag {
-  LitigeContractuel = 'Litige contractuel',
-  Hygiene = 'hygiène',
-  ProduitDangereux = 'Produit dangereux',
-  DemarchageADomicile = 'Démarchage à domicile',
+  LitigeContractuel = 'LitigeContractuel',
+  Hygiene = 'Hygiene',
+  ProduitDangereux = 'ProduitDangereux',
+  DemarchageADomicile = 'DemarchageADomicile',
   Ehpad = 'Ehpad',
-  DemarchageTelephonique = 'Démarchage téléphonique',
-  AbsenceDeMediateur = 'Absence de médiateur',
+  DemarchageTelephonique = 'DemarchageTelephonique',
+  AbsenceDeMediateur = 'AbsenceDeMediateur',
   Bloctel = 'Bloctel',
   Influenceur = 'Influenceur',
   ReponseConso = 'ReponseConso',
   Internet = 'Internet',
-  ProduitIndustriel = 'Produit industriel',
-  ProduitAlimentaire = 'Produit alimentaire',
-  CompagnieAerienne = 'Compagnie aerienne',
+  ProduitIndustriel = 'ProduitIndustriel',
+  ProduitAlimentaire = 'ProduitAlimentaire',
+  CompagnieAerienne = 'CompagnieAerienne',
 }
 
 export enum CompanyKinds {
