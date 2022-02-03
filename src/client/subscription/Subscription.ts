@@ -1,4 +1,4 @@
-import {Country, Department} from '../..'
+import {Country, Department, ReportTag} from '../..'
 
 export type SubscriptionFrequency = 'P7D' | 'P1D'
 
@@ -9,7 +9,7 @@ export interface Subscription {
   sirets: string[]
   frequency: SubscriptionFrequency
   countries: Country[]
-  tags: string[]
+  tags: ReportTag[]
 }
 
 export interface SubscriptionCreate {
@@ -18,5 +18,5 @@ export interface SubscriptionCreate {
   sirets: string[]
   frequency: SubscriptionFrequency
   countries: string[]
-  tags: string[]
+  tags: ReportTag[]
 }

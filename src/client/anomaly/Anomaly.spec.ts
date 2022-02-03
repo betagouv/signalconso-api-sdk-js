@@ -29,7 +29,7 @@ describe('enrichAnomaly', () => {
               {
                 'id': '1',
                 'title': 'Le prix de la livraison a augmenté',
-                'tags': ['Litige contractuel' as ReportTag],
+                'tags': ['LitigeContractuel' as ReportTag],
                 'detailInputs': [
                   {
                     'label': 'Date du constat',
@@ -67,7 +67,7 @@ describe('enrichAnomaly', () => {
               {
                 'id': '1',
                 'title': 'Le prix de la livraison a augmenté',
-                'tags': ['Litige contractuel' as ReportTag],
+                'tags': ['LitigeContractuel' as ReportTag],
                 'companyKind': 'WEBSITE' as CompanyKinds,
                 'detailInputs': [
                   {
@@ -164,7 +164,7 @@ describe('enrichAnomaly', () => {
             'id': '1',
             'title': 'Les prix (gel désinfectant, masque) sont trop élevés',
             'subcategoriesTitle': 'De quel produit s\'agit-il&#160;?',
-            'tags': ['Produit dangereux' as ReportTag],
+            'tags': ['ProduitDangereux' as ReportTag],
             'subcategories': [
               {
                 'id': '1',
@@ -187,7 +187,7 @@ describe('enrichAnomaly', () => {
             'id': '1',
             'title': 'Les prix (gel désinfectant, masque) sont trop élevés',
             'subcategoriesTitle': 'De quel produit s\'agit-il&#160;?',
-            'tags': ['Produit dangereux' as ReportTag],
+            'tags': ['ProduitDangereux' as ReportTag],
             'subcategories': [
               {
                 'id': '1',
@@ -275,7 +275,7 @@ describe('enrichAnomaly', () => {
     );
   });
 
-  it('should add internet subcategory and compy detailInputs related fields', () => {
+  it('should add internet subcategory and company detailInputs related fields', () => {
     testParsing(
       [{
         'id': '1',
@@ -365,7 +365,7 @@ describe('enrichAnomaly', () => {
             'companyKind': 'SIRET' as CompanyKinds,
             'example': 'Exemple : locaux sales, rat, chaîne du froid',
             'tags': [
-              'hygiène' as ReportTag
+              'Hygiene' as ReportTag
             ],
             'subcategoriesTitle': 'Vous voulez signaler&#160;:',
             'subcategories': [
@@ -401,7 +401,7 @@ describe('enrichAnomaly', () => {
           'title': 'Hygiène',
           'companyKind': 'SIRET' as CompanyKinds,
           'example': 'Exemple : locaux sales, rat, chaîne du froid',
-          'tags': ['hygiène' as ReportTag],
+          'tags': ['Hygiene' as ReportTag],
           'subcategoriesTitle': 'Vous voulez signaler&#160;:',
           'subcategories': [{
             'id': '1',

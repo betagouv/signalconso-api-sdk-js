@@ -32,7 +32,7 @@
             {
               "title": "Le prix de la livraison a augmenté",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "detailInputs": [
                 {
@@ -165,7 +165,7 @@
                 "324"
               ],
               "tags": [
-                "Produit dangereux"
+                "ProduitDangereux"
               ],
               "detailInputs": [
                 {
@@ -222,7 +222,7 @@
                 "324"
               ],
               "tags": [
-                "Produit dangereux"
+                "ProduitDangereux"
               ],
               "detailInputs": [
                 {
@@ -279,7 +279,7 @@
                 "324"
               ],
               "tags": [
-                "Produit dangereux"
+                "ProduitDangereux"
               ],
               "detailInputs": [
                 {
@@ -336,7 +336,7 @@
                 "324"
               ],
               "tags": [
-                "Produit dangereux"
+                "ProduitDangereux"
               ],
               "detailInputs": [
                 {
@@ -394,7 +394,7 @@
           "example": "Exemple : locaux sales, rat, chaîne du froid",
           "tags": [
             "ReponseConso",
-            "hygiène"
+            "Hygiene"
           ],
           "subcategoriesTitle": "Vous voulez signaler&#160;:",
           "subcategories": [
@@ -681,7 +681,7 @@
                 "212"
               ],
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "detailInputs": [
                 {
@@ -1364,20 +1364,20 @@
               "example": "Exemple : jouet, cosmétique",
               "tags": [
                 "ReponseConso",
-                "Produit dangereux"
+                "ProduitDangereux"
               ],
               "subcategories": [
                 {
                   "title": "Produit alimentaire",
                   "tags": [
-                    "Produit alimentaire"
+                    "ProduitAlimentaire"
                   ],
                   "reponseconsoCode": null,
                   "subcategories": [
                     {
                       "title": "Aliment pour animaux",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -1890,7 +1890,7 @@
                     {
                       "title": "Complément alimentaire",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -2403,7 +2403,7 @@
                     {
                       "title": "Alcool",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "example": "Exemple : vin, cidre, bière...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -2917,7 +2917,7 @@
                     {
                       "title": "Produit pour bébé",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "example": "Exemple : lait, plat, petit pot...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -3431,14 +3431,14 @@
                     {
                       "title": "Fruit ou légume",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "id": "1.2-1.4.1.5"
                     },
                     {
                       "title": "Viande, poisson, produit de la mer, oeuf",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -3951,7 +3951,7 @@
                     {
                       "title": "Lait et dérivé",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "example": "Exemple : lait, fromage, glace...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -4465,7 +4465,7 @@
                     {
                       "title": "Produit sec",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "example": "Exemple : épice, farine, pâtes...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -4979,7 +4979,7 @@
                     {
                       "title": "Plat ou dessert préparé",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -5492,7 +5492,7 @@
                     {
                       "title": "Autre",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -6008,7 +6008,7 @@
                 {
                   "title": "Jouet, puériculture, matériel scolaire",
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
@@ -6379,7 +6379,7 @@
                 {
                   "title": "Cosmétique, produit d'hygiène, produit de tatouage",
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
@@ -6750,7 +6750,7 @@
                 {
                   "title": "Vêtement, textile, sac à main, bijou",
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
@@ -7121,7 +7121,7 @@
                 {
                   "title": "Équipement de protection",
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
@@ -7492,7 +7492,7 @@
                 {
                   "title": "Feu d'artifice",
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
@@ -7863,7 +7863,7 @@
                 {
                   "title": "Meuble",
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
@@ -8234,7 +8234,7 @@
                 {
                   "title": "Produit d'entretien, produit chimique, engrais",
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
@@ -8603,7 +8603,7 @@
                   "id": "1.2-1.4.8"
                 },
                 {
-                  "title": "Appareil électrique - Produit industriel",
+                  "title": "Appareil électrique - ProduitIndustriel",
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -8971,7 +8971,7 @@
                   "id": "1.2-1.4.9"
                 },
                 {
-                  "title": "Outil - Produit industriel",
+                  "title": "Outil - ProduitIndustriel",
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -9886,8 +9886,8 @@
                 {
                   "title": "Hygiène",
                   "tags": [
-                    "hygiène",
-                    "Produit Alimentaire"
+                    "Hygiene",
+                    "ProduitAlimentaire"
                   ],
                   "example": "Exemple : magasin sale, produit pas au frais, mauvaises odeurs",
                   "subcategories": [
@@ -10452,7 +10452,7 @@
                     "21D"
                   ],
                   "tags": [
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "subcategoriesTitle": "Pourquoi voulez-vous retourner ou échanger votre article ?",
                   "subcategories": [
@@ -11341,14 +11341,14 @@
                           ],
                           "tags": [
                             "ReponseConso",
-                            "Produit dangereux"
+                            "ProduitDangereux"
                           ],
                           "subcategoriesTitle": "Quel est le risque&#160;?",
                           "subcategories": [
                             {
                               "title": "Aliment pour animaux",
                               "tags": [
-                                "Produit alimentaire"
+                                "ProduitAlimentaire"
                               ],
                               "subcategoriesTitle": "Quel est le risque&#160;?",
                               "subcategories": [
@@ -11861,7 +11861,7 @@
                             {
                               "title": "Complément alimentaire",
                               "tags": [
-                                "Produit alimentaire"
+                                "ProduitAlimentaire"
                               ],
                               "subcategoriesTitle": "Quel est le risque&#160;?",
                               "subcategories": [
@@ -12374,7 +12374,7 @@
                             {
                               "title": "Alcool",
                               "tags": [
-                                "Produit alimentaire"
+                                "ProduitAlimentaire"
                               ],
                               "example": "Exemple : vin, cidre, bière...",
                               "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -12888,7 +12888,7 @@
                             {
                               "title": "Produit pour bébé",
                               "tags": [
-                                "Produit alimentaire"
+                                "ProduitAlimentaire"
                               ],
                               "example": "Exemple : lait, plat, petit pot...",
                               "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -13402,14 +13402,14 @@
                             {
                               "title": "Fruit ou légume",
                               "tags": [
-                                "Produit alimentaire"
+                                "ProduitAlimentaire"
                               ],
                               "id": "1.2-2.2.1.2.4.5"
                             },
                             {
                               "title": "Viande, poisson, produit de la mer, oeuf",
                               "tags": [
-                                "Produit alimentaire"
+                                "ProduitAlimentaire"
                               ],
                               "subcategoriesTitle": "Quel est le risque&#160;?",
                               "subcategories": [
@@ -13922,7 +13922,7 @@
                             {
                               "title": "Lait et dérivé",
                               "tags": [
-                                "Produit alimentaire"
+                                "ProduitAlimentaire"
                               ],
                               "example": "Exemple : lait, fromage, glace...",
                               "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -14436,7 +14436,7 @@
                             {
                               "title": "Produit sec",
                               "tags": [
-                                "Produit alimentaire"
+                                "ProduitAlimentaire"
                               ],
                               "example": "Exemple : épice, farine, pâtes...",
                               "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -14950,7 +14950,7 @@
                             {
                               "title": "Plat ou dessert préparé",
                               "tags": [
-                                "Produit alimentaire"
+                                "ProduitAlimentaire"
                               ],
                               "subcategoriesTitle": "Quel est le risque&#160;?",
                               "subcategories": [
@@ -15463,7 +15463,7 @@
                             {
                               "title": "Autre",
                               "tags": [
-                                "Produit alimentaire"
+                                "ProduitAlimentaire"
                               ],
                               "subcategoriesTitle": "Quel est le risque&#160;?",
                               "subcategories": [
@@ -16404,7 +16404,7 @@
                     }
                   ],
                   "tags": [
-                    "Produit Alimenaire"
+                    "ProduitAlimenaire"
                   ],
                   "id": "1.2-2.2.1"
                 },
@@ -17001,7 +17001,7 @@
                     }
                   ],
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "id": "1.2-2.2.2"
                 }
@@ -17013,7 +17013,7 @@
               "example": "Exemple : jouet, cosmétique",
               "companyKind": "LOCATION",
               "tags": [
-                "Produit dangereux"
+                "ProduitDangereux"
               ],
               "subcategories": [
                 {
@@ -17022,7 +17022,7 @@
                     {
                       "title": "Aliment pour animaux",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -17535,7 +17535,7 @@
                     {
                       "title": "Complément alimentaire",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -18048,7 +18048,7 @@
                     {
                       "title": "Alcool",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "example": "Exemple : vin, cidre, bière...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -18562,7 +18562,7 @@
                     {
                       "title": "Produit pour bébé",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "example": "Exemple : lait, plat, petit pot...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -19076,14 +19076,14 @@
                     {
                       "title": "Fruit ou légume",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "id": "1.2-2.3.1.5"
                     },
                     {
                       "title": "Viande, poisson, produit de la mer, oeuf",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -19596,7 +19596,7 @@
                     {
                       "title": "Lait et dérivé",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "example": "Exemple : lait, fromage, glace...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -20110,7 +20110,7 @@
                     {
                       "title": "Produit sec",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "example": "Exemple : épice, farine, pâtes...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -20624,7 +20624,7 @@
                     {
                       "title": "Plat ou dessert préparé",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -21137,7 +21137,7 @@
                     {
                       "title": "Autre",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -21649,7 +21649,7 @@
                     }
                   ],
                   "tags": [
-                    "Produit alimentaire"
+                    "ProduitAlimentaire"
                   ],
                   "id": "1.2-2.3.1"
                 },
@@ -22020,7 +22020,7 @@
                     }
                   ],
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "id": "1.2-2.3.2"
                 },
@@ -22030,7 +22030,7 @@
                     "34A"
                   ],
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
@@ -22765,7 +22765,7 @@
                     }
                   ],
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "id": "1.2-2.3.4"
                 },
@@ -23136,7 +23136,7 @@
                     }
                   ],
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "id": "1.2-2.3.5"
                 },
@@ -23507,7 +23507,7 @@
                     }
                   ],
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "id": "1.2-2.3.6"
                 },
@@ -23878,7 +23878,7 @@
                     }
                   ],
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "id": "1.2-2.3.7"
                 },
@@ -24255,7 +24255,7 @@
                     "342"
                   ],
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "id": "1.2-2.3.8"
                 },
@@ -24629,7 +24629,7 @@
                     "34F"
                   ],
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "id": "1.2-2.3.9"
                 },
@@ -25003,7 +25003,7 @@
                     "34F"
                   ],
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "id": "1.2-2.3.10"
                 },
@@ -25390,14 +25390,14 @@
           ],
           "tags": [
             "ReponseConso",
-            "Démarchage à domicile"
+            "DemarchageADomicile"
           ],
           "subcategories": [
             {
               "title": "C'est un aliment ou une boisson",
               "example": "Exemple : bonbon, viande, pain, conserve, vin, eau en bouteille",
               "tags": [
-                "Produit alimentaire"
+                "ProduitAlimentaire"
               ],
               "detailInputs": [
                 {
@@ -25432,7 +25432,7 @@
               "title": "C'est un objet",
               "example": "Exemple : jouet, électroménager, vêtement, savon, vaisselle, meuble",
               "tags": [
-                "Produit industriel"
+                "ProduitIndustriel"
               ],
               "detailInputs": [
                 {
@@ -25468,19 +25468,19 @@
               "example": "Exemple : jouet, cosmétique",
               "companyKind": "LOCATION",
               "tags": [
-                "Produit dangereux"
+                "ProduitDangereux"
               ],
               "subcategories": [
                 {
                   "title": "Produit alimentaire",
                   "tags": [
-                    "Produit alimentaire"
+                    "ProduitAlimentaire"
                   ],
                   "subcategories": [
                     {
                       "title": "Aliment pour animaux",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -25993,7 +25993,7 @@
                     {
                       "title": "Complément alimentaire",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -26506,7 +26506,7 @@
                     {
                       "title": "Alcool",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "example": "Exemple : vin, cidre, bière...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -27020,7 +27020,7 @@
                     {
                       "title": "Produit pour bébé",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "example": "Exemple : lait, plat, petit pot...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -27534,14 +27534,14 @@
                     {
                       "title": "Fruit ou légume",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "id": "1.2-3.3.1.5"
                     },
                     {
                       "title": "Viande, poisson, produit de la mer, oeuf",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -28054,7 +28054,7 @@
                     {
                       "title": "Lait et dérivé",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "example": "Exemple : lait, fromage, glace...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -28568,7 +28568,7 @@
                     {
                       "title": "Produit sec",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "example": "Exemple : épice, farine, pâtes...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -29082,7 +29082,7 @@
                     {
                       "title": "Plat ou dessert préparé",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -29595,7 +29595,7 @@
                     {
                       "title": "Autre",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -30111,7 +30111,7 @@
                 {
                   "title": "Jouet, puériculture, matériel scolaire",
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
@@ -30482,7 +30482,7 @@
                 {
                   "title": "Cosmétique, produit d'hygiène, produit de tatouage",
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
@@ -30853,7 +30853,7 @@
                 {
                   "title": "Vêtement, textile, sac à main, bijou",
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
@@ -31224,7 +31224,7 @@
                 {
                   "title": "Équipement de protection",
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
@@ -31595,7 +31595,7 @@
                 {
                   "title": "Feu d'artifice",
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
@@ -31966,7 +31966,7 @@
                 {
                   "title": "Meuble",
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
@@ -32337,7 +32337,7 @@
                 {
                   "title": "Produit d'entretien, produit chimique, engrais",
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
@@ -32708,7 +32708,7 @@
                 {
                   "title": "Appareil électrique",
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
@@ -33079,7 +33079,7 @@
                 {
                   "title": "Outil",
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
@@ -33904,7 +33904,7 @@
                     "212"
                   ],
                   "tags": [
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "detailInputs": [
                     {
@@ -34068,7 +34068,7 @@
                   ],
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.5-2.1.3"
                 },
@@ -34136,7 +34136,7 @@
                         "210"
                       ],
                       "tags": [
-                        "Litige contractuel"
+                        "LitigeContractuel"
                       ],
                       "id": "1.5-2.1.4.6"
                     }
@@ -34158,7 +34158,7 @@
                     "212"
                   ],
                   "tags": [
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.5-2.2.1"
                 },
@@ -34294,7 +34294,7 @@
                   ],
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.5-2.2.3"
                 },
@@ -34356,7 +34356,7 @@
                         "210"
                       ],
                       "tags": [
-                        "Litige contractuel"
+                        "LitigeContractuel"
                       ],
                       "id": "1.5-2.2.4.5"
                     }
@@ -34370,7 +34370,7 @@
               "title": "Aide à la personne",
               "tags": [
                 "ReponseConso",
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "reponseconsoCode": [
                 "210"
@@ -34380,7 +34380,7 @@
             {
               "title": "Maison de retraite (ehpad)",
               "tags": [
-                "Litige contractuel",
+                "LitigeContractuel",
                 "Ehpad"
               ],
               "subcategories": [
@@ -34587,7 +34587,7 @@
                   ],
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.5-2.5.1"
                 },
@@ -34727,7 +34727,7 @@
                   ],
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.5-2.5.3"
                 },
@@ -34789,7 +34789,7 @@
                   ],
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.5-2.6.1"
                 },
@@ -34801,7 +34801,7 @@
                     "226"
                   ],
                   "tags": [
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.5-2.6.2"
                 },
@@ -34818,7 +34818,7 @@
                   ],
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.5-2.6.3"
                 },
@@ -34865,7 +34865,7 @@
                   "title": "Le distributeur me demande de payer une avance sur ma consommation",
                   "subcategoriesTitle": "Quand doit-être remboursée cette avance ?",
                   "tags": [
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "subcategories": [
                     {
@@ -34920,7 +34920,7 @@
                   "title": "Une clause du contrat (règlement de service) est abusive, c'est-à-dire qu'elle désavantage fortement le consommateur.",
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "detailInputs": [
                     {
@@ -34942,7 +34942,7 @@
                   "title": "Autre",
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.6-1.1.5"
                 }
@@ -34954,7 +34954,7 @@
               "example": "Mon débit d'eau a été réduit car je ne peux payer ma facture",
               "tags": [
                 "ReponseConso",
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "detailTitle": "Il est interdit de couper ou réduire l'eau en cas d'impayé lorsqu'il s'agit d'une résidence principale.",
               "description": "Les coupures d'eau et les réductions de débit sont interdites en cas de factures impayées, pour les résidences principales et ce toute l'anné. Par contre, vous devrez toujours payer votre facture.",
@@ -35061,7 +35061,7 @@
         {
           "title": "Gaz / Electricité",
           "tags": [
-            "Litige contractuel"
+            "LitigeContractuel"
           ],
           "subcategories": [
             {
@@ -35069,7 +35069,7 @@
               "example": "Exemple : vendeur prétend être envoyé par EDF, démarcheur agressif",
               "companyKind": "LOCATION",
               "tags": [
-                "Démarchage à domicile",
+                "DemarchageADomicile",
                 "ReponseConso"
               ],
               "detailInputs": [
@@ -35120,7 +35120,7 @@
               "title": "Démarchage téléphonique",
               "companyKind": "PHONE",
               "tags": [
-                "Démarchage téléphonique",
+                "DemarchageTelephonique",
                 "ReponseConso"
               ],
               "detailInputs": [
@@ -35399,7 +35399,7 @@
             "212"
           ],
           "tags": [
-            "Litige contractuel",
+            "LitigeContractuel",
             "ReponseConso"
           ],
           "id": "1.6-3"
@@ -35454,7 +35454,7 @@
                           "title": "Non, j'ai reçu seulement un sms",
                           "tags": [
                             "ReponseConso",
-                            "Litige contractuel"
+                            "LitigeContractuel"
                           ],
                           "id": "1.7-1.1.1.1.2"
                         },
@@ -35465,7 +35465,7 @@
                           ],
                           "tags": [
                             "ReponseConso",
-                            "Litige contractuel"
+                            "LitigeContractuel"
                           ],
                           "id": "1.7-1.1.1.1.3"
                         }
@@ -35501,7 +35501,7 @@
                             "2202"
                           ],
                           "tags": [
-                            "Litige contractuel"
+                            "LitigeContractuel"
                           ],
                           "id": "1.7-1.1.1.2.2"
                         },
@@ -35511,7 +35511,7 @@
                             "421"
                           ],
                           "tags": [
-                            "Litige contractuel"
+                            "LitigeContractuel"
                           ],
                           "id": "1.7-1.1.1.2.3"
                         }
@@ -35547,7 +35547,7 @@
                             {
                               "title": "Non, je n'ai rien reçu",
                               "tags": [
-                                "Litige contractuel"
+                                "LitigeContractuel"
                               ],
                               "detailInputs": [
                                 {
@@ -35573,7 +35573,7 @@
                             "421"
                           ],
                           "tags": [
-                            "Litige contractuel"
+                            "LitigeContractuel"
                           ],
                           "detailInputs": [
                             {
@@ -35624,7 +35624,7 @@
                       ],
                       "tags": [
                         "ReponseConso",
-                        "Litige contractuel"
+                        "LitigeContractuel"
                       ],
                       "id": "1.7-1.1.1.4"
                     }
@@ -35639,7 +35639,7 @@
                   ],
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.7-1.1.2"
                 },
@@ -35651,7 +35651,7 @@
                   ],
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "subcategories": [
                     {
@@ -35688,7 +35688,7 @@
             {
               "title": "Résiliation / changement d'opérateur",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -35757,7 +35757,7 @@
                   "companyKind": "PHONE",
                   "tags": [
                     "ReponseConso",
-                    "Démarchage téléphonique"
+                    "DemarchageTelephonique"
                   ],
                   "detailInputs": [
                     {
@@ -35791,7 +35791,7 @@
               "example": "Exemple : téléphone acheté avec le forfait, service client injoignable",
               "tags": [
                 "ReponseConso",
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -35833,7 +35833,7 @@
                 "221"
               ],
               "tags": [
-                "Démarcharge à domicile"
+                "DemarchageADomicile"
               ],
               "id": "1.7-2.1"
             },
@@ -35845,7 +35845,7 @@
                 "221"
               ],
               "tags": [
-                "Démarchage téléphonique"
+                "DemarchageTelephonique"
               ],
               "id": "1.7-2.2"
             },
@@ -35883,7 +35883,7 @@
                 "221"
               ],
               "tags": [
-                "Démarcharge à domicile"
+                "DemarchageADomicile"
               ],
               "id": "1.7-3.1"
             },
@@ -35895,7 +35895,7 @@
                 "221"
               ],
               "tags": [
-                "Démarchage téléphonique"
+                "DemarchageTelephonique"
               ],
               "id": "1.7-3.2"
             },
@@ -35928,7 +35928,7 @@
           "title": "Produit dangereux",
           "example": "Exemple : téléphone, accessoire",
           "tags": [
-            "Produit dangereux"
+            "ProduitDangereux"
           ],
           "subcategories": [
             {
@@ -36298,7 +36298,7 @@
                 }
               ],
               "tags": [
-                "Produit industriel"
+                "ProduitIndustriel"
               ],
               "id": "1.7-4.1"
             },
@@ -36669,7 +36669,7 @@
                 }
               ],
               "tags": [
-                "Produit industriel"
+                "ProduitIndustriel"
               ],
               "id": "1.7-4.2"
             },
@@ -37040,7 +37040,7 @@
                 }
               ],
               "tags": [
-                "Produit industriel"
+                "ProduitIndustriel"
               ],
               "id": "1.7-4.3"
             }
@@ -37070,7 +37070,7 @@
           "example": "Exemple : banque classique, banque en ligne",
           "tags": [
             "ReponseConso",
-            "Litige contractuel"
+            "LitigeContractuel"
           ],
           "subcategories": [
             {
@@ -37099,7 +37099,7 @@
                 "411"
               ],
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -37110,7 +37110,7 @@
                     "2210"
                   ],
                   "tags": [
-                    "Démarchage téléphonique"
+                    "DemarchageTelephonique"
                   ],
                   "detailInputs": [
                     {
@@ -37191,7 +37191,7 @@
               "title": "Publicité",
               "example": "Exemple : publicité trompeuse, démarchage à domicile, démarchage téléphonique",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -37202,7 +37202,7 @@
                     "2210"
                   ],
                   "tags": [
-                    "Démarchage à domicile"
+                    "DemarchageADomicile"
                   ],
                   "detailInputs": [
                     {
@@ -37241,7 +37241,7 @@
                     "2210"
                   ],
                   "tags": [
-                    "Démarchage téléphonique"
+                    "DemarchageTelephonique"
                   ],
                   "detailInputs": [
                     {
@@ -37285,7 +37285,7 @@
                 "491"
               ],
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "id": "1.8-2.4"
             },
@@ -37295,7 +37295,7 @@
                 "679"
               ],
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "id": "1.8-2.5"
             }
@@ -37330,7 +37330,7 @@
             "324"
           ],
           "tags": [
-            "Produit dangereux"
+            "ProduitDangereux"
           ],
           "detailInputs": [
             {
@@ -37387,7 +37387,7 @@
             "324"
           ],
           "tags": [
-            "Produit dangereux"
+            "ProduitDangereux"
           ],
           "detailInputs": [
             {
@@ -37444,7 +37444,7 @@
             "324"
           ],
           "tags": [
-            "Produit dangereux"
+            "ProduitDangereux"
           ],
           "detailInputs": [
             {
@@ -37501,7 +37501,7 @@
             "324"
           ],
           "tags": [
-            "Produit dangereux"
+            "ProduitDangereux"
           ],
           "detailInputs": [
             {
@@ -37756,7 +37756,7 @@
           "title": "Dépannage",
           "example": "Vous faites appel à un professionnel dans l'urgence à votre domicile (par exemple : vous avez perdu votre clef d'appartement et vous contactez un serrurier pour qu'il vienne vous l'ouvrir, vous appelez un plombier suite à l'explosion de votre canalisation)",
           "tags": [
-            "Litige contractuel"
+            "LitigeContractuel"
           ],
           "subcategories": [
             {
@@ -37935,7 +37935,7 @@
                 "21B"
               ],
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -37974,7 +37974,7 @@
               "title": "Publicité et pratique du professionnel",
               "example": "Exemple : absence d'information, information trompeuse ou mensongère, démarchage",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "ccrfCode": [
                 "23B"
@@ -37983,7 +37983,7 @@
                 {
                   "title": "Absence d'information ou information incomplète",
                   "tags": [
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "subcategories": [
                     {
@@ -38030,7 +38030,7 @@
                   ],
                   "tags": [
                     "ReponseConso",
-                    "Démarchage à domicile"
+                    "DemarchageADomicile"
                   ],
                   "detailInputs": [
                     {
@@ -38069,7 +38069,7 @@
                   ],
                   "tags": [
                     "ReponseConso",
-                    "Démarchage téléphonique"
+                    "DemarchageTelephonique"
                   ],
                   "detailInputs": [
                     {
@@ -38423,7 +38423,7 @@
                     "443"
                   ],
                   "tags": [
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.12-2.3.2"
                 }
@@ -38503,7 +38503,7 @@
                     "443"
                   ],
                   "tags": [
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.12-2.4.2"
                 },
@@ -38515,14 +38515,14 @@
                   ],
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.12-2.4.3"
                 },
                 {
                   "title": "Autre",
                   "tags": [
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.12-2.4.4"
                 }
@@ -38532,7 +38532,7 @@
             {
               "title": "Crédits / garanties",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -38603,7 +38603,7 @@
             {
               "title": "Autre",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "id": "1.12-2.6"
             }
@@ -38614,13 +38614,13 @@
           "title": "Produit dangereux",
           "example": "Exemple : marteau, perceuse",
           "tags": [
-            "Produit dangereux"
+            "ProduitDangereux"
           ],
           "subcategories": [
             {
               "title": "Outil",
               "tags": [
-                "Produit industriel"
+                "ProduitIndustriel"
               ],
               "subcategoriesTitle": "Quel est le risque&#160;?",
               "subcategories": [
@@ -38992,7 +38992,7 @@
               "title": "Appareil électrique",
               "subcategoriesTitle": "Quel est le risque&#160;?",
               "tags": [
-                "Produit industriel"
+                "ProduitIndustriel"
               ],
               "subcategories": [
                 {
@@ -39726,7 +39726,7 @@
                 }
               ],
               "tags": [
-                "Produit industriel"
+                "ProduitIndustriel"
               ],
               "id": "1.12-3.3"
             },
@@ -40097,7 +40097,7 @@
                 }
               ],
               "tags": [
-                "Produit industriel"
+                "ProduitIndustriel"
               ],
               "id": "1.12-3.4"
             }
@@ -40127,7 +40127,7 @@
                   "title": "Refus de faire la course",
                   "example": "Exemple : le taxi refuse de vous prendre car ce n'est pas assez loin",
                   "tags": [
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "reponseconsoCode": [
                     "232"
@@ -40200,7 +40200,7 @@
                   ],
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "subcategories": [
                     {
@@ -40477,7 +40477,7 @@
                     {
                       "title": "J'ai été prélevé deux fois",
                       "tags": [
-                        "Litige contractuel"
+                        "LitigeContractuel"
                       ],
                       "detailInputs": [
                         {
@@ -40521,7 +40521,7 @@
                     {
                       "title": "Autre",
                       "tags": [
-                        "Litige contractuel"
+                        "LitigeContractuel"
                       ],
                       "id": "1.10-1.1.6.4"
                     }
@@ -40536,7 +40536,7 @@
               "companyKind": "WEBSITE",
               "example": "Les VTC n'ont pas de signe particulier sur les voitures. Vous devez faire une réservation pour prendre un VTC. La plupart de ces réservations se font sur internet.",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -40701,7 +40701,7 @@
                   "example": "Exemple : fausse réduction, supplément imprévu",
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "detailInputs": [
                     {
@@ -40729,7 +40729,7 @@
                 {
                   "title": "Autre",
                   "tags": [
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.10-2.1.4"
                 }
@@ -40741,7 +40741,7 @@
               "example": "Exemple : publicité trompeuse, absence d'information",
               "tags": [
                 "ReponseConso",
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -40805,7 +40805,7 @@
               "title": "Qualité de la chambre / de l'hébergement",
               "example": "Exemple : hôtel sale, chambre insonorisée, pas de sauna alors que le site mentionne un sauna",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -40860,7 +40860,7 @@
                 "4241"
               ],
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategoriesTitle": "Qui a annulé la réservation&#160;?",
               "subcategories": [
@@ -40895,7 +40895,7 @@
               "title": "Produit dangereux",
               "example": "Exemple : lit",
               "tags": [
-                "Produit dangereux"
+                "ProduitDangereux"
               ],
               "subcategories": [
                 {
@@ -40904,7 +40904,7 @@
                     {
                       "title": "Aliment pour animaux",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -41417,7 +41417,7 @@
                     {
                       "title": "Complément alimentaire",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -41930,7 +41930,7 @@
                     {
                       "title": "Alcool",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "example": "Exemple : vin, cidre, bière...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -42444,7 +42444,7 @@
                     {
                       "title": "Produit pour bébé",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "example": "Exemple : lait, plat, petit pot...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -42958,14 +42958,14 @@
                     {
                       "title": "Fruit ou légume",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "id": "1.10-2.5.1.5"
                     },
                     {
                       "title": "Viande, poisson, produit de la mer, oeuf",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -43478,7 +43478,7 @@
                     {
                       "title": "Lait et dérivé",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "example": "Exemple : lait, fromage, glace...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -43992,7 +43992,7 @@
                     {
                       "title": "Produit sec",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "example": "Exemple : épice, farine, pâtes...",
                       "subcategoriesTitle": "Quel est le risque&#160;?",
@@ -44506,7 +44506,7 @@
                     {
                       "title": "Plat ou dessert préparé",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -45019,7 +45019,7 @@
                     {
                       "title": "Autre",
                       "tags": [
-                        "Produit alimentaire"
+                        "ProduitAlimentaire"
                       ],
                       "subcategoriesTitle": "Quel est le risque&#160;?",
                       "subcategories": [
@@ -45531,7 +45531,7 @@
                     }
                   ],
                   "tags": [
-                    "Produit alimentaire"
+                    "ProduitAlimentaire"
                   ],
                   "id": "1.10-2.5.1"
                 },
@@ -45905,7 +45905,7 @@
                     "321"
                   ],
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "id": "1.10-2.5.2"
                 },
@@ -46280,7 +46280,7 @@
                     "348"
                   ],
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "id": "1.10-2.5.3"
                 },
@@ -46651,7 +46651,7 @@
                     }
                   ],
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "id": "1.10-2.5.4"
                 },
@@ -47025,7 +47025,7 @@
                     "34A"
                   ],
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "id": "1.10-2.5.5"
                 },
@@ -47396,7 +47396,7 @@
                     }
                   ],
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "id": "1.10-2.5.6"
                 },
@@ -47767,7 +47767,7 @@
                     }
                   ],
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "id": "1.10-2.5.7"
                 },
@@ -48141,7 +48141,7 @@
                     "34F"
                   ],
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "id": "1.10-2.5.8"
                 },
@@ -48512,7 +48512,7 @@
                     }
                   ],
                   "tags": [
-                    "Produit industriel"
+                    "ProduitIndustriel"
                   ],
                   "id": "1.10-2.5.9"
                 }
@@ -48636,14 +48636,14 @@
                   ],
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.10-3.1.3"
                 },
                 {
                   "title": "Autre",
                   "tags": [
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.10-3.1.4"
                 }
@@ -48655,7 +48655,7 @@
               "example": "Exemple : publicité trompeuse, absence d'information",
               "tags": [
                 "ReponseConso",
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -48718,7 +48718,7 @@
             {
               "title": "Prestation",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -48747,7 +48747,7 @@
                 "424"
               ],
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "id": "1.10-3.4"
             },
@@ -48759,14 +48759,14 @@
                 "424"
               ],
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "id": "1.10-3.5"
             },
             {
               "title": "Autre",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -48851,7 +48851,7 @@
                   "example": "Exemple : fausse réduction, suppléments non prévus",
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "reponseconsoCode": [
                     "210"
@@ -48862,7 +48862,7 @@
                   "title": "Autre",
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.10-5.1.4"
                 }
@@ -48873,7 +48873,7 @@
               "title": "Publicité",
               "example": "Exemple : publicité trompeuse, absence d'information",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -48944,14 +48944,14 @@
                 "4241"
               ],
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "id": "1.10-5.3"
             },
             {
               "title": "Assurance",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -48978,7 +48978,7 @@
               "title": "Abonnement de transport",
               "example": "Exemple : TGV max, pass Navigo",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "id": "1.10-5.5"
             },
@@ -49046,7 +49046,7 @@
                 {
                   "title": "Autre",
                   "tags": [
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.10-5.6.4"
                 }
@@ -49094,7 +49094,7 @@
                   ],
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.10-6.1.3"
                 },
@@ -49102,7 +49102,7 @@
                   "title": "Autre",
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.10-6.1.4"
                 }
@@ -49114,7 +49114,7 @@
               "example": "Exemple : publicité trompeuse, absence d'information",
               "tags": [
                 "ReponseConso",
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -49178,7 +49178,7 @@
               "title": "Contrat et abonnement",
               "example": "Exemple : contrat non respecté, clause abusive",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -49205,7 +49205,7 @@
               "title": "Produit dangereux",
               "example": "Exemple : équipement de protection",
               "tags": [
-                "Produit dangereux"
+                "ProduitDangereux"
               ],
               "subcategories": [
                 {
@@ -51422,7 +51422,7 @@
             {
               "title": "Autre",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -51520,7 +51520,7 @@
                   ],
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.10-7.1.3"
                 },
@@ -51528,7 +51528,7 @@
                   "title": "Autre",
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.10-7.1.4"
                 }
@@ -51540,7 +51540,7 @@
               "example": "Exemple : publicité mensongère, absence d'information",
               "tags": [
                 "ReponseConso",
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -51608,7 +51608,7 @@
                 "481"
               ],
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "id": "1.10-7.3"
             },
@@ -51677,7 +51677,7 @@
                   "title": "Autre",
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.10-7.4.4"
                 }
@@ -51690,7 +51690,7 @@
         {
           "title": "Autre",
           "tags": [
-            "Litige contractuel",
+            "LitigeContractuel",
             "ReponseConso"
           ],
           "subcategories": [
@@ -51736,7 +51736,7 @@
                       "title": "Diffusion d'annonces de location pour des biens non disponibles (en vitrine ou sur internet)",
                       "tags": [
                         "ReponseConso",
-                        "Litige contractuel"
+                        "LitigeContractuel"
                       ],
                       "reponseconsoCode": [
                         "210",
@@ -51748,7 +51748,7 @@
                       "title": "Honoraires de location non affichés ou différents de ceux affichés (en vitrine ou sur internet)",
                       "tags": [
                         "ReponseConso",
-                        "Litige contractuel"
+                        "LitigeContractuel"
                       ],
                       "reponseconsoCode": [
                         "212",
@@ -51761,7 +51761,7 @@
                       "example": "Exemple : loyer annoncé faux, descriptif de l'appartement mensonger",
                       "tags": [
                         "ReponseConso",
-                        "Litige contractuel"
+                        "LitigeContractuel"
                       ],
                       "reponseconsoCode": [
                         "210",
@@ -51784,7 +51784,7 @@
                       "title": "Autre",
                       "tags": [
                         "ReponseConso",
-                        "Litige contractuel"
+                        "LitigeContractuel"
                       ],
                       "reponseconsoCode": [
                         "679"
@@ -51817,7 +51817,7 @@
                       ],
                       "tags": [
                         "ReponseConso",
-                        "Litige contractuel"
+                        "LitigeContractuel"
                       ],
                       "id": "1.11-1.1.2.2"
                     },
@@ -51830,7 +51830,7 @@
                       "example": "Exemple : absence de DPE, descriptif d'un appartement mensonger",
                       "tags": [
                         "ReponseConso",
-                        "Litige contractuel"
+                        "LitigeContractuel"
                       ],
                       "id": "1.11-1.1.2.3"
                     },
@@ -51842,7 +51842,7 @@
                       "example": "Exemple : refus de mon offre au prix sans justification",
                       "tags": [
                         "ReponseConso",
-                        "Litige contractuel"
+                        "LitigeContractuel"
                       ],
                       "id": "1.11-1.1.2.4"
                     },
@@ -51855,7 +51855,7 @@
                       ],
                       "tags": [
                         "ReponseConso",
-                        "Litige contractuel"
+                        "LitigeContractuel"
                       ],
                       "id": "1.11-1.1.2.5"
                     },
@@ -51867,7 +51867,7 @@
                       ],
                       "tags": [
                         "ReponseConso",
-                        "Litige contractuel"
+                        "LitigeContractuel"
                       ],
                       "id": "1.11-1.1.2.6"
                     }
@@ -51881,7 +51881,7 @@
               "title": "J'ai un problème en tant que locataire",
               "example": "Exemple : état des lieux, charges, loyer",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -51935,7 +51935,7 @@
                 {
                   "title": "Gestion locative",
                   "tags": [
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "subcategories": [
                     {
@@ -51997,7 +51997,7 @@
                         "451"
                       ],
                       "tags": [
-                        "Litige contractuel"
+                        "LitigeContractuel"
                       ],
                       "id": "1.11-1.3.2.2"
                     },
@@ -52009,7 +52009,7 @@
                       ],
                       "tags": [
                         "ReponseConso",
-                        "Litige contractuel"
+                        "LitigeContractuel"
                       ],
                       "id": "1.11-1.3.2.3"
                     }
@@ -52022,7 +52022,7 @@
                     "679"
                   ],
                   "tags": [
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.11-1.3.3"
                 }
@@ -52116,7 +52116,7 @@
                   "title": "J'ai pris connaissance de mon contrat de syndic.",
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "subcategories": [
                     {
@@ -52168,7 +52168,7 @@
               ],
               "tags": [
                 "ReponseConso",
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "id": "1.11-3.4"
             },
@@ -52189,7 +52189,7 @@
                 "679"
               ],
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "id": "1.11-3.6"
             }
@@ -52202,7 +52202,7 @@
             "679"
           ],
           "tags": [
-            "Litige contractuel",
+            "LitigeContractuel",
             "ReponseConso"
           ],
           "id": "1.11-4"
@@ -52213,7 +52213,7 @@
             "679"
           ],
           "tags": [
-            "Litige contractuel"
+            "LitigeContractuel"
           ],
           "id": "1.11-5"
         }
@@ -52233,7 +52233,7 @@
           "title": "Produit de santé",
           "example": "Exemple : médicament, bas de contention, prothèse, lunette, pansement, fauteuil roulant, compléments alimentaires, autres produits achetés en pharmacie ou rayon pharmacie",
           "tags": [
-            "Litige contractuel"
+            "LitigeContractuel"
           ],
           "subcategories": [
             {
@@ -52253,7 +52253,7 @@
                   "title": "Un objet de santé courant",
                   "example": "Exemple : pansement, tensiomètre, thermomètre, bas de contention",
                   "tags": [
-                    "Produit dangereux"
+                    "ProduitDangereux"
                   ],
                   "id": "1.3-1.1.2"
                 },
@@ -52321,7 +52321,7 @@
               "companyKind": "LOCATION",
               "tags": [
                 "ReponseConso",
-                "Démarchage à domicile"
+                "DemarchageADomicile"
               ],
               "detailInputs": [
                 {
@@ -52361,7 +52361,7 @@
               ],
               "tags": [
                 "ReponseConso",
-                "Démarchage téléphonique"
+                "DemarchageTelephonique"
               ],
               "detailInputs": [
                 {
@@ -52434,7 +52434,7 @@
           "title": "Professionnel de la santé et médecine douce",
           "example": "Exemple : dentiste, opticien, kiné, psychiatre, médecine douce",
           "tags": [
-            "Litige contractuel"
+            "LitigeContractuel"
           ],
           "subcategoriesTitle": "Quel type de médecine exerce-t-il ?",
           "subcategories": [
@@ -52784,7 +52784,7 @@
                   ],
                   "tags": [
                     "ReponseConso",
-                    "Démarchage téléphonique"
+                    "DemarchageTelephonique"
                   ],
                   "detailInputs": [
                     {
@@ -52893,7 +52893,7 @@
         {
           "title": "Hôpital / Clinique",
           "tags": [
-            "Litige contractuel"
+            "LitigeContractuel"
           ],
           "subcategories": [
             {
@@ -52998,7 +52998,7 @@
                   ],
                   "tags": [
                     "ReponseConso",
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "detailInputs": [
                     {
@@ -53039,7 +53039,7 @@
                     "162"
                   ],
                   "tags": [
-                    "Litige contractuel"
+                    "LitigeContractuel"
                   ],
                   "id": "1.3-4.1.3"
                 }
@@ -53054,7 +53054,7 @@
                 "162"
               ],
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "id": "1.3-4.2"
             },
@@ -53145,7 +53145,7 @@
             "226"
           ],
           "tags": [
-            "Litige contractuel"
+            "LitigeContractuel"
           ],
           "id": "1.3-5"
         },
@@ -53158,7 +53158,7 @@
               "example": "Exemple : les prix ne sont pas affichés, pas de remise d'une facture",
               "tags": [
                 "ReponseConso",
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -53250,7 +53250,7 @@
                 "220"
               ],
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "detailInputs": [
                 {
@@ -53299,7 +53299,7 @@
               ],
               "tags": [
                 "ReponseConso",
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "id": "1.3-6.3"
             },
@@ -53409,14 +53409,14 @@
           "title": "Location",
           "example": "Exemple : location de voiture, location de vélo, location longue durée",
           "tags": [
-            "Litige contractuel"
+            "LitigeContractuel"
           ],
           "subcategories": [
             {
               "title": "Location de voiture auprès d'une agence ou d'un magasin",
               "example": "Exemple : agence à l'aéroport, location de camionnette dans un supermarché, plate-forme de location sur internet",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -53480,7 +53480,7 @@
               "title": "Location en libre-service",
               "example": "Exemple : location de vélo, trotinette, voiture électrique par une borne",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -53517,7 +53517,7 @@
             {
               "title": "Location longue durée (leasing, LDD, LOA...)",
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "subcategories": [
                 {
@@ -53605,7 +53605,7 @@
           "title": "Réparation, révision, vente de véhicule",
           "example": "Exemple : garagiste, dépanneur, contrôle technique",
           "tags": [
-            "Litige contractuel"
+            "LitigeContractuel"
           ],
           "subcategories": [
             {
@@ -53772,7 +53772,7 @@
             "617"
           ],
           "tags": [
-            "Produit dangereux"
+            "ProduitDangereux"
           ],
           "subcategories": [
             {
@@ -55648,7 +55648,7 @@
             "617"
           ],
           "tags": [
-            "Litige contractuel"
+            "LitigeContractuel"
           ],
           "id": "1.14-1"
         },
@@ -55660,7 +55660,7 @@
             "213"
           ],
           "tags": [
-            "Litige contractuel"
+            "LitigeContractuel"
           ],
           "id": "1.14-2"
         },
@@ -55672,7 +55672,7 @@
             "213"
           ],
           "tags": [
-            "Litige contractuel"
+            "LitigeContractuel"
           ],
           "id": "1.14-3"
         },
@@ -55684,7 +55684,7 @@
           ],
           "tags": [
             "ReponseConso",
-            "Litige contractuel"
+            "LitigeContractuel"
           ],
           "id": "1.14-4"
         },
@@ -55695,7 +55695,7 @@
             "210"
           ],
           "tags": [
-            "Litige contractuel"
+            "LitigeContractuel"
           ],
           "id": "1.14-5"
         }
@@ -55719,7 +55719,7 @@
           ],
           "tags": [
             "ReponseConso",
-            "Absence de médiateur"
+            "AbsenceDeMediateur"
           ],
           "id": "1.15-1"
         },
@@ -55731,7 +55731,7 @@
           ],
           "tags": [
             "ReponseConso",
-            "Litige contractuel"
+            "LitigeContractuel"
           ],
           "id": "1.15-2"
         },
@@ -55757,7 +55757,7 @@
               ],
               "tags": [
                 "ReponseConso",
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "id": "1.15-3.2"
             }
@@ -55798,7 +55798,7 @@
                 "492"
               ],
               "tags": [
-                "Litige contractuel"
+                "LitigeContractuel"
               ],
               "id": "1.15-5.2"
             }
@@ -55865,7 +55865,7 @@
               "title": "L’entreprise veut me vendre un objet ou un service alors que je ne suis pas client chez eux",
               "tags": [
                 "Bloctel",
-                "Démarchage téléphonique"
+                "DemarchageTelephonique"
               ],
               "detailInputs": [
                 {

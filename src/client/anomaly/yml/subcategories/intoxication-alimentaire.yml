@@ -4,7 +4,7 @@
     - '321'
     - '324'
   tags:
-    - Produit dangereux
+    - ProduitDangereux
   detailInputs: !!import/single ../common/inputs/intoxication-alimentaire.yml
   fileLabel: Photos du produit / de l'emballage / du ticket / de la facture
 - title: A emporter
@@ -13,7 +13,7 @@
     - '321'
     - '324'
   tags:
-    - Produit dangereux
+    - ProduitDangereux
   detailInputs: !!import/single ../common/inputs/intoxication-alimentaire.yml
   fileLabel: Photos du produit / de l'emballage / du ticket / de la facture
 - title: En livraison
@@ -22,7 +22,7 @@
     - '321'
     - '324'
   tags:
-    - Produit dangereux
+    - ProduitDangereux
   detailInputs: !!import/single ../common/inputs/intoxication-alimentaire.yml
   fileLabel: Photos du produit / de l'emballage / du ticket / de la facture
 - title: Un produit précis
@@ -31,6 +31,6 @@
     - '321'
     - '324'
   tags:
-    - Produit dangereux
+    - ProduitDangereux
   detailInputs: !!import/single ../common/inputs/intoxication-alimentaire.yml
   fileLabel: Photos du produit / de l'emballage / du ticket / de la facture
