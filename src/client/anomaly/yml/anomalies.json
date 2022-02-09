@@ -1230,7 +1230,7 @@
       "subcategoriesTitle": "Votre problème concerne",
       "subcategories": [
         {
-          "title": "un achat sur internet ou un site de vente en ligne",
+          "title": "Un achat sur internet ou un site de vente en ligne",
           "companyKind": "WEBSITE",
           "subcategories": [
             {
@@ -9711,7 +9711,7 @@
           "id": "1.2-1"
         },
         {
-          "title": "un magasin / commerce physique",
+          "title": "Un magasin / commerce physique",
           "example": "Exemple : grande surface, épicerie, stand dans un marché, boulangerie",
           "companyKind": "SIRET",
           "subcategories": [
@@ -25380,7 +25380,7 @@
           "id": "1.2-2"
         },
         {
-          "title": "un achat suite à la visite d'un vendeur à mon domicile",
+          "title": "Un achat suite à la visite d'un vendeur à mon domicile",
           "companyKind": "LOCATION",
           "reponseconsoCode": [
             "221",
