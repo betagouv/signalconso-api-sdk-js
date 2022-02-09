@@ -56,7 +56,7 @@ export interface Category {
 
 export interface SubcategoryInput extends SubcategoryBase {
   detailTitle?: string
-  fileLabel: string
+  fileLabel?: string
   detailInputs?: DetailInput[]
 }
 
