@@ -33,7 +33,7 @@ export interface Report {
 
 export interface DetailInputValue {
   label: string
-  value: string | Date | string[]
+  value: string | string[]
 }
 
 export class DetailInputValue {
