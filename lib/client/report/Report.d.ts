@@ -29,7 +29,7 @@ export interface Report {
 }
 export interface DetailInputValue {
     label: string;
-    value: string | Date | string[];
+    value: string | string[];
 }
 export declare class DetailInputValue {
     static readonly precisionKeyword = "(\u00E0 pr\u00E9ciser)";
