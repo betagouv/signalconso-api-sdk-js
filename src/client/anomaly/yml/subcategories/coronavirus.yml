@@ -54,7 +54,7 @@
   subcategories:
     - title: Le prix de la livraison a augmenté
       tags:
-        - Litige contractuel
+        - LitigeContractuel
       detailInputs:
         - label: Date du constat
           rank: 1

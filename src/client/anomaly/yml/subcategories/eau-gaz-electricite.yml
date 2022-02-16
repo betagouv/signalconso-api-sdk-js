@@ -8,7 +8,7 @@
         - title: Le distributeur me demande de payer une avance sur ma consommation
           subcategoriesTitle: Quand doit-être remboursée cette avance ?
           tags:
-            - Litige contractuel
+            - LitigeContractuel
           subcategories:
             - title: Elle sera déduite à ma première facture d'eau
               information:
@@ -38,7 +38,7 @@
         - title: Une clause du contrat (règlement de service) est abusive, c'est-à-dire qu'elle désavantage fortement le consommateur.
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
           detailInputs:
             - label: Date du constat (ou du contrat)
               rank: 1
@@ -51,12 +51,12 @@
         - title: Autre
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
     - title: Coupure de l'eau pour impayé
       example: Mon débit d'eau a été réduit car je ne peux payer ma facture
       tags:
         - ReponseConso
-        - Litige contractuel
+        - LitigeContractuel
       detailTitle: Il est interdit de couper ou réduire l'eau en cas d'impayé lorsqu'il s'agit d'une résidence principale.
       description: Les coupures d'eau et les réductions de débit sont interdites en cas de factures impayées, pour les résidences principales et ce toute l'anné. Par contre, vous devrez toujours payer votre facture.
       detailInputs:
@@ -114,13 +114,13 @@
               type: TEXTAREA
 - title: Gaz / Electricité
   tags:
-    - Litige contractuel
+    - LitigeContractuel
   subcategories:
     - title: Démarchage à domicile
       example: 'Exemple : vendeur prétend être envoyé par EDF, démarcheur agressif'
       companyKind: LOCATION
       tags:
-        - Démarchage à domicile
+        - DemarchageADomicile
         - ReponseConso
       detailInputs:
         - label: Date du passage du vendeur
@@ -154,7 +154,7 @@
     - title: Démarchage téléphonique
       companyKind: PHONE
       tags:
-        - Démarchage téléphonique
+        - DemarchageTelephonique
         - ReponseConso
       detailInputs:
         - label: Date de l'appel
@@ -321,5 +321,5 @@
     - '271'
     - '212'
   tags:
-    - Litige contractuel
+    - LitigeContractuel
     - ReponseConso

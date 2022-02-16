@@ -91,54 +91,54 @@
       example: 'Exemple : jouet, cosmétique'
       tags:
         - ReponseConso
-        - Produit dangereux
+        - ProduitDangereux
       subcategories:
         - title: Produit alimentaire
           tags:
-            - Produit alimentaire
+            - ProduitAlimentaire
           reponseconsoCode:
           subcategories: !!import/single ../common/produit-alimentaire.yml
         - title: Jouet, puériculture, matériel scolaire
           tags:
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Cosmétique, produit d'hygiène, produit de tatouage
           tags:
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Vêtement, textile, sac à main, bijou
           tags:
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Équipement de protection
           tags:
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Feu d'artifice
           tags:
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Meuble
           tags:
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Produit d'entretien, produit chimique, engrais
           tags:
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Appareil électrique
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Outil
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Autre
@@ -266,8 +266,8 @@
                   type: TEXTAREA
         - title: Hygiène
           tags:
-            - hygiène
-            - Produit Alimentaire
+            - Hygiene
+            - ProduitAlimentaire
           example: 'Exemple : magasin sale, produit pas au frais, mauvaises odeurs'
           subcategories:
             - title: Hygiène des locaux et du matériel
@@ -564,7 +564,7 @@
           ccrfCode:
             - '21D'
           tags:
-            - Litige contractuel
+            - LitigeContractuel
           subcategoriesTitle: Pourquoi voulez-vous retourner ou échanger votre article ?
           subcategories:
             - title: Il présente un défaut ou il ne marche plus
@@ -839,54 +839,54 @@
           example: 'Exemple : bonbon, viande, pain, conserve, vin, eau en bouteille'
           subcategories: !!import/single ../common/nourriture.yml
           tags:
-            - Produit Alimenaire
+            - ProduitAlimentaire
         - title: C'est un objet
           example: 'Exemple : jouet, électroménager, vêtement, savon, vaisselle, meuble'
           subcategories: !!import/single ../common/objet.yml
           tags:
-            - Produit industriel
+            - ProduitIndustriel
     - title: Un produit dangereux
       example: 'Exemple : jouet, cosmétique'
       companyKind: LOCATION
       tags:
-        - Produit dangereux
+        - ProduitDangereux
       subcategories:
         - title: Produit alimentaire
           subcategories: !!import/single ../common/produit-alimentaire.yml
           tags:
-            - Produit alimentaire
+            - ProduitAlimentaire
         - title: Jouet, puériculture, matériel scolaire
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
           tags:
-            - Produit industriel
+            - ProduitIndustriel
         - title: Cosmétique, produit d'hygiène, produit de tatouage
           ccrfCode:
             - '34A'
           tags:
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Vêtement, textile, sac à main, bijou
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
           tags:
-            - Produit industriel
+            - ProduitIndustriel
         - title: Équipement de protection
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
           tags:
-            - Produit industriel
+            - ProduitIndustriel
         - title: Feu d'artifice
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
           tags:
-            - Produit industriel
+            - ProduitIndustriel
         - title: Meuble
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
           tags:
-            - Produit industriel
+            - ProduitIndustriel
         - title: Produit d'entretien, produit chimique, engrais
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
@@ -896,21 +896,21 @@
             - '349'
             - '342'
           tags:
-            - Produit industriel
+            - ProduitIndustriel
         - title: Appareil électrique
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
           ccrfCode:
             - '34F'
           tags:
-            - Produit industriel
+            - ProduitIndustriel
         - title: Outil
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
           ccrfCode:
             - '34F'
           tags:
-            - Produit industriel
+            - ProduitIndustriel
         - title: Autre
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
@@ -921,12 +921,12 @@
     - '210'
   tags:
     - ReponseConso
-    - Démarchage à domicile
+    - DemarchageADomicile
   subcategories:
     - title: C'est un aliment ou une boisson
       example: 'Exemple : bonbon, viande, pain, conserve, vin, eau en bouteille'
       tags:
-        - Produit alimentaire
+        - ProduitAlimentaire
       detailInputs:
         - label: Que s'est-il passé ?
           rank: 1
@@ -948,7 +948,7 @@
     - title: C'est un objet
       example: 'Exemple : jouet, électroménager, vêtement, savon, vaisselle, meuble'
       tags:
-        - Produit industriel
+        - ProduitIndustriel
       detailInputs:
         - label: Que s'est-il passé ?
           rank: 1
@@ -971,55 +971,55 @@
       example: 'Exemple : jouet, cosmétique'
       companyKind: LOCATION
       tags:
-        - Produit dangereux
+        - ProduitDangereux
       subcategories:
         - title: Produit alimentaire
           tags:
-            - Produit alimentaire
+            - ProduitAlimentaire
           subcategories: !!import/single ../common/produit-alimentaire.yml
         - title: Jouet, puériculture, matériel scolaire
           tags:
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Cosmétique, produit d'hygiène, produit de tatouage
           tags:
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Vêtement, textile, sac à main, bijou
           tags:
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Équipement de protection
           tags:
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Feu d'artifice
           tags:
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Meuble
           tags:
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Produit d'entretien, produit chimique, engrais
           tags:
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Appareil électrique
           tags:
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Outil
           tags:
-            - Produit industriel
+            - ProduitIndustriel
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Autre

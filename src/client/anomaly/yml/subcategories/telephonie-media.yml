@@ -19,13 +19,13 @@
                 - title: Non, j'ai reçu seulement un sms
                   tags:
                     - ReponseConso
-                    - Litige contractuel
+                    - LitigeContractuel
                 - title: Non, je n'ai rien reçu du tout
                   reponseconsoCode:
                     - '421'
                   tags:
                     - ReponseConso
-                    - Litige contractuel
+                    - LitigeContractuel
             - title: Modification concernant les sms, mms ou appels
               tags:
                 - ReponseConso
@@ -39,12 +39,12 @@
                     - '421'
                     - '2202'
                   tags:
-                    - Litige contractuel
+                    - LitigeContractuel
                 - title: Non, je n'ai rien reçu du tout
                   reponseconsoCode:
                     - '421'
                   tags:
-                    - Litige contractuel
+                    - LitigeContractuel
             - title: Rajout d'une option payante
               example: 'Exemple : chaine télé supplémentaire, option cyber-sécurité, option livre audio, option musique...'
               subcategoriesTitle: Quel est le type d'option ?
@@ -58,7 +58,7 @@
                       information: !!import/single ../common/info/tel.yml
                     - title: Non, je n'ai rien reçu
                       tags:
-                        - Litige contractuel
+                        - LitigeContractuel
                       detailInputs:
                         - label: Date du début de l'option (vous pouvez préciser le premier mois facturé)
                           rank: 1
@@ -71,7 +71,7 @@
                   reponseconsoCode:
                     - '421'
                   tags:
-                    - Litige contractuel
+                    - LitigeContractuel
                   detailInputs:
                     - label: À partir de quand cette option va-t-elle être payante ?
                       rank: 1
@@ -102,21 +102,21 @@
                 - '210'
               tags:
                 - ReponseConso
-                - Litige contractuel
+                - LitigeContractuel
         - title: L'offre / la promotion que je devais avoir n'a pas été appliquée
           reponseconsoCode:
             - '2212'
             - '210'
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
         - title: Autre problème de facturation ou de contrat
           repoonseconsoCode:
             - '2212'
             - '623'
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
           subcategories:
             - title: Utilisation de mon forfait à l'étranger
               reponseconsoCode:
@@ -133,7 +133,7 @@
         content: Les problèmes de réseau ou d'éligibilité ne peuvent pas être signalés sur SignalConso. <br> Vous devez les signaler à l'ARCEP (Autorité de régulation des communications électroniques, des postes et de la distribution de la presse) sur leur site dédié  <a href="https://jalerte.arcep.fr/" target="_blank" /> J'alerte l'Arcep </a>
     - title: Résiliation / changement d'opérateur
       tags:
-        - Litige contractuel
+        - LitigeContractuel
       subcategories:
         - title: Frais de résiliation
           reponseconsoCode:
@@ -167,7 +167,7 @@
           companyKind: PHONE
           tags:
             - ReponseConso
-            - Démarchage téléphonique
+            - DemarchageTelephonique
           detailInputs:
             - label: Date de l'appel
               rank: 1
@@ -186,7 +186,7 @@
       example: 'Exemple : téléphone acheté avec le forfait, service client injoignable'
       tags:
         - ReponseConso
-        - Litige contractuel
+        - LitigeContractuel
       subcategories:
         - title: Qualité du service client
           example: 'Exemple : pas de réponse du service client, service client payant'
@@ -208,7 +208,7 @@
       reponseconsoCode:
         - '221'
       tags:
-        - Démarcharge à domicile
+        - DemarchageADomicile
     - title: Démarchage téléphonique      
       ccrfCode: 
         -'227'
@@ -216,7 +216,7 @@
       reponseconsoCode:
         - '221'
       tags:
-        - Démarchage téléphonique
+        - DemarchageTelephonique
     - title: Problème avec un site internet
       reponseconsoCode:
         - '4442'
@@ -235,7 +235,7 @@
       reponseconsoCode:
         - '221'
       tags:
-        - Démarcharge à domicile
+        - DemarchageADomicile
     - title: Démarchage téléphonique
       ccrfCode: 
         -'227'
@@ -243,7 +243,7 @@
       reponseconsoCode:
         - '221'
       tags:
-        - Démarchage téléphonique
+        - DemarchageTelephonique
     - title: Problème avec un site internet
       reponseconsoCode:
         - '443'
@@ -259,23 +259,23 @@
 - title: Produit dangereux
   example: 'Exemple : téléphone, accessoire'
   tags:
-    - Produit dangereux
+    - ProduitDangereux
   subcategories:
     - title: Appareil électrique
       subcategoriesTitle: Quel est le risque&#160;?
       subcategories: !!import/single ../common/produit-dangereux.yml
       tags:
-        - Produit industriel
+        - ProduitIndustriel
     - title: Accessoire
       subcategoriesTitle: Quel est le risque&#160;?
       subcategories: !!import/single ../common/produit-dangereux.yml
       tags:
-        - Produit industriel
+        - ProduitIndustriel
     - title: Autre
       subcategoriesTitle: Quel est le risque&#160;?
       subcategories: !!import/single ../common/produit-dangereux.yml      
       tags:
-        - Produit industriel
+        - ProduitIndustriel
 - title: Autre
   reponseconsoCode:
     - '679'
