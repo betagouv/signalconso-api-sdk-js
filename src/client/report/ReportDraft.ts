@@ -8,6 +8,7 @@ export interface ReportDraftConsumer {
   firstName: string
   lastName: string
   email: string
+  phone?: string
 }
 
 export interface ReportDraft {

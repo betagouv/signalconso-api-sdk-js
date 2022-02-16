@@ -9,14 +9,14 @@
             - title: Diffusion d'annonces de location pour des biens non disponibles (en vitrine ou sur internet)
               tags:
                 - ReponseConso
-                - Litige contractuel
+                - LitigeContractuel
               reponseconsoCode:
                 - '210'
                 - '220'
             - title: Honoraires de location non affichés ou différents de ceux affichés (en vitrine ou sur internet)
               tags:
                 - ReponseConso
-                - Litige contractuel
+                - LitigeContractuel
               reponseconsoCode:
                 - '212'
                 - '220'
@@ -24,7 +24,7 @@
               example: "Exemple : loyer annoncé faux, descriptif de l'appartement mensonger"
               tags:
                 - ReponseConso
-                - Litige contractuel
+                - LitigeContractuel
               reponseconsoCode:
                 - '210'
                 - '220'
@@ -37,7 +37,7 @@
             - title: Autre
               tags:
                 - ReponseConso
-                - Litige contractuel
+                - LitigeContractuel
               reponseconsoCode:
                 - '679'
         - title: Je cherche à acheter
@@ -55,7 +55,7 @@
                 - '220'
               tags:
                 - ReponseConso
-                - Litige contractuel
+                - LitigeContractuel
             - title: Annonces de vente incomplètes ou mensongères (en vitrine ou sur internet)
               reponseconsoCode:
                 - '210'
@@ -63,14 +63,14 @@
               example: "Exemple : absence de DPE, descriptif d'un appartement mensonger"
               tags:
                 - ReponseConso
-                - Litige contractuel
+                - LitigeContractuel
             - title: Problème avec une offre d'achat ou un compromis de vente
               reponseconsoCode:
                 - '425'
               example: 'Exemple : refus de mon offre au prix sans justification'
               tags:
                 - ReponseConso
-                - Litige contractuel
+                - LitigeContractuel
             - title: Cas particulier d'un chasseur d'appartements
               example: "Exemple : frais d'étude alors que c'est interdit"
               reponseconsoCode:
@@ -78,18 +78,18 @@
                 - '425'
               tags:
                 - ReponseConso
-                - Litige contractuel
+                - LitigeContractuel
             - title: Cas particulier d'un mandataire indépendant (agent commercial)
               reponseconsoCode:
                 - '2269'
                 - '425'
               tags:
                 - ReponseConso
-                - Litige contractuel
+                - LitigeContractuel
     - title: J'ai un problème en tant que locataire
       example: 'Exemple : état des lieux, charges, loyer'
       tags:
-        - Litige contractuel
+        - LitigeContractuel
       subcategories:
         - title: Charges / honoraires
           reponseconsoCode:
@@ -116,7 +116,7 @@
       subcategories:
         - title: Gestion locative
           tags:
-            - Litige contractuel
+            - LitigeContractuel
           subcategories:
             - title: Contrat et mandat
               reponseconsoCode:
@@ -149,19 +149,19 @@
               reponseconsoCode:
                 - '451'
               tags:
-                - Litige contractuel
+                - LitigeContractuel
             - title: Discours trompeur
               example: "Exemple : L'agent immobilier m'a promis de vendre sous 7 jours"
               reponseconsoCode:
                 - '210'
               tags:
                 - ReponseConso
-                - Litige contractuel
+                - LitigeContractuel
         - title: Autre
           reponseconsoCode:
             - '679'
           tags:
-            - Litige contractuel
+            - LitigeContractuel
     - title: Autre
       subcategories:
         - title: Problème d'accessibilité de l'agence
@@ -204,7 +204,7 @@
         - title: J'ai pris connaissance de mon contrat de syndic.
           tags:
             - ReponseConso
-            - Litige contractuel
+            - LitigeContractuel
           subcategories:
             - title: Les frais sont plus chers que dans le contrat
             - title: Les frais ne correspondent à aucune des prestations dites "prestations particulières".
@@ -226,7 +226,7 @@
         - '633'
       tags:
         - ReponseConso
-        - Litige contractuel
+        - LitigeContractuel
     - title: Absence de réponse du syndic
       example: 'Exemple : aucune réponse malgré des relances'
       reponseconsoCode:
@@ -237,15 +237,15 @@
       reponseconsoCode:
         - '679'
       tags:
-        - Litige contractuel
+        - LitigeContractuel
 - title: Notaire
   reponseconsoCode:
     - '679'
   tags:
-    - Litige contractuel
+    - LitigeContractuel
     - ReponseConso
 - title: Autre
   reponseconsoCode:
     - '679'
   tags:
-    - Litige contractuel
+    - LitigeContractuel

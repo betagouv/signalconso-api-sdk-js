@@ -5,14 +5,14 @@
     - '492'
   tags:
     - ReponseConso
-    - Absence de médiateur
+    - AbsenceDeMediateur
 - title: Courrier / entreprise qui se fait passer pour l'administration
   reponseconsoCode:
     - '210'
     - '511'
   tags:
     - ReponseConso
-    - Litige contractuel
+    - LitigeContractuel
 - title: Site internet pour obtenir un document administratif (casier, acte de naissance, vignette crit'air)
   subcategoriesTitle: À qui appartient ce site internet&#160;?
   subcategories:
@@ -26,7 +26,7 @@
         - '511'
       tags:
         - ReponseConso
-        - Litige contractuel
+        - LitigeContractuel
 - title: Carte des numéros utiles de la mairie (numéro urgence serrurier, plombier...)
   reponseconsoCode:
     - '210'
@@ -47,4 +47,4 @@
         - '210'
         - '492'
       tags:
-        - Litige contractuel
+        - LitigeContractuel
