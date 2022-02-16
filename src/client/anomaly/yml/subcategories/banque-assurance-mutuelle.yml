@@ -55,11 +55,11 @@
         - '643'
         - '641'
 - title: Assurance / mutuelle
-  tags:
-    - ReponseConso
   subcategories:
     - title: Contrat
       example: 'Exemple : contrat non respecté, échéancier non reçu'
+      tags:
+        - ReponseConso
       reponseconsoCode:
         - '425'
         - '411'
@@ -71,6 +71,7 @@
       example: 'Exemple : publicité trompeuse, démarchage à domicile, démarchage téléphonique'
       tags:
         - LitigeContractuel
+        - ReponseConso
       subcategories:
         - title: Démarchage à domicile
           companyKind: LOCATION
@@ -79,6 +80,7 @@
             - '2210'
           tags:
             - DemarchageADomicile
+            - ReponseConso
           detailInputs:
             - label: Que s'est-il passé ?
               rank: 1
@@ -104,6 +106,7 @@
             - '2210'
           tags:
             - DemarchageTelephonique
+            - ReponseConso
           detailInputs:
             - label: Date de l'appel
               rank: 1
@@ -121,6 +124,8 @@
         - title: Autre
           reponseconsoCode:
             - '679'
+          tags:
+            - ReponseConso
           companyKind: SIRET
     - title: Service client
       example: 'Exemple : service client injoignable'
