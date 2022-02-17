@@ -37166,13 +37166,13 @@
         },
         {
           "title": "Assurance / mutuelle",
-          "tags": [
-            "ReponseConso"
-          ],
           "subcategories": [
             {
               "title": "Contrat",
               "example": "Exemple : contrat non respecté, échéancier non reçu",
+              "tags": [
+                "ReponseConso"
+              ],
               "reponseconsoCode": [
                 "425",
                 "411"
@@ -37191,7 +37191,8 @@
               "title": "Publicité",
               "example": "Exemple : publicité trompeuse, démarchage à domicile, démarchage téléphonique",
               "tags": [
-                "LitigeContractuel"
+                "LitigeContractuel",
+                "ReponseConso"
               ],
               "subcategories": [
                 {
@@ -37202,7 +37203,8 @@
                     "2210"
                   ],
                   "tags": [
-                    "DemarchageADomicile"
+                    "DemarchageADomicile",
+                    "ReponseConso"
                   ],
                   "detailInputs": [
                     {
@@ -37241,7 +37243,8 @@
                     "2210"
                   ],
                   "tags": [
-                    "DemarchageTelephonique"
+                    "DemarchageTelephonique",
+                    "ReponseConso"
                   ],
                   "detailInputs": [
                     {
@@ -37271,6 +37274,9 @@
                   "title": "Autre",
                   "reponseconsoCode": [
                     "679"
+                  ],
+                  "tags": [
+                    "ReponseConso"
                   ],
                   "companyKind": "SIRET",
                   "id": "1.8-2.3.3"
@@ -48812,7 +48818,7 @@
           "title": "Compagnie aérienne",
           "example": "Exemple : Vol annuel, vol retardé, déclassement, refus d'embarquement",
           "tags": [
-            "Compagnie aerienne"
+            "CompagnieAerienne"
           ],
           "id": "1.10-4"
         },
