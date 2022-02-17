@@ -90,7 +90,6 @@
     - title: Un produit dangereux
       example: 'Exemple : jouet, cosmétique'
       tags:
-        - ReponseConso
         - ProduitDangereux
       subcategories:
         - title: Produit alimentaire
