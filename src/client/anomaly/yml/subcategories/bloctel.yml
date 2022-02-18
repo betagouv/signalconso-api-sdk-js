@@ -1,14 +1,12 @@
-- title: Je reçois des appels pour effectuer des travaux ou sur de la rénovation énergétiqu
-  information:
-    title: Revenez en arrière et utilisez plutôt la catégorie spécifique à votre problème :)
-  content: Un appel pour faire installer des panneaux solaires ou une pompe à chaleur chez moi ? Utilisez la catégorie "Travaux / Rénovation". Il est interdit de démarchager pour des travaux ou réaliser de la rénovation énergétique.  
 - title: Je reçois des appels indésirables alors que je suis inscrit sur Bloctel
   information:
     content:
-      Vous recez des appels indésirables alors que vous êtes inscrit sur Bloctel.
-      <br/><br/>Les problèmes de démarchage abusif ne peuvent pas être signalés sur SignalConso.
-      <br/><br/>Vous devez les signaler sur Bloctel sur leur site dédié 
-      <br/><br/>https://www.bloctel.gouv.fr/accueil
+      <p>Vous recez des appels indésirables alors que vous êtes inscrit sur Bloctel.</p>
+      <p>Les problèmes de démarchage abusif ne peuvent pas être signalés sur SignalConso.</p>
+      <p>
+        Vous devez les signaler sur Bloctel sur leur site dédié
+        <a href="https://www.bloctel.gouv.fr/accueil">https://www.bloctel.gouv.fr/accueil</a>
+      </p>
 #  companyKind: PHONE
 #  subcategories:
 #    - title: L’appel concerne mon entreprise
@@ -44,3 +42,7 @@
       Le Service Relation Consommateur est ouvert au 01 73 26 81 45 de 8 h 00 à 17 h 00 uniquement les jours ouvrés (Prix d'un appel vers un numéro fixe, suivant opérateur). Ce service est à disposition pour aider à gérer ou utiliser l' « Espace consommateur » du site Bloctel. 
       <br/><br/>En revanche, il ne donne aucune information sur le suivi des signalements, les modalités de connexion à Internet ou sur les questions d'ordre juridique.  
       <br/><br/>Vous pouvez accès à la Foire aux questions de Bloctel sur https://www.bloctel.gouv.fr/faq
+- title: Je reçois des appels pour effectuer des travaux ou sur de la rénovation énergétiqu
+  information:
+    title: Revenez en arrière et utilisez plutôt la catégorie spécifique à votre problème :)
+    content: Un appel pour faire installer des panneaux solaires ou une pompe à chaleur chez moi ? Utilisez la catégorie "Travaux / Rénovation". Il est interdit de démarchager pour des travaux ou réaliser de la rénovation énergétique.
