@@ -34,8 +34,6 @@ const isOnMainBranch = () => /main\s*\n*/.test(execSync('git branch --show-curre
   } else if (!gitWorkspaceIsEmpty()) {
     console.error(`Your git status must be clean before to publish.`)
   } else {
-    await run(`npm run build`)
-    await run(`git add -A`)
     await run(`npm version ${newversion}`)
     await run(`npm publish`)
     // await run(`git commit -m "Release ${getPackageVersion()}"`)
