@@ -38,7 +38,7 @@ const isOnMainBranch = () => /main\s*\n*/.test(execSync('git branch --show-curre
     await run(`git add -A`)
     await run(`npm version ${newversion}`)
     await run(`npm publish`)
-    await run(`git commit -m "Release ${getPackageVersion()}"`)
+    // await run(`git commit -m "Release ${getPackageVersion()}"`)
     await run(`git push`)
     await run(`git checkout prod`)
     await run(`git merge main`)
