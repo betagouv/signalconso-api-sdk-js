@@ -3,6 +3,7 @@ import * as fs from 'fs'
 
 const config = {
   mainBranch: 'main',
+  prodBranch: 'prod',
 }
 
 const run = (cl: string) => {
@@ -38,8 +39,10 @@ const isOnMainBranch = () => /main\s*\n*/.test(execSync('git branch --show-curre
     await run(`npm publish`)
     // await run(`git commit -m "Release ${getPackageVersion()}"`)
     await run(`git push`)
-    await run(`git checkout prod`)
-    await run(`git merge main`)
-    console.log('ok')
+    await run(`git checkout ${config.prodBranch}`)
+    await run(`git merge ${config.mainBranch}`)
+    await run(`git push`)
+    await run(`git checkout ${config.mainBranch}`)
+    console.log(`Successfully published verison ${getPackageVersion()} !`)
   }
 })()
