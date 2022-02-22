@@ -393,8 +393,7 @@
           "companyKind": "SIRET",
           "example": "Exemple : locaux sales, rat, chaîne du froid",
           "tags": [
-            "ReponseConso",
-            "Hygiene"
+            "hygiène"
           ],
           "subcategoriesTitle": "Vous voulez signaler&#160;:",
           "subcategories": [
@@ -35755,8 +35754,7 @@
                   ],
                   "companyKind": "PHONE",
                   "tags": [
-                    "ReponseConso",
-                    "DemarchageTelephonique"
+                    "Démarchage téléphonique"
                   ],
                   "detailInputs": [
                     {
