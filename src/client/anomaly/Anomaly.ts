@@ -41,13 +41,6 @@ export enum ReportTag {
     CompagnieAerienne = 'CompagnieAerienne',
 }
 
-export type NA = 'NA'
-
-export type ReportTagFilter = ReportTag | NA
-
-export const ReportTagFilterValues: ReportTagFilter[] = [...Enum.values(ReportTag), 'NA']
-
-
 export enum CompanyKinds {
     SIRET = 'SIRET',
     WEBSITE = 'WEBSITE',

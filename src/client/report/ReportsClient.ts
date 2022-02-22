@@ -10,7 +10,7 @@ import {
   Report,
   ReportAction,
   ReportResponse,
-  ReportSearchResult, ReportTagFilter,
+  ReportSearchResult, ReportTag,
 } from '../..'
 import {Address, PaginatedData, ReportSearch} from '../../model'
 import {pipe} from 'rxjs'
@@ -18,7 +18,8 @@ import {ApiSdkLogger} from '../../helper/Logger'
 
 export interface ReportFilterQuerystring {
   readonly departments?: string[]
-  readonly tags?: ReportTagFilter | ReportTagFilter[]
+  readonly withTags?: ReportTag[]
+  readonly withoutTags?: ReportTag[]
   readonly companyCountries?: string[]
   readonly siretSirenList?: string[]
   readonly status?: string[]

@@ -1,8 +1,9 @@
-import {Id, ReportStatus, ReportTagFilter} from '../..'
+import {Id, ReportStatus, ReportTag} from '../..'
 
 export interface ReportSearch {
   departments?: string[]
-  tags?: ReportTagFilter[]
+  withTags?: ReportTag[]
+  withoutTags?: ReportTag[]
   companyCountries?: string[]
   siretSirenList?: string[]
   activityCodes?: string[]
