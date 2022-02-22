@@ -6,7 +6,7 @@
   "private": false,
   "scripts": {
     "test": "npm run build && mocha",
-    "publish": "ts-node release.ts",
+    "release": "ts-node release.ts",
     "prepublish": "npm run build && npm run generate-json",
     "build": "tsc --declaration && npm run generate-json",
     "generate-json": "node src/client/anomaly/script/generate-json-files.js",
