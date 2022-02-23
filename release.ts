@@ -2,8 +2,8 @@ import {exec, execSync} from 'child_process'
 import * as fs from 'fs'
 
 const config = {
-  mainBranch: 'main',
-  prodBranch: 'prod',
+  devBranch: 'main',
+  mainBranch: 'prod',
 }
 
 const run = (cl: string) => {
@@ -27,11 +27,11 @@ const newversion = process.argv[2] ?? 'patch' as 'patch' | 'minor' | 'major'
 
 const getPackageVersion = () => JSON.parse(fs.readFileSync('package.json', 'utf8')).version
 
-const isOnMainBranch = () => /main\s*\n*/.test(execSync('git branch --show-current').toString())
+const isOnMainBranch = () => new RegExp(`${config.devBranch}\s*\n*`).test(execSync('git branch --show-current').toString())
 
 ;(async () => {
   if (!isOnMainBranch()) {
-    console.error(`You must be on branch ${config.mainBranch} to publish.`)
+    console.error(`You must be on branch ${config.devBranch} to publish.`)
   } else if (!gitWorkspaceIsEmpty()) {
     console.error(`Your git status must be clean before to publish.`)
   } else {
@@ -39,10 +39,10 @@ const isOnMainBranch = () => /main\s*\n*/.test(execSync('git branch --show-curre
     await run(`npm publish`)
     // await run(`git commit -m "Release ${getPackageVersion()}"`)
     await run(`git push`)
-    await run(`git checkout ${config.prodBranch}`)
-    await run(`git merge ${config.mainBranch}`)
-    await run(`git push`)
     await run(`git checkout ${config.mainBranch}`)
+    await run(`git merge ${config.devBranch}`)
+    await run(`git push`)
+    await run(`git checkout ${config.devBranch}`)
     console.log(`Successfully published verison ${getPackageVersion()} !`)
   }
 })()

@@ -608,7 +608,7 @@
   tags:
     - CompagnieAerienne
 - title: Transports en commun
-  example: 'Exemple : avion, train'
+  example: 'Exemple : avion, train, bateau'
   subcategories:
     - title: Prix
       subcategories:
