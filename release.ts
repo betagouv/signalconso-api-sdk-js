@@ -35,6 +35,7 @@ const isOnMainBranch = () => new RegExp(`${config.devBranch}\s*\n*`).test(execSy
   } else if (!gitWorkspaceIsEmpty()) {
     console.error(`Your git status must be clean before to publish.`)
   } else {
+    await run(`npm run build`)
     await run(`npm version ${newversion}`)
     await run(`npm publish`)
     // await run(`git commit -m "Release ${getPackageVersion()}"`)
