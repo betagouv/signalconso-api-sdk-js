@@ -91,9 +91,6 @@ export class ReportDraft {
       ]).includes(_))
   }
 
-  /** @deprecated use the one from Report */
-  static readonly isGovernmentCompany = (_?: {activityCode?: string}): boolean => _?.activityCode?.startsWith('84.') ?? false
-
   static readonly toApi = (draft: ReportDraft): any => {
     return {
       ...draft,
@@ -103,66 +100,66 @@ export class ReportDraft {
       email: draft.consumer.email,
       consumerPhone: draft.consumer.phone,
       fileIds: draft.uploadedFiles.map(file => file.id),
-      companyName: draft.draftCompany.name,
-      companyAddress: draft.draftCompany.address,
-      companySiret: draft.draftCompany.siret,
-      companyActivityCode: draft.draftCompany.activityCode,
-      websiteURL: draft.draftCompany.website ? draft.draftCompany.website.url : undefined,
-      phone: draft.draftCompany.phone,
+      companyName: draft.companyDraft.name,
+      companyAddress: draft.companyDraft.address,
+      companySiret: draft.companyDraft.siret,
+      companyActivityCode: draft.companyDraft.activityCode,
+      websiteURL: draft.companyDraft.website,
+      phone: draft.companyDraft.phone,
     }
   }
 }
-
-export class ReportDraft_ {
-  static readonly getCompanyKindFomSubcategories = (r: ReportDraft): CompanyKinds | undefined => {
-    return r.subcategories?.reverse().find(_ => !!_.companyKind)?.companyKind
-  }
-
-  static readonly getLastSubcategory = (r: ReportDraft): Subcategory | undefined => {
-    if (r.subcategories && r.subcategories.length) {
-      return r.subcategories[r.subcategories.length - 1]
-    }
-  }
-
-  static readonly getReponseconsoCode = (r: ReportDraft): string[] => {
-    return uniqby((r.subcategories ?? []).flatMap(_ => _.reponseconsoCode ?? []), _ => _)
-  }
-
-  static readonly ccrfCode = (r: ReportDraft): string[] => {
-    return uniqby((r.subcategories ?? []).flatMap(_ => _.ccrfCode ?? []), _ => _)
-  }
-
-  static readonly tags = (r: ReportDraft): ReportTag[] => {
-    const tags = (r.subcategories ?? []).flatMap(_ => _.tags ?? [])
-    if (ReportDraft.getCompanyKindFomSubcategories(r) === CompanyKinds.WEBSITE) {
-      tags.push(ReportTag.Internet)
-    }
-    if (!r.forwardToReponseConso) {
-      return tags.filter(_ => _ !== ReportTag.ReponseConso)
-    }
-    return tags
-  }
-
-  static readonly isContractualDispute = (r: ReportDraft): boolean => {
-    return !r.employeeConsumer && !!r.tags && r.tags.includes(ReportTag.LitigeContractuel)
-  }
-
-  static readonly isVendor = (r: ReportDraft): boolean => {
-    return !!r.tags && r.tags.includes(ReportTag.ProduitDangereux)
-  }
-
-  static readonly isInfluenceur = (r: ReportDraft): boolean => {
-    return !!r.tags && r.tags.includes(ReportTag.Influenceur)
-  }
-
-  static readonly isTransmittableToPro = (r: Pick<ReportDraft, 'employeeConsumer' | 'tags'>): boolean => {
-    return !r.employeeConsumer
-      && !(r.tags ?? []).find(_ => ([
-        ReportTag.ReponseConso,
-        ReportTag.ProduitDangereux,
-        ReportTag.Bloctel
-      ]).includes(_))
-  }
-
-  static readonly isGovernmentCompany = (_?: {activityCode?: string}): boolean => _?.activityCode?.startsWith('84.') ?? false
-}
+//
+// export class ReportDraft_ {
+//   static readonly getCompanyKindFomSubcategories = (r: ReportDraft): CompanyKinds | undefined => {
+//     return r.subcategories?.reverse().find(_ => !!_.companyKind)?.companyKind
+//   }
+//
+//   static readonly getLastSubcategory = (r: ReportDraft): Subcategory | undefined => {
+//     if (r.subcategories && r.subcategories.length) {
+//       return r.subcategories[r.subcategories.length - 1]
+//     }
+//   }
+//
+//   static readonly getReponseconsoCode = (r: ReportDraft): string[] => {
+//     return uniqby((r.subcategories ?? []).flatMap(_ => _.reponseconsoCode ?? []), _ => _)
+//   }
+//
+//   static readonly ccrfCode = (r: ReportDraft): string[] => {
+//     return uniqby((r.subcategories ?? []).flatMap(_ => _.ccrfCode ?? []), _ => _)
+//   }
+//
+//   static readonly tags = (r: ReportDraft): ReportTag[] => {
+//     const tags = (r.subcategories ?? []).flatMap(_ => _.tags ?? [])
+//     if (ReportDraft.getCompanyKindFomSubcategories(r) === CompanyKinds.WEBSITE) {
+//       tags.push(ReportTag.Internet)
+//     }
+//     if (!r.forwardToReponseConso) {
+//       return tags.filter(_ => _ !== ReportTag.ReponseConso)
+//     }
+//     return tags
+//   }
+//
+//   static readonly isContractualDispute = (r: ReportDraft): boolean => {
+//     return !r.employeeConsumer && !!r.tags && r.tags.includes(ReportTag.LitigeContractuel)
+//   }
+//
+//   static readonly isVendor = (r: ReportDraft): boolean => {
+//     return !!r.tags && r.tags.includes(ReportTag.ProduitDangereux)
+//   }
+//
+//   static readonly isInfluenceur = (r: ReportDraft): boolean => {
+//     return !!r.tags && r.tags.includes(ReportTag.Influenceur)
+//   }
+//
+//   static readonly isTransmittableToPro = (r: Pick<ReportDraft, 'employeeConsumer' | 'tags'>): boolean => {
+//     return !r.employeeConsumer
+//       && !(r.tags ?? []).find(_ => ([
+//         ReportTag.ReponseConso,
+//         ReportTag.ProduitDangereux,
+//         ReportTag.Bloctel
+//       ]).includes(_))
+//   }
+//
+//   static readonly isGovernmentCompany = (_?: {activityCode?: string}): boolean => _?.activityCode?.startsWith('84.') ?? false
+// }
