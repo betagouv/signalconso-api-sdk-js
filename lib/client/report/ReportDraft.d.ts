@@ -44,23 +44,5 @@ export declare class ReportDraft {
     static readonly isVendor: (r: ReportDraft) => boolean;
     static readonly isInfluenceur: (r: ReportDraft) => boolean;
     static readonly isTransmittableToPro: (r: Pick<ReportDraft, 'employeeConsumer' | 'tags'>) => boolean;
-    /** @deprecated use the one from Report */
-    static readonly isGovernmentCompany: (_?: {
-        activityCode?: string | undefined;
-    } | undefined) => boolean;
     static readonly toApi: (draft: ReportDraft) => any;
-}
-export declare class ReportDraft_ {
-    static readonly getCompanyKindFomSubcategories: (r: ReportDraft) => CompanyKinds | undefined;
-    static readonly getLastSubcategory: (r: ReportDraft) => Subcategory | undefined;
-    static readonly getReponseconsoCode: (r: ReportDraft) => string[];
-    static readonly ccrfCode: (r: ReportDraft) => string[];
-    static readonly tags: (r: ReportDraft) => ReportTag[];
-    static readonly isContractualDispute: (r: ReportDraft) => boolean;
-    static readonly isVendor: (r: ReportDraft) => boolean;
-    static readonly isInfluenceur: (r: ReportDraft) => boolean;
-    static readonly isTransmittableToPro: (r: Pick<ReportDraft, 'employeeConsumer' | 'tags'>) => boolean;
-    static readonly isGovernmentCompany: (_?: {
-        activityCode?: string | undefined;
-    } | undefined) => boolean;
 }
