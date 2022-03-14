@@ -3,6 +3,7 @@ import {UploadedFile} from '../file/UploadedFile'
 import {DetailInputValue} from './Report'
 import {uniqby} from '../../helper/LodashNamedExport'
 import {Address} from '../../model'
+import {map} from '@alexandreannic/ts-utils'
 
 export interface ReportDraftConsumer {
   firstName: string
@@ -92,6 +93,24 @@ export class ReportDraft {
 
   /** @deprecated use the one from Report */
   static readonly isGovernmentCompany = (_?: {activityCode?: string}): boolean => _?.activityCode?.startsWith('84.') ?? false
+
+  static readonly toApi = (draft: ReportDraft): any => {
+    return {
+      ...draft,
+      subcategories: map(draft.subcategories, subcategories => subcategories.map(_ => _.title ?? _)),
+      firstName: draft.consumer.firstName,
+      lastName: draft.consumer.lastName,
+      email: draft.consumer.email,
+      consumerPhone: draft.consumer.phone,
+      fileIds: draft.uploadedFiles.map(file => file.id),
+      companyName: draft.draftCompany.name,
+      companyAddress: draft.draftCompany.address,
+      companySiret: draft.draftCompany.siret,
+      companyActivityCode: draft.draftCompany.activityCode,
+      websiteURL: draft.draftCompany.website ? draft.draftCompany.website.url : undefined,
+      phone: draft.draftCompany.phone,
+    }
+  }
 }
 
 export class ReportDraft_ {
