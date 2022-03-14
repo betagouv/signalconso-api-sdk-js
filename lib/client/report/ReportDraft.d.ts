@@ -48,6 +48,7 @@ export declare class ReportDraft {
     static readonly isGovernmentCompany: (_?: {
         activityCode?: string | undefined;
     } | undefined) => boolean;
+    static readonly toApi: (draft: ReportDraft) => any;
 }
 export declare class ReportDraft_ {
     static readonly getCompanyKindFomSubcategories: (r: ReportDraft) => CompanyKinds | undefined;
