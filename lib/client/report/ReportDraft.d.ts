@@ -22,7 +22,7 @@ export interface ReportDraft {
     subcategories: Subcategory[];
     companyDraft: CompanyDraft;
     detailInputValues: DetailInputValue[];
-    uploadedFiles: UploadedFile[];
+    uploadedFiles?: UploadedFile[];
     consumer: ReportDraftConsumer;
     employeeConsumer?: boolean;
     contactAgreement: boolean;

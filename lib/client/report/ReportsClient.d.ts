@@ -1,6 +1,5 @@
 import { ApiClientApi, CompanySearchResult, Event, Id, PaginatedFilters, Report, ReportAction, ReportResponse, ReportSearchResult } from '../..';
 import { Address, PaginatedData, ReportSearch } from '../../model';
-import { ReportDraft } from './ReportDraft';
 export interface ReportFilterQuerystring {
     readonly departments?: string[];
     readonly tags?: string | string[];
@@ -31,7 +30,6 @@ export declare class ReportsClient {
     readonly getById: (id: Id) => Promise<ReportSearchResult>;
     readonly postResponse: (id: Id, response: ReportResponse) => Promise<Event>;
     readonly postAction: (id: Id, action: ReportAction) => Promise<Event>;
-    readonly createReport: ({ consumer, companyDraft, uploadedFiles, detailInputValues, ...report }: ReportDraft) => Promise<Report>;
     readonly updateReportCompany: (reportId: string, company: CompanySearchResult) => Promise<Report>;
     readonly updateReportConsumer: (reportId: string, firstName: string, lastName: string, email: string, contactAgreement: boolean) => Promise<any>;
     readonly getCountByDepartments: ({ start, end }?: {
