@@ -39,6 +39,7 @@ export interface DetailInputValue {
 export class DetailInputValue {
   static readonly precisionKeyword = '(à préciser)'
 
+  /** TODO Maybe deprecated since we do it in signalconso-website */
   static readonly parse = (div: DetailInputValue): DetailInputValue => {
     return {
       label: (() => {
