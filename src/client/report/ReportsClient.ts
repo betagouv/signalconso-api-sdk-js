@@ -121,33 +121,6 @@ export class ReportsClient {
     return this.client.post<Event>(`reports/${id}/action`, {body: action})
   }
 
-  readonly createReport = ({
-    consumer,
-    companyDraft,
-    uploadedFiles,
-    detailInputValues,
-    ...report
-  }: ReportDraft) => {
-    return this.client.post<Report>(`/reports`, {
-      body: {
-        ...report,
-        fileIds: uploadedFiles.map(_ => _.id),
-        details: detailInputValues.map(DetailInputValue.parse),
-        companyName: companyDraft.name,
-        companyAddress: companyDraft.address,
-        companySiret: companyDraft.siret,
-        companyActivityCode: companyDraft.activityCode,
-        websiteURL: companyDraft.website,
-        phone: companyDraft.phone,
-        firstName: consumer.firstName,
-        lastName: consumer.lastName,
-        email: consumer.email,
-        // TODO(Alex) From signalement-app but don't know why ?
-        // subcategories: (subcategories ?? []).map(subcategory => subcategory.title ? subcategory.title : subcategory)
-      }
-    })
-  }
-
   readonly updateReportCompany = (reportId: string, company: CompanySearchResult) => {
     return this.client.post<Report>(`/reports/${reportId}/company`, {
       body: {
