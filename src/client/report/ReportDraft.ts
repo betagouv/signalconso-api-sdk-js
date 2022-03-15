@@ -27,7 +27,7 @@ export interface ReportDraft {
   subcategories: Subcategory[]
   companyDraft: CompanyDraft
   detailInputValues: DetailInputValue[]
-  uploadedFiles: UploadedFile[]
+  uploadedFiles?: UploadedFile[]
   consumer: ReportDraftConsumer
   employeeConsumer?: boolean
   contactAgreement: boolean
@@ -99,7 +99,7 @@ export class ReportDraft {
       lastName: draft.consumer.lastName,
       email: draft.consumer.email,
       consumerPhone: draft.consumer.phone,
-      fileIds: draft.uploadedFiles.map(file => file.id),
+      fileIds: draft.uploadedFiles?.map(file => file.id),
       companyName: draft.companyDraft.name,
       companyAddress: draft.companyDraft.address,
       companySiret: draft.companyDraft.siret,

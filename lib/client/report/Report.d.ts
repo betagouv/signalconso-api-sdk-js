@@ -33,6 +33,7 @@ export interface DetailInputValue {
 }
 export declare class DetailInputValue {
     static readonly precisionKeyword = "(\u00E0 pr\u00E9ciser)";
+    /** TODO Maybe deprecated since we do it in signalconso-website */
     static readonly parse: (div: DetailInputValue) => DetailInputValue;
 }
 export interface ReportSearchResult {
