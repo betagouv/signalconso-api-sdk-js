@@ -94,6 +94,7 @@ export class ReportDraft {
   static readonly toApi = (draft: ReportDraft): any => {
     return {
       ...draft,
+      details: draft.detailInputValues,
       subcategories: map(draft.subcategories, subcategories => subcategories.map(_ => _.title ?? _)),
       firstName: draft.consumer.firstName,
       lastName: draft.consumer.lastName,
