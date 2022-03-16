@@ -26,7 +26,7 @@ export interface ReportDraft {
   category: string
   subcategories: Subcategory[]
   companyDraft: CompanyDraft
-  detailInputValues: DetailInputValue[]
+  details: DetailInputValue[]
   uploadedFiles?: UploadedFile[]
   consumer: ReportDraftConsumer
   employeeConsumer?: boolean
@@ -94,7 +94,7 @@ export class ReportDraft {
   static readonly toApi = (draft: ReportDraft): any => {
     return {
       ...draft,
-      details: draft.detailInputValues,
+      details: draft.details,
       subcategories: map(draft.subcategories, subcategories => subcategories.map(_ => _.title ?? _)),
       firstName: draft.consumer.firstName,
       lastName: draft.consumer.lastName,

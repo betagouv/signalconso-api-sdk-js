@@ -14,9 +14,9 @@ export interface Report {
   companyId: string
   companyName: string
   companyAddress: Address
-  companySiret: string
+  companySiret?: string
   websiteURL?: string
-  vendor: string
+  vendor?: string
   phone?: string
   details: DetailInputValue[]
   firstName: string

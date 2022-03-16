@@ -21,7 +21,7 @@ export interface ReportDraft {
     category: string;
     subcategories: Subcategory[];
     companyDraft: CompanyDraft;
-    detailInputValues: DetailInputValue[];
+    details: DetailInputValue[];
     uploadedFiles?: UploadedFile[];
     consumer: ReportDraftConsumer;
     employeeConsumer?: boolean;
