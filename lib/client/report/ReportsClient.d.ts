@@ -44,9 +44,9 @@ export declare class ReportsClient {
         companyId: any;
         companyName: any;
         companyAddress: any;
-        companySiret: any;
+        companySiret?: any;
         websiteURL?: any;
-        vendor: any;
+        vendor?: any;
         phone?: any;
         details: any;
         firstName: any;
