@@ -85,11 +85,11 @@ export class ApiClient {
         .catch(
           mapError ??
             ((_: any) => {
-              if (_.response) {
+              if (_.response && _.response.data) {
                 return Promise.reject({
                   code: _.response.status,
-                  id: _.response.data?.type,
-                  message: _.response.data.message ?? _.response.data,
+                  id: _.response.data.type,
+                  message: _.response.data.details ?? _.response.data.timeout ?? JSON.stringify(_.response.data),
                   error: _,
                 })
               }
