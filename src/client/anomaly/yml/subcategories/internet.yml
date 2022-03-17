@@ -35,16 +35,30 @@
     - '445'
   companyKind: SIRET
 - title: Un problème de harcèlement ou de chantage en ligne
-  example: "Exemple : email d'un hackeur vous demandant de l'argent"
+  example: "Exemple : email d'un hackeur vous demandant de l'argent, chantage à la webcam"
   information:
     title: Ce type de problème ne doit pas être signalé sur SignalConso
     subTitle: Il concerne la police
     content: Nous vous invitons à utiliser le site dédié <br><a href="https://www.internet-signalement.gouv.fr" target="_blank">https://www.internet-signalement.gouv.fr</a>
+- title: Je subis de la discrimination, de la diffamation, des injures, ...
+  information:
+    title: Ce type de problème ne doit pas être signalé sur SignalConso
+    subTitle: Il concerne la police ou la gendarmerie
+    content: Nous vous invitons à utiliser le site dédié <br><a href="https://www.pre-plainte-en-ligne.gouv.fr/" target="_blank">https://www.pre-plainte-en-ligne.gouv.fr/</a>
 - title: Du contenu inapproprié (pédopornographie, incitation à la haine, racisme...) sur un site internet ou un réseau social
   information:
     title: Ce type de problème ne doit pas être signalé sur SignalConso
     subTitle: Il concerne la police
     content: Nous vous invitons à utiliser le site dédié <br><a href="https://www.internet-signalement.gouv.fr" target="_blank">https://www.internet-signalement.gouv.fr</a>
+- title: Dérive sectaire 
+  information:
+    title: Ce type de problème ne doit pas être signalé sur SignalConso
+    subTitle: Il concerne la Mivilude
+    content: Nous vous invitons à utiliser les sites dédiés <br>Vous voulez l'avis Mission interministérielle de vigilance et de lutte contre les dérives sectaires sur une pratique ou un mouvement.<br><a href="https://contacts-demarches.interieur.gouv.fr/miviludes/obtenir-l-avis-de-la-miviludes/" target="_blank">https://contacts-demarches.interieur.gouv.fr/miviludes/obtenir-l-avis-de-la-miviludes/</a> <br>Vous informez la Mission interministérielle de vigilance et de lutte contre les dérives sectaires. <br><a href="https://contacts-demarches.interieur.gouv.fr/miviludes/informer-la-miviludes-d-une-derive-sectaire/" target="_blank">https://contacts-demarches.interieur.gouv.fr/miviludes/informer-la-miviludes-d-une-derive-sectaire/</a> 
+- title: Ransomware ou rançongiciel
+  example: 'Exemple : Votre ordinateur, tablette, téléphone est bloqué et s'affiche un message exigeant de l'argent'
+  information:
+    title: "Ce type de problème ne doit pas être signalé sur SignalConso. Nous vous invitons à utiliser le site dédié <br><a href='https://www.service-public.fr/particuliers/vosdroits/F34129' target='_blank'>https://www.service-public.fr/particuliers/vosdroits/F34129</a>"
 - title: Le piratage de votre carte bancaire ou de votre compte bancaire
   information:
     title: "Ce type de problème ne doit pas être signalé sur SignalConso. Nous vous invitons à utiliser le site dédié <br><a href='https://www.service-public.fr/particuliers/vosdroits/R46526' target='_blank'>https://www.service-public.fr/particuliers/vosdroits/R46526</a>"
