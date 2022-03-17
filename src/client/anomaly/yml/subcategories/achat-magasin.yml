@@ -1024,3 +1024,9 @@
         - title: Autre
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
+ - title: J'ai vendu un objet sur internet et je n'ai pas été payé
+   example: "Exemple : Escroquerie d'un faux acheteur"
+   information:
+    title: Ce type de problème ne doit pas être signalé sur SignalConso
+    subTitle: Il concerne la police
+    content: Nous vous invitons à utiliser le site dédié <br><a href="https://www.service-public.fr/particuliers/vosdroits/F34019" target="_blank">https://www.service-public.fr/particuliers/vosdroits/F34019</a>
