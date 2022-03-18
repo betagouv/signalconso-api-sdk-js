@@ -33818,6 +33818,16 @@
             }
           ],
           "id": "1.2-3"
+        },
+        {
+          "title": "J'ai vendu un objet sur internet et je n'ai pas été payé",
+          "example": "Exemple : Escroquerie d'un faux acheteur",
+          "information": {
+            "title": "Ce type de problème ne doit pas être signalé sur SignalConso",
+            "subTitle": "Il concerne la police",
+            "content": "Nous vous invitons à utiliser le site dédié <br><a href=\"https://www.service-public.fr/particuliers/vosdroits/F34019\" target=\"_blank\">https://www.service-public.fr/particuliers/vosdroits/F34019</a>"
+          },
+          "id": "1.2-4"
         }
       ],
       "id": "1.2"
@@ -37720,7 +37730,7 @@
         },
         {
           "title": "Un problème de harcèlement ou de chantage en ligne",
-          "example": "Exemple : email d'un hackeur vous demandant de l'argent",
+          "example": "Exemple : email d'un hackeur vous demandant de l'argent, chantage à la webcam",
           "information": {
             "title": "Ce type de problème ne doit pas être signalé sur SignalConso",
             "subTitle": "Il concerne la police",
@@ -37729,20 +37739,46 @@
           "id": "1.16-4"
         },
         {
+          "title": "Je subis de la discrimination, de la diffamation, des injures, ...",
+          "information": {
+            "title": "Ce type de problème ne doit pas être signalé sur SignalConso",
+            "subTitle": "Il concerne la police ou la gendarmerie",
+            "content": "Nous vous invitons à utiliser le site dédié <br><a href=\"https://www.pre-plainte-en-ligne.gouv.fr/\" target=\"_blank\">https://www.pre-plainte-en-ligne.gouv.fr/</a>"
+          },
+          "id": "1.16-5"
+        },
+        {
           "title": "Du contenu inapproprié (pédopornographie, incitation à la haine, racisme...) sur un site internet ou un réseau social",
           "information": {
             "title": "Ce type de problème ne doit pas être signalé sur SignalConso",
             "subTitle": "Il concerne la police",
             "content": "Nous vous invitons à utiliser le site dédié <br><a href=\"https://www.internet-signalement.gouv.fr\" target=\"_blank\">https://www.internet-signalement.gouv.fr</a>"
           },
-          "id": "1.16-5"
+          "id": "1.16-6"
+        },
+        {
+          "title": "Dérive sectaire",
+          "information": {
+            "title": "Ce type de problème ne doit pas être signalé sur SignalConso",
+            "subTitle": "Il concerne la Mivilude",
+            "content": "Nous vous invitons à utiliser les sites dédiés <br>Vous voulez l'avis Mission interministérielle de vigilance et de lutte contre les dérives sectaires sur une pratique ou un mouvement.<br><a href=\"https://contacts-demarches.interieur.gouv.fr/miviludes/obtenir-l-avis-de-la-miviludes/\" target=\"_blank\">https://contacts-demarches.interieur.gouv.fr/miviludes/obtenir-l-avis-de-la-miviludes/</a> <br>Vous informez la Mission interministérielle de vigilance et de lutte contre les dérives sectaires. <br><a href=\"https://contacts-demarches.interieur.gouv.fr/miviludes/informer-la-miviludes-d-une-derive-sectaire/\" target=\"_blank\">https://contacts-demarches.interieur.gouv.fr/miviludes/informer-la-miviludes-d-une-derive-sectaire/</a>"
+          },
+          "id": "1.16-7"
+        },
+        {
+          "title": "Ransomware ou rançongiciel",
+          "example": "Exemple : Votre ordinateur, tablette, téléphone est bloqué et s'affiche un message exigeant de l'argent",
+          "information": {
+            "title": "Ce type de problème ne doit pas être signalé sur SignalConso. Nous vous invitons à utiliser le site dédié <br><a href='https://www.service-public.fr/particuliers/vosdroits/F34129' target='_blank'>https://www.service-public.fr/particuliers/vosdroits/F34129</a>"
+          },
+          "id": "1.16-8"
         },
         {
           "title": "Le piratage de votre carte bancaire ou de votre compte bancaire",
           "information": {
             "title": "Ce type de problème ne doit pas être signalé sur SignalConso. Nous vous invitons à utiliser le site dédié <br><a href='https://www.service-public.fr/particuliers/vosdroits/R46526' target='_blank'>https://www.service-public.fr/particuliers/vosdroits/R46526</a>"
           },
-          "id": "1.16-6"
+          "id": "1.16-9"
         }
       ],
       "id": "1.16"
@@ -55832,11 +55868,19 @@
       "cssClass": "image-bloctel",
       "subcategories": [
         {
+          "title": "Je reçois des appels pour effectuer des travaux ou sur de la rénovation énergétique",
+          "information": {
+            "title": "Revenez en arrière et utilisez plutôt la catégorie spécifique à votre problème :)",
+            "content": "Un appel pour faire installer des panneaux solaires ou une pompe à chaleur chez moi ? Utilisez la catégorie \"Travaux / Rénovation\". Il est interdit de démarcher pour des travaux ou réaliser de la rénovation énergétique."
+          },
+          "id": "1.17-1"
+        },
+        {
           "title": "Je reçois des appels indésirables alors que je suis inscrit sur Bloctel",
           "information": {
             "content": "<p>Vous recez des appels indésirables alors que vous êtes inscrit sur Bloctel.</p> <p>Les problèmes de démarchage abusif ne peuvent pas être signalés sur SignalConso.</p> <p> Vous devez les signaler sur Bloctel sur leur site dédié <a href=\"https://www.bloctel.gouv.fr/accueil\">https://www.bloctel.gouv.fr/accueil</a> </p>"
           },
-          "id": "1.17-1"
+          "id": "1.17-2"
         },
         {
           "title": "J’ai répondu à un SMS ou j’ai rappelé un numéro qui était payant sans le savoir",
@@ -55850,7 +55894,7 @@
               }
             ]
           },
-          "id": "1.17-2"
+          "id": "1.17-3"
         },
         {
           "title": "Je souhaite contacter le Service Relation Consommateur de Bloctel",
@@ -55858,14 +55902,6 @@
           "companyKind": "PHONE",
           "information": {
             "content": "Le Service Relation Consommateur est ouvert au 01 73 26 81 45 de 8 h 00 à 17 h 00 uniquement les jours ouvrés (Prix d'un appel vers un numéro fixe, suivant opérateur). Ce service est à disposition pour aider à gérer ou utiliser l' « Espace consommateur » du site Bloctel. <br/><br/>En revanche, il ne donne aucune information sur le suivi des signalements, les modalités de connexion à Internet ou sur les questions d'ordre juridique. <br/><br/>Vous pouvez accès à la Foire aux questions de Bloctel sur https://www.bloctel.gouv.fr/faq"
-          },
-          "id": "1.17-3"
-        },
-        {
-          "title": "Je reçois des appels pour effectuer des travaux ou sur de la rénovation énergétique",
-          "information": {
-            "title": "Revenez en arrière et utilisez plutôt la catégorie spécifique à votre problème :)",
-            "content": "Un appel pour faire installer des panneaux solaires ou une pompe à chaleur chez moi ? Utilisez la catégorie \"Travaux / Rénovation\". Il est interdit de démarcher pour des travaux ou réaliser de la rénovation énergétique."
           },
           "id": "1.17-4"
         }

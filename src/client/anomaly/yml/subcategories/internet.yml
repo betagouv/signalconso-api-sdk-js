@@ -56,7 +56,7 @@
     subTitle: Il concerne la Mivilude
     content: Nous vous invitons à utiliser les sites dédiés <br>Vous voulez l'avis Mission interministérielle de vigilance et de lutte contre les dérives sectaires sur une pratique ou un mouvement.<br><a href="https://contacts-demarches.interieur.gouv.fr/miviludes/obtenir-l-avis-de-la-miviludes/" target="_blank">https://contacts-demarches.interieur.gouv.fr/miviludes/obtenir-l-avis-de-la-miviludes/</a> <br>Vous informez la Mission interministérielle de vigilance et de lutte contre les dérives sectaires. <br><a href="https://contacts-demarches.interieur.gouv.fr/miviludes/informer-la-miviludes-d-une-derive-sectaire/" target="_blank">https://contacts-demarches.interieur.gouv.fr/miviludes/informer-la-miviludes-d-une-derive-sectaire/</a> 
 - title: Ransomware ou rançongiciel
-  example: 'Exemple : Votre ordinateur, tablette, téléphone est bloqué et s'affiche un message exigeant de l'argent'
+  example: "Exemple : Votre ordinateur, tablette, téléphone est bloqué et s'affiche un message exigeant de l'argent"
   information:
     title: "Ce type de problème ne doit pas être signalé sur SignalConso. Nous vous invitons à utiliser le site dédié <br><a href='https://www.service-public.fr/particuliers/vosdroits/F34129' target='_blank'>https://www.service-public.fr/particuliers/vosdroits/F34129</a>"
 - title: Le piratage de votre carte bancaire ou de votre compte bancaire
