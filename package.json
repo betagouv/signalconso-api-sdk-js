@@ -1,10 +1,14 @@
 {
   "name": "@signal-conso/signalconso-api-sdk-js",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "version": "3.2.12",
 =======
   "version": "3.0.5",
 >>>>>>> 876d791 (Fix anomaly rank)
+=======
+  "version": "3.0.6",
+>>>>>>> 8baecad (Fix category id)
   "description": "SignalConso API SDK for JavaScript/TypeScript",
   "main": "lib/index.js",
   "private": false,
