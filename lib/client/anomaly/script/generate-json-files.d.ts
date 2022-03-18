@@ -6,5 +6,5 @@ declare const files: {
     input: string;
     output: string;
 }[];
-declare const addUniqueId: (prefix: string | undefined, obj: any, depth?: number) => void;
+declare const addUniqueId: (obj: any, depth?: number, prefix?: string | undefined) => void;
 declare const root: any;
