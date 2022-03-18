@@ -55810,7 +55810,7 @@
       "path": "bloctel",
       "description": "spams, appels indésirables malgré Bloctel",
       "id": "1.18",
-      "cssClass": "image-bloctel",
+      "sprite": "category-bloctel",
       "subcategories": [
         {
           "title": "Je reçois des appels indésirables alors que je suis inscrit sur Bloctel",
