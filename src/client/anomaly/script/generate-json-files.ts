@@ -12,7 +12,7 @@ const files = [
 const addUniqueId = (prefix = '', obj, depth = 0) => {
   let index = 1
   obj.forEach(entry => {
-    const id = prefix + (depth === 1 ? '-' : '.') + (entry.rank || index++)
+    const id = prefix + (depth === 1 ? '-' : '.') + (entry.id || index++)
     entry.id = id
     if (entry.subcategories) {
       addUniqueId(id, entry.subcategories, depth + 1)

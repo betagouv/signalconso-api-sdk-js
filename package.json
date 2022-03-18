@@ -1,6 +1,10 @@
 {
   "name": "@signal-conso/signalconso-api-sdk-js",
+<<<<<<< HEAD
   "version": "3.2.12",
+=======
+  "version": "3.0.5",
+>>>>>>> 876d791 (Fix anomaly rank)
   "description": "SignalConso API SDK for JavaScript/TypeScript",
   "main": "lib/index.js",
   "private": false,
@@ -9,7 +13,7 @@
     "release": "ts-node release.ts",
     "prepublish": "npm run build && npm run generate-json",
     "build": "tsc --declaration && npm run generate-json",
-    "generate-json": "node src/client/anomaly/script/generate-json-files.js",
+    "generate-json": "ts-node src/client/anomaly/script/generate-json-files.ts",
     "count-leaves": "node src/client/anomaly/script/count-leaves.js",
     "format": "npx prettier --write ."
   },
