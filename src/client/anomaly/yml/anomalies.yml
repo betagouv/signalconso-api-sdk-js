@@ -138,5 +138,5 @@ list:
     path: bloctel
     description: spams, appels indésirables malgré Bloctel
     id: 17
-    cssClass: image-bloctel
+    sprite: category-bloctel
     subcategories: !!import/single subcategories/bloctel.yml
