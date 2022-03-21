@@ -392,8 +392,7 @@
                     "companyKind": "SIRET",
                     "example": "Exemple : locaux sales, rat, chaîne du froid",
                     "tags": [
-                        "ReponseConso",
-                        "Hygiene"
+                        "hygiène"
                     ],
                     "subcategoriesTitle": "Vous voulez signaler&#160;:",
                     "subcategories": [
@@ -1220,7 +1219,7 @@
             ]
         },
         {
-            "category": "Achat / Magasin",
+            "category": "Achat (Magasin ou Internet)",
             "categoryId": "MAG",
             "path": "achat-magasin",
             "description": "supermarché, boulangerie, magasin de jouet, achat en ligne...",
@@ -1361,7 +1360,6 @@
                             "title": "Un produit dangereux",
                             "example": "Exemple : jouet, cosmétique",
                             "tags": [
-                                "ReponseConso",
                                 "ProduitDangereux"
                             ],
                             "subcategories": [
@@ -33818,6 +33816,16 @@
                         }
                     ],
                     "id": "2.3"
+                },
+                {
+                    "title": "J'ai vendu un objet sur internet et je n'ai pas été payé",
+                    "example": "Exemple : Escroquerie d'un faux acheteur",
+                    "information": {
+                        "title": "Ce type de problème ne doit pas être signalé sur SignalConso",
+                        "subTitle": "Il concerne la police",
+                        "content": "Nous vous invitons à utiliser le site dédié <br><a href=\"https://www.service-public.fr/particuliers/vosdroits/F34019\" target=\"_blank\">https://www.service-public.fr/particuliers/vosdroits/F34019</a>"
+                    },
+                    "id": "2.4"
                 }
             ]
         },
@@ -35751,8 +35759,7 @@
                                     ],
                                     "companyKind": "PHONE",
                                     "tags": [
-                                        "ReponseConso",
-                                        "DemarchageTelephonique"
+                                        "Démarchage téléphonique"
                                     ],
                                     "detailInputs": [
                                         {
@@ -37160,13 +37167,13 @@
                 },
                 {
                     "title": "Assurance / mutuelle",
-                    "tags": [
-                        "ReponseConso"
-                    ],
                     "subcategories": [
                         {
                             "title": "Contrat",
                             "example": "Exemple : contrat non respecté, échéancier non reçu",
+                            "tags": [
+                                "ReponseConso"
+                            ],
                             "reponseconsoCode": [
                                 "425",
                                 "411"
@@ -37185,7 +37192,8 @@
                             "title": "Publicité",
                             "example": "Exemple : publicité trompeuse, démarchage à domicile, démarchage téléphonique",
                             "tags": [
-                                "LitigeContractuel"
+                                "LitigeContractuel",
+                                "ReponseConso"
                             ],
                             "subcategories": [
                                 {
@@ -37196,7 +37204,8 @@
                                         "2210"
                                     ],
                                     "tags": [
-                                        "DemarchageADomicile"
+                                        "DemarchageADomicile",
+                                        "ReponseConso"
                                     ],
                                     "detailInputs": [
                                         {
@@ -37235,7 +37244,8 @@
                                         "2210"
                                     ],
                                     "tags": [
-                                        "DemarchageTelephonique"
+                                        "DemarchageTelephonique",
+                                        "ReponseConso"
                                     ],
                                     "detailInputs": [
                                         {
@@ -37265,6 +37275,9 @@
                                     "title": "Autre",
                                     "reponseconsoCode": [
                                         "679"
+                                    ],
+                                    "tags": [
+                                        "ReponseConso"
                                     ],
                                     "companyKind": "SIRET",
                                     "id": "8.2.3.3"
@@ -37709,7 +37722,7 @@
                 },
                 {
                     "title": "Un problème de harcèlement ou de chantage en ligne",
-                    "example": "Exemple : email d'un hackeur vous demandant de l'argent",
+                    "example": "Exemple : email d'un hackeur vous demandant de l'argent, chantage à la webcam",
                     "information": {
                         "title": "Ce type de problème ne doit pas être signalé sur SignalConso",
                         "subTitle": "Il concerne la police",
@@ -37718,20 +37731,46 @@
                     "id": "16.4"
                 },
                 {
+                    "title": "Je subis de la discrimination, de la diffamation, des injures, ...",
+                    "information": {
+                        "title": "Ce type de problème ne doit pas être signalé sur SignalConso",
+                        "subTitle": "Il concerne la police ou la gendarmerie",
+                        "content": "Nous vous invitons à utiliser le site dédié <br><a href=\"https://www.pre-plainte-en-ligne.gouv.fr/\" target=\"_blank\">https://www.pre-plainte-en-ligne.gouv.fr/</a>"
+                    },
+                    "id": "16.5"
+                },
+                {
                     "title": "Du contenu inapproprié (pédopornographie, incitation à la haine, racisme...) sur un site internet ou un réseau social",
                     "information": {
                         "title": "Ce type de problème ne doit pas être signalé sur SignalConso",
                         "subTitle": "Il concerne la police",
                         "content": "Nous vous invitons à utiliser le site dédié <br><a href=\"https://www.internet-signalement.gouv.fr\" target=\"_blank\">https://www.internet-signalement.gouv.fr</a>"
                     },
-                    "id": "16.5"
+                    "id": "16.6"
+                },
+                {
+                    "title": "Dérive sectaire",
+                    "information": {
+                        "title": "Ce type de problème ne doit pas être signalé sur SignalConso",
+                        "subTitle": "Il concerne la Mivilude",
+                        "content": "Nous vous invitons à utiliser les sites dédiés <br>Vous voulez l'avis Mission interministérielle de vigilance et de lutte contre les dérives sectaires sur une pratique ou un mouvement.<br><a href=\"https://contacts-demarches.interieur.gouv.fr/miviludes/obtenir-l-avis-de-la-miviludes/\" target=\"_blank\">https://contacts-demarches.interieur.gouv.fr/miviludes/obtenir-l-avis-de-la-miviludes/</a> <br>Vous informez la Mission interministérielle de vigilance et de lutte contre les dérives sectaires. <br><a href=\"https://contacts-demarches.interieur.gouv.fr/miviludes/informer-la-miviludes-d-une-derive-sectaire/\" target=\"_blank\">https://contacts-demarches.interieur.gouv.fr/miviludes/informer-la-miviludes-d-une-derive-sectaire/</a>"
+                    },
+                    "id": "16.7"
+                },
+                {
+                    "title": "Ransomware ou rançongiciel",
+                    "example": "Exemple : Votre ordinateur, tablette, téléphone est bloqué et s'affiche un message exigeant de l'argent",
+                    "information": {
+                        "title": "Ce type de problème ne doit pas être signalé sur SignalConso. Nous vous invitons à utiliser le site dédié <br><a href='https://www.service-public.fr/particuliers/vosdroits/F34129' target='_blank'>https://www.service-public.fr/particuliers/vosdroits/F34129</a>"
+                    },
+                    "id": "16.8"
                 },
                 {
                     "title": "Le piratage de votre carte bancaire ou de votre compte bancaire",
                     "information": {
                         "title": "Ce type de problème ne doit pas être signalé sur SignalConso. Nous vous invitons à utiliser le site dédié <br><a href='https://www.service-public.fr/particuliers/vosdroits/R46526' target='_blank'>https://www.service-public.fr/particuliers/vosdroits/R46526</a>"
                     },
-                    "id": "16.6"
+                    "id": "16.9"
                 }
             ]
         },
@@ -48802,13 +48841,13 @@
                     "title": "Compagnie aérienne",
                     "example": "Exemple : Vol annuel, vol retardé, déclassement, refus d'embarquement",
                     "tags": [
-                        "Compagnie aerienne"
+                        "CompagnieAerienne"
                     ],
                     "id": "10.4"
                 },
                 {
                     "title": "Transports en commun",
-                    "example": "Exemple : avion, train",
+                    "example": "Exemple : avion, train, bateau",
                     "subcategories": [
                         {
                             "title": "Prix",
@@ -55813,105 +55852,19 @@
             "sprite": "category-bloctel",
             "subcategories": [
                 {
-                    "title": "Je reçois des appels indésirables alors que je suis inscrit sur Bloctel",
-                    "companyKind": "PHONE",
-                    "subcategories": [
-                        {
-                            "title": "L’appel concerne mon entreprise",
-                            "information": {
-                                "content": "Nous ne doutons pas que vous ayez réellement rencontré un problème mais si vous avez reçu un appel en lien avec votre entreprise, il ne s’agit pas d’un démarchage abusif. <br/><br/>BlocTel est un outil réservé aux consommateurs. Les professionnels ne peuvent pas utiliser la plateforme pour lutter contre le démarchage abusif."
-                            },
-                            "id": "17.1.1"
-                        },
-                        {
-                            "title": "Je suis client de l’entreprise ou j’ai demandé à être rappelé",
-                            "example": "Exemple : j’ai un contrat avec l’entreprise, j’ai demandé un devis ...",
-                            "information": {
-                                "content": "Nous ne doutons pas que vous ayez réellement rencontré un problème mais si vous avez un contrat avec l’entreprise ou que vous avez laissé vos coordonnées pour être rappelé, il ne s’agit pas d’un démarchage abusif. L’entreprise peut vous contacter."
-                            },
-                            "id": "17.1.2"
-                        },
-                        {
-                            "title": "L’appel a pour but de me vendre des journaux",
-                            "information": {
-                                "content": "Nous ne doutons pas que vous ayez réellement rencontré un problème mais la vente de journaux, de magazines, de périodiques fait partie des exceptions, il ne s’agit pas d’un démarchage abusif. Même si vous êtes inscrits sur BlocTel, l’entreprise est autorisée à vous joindre."
-                            },
-                            "id": "17.1.3"
-                        },
-                        {
-                            "title": "L’appel concerne un sondage",
-                            "information": {
-                                "content": "Nous ne doutons pas que vous ayez réellement rencontré un problème mais si l’appel concerne un sondage et que l’entreprise n’a pas cherché à vous vendre un objet ou un service, que vous n’avez pas donné vos coordonnées bancaires ou que vous n’avez pas reçu de message de confirmation de commande d’un produit ou d’un service, il ne s’agit pas d’un démarchage abusif. Cela ressemble à un véritable sondage pour simplement connaître votre avis, ce n’est pas du démarchage commercial. <br/><br/>Toutefois, si l’entreprise a essayé de vous vendre un objet ou un service ou que vous avez donné vos coordonnées bancaires, cela correspond à du démarchage commercial. Vous devez revenir en arrière et aller sur « L’entreprise veut me vendre un objet ou un service et je ne suis pas client chez eux. »"
-                            },
-                            "id": "17.1.4"
-                        },
-                        {
-                            "title": "L’entreprise veut me vendre un objet ou un service alors que je ne suis pas client chez eux",
-                            "tags": [
-                                "Bloctel",
-                                "DemarchageTelephonique"
-                            ],
-                            "detailInputs": [
-                                {
-                                    "label": "Date de l'appel",
-                                    "rank": 1,
-                                    "type": "DATE",
-                                    "defaultValue": "SYSDATE"
-                                },
-                                {
-                                    "label": "Heure de l'appel",
-                                    "rank": 2,
-                                    "type": "TIMESLOT"
-                                },
-                                {
-                                    "label": "Votre numéro de téléphone",
-                                    "rank": 3,
-                                    "type": "TEXT"
-                                },
-                                {
-                                    "label": "Votre numéro d'inscription bloctel (recommandé)",
-                                    "example": "Ce numéro est présent dans toutes les confirmations – inscription initiale, dépôts de réclamation – que vous a envoyés Bloctel",
-                                    "rank": 4,
-                                    "type": "TEXT",
-                                    "optionnal": true
-                                },
-                                {
-                                    "label": "L'appel concernait",
-                                    "rank": 5,
-                                    "type": "RADIO",
-                                    "options": [
-                                        "Banque / Assurance / Mutuelle",
-                                        "Secteur de la santé",
-                                        "Immobilier",
-                                        "Téléphonie / Fournisseur d'accès internet / médias",
-                                        "Voyage / Loisirs",
-                                        "Services aux particuliers",
-                                        "Voiture / Véhicule / Vélo",
-                                        "Eau / Gaz / Electricité",
-                                        "Travaux / Rénovation",
-                                        "Produits alimentaires, boissons,",
-                                        "Jeux, voyance",
-                                        "Spectacles, culture, loisirs",
-                                        "Équipement pour personne (mode, textiles, chaussures, ...)",
-                                        "Équipement pour maison (ameublement, électroménager, ...)",
-                                        "Autre"
-                                    ]
-                                },
-                                {
-                                    "label": "Le vendeur s'est fait passer pour:",
-                                    "rank": 6,
-                                    "type": "RADIO",
-                                    "options": [
-                                        "Administration",
-                                        "Formation professionnelle",
-                                        "Autre."
-                                    ]
-                                }
-                            ],
-                            "id": "17.1.5"
-                        }
-                    ],
+                    "title": "Je reçois des appels pour effectuer des travaux ou sur de la rénovation énergétique",
+                    "information": {
+                        "title": "Revenez en arrière et utilisez plutôt la catégorie spécifique à votre problème :)",
+                        "content": "Un appel pour faire installer des panneaux solaires ou une pompe à chaleur chez moi ? Utilisez la catégorie \"Travaux / Rénovation\". Il est interdit de démarcher pour des travaux ou réaliser de la rénovation énergétique."
+                    },
                     "id": "17.1"
+                },
+                {
+                    "title": "Je reçois des appels indésirables alors que je suis inscrit sur Bloctel",
+                    "information": {
+                        "content": "<p>Vous recez des appels indésirables alors que vous êtes inscrit sur Bloctel.</p> <p>Les problèmes de démarchage abusif ne peuvent pas être signalés sur SignalConso.</p> <p> Vous devez les signaler sur Bloctel sur leur site dédié <a href=\"https://www.bloctel.gouv.fr/accueil\">https://www.bloctel.gouv.fr/accueil</a> </p>"
+                    },
+                    "id": "17.2"
                 },
                 {
                     "title": "J’ai répondu à un SMS ou j’ai rappelé un numéro qui était payant sans le savoir",
@@ -55925,7 +55878,7 @@
                             }
                         ]
                     },
-                    "id": "17.2"
+                    "id": "17.3"
                 },
                 {
                     "title": "Je souhaite contacter le Service Relation Consommateur de Bloctel",
@@ -55934,7 +55887,7 @@
                     "information": {
                         "content": "Le Service Relation Consommateur est ouvert au 01 73 26 81 45 de 8 h 00 à 17 h 00 uniquement les jours ouvrés (Prix d'un appel vers un numéro fixe, suivant opérateur). Ce service est à disposition pour aider à gérer ou utiliser l' « Espace consommateur » du site Bloctel. <br/><br/>En revanche, il ne donne aucune information sur le suivi des signalements, les modalités de connexion à Internet ou sur les questions d'ordre juridique. <br/><br/>Vous pouvez accès à la Foire aux questions de Bloctel sur https://www.bloctel.gouv.fr/faq"
                     },
-                    "id": "17.3"
+                    "id": "17.4"
                 }
             ]
         }

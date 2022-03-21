@@ -19,10 +19,10 @@ declare class PublicStatsPercentageClient {
     private readonly delayBeforeCountingToWaitForProResponseInDays;
     private readonly statsAdminStartDate;
     private readonly getPercentByStatus;
-    readonly getReportForwardedToPro: (companyId: Id) => Promise<SimpleStat>;
-    readonly getReportReadByPro: (companyId: Id) => Promise<SimpleStat>;
-    readonly getReportWithResponse: (companyId: Id) => Promise<SimpleStat>;
-    readonly getReportWithWebsite: (companyId: Id) => Promise<SimpleStat>;
+    readonly getReportForwardedToPro: (companyId?: string | undefined) => Promise<SimpleStat>;
+    readonly getReportReadByPro: (companyId?: string | undefined) => Promise<SimpleStat>;
+    readonly getReportWithResponse: (companyId?: string | undefined) => Promise<SimpleStat>;
+    readonly getReportWithWebsite: (companyId?: string | undefined) => Promise<SimpleStat>;
 }
 declare class PublicStatsCurveClient {
     private client;
@@ -30,13 +30,13 @@ declare class PublicStatsCurveClient {
     private readonly getReportPercentageCurve;
     private getPercent;
     readonly getReportForwardedPercentage: (params: CurveStatsParams & {
-        companyId: Id;
+        companyId?: Id;
     }) => Promise<CountByDate[]>;
     readonly getReportRespondedPercentage: (params: CurveStatsParams & {
-        companyId: Id;
+        companyId?: Id;
     }) => Promise<CountByDate[]>;
     readonly getReportReadPercentage: (params: CurveStatsParams & {
-        companyId: Id;
+        companyId?: Id;
     }) => Promise<CountByDate[]>;
 }
 export {};

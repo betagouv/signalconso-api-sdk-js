@@ -2,6 +2,7 @@
   "name": "@signal-conso/signalconso-api-sdk-js",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "version": "3.2.12",
 =======
   "version": "3.0.5",
@@ -9,6 +10,9 @@
 =======
   "version": "3.0.6",
 >>>>>>> 8baecad (Fix category id)
+=======
+  "version": "3.2.8-TEST",
+>>>>>>> 5941c3d (TRELLO-1121: rebase)
   "description": "SignalConso API SDK for JavaScript/TypeScript",
   "main": "lib/index.js",
   "private": false,
