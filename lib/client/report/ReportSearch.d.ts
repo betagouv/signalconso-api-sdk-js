@@ -1,7 +1,8 @@
 import { Id, ReportStatus, ReportTag } from '../..';
 export interface ReportSearch {
     departments?: string[];
-    tags?: ReportTag[];
+    withTags?: ReportTag[];
+    withoutTags?: ReportTag[];
     companyCountries?: string[];
     siretSirenList?: string[];
     activityCodes?: string[];

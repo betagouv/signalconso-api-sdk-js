@@ -1,8 +1,9 @@
-import { ApiClientApi, CompanySearchResult, Event, Id, PaginatedFilters, Report, ReportAction, ReportResponse, ReportSearchResult } from '../..';
+import { ApiClientApi, CompanySearchResult, Event, Id, PaginatedFilters, Report, ReportAction, ReportResponse, ReportSearchResult, ReportTag } from '../..';
 import { Address, PaginatedData, ReportSearch } from '../../model';
 export interface ReportFilterQuerystring {
     readonly departments?: string[];
-    readonly tags?: string | string[];
+    readonly withTags?: ReportTag[];
+    readonly withoutTags?: ReportTag[];
     readonly companyCountries?: string[];
     readonly siretSirenList?: string[];
     readonly status?: string[];
