@@ -7,7 +7,8 @@ export interface Subscription {
     sirets: string[];
     frequency: SubscriptionFrequency;
     countries: Country[];
-    tags: ReportTag[];
+    withTags: ReportTag[];
+    withoutTags: ReportTag[];
 }
 export interface SubscriptionCreate {
     departments: string[];
@@ -15,5 +16,6 @@ export interface SubscriptionCreate {
     sirets: string[];
     frequency: SubscriptionFrequency;
     countries: string[];
-    tags: ReportTag[];
+    withTags: ReportTag[];
+    withoutTags: ReportTag[];
 }
