@@ -1,5 +1,13 @@
 ---
 list:
+  - category: Retrait-Rappel Spécifique
+    categoryId: RPL
+    path: retrait-rappel
+    description: Retrait-Rappel Spécifique.
+    rank: 99
+    hidden: true
+    sprite: none
+    subcategories: !!import/single subcategories/retrait-rappel.yml
   - category: COVID-19 (coronavirus)
     categoryId: C19
     path: coronavirus

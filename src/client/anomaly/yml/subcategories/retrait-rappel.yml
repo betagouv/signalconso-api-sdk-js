@@ -1,0 +1,37 @@
+- title: un magasin / commerce physique
+  example: 'Exemple : grande surface, épicerie, stand dans un marché, boulangerie'
+  companyKind: SIRET
+  subcategories:
+    - title: Un problème avec un produit en particulier
+      example: "Exemple : il manque des informations sur l'emballage, le produit est douteux"
+      subcategories:
+        - title: C'est un aliment ou une boisson
+          example: 'Exemple : bonbon, viande, pain, conserve, vin, eau en bouteille'
+          subcategories:
+            - title: Produit rappelé toujours en vente
+              example: Le produit fait l'objet d'une mesure de rappel des autorités
+              reponseconsoCode:
+                - '311'
+                - '331'
+              tags:
+                - ReponseConso
+              detailInputs:
+                - label: Date du constat
+                  rank: 1
+                  type: DATE_NOT_IN_FUTURE
+                  defaultValue: SYSDATE
+                - label: Heure du constat
+                  rank: 2
+                  type: TIMESLOT
+                  optionnal: true
+                - label: Nom du produit / marque
+                  rank: 3
+                  type: TEXT
+                - label: Numéro de lot / référence
+                  rank: 4
+                  type: TEXT
+                - label: Qu'avez-vous constaté&#160;?
+                  rank: 5
+                  type: TEXTAREA
+          tags:
+            - ProduitAlimentaire
