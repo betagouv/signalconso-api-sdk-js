@@ -27,16 +27,16 @@
         - Le vendeur s'est fait passer pour une autre entreprise (à préciser)
         - Le vendeur m'a fait signer des papiers sans me dire que c'était un contrat ou un bon de commande.
         - Autre (à préciser)
-       - label: Avez-vous payé au moment du démarchage&#160;?
-         rank: 2
-         type: RADIO
-         options:
-         - Oui
-         - Non
-       - label: Date du démarchage
-         rank: 3
-         type: DATE
-         defaultValue: SYSDATE
+      - label: Avez-vous payé au moment du démarchage&#160;?
+        rank: 2
+        type: RADIO
+        options:
+        - Oui
+        - Non
+      - label: Date du démarchage
+        rank: 3
+        type: DATE
+        defaultValue: SYSDATE
     - title: Démarchage Téléphonique
       companyKind: PHONE
       ccrfCode: 
@@ -99,17 +99,17 @@
               - Le site internet
               - Les documents mis à votre disposition par le professionnel (flyer, plaquette de présentation...)
               - Autre (à préciser)
-             - label: Description
-               rank: 2
-               type: TEXTAREA
-             - label: Date du constat
-               rank: 3
-               type: DATE
-               defaultValue: SYSDATE
-             - label: Heure du constat (facultatif)
-               rank: 4
-               type: TIMESLOT
-               optionnal: true
+            - label: Description
+              rank: 2
+              type: TEXTAREA
+            - label: Date du constat
+              rank: 3
+              type: DATE
+              defaultValue: SYSDATE
+            - label: Heure du constat (facultatif)
+              rank: 4
+              type: TIMESLOT
+              optionnal: true
           - title: Utilisation de termes laissant croire qu'il s'agit d'une structure publique
             detailInputs:
             - label: Qu'est-ce qui est trompeur ou mensonger&#160;?
@@ -132,26 +132,26 @@
               type: TIMESLOT
               optionnal: true
           - title: Usurpation d'identité de la part du professionnel
-             detailInputs:
-             - label: Qu'est-ce qui est trompeur ou mensonger&#160;?
-               rank: 1
-               type: RADIO
-               options:
-               - Le discours du professionnel
-               - Le site internet
-               - Les documents mis à votre disposition par le professionnel (flyer, plaquette de présentation...)
-               - Autre (à préciser)
-             - label: Description
-               rank: 2
-               type: TEXTAREA
-             - label: Date du constat
-               rank: 3
-               type: DATE
-               defaultValue: SYSDATE
-             - label: Heure du constat (facultatif)
-               rank: 4
-               type: TIMESLOT
-               optionnal: true
+            detailInputs:
+            - label: Qu'est-ce qui est trompeur ou mensonger&#160;?
+              rank: 1
+              type: RADIO
+              options:
+              - Le discours du professionnel
+              - Le site internet
+              - Les documents mis à votre disposition par le professionnel (flyer, plaquette de présentation...)
+              - Autre (à préciser)
+            - label: Description
+              rank: 2
+              type: TEXTAREA
+            - label: Date du constat
+              rank: 3
+              type: DATE
+              defaultValue: SYSDATE
+            - label: Heure du constat (facultatif)
+              rank: 4
+              type: TIMESLOT
+              optionnal: true
     - title: Autre  
   - title: Contrat
     example: 'Exemple : contrat non respecté, délai de rétractation, clause abusive'
@@ -159,18 +159,19 @@
     - title: Droit de rétractation
       example: Une fois le contrat signé, vous souhaitez revenir en arrière
       subcategoriesTitle: Où avez-vous signé le contrat ?
+      subcategories:
       - title: À votre domicile
         example: Un démarcheur est venu chez vous
         description:
-        Vous avez un délai de 14 jours pour changer d’avis. On appelle ce délai le "délai de rétractation". Ce délai est valable même si vous avez demandé à faire démarrer votre contrat immédiatement
-        <br />Vous n’avez pas à vous justifier auprès du commerçant.
-        <br/><a href="../delai-de-retractation" target="_blank">>> Comment calculer mon délai de retractation</a>
+          Vous avez un délai de 14 jours pour changer d’avis. On appelle ce délai le "délai de rétractation". Ce délai est valable même si vous avez demandé à faire démarrer votre contrat immédiatement
+          <br/>Vous n’avez pas à vous justifier auprès du commerçant.
+          <br/><a href="../delai-de-retractation" target="_blank">>> Comment calculer mon délai de retractation</a>
       - title: À distance
         example: 'Exemple : sur internet'
         description:
-        Vous avez un délai de 14 jours pour changer d’avis. On appelle ce délai le "délai de rétractation". Ce délai est valable même si vous avez demandé à faire démarrer votre contrat immédiatement
-        <br />Vous n’avez pas à vous justifier auprès du commerçant.
-        <br/><a href="../delai-de-retractation" target="_blank">>> Comment calculer mon délai de retractation</a>
+          Vous avez un délai de 14 jours pour changer d’avis. On appelle ce délai le "délai de rétractation". Ce délai est valable même si vous avez demandé à faire démarrer votre contrat immédiatement
+          <br />Vous n’avez pas à vous justifier auprès du commerçant.
+          <br/><a href="../delai-de-retractation" target="_blank">>> Comment calculer mon délai de retractation</a>
       - title: Au lieu habituel d'activité du professionnel
         information:
       - title: Vous ne pouvez plus vous retracter
@@ -182,9 +183,9 @@
         content: Il n'y a pas de délai de rétractation pour votre cas.
         outOfScope: true
         description:
-        Vous avez un délai de 14 jours pour changer d’avis. On appelle ce délai le "délai de rétractation". Ce délai est valable même si vous avez demandé à faire démarrer votre contrat immédiatement
-        <br />Vous n’avez pas à vous justifier auprès du commerçant.
-        <br/><a href="../delai-de-retractation" target="_blank">>> Comment calculer mon délai de retractation</a>
+          Vous avez un délai de 14 jours pour changer d’avis. On appelle ce délai le "délai de rétractation". Ce délai est valable même si vous avez demandé à faire démarrer votre contrat immédiatement
+          <br />Vous n’avez pas à vous justifier auprès du commerçant.
+          <br/><a href="../delai-de-retractation" target="_blank">>> Comment calculer mon délai de retractation</a>
     - title: Contrat non respecté
       tags:
         - LitigeContractuel
@@ -201,55 +202,55 @@
   exemple: 'Exemple : la désinfection, la désinsectisation, la dératisation, lutte contre les nuisibles'
   subcategories:
   - title: Publicité et pratique du professionnel
-      example: "Exemple : absence d'information, information trompeuse ou mensongère, démarchage"
-      tags:
-        - LitigeContractuel
-      ccrfCode: 
-        - '23B'
-      subcategories:
-        - title: Absence d'information ou information incomplète
-          ccrfCode:
-            - '23b'
-          tags:
-            - LitigeContractuel
-          subcategories:
-            - title: Caractéristiques techniques des produits non précisées
-            - title: Prix indiqué de manière globale et non détaillée
-              ccrfCode:
-                - '21b'
-            - title: Date d'intervention des travaux non précisée
-            - title: Autre
-        - title: Démarchage à domicile
-          ccrfCode:
-            - '221'
-          companyKind: LOCATION
-          tags:
-            - DemarchageADomicile
-          detailInputs:
-            - label: Que s'est-il passé ?
-              rank: 1
-              type: RADIO
-              options:
-                - Le vendeur s'est fait passer pour une autre entreprise (à préciser)
-                - Le vendeur m'a fait signer des papiers sans me dire que c'était un contrat ou un bon de commande.
-                - Autre (à préciser)
-            - label: Avez-vous payé au moment du démarchage&#160;?
-              rank: 2
-              type: RADIO
-              options:
-                - Oui
-                - Non
-            - label: Date du démarchage
-              rank: 3
-              type: DATE
-              defaultValue: SYSDATE
-  - title: Prix
-    exemple: 'Exemple : il manque les prix,prix exagéré, prix différent du devis'
+    example: "Exemple : absence d'information, information trompeuse ou mensongère, démarchage"
+    tags:
+      - LitigeContractuel
+    ccrfCode:
+      - '23B'
     subcategories:
+      - title: Absence d'information ou information incomplète
+        ccrfCode:
+          - '23b'
+        tags:
+          - LitigeContractuel
+        subcategories:
+          - title: Caractéristiques techniques des produits non précisées
+          - title: Prix indiqué de manière globale et non détaillée
+            ccrfCode:
+              - '21b'
+          - title: Date d'intervention des travaux non précisée
+          - title: Autre
+      - title: Démarchage à domicile
+        ccrfCode:
+          - '221'
+        companyKind: LOCATION
+        tags:
+          - DemarchageADomicile
+        detailInputs:
+          - label: Que s'est-il passé ?
+            rank: 1
+            type: RADIO
+            options:
+              - Le vendeur s'est fait passer pour une autre entreprise (à préciser)
+              - Le vendeur m'a fait signer des papiers sans me dire que c'était un contrat ou un bon de commande.
+              - Autre (à préciser)
+          - label: Avez-vous payé au moment du démarchage&#160;?
+            rank: 2
+            type: RADIO
+            options:
+              - Oui
+              - Non
+          - label: Date du démarchage
+            rank: 3
+            type: DATE
+            defaultValue: SYSDATE
+  - title: Prix
     ccrfCode:
       - '21b'
+    exemple: 'Exemple : il manque les prix,prix exagéré, prix différent du devis'
+    subcategories:
     - title: Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs
-      information:
+    information:
     - title: Les commerçants ont le droit de choisir leurs prix.
       content: Les professionnels ont le droit de choisir leurs prix.
                <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation.
@@ -292,14 +293,15 @@
       exemple: 'Exemple : il manque les prix,prix exagéré, prix différent du devis'
       ccrfCode:
         - '21b'
+      subcategories:
       - title: Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs
         information:
       - title: Les commerçants ont le droit de choisir leurs prix.
         content: Les professionnels ont le droit de choisir leurs prix.
                  <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation.
         outOfScope: true
-        - title: Prix final non conforme au prix annoncé
-        - title: Il manque des prix / les prix sont illisibles
+      - title: Prix final non conforme au prix annoncé
+      - title: Il manque des prix / les prix sont illisibles
         ccrfCode:
           - '163'
         description: 'Votre droit : tous les prix doivent être affichés.'
@@ -317,7 +319,7 @@
             defaultValue: SYSDATE
           - label: Description
             rank: 3
-            type: TEXTAREA  
+            type: TEXTAREA
     - title: Moyens de paiement
       example: "Exemple : carte bancaire refusée"
       subcategories: !!import/single ../common/paiement.yml
@@ -345,6 +347,7 @@
       exemple: 'Exemple : il manque les prix,prix exagéré, prix différent du devis'
       ccrfCode:
         - '21b'
+      subcategories:
       - title: Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs
         information:
       - title: Les commerçants ont le droit de choisir leurs prix.
@@ -398,6 +401,7 @@
       exemple: 'Exemple : il manque les prix,prix exagéré, prix différent du devis'
       ccrfCode:
         - '21b'
+      subcategories:
       - title: Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs
         information:
       - title: Les commerçants ont le droit de choisir leurs prix.
@@ -445,12 +449,12 @@
       - title: Autre
         tags:
         - LitigeContractuel
-   - title: Massage
-     subcategories:
-    - title: Prix
-      exemple: 'Exemple : il manque les prix,prix exagéré, prix différent du devis'
-      ccrfCode:
-        - '21b'
+  - title: Massage
+    subcategories:
+      - title: Prix
+        exemple: 'Exemple : il manque les prix,prix exagéré, prix différent du devis'
+        ccrfCode:
+          - '21b'
       - title: Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs
         information:
       - title: Les commerçants ont le droit de choisir leurs prix.
@@ -476,28 +480,29 @@
             defaultValue: SYSDATE
           - label: Description
             rank: 3
-            type: TEXTAREA  
-    - title: Moyens de paiement
-      example: "Exemple : carte bancaire refusée"
-      subcategories: !!import/single ../common/paiement.yml
-    - title: Publicité des prestations mensongère
-      ccrfCode:
-        - '23b'
-      tags:
-      - LitigeContractuel
-    - title: Le personnel ne dispose pas des diplômes requis
-      ccrfCode:
-        - '23F'
-    - title: Problème d'hygiène
-      reponseconsoCode:
-        - '446'
-      - title: Je subis des nuisances à cause des odeurs, du bruit...
-        information: !!import/single ../common/info/tel.yml
-      - title: Le personnel n'est pas aimable
-        information: !!import/single ../common/info/amabilite.yml
-      - title: Autre
+            type: TEXTAREA
+      - title: Moyens de paiement
+        example: "Exemple : carte bancaire refusée"
+        subcategories: !!import/single ../common/paiement.yml
+      - title: Publicité des prestations mensongère
+        ccrfCode:
+          - '23b'
         tags:
-          - LitigeContractuel
+        - LitigeContractuel
+      - title: Le personnel ne dispose pas des diplômes requis
+        ccrfCode:
+          - '23F'
+      - title: Problème d'hygiène
+        reponseconsoCode:
+          - '446'
+        subcategories:
+          - title: Je subis des nuisances à cause des odeurs, du bruit...
+            information: !!import/single ../common/info/tel.yml
+          - title: Le personnel n'est pas aimable
+            information: !!import/single ../common/info/amabilite.yml
+          - title: Autre
+            tags:
+              - LitigeContractuel
 - title: Vie quotidienne
   example: "Exemple : conciergerie, pressing, cordonnier, ménage, garde d'enfants"
   subcategories:
@@ -525,6 +530,7 @@
   - title: Problème d'hygiène
     reponseconsoCode:
       - '446'
+    subcategories:
     - title: Je subis des nuisances à cause des odeurs, du bruit...
       information: !!import/single ../common/info/tel.yml
   - title: Le personnel n'est pas aimable
@@ -535,7 +541,7 @@
     tags:
       - LitigeContractuel
 - title: Aide à la personne
-  Exemple: 'Garde d'enfant de moins de 3ans, garde d'enfants handicapés de moins de 18ans, garde de personne âgées dépendants ou handicapées, Services d'aide et d'accompagnement à domicile (SAAD)'
+  Exemple: 'Garde d''enfant de moins de 3 ans, garde d''enfants handicapés de moins de 18ans, garde de personne âgées dépendants ou handicapées, Services d''aide et d''accompagnement à domicile (SAAD)'
   subcategories: 
   - title: Prix des prestations
     example: 'Exemple : promotion non appliquée, prix en vitrine pas à jour'
@@ -672,7 +678,6 @@
                 - '476'
                 - '226'
       - title: Autre
-        reponseC
   - title: Publicité mensongère
     example: "Exemple : le site internet mentionne un grand parc alors que ce n'est pas le cas, la brochure parle des animations régulières alors qu'il y en a très peu"
     reponseconsoCode:
@@ -682,8 +687,8 @@
   - title: Maltraitance
     information:
     content:
-    Vous ne pouvez pas signaler un cas de maltraitance sur SignalConso.<br> Vous pouvez vous rendre au commissariat de police ou à la gendarmerie. <br> Vous pouvez appeler le 3977. C'est le numéro d’appel national unique pour les victimes ou les témoins de maltraitance envers les personnes handicapées ou agées.
-    <br><br> Le site officiel <a href="https://www.pour-les-personnes-agees.gouv.fr/exercer-ses-droits/en-cas-de-maltraitance" target="_blank">www.pour-les-personnes-agees.gouv.fr</a> vous propose toutes les solutions possibles pour signaler un cas de maltraitance.
+      Vous ne pouvez pas signaler un cas de maltraitance sur SignalConso.<br> Vous pouvez vous rendre au commissariat de police ou à la gendarmerie. <br> Vous pouvez appeler le 3977. C'est le numéro d’appel national unique pour les victimes ou les témoins de maltraitance envers les personnes handicapées ou agées.
+      <br><br> Le site officiel <a href="https://www.pour-les-personnes-agees.gouv.fr/exercer-ses-droits/en-cas-de-maltraitance" target="_blank">www.pour-les-personnes-agees.gouv.fr</a> vous propose toutes les solutions possibles pour signaler un cas de maltraitance.
     outOfScope: true
   - title: Autre
     reponseconsoCode:
@@ -719,9 +724,9 @@
       - ReponseConso
     reponseconsoCode:
       - '161'
-   - title: Autre
-     reponseconsoCode:
-       - '210'
+  - title: Autre
+    reponseconsoCode:
+      - '210'
 - title: Autre type d'entreprise de service
   example: 'Exemple : déménageur, agence de rencontre. Pour la livraison de repas à domicile, choisir la catégorie Café / Restaurant'
   subcategories:
