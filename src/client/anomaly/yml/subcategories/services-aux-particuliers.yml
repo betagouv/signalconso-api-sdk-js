@@ -173,12 +173,12 @@
         <br/><a href="../delai-de-retractation" target="_blank">>> Comment calculer mon délai de retractation</a>
       - title: Au lieu habituel d'activité du professionnel
         information:
-        title: Vous ne pouvez plus vous retracter
+      - title: Vous ne pouvez plus vous retracter
         content: Il n'y a pas de délai de rétractation pour votre cas.
         outOfScope: true
       - title: Sur un stand dans une foire ou salon
         information:
-        title: Vous ne pouvez plus vous retracter
+      - title: Vous ne pouvez plus vous retracter
         content: Il n'y a pas de délai de rétractation pour votre cas.
         outOfScope: true
         description:
@@ -250,7 +250,7 @@
       - '21b'
     - title: Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs
       information:
-      title: Les commerçants ont le droit de choisir leurs prix.
+    - title: Les commerçants ont le droit de choisir leurs prix.
       content: Les professionnels ont le droit de choisir leurs prix.
                <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation.
       outOfScope: true
@@ -294,7 +294,7 @@
         - '21b'
       - title: Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs
         information:
-        title: Les commerçants ont le droit de choisir leurs prix.
+      - title: Les commerçants ont le droit de choisir leurs prix.
         content: Les professionnels ont le droit de choisir leurs prix.
                  <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation.
         outOfScope: true
@@ -347,7 +347,7 @@
         - '21b'
       - title: Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs
         information:
-        title: Les commerçants ont le droit de choisir leurs prix.
+      - title: Les commerçants ont le droit de choisir leurs prix.
         content: Les professionnels ont le droit de choisir leurs prix.
                 <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation.
         outOfScope: true
@@ -400,7 +400,7 @@
         - '21b'
       - title: Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs
         information:
-        title: Les commerçants ont le droit de choisir leurs prix.
+      - title: Les commerçants ont le droit de choisir leurs prix.
         content: Les professionnels ont le droit de choisir leurs prix.
                 <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation.
         outOfScope: true
@@ -453,7 +453,7 @@
         - '21b'
       - title: Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs
         information:
-        title: Les commerçants ont le droit de choisir leurs prix.
+      - title: Les commerçants ont le droit de choisir leurs prix.
         content: Les professionnels ont le droit de choisir leurs prix.
                 <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation.
         outOfScope: true
@@ -611,7 +611,7 @@
         - ReponseConso
     - title: Les prix sont élevés pour la prestation
       information:
-      title: Les prix sont choisis librement par les maisons de retraite.
+    - title: Les prix sont choisis librement par les maisons de retraite.
       content: Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant de signer un contrat ou avant de prendre des options.
       outOfScope: true
   - title: Contrat
@@ -657,7 +657,7 @@
             - '2262'
         - title: Non
           information:
-          title: Une caution (somme d'argent) peut être demandée, mais elle ne doit pas dépasser le tarif mensuel d'hébergement.
+        - title: Une caution (somme d'argent) peut être demandée, mais elle ne doit pas dépasser le tarif mensuel d'hébergement.
           content: Retrouvez plus d'informations sur <a href="https://www.service-public.fr/particuliers/vosdroits/F763" target="_blank">https://www.service-public.fr/particuliers/vosdroits/F763</a>
       - title: Je n'ai toujours pas récupéré la caution
         subcategories:
@@ -665,7 +665,7 @@
             subcategories:
             - title: Il y a moins de 30 jours
               information:
-              title: Soyez encore un peu patient :)
+            - title: Soyez encore un peu patient :)
               content: La maison de retraite a 30 jours pour vous rendre la caution.
             - title: Il y a plus de 30 jours
               reponseconsoCode:
