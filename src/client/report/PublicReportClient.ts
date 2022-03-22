@@ -1,6 +1,7 @@
 import {Id, Report, ReviewOnReportResponse} from '../../model'
 import {ApiClientApi} from '../../core/ApiClient'
 import {ReportDraft} from './ReportDraft'
+import {ReportsClient} from './ReportsClient'
 
 export class PublicReportClient {
   constructor(private client: ApiClientApi) {}
@@ -11,5 +12,6 @@ export class PublicReportClient {
 
   readonly create = (draft: ReportDraft) => {
     return this.client.post<Report>(`/reports`, {body: ReportDraft.toApi(draft)})
+      .then(ReportsClient.mapReport)
   }
 }
