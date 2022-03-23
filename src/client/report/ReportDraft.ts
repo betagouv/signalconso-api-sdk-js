@@ -5,11 +5,18 @@ import {uniqby} from '../../helper/LodashNamedExport'
 import {Address} from '../../model'
 import {map} from '@alexandreannic/ts-utils'
 
+
+export enum Gender {
+  Mme = 'Mme',
+  Mr = 'Mr'
+}
+
 export interface ReportDraftConsumer {
   firstName: string
   lastName: string
   email: string
   phone?: string
+  gender?: Gender
 }
 
 export interface CompanyDraft {
