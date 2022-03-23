@@ -2,11 +2,16 @@ import { CompanyKinds, ReportTag, Subcategory } from '../anomaly/Anomaly';
 import { UploadedFile } from '../file/UploadedFile';
 import { DetailInputValue } from './Report';
 import { Address } from '../../model';
+export declare enum Gender {
+    Mme = "Mme",
+    Mr = "Mr"
+}
 export interface ReportDraftConsumer {
     firstName: string;
     lastName: string;
     email: string;
     phone?: string;
+    gender?: Gender;
 }
 export interface CompanyDraft {
     siret: string;
