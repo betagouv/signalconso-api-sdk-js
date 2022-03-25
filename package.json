@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "version": "3.2.12",
 =======
   "version": "3.0.5",
@@ -17,6 +18,9 @@
 =======
   "version": "3.2.9-TEST",
 >>>>>>> 0eb534b (version)
+=======
+  "version": "2.6.5",
+>>>>>>> 182cdd7 (TRELLO-1114 : adding gender)
   "description": "SignalConso API SDK for JavaScript/TypeScript",
   "main": "lib/index.js",
   "private": false,
