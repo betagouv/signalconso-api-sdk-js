@@ -7,8 +7,8 @@ import {map} from '@alexandreannic/ts-utils'
 
 
 export enum Gender {
-  Mme = 'Mme',
-  Mr = 'Mr'
+  Male = 'Male',
+  Female = 'Female'
 }
 
 export interface ReportDraftConsumer {
