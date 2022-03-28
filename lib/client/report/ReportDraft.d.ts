@@ -3,8 +3,8 @@ import { UploadedFile } from '../file/UploadedFile';
 import { DetailInputValue } from './Report';
 import { Address } from '../../model';
 export declare enum Gender {
-    Mme = "Mme",
-    Mr = "Mr"
+    Male = "Male",
+    Female = "Female"
 }
 export interface ReportDraftConsumer {
     firstName: string;
