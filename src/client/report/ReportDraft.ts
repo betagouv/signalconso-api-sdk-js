@@ -102,6 +102,7 @@ export class ReportDraft {
     return {
       ...draft,
       details: draft.details,
+      gender : draft.consumer.gender,
       subcategories: map(draft.subcategories, subcategories => subcategories.map(_ => _.title ?? _)),
       firstName: draft.consumer.firstName,
       lastName: draft.consumer.lastName,
