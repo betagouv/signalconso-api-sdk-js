@@ -6,6 +6,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "version": "3.2.12",
 =======
   "version": "3.0.5",
@@ -25,6 +26,9 @@
 =======
   "version": "2.6.6",
 >>>>>>> 7c6ca7f (update version)
+=======
+  "version": "2.6.7",
+>>>>>>> e299712 (version)
   "description": "SignalConso API SDK for JavaScript/TypeScript",
   "main": "lib/index.js",
   "private": false,
