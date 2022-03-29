@@ -1,4 +1,4 @@
-import {ReportTag, Subcategory, UploadedFile} from '../..'
+import {Gender, ReportTag, Subcategory, UploadedFile} from '../..'
 import {Address} from '../../model'
 import format from 'date-fns/format'
 
@@ -8,6 +8,7 @@ export const DescriptionLabel = 'Description'
 
 export interface Report {
   id: string
+  gender?: Gender
   category: string
   subcategories: Subcategory[]
   tags: ReportTag[]
