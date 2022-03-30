@@ -1,10 +1,11 @@
-import { ReportTag, Subcategory, UploadedFile } from '../..';
+import { Gender, ReportTag, Subcategory, UploadedFile } from '../..';
 import { Address } from '../../model';
 export declare const ReportingDateLabel = "Date du constat";
 export declare const ReportingTimeslotLabel = "Heure du constat";
 export declare const DescriptionLabel = "Description";
 export interface Report {
     id: string;
+    gender?: Gender;
     category: string;
     subcategories: Subcategory[];
     tags: ReportTag[];

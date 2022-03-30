@@ -39,6 +39,7 @@ export declare class ReportsClient {
     }) => Promise<[string, number][]>;
     static readonly mapReport: (report: {
         id: any;
+        gender?: any;
         category: any;
         subcategories: any;
         tags: any;
