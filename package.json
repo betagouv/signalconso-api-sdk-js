@@ -1,6 +1,6 @@
 {
   "name": "@signal-conso/signalconso-api-sdk-js",
-  "version": "2.6.7",
+  "version": "2.6.8",
   "description": "SignalConso API SDK for JavaScript/TypeScript",
   "main": "lib/index.js",
   "private": false,
@@ -16,6 +16,7 @@
   "dependencies": {
     "@alexandreannic/ts-utils": "^1.7.3",
     "axios": "0.21.1",
+    "browser-image-compression": "^1.0.17",
     "date-fns": "^2.27.0",
     "fp-ts": "^1.19.5",
     "js-yaml": "^4.1.0",
