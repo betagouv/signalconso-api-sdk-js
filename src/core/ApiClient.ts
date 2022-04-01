@@ -96,25 +96,25 @@ export class ApiClient {
           paramsSerializer: params => qs.stringify(params, {arrayFormat: 'repeat'}),
         })
         .then(mapData ?? ((_: AxiosResponse) => _.data))
-        // .catch(
-        //   mapError ??
-        //   ((_: any) => {
-        //     if (_.response && _.response.data) {
-        //       throw new ApiError(
-        //         _.response.data.details ?? _.response.data.timeout ?? JSON.stringify(_.response.data),
-        //         _.response.status,
-        //         _.response.data.type,
-        //         _,
-        //       )
-        //     }
-        //     throw new ApiError(
-        //       `Something not caught went wrong`,
-        //       500,
-        //       undefined,
-        //       _
-        //     )
-        //   }),
-        // )
+        .catch(
+          mapError ??
+          ((_: any) => {
+            if (_.response && _.response.data) {
+              throw new ApiError(
+                _.response.data.details ?? _.response.data.timeout ?? JSON.stringify(_.response.data),
+                _.response.status,
+                _.response.data.type,
+                _,
+              )
+            }
+            throw new ApiError(
+              `Something not caught went wrong`,
+              500,
+              undefined,
+              _
+            )
+          }),
+        )
     }
 
     /** TODO(Alex) Didn't find any way to download pdf with axios but it should exist. */
