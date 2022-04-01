@@ -31,15 +31,23 @@ export interface ApiClientApi {
 
 export type StatusCode = 'front-side' | 200 | 301 | 302 | 400 | 401 | 403 | 404 | 423 | 500 | 504
 
+export interface ApiErrorDetails {
+  code: StatusCode
+  id?: string
+  error?: Error
+  request: {
+    method: Method
+    url: string
+    qs?: any
+    body?: any
+  }
+
+}
+
 export class ApiError extends Error {
   public name = 'ApiError'
 
-  constructor(
-    public message: string,
-    public code: StatusCode,
-    public id?: string,
-    public error?: Error,
-  ) {
+  constructor(public message: string, public details: ApiErrorDetails) {
     super(message)
   }
 
@@ -99,20 +107,21 @@ export class ApiClient {
         .catch(
           mapError ??
           ((_: any) => {
+            const request = {method, url, qs: options?.qs, body: options?.body}
             if (_.response && _.response.data) {
-              throw new ApiError(
-                _.response.data.details ?? _.response.data.timeout ?? JSON.stringify(_.response.data),
-                _.response.status,
-                _.response.data.type,
-                _,
-              )
+              const message = _.response.data.details ?? _.response.data.timeout ?? JSON.stringify(_.response.data)
+              throw new ApiError(message, {
+                code: _.response.status,
+                id: _.response.data.type,
+                error: _,
+                request
+              })
             }
-            throw new ApiError(
-              `Something not caught went wrong`,
-              500,
-              undefined,
-              _
-            )
+            throw new ApiError(`Something not caught went wrong`, {
+              code: 'front-side',
+              error: _,
+              request,
+            })
           }),
         )
     }
