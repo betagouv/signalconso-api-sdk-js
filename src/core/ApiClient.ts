@@ -34,14 +34,13 @@ export type StatusCode = 'front-side' | 200 | 301 | 302 | 400 | 401 | 403 | 404 
 export interface ApiErrorDetails {
   code: StatusCode
   id?: string
-  error?: Error
   request: {
     method: Method
     url: string
     qs?: any
     body?: any
   }
-
+  error?: Error
 }
 
 export class ApiError extends Error {
@@ -113,8 +112,8 @@ export class ApiClient {
               throw new ApiError(message, {
                 code: _.response.status,
                 id: _.response.data.type,
+                request,
                 error: _,
-                request
               })
             }
             throw new ApiError(`Something not caught went wrong`, {
