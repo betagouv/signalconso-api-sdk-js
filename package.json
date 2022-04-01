@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "version": "3.2.12",
 =======
   "version": "3.0.5",
@@ -37,6 +38,9 @@
 =======
   "version": "2.6.9",
 >>>>>>> f74e84b (build)
+=======
+  "version": "2.6.10",
+>>>>>>> 7e5b033 (Try to better handle Error)
   "description": "SignalConso API SDK for JavaScript/TypeScript",
   "main": "lib/index.js",
   "private": false,
