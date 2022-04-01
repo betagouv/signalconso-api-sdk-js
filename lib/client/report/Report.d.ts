@@ -30,13 +30,9 @@ export interface Report {
 }
 export interface DetailInputValue {
     label: string;
-    value: string | string[];
+    value: string;
 }
-export declare class DetailInputValue {
-    static readonly precisionKeyword = "(\u00E0 pr\u00E9ciser)";
-    /** TODO Maybe deprecated since we do it in signalconso-website */
-    static readonly parse: (div: DetailInputValue) => DetailInputValue;
-}
+/** TODO Maybe deprecated since we do it in signalconso-website */
 export interface ReportSearchResult {
     report: Report;
     files: UploadedFile[];
