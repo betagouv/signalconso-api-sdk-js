@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   "version": "3.2.12",
 =======
   "version": "3.0.5",
@@ -53,6 +54,9 @@
 =======
   "version": "2.6.13",
 >>>>>>> df8d575 (api error)
+=======
+  "version": "2.6.14",
+>>>>>>> 10304ed (api error)
   "description": "SignalConso API SDK for JavaScript/TypeScript",
   "main": "lib/index.js",
   "private": false,
