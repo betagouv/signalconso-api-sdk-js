@@ -32,6 +32,8 @@ export interface ApiClientApi {
 export type StatusCode = 'front-side' | 200 | 301 | 302 | 400 | 401 | 403 | 404 | 423 | 500 | 504
 
 export class ApiError extends Error {
+  public name: string
+
   constructor(
     public message: string,
     public code: StatusCode,
@@ -39,6 +41,8 @@ export class ApiError extends Error {
     public error?: Error,
   ) {
     super(message)
+    this.name = new.target.prototype.constructor.name
+    Object.setPrototypeOf(this, new.target.prototype)
   }
 
 }
@@ -96,22 +100,22 @@ export class ApiClient {
         .then(mapData ?? ((_: AxiosResponse) => _.data))
         .catch(
           mapError ??
-            ((_: any) => {
-              if (_.response && _.response.data) {
-                throw new ApiError(
-                  _.response.data.details ?? _.response.data.timeout ?? JSON.stringify(_.response.data),
-                  _.response.status,
-                  _.response.data.type,
-                  _,
-                )
-              }
+          ((_: any) => {
+            if (_.response && _.response.data) {
               throw new ApiError(
-                `Something not caught went wrong`,
-                500,
-                undefined,
-                _
+                _.response.data.details ?? _.response.data.timeout ?? JSON.stringify(_.response.data),
+                _.response.status,
+                _.response.data.type,
+                _,
               )
-            }),
+            }
+            throw new ApiError(
+              `Something not caught went wrong`,
+              500,
+              undefined,
+              _
+            )
+          }),
         )
     }
 
