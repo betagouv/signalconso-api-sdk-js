@@ -30,6 +30,7 @@ export declare class ApiError extends Error {
     code: StatusCode;
     id?: string | undefined;
     error?: Error | undefined;
+    name: string;
     constructor(message: string, code: StatusCode, id?: string | undefined, error?: Error | undefined);
 }
 export declare type Method = 'POST' | 'GET' | 'PUT' | 'DELETE' | 'PATCH';
