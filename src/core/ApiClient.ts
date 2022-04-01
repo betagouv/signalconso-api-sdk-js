@@ -32,7 +32,7 @@ export interface ApiClientApi {
 export type StatusCode = 'front-side' | 200 | 301 | 302 | 400 | 401 | 403 | 404 | 423 | 500 | 504
 
 export class ApiError extends Error {
-  public name: string
+  public name = 'ApiError'
 
   constructor(
     public message: string,
@@ -41,8 +41,6 @@ export class ApiError extends Error {
     public error?: Error,
   ) {
     super(message)
-    this.name = new.target.prototype.constructor.name
-    Object.setPrototypeOf(this, new.target.prototype)
   }
 
 }
