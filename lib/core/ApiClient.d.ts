@@ -28,13 +28,13 @@ export declare type StatusCode = 'front-side' | 200 | 301 | 302 | 400 | 401 | 40
 export interface ApiErrorDetails {
     code: StatusCode;
     id?: string;
-    error?: Error;
     request: {
         method: Method;
         url: string;
         qs?: any;
         body?: any;
     };
+    error?: Error;
 }
 export declare class ApiError extends Error {
     message: string;
