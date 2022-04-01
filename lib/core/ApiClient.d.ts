@@ -25,22 +25,12 @@ export interface ApiClientApi {
     readonly patch: <T = any>(uri: string, options?: RequestOption) => Promise<T>;
 }
 export declare type StatusCode = 'front-side' | 200 | 301 | 302 | 400 | 401 | 403 | 404 | 423 | 500 | 504;
-/** @deprecated*/
-export interface ApiError {
-    code: StatusCode;
-    id: string;
+export declare class ApiError extends Error {
     message: string;
-    error?: Error;
-}
-export interface ApiDetailedError {
     code: StatusCode;
-    message: Detail;
-    error?: Error;
-}
-export interface Detail {
-    type: string;
-    title: string;
-    details: string;
+    id?: string | undefined;
+    error?: Error | undefined;
+    constructor(message: string, code: StatusCode, id?: string | undefined, error?: Error | undefined);
 }
 export declare type Method = 'POST' | 'GET' | 'PUT' | 'DELETE' | 'PATCH';
 export declare class ApiClient {

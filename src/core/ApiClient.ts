@@ -31,25 +31,37 @@ export interface ApiClientApi {
 
 export type StatusCode = 'front-side' | 200 | 301 | 302 | 400 | 401 | 403 | 404 | 423 | 500 | 504
 
-/** @deprecated*/
-export interface ApiError {
-  code: StatusCode
-  id: string
-  message: string
-  error?: Error
+export class ApiError extends Error {
+  constructor(
+    public message: string,
+    public code: StatusCode,
+    public id?: string,
+    public error?: Error,
+  ) {
+    super(message)
+  }
+
 }
 
-export interface ApiDetailedError {
-  code: StatusCode
-  message: Detail
-  error?: Error
-}
+// /** @deprecated*/
+// export interface ApiError {
+//   code: StatusCode
+//   id: string
+//   message: string
+//   error?: Error
+// }
+//
+// export interface ApiDetailedError {
+//   code: StatusCode
+//   message: Detail
+//   error?: Error
+// }
 
-export interface Detail {
-  type: string
-  title: string
-  details: string
-}
+// export interface Detail {
+//   type: string
+//   title: string
+//   details: string
+// }
 
 export type Method = 'POST' | 'GET' | 'PUT' | 'DELETE' | 'PATCH'
 
@@ -86,17 +98,19 @@ export class ApiClient {
           mapError ??
             ((_: any) => {
               if (_.response && _.response.data) {
-                return Promise.reject({
-                  code: _.response.status,
-                  id: _.response.data.type,
-                  message: _.response.data.details ?? _.response.data.timeout ?? JSON.stringify(_.response.data),
-                  error: _,
-                })
+                throw new ApiError(
+                  _.response.data.details ?? _.response.data.timeout ?? JSON.stringify(_.response.data),
+                  _.response.status,
+                  _.response.data.type,
+                  _,
+                )
               }
-              return Promise.reject({
-                code: 500,
-                error: _,
-              })
+              throw new ApiError(
+                `Something not caught went wrong`,
+                500,
+                undefined,
+                _
+              )
             }),
         )
     }
