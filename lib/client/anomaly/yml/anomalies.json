@@ -1,6 +1,56 @@
 {
     "list": [
         {
+            "category": "Retrait-Rappel Spécifique",
+            "categoryId": "RPL",
+            "path": "retrait-rappel",
+            "description": "Retrait-Rappel Spécifique.",
+            "rank": 99,
+            "hidden": true,
+            "sprite": "none",
+            "subcategories": [
+                {
+                    "title": "Produit rappelé toujours en vente",
+                    "example": "Le produit fait l'objet d'une mesure de rappel des autorités",
+                    "companyKind": "SIRET",
+                    "detailInputs": [
+                        {
+                            "label": "Date du constat",
+                            "rank": 1,
+                            "type": "DATE_NOT_IN_FUTURE",
+                            "defaultValue": "SYSDATE"
+                        },
+                        {
+                            "label": "Heure du constat",
+                            "rank": 2,
+                            "type": "TIMESLOT",
+                            "optionnal": true
+                        },
+                        {
+                            "label": "Nom du produit / marque",
+                            "rank": 3,
+                            "type": "TEXT"
+                        },
+                        {
+                            "label": "Numéro de lot / référence",
+                            "rank": 4,
+                            "type": "TEXT"
+                        },
+                        {
+                            "label": "Qu'avez-vous constaté&#160;?",
+                            "rank": 5,
+                            "type": "TEXTAREA"
+                        }
+                    ],
+                    "tags": [
+                        "ProduitAlimentaire"
+                    ],
+                    "id": "1.1"
+                }
+            ],
+            "id": "1"
+        },
+        {
             "category": "COVID-19 (coronavirus)",
             "categoryId": "C19",
             "path": "coronavirus",
@@ -55841,7 +55891,7 @@
                 "title": "Vous souhaitez signaler un cas de travail au noir ?",
                 "content": "Pour signaler du travail dissimulé (travail au noir), vous pouvez&nbsp;:&nbsp; <ul> <li>envoyer un email à cette adresse&nbsp;:&nbsp;<a href=\"mailto:fraude.npdc@urssaf.fr\">fraude.npdc@urssaf.fr</a></li> <li>écrire  à l’inspection du travail en contactant la <a href=\"http://direccte.gouv.fr/\" target=\"_blank\">DIRECCTE</a> de la région concernée</li> <li>écrire à la brigade de contrôle et de recherche des impôts</li> <li>écrire à la police/gendarmerie</li> </ul> La DGCCRF (répression des fraudes) ne s’occupe pas des cas de travail au noir."
             },
-            "id": "1"
+            "id": "2"
         },
         {
             "category": "Démarchage abusif",
