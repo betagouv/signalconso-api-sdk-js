@@ -500,8 +500,6 @@
   reponseconsoCode:
     - '311'
     - '331'
-  tags:
-    - ReponseConso
   detailInputs:
     - label: Date du constat
       rank: 1
