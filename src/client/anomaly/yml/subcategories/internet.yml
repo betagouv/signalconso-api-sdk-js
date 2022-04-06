@@ -25,7 +25,7 @@
 - title: Un problème avec une commande que vous avez passée sur internet
   example: 'Exemple : colis non reçu'
   information:
-    title: Revenez en arrière et utilisez plutôt la catégorie spécifique à votre commande :)
+    title: Revenez en arrière et utilisez plutôt la catégorie spécifique à votre commande 🙂
     content: Un billet d'avion ? Utilisez la catégorie "Voyage / Loisirs" <br> Un livre commandé en ligne mais non reçu ? Utilisez la catégorie "Achat (Magasin ou Internet)"
 - title: Un problème avec un store (vente d'applications mobiles)
   ccrfCode:
