@@ -536,7 +536,7 @@ export const rawDepartments = [
   ...mapFor(19, i => ({
     id: 760 + i + 1,
     region_code: '11',
-    code: '' + 75000 + i + 1,
+    code: '' + (75000 + i + 1),
     name: `Paris ${i + 1}e Arrondissement`,
     slug: `paris ${i + 1}`,
   })),
