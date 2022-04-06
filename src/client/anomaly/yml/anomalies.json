@@ -16476,9 +16476,6 @@
                         "311",
                         "331"
                       ],
-                      "tags": [
-                        "ReponseConso"
-                      ],
                       "detailInputs": [
                         {
                           "label": "Date du constat",
@@ -38144,16 +38141,14 @@
                 {
                   "title": "Absence d'information ou information incomplète",
                   "tags": [
-                    "LitigeContractuel"
+                    "LitigeContractuel",
+                    "ReponseConso"
                   ],
                   "subcategories": [
                     {
                       "title": "Caractéristiques techniques des produits non précisées",
                       "reponseconsoCode": [
                         "411"
-                      ],
-                      "tags": [
-                        "ReponseConso"
                       ],
                       "id": "12.2.2.1.1"
                     },
@@ -38162,9 +38157,6 @@
                       "reponseconsoCode": [
                         "411",
                         "212"
-                      ],
-                      "tags": [
-                        "ReponseConso"
                       ],
                       "id": "12.2.2.1.2"
                     },
@@ -38178,6 +38170,9 @@
                     },
                     {
                       "title": "Autre",
+                      "reponseconsoCode": [
+                        "411"
+                      ],
                       "id": "12.2.2.1.4"
                     }
                   ],
@@ -52099,6 +52094,9 @@
                   "subcategories": [
                     {
                       "title": "Contrat et mandat",
+                      "tags": [
+                        "ReponseConso"
+                      ],
                       "reponseconsoCode": [
                         "442",
                         "443",
@@ -52109,6 +52107,9 @@
                     },
                     {
                       "title": "Honoraires",
+                      "tags": [
+                        "ReponseConso"
+                      ],
                       "reponseconsoCode": [
                         "451"
                       ],
@@ -52138,6 +52139,9 @@
                 },
                 {
                   "title": "Vente de mon bien",
+                  "tags": [
+                    "ReponseConso"
+                  ],
                   "subcategories": [
                     {
                       "title": "Mise en vente sans mandat",
@@ -52156,6 +52160,7 @@
                         "451"
                       ],
                       "tags": [
+                        "ReponseConso",
                         "LitigeContractuel"
                       ],
                       "id": "11.1.3.2.2"
@@ -52326,7 +52331,6 @@
                 "633"
               ],
               "tags": [
-                "ReponseConso",
                 "LitigeContractuel"
               ],
               "id": "11.3.4"
@@ -52336,9 +52340,6 @@
               "example": "Exemple : aucune réponse malgré des relances",
               "reponseconsoCode": [
                 "633"
-              ],
-              "tags": [
-                "ReponseConso"
               ],
               "id": "11.3.5"
             },
@@ -52429,6 +52430,9 @@
             },
             {
               "title": "La publicité (ou les informations sur la boîte) est trompeuse",
+              "tags": [
+                "ReponseConso"
+              ],
               "reponseconsoCode": [
                 "210",
                 "271"
@@ -52604,6 +52608,9 @@
                   "title": "Les tarifs ne sont pas affichés en salle d'attente",
                   "example": "Les tarifs doivent être clairement affichés dans la salle d'attente.",
                   "companyKind": "SIRET",
+                  "tags": [
+                    "ReponseConso"
+                  ],
                   "reponseconsoCode": [
                     "212",
                     "226"
@@ -52631,6 +52638,9 @@
                 {
                   "title": "Le professionnel n'indique pas s' il est conventionné, ou s'il est secteur 1 ou secteur 2",
                   "example": "Cette indication est obligatoire sur sa plaque (au niveau de sa porte ou du hall d'entrée) et dans la salle d'attente.",
+                  "tags": [
+                    "ReponseConso"
+                  ],
                   "reponseconsoCode": [
                     "212",
                     "226"
@@ -52676,6 +52686,9 @@
                 {
                   "title": "Problème de devis",
                   "example": "Exemple : je n'ai pas eu de devis, devis pas respecté",
+                  "tags": [
+                    "ReponseConso"
+                  ],
                   "subcategories": [
                     {
                       "title": "Je n'ai pas eu de devis écrit",
@@ -52683,9 +52696,6 @@
                       "reponseconsoCode": [
                         "2121",
                         "226"
-                      ],
-                      "tags": [
-                        "ReponseConso"
                       ],
                       "detailInputs": [
                         {
@@ -52725,9 +52735,6 @@
                       "reponseconsoCode": [
                         "2121",
                         "226"
-                      ],
-                      "tags": [
-                        "ReponseConso"
                       ],
                       "detailInputs": [
                         {
@@ -52900,6 +52907,9 @@
                 {
                   "title": "La publicité ou la description du soin est trompeuse",
                   "example": "Exemple : durée plus courte que celle affichée, les résultats \"garantis\" ne se sont pas réalisés, publicité en vitrine trompeuse",
+                  "tags": [
+                    "ReponseConso"
+                  ],
                   "reponseconsoCode": [
                     "210"
                   ],
@@ -53065,6 +53075,9 @@
             {
               "title": "J'ai dû payer un \"forfait administratif\"",
               "example": "Les forfaits administratifs sont souvent aux alentours de 10 euros. Ils sont justifiés par des frais de photocopies, la prise de contact avec la mutuelle, l'appel du taxi pour reconduire un malade... Ces frais sont interdits.",
+              "tags": [
+                "ReponseConso"
+              ],
               "reponseconsoCode": [
                 "411",
                 "464"
@@ -53086,6 +53099,9 @@
             },
             {
               "title": "J'ai été facturé pour un supplément que je n'avais pas demandé",
+              "tags": [
+                "ReponseConso"
+              ],
               "example": "Exemple : supplément \"chambre seule\" au prétexte qu'elles étaient toutes occupées, supplément \"télévision\" alors que je n'ai pas demandé à avoir la télévision",
               "reponseconsoCode": [
                 "411",
@@ -53298,12 +53314,13 @@
         {
           "title": "Ambulance",
           "example": "et autre transport sanitaire (exemple : taxi)",
+          "tags": [
+            "ReponseConso",
+            "LitigeContractuel"
+          ],
           "reponseconsoCode": [
             "212",
             "226"
-          ],
-          "tags": [
-            "LitigeContractuel"
           ],
           "id": "3.5"
         },
@@ -53322,6 +53339,9 @@
                 {
                   "title": "Les prix ne sont pas affichés",
                   "example": "Exemple : les prix des soins ne sont pas affichés, les prix affichés ne sont pas très clairs",
+                  "tags": [
+                    "ReponseConso"
+                  ],
                   "reponseconsoCode": [
                     "212",
                     "220"
@@ -53349,6 +53369,9 @@
                 {
                   "title": "J'ai payé plus cher que les prix affichés",
                   "example": "Exemple : j'ai payé un supplément non prévu sans être prévenu, les prix affichés ne sont pas à jour ",
+                  "tags": [
+                    "ReponseConso"
+                  ],
                   "reponseconsoCode": [
                     "212",
                     "210"
@@ -53375,6 +53398,9 @@
                 },
                 {
                   "title": "Je n'ai pas eu de facture (note)",
+                  "tags": [
+                    "ReponseConso"
+                  ],
                   "reponseconsoCode": [
                     "213",
                     "220"
@@ -53544,6 +53570,9 @@
         {
           "title": "Un site internet lié au secteur de la santé",
           "example": "Exemple : site de téléconsultation avec un médecin",
+          "tags": [
+            "ReponseConso"
+          ],
           "reponseconsoCode": [
             "220",
             "226"
@@ -53864,6 +53893,9 @@
             },
             {
               "title": "Autre",
+              "tags": [
+                "ReponseConso"
+              ],
               "reponseconsoCode": [
                 "214"
               ],
@@ -55828,7 +55860,8 @@
             "213"
           ],
           "tags": [
-            "LitigeContractuel"
+            "LitigeContractuel",
+            "ReponseConso"
           ],
           "id": "14.3"
         },

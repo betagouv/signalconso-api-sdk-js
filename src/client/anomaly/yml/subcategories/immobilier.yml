@@ -152,11 +152,10 @@
               tags:
                 - ReponseConso
             - title: Honoraires de vente
-              tags:
-                - ReponseConso
               reponseconsoCode:
                 - '451'
               tags:
+                - ReponseConso
                 - LitigeContractuel
             - title: Discours trompeur
               example: "Exemple : L'agent immobilier m'a promis de vendre sous 7 jours"
@@ -244,8 +243,6 @@
       tags:
         - LitigeContractuel
 - title: Notaire
-  tags:
-    - ReponseConso
   reponseconsoCode:
     - '679'
   tags:

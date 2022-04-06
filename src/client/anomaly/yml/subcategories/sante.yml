@@ -544,11 +544,10 @@
   example: 'et autre transport sanitaire (exemple : taxi)'
   tags:
     - ReponseConso
+    - LitigeContractuel
   reponseconsoCode:
     - '212'
     - '226'
-  tags:
-    - LitigeContractuel
 - title: Cure
   example: 'Exemple : thalassothérapie, thermalisme'
   subcategories:
