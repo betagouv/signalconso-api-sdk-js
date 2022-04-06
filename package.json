@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@alexandreannic/ts-utils": "^1.7.3",
-    "axios": "0.21.1",
+    "axios": "0.26.1",
     "browser-image-compression": "^1.0.17",
     "date-fns": "^2.27.0",
     "fp-ts": "^1.19.5",
