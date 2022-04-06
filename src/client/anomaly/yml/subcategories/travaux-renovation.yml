@@ -127,23 +127,22 @@
         - title: Absence d'information ou information incomplète
           tags:
             - LitigeContractuel
+            - ReponseConso
           subcategories:
             - title: Caractéristiques techniques des produits non précisées
               reponseconsoCode:
                 - '411'
-              tags:
-                - ReponseConso
             - title: Prix indiqué de manière globale et non détaillée
               reponseconsoCode:
                 - '411'
                 - '212'
-              tags:
-                - ReponseConso
             - title: Date de livraison des produits ou réalisation des travaux non précisée
               reponseconsoCode:
                 - '414'
                 - '413'
             - title: Autre
+              reponseconsoCode:
+                - '411'
         - title: Démarchage à domicile
           companyKind: LOCATION
           reponseconsoCode:
