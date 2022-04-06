@@ -119,13 +119,17 @@
             - LitigeContractuel
           subcategories:
             - title: Contrat et mandat
+              tags:
+                - ReponseConso
               reponseconsoCode:
                 - '442'
                 - '443'
                 - '446'
               example: 'Exemple : clause abusive dans le contrat'
             - title: Honoraires
-              reponseconsoCode:
+              tags:
+                - ReponseConso
+              reponseconsoCode:             
                 - '451'
             - title: Assurance loyer impayé
               reponseconsoCode:
@@ -138,6 +142,8 @@
               tags:
                 - ReponseConso
         - title: Vente de mon bien
+          tags:
+            - ReponseConso
           subcategories:
             - title: Mise en vente sans mandat
               example: 'Exemple : une agence a mis mon bien en vente sans mandat signé '
@@ -146,6 +152,8 @@
               tags:
                 - ReponseConso
             - title: Honoraires de vente
+              tags:
+                - ReponseConso
               reponseconsoCode:
                 - '451'
               tags:
@@ -225,20 +233,19 @@
       reponseconsoCode:
         - '633'
       tags:
-        - ReponseConso
         - LitigeContractuel
     - title: Absence de réponse du syndic
       example: 'Exemple : aucune réponse malgré des relances'
       reponseconsoCode:
         - '633'
-      tags:
-        - ReponseConso
     - title: Autre
       reponseconsoCode:
         - '679'
       tags:
         - LitigeContractuel
 - title: Notaire
+  tags:
+    - ReponseConso
   reponseconsoCode:
     - '679'
   tags:
