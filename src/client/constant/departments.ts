@@ -1,3 +1,5 @@
+import {mapFor} from '@alexandreannic/ts-utils'
+
 export const rawDepartments = [
   {
     id: 1,
@@ -531,6 +533,13 @@ export const rawDepartments = [
     name: 'Paris',
     slug: 'paris',
   },
+  ...mapFor(19, i => ({
+    id: 760 + i + 1,
+    region_code: '11',
+    code: '' + 75000 + i + 1,
+    name: `Paris ${i + 1}e Arrondissement`,
+    slug: `paris ${i + 1}`,
+  })),
   {
     id: 77,
     region_code: '28',
