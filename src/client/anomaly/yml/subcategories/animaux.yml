@@ -19,6 +19,7 @@
     - '213'
   tags:
     - LitigeContractuel
+    - ReponseConso
 - title: Vendeur d'animaux
   reponseconsoCode:
     - '210'
