@@ -1,23 +1,16 @@
-- title: Produit rappelé toujours en vente
-  example: Le produit fait l'objet d'une mesure de rappel des autorités
+- title: Oui
+  subcategoriesTitle: Avez-vous été malade ?
+  subcategories:
+    - title: Oui
+      information:
+        title: ⚠ Utilisez la catégorie "Intoxication alimentaire" en revenant en arrière ou en cliquant sur <a href="https://signal.conso.gouv.fr/intoxication-alimentaire">ce lien</a>.
+    - title: Non
+      detailInputs: !!import/single ../common/inputs/retrait-rappel.yml
+      companyKind: SIRET
+      tags:
+        - ProduitAlimentaire
+- title: Non
+  detailInputs: !!import/single ../common/inputs/retrait-rappel.yml
   companyKind: SIRET
-  detailInputs:
-    - label: Date du constat
-      rank: 1
-      type: DATE_NOT_IN_FUTURE
-      defaultValue: SYSDATE
-    - label: Heure du constat
-      rank: 2
-      type: TIMESLOT
-      optionnal: true
-    - label: Nom du produit / marque
-      rank: 3
-      type: TEXT
-    - label: Numéro de lot / référence
-      rank: 4
-      type: TEXT
-    - label: Qu'avez-vous constaté&#160;?
-      rank: 5
-      type: TEXTAREA
   tags:
     - ProduitAlimentaire

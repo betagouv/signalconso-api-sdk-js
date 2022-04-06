@@ -2,13 +2,13 @@
   rank: 1
   type: DATE
   defaultValue: SYSDATE
-- label: Est-ce qu'il y a eu plusieurs personnes malades&#160;?
+- label: Avez-vous été la seule personne malade ?&#160;?
   rank: 2
   optionnal: true
   type: RADIO
   options:
-    - Non
-    - Oui (à préciser)
+    - Non (à préciser)
+    - Oui
 - label: Avez-vous consulté un médecin&#160;?
   rank: 3
   optionnal: true

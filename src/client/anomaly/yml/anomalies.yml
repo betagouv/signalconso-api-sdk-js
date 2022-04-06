@@ -1,13 +1,14 @@
 ---
 list:
-  - category: Retrait-Rappel Spécifique
+  - category: Retrait-Rappel pécifique
     categoryId: RPL
     path: retrait-rappel
-    description: Retrait-Rappel Spécifique.
+    description: Retrait-Rappel spécifique.
     rank: 99
     hidden: true
     sprite: none
     subcategories: !!import/single subcategories/retrait-rappel.yml
+    subcategoriesTitle: Avez-vous consommé le produit ?
   - category: COVID-19 (coronavirus)
     categoryId: C19
     path: coronavirus
@@ -67,7 +68,7 @@ list:
     id: 9
     sprite: category-disease
     subcategories: !!import/single subcategories/intoxication-alimentaire.yml
-    subcategoriesTitle: 'Avez-vous mangé ?'
+    subcategoriesTitle: 'Avez-vous été malade ?'
   - category: Internet (hors achats)
     categoryId: INTERNET
     path: internet

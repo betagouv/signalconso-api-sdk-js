@@ -10,9 +10,58 @@
       "sprite": "none",
       "subcategories": [
         {
-          "title": "Produit rappelé toujours en vente",
-          "example": "Le produit fait l'objet d'une mesure de rappel des autorités",
-          "companyKind": "SIRET",
+          "title": "Oui",
+          "subcategoriesTitle": "Avez-vous été malade ?",
+          "subcategories": [
+            {
+              "title": "Oui",
+              "information": {
+                "title": "⚠ Utilisez la catégorie \"Intoxication alimentaire\" en revenant en arrière ou en cliquant sur <a href=\"https://signal.conso.gouv.fr/intoxication-alimentaire\">ce lien</a>"
+              },
+              "id": "1.1.1"
+            },
+            {
+              "title": "Non",
+              "detailInputs": [
+                {
+                  "label": "Date du constat",
+                  "rank": 1,
+                  "type": "DATE_NOT_IN_FUTURE",
+                  "defaultValue": "SYSDATE"
+                },
+                {
+                  "label": "Heure du constat",
+                  "rank": 2,
+                  "type": "TIMESLOT",
+                  "optionnal": true
+                },
+                {
+                  "label": "Nom du produit / marque",
+                  "rank": 3,
+                  "type": "TEXT"
+                },
+                {
+                  "label": "Numéro de lot / référence",
+                  "rank": 4,
+                  "type": "TEXT"
+                },
+                {
+                  "label": "Qu'avez-vous constaté&#160;?",
+                  "rank": 5,
+                  "type": "TEXTAREA"
+                }
+              ],
+              "companyKind": "SIRET",
+              "tags": [
+                "ProduitAlimentaire"
+              ],
+              "id": "1.1.2"
+            }
+          ],
+          "id": "1.1"
+        },
+        {
+          "title": "Non",
           "detailInputs": [
             {
               "label": "Date du constat",
@@ -42,12 +91,14 @@
               "type": "TEXTAREA"
             }
           ],
+          "companyKind": "SIRET",
           "tags": [
             "ProduitAlimentaire"
           ],
-          "id": "1.1"
+          "id": "1.2"
         }
       ],
+      "subcategoriesTitle": "Avez-vous consommé le produit ?",
       "id": "1"
     },
     {
@@ -207,232 +258,247 @@
           "example": "Exemple : vomissement, maux de ventre",
           "subcategories": [
             {
-              "title": "Sur place",
-              "companyKind": "SIRET",
-              "reponseconsoCode": [
-                "321",
-                "324"
-              ],
-              "tags": [
-                "ProduitDangereux"
-              ],
-              "detailInputs": [
+              "title": "Oui",
+              "subcategoriesTitle": "Avez-vous mangé ?",
+              "subcategories": [
                 {
-                  "label": "Date de l'accident",
-                  "rank": 1,
-                  "type": "DATE",
-                  "defaultValue": "SYSDATE"
+                  "title": "Sur place",
+                  "companyKind": "SIRET",
+                  "reponseconsoCode": [
+                    "321",
+                    "324"
+                  ],
+                  "tags": [
+                    "ProduitDangereux"
+                  ],
+                  "detailInputs": [
+                    {
+                      "label": "Date de l'accident",
+                      "rank": 1,
+                      "type": "DATE",
+                      "defaultValue": "SYSDATE"
+                    },
+                    {
+                      "label": "Avez-vous été la seule personne malade ?&#160;?",
+                      "rank": 2,
+                      "optionnal": true,
+                      "type": "RADIO",
+                      "options": [
+                        "Non (à préciser)",
+                        "Oui"
+                      ]
+                    },
+                    {
+                      "label": "Avez-vous consulté un médecin&#160;?",
+                      "rank": 3,
+                      "optionnal": true,
+                      "type": "RADIO",
+                      "example": "Précisez si vous avez eu un arrêt de travail et sa durée",
+                      "options": [
+                        "Non",
+                        "Oui (à préciser)"
+                      ]
+                    },
+                    {
+                      "label": "Décrivez nous plus en détails ce qui s'est passé",
+                      "rank": 4,
+                      "type": "TEXTAREA",
+                      "example": "Pensez à donner le nom de vos plats ou du produit consommé"
+                    },
+                    {
+                      "label": "Avez-vous déjà contacté le restaurateur ou le fabriquant pour ce problème&#160;?",
+                      "rank": 7,
+                      "type": "RADIO",
+                      "options": [
+                        "Oui",
+                        "Non"
+                      ]
+                    }
+                  ],
+                  "fileLabel": "Photos du produit / de l'emballage / du ticket / de la facture",
+                  "id": "4.1.1.1"
                 },
                 {
-                  "label": "Est-ce qu'il y a eu plusieurs personnes malades&#160;?",
-                  "rank": 2,
-                  "optionnal": true,
-                  "type": "RADIO",
-                  "options": [
-                    "Non",
-                    "Oui (à préciser)"
-                  ]
+                  "title": "A emporter",
+                  "companyKind": "LOCATION",
+                  "reponseconsoCode": [
+                    "321",
+                    "324"
+                  ],
+                  "tags": [
+                    "ProduitDangereux"
+                  ],
+                  "detailInputs": [
+                    {
+                      "label": "Date de l'accident",
+                      "rank": 1,
+                      "type": "DATE",
+                      "defaultValue": "SYSDATE"
+                    },
+                    {
+                      "label": "Avez-vous été la seule personne malade ?&#160;?",
+                      "rank": 2,
+                      "optionnal": true,
+                      "type": "RADIO",
+                      "options": [
+                        "Non (à préciser)",
+                        "Oui"
+                      ]
+                    },
+                    {
+                      "label": "Avez-vous consulté un médecin&#160;?",
+                      "rank": 3,
+                      "optionnal": true,
+                      "type": "RADIO",
+                      "example": "Précisez si vous avez eu un arrêt de travail et sa durée",
+                      "options": [
+                        "Non",
+                        "Oui (à préciser)"
+                      ]
+                    },
+                    {
+                      "label": "Décrivez nous plus en détails ce qui s'est passé",
+                      "rank": 4,
+                      "type": "TEXTAREA",
+                      "example": "Pensez à donner le nom de vos plats ou du produit consommé"
+                    },
+                    {
+                      "label": "Avez-vous déjà contacté le restaurateur ou le fabriquant pour ce problème&#160;?",
+                      "rank": 7,
+                      "type": "RADIO",
+                      "options": [
+                        "Oui",
+                        "Non"
+                      ]
+                    }
+                  ],
+                  "fileLabel": "Photos du produit / de l'emballage / du ticket / de la facture",
+                  "id": "4.1.1.2"
                 },
                 {
-                  "label": "Avez-vous consulté un médecin&#160;?",
-                  "rank": 3,
-                  "optionnal": true,
-                  "type": "RADIO",
-                  "example": "Précisez si vous avez eu un arrêt de travail et sa durée",
-                  "options": [
-                    "Non",
-                    "Oui (à préciser)"
-                  ]
+                  "title": "En livraison",
+                  "companyKind": "LOCATION",
+                  "reponseconsoCode": [
+                    "321",
+                    "324"
+                  ],
+                  "tags": [
+                    "ProduitDangereux"
+                  ],
+                  "detailInputs": [
+                    {
+                      "label": "Date de l'accident",
+                      "rank": 1,
+                      "type": "DATE",
+                      "defaultValue": "SYSDATE"
+                    },
+                    {
+                      "label": "Avez-vous été la seule personne malade ?&#160;?",
+                      "rank": 2,
+                      "optionnal": true,
+                      "type": "RADIO",
+                      "options": [
+                        "Non (à préciser)",
+                        "Oui"
+                      ]
+                    },
+                    {
+                      "label": "Avez-vous consulté un médecin&#160;?",
+                      "rank": 3,
+                      "optionnal": true,
+                      "type": "RADIO",
+                      "example": "Précisez si vous avez eu un arrêt de travail et sa durée",
+                      "options": [
+                        "Non",
+                        "Oui (à préciser)"
+                      ]
+                    },
+                    {
+                      "label": "Décrivez nous plus en détails ce qui s'est passé",
+                      "rank": 4,
+                      "type": "TEXTAREA",
+                      "example": "Pensez à donner le nom de vos plats ou du produit consommé"
+                    },
+                    {
+                      "label": "Avez-vous déjà contacté le restaurateur ou le fabriquant pour ce problème&#160;?",
+                      "rank": 7,
+                      "type": "RADIO",
+                      "options": [
+                        "Oui",
+                        "Non"
+                      ]
+                    }
+                  ],
+                  "fileLabel": "Photos du produit / de l'emballage / du ticket / de la facture",
+                  "id": "4.1.1.3"
                 },
                 {
-                  "label": "Décrivez nous plus en détails ce qui s'est passé",
-                  "rank": 4,
-                  "type": "TEXTAREA",
-                  "example": "Pensez à donner le nom de vos plats ou du produit consommé"
-                },
-                {
-                  "label": "Avez-vous déjà contacté le restaurateur ou le fabriquant pour ce problème&#160;?",
-                  "rank": 7,
-                  "type": "RADIO",
-                  "options": [
-                    "Oui",
-                    "Non"
-                  ]
+                  "title": "Un produit précis",
+                  "companyKind": "LOCATION",
+                  "reponseconsoCode": [
+                    "321",
+                    "324"
+                  ],
+                  "tags": [
+                    "ProduitDangereux"
+                  ],
+                  "detailInputs": [
+                    {
+                      "label": "Date de l'accident",
+                      "rank": 1,
+                      "type": "DATE",
+                      "defaultValue": "SYSDATE"
+                    },
+                    {
+                      "label": "Avez-vous été la seule personne malade ?&#160;?",
+                      "rank": 2,
+                      "optionnal": true,
+                      "type": "RADIO",
+                      "options": [
+                        "Non (à préciser)",
+                        "Oui"
+                      ]
+                    },
+                    {
+                      "label": "Avez-vous consulté un médecin&#160;?",
+                      "rank": 3,
+                      "optionnal": true,
+                      "type": "RADIO",
+                      "example": "Précisez si vous avez eu un arrêt de travail et sa durée",
+                      "options": [
+                        "Non",
+                        "Oui (à préciser)"
+                      ]
+                    },
+                    {
+                      "label": "Décrivez nous plus en détails ce qui s'est passé",
+                      "rank": 4,
+                      "type": "TEXTAREA",
+                      "example": "Pensez à donner le nom de vos plats ou du produit consommé"
+                    },
+                    {
+                      "label": "Avez-vous déjà contacté le restaurateur ou le fabriquant pour ce problème&#160;?",
+                      "rank": 7,
+                      "type": "RADIO",
+                      "options": [
+                        "Oui",
+                        "Non"
+                      ]
+                    }
+                  ],
+                  "fileLabel": "Photos du produit / de l'emballage / du ticket / de la facture",
+                  "id": "4.1.1.4"
                 }
               ],
-              "fileLabel": "Photos du produit / de l'emballage / du ticket / de la facture",
               "id": "4.1.1"
             },
             {
-              "title": "A emporter",
-              "companyKind": "LOCATION",
-              "reponseconsoCode": [
-                "321",
-                "324"
-              ],
-              "tags": [
-                "ProduitDangereux"
-              ],
-              "detailInputs": [
-                {
-                  "label": "Date de l'accident",
-                  "rank": 1,
-                  "type": "DATE",
-                  "defaultValue": "SYSDATE"
-                },
-                {
-                  "label": "Est-ce qu'il y a eu plusieurs personnes malades&#160;?",
-                  "rank": 2,
-                  "optionnal": true,
-                  "type": "RADIO",
-                  "options": [
-                    "Non",
-                    "Oui (à préciser)"
-                  ]
-                },
-                {
-                  "label": "Avez-vous consulté un médecin&#160;?",
-                  "rank": 3,
-                  "optionnal": true,
-                  "type": "RADIO",
-                  "example": "Précisez si vous avez eu un arrêt de travail et sa durée",
-                  "options": [
-                    "Non",
-                    "Oui (à préciser)"
-                  ]
-                },
-                {
-                  "label": "Décrivez nous plus en détails ce qui s'est passé",
-                  "rank": 4,
-                  "type": "TEXTAREA",
-                  "example": "Pensez à donner le nom de vos plats ou du produit consommé"
-                },
-                {
-                  "label": "Avez-vous déjà contacté le restaurateur ou le fabriquant pour ce problème&#160;?",
-                  "rank": 7,
-                  "type": "RADIO",
-                  "options": [
-                    "Oui",
-                    "Non"
-                  ]
-                }
-              ],
-              "fileLabel": "Photos du produit / de l'emballage / du ticket / de la facture",
+              "title": "Non",
+              "information": {
+                "title": "Revenez en arrière et utilisez plutôt la catégorie spécifique à votre problème :)",
+                "content": "Si votre problème concerne les pizzas <b>FRAÎCH'UP de BUITONI</b>, les produits <b>KINDER</b> et/ou des <b>fromages</b>, signalez votre problème <a href=\"https://signal.conso.gouv.fr/retrait-rappel\">ici</a><br/> Pour un repas au restaurant ? Utilisez la catégorie \"Café / Restaurant\".<br/> Un produit achetez en magasin ? Utilisez la catégorie \"Achat (Magasin ou Internet)\"<br/>"
+              },
               "id": "4.1.2"
-            },
-            {
-              "title": "En livraison",
-              "companyKind": "LOCATION",
-              "reponseconsoCode": [
-                "321",
-                "324"
-              ],
-              "tags": [
-                "ProduitDangereux"
-              ],
-              "detailInputs": [
-                {
-                  "label": "Date de l'accident",
-                  "rank": 1,
-                  "type": "DATE",
-                  "defaultValue": "SYSDATE"
-                },
-                {
-                  "label": "Est-ce qu'il y a eu plusieurs personnes malades&#160;?",
-                  "rank": 2,
-                  "optionnal": true,
-                  "type": "RADIO",
-                  "options": [
-                    "Non",
-                    "Oui (à préciser)"
-                  ]
-                },
-                {
-                  "label": "Avez-vous consulté un médecin&#160;?",
-                  "rank": 3,
-                  "optionnal": true,
-                  "type": "RADIO",
-                  "example": "Précisez si vous avez eu un arrêt de travail et sa durée",
-                  "options": [
-                    "Non",
-                    "Oui (à préciser)"
-                  ]
-                },
-                {
-                  "label": "Décrivez nous plus en détails ce qui s'est passé",
-                  "rank": 4,
-                  "type": "TEXTAREA",
-                  "example": "Pensez à donner le nom de vos plats ou du produit consommé"
-                },
-                {
-                  "label": "Avez-vous déjà contacté le restaurateur ou le fabriquant pour ce problème&#160;?",
-                  "rank": 7,
-                  "type": "RADIO",
-                  "options": [
-                    "Oui",
-                    "Non"
-                  ]
-                }
-              ],
-              "fileLabel": "Photos du produit / de l'emballage / du ticket / de la facture",
-              "id": "4.1.3"
-            },
-            {
-              "title": "Un produit précis",
-              "companyKind": "LOCATION",
-              "reponseconsoCode": [
-                "321",
-                "324"
-              ],
-              "tags": [
-                "ProduitDangereux"
-              ],
-              "detailInputs": [
-                {
-                  "label": "Date de l'accident",
-                  "rank": 1,
-                  "type": "DATE",
-                  "defaultValue": "SYSDATE"
-                },
-                {
-                  "label": "Est-ce qu'il y a eu plusieurs personnes malades&#160;?",
-                  "rank": 2,
-                  "optionnal": true,
-                  "type": "RADIO",
-                  "options": [
-                    "Non",
-                    "Oui (à préciser)"
-                  ]
-                },
-                {
-                  "label": "Avez-vous consulté un médecin&#160;?",
-                  "rank": 3,
-                  "optionnal": true,
-                  "type": "RADIO",
-                  "example": "Précisez si vous avez eu un arrêt de travail et sa durée",
-                  "options": [
-                    "Non",
-                    "Oui (à préciser)"
-                  ]
-                },
-                {
-                  "label": "Décrivez nous plus en détails ce qui s'est passé",
-                  "rank": 4,
-                  "type": "TEXTAREA",
-                  "example": "Pensez à donner le nom de vos plats ou du produit consommé"
-                },
-                {
-                  "label": "Avez-vous déjà contacté le restaurateur ou le fabriquant pour ce problème&#160;?",
-                  "rank": 7,
-                  "type": "RADIO",
-                  "options": [
-                    "Oui",
-                    "Non"
-                  ]
-                }
-              ],
-              "fileLabel": "Photos du produit / de l'emballage / du ticket / de la facture",
-              "id": "4.1.4"
             }
           ],
           "id": "4.1"
@@ -37379,235 +37445,250 @@
       "sprite": "category-disease",
       "subcategories": [
         {
-          "title": "Sur place",
-          "companyKind": "SIRET",
-          "reponseconsoCode": [
-            "321",
-            "324"
-          ],
-          "tags": [
-            "ProduitDangereux"
-          ],
-          "detailInputs": [
+          "title": "Oui",
+          "subcategoriesTitle": "Avez-vous mangé ?",
+          "subcategories": [
             {
-              "label": "Date de l'accident",
-              "rank": 1,
-              "type": "DATE",
-              "defaultValue": "SYSDATE"
+              "title": "Sur place",
+              "companyKind": "SIRET",
+              "reponseconsoCode": [
+                "321",
+                "324"
+              ],
+              "tags": [
+                "ProduitDangereux"
+              ],
+              "detailInputs": [
+                {
+                  "label": "Date de l'accident",
+                  "rank": 1,
+                  "type": "DATE",
+                  "defaultValue": "SYSDATE"
+                },
+                {
+                  "label": "Avez-vous été la seule personne malade ?&#160;?",
+                  "rank": 2,
+                  "optionnal": true,
+                  "type": "RADIO",
+                  "options": [
+                    "Non (à préciser)",
+                    "Oui"
+                  ]
+                },
+                {
+                  "label": "Avez-vous consulté un médecin&#160;?",
+                  "rank": 3,
+                  "optionnal": true,
+                  "type": "RADIO",
+                  "example": "Précisez si vous avez eu un arrêt de travail et sa durée",
+                  "options": [
+                    "Non",
+                    "Oui (à préciser)"
+                  ]
+                },
+                {
+                  "label": "Décrivez nous plus en détails ce qui s'est passé",
+                  "rank": 4,
+                  "type": "TEXTAREA",
+                  "example": "Pensez à donner le nom de vos plats ou du produit consommé"
+                },
+                {
+                  "label": "Avez-vous déjà contacté le restaurateur ou le fabriquant pour ce problème&#160;?",
+                  "rank": 7,
+                  "type": "RADIO",
+                  "options": [
+                    "Oui",
+                    "Non"
+                  ]
+                }
+              ],
+              "fileLabel": "Photos du produit / de l'emballage / du ticket / de la facture",
+              "id": "9.1.1"
             },
             {
-              "label": "Est-ce qu'il y a eu plusieurs personnes malades&#160;?",
-              "rank": 2,
-              "optionnal": true,
-              "type": "RADIO",
-              "options": [
-                "Non",
-                "Oui (à préciser)"
-              ]
+              "title": "A emporter",
+              "companyKind": "LOCATION",
+              "reponseconsoCode": [
+                "321",
+                "324"
+              ],
+              "tags": [
+                "ProduitDangereux"
+              ],
+              "detailInputs": [
+                {
+                  "label": "Date de l'accident",
+                  "rank": 1,
+                  "type": "DATE",
+                  "defaultValue": "SYSDATE"
+                },
+                {
+                  "label": "Avez-vous été la seule personne malade ?&#160;?",
+                  "rank": 2,
+                  "optionnal": true,
+                  "type": "RADIO",
+                  "options": [
+                    "Non (à préciser)",
+                    "Oui"
+                  ]
+                },
+                {
+                  "label": "Avez-vous consulté un médecin&#160;?",
+                  "rank": 3,
+                  "optionnal": true,
+                  "type": "RADIO",
+                  "example": "Précisez si vous avez eu un arrêt de travail et sa durée",
+                  "options": [
+                    "Non",
+                    "Oui (à préciser)"
+                  ]
+                },
+                {
+                  "label": "Décrivez nous plus en détails ce qui s'est passé",
+                  "rank": 4,
+                  "type": "TEXTAREA",
+                  "example": "Pensez à donner le nom de vos plats ou du produit consommé"
+                },
+                {
+                  "label": "Avez-vous déjà contacté le restaurateur ou le fabriquant pour ce problème&#160;?",
+                  "rank": 7,
+                  "type": "RADIO",
+                  "options": [
+                    "Oui",
+                    "Non"
+                  ]
+                }
+              ],
+              "fileLabel": "Photos du produit / de l'emballage / du ticket / de la facture",
+              "id": "9.1.2"
             },
             {
-              "label": "Avez-vous consulté un médecin&#160;?",
-              "rank": 3,
-              "optionnal": true,
-              "type": "RADIO",
-              "example": "Précisez si vous avez eu un arrêt de travail et sa durée",
-              "options": [
-                "Non",
-                "Oui (à préciser)"
-              ]
+              "title": "En livraison",
+              "companyKind": "LOCATION",
+              "reponseconsoCode": [
+                "321",
+                "324"
+              ],
+              "tags": [
+                "ProduitDangereux"
+              ],
+              "detailInputs": [
+                {
+                  "label": "Date de l'accident",
+                  "rank": 1,
+                  "type": "DATE",
+                  "defaultValue": "SYSDATE"
+                },
+                {
+                  "label": "Avez-vous été la seule personne malade ?&#160;?",
+                  "rank": 2,
+                  "optionnal": true,
+                  "type": "RADIO",
+                  "options": [
+                    "Non (à préciser)",
+                    "Oui"
+                  ]
+                },
+                {
+                  "label": "Avez-vous consulté un médecin&#160;?",
+                  "rank": 3,
+                  "optionnal": true,
+                  "type": "RADIO",
+                  "example": "Précisez si vous avez eu un arrêt de travail et sa durée",
+                  "options": [
+                    "Non",
+                    "Oui (à préciser)"
+                  ]
+                },
+                {
+                  "label": "Décrivez nous plus en détails ce qui s'est passé",
+                  "rank": 4,
+                  "type": "TEXTAREA",
+                  "example": "Pensez à donner le nom de vos plats ou du produit consommé"
+                },
+                {
+                  "label": "Avez-vous déjà contacté le restaurateur ou le fabriquant pour ce problème&#160;?",
+                  "rank": 7,
+                  "type": "RADIO",
+                  "options": [
+                    "Oui",
+                    "Non"
+                  ]
+                }
+              ],
+              "fileLabel": "Photos du produit / de l'emballage / du ticket / de la facture",
+              "id": "9.1.3"
             },
             {
-              "label": "Décrivez nous plus en détails ce qui s'est passé",
-              "rank": 4,
-              "type": "TEXTAREA",
-              "example": "Pensez à donner le nom de vos plats ou du produit consommé"
-            },
-            {
-              "label": "Avez-vous déjà contacté le restaurateur ou le fabriquant pour ce problème&#160;?",
-              "rank": 7,
-              "type": "RADIO",
-              "options": [
-                "Oui",
-                "Non"
-              ]
+              "title": "Un produit précis",
+              "companyKind": "LOCATION",
+              "reponseconsoCode": [
+                "321",
+                "324"
+              ],
+              "tags": [
+                "ProduitDangereux"
+              ],
+              "detailInputs": [
+                {
+                  "label": "Date de l'accident",
+                  "rank": 1,
+                  "type": "DATE",
+                  "defaultValue": "SYSDATE"
+                },
+                {
+                  "label": "Avez-vous été la seule personne malade ?&#160;?",
+                  "rank": 2,
+                  "optionnal": true,
+                  "type": "RADIO",
+                  "options": [
+                    "Non (à préciser)",
+                    "Oui"
+                  ]
+                },
+                {
+                  "label": "Avez-vous consulté un médecin&#160;?",
+                  "rank": 3,
+                  "optionnal": true,
+                  "type": "RADIO",
+                  "example": "Précisez si vous avez eu un arrêt de travail et sa durée",
+                  "options": [
+                    "Non",
+                    "Oui (à préciser)"
+                  ]
+                },
+                {
+                  "label": "Décrivez nous plus en détails ce qui s'est passé",
+                  "rank": 4,
+                  "type": "TEXTAREA",
+                  "example": "Pensez à donner le nom de vos plats ou du produit consommé"
+                },
+                {
+                  "label": "Avez-vous déjà contacté le restaurateur ou le fabriquant pour ce problème&#160;?",
+                  "rank": 7,
+                  "type": "RADIO",
+                  "options": [
+                    "Oui",
+                    "Non"
+                  ]
+                }
+              ],
+              "fileLabel": "Photos du produit / de l'emballage / du ticket / de la facture",
+              "id": "9.1.4"
             }
           ],
-          "fileLabel": "Photos du produit / de l'emballage / du ticket / de la facture",
           "id": "9.1"
         },
         {
-          "title": "A emporter",
-          "companyKind": "LOCATION",
-          "reponseconsoCode": [
-            "321",
-            "324"
-          ],
-          "tags": [
-            "ProduitDangereux"
-          ],
-          "detailInputs": [
-            {
-              "label": "Date de l'accident",
-              "rank": 1,
-              "type": "DATE",
-              "defaultValue": "SYSDATE"
-            },
-            {
-              "label": "Est-ce qu'il y a eu plusieurs personnes malades&#160;?",
-              "rank": 2,
-              "optionnal": true,
-              "type": "RADIO",
-              "options": [
-                "Non",
-                "Oui (à préciser)"
-              ]
-            },
-            {
-              "label": "Avez-vous consulté un médecin&#160;?",
-              "rank": 3,
-              "optionnal": true,
-              "type": "RADIO",
-              "example": "Précisez si vous avez eu un arrêt de travail et sa durée",
-              "options": [
-                "Non",
-                "Oui (à préciser)"
-              ]
-            },
-            {
-              "label": "Décrivez nous plus en détails ce qui s'est passé",
-              "rank": 4,
-              "type": "TEXTAREA",
-              "example": "Pensez à donner le nom de vos plats ou du produit consommé"
-            },
-            {
-              "label": "Avez-vous déjà contacté le restaurateur ou le fabriquant pour ce problème&#160;?",
-              "rank": 7,
-              "type": "RADIO",
-              "options": [
-                "Oui",
-                "Non"
-              ]
-            }
-          ],
-          "fileLabel": "Photos du produit / de l'emballage / du ticket / de la facture",
+          "title": "Non",
+          "information": {
+            "title": "Revenez en arrière et utilisez plutôt la catégorie spécifique à votre problème :)",
+            "content": "Si votre problème concerne les pizzas <b>FRAÎCH'UP de BUITONI</b>, les produits <b>KINDER</b> et/ou des <b>fromages</b>, signalez votre problème <a href=\"https://signal.conso.gouv.fr/retrait-rappel\">ici</a><br/> Pour un repas au restaurant ? Utilisez la catégorie \"Café / Restaurant\".<br/> Un produit achetez en magasin ? Utilisez la catégorie \"Achat (Magasin ou Internet)\"<br/>"
+          },
           "id": "9.2"
-        },
-        {
-          "title": "En livraison",
-          "companyKind": "LOCATION",
-          "reponseconsoCode": [
-            "321",
-            "324"
-          ],
-          "tags": [
-            "ProduitDangereux"
-          ],
-          "detailInputs": [
-            {
-              "label": "Date de l'accident",
-              "rank": 1,
-              "type": "DATE",
-              "defaultValue": "SYSDATE"
-            },
-            {
-              "label": "Est-ce qu'il y a eu plusieurs personnes malades&#160;?",
-              "rank": 2,
-              "optionnal": true,
-              "type": "RADIO",
-              "options": [
-                "Non",
-                "Oui (à préciser)"
-              ]
-            },
-            {
-              "label": "Avez-vous consulté un médecin&#160;?",
-              "rank": 3,
-              "optionnal": true,
-              "type": "RADIO",
-              "example": "Précisez si vous avez eu un arrêt de travail et sa durée",
-              "options": [
-                "Non",
-                "Oui (à préciser)"
-              ]
-            },
-            {
-              "label": "Décrivez nous plus en détails ce qui s'est passé",
-              "rank": 4,
-              "type": "TEXTAREA",
-              "example": "Pensez à donner le nom de vos plats ou du produit consommé"
-            },
-            {
-              "label": "Avez-vous déjà contacté le restaurateur ou le fabriquant pour ce problème&#160;?",
-              "rank": 7,
-              "type": "RADIO",
-              "options": [
-                "Oui",
-                "Non"
-              ]
-            }
-          ],
-          "fileLabel": "Photos du produit / de l'emballage / du ticket / de la facture",
-          "id": "9.3"
-        },
-        {
-          "title": "Un produit précis",
-          "companyKind": "LOCATION",
-          "reponseconsoCode": [
-            "321",
-            "324"
-          ],
-          "tags": [
-            "ProduitDangereux"
-          ],
-          "detailInputs": [
-            {
-              "label": "Date de l'accident",
-              "rank": 1,
-              "type": "DATE",
-              "defaultValue": "SYSDATE"
-            },
-            {
-              "label": "Est-ce qu'il y a eu plusieurs personnes malades&#160;?",
-              "rank": 2,
-              "optionnal": true,
-              "type": "RADIO",
-              "options": [
-                "Non",
-                "Oui (à préciser)"
-              ]
-            },
-            {
-              "label": "Avez-vous consulté un médecin&#160;?",
-              "rank": 3,
-              "optionnal": true,
-              "type": "RADIO",
-              "example": "Précisez si vous avez eu un arrêt de travail et sa durée",
-              "options": [
-                "Non",
-                "Oui (à préciser)"
-              ]
-            },
-            {
-              "label": "Décrivez nous plus en détails ce qui s'est passé",
-              "rank": 4,
-              "type": "TEXTAREA",
-              "example": "Pensez à donner le nom de vos plats ou du produit consommé"
-            },
-            {
-              "label": "Avez-vous déjà contacté le restaurateur ou le fabriquant pour ce problème&#160;?",
-              "rank": 7,
-              "type": "RADIO",
-              "options": [
-                "Oui",
-                "Non"
-              ]
-            }
-          ],
-          "fileLabel": "Photos du produit / de l'emballage / du ticket / de la facture",
-          "id": "9.4"
         }
       ],
-      "subcategoriesTitle": "Avez-vous mangé ?"
+      "subcategoriesTitle": "Avez-vous été malade ?"
     },
     {
       "category": "Internet (hors achats)",
@@ -37754,7 +37835,7 @@
           "example": "Exemple : colis non reçu",
           "information": {
             "title": "Revenez en arrière et utilisez plutôt la catégorie spécifique à votre commande :)",
-            "content": "Un billet d'avion ? Utilisez la catégorie \"Voyage / Loisirs\" <br> Un livre commandé en ligne mais non reçu ? Utilisez la catégorie \"Achat / Magasin\""
+            "content": "Un billet d'avion ? Utilisez la catégorie \"Voyage / Loisirs\" <br> Un livre commandé en ligne mais non reçu ? Utilisez la catégorie \"Achat (Magasin ou Internet)\""
           },
           "id": "16.2"
         },
