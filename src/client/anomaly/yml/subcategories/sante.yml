@@ -21,6 +21,8 @@
             title: Les effets secondaires et autres réactions avec des médicaments doivent être signalés au ministère de la Santé.
             content: <br>Merci de remplir le formulaire dédié à ce type de problème sur le site <a href="https://signalement.social-sante.gouv.fr/psig_ihm_utilisateurs/index.html#/accueil" target="_blank">signalement.social-sante.gouv.fr</a>
     - title: La publicité (ou les informations sur la boîte) est trompeuse
+      tags:
+        - ReponseConso
       reponseconsoCode:
         - '210'
         - '271'
@@ -134,6 +136,8 @@
         - title: Les tarifs ne sont pas affichés en salle d'attente
           example: Les tarifs doivent être clairement affichés dans la salle d'attente.
           companyKind: SIRET
+          tags:
+            - ReponseConso
           reponseconsoCode:
             - '212'
             - '226'
@@ -151,6 +155,8 @@
           fileLabel: Vous pouvez joindre une photo pour appuyer votre signalement.
         - title: Le professionnel n'indique pas s' il est conventionné, ou s'il est secteur 1 ou secteur 2
           example: Cette indication est obligatoire sur sa plaque (au niveau de sa porte ou du hall d'entrée) et dans la salle d'attente.
+          tags:
+            - ReponseConso
           reponseconsoCode:
             - '212'
             - '226'
@@ -181,14 +187,14 @@
             outOfScope: true
         - title: Problème de devis
           example: "Exemple : je n'ai pas eu de devis, devis pas respecté"
+          tags:
+            - ReponseConso
           subcategories:
             - title: Je n'ai pas eu de devis écrit
               example: Un devis est obligatoire dès que les dépassements d'honoraires et la prestation dépassent 70 euros. Un devis est obligatoire en cas de pose de couronne, implant, bridge... Un devis est oligatoire en chirurgie esthétique.
               reponseconsoCode:
                 - '2121'
                 - '226'
-              tags:
-                - ReponseConso
               detailInputs:
                 - label: Date du rendez-vous
                   rank: 1
@@ -213,8 +219,6 @@
               reponseconsoCode:
                 - '2121'
                 - '226'
-              tags:
-                - ReponseConso
               detailInputs:
                 - label: Date du rendez-vous
                   rank: 1
@@ -316,6 +320,8 @@
                 - Non
         - title: La publicité ou la description du soin est trompeuse
           example: 'Exemple : durée plus courte que celle affichée, les résultats "garantis" ne se sont pas réalisés, publicité en vitrine trompeuse'
+          tags:
+            - ReponseConso
           reponseconsoCode:
             - '210'
           detailInputs:
@@ -412,6 +418,8 @@
         content: Si vous estimez avoir été mal soigné ou mal traité, il est possible de saisir la Commission des Usagers. Elle est présente dans chaque hôpital ou clinique. Renseignez-vous auprès du secrétariat pour la contacter. Plus de renseignements sur cette page <br><a href="https://www.service-public.fr/particuliers/vosdroits/F10256" target="_blank">https://www.service-public.fr/particuliers/vosdroits/F10256</a>
     - title: J'ai dû payer un "forfait administratif"
       example: Les forfaits administratifs sont souvent aux alentours de 10 euros. Ils sont justifiés par des frais de photocopies, la prise de contact avec la mutuelle, l'appel du taxi pour reconduire un malade... Ces frais sont interdits.
+      tags:
+        - ReponseConso
       reponseconsoCode:
         - '411'
         - '464'
@@ -424,6 +432,8 @@
           type: TEXT
       fileLabel: Merci de joindre si possible une photo de la facture ou du panneau d'affichage des prix pour appuyer votre signalement.
     - title: J'ai été facturé pour un supplément que je n'avais pas demandé
+      tags:
+        - ReponseConso
       example: 'Exemple : supplément "chambre seule" au prétexte qu''elles étaient toutes occupées, supplément "télévision" alors que je n''ai pas demandé à avoir la télévision'
       reponseconsoCode:
         - '411'
@@ -532,6 +542,8 @@
             - '162'
 - title: Ambulance
   example: 'et autre transport sanitaire (exemple : taxi)'
+  tags:
+    - ReponseConso
   reponseconsoCode:
     - '212'
     - '226'
@@ -548,6 +560,8 @@
       subcategories:
         - title: Les prix ne sont pas affichés
           example: 'Exemple : les prix des soins ne sont pas affichés, les prix affichés ne sont pas très clairs'
+          tags:
+            - ReponseConso
           reponseconsoCode:
             - '212'
             - '220'
@@ -565,6 +579,8 @@
           fileLabel: Si possible merci de joindre une photo pour appuyer votre signalement.
         - title: J'ai payé plus cher que les prix affichés
           example: "Exemple : j'ai payé un supplément non prévu sans être prévenu, les prix affichés ne sont pas à jour "
+          tags:
+            - ReponseConso
           reponseconsoCode:
             - '212'
             - '210'
@@ -581,6 +597,8 @@
                 - "j'ai payé un supplément (exemple : supplément chambre simple) sans donner mon accord avant"
           fileLabel: Si possible merci de joindre une photo de la facture ou de l'affichage des prix pour appuyer votre signalement.
         - title: Je n'ai pas eu de facture (note)
+          tags:
+            - ReponseConso
           reponseconsoCode:
             - '213'
             - '220'
@@ -664,6 +682,8 @@
             - '411'
 - title: Un site internet lié au secteur de la santé
   example: 'Exemple : site de téléconsultation avec un médecin'
+  tags:
+    - ReponseConso
   reponseconsoCode:
     - '220'
     - '226'
