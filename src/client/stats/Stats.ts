@@ -21,6 +21,7 @@ export type ReportTagsDistribution = Index<number>
 export interface ReportResponseReviews {
   positive: number
   negative: number
+  neutral: number
 }
 
 export interface CurveStatsParams {
