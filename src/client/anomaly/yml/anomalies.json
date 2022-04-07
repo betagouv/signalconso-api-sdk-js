@@ -16,7 +16,8 @@
             {
               "title": "Oui",
               "information": {
-                "title": "⚠ Utilisez la catégorie \"Intoxication alimentaire\" en revenant en arrière ou en cliquant sur <a href=\"https://signal.conso.gouv.fr/intoxication-alimentaire\">ce lien</a>."
+                "title": "Vous n'êtes pas au bon endroit",
+                "description": "Utilisez la catégorie \"Intoxication alimentaire\" en revenant en arrière ou en cliquant sur <a href=\"https://signal.conso.gouv.fr/intoxication-alimentaire\">ce lien</a>."
               },
               "id": "1.1.1"
             },
@@ -11065,7 +11066,7 @@
                                 {
                                   "title": "Non",
                                   "information": {
-                                    "title": "Le commerçant a le droit de vendre un produit jusqu'au jour indiqué sur la date limite de consommation (DLC).",
+                                    "subTitle": "Le commerçant a le droit de vendre un produit jusqu'au jour indiqué sur la date limite de consommation (DLC).",
                                     "content": "Par exemple, si la date est le 13 avril, il est possible de vendre le produit le 13 avril mais pas le 14 avril. <br/>Le commerçant peut choisir de faire une réduction du prix pour les dates \"courtes\" mais ce n'est pas une obligation. <br/>Le commerçant peut indiquer que les produits se périment bientôt ou le jour-même mais ce n'est pas une obligation.",
                                     "actions": [
                                       {
@@ -16628,7 +16629,7 @@
                                       "title": "Non",
                                       "information": {
                                         "title": "<b>Votre produit n'est plus couvert par la garantie.</b>",
-                                        "subTitle": "Votre produit n'est plus couvert par la garantie de base, appelée \"garantie légale de conformité\". <br/>La garantie légale de conformité est de 2 ans pour tous les produits neufs et de 6 mois pour tous les produits d'occasion. Elle ne s'applique pas pour les achats entre particuliers.",
+                                        "content": "Votre produit n'est plus couvert par la garantie de base, appelée \"garantie légale de conformité\". <br/>La garantie légale de conformité est de 2 ans pour tous les produits neufs et de 6 mois pour tous les produits d'occasion. Elle ne s'applique pas pour les achats entre particuliers.",
                                         "actions": [
                                           {
                                             "question": "Vous souhaitez attaquer l'entreprise pour \"vices cachés\"&#160;? <br/><br/>Un vice caché d'un produit est un défaut : <ul> <li>qui rend le produit inutilisable, </li> <li>présent dès le départ et</li> <li>que vous ne connaissiez pas quand vous avez acheté le produit.</li> </ul>",
@@ -16738,7 +16739,7 @@
                                       "title": "Non",
                                       "information": {
                                         "title": "<b>Votre produit n'est plus couvert par la garantie.</b>",
-                                        "subTitle": "Votre produit n'est plus couvert par la garantie de base, appelée \"garantie légale de conformité\". La garantie légale de conformité est de 2 ans pour tous les produits neufs et de 6 mois pour tous les produits d'occasion.",
+                                        "content": "Votre produit n'est plus couvert par la garantie de base, appelée \"garantie légale de conformité\". La garantie légale de conformité est de 2 ans pour tous les produits neufs et de 6 mois pour tous les produits d'occasion.",
                                         "actions": [
                                           {
                                             "question": "Vous souhaitez attaquer l'entreprise pour \"vices cachés\"&#160;? <br/><br/>Un vice caché d'un produit est un défaut : <ul> <li>qui rend le produit inutilisable, </li> <li>présent dès le départ et</li> <li>que vous ne connaissiez pas quand vous avez acheté le produit.</li> </ul>",
@@ -56002,7 +56003,7 @@
       "hidden": true,
       "breadcrumbTitle": "Vous souhaitez signaler un cas de travail au noir ?",
       "information": {
-        "title": "Vous souhaitez signaler un cas de travail au noir ?",
+        "subTitle": "Vous souhaitez signaler un cas de travail au noir ?",
         "content": "Pour signaler du travail dissimulé (travail au noir), vous pouvez&nbsp;:&nbsp; <ul> <li>envoyer un email à cette adresse&nbsp;:&nbsp;<a href=\"mailto:fraude.npdc@urssaf.fr\">fraude.npdc@urssaf.fr</a></li> <li>écrire  à l’inspection du travail en contactant la <a href=\"http://direccte.gouv.fr/\" target=\"_blank\">DIRECCTE</a> de la région concernée</li> <li>écrire à la brigade de contrôle et de recherche des impôts</li> <li>écrire à la police/gendarmerie</li> </ul> La DGCCRF (répression des fraudes) ne s’occupe pas des cas de travail au noir."
       },
       "id": "2"

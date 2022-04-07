@@ -18,7 +18,7 @@
               description: Les dates "DLC" concernent surtout des produits frais.
             - title: Non
               information:
-                title: Le commerçant a le droit de vendre un produit jusqu'au jour indiqué sur la date limite de consommation (DLC).
+                subTitle: Le commerçant a le droit de vendre un produit jusqu'au jour indiqué sur la date limite de consommation (DLC).
                 content:
                   Par exemple, si la date est le 13 avril, il est possible de vendre le produit le 13 avril mais pas le 14 avril.
                   <br/>Le commerçant peut choisir de faire une réduction du prix pour les dates "courtes" mais ce n'est pas une obligation.

@@ -3,7 +3,8 @@
   subcategories:
     - title: Oui
       information:
-        title: ⚠ Utilisez la catégorie "Intoxication alimentaire" en revenant en arrière ou en cliquant sur <a href="https://signal.conso.gouv.fr/intoxication-alimentaire">ce lien</a>.
+        title: Vous n'êtes pas au bon endroit
+        description: Utilisez la catégorie "Intoxication alimentaire" en revenant en arrière ou en cliquant sur <a href="https://signal.conso.gouv.fr/intoxication-alimentaire">ce lien</a>.
     - title: Non
       detailInputs: !!import/single ../common/inputs/retrait-rappel.yml
       companyKind: SIRET
