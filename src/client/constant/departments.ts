@@ -92,6 +92,13 @@ export const rawDepartments = [
     name: 'Bouches-du-Rh\u00f4ne',
     slug: 'bouches du rhone',
   },
+  ...mapFor(15, i => ({
+    id: 13 + i + 1,
+    region_code: '93',
+    code: '' + (13000 + i + 1),
+    name: `Marseille ${i + 1}e Arrondissement`,
+    slug: `marseille ${i + 1}`,
+  })),
   {
     id: 14,
     region_code: '28',
@@ -491,6 +498,13 @@ export const rawDepartments = [
     name: 'Rh\u00f4ne',
     slug: 'rhone',
   },
+  ...mapFor(15, i => ({
+    id: 70 + i + 1,
+    region_code: '84',
+    code: '' + (69000 + i + 1),
+    name: `Lyon ${i + 1}e Arrondissement`,
+    slug: `lyon ${i + 1}`,
+  })),
   {
     id: 71,
     region_code: '27',
