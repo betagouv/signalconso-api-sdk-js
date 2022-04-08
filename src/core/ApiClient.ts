@@ -60,17 +60,17 @@ export class ApiError extends Error {
 //   error?: Error
 // }
 //
-// export interface ApiDetailedError {
-//   code: StatusCode
-//   message: Detail
-//   error?: Error
-// }
+export interface ApiDetailedError {
+  code: StatusCode
+  message: Detail
+  error?: Error
+}
 
-// export interface Detail {
-//   type: string
-//   title: string
-//   details: string
-// }
+export interface Detail {
+  type: string
+  title: string
+  details: string
+}
 
 export type Method = 'POST' | 'GET' | 'PUT' | 'DELETE' | 'PATCH'
 
