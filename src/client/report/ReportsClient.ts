@@ -12,7 +12,7 @@ import {
   Report,
   ReportAction,
   ReportResponse,
-  ReportSearchResult, ReportTag,
+  ReportSearchResult, ReportTag, ResponseConsumerReview,
 } from '../..'
 import {Address, PaginatedData, ReportSearch} from '../../model'
 import {pipe} from 'rxjs'
@@ -111,6 +111,10 @@ export class ReportsClient {
 
   readonly getById = (id: Id): Promise<ReportSearchResult> => {
     return this.client.get(`/reports/${id}`).then(_ => ({files: _.files, report: ReportsClient.mapReport(_.report)}))
+  }
+
+  readonly getReviewOnReportResponse = (reportId: Id) => {
+    return this.client.get<ResponseConsumerReview>(`/reports/${reportId}/response/review`)
   }
 
   readonly postResponse = (id: Id, response: ReportResponse) => {
