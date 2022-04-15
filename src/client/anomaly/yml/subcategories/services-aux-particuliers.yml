@@ -1,309 +1,753 @@
-- title: un site internet (ou une application mobile) lié(e) aux services pour les particuliers
-  companyKind: WEBSITE
-  subcategoriesTitle: Ce site concerne quel secteur ?
+- title: Formation
+  example: "Exemple : Démarchage Compte Personnel de Formation, CPF, information trompeuse ou mensongère"
   subcategories:
-    - title: Bien-être
-      reponseconsoCode:
-        - '210'
+    - title: Publicité et pratique du professionnel
+      example: "Exemple : démarchage, absence d'information, information trompeuse ou mensongère"
       tags:
-        - ReponseConso
-      example: "Exemple : site de réservation d'un coiffeur"
-    - title: Vie quotidienne et aide à domicile
-      reponseconsoCode:
-        - '210'
+        - LitigeContractuel
+      ccrfCode:
+        - '23B'
+      subcategories:
+        - title: Absence d'information ou information incomplète
+          ccrfCode:
+            - '23B'
+          tags:
+            - LitigeContractuel
+        - title: Démarchage à domicile
+          ccrfCode:
+            - '221'
+          companyKind: LOCATION
+          tags:
+            - DemarchageADomicile
+          detailInputs:
+            - label: Que s'est-il passé ?
+              rank: 1
+              type: RADIO
+              options:
+                - Le vendeur s'est fait passer pour une autre entreprise (à préciser)
+                - Le vendeur m'a fait signer des papiers sans me dire que c'était un contrat ou un bon de commande.
+                - Autre (à préciser)
+            - label: Avez-vous payé au moment du démarchage&#160;?
+              rank: 2
+              type: RADIO
+              options:
+                - Oui
+                - Non
+            - label: Date du démarchage
+              rank: 3
+              type: DATE
+              defaultValue: SYSDATE
+        - title: Démarchage Téléphonique
+          companyKind: PHONE
+          ccrfCode:
+            - '227'
+          reponseconsoCode:
+            - '221'
+          tags:
+            - DemarchageTelephonique
+          detailInputs:
+            - label: Date de l'appel
+              rank: 1
+              type: DATE
+              defaultValue: SYSDATE
+            - label: Est-ce que le vendeur s'est fait passer pour une autre entreprise&#160;?
+              rank: 2
+              type: RADIO
+              options:
+                - Non
+                - Oui (à préciser)
+            - label: Décrivez nous plus en détails ce qui s'est passé
+              rank: 3
+              type: TEXTAREA
+            - title: Information mensongère ou trompeuse
+              ccrfCode:
+                - '23b'
+              reponseconsoCode:
+                - '210'
+              subcategories:
+                - title: Mise en avant d'un label ou d'un signe de qualité non ou plus détenu
+                  ccrfCode:
+                    - '267'
+                    - '275'
+                  detailInputs:
+                    - label: Qu'est-ce qui est trompeur ou mensonger&#160;?
+                      rank: 1
+                      type: RADIO
+                      options:
+                        - Le discours du professionnel
+                        - Le site internet
+                        - Les documents mis à votre disposition par le professionnel (flyer, plaquette de présentation...)
+                        - Autre (à préciser)
+                    - label: Description
+                      rank: 2
+                      type: TEXTAREA
+                    - label: Date du constat
+                      rank: 3
+                      type: DATE
+                      defaultValue: SYSDATE
+                    - label: Heure du constat (facultatif)
+                      rank: 4
+                      type: TIMESLOT
+                      optionnal: true
+                    - title: Référence abusive à des partenariats avec l'État ou de grandes entreprises
+                      detailInputs:
+                        - label: Qu'est-ce qui est trompeur ou mensonger&#160;?
+                          rank: 1
+                          type: RADIO
+                          options:
+                            - Le discours du professionnel
+                            - Le site internet
+                            - Les documents mis à votre disposition par le professionnel (flyer, plaquette de présentation...)
+                            - Autre (à préciser)
+                        - label: Description
+                          rank: 2
+                          type: TEXTAREA
+                        - label: Date du constat
+                          rank: 3
+                          type: DATE
+                          defaultValue: SYSDATE
+                        - label: Heure du constat (facultatif)
+                          rank: 4
+                          type: TIMESLOT
+                          optionnal: true
+                    - title: Utilisation de termes laissant croire qu'il s'agit d'une structure publique
+                      detailInputs:
+                        - label: Qu'est-ce qui est trompeur ou mensonger&#160;?
+                          rank: 1
+                          type: RADIO
+                          options:
+                            - Le discours du professionnel
+                            - Le site internet
+                            - Les documents mis à votre disposition par le professionnel (flyer, plaquette de présentation...)
+                            - Autre (à préciser)
+                        - label: Description
+                          rank: 2
+                          type: TEXTAREA
+                        - label: Date du constat
+                          rank: 3
+                          type: DATE
+                          defaultValue: SYSDATE
+                        - label: Heure du constat (facultatif)
+                          rank: 4
+                          type: TIMESLOT
+                          optionnal: true
+                    - title: Usurpation d'identité de la part du professionnel
+                      detailInputs:
+                        - label: Qu'est-ce qui est trompeur ou mensonger&#160;?
+                          rank: 1
+                          type: RADIO
+                          options:
+                            - Le discours du professionnel
+                            - Le site internet
+                            - Les documents mis à votre disposition par le professionnel (flyer, plaquette de présentation...)
+                            - Autre (à préciser)
+                        - label: Description
+                          rank: 2
+                          type: TEXTAREA
+                        - label: Date du constat
+                          rank: 3
+                          type: DATE
+                          defaultValue: SYSDATE
+                        - label: Heure du constat (facultatif)
+                          rank: 4
+                          type: TIMESLOT
+                          optionnal: true
+        - title: Autre
+    - title: Contrat
+      example: 'Exemple : contrat non respecté, délai de rétractation, clause abusive'
+      subcategories:
+        - title: Droit de rétractation
+          example: Une fois le contrat signé, vous souhaitez revenir en arrière
+          subcategoriesTitle: Où avez-vous signé le contrat ?
+          subcategories:
+            - title: À votre domicile
+              example: Un démarcheur est venu chez vous
+              description:
+                Vous avez un délai de 14 jours pour changer d’avis. On appelle ce délai le "délai de rétractation". Ce délai est valable même si vous avez demandé à faire démarrer votre contrat immédiatement
+                <br/>Vous n’avez pas à vous justifier auprès du commerçant.
+                <br/><a href="../delai-de-retractation" target="_blank">>> Comment calculer mon délai de retractation</a>
+            - title: À distance
+              example: 'Exemple : sur internet'
+              description:
+                Vous avez un délai de 14 jours pour changer d’avis. On appelle ce délai le "délai de rétractation". Ce délai est valable même si vous avez demandé à faire démarrer votre contrat immédiatement
+                <br />Vous n’avez pas à vous justifier auprès du commerçant.
+                <br/><a href="../delai-de-retractation" target="_blank">>> Comment calculer mon délai de retractation</a>
+            - title: Au lieu habituel d'activité du professionnel
+              information:
+            - title: Vous ne pouvez plus vous retracter
+              content: Il n'y a pas de délai de rétractation pour votre cas.
+              outOfScope: true
+            - title: Sur un stand dans une foire ou salon
+              information:
+            - title: Vous ne pouvez plus vous retracter
+              content: Il n'y a pas de délai de rétractation pour votre cas.
+              outOfScope: true
+              description:
+                Vous avez un délai de 14 jours pour changer d’avis. On appelle ce délai le "délai de rétractation". Ce délai est valable même si vous avez demandé à faire démarrer votre contrat immédiatement
+                <br />Vous n’avez pas à vous justifier auprès du commerçant.
+                <br/><a href="../delai-de-retractation" target="_blank">>> Comment calculer mon délai de retractation</a>
+        - title: Contrat non respecté
+          tags:
+            - LitigeContractuel
+        - title: Clause abusive
+          example: Vous souhaitez dénoncer une clause qui vous est particulièrement défavorable
+          ccrfCode:
+            - '21C'
+          tags:
+            - LitigeContractuel
+        - title: Autre
+          tags:
+            - LitigeContractuel
+- title: Service de lutte contre les rats, les puinaise de lits, désinfection
+  exemple: 'Exemple : la désinfection, la désinsectisation, la dératisation, lutte contre les nuisibles'
+  subcategories:
+    - title: Publicité et pratique du professionnel
+      example: "Exemple : absence d'information, information trompeuse ou mensongère, démarchage"
       tags:
-        - ReponseConso
-      example: 'Exemple : site pour trouver une nounou, site pour du ménage à domicile'
-    - title: Formation en ligne
+        - LitigeContractuel
+      ccrfCode:
+        - '23B'
+      subcategories:
+        - title: Absence d'information ou information incomplète
+          ccrfCode:
+            - '23b'
+          tags:
+            - LitigeContractuel
+          subcategories:
+            - title: Caractéristiques techniques des produits non précisées
+            - title: Prix indiqué de manière globale et non détaillée
+              ccrfCode:
+                - '21b'
+            - title: Date d'intervention des travaux non précisée
+            - title: Autre
+        - title: Démarchage à domicile
+          ccrfCode:
+            - '221'
+          companyKind: LOCATION
+          tags:
+            - DemarchageADomicile
+          detailInputs:
+            - label: Que s'est-il passé ?
+              rank: 1
+              type: RADIO
+              options:
+                - Le vendeur s'est fait passer pour une autre entreprise (à préciser)
+                - Le vendeur m'a fait signer des papiers sans me dire que c'était un contrat ou un bon de commande.
+                - Autre (à préciser)
+            - label: Avez-vous payé au moment du démarchage&#160;?
+              rank: 2
+              type: RADIO
+              options:
+                - Oui
+                - Non
+            - label: Date du démarchage
+              rank: 3
+              type: DATE
+              defaultValue: SYSDATE
+    - title: Prix
+      ccrfCode:
+        - '21b'
+      exemple: 'Exemple : il manque les prix,prix exagéré, prix différent du devis'
+      subcategories:
+        - title: Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs
+      information:
+        - title: Les commerçants ont le droit de choisir leurs prix.
+          content: Les professionnels ont le droit de choisir leurs prix.
+            <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation.
+          outOfScope: true
+        - title: Prix final non conforme au prix annoncé
+          ccrfCode:
+            - '23b'
+            - '21b'
+        - title: Il manque des prix / les prix sont illisibles
+          ccrfCode:
+            - '163'
+          description: 'Votre droit : tous les prix doivent être affichés.'
+          detailInputs:
+            - label: Veuillez préciser
+              rank: 1
+              type: RADIO
+              options:
+                - absence de Prix sur le devis
+                - Prix illisible
+                - Autre (à préciser)
+                - label: Date du constat
+                  rank: 2
+                  type: DATE
+                  defaultValue: SYSDATE
+                - label: Description
+                  rank: 3
+                  type: TEXTAREA
+    - title: Prestation
+      subcategories:
+        - title: Malfaçon
+          example: Constat d'un défaut résultant d'une mauvaise exécution des travaux
+          description: Le constat résulte d'une mauvaise exécution des travaux, vous pouvez faire jouer votre garantie !
+        - title: Autre
+- title: Bien-être
+  example: 'Exemple : coiffeur, esthéticien, Cabinet UV, salon de massage'
+  subcategories:
+    - title: Coiffeur
+      subcategories:
+        - title: Prix
+          exemple: 'Exemple : il manque les prix,prix exagéré, prix différent du devis'
+          ccrfCode:
+            - '21b'
+          subcategories:
+            - title: Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs
+              information:
+            - title: Les commerçants ont le droit de choisir leurs prix.
+              content: Les professionnels ont le droit de choisir leurs prix.
+                <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation.
+              outOfScope: true
+            - title: Prix final non conforme au prix annoncé
+            - title: Il manque des prix / les prix sont illisibles
+              ccrfCode:
+                - '163'
+              description: 'Votre droit : tous les prix doivent être affichés.'
+              detailInputs:
+                - label: Veuillez préciser
+                  rank: 1
+                  type: RADIO
+                  options:
+                    - absence de Prix sur le devis
+                    - Prix illisible
+                    - Autre (à préciser)
+                    - label: Date du constat
+                      rank: 2
+                      type: DATE
+                      defaultValue: SYSDATE
+                    - label: Description
+                      rank: 3
+                      type: TEXTAREA
+        - title: Moyens de paiement
+          example: "Exemple : carte bancaire refusée"
+          subcategories: !!import/single ../common/paiement.yml
+        - title: Publicité des prestations mensongère
+          ccrfCode:
+            - '23b'
+          tags:
+            - LitigeContractuel
+        - title: Le personnel ne dispose pas des diplômes requis
+          ccrfCode:
+            - '23F'
+        - title: Problème d'hygiène
+          reponseconsoCode:
+            - '446'
+            - title: Je subis des nuisances à cause des odeurs, du bruit...
+              information: !!import/single ../common/info/tel.yml
+            - title: Le personnel n'est pas aimable
+              information: !!import/single ../common/info/amabilite.yml
+            - title: Autre
+              tags:
+                - LitigeContractuel
+    - title: Esthéticien
+      subcategories:
+        - title: Prix des soins
+          exemple: 'Exemple : il manque les prix,prix exagéré, prix différent du devis'
+          ccrfCode:
+            - '21b'
+          subcategories:
+            - title: Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs
+              information:
+            - title: Les commerçants ont le droit de choisir leurs prix.
+              content: Les professionnels ont le droit de choisir leurs prix.
+                <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation.
+              outOfScope: true
+            - title: Prix final non conforme au prix annoncé
+            - title: Il manque des prix / les prix sont illisibles
+              ccrfCode:
+                - '163'
+              description: 'Votre droit : tous les prix doivent être affichés.'
+              detailInputs:
+                - label: Veuillez préciser
+                  rank: 1
+                  type: RADIO
+                  options:
+                    - absence de Prix sur le devis
+                    - Prix illisible
+                    - Autre (à préciser)
+                    - label: Date du constat
+                      rank: 2
+                      type: DATE
+                      defaultValue: SYSDATE
+                    - label: Description
+                      rank: 3
+                      type: TEXTAREA
+        - title: Moyens de paiement
+          example: "Exemple : carte bancaire refusée"
+          subcategories: !!import/single ../common/paiement.yml
+        - title: Publicité des prestations mensongère
+          ccrfCode:
+            - '23b'
+          tags:
+            - LitigeContractuel
+        - title: Le personnel ne dispose pas des diplômes requis
+          ccrfCode:
+            - '23F'
+        - title: Problème d'hygiène
+          reponseconsoCode:
+            - '446'
+            - title: Je subis des nuisances à cause des odeurs, du bruit...
+              information: !!import/single ../common/info/tel.yml
+            - title: Le personnel n'est pas aimable
+              information: !!import/single ../common/info/amabilite.yml
+            - title: Autre
+              tags:
+                - LitigeContractuel
+    - title: Cabine UV
+      subcategories:
+        - title: Prix
+          exemple: 'Exemple : il manque les prix,prix exagéré, prix différent du devis'
+          ccrfCode:
+            - '21b'
+          subcategories:
+            - title: Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs
+              information:
+            - title: Les commerçants ont le droit de choisir leurs prix.
+              content: Les professionnels ont le droit de choisir leurs prix.
+                <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation.
+              outOfScope: true
+            - title: Prix final non conforme au prix annoncé
+            - title: Il manque des prix / les prix sont illisibles
+              ccrfCode:
+                - '163'
+              description: 'Votre droit : tous les prix doivent être affichés.'
+              detailInputs:
+                - label: Veuillez préciser
+                  rank: 1
+                  type: RADIO
+                  options:
+                    - absence de Prix sur le devis
+                    - Prix illisible
+                    - Autre (à préciser)
+                    - label: Date du constat
+                      rank: 2
+                      type: DATE
+                      defaultValue: SYSDATE
+                    - label: Description
+                      rank: 3
+                      type: TEXTAREA
+        - title: Moyens de paiement
+          example: "Exemple : carte bancaire refusée"
+          subcategories: !!import/single ../common/paiement.yml
+        - title: Publicité des prestations mensongère
+          ccrfCode:
+            - '23b'
+          tags:
+            - LitigeContractuel
+        - title: Le personnel ne dispose pas des diplômes requis
+          ccrfCode:
+            - '23F'
+        - title: Problème d'hygiène
+          reponseconsoCode:
+            - '446'
+            - title: Je subis des nuisances à cause des odeurs, du bruit...
+              information: !!import/single ../common/info/tel.yml
+            - title: Le personnel n'est pas aimable
+              information: !!import/single ../common/info/amabilite.yml
+            - title: Autre
+              tags:
+                - LitigeContractuel
+    - title: Massage
+      subcategories:
+        - title: Prix
+          exemple: 'Exemple : il manque les prix,prix exagéré, prix différent du devis'
+          ccrfCode:
+            - '21b'
+        - title: Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs
+          information:
+        - title: Les commerçants ont le droit de choisir leurs prix.
+          content: Les professionnels ont le droit de choisir leurs prix.
+            <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation.
+          outOfScope: true
+        - title: Prix final non conforme au prix annoncé
+        - title: Il manque des prix / les prix sont illisibles
+          ccrfCode:
+            - '163'
+          description: 'Votre droit : tous les prix doivent être affichés.'
+          detailInputs:
+            - label: Veuillez préciser
+              rank: 1
+              type: RADIO
+              options:
+                - absence de Prix sur le devis
+                - Prix illisible
+                - Autre (à préciser)
+                - label: Date du constat
+                  rank: 2
+                  type: DATE
+                  defaultValue: SYSDATE
+                - label: Description
+                  rank: 3
+                  type: TEXTAREA
+        - title: Moyens de paiement
+          example: "Exemple : carte bancaire refusée"
+          subcategories: !!import/single ../common/paiement.yml
+        - title: Publicité des prestations mensongère
+          ccrfCode:
+            - '23b'
+          tags:
+            - LitigeContractuel
+        - title: Le personnel ne dispose pas des diplômes requis
+          ccrfCode:
+            - '23F'
+        - title: Problème d'hygiène
+          reponseconsoCode:
+            - '446'
+          subcategories:
+            - title: Je subis des nuisances à cause des odeurs, du bruit...
+              information: !!import/single ../common/info/tel.yml
+            - title: Le personnel n'est pas aimable
+              information: !!import/single ../common/info/amabilite.yml
+            - title: Autre
+              tags:
+                - LitigeContractuel
+- title: Vie quotidienne
+  example: "Exemple : conciergerie, pressing, cordonnier, ménage, garde d'enfants"
+  subcategories:
+    - title: Prix des prestations
+      example: 'Exemple : promotion non appliquée, prix en vitrine pas à jour'
+      ccrfCode:
+        - '21b'
       reponseconsoCode:
         - '411'
         - '212'
+      tags:
+        - LitigeContractuel
+    - title: Moyens de paiement
+      example: 'Exemple : carte bancaire refusée'
+      subcategories: !!import/single ../common/paiement.yml
+    - title: Publicité des prestations mensongère
+      ccrfCode:
+        - '23b'
+      reponseconsoCode:
         - '210'
-        - '422'
-        - '214'
       tags:
         - ReponseConso
+        - LitigeContractuel
+        - title: Autre
+    - title: Problème d'hygiène
+      reponseconsoCode:
+        - '446'
+      subcategories:
+        - title: Je subis des nuisances à cause des odeurs, du bruit...
+          information: !!import/single ../common/info/tel.yml
+    - title: Le personnel n'est pas aimable
+      information: !!import/single ../common/info/amabilite.yml
     - title: Autre
       reponseconsoCode:
         - '210'
       tags:
-        - ReponseConso
-      example: 'Exemple : site de petites rencontres'
-- title: une entreprise physique
-  companyKind: SIRET
+        - LitigeContractuel
+- title: Aide à la personne
+  Exemple: 'Garde d''enfant de moins de 3 ans, garde d''enfants handicapés de moins de 18ans, garde de personne âgées dépendants ou handicapées, Services d''aide et d''accompagnement à domicile (SAAD)'
   subcategories:
-    - title: Bien-être
-      example: 'Exemple : coiffeur, esthéticien, salon de massage'
-      subcategories:
-        - title: Prix des soins
-          example: 'Exemple : promotion non appliquée, prix en vitrine pas à jour'
-          reponseconsoCode:
-            - '451'
-            - '212'
-          tags:
-            - LitigeContractuel
-          detailInputs:
-            - label: Date du constat
-              rank: 1
-              type: DATE
-              defaultValue: SYSDATE
-            - label: Quel est le problème ?
-              rank: 2
-              type: RADIO
-              options:
-                - Les prix ne sont pas affichés
-                - Les prix affichés ne sont pas les bons
-                - Le prix donné au départ (devis) n''a pas été respecté
-                - Une promotion n''a pas été appliquée ou est fausse
-                - Autre (à préciser)
-            - label: Si besoin, merci de préciser ce qu''il s''est passé
-              rank: 3
-              type: TEXTAREA
-              optionnal: true
-          fileLabel: Vous pouvez joindre une photo des prix ou tout document utile pour appuyer votre signalement.
-        - title: Moyens de paiement
-          example: 'Exemple : carte bancaire refusée'
-          subcategories: !!import/single ../common/paiement.yml
-        - title: Publicité des soins mensongère
-          example: "Exemple : durée du massage plus courte qu'indiqué"
-          reponseconsoCode:
-            - '210'
-          tags:
-            - ReponseConso
-            - LitigeContractuel
+    - title: Prix des prestations
+      example: 'Exemple : promotion non appliquée, prix en vitrine pas à jour'
+      ccrfCode:
+        - '21b'
+      reponseconsoCode:
+        - '411'
+        - '212'
+      tags:
+        - LitigeContractuel
+    - title: Moyens de paiement
+      example: 'Exemple : carte bancaire refusée'
+      subcategories: !!import/single ../common/paiement.yml
+    - title: Prix des prestations
+      example: 'Exemple : promotion non appliquée, prix en vitrine pas à jour'
+      ccrfCode:
+        - '21b'
+      reponseconsoCode:
+        - '411'
+        - '212'
+      tags:
+        - LitigeContractuel
+    - title: Le personnel ne dispose pas des diplômes requis
+      ccrfCode:
+        - '23f'
+      reponseconsoCode:
+        - '210'
+      tags:
+        - ReponseConso
+    - title: Publicité des prestations mensongère
+      ccrfCode:
+        - '23b'
+      reponseconsoCode:
+        - '210'
+      tags:
+        - ReponseConso
+        - LitigeContractuel
         - title: Autre
-          subcategories:
-            - title: Le personnel ne dispose pas des diplômes requis
-              reponseconsoCode:
-                - '161'
-            - title: Problème d'hygiène
-              example: "Exemple : établissement sale, mauvaises pratiques d'hygiène"
-              reponseconsoCode:
-                - '446'
-            - title: Je subis des nuisances à cause des odeurs, du bruit...
-              information: !!import/single ../common/info/tel.yml
-            - title: Le personnel n'est pas aimable
-              information: !!import/single ../common/info/amabilite.yml
-            - title: Mon chien a été refusé dans le salon
-              information: !!import/single ../common/info/chienassistance.yml
-            - title: Autre
-              reponseconsoCode:
-                - '210'
-              tags:
-                - LitigeContractuel
-    - title: Vie quotidienne
-      example: "Exemple : conciergerie, pressing, cordonnier, ménage, garde d'enfants"
+
+    - title: Le personnel n'est pas aimable
+      information: !!import/single ../common/info/amabilite.yml
+    - title: Autre
+      reponseconsoCode:
+        - '210'
+      tags:
+        - LitigeContractuel
+
+
+- title: Maison de retraite (ehpad)
+  tags:
+    - LitigeContractuel
+    - Ehpad
+  subcategories:
+    - title: Tarifs / facture
       subcategories:
-        - title: Prix des prestations
-          example: 'Exemple : promotion non appliquée, prix en vitrine pas à jour'
+        - title: Les tarifs ne sont pas communiqués clairement
+          example: 'Exemple : les prix des options ne sont pas dans le contrat'
           reponseconsoCode:
             - '411'
             - '212'
           tags:
-            - LitigeContractuel
-        - title: Moyens de paiement
-          example: 'Exemple : carte bancaire refusée'
-          subcategories: !!import/single ../common/paiement.yml
-        - title: Publicité des prestations mensongère
+            - ReponseConso
+        - title: Je ne paye pas le prix qui était prévu au départ
           reponseconsoCode:
             - '210'
           tags:
             - ReponseConso
-            - LitigeContractuel
-        - title: Autre
-          subcategories:
-            - title: Le personnel ne dispose pas des diplômes requis
-              reponseconsoCode:
-                - '210'
-              tags:
-                - ReponseConso
-            - title: Problème d'hygiène
-              reponseconsoCode:
-                - '446'
-            - title: Je subis des nuisances à cause des odeurs, du bruit...
-              information: !!import/single ../common/info/tel.yml
-            - title: Le personnel n'est pas aimable
-              information: !!import/single ../common/info/amabilite.yml
-            - title: Autre
-              reponseconsoCode:
-                - '210'
-              tags:
-                - LitigeContractuel
-    - title: Aide à la personne
-      tags:
-        - ReponseConso
-        - LitigeContractuel
+        - title: Je ne suis pas d'accord avec ma facture
+          reponseconsoCode:
+            - '451'
+            - '226'
+          tags:
+            - ReponseConso
+        - title: Les prix sont élevés pour la prestation
+          information:
+        - title: Les prix sont choisis librement par les maisons de retraite.
+          content: Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant de signer un contrat ou avant de prendre des options.
+          outOfScope: true
+    - title: Contrat
+      example: 'Exemple : je veux résilier le contrat, les activités ne correspondent pas à mon contrat'
       reponseconsoCode:
         - '210'
-    - title: Maison de retraite (ehpad)
-      tags:
-        - LitigeContractuel
-        - Ehpad
       subcategories:
-        - title: Tarifs / facture
-          subcategories:
-            - title: Les tarifs ne sont pas communiqués clairement
-              example: 'Exemple : les prix des options ne sont pas dans le contrat'
-              reponseconsoCode:
-                - '411'
-                - '212'
-              tags:
-                - ReponseConso
-            - title: Je ne paye pas le prix qui était prévu au départ
-              reponseconsoCode:
-                - '210'
-              tags:
-                - ReponseConso
-            - title: Je ne suis pas d'accord avec ma facture
-              reponseconsoCode:
-                - '451'
-                - '226'
-              tags:
-                - ReponseConso
-            - title: Les prix sont élevés pour la prestation
-              information:
-                title: Les prix sont choisis librement par les maisons de retraite.
-                content: Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant de signer un contrat ou avant de prendre des options.
-                outOfScope: true
-        - title: Contrat
-          example: 'Exemple : je veux résilier le contrat, les activités ne correspondent pas à mon contrat'
+        - title: Le contrat n'est pas respecté
+          example: "Exemple : le contrat prévoit des fruits tous les jours et ce n'est pas le cas"
+        - title: Je veux résilier le contrat
           reponseconsoCode:
-            - '210'
+            - '226'
+            - '473'
+          tags:
+            - ReponseConso
+        - title: Une clause dans le contrat est abusive, c'est-à-dire qu’elle désavantage fortement le résident
+          example: "Exemple : imposer un préavis de 2 mois au résident pour résilier le contrat alors que la maison de retraite a un préavis d'1 mois seulement"
+          reponseconsoCode:
+            - '422'
+            - '214'
+          tags:
+            - ReponseConso
+    - title: Emménagement / sortie de la chambre
+      example: "Exemple : état des lieux d'entrée ou de sortie, caution"
+      subcategories:
+        - title: Je n'ai pas eu d'état des lieux (entrée ou sortie)
+          reponseconsoCode:
+            - '446'
+            - '226'
+          tags:
+            - ReponseConso
+        - title: Je ne suis pas d'accord avec l'état des lieux
+          reponseconsoCode:
+            - '451'
+        - title: La caution demandée à l'entrée est très elevée
+          tags:
+            - ReponseConso
           subcategories:
-            - title: Le contrat n'est pas respecté
-              example: "Exemple : le contrat prévoit des fruits tous les jours et ce n'est pas le cas"
-            - title: Je veux résilier le contrat
-              reponseconsoCode:
-                - '226'
-                - '473'
-              tags:
-                - ReponseConso
-            - title: Une clause dans le contrat est abusive, c'est-à-dire qu’elle désavantage fortement le résident
-              example: "Exemple : imposer un préavis de 2 mois au résident pour résilier le contrat alors que la maison de retraite a un préavis d'1 mois seulement"
-              reponseconsoCode:
-                - '422'
-                - '214'
-              tags:
-                - ReponseConso
-        - title: Emménagement / sortie de la chambre
-          example: "Exemple : état des lieux d'entrée ou de sortie, caution"
-          subcategories:
-            - title: Je n'ai pas eu d'état des lieux (entrée ou sortie)
-              reponseconsoCode:
-                - '446'
-                - '226'
-              tags:
-                - ReponseConso
-            - title: Je ne suis pas d'accord avec l'état des lieux
-              reponseconsoCode:
-                - '451'
-            - title: La caution demandée à l'entrée est très elevée
-              tags:
-                - ReponseConso
-              subcategoriesTitle: 'Est-ce que la caution est plus élevée que 2 fois le tarif mensuel de la chambre (ce tarif est indiqué dans votre contrat) ?'
+            - Title: 'Est-ce que la caution est plus élevée que le tarif mensuel de la chambre (ce tarif est indiqué dans votre contrat) ?'
               subcategories:
                 - title: Oui
                   reponseconsoCode:
                     - '2262'
                 - title: Non
                   information:
-                    title: Une caution (somme d'argent) peut être demandée, mais elle ne doit pas dépasser 2 fois le tarif mensuel d'hébergement.
-                    content: Retrouvez plus d'informations sur <a href="https://www.service-public.fr/particuliers/vosdroits/F763" target="_blank">https://www.service-public.fr/particuliers/vosdroits/F763</a>
+                - title: Une caution (somme d'argent) peut être demandée, mais elle ne doit pas dépasser le tarif mensuel d'hébergement.
+                  content: Retrouvez plus d'informations sur <a href="https://www.service-public.fr/particuliers/vosdroits/F763" target="_blank">https://www.service-public.fr/particuliers/vosdroits/F763</a>
             - title: Je n'ai toujours pas récupéré la caution
-              subcategoriesTitle: Quand avez-vous libéré la chambre ?
               subcategories:
-                - title: Il y a moins de 30 jours
-                  information:
-                    title: Soyez encore un peu patient 🙂
-                    content: La maison de retraite a 30 jours pour vous rendre la caution.
-                - title: Il y a plus de 30 jours
-                  reponseconsoCode:
-                    - '476'
-                    - '226'
-        - title: Publicité mensongère
-          example: "Exemple : le site internet mentionne un grand parc alors que ce n'est pas le cas, la brochure parle des animations régulières alors qu'il y en a très peu"
-          reponseconsoCode:
-            - '210'
-          tags:
-            - ReponseConso
-        - title: Maltraitance
-          information:
-            content:
-              Vous ne pouvez pas signaler un cas de maltraitance sur SignalConso.<br> Vous pouvez vous rendre au commissariat de police ou à la gendarmerie. <br> Vous pouvez appeler le 3977. C'est le numéro d’appel national unique pour les victimes ou les témoins de maltraitance envers les personnes handicapées ou agées.
-              <br><br> Le site officiel <a href="https://www.pour-les-personnes-agees.gouv.fr/exercer-ses-droits/en-cas-de-maltraitance" target="_blank">www.pour-les-personnes-agees.gouv.fr</a> vous propose toutes les solutions possibles pour signaler un cas de maltraitance.
-            outOfScope: true
-        - title: Autre
-          reponseconsoCode:
-            - '210'
-          tags:
-            - ReponseConso
-    - title: Services funéraires
-      subcategories:
-        - title: Prix des prestations
-          example: 'Exemple : le prix final ne correspond pas du devis, prix des soins de conservation'
-          reponseconsoCode:
-            - '411'
-            - '212'
-          tags:
-            - ReponseConso
-            - LitigeContractuel
-        - title: Moyens de paiement
-          example: 'Exemple : carte bancaire refusée'
-          subcategories: !!import/single ../common/paiement.yml
-          tags:
-            - ReponseConso
-        - title: Publicité des prestations mensongère
-          example: "Exemple : composition d'un cercueil non conforme"
-          reponseconsoCode:
-            - '210'
-          tags:
-            - ReponseConso
-            - LitigeContractuel
-        - title: Autre
-          subcategories:
-            - title: Le personnel n'est pas aimable ou respecteux
-              information: !!import/single ../common/info/amabilite.yml
-            - title: Le personnel ne dispose pas des diplômes requis
-              tags:
-                - ReponseConso
-              reponseconsoCode:
-                - '161'
+                - Title: Quand avez-vous libéré la chambre ?
+                  subcategories:
+                    - title: Il y a moins de 30 jours
+                      information:
+                    - title: Soyez encore un peu patient :)
+                      content: La maison de retraite a 30 jours pour vous rendre la caution.
+                    - title: Il y a plus de 30 jours
+                      reponseconsoCode:
+                        - '476'
+                        - '226'
             - title: Autre
-              reponseconsoCode:
-                - '210'
-    - title: Autre type d'entreprise de service
-      example: 'Exemple : déménageur, agence de rencontre, organisme de formation. Pour la livraison de repas à domicile, choisir la catégorie Café / Restaurant'
-      subcategories:
-        - title: Déménageur
-          reponseconsoCode:
-            - '226'
-            - '411'
-            - '446'
-            - '442'
-          tags:
-            - ReponseConso
-            - LitigeContractuel
-        - title: Agence matrimoniale (agence de rencontre)
-          reponseconsoCode:
-            - '2263'
-            - '473'
-            - '226'
-          tags:
-            - LitigeContractuel
-        - title: Organisme de formation
-          reponseconsoCode:
-            - '422'
-            - '214'
-            - '411'
-            - '212'
-            - '473'
-            - '2203'
-            - '210'
-          tags:
-            - ReponseConso
-            - LitigeContractuel
-        - title: Autre
-          reponseconsoCode:
-            - '210'
-          tags:
-            - ReponseConso
+    - title: Publicité mensongère
+      example: "Exemple : le site internet mentionne un grand parc alors que ce n'est pas le cas, la brochure parle des animations régulières alors qu'il y en a très peu"
+      reponseconsoCode:
+        - '210'
+      tags:
+        - ReponseConso
+    - title: Maltraitance
+      information:
+      content:
+        Vous ne pouvez pas signaler un cas de maltraitance sur SignalConso.<br> Vous pouvez vous rendre au commissariat de police ou à la gendarmerie. <br> Vous pouvez appeler le 3977. C'est le numéro d’appel national unique pour les victimes ou les témoins de maltraitance envers les personnes handicapées ou agées.
+        <br><br> Le site officiel <a href="https://www.pour-les-personnes-agees.gouv.fr/exercer-ses-droits/en-cas-de-maltraitance" target="_blank">www.pour-les-personnes-agees.gouv.fr</a> vous propose toutes les solutions possibles pour signaler un cas de maltraitance.
+      outOfScope: true
+    - title: Autre
+      reponseconsoCode:
+        - '210'
+      tags:
+        - ReponseConso
+- title: Services funéraires
+  subcategories:
+    - title: Prix des prestations
+      example: 'Exemple : le prix final ne correspond pas du devis, prix des soins de conservation'
+      reponseconsoCode:
+        - '411'
+        - '212'
+      tags:
+        - ReponseConso
+        - LitigeContractuel
+    - title: Moyens de paiement
+      example: 'Exemple : carte bancaire refusée'
+      subcategories: !!import/single ../common/paiement.yml
+      tags:
+        - ReponseConso
+    - title: Publicité des prestations mensongère
+      example: "Exemple : composition d'un cercueil non conforme"
+      reponseconsoCode:
+        - '210'
+      tags:
+        - ReponseConso
+        - LitigeContractuel
+    - title: Le personnel n'est pas aimable ou respecteux
+      information: !!import/single ../common/info/amabilite.yml
+    - title: Le personnel ne dispose pas des diplômes requis
+      tags:
+        - ReponseConso
+      reponseconsoCode:
+        - '161'
+    - title: Autre
+      reponseconsoCode:
+        - '210'
+- title: Autre type d'entreprise de service
+  example: 'Exemple : déménageur, agence de rencontre. Pour la livraison de repas à domicile, choisir la catégorie Café / Restaurant'
+  subcategories:
+    - title: Déménageur
+      reponseconsoCode:
+        - '226'
+        - '411'
+        - '446'
+        - '442'
+      tags:
+        - ReponseConso
+        - LitigeContractuel
+    - title: Agence matrimoniale (agence de rencontre)
+      reponseconsoCode:
+        - '2263'
+        - '473'
+        - '226'
+      tags:
+        - LitigeContractuel
+    - title: Autre
+      reponseconsoCode:
+        - '210'
+      tags:
+        - ReponseConso
