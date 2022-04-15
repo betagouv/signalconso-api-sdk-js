@@ -34026,180 +34026,163 @@
                   "tags": [
                     "DemarchageTelephonique"
                   ],
-                  "detailInputs": [
-                    {
-                      "label": "Date de l'appel",
-                      "rank": 1,
-                      "type": "DATE",
-                      "defaultValue": "SYSDATE"
-                    },
-                    {
-                      "label": "Est-ce que le vendeur s'est fait passer pour une autre entreprise&#160;?",
-                      "rank": 2,
-                      "type": "RADIO",
-                      "options": [
-                        "Non",
-                        "Oui (à préciser)"
-                      ]
-                    },
-                    {
-                      "label": "Décrivez nous plus en détails ce qui s'est passé",
-                      "rank": 3,
-                      "type": "TEXTAREA"
-                    },
+                  "subcategories": [
                     {
                       "title": "Information mensongère ou trompeuse",
+                      "example": "Mise en avant d'un label ou d'un signe de qualité non ou plus détenu",
                       "ccrfCode": [
-                        "23b"
+                        "23b",
+                        "275",
+                        "267"
                       ],
                       "reponseconsoCode": [
                         "210"
                       ],
-                      "subcategories": [
+                      "detailInputs": [
                         {
-                          "title": "Mise en avant d'un label ou d'un signe de qualité non ou plus détenu",
-                          "ccrfCode": [
-                            "267",
-                            "275"
-                          ],
-                          "detailInputs": [
-                            {
-                              "label": "Qu'est-ce qui est trompeur ou mensonger&#160;?",
-                              "rank": 1,
-                              "type": "RADIO",
-                              "options": [
-                                "Le discours du professionnel",
-                                "Le site internet",
-                                "Les documents mis à votre disposition par le professionnel (flyer, plaquette de présentation...)",
-                                "Autre (à préciser)"
-                              ]
-                            },
-                            {
-                              "label": "Description",
-                              "rank": 2,
-                              "type": "TEXTAREA"
-                            },
-                            {
-                              "label": "Date du constat",
-                              "rank": 3,
-                              "type": "DATE",
-                              "defaultValue": "SYSDATE"
-                            },
-                            {
-                              "label": "Heure du constat (facultatif)",
-                              "rank": 4,
-                              "type": "TIMESLOT",
-                              "optionnal": true
-                            },
-                            {
-                              "title": "Référence abusive à des partenariats avec l'État ou de grandes entreprises",
-                              "detailInputs": [
-                                {
-                                  "label": "Qu'est-ce qui est trompeur ou mensonger&#160;?",
-                                  "rank": 1,
-                                  "type": "RADIO",
-                                  "options": [
-                                    "Le discours du professionnel",
-                                    "Le site internet",
-                                    "Les documents mis à votre disposition par le professionnel (flyer, plaquette de présentation...)",
-                                    "Autre (à préciser)"
-                                  ]
-                                },
-                                {
-                                  "label": "Description",
-                                  "rank": 2,
-                                  "type": "TEXTAREA"
-                                },
-                                {
-                                  "label": "Date du constat",
-                                  "rank": 3,
-                                  "type": "DATE",
-                                  "defaultValue": "SYSDATE"
-                                },
-                                {
-                                  "label": "Heure du constat (facultatif)",
-                                  "rank": 4,
-                                  "type": "TIMESLOT",
-                                  "optionnal": true
-                                }
-                              ]
-                            },
-                            {
-                              "title": "Utilisation de termes laissant croire qu'il s'agit d'une structure publique",
-                              "detailInputs": [
-                                {
-                                  "label": "Qu'est-ce qui est trompeur ou mensonger&#160;?",
-                                  "rank": 1,
-                                  "type": "RADIO",
-                                  "options": [
-                                    "Le discours du professionnel",
-                                    "Le site internet",
-                                    "Les documents mis à votre disposition par le professionnel (flyer, plaquette de présentation...)",
-                                    "Autre (à préciser)"
-                                  ]
-                                },
-                                {
-                                  "label": "Description",
-                                  "rank": 2,
-                                  "type": "TEXTAREA"
-                                },
-                                {
-                                  "label": "Date du constat",
-                                  "rank": 3,
-                                  "type": "DATE",
-                                  "defaultValue": "SYSDATE"
-                                },
-                                {
-                                  "label": "Heure du constat (facultatif)",
-                                  "rank": 4,
-                                  "type": "TIMESLOT",
-                                  "optionnal": true
-                                }
-                              ]
-                            },
-                            {
-                              "title": "Usurpation d'identité de la part du professionnel",
-                              "detailInputs": [
-                                {
-                                  "label": "Qu'est-ce qui est trompeur ou mensonger&#160;?",
-                                  "rank": 1,
-                                  "type": "RADIO",
-                                  "options": [
-                                    "Le discours du professionnel",
-                                    "Le site internet",
-                                    "Les documents mis à votre disposition par le professionnel (flyer, plaquette de présentation...)",
-                                    "Autre (à préciser)"
-                                  ]
-                                },
-                                {
-                                  "label": "Description",
-                                  "rank": 2,
-                                  "type": "TEXTAREA"
-                                },
-                                {
-                                  "label": "Date du constat",
-                                  "rank": 3,
-                                  "type": "DATE",
-                                  "defaultValue": "SYSDATE"
-                                },
-                                {
-                                  "label": "Heure du constat (facultatif)",
-                                  "rank": 4,
-                                  "type": "TIMESLOT",
-                                  "optionnal": true
-                                }
-                              ]
-                            }
+                          "label": "Qu'est-ce qui est trompeur ou mensonger&#160;?",
+                          "rank": 1,
+                          "type": "RADIO",
+                          "options": [
+                            "Le discours du professionnel",
+                            "Le site internet",
+                            "Les documents mis à votre disposition par le professionnel (courrier, flyer, plaquette de présentation...)",
+                            "Autre (à préciser)"
                           ]
+                        },
+                        {
+                          "label": "Description",
+                          "rank": 2,
+                          "type": "TEXTAREA"
+                        },
+                        {
+                          "label": "Date de l'appel",
+                          "rank": 3,
+                          "type": "DATE",
+                          "defaultValue": "SYSDATE"
+                        },
+                        {
+                          "label": "Heure de l'appel (facultatif)",
+                          "rank": 4,
+                          "type": "TIMESLOT",
+                          "optionnal": true
                         }
-                      ]
+                      ],
+                      "id": "5.1.1.3.1"
+                    },
+                    {
+                      "title": "Référence abusive à des partenariats avec l'État ou de grandes entreprises",
+                      "ccrfCode": [
+                        "23b"
+                      ],
+                      "detailInputs": [
+                        {
+                          "label": "Qu'est-ce qui est trompeur ou mensonger&#160;?",
+                          "rank": 1,
+                          "type": "RADIO",
+                          "options": [
+                            "Le discours du professionnel",
+                            "Le site internet",
+                            "Les documents mis à votre disposition par le professionnel (courrier, flyer, plaquette de présentation...)",
+                            "Autre (à préciser)"
+                          ]
+                        },
+                        {
+                          "label": "Description",
+                          "rank": 2,
+                          "type": "TEXTAREA"
+                        },
+                        {
+                          "label": "Date de l'appel",
+                          "rank": 3,
+                          "type": "DATE",
+                          "defaultValue": "SYSDATE"
+                        },
+                        {
+                          "label": "Heure de l'appel (facultatif)",
+                          "rank": 4,
+                          "type": "TIMESLOT",
+                          "optionnal": true
+                        }
+                      ],
+                      "id": "5.1.1.3.2"
+                    },
+                    {
+                      "title": "Utilisation de termes laissant croire qu'il s'agit d'une structure publique",
+                      "ccrfCode": [
+                        "23b"
+                      ],
+                      "detailInputs": [
+                        {
+                          "label": "Qu'est-ce qui est trompeur ou mensonger&#160;?",
+                          "rank": 1,
+                          "type": "RADIO",
+                          "options": [
+                            "Le discours du professionnel",
+                            "Le site internet",
+                            "Les documents mis à votre disposition par le professionnel (courrier, flyer, plaquette de présentation...)",
+                            "Autre (à préciser)"
+                          ]
+                        },
+                        {
+                          "label": "Description",
+                          "rank": 2,
+                          "type": "TEXTAREA"
+                        },
+                        {
+                          "label": "Date de l'appel",
+                          "rank": 3,
+                          "type": "DATE",
+                          "defaultValue": "SYSDATE"
+                        },
+                        {
+                          "label": "Heure de l'appel (facultatif)",
+                          "rank": 4,
+                          "type": "TIMESLOT",
+                          "optionnal": true
+                        }
+                      ],
+                      "id": "5.1.1.3.3"
+                    },
+                    {
+                      "title": "Usurpation d'identité de la part du professionnel",
+                      "ccrfCode": [
+                        "23b"
+                      ],
+                      "detailInputs": [
+                        {
+                          "label": "Qu'est-ce qui est trompeur ou mensonger&#160;?",
+                          "rank": 1,
+                          "type": "RADIO",
+                          "options": [
+                            "Le discours du professionnel",
+                            "Le site internet",
+                            "Les documents mis à votre disposition par le professionnel (flyer, plaquette de présentation...)",
+                            "Autre (à préciser)"
+                          ]
+                        },
+                        {
+                          "label": "Description",
+                          "rank": 2,
+                          "type": "TEXTAREA"
+                        },
+                        {
+                          "label": "Date de l'appel",
+                          "rank": 3,
+                          "type": "DATE",
+                          "defaultValue": "SYSDATE"
+                        },
+                        {
+                          "label": "Heure de l'appel (facultatif)",
+                          "rank": 4,
+                          "type": "TIMESLOT",
+                          "optionnal": true
+                        }
+                      ],
+                      "id": "5.1.1.3.4"
                     }
                   ],
                   "id": "5.1.1.3"
-                },
-                {
-                  "title": "Autre",
-                  "id": "5.1.1.4"
                 }
               ],
               "id": "5.1.1"
@@ -34278,6 +34261,10 @@
                 }
               ],
               "id": "5.1.2"
+            },
+            {
+              "title": "Autre",
+              "id": "5.1.3"
             }
           ],
           "id": "5.1"
@@ -34364,6 +34351,63 @@
                     }
                   ],
                   "id": "5.2.1.2"
+                },
+                {
+                  "title": "Démarchage téléphonique",
+                  "companyKind": "PHONE",
+                  "ccrfCode": [
+                    "227"
+                  ],
+                  "tags": [
+                    "DemarchageTelephonique"
+                  ],
+                  "subcategories": [
+                    {
+                      "title": "Information mensongère ou trompeuse",
+                      "example": "Mise en avant d'un label ou d'un signe de qualité non ou plus détenu",
+                      "ccrfCode": [
+                        "23b",
+                        "275",
+                        "267"
+                      ],
+                      "detailInputs": [
+                        {
+                          "label": "Qu'est-ce qui est trompeur ou mensonger&#160;?",
+                          "rank": 1,
+                          "type": "RADIO",
+                          "options": [
+                            "Le discours du professionnel",
+                            "Le site internet",
+                            "Les documents mis à votre disposition par le professionnel (courrier, flyer, plaquette de présentation...)",
+                            "Autre (à préciser)"
+                          ]
+                        },
+                        {
+                          "label": "Description",
+                          "rank": 2,
+                          "type": "TEXTAREA"
+                        },
+                        {
+                          "label": "Date de l'appel",
+                          "rank": 3,
+                          "type": "DATE",
+                          "defaultValue": "SYSDATE"
+                        },
+                        {
+                          "label": "Heure de l'appel (facultatif)",
+                          "rank": 4,
+                          "type": "TIMESLOT",
+                          "optionnal": true
+                        }
+                      ],
+                      "id": "5.2.1.3.1"
+                    },
+                    {
+                      "title": "Autre",
+                      "id": "5.2.1.3.2"
+                    }
+                  ],
+                  "id": "5.2.1.3"
                 }
               ],
               "id": "5.2.1"
@@ -34373,25 +34417,23 @@
               "ccrfCode": [
                 "21b"
               ],
-              "exemple": "Exemple : il manque les prix,prix exagéré, prix différent du devis",
+              "exemple": "Exemple : il manque les prix,prix exagéré, prix différent du devis",
               "subcategories": [
                 {
                   "title": "Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs",
+                  "information": {
+                    "title": "Les commerçants ont le droit de choisir leurs prix.",
+                    "content": "Les professionnels ont le droit de choisir leurs prix. <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation."
+                  },
+                  "outOfScope": true,
                   "id": "5.2.2.1"
-                }
-              ],
-              "information": [
-                {
-                  "title": "Les commerçants ont le droit de choisir leurs prix.",
-                  "content": "Les professionnels ont le droit de choisir leurs prix. <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation.",
-                  "outOfScope": true
                 },
                 {
                   "title": "Prix final non conforme au prix annoncé",
                   "ccrfCode": [
-                    "23b",
-                    "21b"
-                  ]
+                    "23b"
+                  ],
+                  "id": "5.2.2.2"
                 },
                 {
                   "title": "Il manque des prix / les prix sont illisibles",
@@ -34421,7 +34463,8 @@
                         }
                       ]
                     }
-                  ]
+                  ],
+                  "id": "5.2.2.3"
                 }
               ],
               "id": "5.2.2"
@@ -34447,32 +34490,30 @@
         },
         {
           "title": "Bien-être",
-          "example": "Exemple : coiffeur, esthéticien, Cabinet UV, salon de massage",
+          "example": "Exemple : coiffeur, esthéticien, Cabinet UV, salon de massage",
           "subcategories": [
             {
               "title": "Coiffeur",
               "subcategories": [
                 {
                   "title": "Prix",
-                  "exemple": "Exemple : il manque les prix,prix exagéré, prix différent du devis",
+                  "exemple": "Exemple : il manque les prix,prix exagéré, prix différent du devis",
                   "ccrfCode": [
                     "21b"
                   ],
                   "subcategories": [
                     {
                       "title": "Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs",
-                      "information": null,
+                      "information": {
+                        "title": "Les commerçants ont le droit de choisir leurs prix.",
+                        "content": "Les professionnels ont le droit de choisir leurs prix. <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation."
+                      },
+                      "outOfScope": true,
                       "id": "5.3.1.1.1"
                     },
                     {
-                      "title": "Les commerçants ont le droit de choisir leurs prix.",
-                      "content": "Les professionnels ont le droit de choisir leurs prix. <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation.",
-                      "outOfScope": true,
-                      "id": "5.3.1.1.2"
-                    },
-                    {
                       "title": "Prix final non conforme au prix annoncé",
-                      "id": "5.3.1.1.3"
+                      "id": "5.3.1.1.2"
                     },
                     {
                       "title": "Il manque des prix / les prix sont illisibles",
@@ -34503,14 +34544,14 @@
                           ]
                         }
                       ],
-                      "id": "5.3.1.1.4"
+                      "id": "5.3.1.1.3"
                     }
                   ],
                   "id": "5.3.1.1"
                 },
                 {
                   "title": "Moyens de paiement",
-                  "example": "Exemple : carte bancaire refusée",
+                  "example": "Exemple : carte bancaire refusée",
                   "subcategories": [
                     {
                       "title": "Je n'ai pas pu payer avec des espèces",
@@ -34701,7 +34742,7 @@
               "subcategories": [
                 {
                   "title": "Prix des soins",
-                  "exemple": "Exemple : il manque les prix,prix exagéré, prix différent du devis",
+                  "exemple": "Exemple : il manque les prix,prix exagéré, prix différent du devis",
                   "ccrfCode": [
                     "21b"
                   ],
@@ -34757,7 +34798,7 @@
                 },
                 {
                   "title": "Moyens de paiement",
-                  "example": "Exemple : carte bancaire refusée",
+                  "example": "Exemple : carte bancaire refusée",
                   "subcategories": [
                     {
                       "title": "Je n'ai pas pu payer avec des espèces",
@@ -34948,7 +34989,7 @@
               "subcategories": [
                 {
                   "title": "Prix",
-                  "exemple": "Exemple : il manque les prix,prix exagéré, prix différent du devis",
+                  "exemple": "Exemple : il manque les prix,prix exagéré, prix différent du devis",
                   "ccrfCode": [
                     "21b"
                   ],
@@ -35004,7 +35045,7 @@
                 },
                 {
                   "title": "Moyens de paiement",
-                  "example": "Exemple : carte bancaire refusée",
+                  "example": "Exemple : carte bancaire refusée",
                   "subcategories": [
                     {
                       "title": "Je n'ai pas pu payer avec des espèces",
@@ -35195,7 +35236,7 @@
               "subcategories": [
                 {
                   "title": "Prix",
-                  "exemple": "Exemple : il manque les prix,prix exagéré, prix différent du devis",
+                  "exemple": "Exemple : il manque les prix,prix exagéré, prix différent du devis",
                   "ccrfCode": [
                     "21b"
                   ],
@@ -35249,7 +35290,7 @@
                 },
                 {
                   "title": "Moyens de paiement",
-                  "example": "Exemple : carte bancaire refusée",
+                  "example": "Exemple : carte bancaire refusée",
                   "subcategories": [
                     {
                       "title": "Je n'ai pas pu payer avec des espèces",
@@ -35445,11 +35486,11 @@
         },
         {
           "title": "Vie quotidienne",
-          "example": "Exemple : conciergerie, pressing, cordonnier, ménage, garde d'enfants",
+          "example": "Exemple : conciergerie, pressing, cordonnier, ménage, garde d'enfants",
           "subcategories": [
             {
               "title": "Prix des prestations",
-              "example": "Exemple : promotion non appliquée, prix en vitrine pas à jour",
+              "example": "Exemple : promotion non appliquée, prix en vitrine pas à jour, prix non respecté",
               "ccrfCode": [
                 "21b"
               ],
@@ -35464,7 +35505,7 @@
             },
             {
               "title": "Moyens de paiement",
-              "example": "Exemple : carte bancaire refusée",
+              "example": "Exemple : carte bancaire refusée",
               "subcategories": [
                 {
                   "title": "Je n'ai pas pu payer avec des espèces",
@@ -35597,10 +35638,7 @@
               ],
               "tags": [
                 "ReponseConso",
-                "LitigeContractuel",
-                {
-                  "title": "Autre"
-                }
+                "LitigeContractuel"
               ],
               "id": "5.4.3"
             },
@@ -35664,7 +35702,7 @@
           "subcategories": [
             {
               "title": "Prix des prestations",
-              "example": "Exemple : promotion non appliquée, prix en vitrine pas à jour",
+              "example": "Exemple : promotion non appliquée, prix en vitrine pas à jour, prix non respecté",
               "ccrfCode": [
                 "21b"
               ],
@@ -35679,7 +35717,7 @@
             },
             {
               "title": "Moyens de paiement",
-              "example": "Exemple : carte bancaire refusée",
+              "example": "Exemple : carte bancaire refusée",
               "subcategories": [
                 {
                   "title": "Je n'ai pas pu payer avec des espèces",
@@ -35803,21 +35841,6 @@
               "id": "5.5.2"
             },
             {
-              "title": "Prix des prestations",
-              "example": "Exemple : promotion non appliquée, prix en vitrine pas à jour",
-              "ccrfCode": [
-                "21b"
-              ],
-              "reponseconsoCode": [
-                "411",
-                "212"
-              ],
-              "tags": [
-                "LitigeContractuel"
-              ],
-              "id": "5.5.3"
-            },
-            {
               "title": "Le personnel ne dispose pas des diplômes requis",
               "ccrfCode": [
                 "23f"
@@ -35828,7 +35851,7 @@
               "tags": [
                 "ReponseConso"
               ],
-              "id": "5.5.4"
+              "id": "5.5.3"
             },
             {
               "title": "Publicité des prestations mensongère",
@@ -35845,7 +35868,7 @@
                   "title": "Autre"
                 }
               ],
-              "id": "5.5.5"
+              "id": "5.5.4"
             },
             {
               "title": "Le personnel n'est pas aimable",
@@ -35863,7 +35886,7 @@
                 ],
                 "outOfScope": true
               },
-              "id": "5.5.6"
+              "id": "5.5.5"
             },
             {
               "title": "Autre",
@@ -35873,7 +35896,7 @@
               "tags": [
                 "LitigeContractuel"
               ],
-              "id": "5.5.7"
+              "id": "5.5.6"
             }
           ],
           "id": "5.5"
@@ -35890,7 +35913,7 @@
               "subcategories": [
                 {
                   "title": "Les tarifs ne sont pas communiqués clairement",
-                  "example": "Exemple : les prix des options ne sont pas dans le contrat",
+                  "example": "Exemple : les prix des options ne sont pas dans le contrat",
                   "reponseconsoCode": [
                     "411",
                     "212"
@@ -35937,14 +35960,14 @@
             },
             {
               "title": "Contrat",
-              "example": "Exemple : je veux résilier le contrat, les activités ne correspondent pas à mon contrat",
+              "example": "Exemple : je veux résilier le contrat, les activités ne correspondent pas à mon contrat",
               "reponseconsoCode": [
                 "210"
               ],
               "subcategories": [
                 {
                   "title": "Le contrat n'est pas respecté",
-                  "example": "Exemple : le contrat prévoit des fruits tous les jours et ce n'est pas le cas",
+                  "example": "Exemple : le contrat prévoit des fruits tous les jours et ce n'est pas le cas",
                   "id": "5.6.2.1"
                 },
                 {
@@ -35960,7 +35983,7 @@
                 },
                 {
                   "title": "Une clause dans le contrat est abusive, c'est-à-dire qu’elle désavantage fortement le résident",
-                  "example": "Exemple : imposer un préavis de 2 mois au résident pour résilier le contrat alors que la maison de retraite a un préavis d'1 mois seulement",
+                  "example": "Exemple : imposer un préavis de 2 mois au résident pour résilier le contrat alors que la maison de retraite a un préavis d'1 mois seulement",
                   "reponseconsoCode": [
                     "422",
                     "214"
@@ -35975,7 +35998,7 @@
             },
             {
               "title": "Emménagement / sortie de la chambre",
-              "example": "Exemple : état des lieux d'entrée ou de sortie, caution",
+              "example": "Exemple : état des lieux d'entrée ou de sortie, caution",
               "subcategories": [
                 {
                   "title": "Je n'ai pas eu d'état des lieux (entrée ou sortie)",
@@ -36002,7 +36025,7 @@
                   ],
                   "subcategories": [
                     {
-                      "Title": "Est-ce que la caution est plus élevée que le tarif mensuel de la chambre (ce tarif est indiqué dans votre contrat) ?",
+                      "Title": "Est-ce que la caution est plus élevée que le tarif mensuel de la chambre (ce tarif est indiqué dans votre contrat) ?",
                       "subcategories": [
                         {
                           "title": "Oui",
@@ -36028,7 +36051,7 @@
                       "title": "Je n'ai toujours pas récupéré la caution",
                       "subcategories": [
                         {
-                          "Title": "Quand avez-vous libéré la chambre ?",
+                          "Title": "Quand avez-vous libéré la chambre ?",
                           "subcategories": [
                             {
                               "title": "Il y a moins de 30 jours",
@@ -36036,7 +36059,7 @@
                               "id": "5.6.3.3.2.1.1"
                             },
                             {
-                              "title": "Soyez encore un peu patient :)",
+                              "title": "Soyez encore un peu patient :)",
                               "content": "La maison de retraite a 30 jours pour vous rendre la caution.",
                               "id": "5.6.3.3.2.1.2"
                             },
@@ -36066,7 +36089,7 @@
             },
             {
               "title": "Publicité mensongère",
-              "example": "Exemple : le site internet mentionne un grand parc alors que ce n'est pas le cas, la brochure parle des animations régulières alors qu'il y en a très peu",
+              "example": "Exemple : le site internet mentionne un grand parc alors que ce n'est pas le cas, la brochure parle des animations régulières alors qu'il y en a très peu",
               "reponseconsoCode": [
                 "210"
               ],
@@ -36100,7 +36123,7 @@
           "subcategories": [
             {
               "title": "Prix des prestations",
-              "example": "Exemple : le prix final ne correspond pas du devis, prix des soins de conservation",
+              "example": "Exemple : le prix final ne correspond pas du devis, prix des soins de conservation",
               "reponseconsoCode": [
                 "411",
                 "212"
@@ -36113,7 +36136,7 @@
             },
             {
               "title": "Moyens de paiement",
-              "example": "Exemple : carte bancaire refusée",
+              "example": "Exemple : carte bancaire refusée",
               "subcategories": [
                 {
                   "title": "Je n'ai pas pu payer avec des espèces",
@@ -36241,7 +36264,7 @@
             },
             {
               "title": "Publicité des prestations mensongère",
-              "example": "Exemple : composition d'un cercueil non conforme",
+              "example": "Exemple : composition d'un cercueil non conforme",
               "reponseconsoCode": [
                 "210"
               ],
@@ -36291,7 +36314,7 @@
         },
         {
           "title": "Autre type d'entreprise de service",
-          "example": "Exemple : déménageur, agence de rencontre. Pour la livraison de repas à domicile, choisir la catégorie Café / Restaurant",
+          "example": "Exemple : déménageur, agence de rencontre. Pour la livraison de repas à domicile, choisir la catégorie Café / Restaurant",
           "subcategories": [
             {
               "title": "Déménageur",
