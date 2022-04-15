@@ -35240,38 +35240,39 @@
                   "ccrfCode": [
                     "21b"
                   ],
-                  "id": "5.3.4.1"
-                },
-                {
-                  "title": "Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs",
-                  "information": null,
-                  "id": "5.3.4.2"
-                },
-                {
-                  "title": "Les commerçants ont le droit de choisir leurs prix.",
-                  "content": "Les professionnels ont le droit de choisir leurs prix. <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation.",
-                  "outOfScope": true,
-                  "id": "5.3.4.3"
-                },
-                {
-                  "title": "Prix final non conforme au prix annoncé",
-                  "id": "5.3.4.4"
-                },
-                {
-                  "title": "Il manque des prix / les prix sont illisibles",
-                  "ccrfCode": [
-                    "163"
-                  ],
-                  "description": "Votre droit : tous les prix doivent être affichés.",
-                  "detailInputs": [
+                  "subcategories": [
                     {
-                      "label": "Veuillez préciser",
-                      "rank": 1,
-                      "type": "RADIO",
-                      "options": [
-                        "absence de Prix sur le devis",
-                        "Prix illisible",
-                        "Autre (à préciser)",
+                      "title": "Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs",
+                      "information": null,
+                      "id": "5.3.4.1.1"
+                    },
+                    {
+                      "title": "Les commerçants ont le droit de choisir leurs prix.",
+                      "content": "Les professionnels ont le droit de choisir leurs prix. <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation.",
+                      "outOfScope": true,
+                      "id": "5.3.4.1.2"
+                    },
+                    {
+                      "title": "Prix final non conforme au prix annoncé",
+                      "id": "5.3.4.1.3"
+                    },
+                    {
+                      "title": "Il manque des prix / les prix sont illisibles",
+                      "ccrfCode": [
+                        "163"
+                      ],
+                      "description": "Votre droit : tous les prix doivent être affichés.",
+                      "detailInputs": [
+                        {
+                          "label": "Veuillez préciser",
+                          "rank": 1,
+                          "type": "RADIO",
+                          "options": [
+                            "absence de Prix sur le devis",
+                            "Prix illisible",
+                            "Autre (à préciser)"
+                          ]
+                        },
                         {
                           "label": "Date du constat",
                           "rank": 2,
@@ -35283,10 +35284,11 @@
                           "rank": 3,
                           "type": "TEXTAREA"
                         }
-                      ]
+                      ],
+                      "id": "5.3.4.1.4"
                     }
                   ],
-                  "id": "5.3.4.5"
+                  "id": "5.3.4.1"
                 },
                 {
                   "title": "Moyens de paiement",
@@ -35305,7 +35307,7 @@
                             "454"
                           ],
                           "description": "Votre droit : les billets et les pièces en euros doivent être obligatoirement acceptés en France.",
-                          "id": "5.3.4.6.1.1"
+                          "id": "5.3.4.2.1.1"
                         },
                         {
                           "title": "Je n'avais pas la monnaie",
@@ -35313,7 +35315,7 @@
                             "content": "C'est à vous de faire l'appoint. Un commerçant a le droit refuser le paiement en espèces s'il ne dispose pas de suffisamment de monnaie.",
                             "outOfScope": true
                           },
-                          "id": "5.3.4.6.1.2"
+                          "id": "5.3.4.2.1.2"
                         },
                         {
                           "title": "Mes pièces / billets étaient en mauvais état",
@@ -35321,7 +35323,7 @@
                             "content": "Le paiement en pièces ou billets en mauvais état peut être refusé. <br /> \"Vous pouvez échanger vos billets abîmés auprès d'agence bancaire comme la Banque de France.\"",
                             "outOfScope": true
                           },
-                          "id": "5.3.4.6.1.3"
+                          "id": "5.3.4.2.1.3"
                         },
                         {
                           "title": "Je souhaitais payer pour un montant de 1 000 euros (ou plus) ou donner plus de 50 pièces",
@@ -35329,17 +35331,17 @@
                             "content": "Il est interdit pour un commerçant d'accepter des paiements en espèces de plus de 1 000 euros. Vous devez trouver un autre moyen de paiement. <br/> Un commerçant peut également refuser un paiement en espèces si celui-ci est composé de plus de 50 pièces.",
                             "outOfScope": true
                           },
-                          "id": "5.3.4.6.1.4"
+                          "id": "5.3.4.2.1.4"
                         },
                         {
                           "title": "Autre raison",
                           "reponseconsoCode": [
                             "454"
                           ],
-                          "id": "5.3.4.6.1.5"
+                          "id": "5.3.4.2.1.5"
                         }
                       ],
-                      "id": "5.3.4.6.1"
+                      "id": "5.3.4.2.1"
                     },
                     {
                       "title": "Je n'ai pas pu payer par carte bancaire ou par chèque",
@@ -35357,17 +35359,17 @@
                                 "content": "Le commerçant a le droit d''exiger un minimum d''achat pour les paiements par carte bancaire ou par chèque. <br/> Ce minimum d''achat doit être indiqué très visiblement. Avec un affichage à l''entrée ou à la caisse par exemple. <br/> Si le prix n''atteint pas le minimum d''achat, vous devez trouver un autre moyen de paiement. <br/> Vous pouvez également directement expliquer au commerçant pourquoi ce minimum d''achat ne vous arrange pas.",
                                 "outOfScope": true
                               },
-                              "id": "5.3.4.6.2.1.1"
+                              "id": "5.3.4.2.2.1.1"
                             },
                             {
                               "title": "Non",
                               "reponseconsoCode": [
                                 "454"
                               ],
-                              "id": "5.3.4.6.2.1.2"
+                              "id": "5.3.4.2.2.1.2"
                             }
                           ],
-                          "id": "5.3.4.6.2.1"
+                          "id": "5.3.4.2.2.1"
                         },
                         {
                           "title": "Les cartes bleues ou les chèques sont systématiquement refusés",
@@ -35380,17 +35382,17 @@
                                 "content": "Le commerçant a le droit de refuser les chèques ou la carte bancaire. <br/> Il doit l''indiquer très visiblement au consommateur. Avec un affichage à l''entrée ou à la caisse par exemple.",
                                 "outOfScope": true
                               },
-                              "id": "5.3.4.6.2.2.1"
+                              "id": "5.3.4.2.2.2.1"
                             },
                             {
                               "title": "Non",
                               "reponseconsoCode": [
                                 "454"
                               ],
-                              "id": "5.3.4.6.2.2.2"
+                              "id": "5.3.4.2.2.2.2"
                             }
                           ],
-                          "id": "5.3.4.6.2.2"
+                          "id": "5.3.4.2.2.2"
                         },
                         {
                           "title": "Autre raison",
@@ -35398,20 +35400,20 @@
                           "reponseconsoCode": [
                             "454"
                           ],
-                          "id": "5.3.4.6.2.3"
+                          "id": "5.3.4.2.2.3"
                         }
                       ],
-                      "id": "5.3.4.6.2"
+                      "id": "5.3.4.2.2"
                     },
                     {
                       "title": "Autre problème pour payer",
                       "reponseconsoCode": [
                         "454"
                       ],
-                      "id": "5.3.4.6.3"
+                      "id": "5.3.4.2.3"
                     }
                   ],
-                  "id": "5.3.4.6"
+                  "id": "5.3.4.2"
                 },
                 {
                   "title": "Publicité des prestations mensongère",
@@ -35421,14 +35423,14 @@
                   "tags": [
                     "LitigeContractuel"
                   ],
-                  "id": "5.3.4.7"
+                  "id": "5.3.4.3"
                 },
                 {
                   "title": "Le personnel ne dispose pas des diplômes requis",
                   "ccrfCode": [
                     "23F"
                   ],
-                  "id": "5.3.4.8"
+                  "id": "5.3.4.4"
                 },
                 {
                   "title": "Problème d'hygiène",
@@ -35448,7 +35450,7 @@
                           }
                         ]
                       },
-                      "id": "5.3.4.9.1"
+                      "id": "5.3.4.5.1"
                     },
                     {
                       "title": "Le personnel n'est pas aimable",
@@ -35466,17 +35468,17 @@
                         ],
                         "outOfScope": true
                       },
-                      "id": "5.3.4.9.2"
+                      "id": "5.3.4.5.2"
                     },
                     {
                       "title": "Autre",
                       "tags": [
                         "LitigeContractuel"
                       ],
-                      "id": "5.3.4.9.3"
+                      "id": "5.3.4.5.3"
                     }
                   ],
-                  "id": "5.3.4.9"
+                  "id": "5.3.4.5"
                 }
               ],
               "id": "5.3.4"
