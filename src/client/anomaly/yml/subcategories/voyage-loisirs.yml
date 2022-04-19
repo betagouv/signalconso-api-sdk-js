@@ -5,6 +5,7 @@
       example: Les taxis sont reconnaissables avec l'enseigne lumineuse sur le toit. Les voitures qui n'ont pas cette enseigne ne sont pas des "vrais" taxis.
       ccrfCode:
         - '23f'
+        - '164'
       subcategories:
         - title: Refus de faire la course
           example: "Exemple : le taxi refuse de vous prendre car ce n'est pas assez loin"
@@ -26,7 +27,6 @@
           example: Une affiche avec les prix et les suppléments doit être visible dans la voiture.
           ccrfCode:
             - '21b'
-            - '164'
           reponseconsoCode:
             - '212'
           tags:
@@ -47,8 +47,6 @@
           tags:
             - ReponseConso
         - title: Le prix payé ne me convient pas
-          ccrfCode:
-            - '164'
           reponseconsoCode:
             - '164'
           tags:
