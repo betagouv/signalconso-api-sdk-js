@@ -35243,18 +35243,16 @@
                   "subcategories": [
                     {
                       "title": "Prix exagéré / élevé / Les prix sont plus élevés qu'ailleurs",
-                      "information": null,
+                      "information": {
+                        "title": "Les commerçants ont le droit de choisir leurs prix.",
+                        "outOfScope": true,
+                        "content": "Les professionnels ont le droit de choisir leurs prix. <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation."
+                      },
                       "id": "5.3.4.1.1"
                     },
                     {
-                      "title": "Les commerçants ont le droit de choisir leurs prix.",
-                      "content": "Les professionnels ont le droit de choisir leurs prix. <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter, de commander ou avant la prestation.",
-                      "outOfScope": true,
-                      "id": "5.3.4.1.2"
-                    },
-                    {
                       "title": "Prix final non conforme au prix annoncé",
-                      "id": "5.3.4.1.3"
+                      "id": "5.3.4.1.2"
                     },
                     {
                       "title": "Il manque des prix / les prix sont illisibles",
@@ -35285,7 +35283,7 @@
                           "type": "TEXTAREA"
                         }
                       ],
-                      "id": "5.3.4.1.4"
+                      "id": "5.3.4.1.3"
                     }
                   ],
                   "id": "5.3.4.1"
