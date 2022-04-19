@@ -3,11 +3,15 @@
     - title: Taxi
       companyKind: SIRET
       example: Les taxis sont reconnaissables avec l'enseigne lumineuse sur le toit. Les voitures qui n'ont pas cette enseigne ne sont pas des "vrais" taxis.
+      ccrfCode:
+        - '23f'
       subcategories:
         - title: Refus de faire la course
           example: "Exemple : le taxi refuse de vous prendre car ce n'est pas assez loin"
           tags:
             - LitigeContractuel
+          ccrfCode:
+            - '23e'
           reponseconsoCode:
             - '232'
           subcategoriesTitle: Pour quelle raison le chauffeur a-t-il refusé de vous prendre ?
@@ -20,22 +24,31 @@
             - title: Autre
         - title: Les prix ne sont pas affichés dans la voiture
           example: Une affiche avec les prix et les suppléments doit être visible dans la voiture.
+          ccrfCode:
+            - '21b'
+            - '164'
           reponseconsoCode:
             - '212'
           tags:
             - ReponseConso
         - title: Refus de prendre votre carte bancaire
           example: Tous les taxis ont obligation de prendre la carte bancaire quel que soit le montant.
+          ccrfCode:
+            - '21a'
           reponseconsoCode:
             - '454'
           tags:
             - ReponseConso
         - title: Refus de me donner une note (reçu, facture)
+          ccrfCode:
+            - '213'
           reponseconsoCode:
             - '213'
           tags:
             - ReponseConso
         - title: Le prix payé ne me convient pas
+          ccrfCode:
+            - '164'
           reponseconsoCode:
             - '164'
           tags:
@@ -226,6 +239,9 @@
         - LitigeContractuel
       subcategories:
         - title: Une remise ou une offre promotionnelle qui n'est pas appliquée ou qui est mensongère
+          ccrfCode:
+            - '23b'
+            - '164'
           reponseconsoCode:
             - '451'
             - '210'
@@ -250,6 +266,9 @@
               type: TEXTAREA
           fileLabel: Merci de joindre tout document pouvant appuyer votre signalement (photographie de la publicité, reçu de votre course...)
         - title: Le prix payé n'est pas celui annoncé au départ
+          ccrfCode:
+            - '23b'
+            - '164'
           reponseconsoCode:
             - '451'
             - '210'
@@ -292,6 +311,8 @@
     - title: Prix
       subcategories:
         - title: Prix exagéré
+          ccrfCode:
+            - '21b'
           reponseconsoCode:
             - '622'
           information:
@@ -300,12 +321,16 @@
               <br />Par contre, les prix doivent être clairement indiqués pour que vous soyez au courant avant d'acheter ou de commander.
             outOfScope: true
         - title: Prix non affiché
+          ccrfCode:
+            - '21b'
           reponseconsoCode:
             - '212'
           tags:
             - ReponseConso
           example: 'Exemple: sur un site, un catalogue'
         - title: Prix final non-conforme au prix annoncé
+          ccrfCode:
+            - '23b'
           reponseconsoCode:
             - '210'
           example: 'Exemple : fausse réduction, supplément imprévu'
@@ -336,9 +361,14 @@
         - LitigeContractuel
       subcategories:
         - title: Absence d'information
+          ccrfCode:
+            - '21b'
+            - '21a'
           reponseconsoCode:
             - '411'
         - title: Information mensongère ou trompeuse
+          ccrfCode:
+            - '23b'
           reponseconsoCode:
             - '210'
           detailInputs:
@@ -375,6 +405,8 @@
       subcategories:
         - title: L'hébergement ne correspond pas à ce qui m'a été vendu
           example: "Exemple : j'avais demandé une chambre avec vue sur la mer et on m'a attribué une vue côté parking, le petit-déjeuner était compris dans le prix de la nuitée or un supplément m'a été demandé"
+          ccrfCode:
+            - '23b'
           reponseconsoCode:
             - '210'
           tags:
@@ -393,6 +425,8 @@
           information: !!import/single ../common/info/accessibilite.yml
         - title: Autre
     - title: Annulation / remboursement
+      ccrfCode:
+        - '21a'
       reponseconsoCode:
         - '453'
         - '481'
@@ -418,13 +452,18 @@
       subcategories:
         - title: Produit alimentaire
           subcategories: !!import/single ../common/produit-alimentaire.yml
+          ccrfCode:
+            - '311'
+            - '308'
           tags:
             - ProduitAlimentaire
         - title: Jouet, puériculture, matériel scolaire
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
           ccrfCode: 
-            - '321'
+            - '309'
+            - '34k'
+            - '34j'
           tags:
             - ProduitIndustriel
         - title: Cosmétique, produit d'hygiène, produit de tatouage
@@ -438,23 +477,30 @@
         - title: Vêtement, textile, sac à main, bijou
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
+          ccrfCode:
+            - '332'
+            - '333'
           tags:
             - ProduitIndustriel
         - title: Équipement de protection
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
           ccrfCode: 
-            - '34A'
+            - '34e'
           tags:
             - ProduitIndustriel
         - title: Feu d'artifice
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml          
+          ccrfCode:
+            - '332'
           tags:
             - ProduitIndustriel
         - title: Meuble
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml          
+          ccrfCode:
+            - '332'
           tags:
             - ProduitIndustriel
         - title: Appareil électrique
@@ -467,6 +513,8 @@
         - title: Autre
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml          
+          ccrfCode:
+            - '332'
           tags:
             - ProduitIndustriel
     - title: Autre
@@ -504,6 +552,8 @@
 - title: Agence de voyage
   subcategories:
     - title: Prix
+      ccrfCode:
+        - '21b'
       subcategories:
         - title: Prix exagéré
           information:
@@ -519,6 +569,8 @@
             - ReponseConso
         - title: Prix final non-conforme au prix annoncé
           example: 'Exemple : fausse réduction, suppléments non prévus'
+          ccrfCode:
+            - '23b'
           reponseconsoCode:
             - '212'
             - '210'
@@ -530,6 +582,8 @@
             - LitigeContractuel
     - title: Publicité
       example: "Exemple : publicité trompeuse, absence d'information"
+      ccrfCode:
+        - '23b'
       tags:
         - ReponseConso
         - LitigeContractuel
@@ -568,6 +622,8 @@
               type: TIMESLOT
               optionnal: true
     - title: Prestation
+      ccrfCode:
+        - '23b'
       tags:
         - LitigeContractuel
       subcategories:
@@ -579,6 +635,9 @@
           example: 'Exemple : une excursion était prévue dans le voyage et elle a été annulée sans motifs'
         - title: Autre
     - title: Annulation / remboursement
+      ccrfCode:
+        - '21a'
+        - '21c
       reponseconsoCode:
         - '481'
         - '4241'
@@ -586,6 +645,9 @@
       tags:
         - LitigeContractuel
     - title: Assurance
+      ccrfCode:
+        - '21a'
+        - '21c'
       reponseconsoCode:
         - '481'
         - '4241'
@@ -605,12 +667,16 @@
             - ReponseConso
 - title: Compagnie aérienne
   example: "Exemple : Vol annuel, vol retardé, déclassement, refus d'embarquement"
+  ccrfCode:
+    - '21c'
   tags:
     - CompagnieAerienne
 - title: Transports en commun
   example: 'Exemple : avion, train, bateau'
   subcategories:
     - title: Prix
+      ccrfCode:
+        - '21b'
       subcategories:
         - title: Prix exagéré
           reponseconsoCode:
@@ -643,11 +709,15 @@
         - LitigeContractuel
       subcategories:
         - title: Absence d'information
+          ccrfCode:
+            - '21a'
           reponseconsoCode:
             - '411'
           tags:
             - ReponseConso
         - title: Information mensongère ou trompeuse
+          ccrfCode:
+            - '23b'
           reponseconsoCode:
             - '210'
           detailInputs:
@@ -678,6 +748,8 @@
               type: TIMESLOT
               optionnal: true
     - title: Retard / Annulation / Remboursement
+      ccrfCode:
+        - '21c'
       reponseconsoCode:
         - '481'
         - '424'
@@ -689,14 +761,22 @@
         - LitigeContractuel
       subcategories:
         - title: Annulation
+          ccrfCode:
+            - '21c'
+            - '21b'
           reponseconsoCode:
             - '481'
             - '424'
             - '4241'
         - title: Bagage
+          ccrfCode:
+            - '21c'
+            - '21b'
         - title: Autre
     - title: Abonnement de transport
       example: 'Exemple : TGV max, pass Navigo'
+      ccrfCode:
+        - '21c'
       tags:
         - LitigeContractuel
     - title: Autre
@@ -726,6 +806,8 @@
   example: 'Exemple : piscine, salle de sport'
   subcategories:
     - title: Prix
+      ccrfCode:
+        - '21b'
       subcategories:
         - title: Prix exagéré
           reponseconsoCode:
@@ -759,9 +841,13 @@
         - LitigeContractuel
       subcategories:
         - title: Absence d'information
+          ccrfCode:
+            - '21a'
           reponseconsoCode:
             - '411'
         - title: Information mensongère ou trompeuse
+          ccrfCode:
+            - '23b'
           reponseconsoCode:
             - '210'
           detailInputs:
@@ -793,6 +879,8 @@
               optionnal: true
     - title: Contrat et abonnement
       example: 'Exemple : contrat non respecté, clause abusive'
+      ccrfCode:
+        - '21c'
       tags:
         - LitigeContractuel
       subcategories:
@@ -810,24 +898,36 @@
         - ProduitDangereux
       subcategories:
         - title: Jouet
+          ccrfcode:
+            - '34j'
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Cosmétique, produit d'hygiène
+          ccrfCode:
+            - '34a'
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Vêtement, textile
+          ccrfCode:
+              - '332'
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Équipement de protection
+          ccrfCode:
+            - '34e'
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Appareil électrique
+          ccrfCode:
+            - '34f'
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Autre
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
     - title: Autre
+      ccrfCode:
+        - '332'
       tags:
         - LitigeContractuel
       subcategories:
@@ -849,6 +949,8 @@
   example: 'Exemple : musée, cinéma, concert'
   subcategories:
     - title: Prix
+      ccrfCode:
+        - '21b'
       subcategories:
         - title: Prix exagéré
           reponseconsoCode:
@@ -877,6 +979,8 @@
             - LitigeContractuel
     - title: Publicité
       example: "Exemple : publicité mensongère, absence d'information"
+      ccrfCode:
+        - '23b'
       tags:
         - ReponseConso
         - LitigeContractuel
@@ -915,6 +1019,8 @@
               type: TIMESLOT
               optionnal: true
     - title: Remboursement / annulation
+      ccrfCode:
+        - '21c'
       reponseconsoCode:
         - '424'
         - '4241'
