@@ -1,4 +1,9 @@
-import {ApiClientApi, CountByDate, CurveStatsParams, ReportResponseStatsParams} from '../../index'
+import {
+  ApiClientApi,
+  CountByDate,
+  CurveStatsParams,
+  ReportResponseStatsParams, ReportStatusProDistribution,
+} from '../../index'
 import {Id} from '../../model'
 import {ReportResponseReviews, ReportStatusDistribution, ReportTagsDistribution} from './Stats'
 import {duration, Duration} from '@alexandreannic/ts-utils/lib/common'
@@ -12,6 +17,14 @@ export class StatsClient {
 
   readonly getStatus = (companyId: Id) => {
     return this.client.get<ReportStatusDistribution>(`/stats/reports/status`, {qs: {companyId}})
+  }
+
+  readonly getProStatus = (companyId: Id):  Promise<ReportStatusProDistribution> => {
+    return this.client.get<ReportStatusDistribution>(`/stats/reports/status`, {qs: {companyId}}).then(_ => <ReportStatusProDistribution>({
+      ARepondre: _.Transmis,
+      NonConsulte: _.TraitementEnCours,
+      Cloture: _.PromesseAction + _.Infonde + _.NonConsulte + _.ConsulteIgnore + _.MalAttribue
+    }) )
   }
 
   readonly getResponseReviews = (companyId: Id) => {

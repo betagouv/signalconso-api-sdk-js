@@ -41690,12 +41690,19 @@
               "title": "Taxi",
               "companyKind": "SIRET",
               "example": "Les taxis sont reconnaissables avec l'enseigne lumineuse sur le toit. Les voitures qui n'ont pas cette enseigne ne sont pas des \"vrais\" taxis.",
+              "ccrfCode": [
+                "23f",
+                "164"
+              ],
               "subcategories": [
                 {
                   "title": "Refus de faire la course",
                   "example": "Exemple : le taxi refuse de vous prendre car ce n'est pas assez loin",
                   "tags": [
                     "LitigeContractuel"
+                  ],
+                  "ccrfCode": [
+                    "23e"
                   ],
                   "reponseconsoCode": [
                     "232"
@@ -41732,6 +41739,9 @@
                 {
                   "title": "Les prix ne sont pas affichés dans la voiture",
                   "example": "Une affiche avec les prix et les suppléments doit être visible dans la voiture.",
+                  "ccrfCode": [
+                    "21b"
+                  ],
                   "reponseconsoCode": [
                     "212"
                   ],
@@ -41743,6 +41753,9 @@
                 {
                   "title": "Refus de prendre votre carte bancaire",
                   "example": "Tous les taxis ont obligation de prendre la carte bancaire quel que soit le montant.",
+                  "ccrfCode": [
+                    "21a"
+                  ],
                   "reponseconsoCode": [
                     "454"
                   ],
@@ -41753,6 +41766,9 @@
                 },
                 {
                   "title": "Refus de me donner une note (reçu, facture)",
+                  "ccrfCode": [
+                    "213"
+                  ],
                   "reponseconsoCode": [
                     "213"
                   ],
@@ -42109,6 +42125,10 @@
               "subcategories": [
                 {
                   "title": "Une remise ou une offre promotionnelle qui n'est pas appliquée ou qui est mensongère",
+                  "ccrfCode": [
+                    "23b",
+                    "164"
+                  ],
                   "reponseconsoCode": [
                     "451",
                     "210"
@@ -42147,6 +42167,10 @@
                 },
                 {
                   "title": "Le prix payé n'est pas celui annoncé au départ",
+                  "ccrfCode": [
+                    "23b",
+                    "164"
+                  ],
                   "reponseconsoCode": [
                     "451",
                     "210"
@@ -42240,6 +42264,9 @@
               "subcategories": [
                 {
                   "title": "Prix exagéré",
+                  "ccrfCode": [
+                    "21b"
+                  ],
                   "reponseconsoCode": [
                     "622"
                   ],
@@ -42252,6 +42279,9 @@
                 },
                 {
                   "title": "Prix non affiché",
+                  "ccrfCode": [
+                    "21b"
+                  ],
                   "reponseconsoCode": [
                     "212"
                   ],
@@ -42263,6 +42293,9 @@
                 },
                 {
                   "title": "Prix final non-conforme au prix annoncé",
+                  "ccrfCode": [
+                    "23b"
+                  ],
                   "reponseconsoCode": [
                     "210"
                   ],
@@ -42314,6 +42347,10 @@
               "subcategories": [
                 {
                   "title": "Absence d'information",
+                  "ccrfCode": [
+                    "21b",
+                    "21a"
+                  ],
                   "reponseconsoCode": [
                     "411"
                   ],
@@ -42321,6 +42358,9 @@
                 },
                 {
                   "title": "Information mensongère ou trompeuse",
+                  "ccrfCode": [
+                    "23b"
+                  ],
                   "reponseconsoCode": [
                     "210"
                   ],
@@ -42379,6 +42419,9 @@
                 {
                   "title": "L'hébergement ne correspond pas à ce qui m'a été vendu",
                   "example": "Exemple : j'avais demandé une chambre avec vue sur la mer et on m'a attribué une vue côté parking, le petit-déjeuner était compris dans le prix de la nuitée or un supplément m'a été demandé",
+                  "ccrfCode": [
+                    "23b"
+                  ],
                   "reponseconsoCode": [
                     "210"
                   ],
@@ -42422,6 +42465,9 @@
             },
             {
               "title": "Annulation / remboursement",
+              "ccrfCode": [
+                "21a"
+              ],
               "reponseconsoCode": [
                 "453",
                 "481",
@@ -47098,6 +47144,10 @@
                       "id": "10.2.5.1.10"
                     }
                   ],
+                  "ccrfCode": [
+                    "311",
+                    "308"
+                  ],
                   "tags": [
                     "ProduitAlimentaire"
                   ],
@@ -47470,7 +47520,9 @@
                     }
                   ],
                   "ccrfCode": [
-                    "321"
+                    "309",
+                    "34k",
+                    "34j"
                   ],
                   "tags": [
                     "ProduitIndustriel"
@@ -48218,6 +48270,10 @@
                       "id": "10.2.5.4.6"
                     }
                   ],
+                  "ccrfCode": [
+                    "332",
+                    "333"
+                  ],
                   "tags": [
                     "ProduitIndustriel"
                   ],
@@ -48590,7 +48646,7 @@
                     }
                   ],
                   "ccrfCode": [
-                    "34A"
+                    "34e"
                   ],
                   "tags": [
                     "ProduitIndustriel"
@@ -48963,6 +49019,9 @@
                       "id": "10.2.5.6.6"
                     }
                   ],
+                  "ccrfCode": [
+                    "332"
+                  ],
                   "tags": [
                     "ProduitIndustriel"
                   ],
@@ -49333,6 +49392,9 @@
                       "fileLabel": "Photos du produit / de la notice / du ticket / de la facture / de l'accident",
                       "id": "10.2.5.7.6"
                     }
+                  ],
+                  "ccrfCode": [
+                    "332"
                   ],
                   "tags": [
                     "ProduitIndustriel"
@@ -50079,6 +50141,9 @@
                       "id": "10.2.5.9.6"
                     }
                   ],
+                  "ccrfCode": [
+                    "332"
+                  ],
                   "tags": [
                     "ProduitIndustriel"
                   ],
@@ -50174,6 +50239,9 @@
           "subcategories": [
             {
               "title": "Prix",
+              "ccrfCode": [
+                "21b"
+              ],
               "subcategories": [
                 {
                   "title": "Prix exagéré",
@@ -50198,6 +50266,9 @@
                 {
                   "title": "Prix final non-conforme au prix annoncé",
                   "example": "Exemple : fausse réduction, suppléments non prévus",
+                  "ccrfCode": [
+                    "23b"
+                  ],
                   "reponseconsoCode": [
                     "212",
                     "210"
@@ -50221,6 +50292,9 @@
             {
               "title": "Publicité",
               "example": "Exemple : publicité trompeuse, absence d'information",
+              "ccrfCode": [
+                "23b"
+              ],
               "tags": [
                 "ReponseConso",
                 "LitigeContractuel"
@@ -50285,6 +50359,9 @@
             },
             {
               "title": "Prestation",
+              "ccrfCode": [
+                "23b"
+              ],
               "tags": [
                 "LitigeContractuel"
               ],
@@ -50309,6 +50386,10 @@
             },
             {
               "title": "Annulation / remboursement",
+              "ccrfCode": [
+                "21a",
+                "21c"
+              ],
               "reponseconsoCode": [
                 "481",
                 "4241",
@@ -50321,6 +50402,10 @@
             },
             {
               "title": "Assurance",
+              "ccrfCode": [
+                "21a",
+                "21c"
+              ],
               "reponseconsoCode": [
                 "481",
                 "4241",
@@ -50379,6 +50464,9 @@
         {
           "title": "Compagnie aérienne",
           "example": "Exemple : Vol annuel, vol retardé, déclassement, refus d'embarquement",
+          "ccrfCode": [
+            "21c"
+          ],
           "tags": [
             "CompagnieAerienne"
           ],
@@ -50390,6 +50478,9 @@
           "subcategories": [
             {
               "title": "Prix",
+              "ccrfCode": [
+                "21b"
+              ],
               "subcategories": [
                 {
                   "title": "Prix exagéré",
@@ -50446,6 +50537,9 @@
               "subcategories": [
                 {
                   "title": "Absence d'information",
+                  "ccrfCode": [
+                    "21a"
+                  ],
                   "reponseconsoCode": [
                     "411"
                   ],
@@ -50456,6 +50550,9 @@
                 },
                 {
                   "title": "Information mensongère ou trompeuse",
+                  "ccrfCode": [
+                    "23b"
+                  ],
                   "reponseconsoCode": [
                     "210"
                   ],
@@ -50506,6 +50603,9 @@
             },
             {
               "title": "Retard / Annulation / Remboursement",
+              "ccrfCode": [
+                "21c"
+              ],
               "reponseconsoCode": [
                 "481",
                 "424",
@@ -50524,6 +50624,10 @@
               "subcategories": [
                 {
                   "title": "Annulation",
+                  "ccrfCode": [
+                    "21c",
+                    "21b"
+                  ],
                   "reponseconsoCode": [
                     "481",
                     "424",
@@ -50533,6 +50637,10 @@
                 },
                 {
                   "title": "Bagage",
+                  "ccrfCode": [
+                    "21c",
+                    "21b"
+                  ],
                   "id": "10.5.4.2"
                 },
                 {
@@ -50545,6 +50653,9 @@
             {
               "title": "Abonnement de transport",
               "example": "Exemple : TGV max, pass Navigo",
+              "ccrfCode": [
+                "21c"
+              ],
               "tags": [
                 "LitigeContractuel"
               ],
@@ -50630,6 +50741,9 @@
           "subcategories": [
             {
               "title": "Prix",
+              "ccrfCode": [
+                "21b"
+              ],
               "subcategories": [
                 {
                   "title": "Prix exagéré",
@@ -50687,6 +50801,9 @@
               "subcategories": [
                 {
                   "title": "Absence d'information",
+                  "ccrfCode": [
+                    "21a"
+                  ],
                   "reponseconsoCode": [
                     "411"
                   ],
@@ -50694,6 +50811,9 @@
                 },
                 {
                   "title": "Information mensongère ou trompeuse",
+                  "ccrfCode": [
+                    "23b"
+                  ],
                   "reponseconsoCode": [
                     "210"
                   ],
@@ -50745,6 +50865,9 @@
             {
               "title": "Contrat et abonnement",
               "example": "Exemple : contrat non respecté, clause abusive",
+              "ccrfCode": [
+                "21c"
+              ],
               "tags": [
                 "LitigeContractuel"
               ],
@@ -50778,6 +50901,9 @@
               "subcategories": [
                 {
                   "title": "Jouet",
+                  "ccrfcode": [
+                    "34j"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -51146,6 +51272,9 @@
                 },
                 {
                   "title": "Cosmétique, produit d'hygiène",
+                  "ccrfCode": [
+                    "34a"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -51514,6 +51643,9 @@
                 },
                 {
                   "title": "Vêtement, textile",
+                  "ccrfCode": [
+                    "332"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -51882,6 +52014,9 @@
                 },
                 {
                   "title": "Équipement de protection",
+                  "ccrfCode": [
+                    "34e"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -52250,6 +52385,9 @@
                 },
                 {
                   "title": "Appareil électrique",
+                  "ccrfCode": [
+                    "34f"
+                  ],
                   "subcategoriesTitle": "Quel est le risque&#160;?",
                   "subcategories": [
                     {
@@ -52989,6 +53127,9 @@
             },
             {
               "title": "Autre",
+              "ccrfCode": [
+                "332"
+              ],
               "tags": [
                 "LitigeContractuel"
               ],
@@ -53056,6 +53197,9 @@
           "subcategories": [
             {
               "title": "Prix",
+              "ccrfCode": [
+                "21b"
+              ],
               "subcategories": [
                 {
                   "title": "Prix exagéré",
@@ -53106,6 +53250,9 @@
             {
               "title": "Publicité",
               "example": "Exemple : publicité mensongère, absence d'information",
+              "ccrfCode": [
+                "23b"
+              ],
               "tags": [
                 "ReponseConso",
                 "LitigeContractuel"
@@ -53170,6 +53317,9 @@
             },
             {
               "title": "Remboursement / annulation",
+              "ccrfCode": [
+                "21c"
+              ],
               "reponseconsoCode": [
                 "424",
                 "4241",

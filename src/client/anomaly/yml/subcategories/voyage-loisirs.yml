@@ -635,7 +635,7 @@
     - title: Annulation / remboursement
       ccrfCode:
         - '21a'
-        - '21c
+        - '21c'
       reponseconsoCode:
         - '481'
         - '4241'
