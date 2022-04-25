@@ -1,7 +1,7 @@
 import format from 'date-fns/format'
 
-export type Index<T> = {[key: string]: T}
-export type Shape<T extends object> = {[key in keyof T]: any}
+export type Index<T> = { [key: string]: T }
+export type Shape<T extends object> = { [key in keyof T]: any }
 
 export const dateToYYYYMMDD = (date?: Date): string | undefined => (date ? format(date, 'yyyy-MM-dd') : undefined)
 
@@ -17,7 +17,9 @@ export const isNotDefined = (value: any): value is undefined | null | '' => {
 
 export const isDefined = <T>(value: T | undefined | null | ''): value is T => !isNotDefined(value)
 
-export const cleanObject = <T extends {[key: string]: any}>(obj: T): Partial<T> => {
+export const toNumberOrDefault = (value: any, defaultValue: number): number => isNaN(value) || value == '' || value == null ? defaultValue : value
+
+export const cleanObject = <T extends { [key: string]: any }>(obj: T): Partial<T> => {
   const clone = {...obj}
   for (let k in clone) {
     const val = clone[k]
@@ -43,11 +45,11 @@ export const toQueryString = (obj: any): string => {
 
 export const directDownloadBlob =
   (fileName: string) =>
-  (blob: Blob): void => {
-    const url = window.URL.createObjectURL(new Blob([blob], {type: 'application/pdf'}))
-    const link = document.createElement('a')
-    link.href = url
-    link.setAttribute('download', fileName)
-    document.body.appendChild(link)
-    link.click()
-  }
+    (blob: Blob): void => {
+      const url = window.URL.createObjectURL(new Blob([blob], {type: 'application/pdf'}))
+      const link = document.createElement('a')
+      link.href = url
+      link.setAttribute('download', fileName)
+      document.body.appendChild(link)
+      link.click()
+    }
