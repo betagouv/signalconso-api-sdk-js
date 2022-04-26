@@ -35970,9 +35970,7 @@
               "reponseconsoCode": [
                 "4442"
               ],
-              "tags": [
-                "Internet"
-              ],
+              "companyKind": "WEBSITE",
               "id": "7.2.3"
             },
             {
@@ -36021,9 +36019,7 @@
                 "443",
                 "446"
               ],
-              "tags": [
-                "Internet"
-              ],
+              "companyKind": "WEBSITE",
               "id": "7.3.3"
             },
             {

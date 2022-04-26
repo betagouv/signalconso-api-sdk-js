@@ -219,8 +219,7 @@
     - title: Problème avec un site internet
       reponseconsoCode:
         - '4442'
-      tags:
-        - Internet
+      companyKind: WEBSITE
     - title: Autre
       reponseconsoCode:
         - '443'
@@ -247,8 +246,7 @@
       reponseconsoCode:
         - '443'
         - '446'
-      tags:
-        - Internet
+      companyKind: WEBSITE
     - title: Autre
   reponseconsoCode:
     - '442'
