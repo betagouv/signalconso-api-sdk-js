@@ -8,6 +8,10 @@ export class CompanyAccessClient {
     return this.client.get<CompanyAccess[]>(`/accesses/${siret}`)
   }
 
+  readonly count = (siret: string) => {
+    return this.client.get<number>(`/accesses/${siret}/count`)
+  }
+
   readonly update = (siret: string, userId: string, level: CompanyAccessLevel) => {
     return this.client.put<CompanyAccess>(`/accesses/${siret}/${userId}`, {body: {level}}).then(_ => ({..._, level: level}))
   }
