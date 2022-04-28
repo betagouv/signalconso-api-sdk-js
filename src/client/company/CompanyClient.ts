@@ -21,6 +21,13 @@ export class CompanyClient {
     }))
   }
 
+  readonly byId = (id: Id): Promise<Paginate<CompanyWithReportsCount>> => {
+    return this.client.get<Paginate<CompanyWithReportsCount>>(`/companies/${id}`).then(res => ({
+      ...res,
+      entities: res.entities.map(CompanyClient.mapCompany),
+    }))
+  }
+
   readonly updateAddress = (id: Id, update: CompanyUpdate) => {
     return this.client.put<Company>(`/companies/${id}/address`, {body: update})
   }
