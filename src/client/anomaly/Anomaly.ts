@@ -1,7 +1,6 @@
 import {Enum} from "@alexandreannic/ts-utils";
 
 export interface SubcategoryBase extends Category {
-    title: string
     description?: string
     tags?: ReportTag[]
     example?: string
@@ -51,6 +50,7 @@ export enum CompanyKinds {
 
 export interface Category {
     id: string
+    title: string
     subcategoriesTitle?: string
     subcategories?: Subcategory[]
     companyKind?: CompanyKinds

@@ -2,6 +2,7 @@
   "list": [
     {
       "category": "Retrait-Rappel pécifique",
+      "title": "Retrait-Rappel spécifique",
       "categoryId": "RPL",
       "path": "retrait-rappel",
       "description": "Retrait-Rappel spécifique.",
@@ -104,6 +105,7 @@
     },
     {
       "category": "COVID-19 (coronavirus)",
+      "title": "COVID-19 (coronavirus)",
       "categoryId": "C19",
       "path": "coronavirus",
       "description": "gel hydroalcoolique, masque, arnaque liée au COVID-19, distanciation physique...",
@@ -248,6 +250,7 @@
     },
     {
       "category": "Café / Restaurant",
+      "title": "Café / Restaurant",
       "categoryId": "CR",
       "path": "cafe-restaurant",
       "description": "bar, cafétéria, food truck, application pour se faire livrer un repas...",
@@ -1337,6 +1340,7 @@
     },
     {
       "category": "Achat (Magasin ou Internet)",
+      "title": "Achat (Magasin ou Internet)",
       "categoryId": "MAG",
       "path": "achat-magasin",
       "description": "supermarché, boulangerie, magasin de jouet, achat en ligne...",
@@ -33945,6 +33949,7 @@
     },
     {
       "category": "Services aux particuliers",
+      "title": "Services aux particuliers",
       "categoryId": "SERV",
       "path": "services-aux-particuliers",
       "description": "coiffeur, pressing, aide à la personne, déménageur, formation, maison de retraite...",
@@ -34961,6 +34966,7 @@
     },
     {
       "category": "Eau / Gaz / Electricité",
+      "title": "Eau / Gaz / Electricité",
       "categoryId": "ELEC",
       "path": "eau-gaz-electricite",
       "description": "contrat et facture eau, gaz et électricité...",
@@ -35526,6 +35532,7 @@
     },
     {
       "category": "Téléphonie / Fournisseur d'accès internet / médias",
+      "title": "Téléphonie / Fournisseur d'accès internet / médias",
       "categoryId": "TEL",
       "path": "tel-internet-media",
       "description": "forfait internet, abonnement de musique ou de vidéo en ligne, téléphone...",
@@ -37170,6 +37177,7 @@
     },
     {
       "category": "Banque / Assurance / Mutuelle",
+      "title": "Banque / Assurance / Mutuelle",
       "categoryId": "BAQ",
       "path": "banque-assurance-mutuelle",
       "description": "banque en ligne, crédit, assurance auto...",
@@ -37432,6 +37440,7 @@
     },
     {
       "category": "Intoxication alimentaire",
+      "title": "Intoxication alimentaire",
       "categoryId": "INTOX",
       "path": "intoxication-alimentaire",
       "description": "Vous avez été malade (vomissement, diarrhée, maux de ventre) après avoir consommé un aliment.",
@@ -37686,6 +37695,7 @@
     },
     {
       "category": "Internet (hors achats)",
+      "title": "Internet (hors achats)",
       "categoryId": "INTERNET",
       "path": "internet",
       "description": "Influenceur, piratage de carte, escroquerie par email, site d'incitation à la haine...",
@@ -37901,6 +37911,7 @@
     },
     {
       "category": "Travaux / Rénovation",
+      "title": "Travaux / Rénovation",
       "categoryId": "TRAV",
       "path": "travaux-renovation",
       "description": "dépannage, plombier, rénovation énergétique, site de devis travaux...",
@@ -40260,6 +40271,7 @@
     },
     {
       "category": "Voyage / Loisirs",
+      "title": "Voyage / Loisirs",
       "categoryId": "VOY",
       "path": "voyage-loisirs",
       "description": "hôtel, billet d'avion, taxi, comparateur de prix, concert, salle de sport, jeux en ligne...",
@@ -52015,6 +52027,7 @@
     },
     {
       "category": "Immobilier",
+      "title": "Immobilier",
       "categoryId": "IMM",
       "path": "immobilier",
       "description": "location, agence immobiliere, syndicat de copropriété...",
@@ -52527,6 +52540,7 @@
     },
     {
       "category": "Secteur de la santé",
+      "title": "Secteur de la santé",
       "categoryId": "SANT",
       "path": "sante",
       "description": "dentiste, opticien, produits de pharmacie, clinique, site de téléconsultation...",
@@ -53730,6 +53744,7 @@
     },
     {
       "category": "Voiture / Véhicule / Vélo",
+      "title": "Voiture / Véhicule / Vélo",
       "categoryId": "VEH",
       "path": "voiture-vehicule",
       "description": "vente et réparation de voiture, location, auto-école, pneu, accessoire...",
@@ -55968,6 +55983,7 @@
     },
     {
       "category": "Animaux",
+      "title": "Animaux",
       "categoryId": "ANI",
       "path": "animaux",
       "description": "vétérinaire, aliment pour animaux, site internet de garde d'animaux...",
@@ -56038,6 +56054,7 @@
     },
     {
       "category": "Démarches administratives",
+      "title": "Démarches administratives",
       "categoryId": "ADM",
       "path": "demarches-administratives",
       "description": "absence d'information sur le médiateur, faux courrier administratif, achat d'acte de naissance...",
@@ -56143,6 +56160,7 @@
     },
     {
       "category": "Travail au noir",
+      "title": "Travail au noir",
       "categoryId": "TNOIR",
       "path": "travail-au-noir",
       "hidden": true,
@@ -56155,6 +56173,7 @@
     },
     {
       "category": "Démarchage abusif",
+      "title": "Démarchage abusif",
       "categoryId": "BTEL",
       "path": "bloctel",
       "description": "spams, appels indésirables malgré Bloctel",
