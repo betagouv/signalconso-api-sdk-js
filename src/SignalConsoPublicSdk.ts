@@ -4,6 +4,7 @@ import {PublicCompanyClient} from './client/company/PublicCompanyClient'
 import {PublicUserClient} from './client/user/PublicUserClient'
 import {PublicReportClient} from './client/report/PublicReportClient'
 import {PublicStatsClient} from './client/stats/PublicStatsClient'
+import {PublicConsumerEmailValidationClient} from './client/consumer-email-validation/PublicConsumerEmailValidationClient'
 
 export class SignalConsoPublicSdk {
   constructor(private client: ApiClientApi) {}
@@ -17,4 +18,5 @@ export class SignalConsoPublicSdk {
   readonly document = new FileClient(this.client)
   readonly anomaly = new AnomalyClient(this.client)
   readonly rating = new RatingClient(this.client)
+  readonly consumerEmail = new PublicConsumerEmailValidationClient(this.client)
 }

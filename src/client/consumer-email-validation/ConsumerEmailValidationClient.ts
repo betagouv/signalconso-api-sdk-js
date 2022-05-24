@@ -6,16 +6,8 @@ export class ConsumerEmailValidationClient {
   constructor(private client: ApiClientApi) {
   }
 
-  readonly check = (email: string) => {
-    return this.client.post<{valid: boolean}>('/email-validation/check', {body: {email}})
-  }
-
   readonly validate = (email: string) => {
     return this.client.post<ConsumerEmailResult>('/email-validation/validate', {body: {email}})
-  }
-
-  readonly checkAndValidate = (email: string, confirmationCode: string) => {
-    return this.client.post<ConsumerEmailResult>('/email-validation/check-and-validate', {body: {email, confirmationCode}})
   }
 
   readonly search = (search: ConsumerEmailValidationSearch): Promise<Paginate<ConsumerEmailValidation>> => {
