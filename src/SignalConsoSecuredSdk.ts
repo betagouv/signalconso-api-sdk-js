@@ -8,6 +8,7 @@ import {AccessesClient} from './client/accesses/AccessesClient'
 import {CompaniesDbSyncClient} from './client/companies-db-sync/CompaniesDbSyncClient'
 import {StatsClient} from './client/stats/StatsClient'
 import {AdminClient} from './client/admin/AdminClient'
+import {ConsumerEmailValidationClient} from './client/consumer-email-validation/ConsumerEmailValidationClient'
 
 export class SignalConsoSecuredSdk {
   constructor(private client: ApiClientApi) {}
@@ -19,6 +20,7 @@ export class SignalConsoSecuredSdk {
   readonly constant = new ConstantClient(this.client)
   readonly subscription = new SubscriptionClient(this.client)
   readonly company = new CompanyClient(this.client)
+  readonly consumerEmailValidation = new ConsumerEmailValidationClient(this.client)
   readonly stats = new StatsClient(this.client)
   readonly companyAccess = new CompanyAccessClient(this.client)
   readonly companyAccessToken = new CompanyAccessTokenClient(this.client)
