@@ -33,9 +33,9 @@
     "@types/jest": "^27.5.1",
     "@types/node": "^15.9.0",
     "@types/qs": "^6.9.6",
-    "ts-jest": "^28.0.2",
     "chai": "^4.3.4",
     "prettier": "2.3.2",
+    "ts-jest": "^28.0.2",
     "ts-node": "^10.5.0",
     "typescript": "^4.2.4"
   }
