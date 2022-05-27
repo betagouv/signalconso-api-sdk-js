@@ -7,27 +7,41 @@ on:
     # Inputs the workflow accepts.
     inputs:
       newversion:
+        type: choice
         # Friendly description to be shown in the UI instead of 'name'
         description: 'New version (patch/minor/major)'
         # Default value if no value is explicitly provided
         default: 'patch'
         # Input has to be provided for the workflow to run
         required: true
+        options:
+          - patch
+          - minor
+          - major
+          - test
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# A workflow run is made up of one or more jobs that can run
+# sequentially or in parallel
 jobs:
   # This workflow contains a single job called "greet"
   publish:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    strategy:
+      matrix:
+        node-version: [14.x]
+    # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    # Steps represent a sequence of tasks that will be
+    # executed as part of the job
     steps:
-    - name: pwd
-      run: pwd
-    - name: cd ..
-      run: cd ..
-    - name: ls
-      run: ls
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: npm ci
     - name: Release
-      run: npm run test-github-actions ${{ github.event.inputs.name }}
+      run: npm run release ${{ github.event.inputs.name }}
