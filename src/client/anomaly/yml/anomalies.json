@@ -6,6 +6,7 @@
       "categoryId": "RPL",
       "path": "retrait-rappel",
       "description": "Retrait-Rappel spécifique.",
+      "seoDescription": null,
       "rank": 99,
       "hidden": true,
       "sprite": "none",
@@ -109,6 +110,7 @@
       "categoryId": "C19",
       "path": "coronavirus",
       "description": "gel hydroalcoolique, masque, arnaque liée au COVID-19, distanciation physique...",
+      "seoDescription": null,
       "id": "1",
       "sprite": "category-covid",
       "subcategories": [
@@ -250,10 +252,11 @@
     },
     {
       "category": "Café / Restaurant",
-      "title": "Café / Restaurant",
+      "title": "Signalez un problème avec un café / restaurant à la répression des fraudes",
       "categoryId": "CR",
       "path": "cafe-restaurant",
       "description": "bar, cafétéria, food truck, application pour se faire livrer un repas...",
+      "seoDescription": "Les descriptions sont incorrectes (origine, fait maison, allergènes, hallal). L'établissement est sale, insalubre, problème de fraîcheur, d'hygiène, intoxication ou problème à la commande / livraison",
       "id": "4",
       "sprite": "category-restaurant",
       "subcategories": [
@@ -1340,10 +1343,11 @@
     },
     {
       "category": "Achat (Magasin ou Internet)",
-      "title": "Achat (Magasin ou Internet)",
+      "title": "Signalez un achat en magasin ou sur internet à la répression des fraudes",
       "categoryId": "MAG",
       "path": "achat-magasin",
       "description": "supermarché, boulangerie, magasin de jouet, achat en ligne...",
+      "seoDescription": "Vous avez eu un problème de prix, sur une promotion ou de qualité. Vous n'avez pas reçu votre commande ou celle-ci est abîmée, le service client n'est pas joignable ou insatisfaisant...",
       "id": "2",
       "sprite": "category-store",
       "subcategoriesTitle": "Votre problème concerne",
@@ -33949,10 +33953,11 @@
     },
     {
       "category": "Services aux particuliers",
-      "title": "Services aux particuliers",
+      "title": "Signalez un problème avec un service / prestation à la répression des fraudes",
       "categoryId": "SERV",
       "path": "services-aux-particuliers",
       "description": "coiffeur, pressing, aide à la personne, déménageur, formation, maison de retraite...",
+      "seoDescription": "Vous avez un problème avec un organisme de formation, coiffeur, esthéticien, tatoueur, ménage, déménageur, aide à domicile, garde ou accompagnement d'enfants...",
       "id": "5",
       "sprite": "category-service",
       "subcategoriesTitle": "Votre problème concerne",
@@ -34966,10 +34971,11 @@
     },
     {
       "category": "Eau / Gaz / Electricité",
-      "title": "Eau / Gaz / Electricité",
+      "title": "Signalez un problème d'eau, gaz ou électricité à la répression des fraudes",
       "categoryId": "ELEC",
       "path": "eau-gaz-electricite",
       "description": "contrat et facture eau, gaz et électricité...",
+      "seoDescription": "Vous avez un problème de contrat, de prélèvement, une facture excessive, un dépassement de consommation ou vous avez eu une fuite d'eau, de canalisation.",
       "id": "6",
       "sprite": "category-energy",
       "subcategories": [
@@ -35532,10 +35538,11 @@
     },
     {
       "category": "Téléphonie / Fournisseur d'accès internet / médias",
-      "title": "Téléphonie / Fournisseur d'accès internet / médias",
+      "title": "Signalez un problème de forfait à la répression des fraudes",
       "categoryId": "TEL",
       "path": "tel-internet-media",
       "description": "forfait internet, abonnement de musique ou de vidéo en ligne, téléphone...",
+      "seoDescription": "Votre opérateur vous a facturé des options non souscrites, votre abonnement mobile ou box est en augmentation ou a été reconduit abusivement, vous avez un doute sur les frais de résiliation.",
       "id": "7",
       "sprite": "category-internet",
       "subcategories": [
@@ -37181,6 +37188,7 @@
       "categoryId": "BAQ",
       "path": "banque-assurance-mutuelle",
       "description": "banque en ligne, crédit, assurance auto...",
+      "seoDescription": null,
       "id": "8",
       "sprite": "category-bank",
       "subcategories": [
@@ -37444,6 +37452,7 @@
       "categoryId": "INTOX",
       "path": "intoxication-alimentaire",
       "description": "Vous avez été malade (vomissement, diarrhée, maux de ventre) après avoir consommé un aliment.",
+      "seoDescription": null,
       "id": "9",
       "sprite": "category-disease",
       "subcategories": [
@@ -37695,10 +37704,11 @@
     },
     {
       "category": "Internet (hors achats)",
-      "title": "Internet (hors achats)",
+      "title": "Signalez un problème d'arnaque en ligne à la répression des fraudes",
       "categoryId": "INTERNET",
       "path": "internet",
       "description": "Influenceur, piratage de carte, escroquerie par email, site d'incitation à la haine...",
+      "seoDescription": "Vous avez été victime d'une publicité trompeuse sur internet, vous souhaitez signaler un influenceur sponsorisé qui n'indique pas sa rémunération par une marque...",
       "id": "16",
       "sprite": "category-ecommerce",
       "subcategories": [
@@ -37911,10 +37921,11 @@
     },
     {
       "category": "Travaux / Rénovation",
-      "title": "Travaux / Rénovation",
+      "title": "Signalez un problème de travaux ou rénovation à la répression des fraudes",
       "categoryId": "TRAV",
       "path": "travaux-renovation",
       "description": "dépannage, plombier, rénovation énergétique, site de devis travaux...",
+      "seoDescription": "Vous avez fait intervenir un artisan (serrurier, plombier, isolation, pompe à chaleur, chaudière, prime rénov, fenêtre, ...) et vous avez un souci de délais d'exécution, de devis, malfaçon, ...",
       "id": "12",
       "sprite": "category-craft",
       "subcategories": [
@@ -40275,6 +40286,7 @@
       "categoryId": "VOY",
       "path": "voyage-loisirs",
       "description": "hôtel, billet d'avion, taxi, comparateur de prix, concert, salle de sport, jeux en ligne...",
+      "seoDescription": null,
       "id": "10",
       "sprite": "category-hobbies",
       "subcategories": [
@@ -52031,6 +52043,7 @@
       "categoryId": "IMM",
       "path": "immobilier",
       "description": "location, agence immobiliere, syndicat de copropriété...",
+      "seoDescription": null,
       "id": "11",
       "sprite": "category-real-estate",
       "subcategories": [
@@ -52540,10 +52553,11 @@
     },
     {
       "category": "Secteur de la santé",
-      "title": "Secteur de la santé",
+      "title": "Signalez un problème avec un professionnel de santé à la répression des fraudes",
       "categoryId": "SANT",
       "path": "sante",
       "description": "dentiste, opticien, produits de pharmacie, clinique, site de téléconsultation...",
+      "seoDescription": "Vous avez eu un reste à charge trop élevé, un non-respect du 100% santé, n'avez pas eu de devis par votre clinique, hôpital, opticien ou les effets mis en avant en parapharmacie sont trompeurs...",
       "id": "3",
       "sprite": "category-health",
       "subcategoriesTitle": "Votre problème concerne :",
@@ -53748,6 +53762,7 @@
       "categoryId": "VEH",
       "path": "voiture-vehicule",
       "description": "vente et réparation de voiture, location, auto-école, pneu, accessoire...",
+      "seoDescription": null,
       "id": "13",
       "sprite": "category-transport",
       "subcategoriesTitle": "Pouvez-vous préciser &#160;?",
@@ -55987,6 +56002,7 @@
       "categoryId": "ANI",
       "path": "animaux",
       "description": "vétérinaire, aliment pour animaux, site internet de garde d'animaux...",
+      "seoDescription": null,
       "id": "14",
       "sprite": "category-pet",
       "subcategories": [
@@ -56058,6 +56074,7 @@
       "categoryId": "ADM",
       "path": "demarches-administratives",
       "description": "absence d'information sur le médiateur, faux courrier administratif, achat d'acte de naissance...",
+      "seoDescription": null,
       "id": "15",
       "sprite": "category-admin",
       "subcategories": [
@@ -56177,6 +56194,7 @@
       "categoryId": "BTEL",
       "path": "bloctel",
       "description": "spams, appels indésirables malgré Bloctel",
+      "seoDescription": null,
       "id": "17",
       "sprite": "category-bloctel",
       "subcategories": [
