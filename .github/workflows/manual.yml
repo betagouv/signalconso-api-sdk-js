@@ -8,7 +8,7 @@ on:
     inputs:
       newversion:
         # Friendly description to be shown in the UI instead of 'name'
-        description: 'patch/minor/major'
+        description: 'New version (patch/minor/major)'
         # Default value if no value is explicitly provided
         default: 'patch'
         # Input has to be provided for the workflow to run
@@ -25,4 +25,4 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Release
-      run: npm run test-github-actions patch
+      run: npm run test-github-actions ${{ github.event.inputs.name }}
