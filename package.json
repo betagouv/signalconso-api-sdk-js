@@ -7,6 +7,7 @@
   "scripts": {
     "test": "jest",
     "release": "ts-node release.ts",
+    "test-github-actions": "ts-node script-to-test-github-actions.ts",
     "prepublish": "npm run build && npm run generate-json",
     "build": "tsc --declaration && npm run generate-json",
     "generate-json": "ts-node src/client/anomaly/script/generate-json-files.ts",
