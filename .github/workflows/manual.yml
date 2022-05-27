@@ -25,5 +25,7 @@ jobs:
     steps:
     - name: pwd
       run: pwd
+    - name: ls
+      run: ls
     - name: Release
       run: npm run test-github-actions ${{ github.event.inputs.name }}
