@@ -1,4 +1,4 @@
-name: Manual workflow
+name: Release workflow
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -43,5 +43,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - name: Release
-      run: npm run release ${{ github.event.inputs.name }}
+    - run: npm run release ${{ github.event.inputs.name }}
