@@ -14,6 +14,7 @@ export class User {
 
 export interface UserPending {
   email: string
+  token: string
   tokenCreation: Date
   tokenExpiration: Date
 }

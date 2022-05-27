@@ -47,4 +47,9 @@ export class UserClient {
   readonly changePassword = (oldPassword: string, newPassword: string) => {
     return this.client.post(`/account/password`, {body: {oldPassword, newPassword}})
   }
+
+  readonly forceValidateEmail = (email: string) => {
+    return this.client.post<void>(`/account/validate-email/${email}`,{})
+  }
+
 }
