@@ -27,18 +27,25 @@ const getPackageVersion = () => JSON.parse(fs.readFileSync('package.json', 'utf8
 const isOnMainBranch = () => new RegExp(`${config.mainBranch}\s*\n*`).test(execSync('git branch --show-current').toString())
 
 ;(async () => {
-  if (!isOnMainBranch()) {
-    console.error(`You must be on branch ${config.mainBranch} to publish.`)
-  } else if (!gitWorkspaceIsEmpty()) {
+  const newversion = process.argv[2] ?? 'patch' as 'patch' | 'minor' | 'major' | 'test'
+  if (!gitWorkspaceIsEmpty()) {
     console.error(`Your git status must be clean before to publish.`)
-  } else {
-    const newversion = process.argv[2] ?? 'patch' as 'patch' | 'minor' | 'major' | 'test'
-    await run(`npm run build`)
-    await run(`npm version ${newversion === 'test' ? getPackageVersion() + '-' + new Date().getTime() : newversion}`)
-    // await run(`npm publish`)
-    // await run(`git commit -m "Release ${getPackageVersion()}"`)
-    // await run(`git push`)
-    await run(`git checkout ${config.mainBranch}`)
-    console.log(`Successfully published version ${getPackageVersion()} !`)
+    process.exit(1)
   }
+  if (newversion === 'test') {
+    await run(`npm run build`)
+    await run(`npm version ${getPackageVersion() + '-test-' + new Date().getTime()}`)
+  } else {
+    if (!isOnMainBranch()) {
+      console.error(`You must be on branch ${config.mainBranch} to publish.`)
+      process.exit(1)
+    }
+    await run(`npm run build`)
+    await run(`npm version ${newversion}`)
+  }
+  // await run(`git push`)
+  // await run(`npm publish`)
+  // await run(`git commit -m "Release ${getPackageVersion()}"`)
+  // await run(`git checkout ${config.mainBranch}`)
+  console.log(`Successfully published version ${getPackageVersion()} !`)
 })()
