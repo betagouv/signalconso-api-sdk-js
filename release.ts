@@ -39,7 +39,7 @@ const isOnMainBranch = () => new RegExp(`${config.mainBranch}\s*\n*`).test(execS
   } else {
     if (!isOnMainBranch()) {
       console.error(`You must be on branch ${config.mainBranch} to publish.`)
-      process.exit(1)
+      process.exit(2)
     }
     await run(`npm run build`)
     await run(`npm version ${newversion}`)
