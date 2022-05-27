@@ -34,7 +34,7 @@ const isOnMainBranch = () => new RegExp(`${config.mainBranch}\s*\n*`).test(execS
   } else {
     const newversion = process.argv[2] ?? 'patch' as 'patch' | 'minor' | 'major' | 'test'
     await run(`npm run build`)
-    await run(`npm version ${newversion === 'test' ? getPackageVersion() + '-' + new Date().getDate() : newversion}`)
+    await run(`npm version ${newversion === 'test' ? getPackageVersion() + '-' + new Date().getTime() : newversion}`)
     // await run(`npm publish`)
     // await run(`git commit -m "Release ${getPackageVersion()}"`)
     // await run(`git push`)
