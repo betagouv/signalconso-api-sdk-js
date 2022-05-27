@@ -34,7 +34,8 @@ const isOnMainBranch = () => new RegExp(`${config.mainBranch}\s*\n*`).test(execS
   }
   if (newversion === 'test') {
     await run(`npm run build`)
-    await run(`npm version ${getPackageVersion() + '-test-' + new Date().getTime()}`)
+    const packageVersion = getPackageVersion().split('-test-')[0]
+    await run(`npm version ${packageVersion + '-test-' + new Date().getTime()}`)
   } else {
     if (!isOnMainBranch()) {
       console.error(`You must be on branch ${config.mainBranch} to publish.`)
@@ -43,8 +44,8 @@ const isOnMainBranch = () => new RegExp(`${config.mainBranch}\s*\n*`).test(execS
     await run(`npm run build`)
     await run(`npm version ${newversion}`)
   }
-  // await run(`git push`)
-  // await run(`npm publish`)
+  await run(`git push`)
+  await run(`npm publish`)
   // await run(`git commit -m "Release ${getPackageVersion()}"`)
   // await run(`git checkout ${config.mainBranch}`)
   console.log(`Successfully published version ${getPackageVersion()} !`)
