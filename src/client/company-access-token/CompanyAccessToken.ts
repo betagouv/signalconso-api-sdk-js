@@ -5,4 +5,5 @@ export interface CompanyAccessToken {
   level: CompanyAccessLevel
   emailedTo?: string
   expirationDate: Date
+  token ?: string
 }
