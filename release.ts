@@ -23,8 +23,6 @@ const run = (cl: string) => {
 }
 const gitWorkspaceIsEmpty = () => execSync(`git status --porcelain`).toString() === ''
 
-const newversion = process.argv[2] ?? 'patch' as 'patch' | 'minor' | 'major'
-
 const getPackageVersion = () => JSON.parse(fs.readFileSync('package.json', 'utf8')).version
 
 const isOnMainBranch = () => new RegExp(`${config.devBranch}\s*\n*`).test(execSync('git branch --show-current').toString())
@@ -35,6 +33,7 @@ const isOnMainBranch = () => new RegExp(`${config.devBranch}\s*\n*`).test(execSy
   } else if (!gitWorkspaceIsEmpty()) {
     console.error(`Your git status must be clean before to publish.`)
   } else {
+    const newversion = process.argv[2] ?? 'patch' as 'patch' | 'minor' | 'major'
     await run(`npm run build`)
     await run(`npm version ${newversion}`)
     await run(`npm publish`)
