@@ -23,6 +23,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Runs a single command using the runners shell
+    - name: pwd
+      run: pwd
     - name: Release
       run: npm run test-github-actions ${{ github.event.inputs.name }}
