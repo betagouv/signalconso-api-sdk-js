@@ -16,6 +16,7 @@ export interface ReportSearch {
   phone?: string
   category?: string
   details?: string
+  contactAgreement?: boolean
   hasPhone?: boolean
   hasWebsite?: boolean
   hasForeignCountry?: boolean
