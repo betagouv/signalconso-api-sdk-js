@@ -7,6 +7,7 @@ export default async (): Promise<Config.InitialOptions> => {
     transform: {
       '^.+\\.ts?$': 'ts-jest'
     },
+    passWithNoTests: true,
     testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
     verbose: false,
     reporters: [
