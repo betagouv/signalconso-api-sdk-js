@@ -75,7 +75,7 @@ export interface Detail {
 export type Method = 'POST' | 'GET' | 'PUT' | 'DELETE' | 'PATCH'
 
 export class ApiClient {
-  private readonly fetch: (method: Method, url: string, options?: RequestOption) => Promise<any>
+  private readonly request: (method: Method, url: string, options?: RequestOption) => Promise<any>
 
   readonly postGetPdf: (url: string, options?: RequestOption) => Promise<Blob>
 
@@ -91,7 +91,7 @@ export class ApiClient {
 
     this.baseUrl = baseUrl
 
-    this.fetch = async (method: Method, url: string, options?: RequestOption) => {
+    this.request = async (method: Method, url: string, options?: RequestOption) => {
       const builtOptions = await ApiClient.buildOptions(options, headers, requestInterceptor)
       return client
         .request({
@@ -124,23 +124,24 @@ export class ApiClient {
         )
     }
 
-    /** TODO(Alex) Didn't find any way to download pdf with axios but it should exist. */
-    this.postGetPdf = async (url: string, options?: RequestOption) => {
+    /**
+     * TODO(Alex) Didn't find any way to download pdf with axios so I did it using fetch(), but it should exist.
+     */
+    const requestUsingFetchApi = async (method: Method, url: string, options?: RequestOption) => {
       const builtOptions = await ApiClient.buildOptions(options, headers, requestInterceptor)
-      return fetch(baseUrl + url, {
-        method: 'POST',
+      return fetch(baseUrl + url + (options?.qs ? `?${qs.stringify(options.qs, {arrayFormat: 'repeat'})}` : ''), {
+        method,
         headers: builtOptions?.headers,
-        body: JSON.stringify(builtOptions?.body),
-      }).then(_ => _.blob())
+        body: builtOptions.body ? JSON.stringify(builtOptions?.body) : undefined,
+      })
     }
 
-    /** TODO(Alex) Didn't find any way to download pdf with axios but it should exist. */
+    this.postGetPdf = async (url: string, options?: RequestOption) => {
+      return requestUsingFetchApi('GET', url, options).then(_ => _.blob())
+    }
+
     this.getPdf = async (url: string, options?: RequestOption) => {
-      const builtOptions = await ApiClient.buildOptions(options, headers, requestInterceptor)
-      return fetch(baseUrl + url, {
-        method: 'GET',
-        headers: builtOptions?.headers,
-      }).then(_ => _.blob())
+      return requestUsingFetchApi('POST', url, options).then(_ => _.blob())
     }
   }
 
@@ -157,22 +158,22 @@ export class ApiClient {
   }
 
   readonly get = <T = any>(uri: string, options?: RequestOption): Promise<T> => {
-    return this.fetch('GET', uri, options)
+    return this.request('GET', uri, options)
   }
 
   readonly post = <T = any>(uri: string, options?: RequestOption): Promise<T> => {
-    return this.fetch('POST', uri, options)
+    return this.request('POST', uri, options)
   }
 
   readonly delete = <T = any>(uri: string, options?: RequestOption): Promise<T> => {
-    return this.fetch('DELETE', uri, options)
+    return this.request('DELETE', uri, options)
   }
 
   readonly put = <T = any>(uri: string, options?: RequestOption): Promise<T> => {
-    return this.fetch('PUT', uri, options)
+    return this.request('PUT', uri, options)
   }
 
   readonly patch = <T = any>(uri: string, options?: RequestOption): Promise<T> => {
-    return this.fetch('PATCH', uri, options)
+    return this.request('PATCH', uri, options)
   }
 }

@@ -100,9 +100,9 @@ export class ReportsClient {
       })
   }
 
-  readonly download = (id: Id) => {
+  readonly download = (ids: Id[]) => {
     // TODO Type it and maybe improve it
-    return this.client.getPdf<any>(`/reports/${id}/download`).then(directDownloadBlob('test.pdf'))
+    return this.client.getPdf<any>(`/reports/download`, {qs: {ids}}).then(directDownloadBlob('test.pdf'))
   }
 
   readonly remove = (id: Id) => {

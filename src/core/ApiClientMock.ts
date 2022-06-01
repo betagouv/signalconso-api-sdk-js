@@ -37,7 +37,7 @@ export class ApiClientMock implements ApiClientApi {
   }
 
   readonly getPdf = (uri: string, options?: RequestOption): Promise<Blob> => {
-    return this.fetch('POST', uri, options)
+    return this.fetch('GET', uri, options)
   }
 
   readonly postGetPdf = (uri: string, options?: RequestOption): Promise<Blob> => {
