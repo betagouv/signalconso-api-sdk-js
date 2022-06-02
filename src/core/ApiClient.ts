@@ -137,11 +137,11 @@ export class ApiClient {
     }
 
     this.postGetPdf = async (url: string, options?: RequestOption) => {
-      return requestUsingFetchApi('GET', url, options).then(_ => _.blob())
+      return requestUsingFetchApi('POST', url, options).then(_ => _.blob())
     }
 
     this.getPdf = async (url: string, options?: RequestOption) => {
-      return requestUsingFetchApi('POST', url, options).then(_ => _.blob())
+      return requestUsingFetchApi('GET', url, options).then(_ => _.blob())
     }
   }
 
