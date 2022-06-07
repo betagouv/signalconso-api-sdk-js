@@ -1,4 +1,4 @@
-import {ApiClientApi, Paginate, paginateData, UserPending, UserSearch} from '../..'
+import {ApiClientApi, Id, Paginate, paginateData, UserEdit, UserPending, UserSearch} from '../..'
 import {User} from './User'
 import {fromNullable} from 'fp-ts/lib/Option'
 
@@ -49,7 +49,10 @@ export class UserClient {
   }
 
   readonly forceValidateEmail = (email: string) => {
-    return this.client.post<void>(`/account/validate-email/${email}`,{})
+    return this.client.post<void>(`/account/validate-email/${email}`, {})
   }
 
+  readonly edit = (id: Id, body: UserEdit) => {
+    return this.client.put<User>(`/account/${id}`, {body})
+  }
 }

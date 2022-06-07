@@ -12,6 +12,11 @@ export class User {
   static readonly isUserActive = (user: User) => user.lastEmailValidation.getTime() > subMonths(new Date(), 3).getTime()
 }
 
+export interface UserEdit {
+  firstName?: string
+  lastName?: string
+}
+
 export interface UserPending {
   email: string
   token: string
