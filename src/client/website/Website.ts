@@ -9,6 +9,12 @@ export enum WebsiteKind {
   PENDING = 'PENDING',
 }
 
+
+export interface DepartmentDivision {
+  code: string
+  name: string
+}
+
 export interface Website extends Entity {
   creationDate: Date
   host: string
@@ -28,6 +34,17 @@ export interface WebsiteWithCompany extends Website {
   companyCountry?: Country
   count?: 0
 }
+
+export interface WebsiteInvestigation {
+  practice?: string,
+  investigationStatus?: string,
+  attribution?: string,
+  lastUpdated?: Date,
+  websiteId: Id
+}
+
+
+export interface WebsiteInvestigationWithCount extends WebsiteWithCompany, WebsiteInvestigation {}
 
 export interface ApiHostWithReportCount {
   host: string
