@@ -1,6 +1,7 @@
 import {ApiClientApi} from '../../core/ApiClient'
 import {ConsumerEmailResult, ConsumerEmailValidation, ConsumerEmailValidationSearch} from './ConsumerEmailValidation'
 import {Paginate} from '../../model'
+import {cleanObject} from '../../helper'
 
 export class ConsumerEmailValidationClient {
   constructor(private client: ApiClientApi) {
@@ -11,7 +12,7 @@ export class ConsumerEmailValidationClient {
   }
 
   readonly search = (search: ConsumerEmailValidationSearch): Promise<Paginate<ConsumerEmailValidation>> => {
-    return this.client.get<Paginate<{ [key in keyof ConsumerEmailValidation] }>>('/email-validation/search', {qs: search})
+    return this.client.get<Paginate<{ [key in keyof ConsumerEmailValidation] }>>('/email-validation/search', {qs: cleanObject(search)})
       .then(res => ({
         ...res,
         entities: res.entities.map(_ => ({
