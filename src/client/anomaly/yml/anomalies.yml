@@ -17,7 +17,7 @@ list:
     path: coronavirus
     description: gel hydroalcoolique, masque, arnaque liée au COVID-19, distanciation physique...
     seoDescription:
-    id: 1
+    id: 19
     sprite: category-covid
     subcategories: !!import/single subcategories/coronavirus.yml
   - category: Café / Restaurant 
@@ -43,7 +43,7 @@ list:
     title: Signalez un problème avec un service / prestation à la répression des fraudes
     categoryId: SERV
     path: services-aux-particuliers
-    description: coiffeur, pressing, aide à la personne, déménageur, formation, maison de retraite...
+    description: coiffeur, pressing, aide à la personne, nuisible, formation, maison de retraite...
     seoDescription: Vous avez un problème avec un organisme de formation, coiffeur, esthéticien, tatoueur, ménage, déménageur, aide à domicile, garde ou accompagnement d'enfants...
     id: 5
     sprite: category-service
