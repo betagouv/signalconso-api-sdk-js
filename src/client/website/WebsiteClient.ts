@@ -4,12 +4,11 @@ import {
   HostReportCountSearch,
   Id,
   PaginatedData,
-  Website,
   WebsiteKind,
   WebsiteUpdateCompany,
   WebsiteWithCompany,
   WebsiteWithCompanySearch,
-  Country, WebsiteInvestigation, DepartmentDivision, WebsiteInvestigationWithCount,
+  Country, DepartmentDivision, WebsiteInvestigation,
 } from '../../model'
 import {ApiClientApi, dateToApi} from '../..'
 import {ApiSdkLogger} from '../../helper/Logger'
@@ -66,6 +65,7 @@ export class WebsiteClient {
       .then(result => {
         result.entities = result.entities.map(_ => {
           _.creationDate = new Date(_.creationDate)
+          _.lastUpdated = _.lastUpdated ? new Date(_.lastUpdated) : undefined
           return _
         })
         return result
@@ -87,21 +87,6 @@ export class WebsiteClient {
       .get<string[]>(`resources/practice`)
   }
 
-  readonly listInvestigation = (filters: WebsiteWithCompanySearch) => {
-    return this.client
-      .get<PaginatedData<WebsiteInvestigationWithCount>>(`/website-investigations`, {qs: cleanFilter(filters)})
-      .then(paginated =>
-        Object.assign({}, paginated, {entities: paginated.entities}),
-      )
-      .then(result => {
-        result.entities = result.entities.map(_ => {
-          _.creationDate = new Date(_.creationDate)
-          _.lastUpdated && (_.lastUpdated = new Date(_.lastUpdated))
-          return _
-        })
-        return result
-      })
-  }
 
   readonly createOrUpdateInvestigation = (websiteInvestigation: WebsiteInvestigation): Promise<WebsiteInvestigation> => {
     return this.client.post<WebsiteInvestigation>(`/website-investigations`, {body: websiteInvestigation})

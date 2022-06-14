@@ -15,11 +15,23 @@ export interface DepartmentDivision {
   name: string
 }
 
+export interface WebsiteInvestigation {
+  practice?: string,
+  investigationStatus?: string,
+  attribution?: string,
+  lastUpdated?: Date,
+  id: Id
+}
+
 export interface Website extends Entity {
   creationDate: Date
   host: string
   companyId: Id
   kind: WebsiteKind
+  practice?: string
+  investigationStatus?: string
+  attribution?: string
+  lastUpdated?: Date
 }
 
 export interface WebsiteUpdateCompany {
@@ -34,17 +46,6 @@ export interface WebsiteWithCompany extends Website {
   companyCountry?: Country
   count?: 0
 }
-
-export interface WebsiteInvestigation {
-  practice?: string,
-  investigationStatus?: string,
-  attribution?: string,
-  lastUpdated?: Date,
-  websiteId: Id
-}
-
-
-export interface WebsiteInvestigationWithCount extends WebsiteWithCompany, WebsiteInvestigation {}
 
 export interface ApiHostWithReportCount {
   host: string
