@@ -5,7 +5,7 @@ import {
   CompanyToActivate,
   CompanyWithAccessLevel,
   CompanyWithReportsCount,
-  dateToApi,
+  dateToApiDate,
   directDownloadBlob,
 } from '../..'
 import {Company, CompanyCreation, CompanyUpdate, Event, Id} from '../../model'
@@ -37,7 +37,9 @@ export class CompanyClient {
   }
 
   readonly saveUndeliveredDocument = (siret: string, returnedDate: Date) => {
-    return this.client.post<Event>(`/companies/${siret}/undelivered-document`, {body: {returnedDate: dateToApi(returnedDate)}})
+    return this.client.post<Event>(`/companies/${siret}/undelivered-document`, {
+      body: {returnedDate: dateToApiDate(returnedDate)},
+    })
   }
 
   readonly create = (company: CompanyCreation) => {

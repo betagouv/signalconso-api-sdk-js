@@ -32,10 +32,8 @@ export interface PaginatedSearch<T extends object = any> extends PaginatedFilter
   orderBy?: 'asc' | 'desc'
 }
 
-// TODO(Alex) found a better type system than any
-export const paginateFilters2QueryString = ({offset, limit, ...rest}: PaginatedFilters & any): PaginateFiltersQueryString => {
+export const paginateFilters2QueryString = ({offset, limit}: PaginatedFilters): PaginateFiltersQueryString => {
   return {
-    ...rest,
     offset: offset !== undefined ? offset + '' : undefined,
     limit: limit !== undefined ? limit + '' : undefined,
   }

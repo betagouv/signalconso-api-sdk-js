@@ -3,9 +3,9 @@ import format from 'date-fns/format'
 export type Index<T> = {[key: string]: T}
 export type Shape<T extends object> = {[key in keyof T]: any}
 
-export const dateToYYYYMMDD = (date?: Date): string | undefined => (date ? format(date, 'yyyy-MM-dd') : undefined)
+export const dateToApiDate = (date?: Date): string | undefined => (date ? format(date, 'yyyy-MM-dd') : undefined)
 
-export const dateToApi = dateToYYYYMMDD
+export const dateToApiTime = (date?: Date): string | undefined => (date ? date.toISOString() : undefined)
 
 export const getHostFromUrl = (url?: string) => {
   return url?.replace('http://', '').replace('https://', '').replace('www.', '').split(/[/?#]/)[0]
