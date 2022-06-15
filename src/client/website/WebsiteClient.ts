@@ -4,12 +4,10 @@ import {
   HostReportCountSearch,
   Id,
   PaginatedData,
-  Website,
-  WebsiteKind,
   WebsiteUpdateCompany,
   WebsiteWithCompany,
   WebsiteWithCompanySearch,
-  Country,
+  Country, DepartmentDivision, WebsiteInvestigation, IdentificationStatus,
 } from '../../model'
 import {ApiClientApi, dateToApi} from '../..'
 import {ApiSdkLogger} from '../../helper/Logger'
@@ -44,8 +42,8 @@ const hostReportFilter2QueryString = (hostReport: HostReportCountSearch): HostRe
 }
 
 const cleanFilter = (filter: WebsiteWithCompanySearch): WebsiteWithCompanySearch => {
-  if (filter.kinds === []) {
-    delete filter.kinds
+  if (filter.identificationStatus === []) {
+    delete filter.identificationStatus
   }
   if (filter.host === '') {
     delete filter.host
@@ -54,21 +52,43 @@ const cleanFilter = (filter: WebsiteWithCompanySearch): WebsiteWithCompanySearch
 }
 
 export class WebsiteClient {
-  constructor(private client: ApiClientApi) {}
+  constructor(private client: ApiClientApi) {
+  }
 
   readonly list = (filters: WebsiteWithCompanySearch) => {
     return this.client
       .get<PaginatedData<WebsiteWithCompany>>(`/websites`, {qs: cleanFilter(filters)})
       .then(paginated =>
-        Object.assign({}, paginated, {entities: paginated.entities.filter(website => website.kind !== WebsiteKind.MARKETPLACE)}),
+        Object.assign({}, paginated, {entities: paginated.entities}),
       )
       .then(result => {
         result.entities = result.entities.map(_ => {
           _.creationDate = new Date(_.creationDate)
+          _.lastUpdated = _.lastUpdated ? new Date(_.lastUpdated) : undefined
           return _
         })
         return result
       })
+  }
+
+  readonly listDepartmentDivision = () => {
+    return this.client
+      .get<DepartmentDivision[]>(`resources/department-division`)
+  }
+
+  readonly listInvestigationStatus = () => {
+    return this.client
+      .get<string[]>(`resources/investigation-status`)
+  }
+
+  readonly listPractice = () => {
+    return this.client
+      .get<string[]>(`resources/practice`)
+  }
+
+
+  readonly createOrUpdateInvestigation = (websiteInvestigation: WebsiteInvestigation): Promise<WebsiteInvestigation> => {
+    return this.client.post<WebsiteInvestigation>(`/website-investigations`, {body: websiteInvestigation})
   }
 
   readonly listUnregistered = (filters: HostReportCountSearch): Promise<Paginate<ApiHostWithReportCount>> => {
@@ -81,8 +101,8 @@ export class WebsiteClient {
     return this.client.get<void>(`/websites/unregistered/extract`, {qs: hostReportFilter2QueryString(filters)})
   }
 
-  readonly updateStatus = (id: Id, kind: WebsiteKind): Promise<WebsiteWithCompany> => {
-    return this.client.put<WebsiteWithCompany>(`/websites/${id}`, {qs: {kind: kind}})
+  readonly updateStatus = (id: Id, identificationStatus: IdentificationStatus): Promise<WebsiteWithCompany> => {
+    return this.client.put<WebsiteWithCompany>(`/websites/${id}`, {qs: {identificationStatus: identificationStatus}})
   }
 
   readonly updateCompany = (id: Id, website: WebsiteUpdateCompany): Promise<WebsiteWithCompany> => {
