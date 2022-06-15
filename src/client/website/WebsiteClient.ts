@@ -4,11 +4,10 @@ import {
   HostReportCountSearch,
   Id,
   PaginatedData,
-  WebsiteKind,
   WebsiteUpdateCompany,
   WebsiteWithCompany,
   WebsiteWithCompanySearch,
-  Country, DepartmentDivision, WebsiteInvestigation,
+  Country, DepartmentDivision, WebsiteInvestigation, IdentificationStatus,
 } from '../../model'
 import {ApiClientApi, dateToApi} from '../..'
 import {ApiSdkLogger} from '../../helper/Logger'
@@ -43,8 +42,8 @@ const hostReportFilter2QueryString = (hostReport: HostReportCountSearch): HostRe
 }
 
 const cleanFilter = (filter: WebsiteWithCompanySearch): WebsiteWithCompanySearch => {
-  if (filter.kinds === []) {
-    delete filter.kinds
+  if (filter.identificationStatus === []) {
+    delete filter.identificationStatus
   }
   if (filter.host === '') {
     delete filter.host
@@ -60,7 +59,7 @@ export class WebsiteClient {
     return this.client
       .get<PaginatedData<WebsiteWithCompany>>(`/websites`, {qs: cleanFilter(filters)})
       .then(paginated =>
-        Object.assign({}, paginated, {entities: paginated.entities.filter(website => website.kind !== WebsiteKind.MARKETPLACE)}),
+        Object.assign({}, paginated, {entities: paginated.entities}),
       )
       .then(result => {
         result.entities = result.entities.map(_ => {
@@ -92,8 +91,6 @@ export class WebsiteClient {
     return this.client.post<WebsiteInvestigation>(`/website-investigations`, {body: websiteInvestigation})
   }
 
-
-
   readonly listUnregistered = (filters: HostReportCountSearch): Promise<Paginate<ApiHostWithReportCount>> => {
     return this.client
       .get<ApiHostWithReportCount[]>(`/websites/unregistered`, {qs: hostReportFilter2QueryString(filters)})
@@ -104,8 +101,8 @@ export class WebsiteClient {
     return this.client.get<void>(`/websites/unregistered/extract`, {qs: hostReportFilter2QueryString(filters)})
   }
 
-  readonly updateStatus = (id: Id, kind: WebsiteKind): Promise<WebsiteWithCompany> => {
-    return this.client.put<WebsiteWithCompany>(`/websites/${id}`, {qs: {kind: kind}})
+  readonly updateStatus = (id: Id, identificationStatus: IdentificationStatus): Promise<WebsiteWithCompany> => {
+    return this.client.put<WebsiteWithCompany>(`/websites/${id}`, {qs: {identificationStatus: identificationStatus}})
   }
 
   readonly updateCompany = (id: Id, website: WebsiteUpdateCompany): Promise<WebsiteWithCompany> => {

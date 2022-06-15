@@ -3,12 +3,11 @@ import {Company} from '../company/Company'
 import {Address} from '../../model/Address'
 import {Country} from '../constant/Country'
 
-export enum WebsiteKind {
-  DEFAULT = 'DEFAULT',
-  MARKETPLACE = 'MARKETPLACE',
-  PENDING = 'PENDING',
-}
 
+export enum IdentificationStatus {
+  Identified = 'Identified',
+  NotIdentified = 'NotIdentified',
+}
 
 export interface DepartmentDivision {
   code: string
@@ -27,7 +26,7 @@ export interface Website extends Entity {
   creationDate: Date
   host: string
   companyId: Id
-  kind: WebsiteKind
+  identificationStatus: IdentificationStatus
   practice?: string
   investigationStatus?: string
   attribution?: string
@@ -54,7 +53,7 @@ export interface ApiHostWithReportCount {
 
 export interface WebsiteWithCompanySearch extends PaginatedFilters {
   host?: string
-  kinds?: WebsiteKind[]
+  identificationStatus?: IdentificationStatus[]
 }
 
 export interface HostReportCountSearch extends PaginatedFilters {
