@@ -16,6 +16,6 @@ export interface ConsumerEmailValidationSearch extends PaginatedSearch {
 }
 
 export interface ConsumerEmailResult {
-  valid: boolean,
+  valid: boolean
   reason?: ValidationRejectReason
 }

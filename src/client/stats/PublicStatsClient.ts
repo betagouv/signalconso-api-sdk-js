@@ -7,8 +7,7 @@ import {pipe} from 'rxjs'
 import {cleanReportFilter, reportFilter2QueryString} from '../report/ReportsClient'
 
 export class PublicStatsClient {
-  constructor(private client: ApiClientApi) {
-  }
+  constructor(private client: ApiClientApi) {}
 
   private readonly baseURL = `stats/reports`
 
@@ -17,7 +16,8 @@ export class PublicStatsClient {
     return this.client.get<SimpleStat>(`${this.baseURL}/count`, {qs})
   }
   readonly getReportCountCurve = (search?: ReportSearch & CurveStatsParams) => {
-    return this.client.get<CountByDate[]>(`${this.baseURL}/curve`, {qs: search})
+    return this.client
+      .get<CountByDate[]>(`${this.baseURL}/curve`, {qs: search})
       .then(res => res.map(_ => ({..._, date: new Date(_.date)})))
   }
 
@@ -27,8 +27,7 @@ export class PublicStatsClient {
 }
 
 class PublicStatsPercentageClient {
-  constructor(private client: PublicStatsClient) {
-  }
+  constructor(private client: PublicStatsClient) {}
 
   private readonly delayBeforeCountingToWaitForProResponseInDays = 30
 
@@ -41,25 +40,24 @@ class PublicStatsPercentageClient {
     start,
     end,
   }: {
-    companyId?: Id,
-    status: ReportStatus[],
-    baseStatus?: ReportStatus[],
-    start?: Date,
-    end?: Date,
+    companyId?: Id
+    status: ReportStatus[]
+    baseStatus?: ReportStatus[]
+    start?: Date
+    end?: Date
   }): Promise<SimpleStat> => {
-    const [count, baseCount,] = await Promise.all([
-      this.client.getReportCount({start, end, status,...(companyId ? {companyIds: [companyId]} : {})}),
-      this.client.getReportCount({start, end, status: baseStatus,...(companyId ? {companyIds: [companyId]} : {})}),
+    const [count, baseCount] = await Promise.all([
+      this.client.getReportCount({start, end, status, ...(companyId ? {companyIds: [companyId]} : {})}),
+      this.client.getReportCount({start, end, status: baseStatus, ...(companyId ? {companyIds: [companyId]} : {})}),
     ])
-    return {value: roundValue(+count.value / +baseCount.value * 100)}
-
+    return {value: roundValue((+count.value / +baseCount.value) * 100)}
   }
   readonly getReportForwardedToPro = (companyId?: Id): Promise<SimpleStat> => {
     return this.getPercentByStatus({
       companyId,
       status: Report.transmittedStatus,
       start: this.statsAdminStartDate,
-      end: subDays(new Date(), this.delayBeforeCountingToWaitForProResponseInDays)
+      end: subDays(new Date(), this.delayBeforeCountingToWaitForProResponseInDays),
     })
   }
 
@@ -69,7 +67,7 @@ class PublicStatsPercentageClient {
       status: Report.readStatus,
       baseStatus: Report.transmittedStatus,
       start: this.statsAdminStartDate,
-      end: subDays(new Date(), this.delayBeforeCountingToWaitForProResponseInDays)
+      end: subDays(new Date(), this.delayBeforeCountingToWaitForProResponseInDays),
     })
   }
 
@@ -79,77 +77,70 @@ class PublicStatsPercentageClient {
       status: Report.respondedStatus,
       baseStatus: Report.readStatus,
       start: this.statsAdminStartDate,
-      end: subDays(new Date(), this.delayBeforeCountingToWaitForProResponseInDays)
+      end: subDays(new Date(), this.delayBeforeCountingToWaitForProResponseInDays),
     })
   }
 
   readonly getReportWithWebsite = async (companyId?: Id): Promise<SimpleStat> => {
-    const [count, baseCount,] = await Promise.all([
+    const [count, baseCount] = await Promise.all([
       this.client.getReportCount({
         hasWebsite: true,
         start: this.statsAdminStartDate,
         end: subDays(new Date(), this.delayBeforeCountingToWaitForProResponseInDays),
-        ...(companyId ? {companyIds: [companyId]} : {})
+        ...(companyId ? {companyIds: [companyId]} : {}),
       }),
       this.client.getReportCount({
         start: this.statsAdminStartDate,
         end: subDays(new Date(), this.delayBeforeCountingToWaitForProResponseInDays),
-        ...(companyId ? {companyIds: [companyId]} : {})
+        ...(companyId ? {companyIds: [companyId]} : {}),
       }),
     ])
-    return {value: roundValue(+count.value / +baseCount.value * 100)}
+    return {value: roundValue((+count.value / +baseCount.value) * 100)}
   }
 }
 
 class PublicStatsCurveClient {
-  constructor(private client: PublicStatsClient) {
-  }
+  constructor(private client: PublicStatsClient) {}
 
   private readonly getReportPercentageCurve = async ({
-      companyId,
-      ticks,
-      tickDuration,
-      status,
-      baseStatus,
-    }: CurveStatsParams & {companyId?: Id, status: ReportStatus[], baseStatus?: ReportStatus[]}
-  ): Promise<CountByDate[]> => {
+    companyId,
+    ticks,
+    tickDuration,
+    status,
+    baseStatus,
+  }: CurveStatsParams & {companyId?: Id; status: ReportStatus[]; baseStatus?: ReportStatus[]}): Promise<CountByDate[]> => {
     const params = {
       status,
       ticks,
       tickDuration,
-      ...(companyId ? {companyIds: [companyId]} : {})
+      ...(companyId ? {companyIds: [companyId]} : {}),
     }
     const baseParams = {
       status: baseStatus,
       ticks,
       tickDuration,
-      ...(companyId ? {companyIds: [companyId]} : {})
+      ...(companyId ? {companyIds: [companyId]} : {}),
     }
-    const [
-      curve,
-      baseCurve,
-    ] = await Promise.all([
+    const [curve, baseCurve] = await Promise.all([
       this.client.getReportCountCurve(params),
       this.client.getReportCountCurve(baseParams),
     ])
     if (curve.length !== baseCurve.length) {
       console.error(params, curve, `doesn't have the same size than `, baseParams, baseCurve)
-      return Promise.reject({code: 'front-side',})
+      return Promise.reject({code: 'front-side'})
     }
-    return this.getPercent(curve, baseCurve,)
+    return this.getPercent(curve, baseCurve)
   }
-
-
 
   private getPercent = (curve: CountByDate[], baseCurve: CountByDate[]): Promise<CountByDate[]> => {
     let res: CountByDate[] = []
     for (let i = 0; i < curve.length; i++) {
       if (curve[i].date.getTime() !== baseCurve[i].date.getTime()) {
         console.error(curve[i], `have different date than`, baseCurve[i], ' values: ', curve, baseCurve)
-        return Promise.reject({code: 'front-side',})
+        return Promise.reject({code: 'front-side'})
       }
       res[i] = {
-        count: roundValue(curve[i].count / baseCurve[i].count * 100),
+        count: roundValue((curve[i].count / baseCurve[i].count) * 100),
         date: curve[i].date,
       }
     }

@@ -12,7 +12,9 @@ import {
   Report,
   ReportAction,
   ReportResponse,
-  ReportSearchResult, ReportTag, ResponseConsumerReview,
+  ReportSearchResult,
+  ReportTag,
+  ResponseConsumerReview,
 } from '../..'
 import {Address, PaginatedData, ReportSearch} from '../../model'
 import {pipe} from 'rxjs'
@@ -65,7 +67,7 @@ export const cleanReportFilter = (filter: ReportSearch): ReportSearch => {
   if (filter.hasCompany === false) {
     delete filter.siretSirenList
   }
-  if(filter.hasForeignCountry === false) {
+  if (filter.hasForeignCountry === false) {
     delete filter.companyCountries
   }
   if (filter.hasWebsite === false) {
@@ -78,8 +80,7 @@ export const cleanReportFilter = (filter: ReportSearch): ReportSearch => {
 }
 
 export class ReportsClient {
-  constructor(private client: ApiClientApi) {
-  }
+  constructor(private client: ApiClientApi) {}
 
   readonly extract = (filters: ReportSearch & PaginatedFilters) => {
     return this.client.post<void>(`reports/extract`, {
@@ -154,10 +155,10 @@ export class ReportsClient {
     })
   }
 
-  readonly getCountByDepartments = ({start, end}: {start?: Date, end?: Date} = {}): Promise<[string, number][]> => {
+  readonly getCountByDepartments = ({start, end}: {start?: Date; end?: Date} = {}): Promise<[string, number][]> => {
     return this.client.get(`/reports/count-by-departments`, {qs: {start: dateToApi(start), end: dateToApi(end)}})
   }
-  
+
   static readonly mapReport = (report: {[key in keyof Report]: any}): Report => ({
     ...report,
     companyAddress: ReportsClient.mapAddress(report.companyAddress),

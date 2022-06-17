@@ -200,7 +200,7 @@
   tags:
     - ReponseConso
   subcategories:
-    - title: Démarchage à domicile      
+    - title: Démarchage à domicile
       ccrfCode:
         - '221'
       companyKind: LOCATION
@@ -208,9 +208,8 @@
         - '221'
       tags:
         - DemarchageADomicile
-    - title: Démarchage téléphonique      
-      ccrfCode: 
-        -'227'
+    - title: Démarchage téléphonique
+      ccrfCode: -'227'
       companyKind: PHONE
       reponseconsoCode:
         - '221'
@@ -235,8 +234,7 @@
       tags:
         - DemarchageADomicile
     - title: Démarchage téléphonique
-      ccrfCode: 
-        -'227'
+      ccrfCode: -'227'
       companyKind: PHONE
       reponseconsoCode:
         - '221'
@@ -270,10 +268,9 @@
         - ProduitIndustriel
     - title: Autre
       subcategoriesTitle: Quel est le risque&#160;?
-      subcategories: !!import/single ../common/produit-dangereux.yml      
+      subcategories: !!import/single ../common/produit-dangereux.yml
       tags:
         - ProduitIndustriel
 - title: Autre
   reponseconsoCode:
     - '679'
-

@@ -1,18 +1,20 @@
 import {Id, Subscription, SubscriptionCreate} from '../../model'
 import {ApiClientApi, PublicConstantClient} from '../..'
 
-const fromApi = (client: ApiClientApi) => async (api: any): Promise<Subscription> => {
-  const getDepartmentByCode = new PublicConstantClient(client).getDepartmentByCode
-  const departments = await Promise.all((api.departments || []).map(getDepartmentByCode))
-  return {
-    ...api,
-    categories: api.categories ?? [],
-    sirets: api.sirets ?? [],
-    countries: api.countries ?? [],
-    tags: api.tags ?? [],
-    departments,
+const fromApi =
+  (client: ApiClientApi) =>
+  async (api: any): Promise<Subscription> => {
+    const getDepartmentByCode = new PublicConstantClient(client).getDepartmentByCode
+    const departments = await Promise.all((api.departments || []).map(getDepartmentByCode))
+    return {
+      ...api,
+      categories: api.categories ?? [],
+      sirets: api.sirets ?? [],
+      countries: api.countries ?? [],
+      tags: api.tags ?? [],
+      departments,
+    }
   }
-}
 
 const toApi = (subscription: Partial<SubscriptionCreate>): any => subscription
 

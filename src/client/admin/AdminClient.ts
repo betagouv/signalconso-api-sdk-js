@@ -1,8 +1,7 @@
 import {ApiClientApi} from '../../core/ApiClient'
 
 export class AdminClient {
-  constructor(private client: ApiClientApi) {
-  }
+  constructor(private client: ApiClientApi) {}
 
   readonly getEmailCodes = () => {
     return this.client.get<string[]>(`/admin/test-email`)

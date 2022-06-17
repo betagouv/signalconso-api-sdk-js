@@ -2,8 +2,7 @@ import {ApiClientApi, Id, ValidationRejectReason} from '../..'
 import {AuthUser} from './Authenticate'
 
 export class AuthenticateClient {
-  constructor(private client: ApiClientApi) {
-  }
+  constructor(private client: ApiClientApi) {}
 
   readonly login = (login: string, password: string) => {
     return this.client.post<AuthUser>(`/authenticate`, {body: {login, password}})

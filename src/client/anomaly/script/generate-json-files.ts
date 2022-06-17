@@ -5,8 +5,8 @@ const fs = require('fs')
 const files = [
   {
     input: 'anomalies.yml',
-    output: 'anomalies.json'
-  }
+    output: 'anomalies.json',
+  },
 ]
 
 const addUniqueId = (obj: any, depth = 0, prefix?: string) => {

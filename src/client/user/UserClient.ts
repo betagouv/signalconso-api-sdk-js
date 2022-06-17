@@ -12,22 +12,24 @@ export class UserClient {
   readonly fetchDGCCRF = (filters: UserSearch): Promise<Paginate<User>> => {
     return this.client
       .get<User[]>(`/account/dgccrf/users`)
-      .then(users => users.map(_ => {
+      .then(users =>
+        users.map(_ => {
           _.lastEmailValidation = new Date(_.lastEmailValidation)
           return _
-        })
+        }),
       )
-      .then(users => fromNullable(filters.email)
-        .filter(_ => _ !== '')
-        .map(user => users.filter(_ => _.email.includes(user)))
-        .getOrElse(users)
+      .then(users =>
+        fromNullable(filters.email)
+          .filter(_ => _ !== '')
+          .map(user => users.filter(_ => _.email.includes(user)))
+          .getOrElse(users),
       )
-      .then(users => fromNullable(filters.active)
-        .map(active => users.filter(_ => User.isUserActive(_) === active))
-        .getOrElse(users)
+      .then(users =>
+        fromNullable(filters.active)
+          .map(active => users.filter(_ => User.isUserActive(_) === active))
+          .getOrElse(users),
       )
       .then(paginateData(filters.limit, filters.offset))
-
   }
 
   readonly fetchPendingDGCCRF = () => {

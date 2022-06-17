@@ -7,7 +7,10 @@ import {
   WebsiteUpdateCompany,
   WebsiteWithCompany,
   WebsiteWithCompanySearch,
-  Country, DepartmentDivision, WebsiteInvestigation, IdentificationStatus,
+  Country,
+  DepartmentDivision,
+  WebsiteInvestigation,
+  IdentificationStatus,
 } from '../../model'
 import {ApiClientApi, dateToApi} from '../..'
 import {ApiSdkLogger} from '../../helper/Logger'
@@ -52,15 +55,12 @@ const cleanFilter = (filter: WebsiteWithCompanySearch): WebsiteWithCompanySearch
 }
 
 export class WebsiteClient {
-  constructor(private client: ApiClientApi) {
-  }
+  constructor(private client: ApiClientApi) {}
 
   readonly list = (filters: WebsiteWithCompanySearch) => {
     return this.client
       .get<PaginatedData<WebsiteWithCompany>>(`/websites`, {qs: cleanFilter(filters)})
-      .then(paginated =>
-        Object.assign({}, paginated, {entities: paginated.entities}),
-      )
+      .then(paginated => Object.assign({}, paginated, {entities: paginated.entities}))
       .then(result => {
         result.entities = result.entities.map(_ => {
           _.creationDate = new Date(_.creationDate)
@@ -72,20 +72,16 @@ export class WebsiteClient {
   }
 
   readonly listDepartmentDivision = () => {
-    return this.client
-      .get<DepartmentDivision[]>(`resources/department-division`)
+    return this.client.get<DepartmentDivision[]>(`resources/department-division`)
   }
 
   readonly listInvestigationStatus = () => {
-    return this.client
-      .get<string[]>(`resources/investigation-status`)
+    return this.client.get<string[]>(`resources/investigation-status`)
   }
 
   readonly listPractice = () => {
-    return this.client
-      .get<string[]>(`resources/practice`)
+    return this.client.get<string[]>(`resources/practice`)
   }
-
 
   readonly createOrUpdateInvestigation = (websiteInvestigation: WebsiteInvestigation): Promise<WebsiteInvestigation> => {
     return this.client.post<WebsiteInvestigation>(`/website-investigations`, {body: websiteInvestigation})

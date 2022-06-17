@@ -27,7 +27,7 @@ const getPackageVersion = () => JSON.parse(fs.readFileSync('package.json', 'utf8
 const isOnMainBranch = () => new RegExp(`${config.mainBranch}\s*\n*`).test(execSync('git branch --show-current').toString())
 
 ;(async () => {
-  const newversion = process.argv[2] ?? 'patch' as 'patch' | 'minor' | 'major' | 'test'
+  const newversion = process.argv[2] ?? ('patch' as 'patch' | 'minor' | 'major' | 'test')
   if (!gitWorkspaceIsEmpty()) {
     console.error(`Your git status must be clean before to publish.`)
     process.exit(1)

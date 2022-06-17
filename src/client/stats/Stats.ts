@@ -7,7 +7,7 @@ export interface SimpleStat {
 
 export type Period = 'Day' | 'Month'
 
-export type  ReportResponseType = 'ACCEPTED' | 'REJECTED' | 'NOT_CONCERNED'
+export type ReportResponseType = 'ACCEPTED' | 'REJECTED' | 'NOT_CONCERNED'
 
 export interface CountByDate {
   date: Date

@@ -5,7 +5,7 @@ export default async (): Promise<Config.InitialOptions> => {
     testMatch: ['**/*.spec.ts'],
     moduleDirectories: ['node_modules', 'src'],
     transform: {
-      '^.+\\.ts?$': 'ts-jest'
+      '^.+\\.ts?$': 'ts-jest',
     },
     passWithNoTests: true,
     testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
@@ -15,4 +15,4 @@ export default async (): Promise<Config.InitialOptions> => {
       // "jest-html-reporters"
     ],
   }
-};
+}

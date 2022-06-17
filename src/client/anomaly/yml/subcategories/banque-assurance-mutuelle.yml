@@ -17,8 +17,8 @@
     - title: Publicité
       example: 'Exemple : publicité pour un crédit non conforme, démarchage téléphonique'
       reponseconsoCode:
-            - '210'
-            - '411'
+        - '210'
+        - '411'
       tags:
         - LitigeContractuel
       subcategories:

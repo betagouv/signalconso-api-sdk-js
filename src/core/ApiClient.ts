@@ -49,7 +49,6 @@ export class ApiError extends Error {
   constructor(public message: string, public details: ApiErrorDetails) {
     super(message)
   }
-
 }
 
 // /** @deprecated*/
@@ -103,24 +102,26 @@ export class ApiClient {
           paramsSerializer: params => qs.stringify(params, {arrayFormat: 'repeat'}),
         })
         .then(mapData ?? ((_: AxiosResponse) => _.data))
-        .catch(mapError ?? ((_: any) => {
-          console.log(_)
-          const request = {method, url, qs: options?.qs, body: options?.body}
-          if (_.response && _.response.data) {
-            const message = _.response.data.details ?? _.response.data.timeout ?? JSON.stringify(_.response.data)
-            throw new ApiError(message, {
-              code: _.response.status,
-              id: _.response.data.type,
-              request,
-              error: _,
-            })
-          }
-          throw new ApiError(`Something not caught went wrong`, {
-            code: 'front-side',
-            error: _,
-            request,
-          })
-        }),
+        .catch(
+          mapError ??
+            ((_: any) => {
+              console.log(_)
+              const request = {method, url, qs: options?.qs, body: options?.body}
+              if (_.response && _.response.data) {
+                const message = _.response.data.details ?? _.response.data.timeout ?? JSON.stringify(_.response.data)
+                throw new ApiError(message, {
+                  code: _.response.status,
+                  id: _.response.data.type,
+                  request,
+                  error: _,
+                })
+              }
+              throw new ApiError(`Something not caught went wrong`, {
+                code: 'front-side',
+                error: _,
+                request,
+              })
+            }),
         )
     }
 
