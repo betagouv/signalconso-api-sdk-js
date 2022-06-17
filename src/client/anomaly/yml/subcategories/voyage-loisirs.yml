@@ -458,7 +458,7 @@
         - title: Jouet, puériculture, matériel scolaire
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
-          ccrfCode: 
+          ccrfCode:
             - '309'
             - '34k'
             - '34j'
@@ -483,34 +483,34 @@
         - title: Équipement de protection
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
-          ccrfCode: 
+          ccrfCode:
             - '34e'
           tags:
             - ProduitIndustriel
         - title: Feu d'artifice
           subcategoriesTitle: Quel est le risque&#160;?
-          subcategories: !!import/single ../common/produit-dangereux.yml          
+          subcategories: !!import/single ../common/produit-dangereux.yml
           ccrfCode:
             - '332'
           tags:
             - ProduitIndustriel
         - title: Meuble
           subcategoriesTitle: Quel est le risque&#160;?
-          subcategories: !!import/single ../common/produit-dangereux.yml          
+          subcategories: !!import/single ../common/produit-dangereux.yml
           ccrfCode:
             - '332'
           tags:
             - ProduitIndustriel
         - title: Appareil électrique
           subcategoriesTitle: Quel est le risque&#160;?
-          subcategories: !!import/single ../common/produit-dangereux.yml  
+          subcategories: !!import/single ../common/produit-dangereux.yml
           ccrfCode:
             - '34F'
           tags:
             - ProduitIndustriel
         - title: Autre
           subcategoriesTitle: Quel est le risque&#160;?
-          subcategories: !!import/single ../common/produit-dangereux.yml          
+          subcategories: !!import/single ../common/produit-dangereux.yml
           ccrfCode:
             - '332'
           tags:
@@ -907,7 +907,7 @@
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Vêtement, textile
           ccrfCode:
-              - '332'
+            - '332'
           subcategoriesTitle: Quel est le risque&#160;?
           subcategories: !!import/single ../common/produit-dangereux.yml
         - title: Équipement de protection

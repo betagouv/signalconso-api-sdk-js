@@ -71,7 +71,6 @@ export enum ResponseEvaluation {
   Positive = 'Positive',
 }
 
-
 export interface ResponseConsumerReview {
   evaluation: ResponseEvaluation
   details?: string

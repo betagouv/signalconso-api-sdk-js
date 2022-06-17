@@ -11,7 +11,6 @@ export class PublicReportClient {
   }
 
   readonly create = (draft: ReportDraft) => {
-    return this.client.post<Report>(`/reports`, {body: ReportDraft.toApi(draft)})
-      .then(ReportsClient.mapReport)
+    return this.client.post<Report>(`/reports`, {body: ReportDraft.toApi(draft)}).then(ReportsClient.mapReport)
   }
 }

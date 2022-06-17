@@ -3,8 +3,7 @@ import {ConsumerEmailResult, ConsumerEmailValidation, ConsumerEmailValidationSea
 import {Paginate} from '../../model'
 
 export class PublicConsumerEmailValidationClient {
-  constructor(private client: ApiClientApi) {
-  }
+  constructor(private client: ApiClientApi) {}
 
   readonly check = (email: string) => {
     return this.client.post<{valid: boolean}>('/email-validation/check', {body: {email}})

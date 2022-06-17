@@ -1,6 +1,6 @@
 ---
 list:
-  - category: Retrait-Rappel pécifique 
+  - category: Retrait-Rappel pécifique
     title: Retrait-Rappel spécifique
     categoryId: RPL
     path: retrait-rappel
@@ -11,7 +11,7 @@ list:
     sprite: none
     subcategories: !!import/single subcategories/retrait-rappel.yml
     subcategoriesTitle: Avez-vous consommé le produit ?
-  - category: COVID-19 (coronavirus) 
+  - category: COVID-19 (coronavirus)
     title: COVID-19 (coronavirus)
     categoryId: C19
     path: coronavirus
@@ -20,7 +20,7 @@ list:
     id: 19
     sprite: category-covid
     subcategories: !!import/single subcategories/coronavirus.yml
-  - category: Café / Restaurant 
+  - category: Café / Restaurant
     title: Signalez un problème avec un café / restaurant à la répression des fraudes
     categoryId: CR
     path: cafe-restaurant
@@ -29,7 +29,7 @@ list:
     id: 4
     sprite: category-restaurant
     subcategories: !!import/single subcategories/cafe-restaurant.yml
-  - category: Achat (Magasin ou Internet) 
+  - category: Achat (Magasin ou Internet)
     title: Signalez un achat en magasin ou sur internet à la répression des fraudes
     categoryId: MAG
     path: achat-magasin
@@ -39,7 +39,7 @@ list:
     sprite: category-store
     subcategoriesTitle: Votre problème concerne
     subcategories: !!import/single subcategories/achat-magasin.yml
-  - category: Services aux particuliers 
+  - category: Services aux particuliers
     title: Signalez un problème avec un service / prestation à la répression des fraudes
     categoryId: SERV
     path: services-aux-particuliers
@@ -49,7 +49,7 @@ list:
     sprite: category-service
     subcategoriesTitle: Votre problème concerne
     subcategories: !!import/single subcategories/services-aux-particuliers.yml
-  - category: Eau / Gaz / Electricité 
+  - category: Eau / Gaz / Electricité
     title: Signalez un problème d'eau, gaz ou électricité à la répression des fraudes
     categoryId: ELEC
     path: eau-gaz-electricite
@@ -58,7 +58,7 @@ list:
     id: 6
     sprite: category-energy
     subcategories: !!import/single subcategories/eau-gaz-electricite.yml
-  - category: Téléphonie / Fournisseur d'accès internet / médias 
+  - category: Téléphonie / Fournisseur d'accès internet / médias
     title: Signalez un problème de forfait à la répression des fraudes
     categoryId: TEL
     path: tel-internet-media
@@ -67,7 +67,7 @@ list:
     id: 7
     sprite: category-internet
     subcategories: !!import/single subcategories/telephonie-media.yml
-  - category: Banque / Assurance / Mutuelle 
+  - category: Banque / Assurance / Mutuelle
     title: Banque / Assurance / Mutuelle
     categoryId: BAQ
     path: banque-assurance-mutuelle
@@ -77,7 +77,7 @@ list:
     sprite: category-bank
     subcategories: !!import/single subcategories/banque-assurance-mutuelle.yml
     subcategoriesTitle: Il s'agit d'un problème principalement lié à
-  - category: Intoxication alimentaire 
+  - category: Intoxication alimentaire
     title: Intoxication alimentaire
     categoryId: INTOX
     path: intoxication-alimentaire
@@ -87,7 +87,7 @@ list:
     sprite: category-disease
     subcategories: !!import/single subcategories/intoxication-alimentaire.yml
     subcategoriesTitle: 'Avez-vous été malade ?'
-  - category: Internet (hors achats) 
+  - category: Internet (hors achats)
     title: Signalez un problème d'arnaque en ligne à la répression des fraudes
     categoryId: INTERNET
     path: internet
@@ -96,7 +96,7 @@ list:
     id: 16
     sprite: category-ecommerce
     subcategories: !!import/single subcategories/internet.yml
-  - category: Travaux / Rénovation 
+  - category: Travaux / Rénovation
     title: Signalez un problème de travaux ou rénovation à la répression des fraudes
     categoryId: TRAV
     path: travaux-renovation
@@ -105,7 +105,7 @@ list:
     id: 12
     sprite: category-craft
     subcategories: !!import/single subcategories/travaux-renovation.yml
-  - category: Voyage / Loisirs 
+  - category: Voyage / Loisirs
     title: Voyage / Loisirs
     categoryId: VOY
     path: voyage-loisirs
@@ -114,7 +114,7 @@ list:
     id: 10
     sprite: category-hobbies
     subcategories: !!import/single subcategories/voyage-loisirs.yml
-  - category: Immobilier 
+  - category: Immobilier
     title: Immobilier
     categoryId: IMM
     path: immobilier
@@ -123,7 +123,7 @@ list:
     id: 11
     sprite: category-real-estate
     subcategories: !!import/single subcategories/immobilier.yml
-  - category: Secteur de la santé 
+  - category: Secteur de la santé
     title: Signalez un problème avec un professionnel de santé à la répression des fraudes
     categoryId: SANT
     path: sante
@@ -133,7 +133,7 @@ list:
     sprite: category-health
     subcategoriesTitle: 'Votre problème concerne :'
     subcategories: !!import/single subcategories/sante.yml
-  - category: Voiture / Véhicule / Vélo 
+  - category: Voiture / Véhicule / Vélo
     title: Voiture / Véhicule / Vélo
     categoryId: VEH
     path: voiture-vehicule
@@ -143,7 +143,7 @@ list:
     sprite: category-transport
     subcategoriesTitle: 'Pouvez-vous préciser &#160;?'
     subcategories: !!import/single subcategories/voiture-vehicule.yml
-  - category: Animaux 
+  - category: Animaux
     title: Animaux
     categoryId: ANI
     path: animaux
@@ -152,7 +152,7 @@ list:
     id: 14
     sprite: category-pet
     subcategories: !!import/single subcategories/animaux.yml
-  - category: Démarches administratives 
+  - category: Démarches administratives
     title: Démarches administratives
     categoryId: ADM
     path: demarches-administratives
@@ -161,7 +161,7 @@ list:
     id: 15
     sprite: category-admin
     subcategories: !!import/single subcategories/demarches-administratives.yml
-  - category: Travail au noir 
+  - category: Travail au noir
     title: Travail au noir
     categoryId: TNOIR
     path: travail-au-noir
@@ -177,7 +177,7 @@ list:
         <li>écrire à la police/gendarmerie</li>
         </ul>
         La DGCCRF (répression des fraudes) ne s’occupe pas des cas de travail au noir.
-  - category: Démarchage abusif 
+  - category: Démarchage abusif
     title: Démarchage abusif
     categoryId: BTEL
     path: bloctel

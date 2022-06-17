@@ -3,7 +3,6 @@ import {Company} from '../company/Company'
 import {Address} from '../../model/Address'
 import {Country} from '../constant/Country'
 
-
 export enum IdentificationStatus {
   Identified = 'Identified',
   NotIdentified = 'NotIdentified',
@@ -15,10 +14,10 @@ export interface DepartmentDivision {
 }
 
 export interface WebsiteInvestigation {
-  practice?: string,
-  investigationStatus?: string,
-  attribution?: string,
-  lastUpdated?: Date,
+  practice?: string
+  investigationStatus?: string
+  attribution?: string
+  lastUpdated?: Date
   id: Id
 }
 

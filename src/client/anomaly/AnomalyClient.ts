@@ -1,4 +1,4 @@
-import {Anomaly, ApiClientApi, Category, SubcategoryInformation, SubcategoryInput,} from '../..'
+import {Anomaly, ApiClientApi, Category, SubcategoryInformation, SubcategoryInput} from '../..'
 import anomaliesJSON from '../anomaly/yml/anomalies.json'
 import {lazy} from '@alexandreannic/ts-utils/lib/common'
 

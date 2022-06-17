@@ -121,7 +121,7 @@
       example: "Exemple : absence d'information, information trompeuse ou mensongère, démarchage"
       tags:
         - LitigeContractuel
-      ccrfCode: 
+      ccrfCode:
         - '23B'
       subcategories:
         - title: Absence d'information ou information incomplète
@@ -173,7 +173,7 @@
           reponseconsoCode:
             - '221'
           tags:
-#            - ReponseConso
+            #            - ReponseConso
             - DemarchageTelephonique
           detailInputs:
             - label: Date de l'appel

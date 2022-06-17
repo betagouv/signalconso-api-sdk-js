@@ -5,10 +5,9 @@ import {uniqby} from '../../helper/LodashNamedExport'
 import {Address} from '../../model'
 import {map} from '@alexandreannic/ts-utils'
 
-
 export enum Gender {
   Male = 'Male',
-  Female = 'Female'
+  Female = 'Female',
 }
 
 export interface ReportDraftConsumer {
@@ -59,11 +58,17 @@ export class ReportDraft {
   }
 
   static readonly getReponseconsoCode = (r: ReportDraft): string[] => {
-    return uniqby((r.subcategories ?? []).flatMap(_ => _.reponseconsoCode ?? []), _ => _)
+    return uniqby(
+      (r.subcategories ?? []).flatMap(_ => _.reponseconsoCode ?? []),
+      _ => _,
+    )
   }
 
   static readonly ccrfCode = (r: ReportDraft): string[] => {
-    return uniqby((r.subcategories ?? []).flatMap(_ => _.ccrfCode ?? []), _ => _)
+    return uniqby(
+      (r.subcategories ?? []).flatMap(_ => _.ccrfCode ?? []),
+      _ => _,
+    )
   }
 
   static readonly tags = (r: ReportDraft): ReportTag[] => {
@@ -90,19 +95,17 @@ export class ReportDraft {
   }
 
   static readonly isTransmittableToPro = (r: Pick<ReportDraft, 'employeeConsumer' | 'tags'>): boolean => {
-    return !r.employeeConsumer
-      && !(r.tags ?? []).find(_ => ([
-        ReportTag.ReponseConso,
-        ReportTag.ProduitDangereux,
-        ReportTag.Bloctel
-      ]).includes(_))
+    return (
+      !r.employeeConsumer &&
+      !(r.tags ?? []).find(_ => [ReportTag.ReponseConso, ReportTag.ProduitDangereux, ReportTag.Bloctel].includes(_))
+    )
   }
 
   static readonly toApi = (draft: ReportDraft): any => {
     return {
       ...draft,
       details: draft.details,
-      gender : draft.consumer.gender,
+      gender: draft.consumer.gender,
       subcategories: map(draft.subcategories, subcategories => subcategories.map(_ => _.title ?? _)),
       firstName: draft.consumer.firstName,
       lastName: draft.consumer.lastName,

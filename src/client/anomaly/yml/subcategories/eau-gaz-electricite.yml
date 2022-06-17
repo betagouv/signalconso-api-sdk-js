@@ -15,7 +15,7 @@
                 title: Ce n'est pas un motif de signalement
                 content: Le distributeur peut vous demander une avance s'il est prévu de déduire cette somme de votre facture de consommation.
             - title: À la résiliation de l'abonnement ou au changement de locataire
-              tags :
+              tags:
                 - ReponseConso
               detailTitle: Il est interdit de demander un dépôt de garantie.
               description: Rendre l'argent à la fin de l'abonnement ou du contrat sous-entend que c'est un dépôt de garantie. C'est interdit par la loi.
@@ -81,7 +81,7 @@
       example: "Exemple : malfaçons sur la fosse, le bureau d'étude m'impose une marque de fosse en particulier "
       subcategories:
         - title: Malfaçons sur la pose de la fosse septique
-          exemple: "Fissure, usure"
+          exemple: 'Fissure, usure'
           detailInputs:
             - label: Date du constat
               rank: 1
@@ -91,7 +91,7 @@
               rank: 2
               type: TEXTAREA
         - title: Le bureau d'étude impose une marque / modèle en particulier
-          tags: 
+          tags:
             - ReponseConso
           detailInputs:
             - label: Date du constat
@@ -102,7 +102,7 @@
               rank: 2
               type: TEXTAREA
         - title: Autre
-          tags: 
+          tags:
             - ReponseConso
           detailInputs:
             - label: Date du constat
@@ -172,7 +172,7 @@
           type: TEXTAREA
     - title: Publicité mensongère ou trompeuse
       example: 'Exemple : publicité "offre verte" mensongère'
-      tags :
+      tags:
         - ReponseConso
       reponseconsoCode:
         - '210'
@@ -211,7 +211,7 @@
       fileLabel: Photo(s) si possible
     - title: Contrat
       example: 'Exemple : reconduction de contrat, clause abusive'
-      tags :
+      tags:
         - ReponseConso
       subcategories:
         - title: Difficultés pour résilier un contrat
