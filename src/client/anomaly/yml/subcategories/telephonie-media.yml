@@ -10,6 +10,8 @@
             - title: Augmentation du débit ou des données disponibles
               example: 'Exemple : passage de 20 Go à 40 Go pour 5 euros de plus'
               subcategoriesTitle: Avez-vous reçu un email ou un courrier pour vous prévenir (un mois avant) ?
+              ccrfCode:
+                - '21A'
               subcategories:
                 - title: Oui, j'ai été prévenu par email ou courrier
                   reponseconsoCode:
@@ -31,6 +33,8 @@
                 - ReponseConso
               example: "Exemple : augmentation du nombre d'heures, augmentation du nombre de sms..."
               subcategoriesTitle: Avez-vous reçu un email ou un courrier pour vous prévenir (un mois avant) ?
+              ccrfCode:
+                - '21A'
               subcategories:
                 - title: Oui, j'ai été prévenu par email ou courrier
                   information: !!import/single ../common/info/tel.yml
@@ -47,6 +51,8 @@
                     - LitigeContractuel
             - title: Rajout d'une option payante
               example: 'Exemple : chaine télé supplémentaire, option cyber-sécurité, option livre audio, option musique...'
+              ccrfCode:
+                - '21A'
               subcategoriesTitle: Quel est le type d'option ?
               subcategories:
                 - title: option liée à la data (Go), aux appels, aux sms, au débit, à la présentation du numéro
@@ -97,6 +103,10 @@
                       type: DATE
                       optionnal: true
             - title: Le lien pour refuser l'augmentation de mon forfait ne fonctionne pas
+              ccrfCode:
+                - '21A'
+                - '21E'
+                - '23B'
               reponseconsoCode:
                 - '444'
                 - '210'
@@ -104,6 +114,8 @@
                 - ReponseConso
                 - LitigeContractuel
         - title: L'offre / la promotion que je devais avoir n'a pas été appliquée
+          ccrfCode:
+            - '23B'
           reponseconsoCode:
             - '2212'
             - '210'
@@ -111,6 +123,8 @@
             - ReponseConso
             - LitigeContractuel
         - title: Autre problème de facturation ou de contrat
+          ccrfCode:
+            - '23B'
           repoonseconsoCode:
             - '2212'
             - '623'
@@ -136,14 +150,20 @@
         - LitigeContractuel
       subcategories:
         - title: Frais de résiliation
+          ccrfCode:
+            - '21C'
           reponseconsoCode:
             - '477'
             - '473'
         - title: Restitution du matériel
+          ccrfCode:
+            - '21C'
           reponseconsoCode:
             - '477'
             - '473'
         - title: Problème avec le RIO (Relevé d'Identité Opérateur)
+          ccrfcode:
+            - '21C'
           reponseconsoCode:
             - '477'
         - title: Mon ancien opérateur continue de me prélever
