@@ -22,3 +22,6 @@ yarn-error.log*
 
 # editors
 .vscode
+
+# generated, no need to pretty it
+anomalies.json
