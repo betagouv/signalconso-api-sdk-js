@@ -1,6 +1,6 @@
 import {Anomaly, ApiClientApi, Category, SubcategoryInformation, SubcategoryInput} from '../..'
 import anomaliesJSON from '../anomaly/yml/anomalies.json'
-import {lazy} from '@alexandreannic/ts-utils/lib/common'
+import {lazy} from '../../alexlibs/ts-utils'
 
 export class AnomalyClient {
   constructor(private client: ApiClientApi) {}

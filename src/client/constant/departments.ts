@@ -1,4 +1,4 @@
-import {mapFor} from '@alexandreannic/ts-utils'
+import {mapFor} from '../../alexlibs/ts-utils'
 
 export const rawDepartments = [
   {

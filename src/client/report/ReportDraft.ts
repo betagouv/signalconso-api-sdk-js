@@ -3,7 +3,7 @@ import {UploadedFile} from '../file/UploadedFile'
 import {DetailInputValue} from './Report'
 import {uniqby} from '../../helper/LodashNamedExport'
 import {Address} from '../../model'
-import {map} from '@alexandreannic/ts-utils'
+import {map} from '../../alexlibs/ts-utils'
 
 export enum Gender {
   Male = 'Male',
