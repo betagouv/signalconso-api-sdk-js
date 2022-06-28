@@ -665,10 +665,21 @@
             - ReponseConso
 - title: Compagnie aérienne
   example: "Exemple : Vol annuel, vol retardé, déclassement, refus d'embarquement"
-  ccrfCode:
-    - '21c'
-  tags:
-    - CompagnieAerienne
+  information:
+    title: Emmh, nous ne pouvons pas traiter votre signalement.
+    content:
+      <br />Vous avez achaté votre billet d'avion directement auprès d'une compagnie aérienne. 
+      <br />Vous avez ru un problème de déclassement, un refus d'embarquement, votre vol a été retardé ou annulé. 
+      <br /> 
+      <br />Ce type de problème ne doit pas être signalé sur SignalConso. Nous vous invitons à utiliser le sité décié. 
+      <br />https://droits-passagers-aeriens.aviation-civile.gouv.fr/
+      <br /> 
+      <br />Vous avez achèter vos billets d'avions dans une agence de voyages. 
+      <br />Revenez en arriève et allez sur Agence de voyage :)
+#  ccrfCode:
+#    - '21c'
+#  tags:
+#    - CompagnieAerienne
 - title: Transports en commun
   example: 'Exemple : avion, train, bateau'
   subcategories:
