@@ -2,7 +2,8 @@ import {
   ApiClientApi,
   cleanObject,
   CompanySearchResult,
-  dateToApi,
+  dateToApiDate,
+  dateToApiTime,
   DetailInputValue,
   directDownloadBlob,
   Event,
@@ -47,7 +48,7 @@ export const reportFilter2QueryString = (report: ReportSearch): ReportFilterQuer
     const {hasCompany, hasForeignCountry, hasWebsite, hasPhone, start, end, ...r} = report
     const parseBoolean = (_: keyof Pick<ReportSearch, 'hasForeignCountry' | 'hasWebsite' | 'hasPhone' | 'hasCompany'>) =>
       report[_] !== undefined && {[_]: ('' + report[_]) as 'true' | 'false'}
-    const parseDate = (_: keyof Pick<ReportSearch, 'start' | 'end'>) => (report[_] ? {[_]: dateToApi(report[_])} : {})
+    const parseDate = (_: keyof Pick<ReportSearch, 'start' | 'end'>) => (report[_] ? {[_]: dateToApiTime(report[_])} : {})
     return {
       ...r,
       ...parseBoolean('hasCompany'),
@@ -84,7 +85,11 @@ export class ReportsClient {
 
   readonly extract = (filters: ReportSearch & PaginatedFilters) => {
     return this.client.post<void>(`reports/extract`, {
-      qs: pipe(cleanReportFilter, reportFilter2QueryString, paginateFilters2QueryString, cleanObject)(filters),
+      qs: cleanObject({
+        ...reportFilter2QueryString(cleanReportFilter(filters)),
+        ...paginateFilters2QueryString(filters),
+        zone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+      }),
     })
   }
 
@@ -156,7 +161,7 @@ export class ReportsClient {
   }
 
   readonly getCountByDepartments = ({start, end}: {start?: Date; end?: Date} = {}): Promise<[string, number][]> => {
-    return this.client.get(`/reports/count-by-departments`, {qs: {start: dateToApi(start), end: dateToApi(end)}})
+    return this.client.get(`/reports/count-by-departments`, {qs: {start: dateToApiDate(start), end: dateToApiDate(end)}})
   }
 
   static readonly mapReport = (report: {[key in keyof Report]: any}): Report => ({

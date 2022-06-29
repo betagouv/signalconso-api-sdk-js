@@ -12,7 +12,7 @@ import {
   WebsiteInvestigation,
   IdentificationStatus,
 } from '../../model'
-import {ApiClientApi, dateToApi} from '../..'
+import {ApiClientApi, dateToApiDate} from '../..'
 import {ApiSdkLogger} from '../../helper/Logger'
 import {paginateData} from '../../helper/Paginate'
 
@@ -28,7 +28,7 @@ const hostReportFilter2QueryString = (hostReport: HostReportCountSearch): HostRe
   try {
     const {q, start, end, offset, limit, ...r} = hostReport
     const parseDate = (_: keyof Pick<HostReportCountSearch, 'start' | 'end'>) =>
-      hostReport[_] ? {[_]: dateToApi(hostReport[_])} : {}
+      hostReport[_] ? {[_]: dateToApiDate(hostReport[_])} : {}
 
     return {
       ...r,
