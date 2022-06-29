@@ -1,4 +1,5 @@
 export * from './common'
+export * from './Duration'
 
 const hashArgs = (args: any[]) => {
   let res = ''
