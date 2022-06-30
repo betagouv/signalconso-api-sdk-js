@@ -8,7 +8,7 @@ import {
 } from '../../index'
 import {Id} from '../../model'
 import {ReportResponseReviews, ReportStatusDistribution, ReportTagsDistribution} from './Stats'
-import {duration, Duration} from '@alexandreannic/ts-utils/lib/common'
+import {duration, Duration} from '../../alexlibs/ts-utils'
 
 export class StatsClient {
   constructor(private client: ApiClientApi) {}

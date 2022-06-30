@@ -1,4 +1,4 @@
-import {Enum} from '@alexandreannic/ts-utils'
+import {Enum} from '../../alexlibs/ts-utils'
 
 export interface SubcategoryBase extends Category {
   description?: string
