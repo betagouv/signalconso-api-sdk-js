@@ -570,7 +570,6 @@
       tags:
         - ReponseConso
         - LitigeContractuel
-        - title: Autre
     - title: Le personnel n'est pas aimable
       information: !!import/single ../common/info/amabilite.yml
     - title: Autre
