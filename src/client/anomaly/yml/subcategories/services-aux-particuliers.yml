@@ -298,13 +298,6 @@
                 - absence de Prix sur le devis
                 - Prix illisible
                 - Autre (à préciser)
-                - label: Date du constat
-                  rank: 2
-                  type: DATE
-                  defaultValue: SYSDATE
-                - label: Description
-                  rank: 3
-                  type: TEXTAREA
     - title: Prestation
       subcategories:
         - title: Malfaçon
@@ -340,13 +333,6 @@
                     - absence de Prix sur le devis
                     - Prix illisible
                     - Autre (à préciser)
-                    - label: Date du constat
-                      rank: 2
-                      type: DATE
-                      defaultValue: SYSDATE
-                    - label: Description
-                      rank: 3
-                      type: TEXTAREA
         - title: Moyens de paiement
           example: 'Exemple : carte bancaire refusée'
           subcategories: !!import/single ../common/paiement.yml
@@ -394,13 +380,6 @@
                     - absence de Prix sur le devis
                     - Prix illisible
                     - Autre (à préciser)
-                    - label: Date du constat
-                      rank: 2
-                      type: DATE
-                      defaultValue: SYSDATE
-                    - label: Description
-                      rank: 3
-                      type: TEXTAREA
         - title: Moyens de paiement
           example: 'Exemple : carte bancaire refusée'
           subcategories: !!import/single ../common/paiement.yml
@@ -448,13 +427,6 @@
                     - absence de Prix sur le devis
                     - Prix illisible
                     - Autre (à préciser)
-                    - label: Date du constat
-                      rank: 2
-                      type: DATE
-                      defaultValue: SYSDATE
-                    - label: Description
-                      rank: 3
-                      type: TEXTAREA
         - title: Moyens de paiement
           example: 'Exemple : carte bancaire refusée'
           subcategories: !!import/single ../common/paiement.yml
@@ -598,7 +570,6 @@
       tags:
         - ReponseConso
         - LitigeContractuel
-        - title: Autre
     - title: Le personnel n'est pas aimable
       information: !!import/single ../common/info/amabilite.yml
     - title: Autre
