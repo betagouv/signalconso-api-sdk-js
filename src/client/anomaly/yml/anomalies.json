@@ -34452,18 +34452,7 @@
                       "options": [
                         "absence de Prix sur le devis",
                         "Prix illisible",
-                        "Autre (à préciser)",
-                        {
-                          "label": "Date du constat",
-                          "rank": 2,
-                          "type": "DATE",
-                          "defaultValue": "SYSDATE"
-                        },
-                        {
-                          "label": "Description",
-                          "rank": 3,
-                          "type": "TEXTAREA"
-                        }
+                        "Autre (à préciser)"
                       ]
                     }
                   ],
@@ -34532,18 +34521,7 @@
                           "options": [
                             "absence de Prix sur le devis",
                             "Prix illisible",
-                            "Autre (à préciser)",
-                            {
-                              "label": "Date du constat",
-                              "rank": 2,
-                              "type": "DATE",
-                              "defaultValue": "SYSDATE"
-                            },
-                            {
-                              "label": "Description",
-                              "rank": 3,
-                              "type": "TEXTAREA"
-                            }
+                            "Autre (à préciser)"
                           ]
                         }
                       ],
@@ -34779,18 +34757,7 @@
                           "options": [
                             "absence de Prix sur le devis",
                             "Prix illisible",
-                            "Autre (à préciser)",
-                            {
-                              "label": "Date du constat",
-                              "rank": 2,
-                              "type": "DATE",
-                              "defaultValue": "SYSDATE"
-                            },
-                            {
-                              "label": "Description",
-                              "rank": 3,
-                              "type": "TEXTAREA"
-                            }
+                            "Autre (à préciser)"
                           ]
                         }
                       ],
@@ -35026,18 +34993,7 @@
                           "options": [
                             "absence de Prix sur le devis",
                             "Prix illisible",
-                            "Autre (à préciser)",
-                            {
-                              "label": "Date du constat",
-                              "rank": 2,
-                              "type": "DATE",
-                              "defaultValue": "SYSDATE"
-                            },
-                            {
-                              "label": "Description",
-                              "rank": 3,
-                              "type": "TEXTAREA"
-                            }
+                            "Autre (à préciser)"
                           ]
                         }
                       ],
@@ -35867,10 +35823,7 @@
               ],
               "tags": [
                 "ReponseConso",
-                "LitigeContractuel",
-                {
-                  "title": "Autre"
-                }
+                "LitigeContractuel"
               ],
               "id": "5.5.4"
             },
