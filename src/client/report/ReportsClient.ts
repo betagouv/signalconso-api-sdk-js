@@ -124,7 +124,7 @@ export class ReportsClient {
   }
 
   readonly getCloudWord = (companyId: Id) => {
-    return this.client.get<ReportWordCount>(`/reports/cloudword/${companyId}`)
+    return this.client.get<ReportWordCount[]>(`/reports/cloudword/${companyId}`)
   }
 
   readonly postResponse = (id: Id, response: ReportResponse) => {
