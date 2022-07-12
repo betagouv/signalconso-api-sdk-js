@@ -14,7 +14,7 @@ import {
   ReportAction,
   ReportResponse,
   ReportSearchResult,
-  ReportTag,
+  ReportTag, ReportWordCount,
   ResponseConsumerReview,
 } from '../..'
 import {Address, PaginatedData, ReportSearch} from '../../model'
@@ -121,6 +121,10 @@ export class ReportsClient {
 
   readonly getReviewOnReportResponse = (reportId: Id) => {
     return this.client.get<ResponseConsumerReview>(`/reports/${reportId}/response/review`)
+  }
+
+  readonly getCloudWord = (companyId: Id) => {
+    return this.client.get<ReportWordCount>(`/reports/cloudword/${companyId}`)
   }
 
   readonly postResponse = (id: Id, response: ReportResponse) => {

@@ -76,6 +76,11 @@ export interface ResponseConsumerReview {
   details?: string
 }
 
+export interface ReportWordCount {
+  value: string
+  count: number
+}
+
 export interface ReportAction {
   actionType: EventActionValues
   details?: string
