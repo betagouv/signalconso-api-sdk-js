@@ -36,7 +36,7 @@
     "@types/chai": "4.3.1",
     "@types/date-fns": "2.6.0",
     "@types/jest": "27.5.2",
-    "@types/node": "15.14.9",
+    "@types/node": "18.0.3",
     "@types/qs": "6.9.7",
     "chai": "4.3.6",
     "prettier": "2.7.1",
