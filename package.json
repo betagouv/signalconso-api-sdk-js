@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "axios": "0.26.1",
-    "browser-image-compression": "1.0.17",
+    "browser-image-compression": "2.0.0",
     "date-fns": "2.28.0",
     "fp-ts": "1.19.5",
     "jest": "28.1.1",
